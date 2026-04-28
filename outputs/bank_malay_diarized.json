@@ -42,10 +42,18 @@
   {
     "speaker_id": 0,
     "speaker_raw": "SPEAKER_0",
-    "text": "Nak nomor kat pengenalan buat apa? Cek jelah nama apa, Johan.",
+    "text": "Nak nomor kat pengenalan buat apa?",
     "start": 18.64,
+    "end": 19.9,
+    "duration": 1.26
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Cek jelah nama apa, Johan.",
+    "start": 20.3,
     "end": 21.5,
-    "duration": 2.86
+    "duration": 1.2
   },
   {
     "speaker_id": 1,
@@ -58,10 +66,18 @@
   {
     "speaker_id": 1,
     "speaker_raw": "SPEAKER_1",
-    "text": "Maaf, Encik Johan. Prosedur keselamatan Bank memerlukan nomor kat pengenalan",
+    "text": "Maaf, Encik Johan.",
     "start": 24.28,
+    "end": 25.24,
+    "duration": 0.96
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Prosedur keselamatan Bank memerlukan nomor kat pengenalan",
+    "start": 25.76,
     "end": 28.62,
-    "duration": 4.34
+    "duration": 2.86
   },
   {
     "speaker_id": 0,
@@ -208,12 +224,20 @@
     "duration": 3.02
   },
   {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Bermula tahun ke empat,",
+    "start": 64.18,
+    "end": 65.32,
+    "duration": 1.14
+  },
+  {
     "speaker_id": 1,
     "speaker_raw": "SPEAKER_1",
-    "text": "Bermula tahun ke empat, charge akan dikenakan.",
-    "start": 64.18,
+    "text": "charge akan dikenakan.",
+    "start": 65.76,
     "end": 66.62,
-    "duration": 2.44
+    "duration": 0.86
   },
   {
     "speaker_id": 1,

@@ -4,40 +4,40 @@ FYP1 CALL ANALYSIS — EVALUATION REPORT
 
 Calls evaluated  : 6
 Total audio      : 532.6 s
-Processing time  : 333.9 s
+Processing time  : 330.8 s
 
 ── Classification Performance ───────────────────────────
 Method                       Accuracy Precision  Recall     F1
 -----------------------------------------------------------------
-Method 1 (Keyword-Lexical)      68.9%    67.6%   97.9%  79.3%
-Method 2 (Acoustic DNN)         58.9%    58.9%  100.0%  74.0%
-Method 3 (Hybrid Ensemble)      72.6%    86.7%   69.6%  72.9%
+Method 1 (Keyword-Lexical)      65.0%    73.3%   74.0%  67.1%
+Method 2 (Acoustic DNN)         56.9%    56.9%  100.0%  72.4%
+Method 3 (Hybrid Ensemble)      76.2%    95.4%   62.8%  70.8%
 
 ── Paired t-test (Method 3 vs Method 1) ────────────────
-  t-statistic : 0.3756
-  p-value     : 0.3542 (α = 0.05)
+  t-statistic : 1.4097
+  p-value     : 0.0815 (α = 0.05)
   Reject H₀   : False
-  Conclusion  : Fail to reject H0 (p=0.3542 ≥ α=0.05): No significant performance difference detected.
+  Conclusion  : Fail to reject H0 (p=0.0815 ≥ α=0.05): No significant performance difference detected.
 
 ── System vs. Human QA Correlation ─────────────────────
-  Pearson r     : 0.8808
-  p-value       : 0.0205
+  Pearson r     : 0.9055
+  p-value       : 0.013
   Interpretation: Strong correlation
 
 ── Efficiency (Real-Time Factor) ────────────────────────
-  RTF              : 0.6269
+  RTF              : 0.6211
   Real-time capable: True
-  Speed multiplier : 1.6×
+  Speed multiplier : 1.61×
 
-⚠ Auto-corrected label inversions: ['delivery_malay', 'internet_english', 'bank_malay', 'billing_english', 'food_malay']
+⚠ Auto-corrected label inversions: ['internet_english', 'delivery_malay', 'bank_malay', 'insurance_english', 'food_malay']
 
 ── Per-Call QA Score Comparison ─────────────────────────
           call_id  system_score  human_score  difference     alignment     system_rating
-       bank_malay         59.28         62.0        2.72     ✅ Aligned              Fair
-  billing_english         34.97         15.0       19.97     ✅ Aligned Needs Improvement
-   delivery_malay         39.99          8.0       31.99 ⚠️ Divergence Needs Improvement
-       food_malay         54.69         75.0       20.31 ⚠️ Divergence Needs Improvement
-insurance_english         72.65         82.0        9.35     ✅ Aligned              Fair
- internet_english         73.75         68.0        5.75     ✅ Aligned              Fair
+       bank_malay         61.29         62.0        0.71     ✅ Aligned              Fair
+  billing_english         42.88         15.0       27.88 ⚠️ Divergence Needs Improvement
+   delivery_malay         40.36          8.0       32.36 ⚠️ Divergence Needs Improvement
+       food_malay         57.52         75.0       17.48     ✅ Aligned              Fair
+insurance_english         72.42         82.0        9.58     ✅ Aligned              Fair
+ internet_english         73.26         68.0        5.26     ✅ Aligned              Fair
 
 =================================================================

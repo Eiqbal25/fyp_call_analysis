@@ -34,10 +34,18 @@
   {
     "speaker_id": 0,
     "speaker_raw": "SPEAKER_0",
-    "text": "I understand your frustration. Sometimes the system does not pass the information over.",
+    "text": "I understand your frustration.",
     "start": 21.62,
+    "end": 23.04,
+    "duration": 1.42
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Sometimes the system does not pass the information over.",
+    "start": 23.5,
     "end": 26.32,
-    "duration": 4.7
+    "duration": 2.82
   },
   {
     "speaker_id": 1,
@@ -50,10 +58,18 @@
   {
     "speaker_id": 1,
     "speaker_raw": "SPEAKER_1",
-    "text": "Fine. It is 987-6543. Hurry up! I work from home and I am losing money!",
+    "text": "Fine. It is 987 -6543.",
     "start": 28.48,
+    "end": 32.86,
+    "duration": 4.38
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Hurry up! I work from home and I am losing money!",
+    "start": 33.34,
     "end": 36.54,
-    "duration": 8.06
+    "duration": 3.2
   },
   {
     "speaker_id": 1,
@@ -136,12 +152,28 @@
     "duration": 4.66
   },
   {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Do not put me on hold. Hello?",
+    "start": 85.24,
+    "end": 87.7,
+    "duration": 2.46
+  },
+  {
     "speaker_id": 0,
     "speaker_raw": "SPEAKER_0",
-    "text": "Do not put me on hold. Hello? Hello? Do not you dare put me on hold.",
-    "start": 85.24,
+    "text": "Hello?",
+    "start": 88.2,
+    "end": 88.44,
+    "duration": 0.24
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Do not you dare put me on hold.",
+    "start": 88.98,
     "end": 90.78,
-    "duration": 5.54
+    "duration": 1.8
   },
   {
     "speaker_id": 0,

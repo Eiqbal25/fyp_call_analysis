@@ -8,12 +8,20 @@
     "duration": 2.8
   },
   {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Selamat pagi.",
+    "start": 3.28,
+    "end": 3.94,
+    "duration": 0.66
+  },
+  {
     "speaker_id": 0,
     "speaker_raw": "SPEAKER_0",
-    "text": "Selamat pagi. Saya nak tanya pasal barang saya dah dua minggu tak sampai.",
-    "start": 3.28,
+    "text": "Saya nak tanya pasal barang saya dah dua minggu tak sampai.",
+    "start": 4.42,
     "end": 7.54,
-    "duration": 4.26
+    "duration": 3.12
   },
   {
     "speaker_id": 0,

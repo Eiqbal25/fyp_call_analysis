@@ -2,10 +2,18 @@
   {
     "speaker_id": 1,
     "speaker_raw": "SPEAKER_1",
-    "text": "Thank you for calling Silver Lining Insurance. My name is Marcus.",
+    "text": "Thank you for calling Silver Lining Insurance.",
     "start": 0.0,
+    "end": 2.04,
+    "duration": 2.04
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "My name is Marcus.",
+    "start": 2.58,
     "end": 3.36,
-    "duration": 3.36
+    "duration": 0.78
   },
   {
     "speaker_id": 1,
@@ -18,10 +26,18 @@
   {
     "speaker_id": 0,
     "speaker_raw": "SPEAKER_0",
-    "text": "Hi, Marcus. This is Sarah Jenkins. I'm calling because a rock hit my windshield",
+    "text": "Hi, Marcus. This is Sarah Jenkins.",
     "start": 6.06,
+    "end": 8.06,
+    "duration": 2.0
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I'm calling because a rock hit my windshield",
+    "start": 8.78,
     "end": 10.9,
-    "duration": 4.84
+    "duration": 2.12
   },
   {
     "speaker_id": 0,
@@ -50,10 +66,26 @@
   {
     "speaker_id": 0,
     "speaker_raw": "SPEAKER_0",
-    "text": "Yes, just a second. It's 44920 Alpha. I'm really worried because I have a long road",
+    "text": "Yes, just a second.",
     "start": 21.5,
+    "end": 23.58,
+    "duration": 2.08
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "It's 44920 Alpha.",
+    "start": 24.58,
+    "end": 28.28,
+    "duration": 3.7
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I'm really worried because I have a long road",
+    "start": 28.72,
     "end": 31.06,
-    "duration": 9.56
+    "duration": 2.34
   },
   {
     "speaker_id": 1,
@@ -66,10 +98,18 @@
   {
     "speaker_id": 1,
     "speaker_raw": "SPEAKER_1",
-    "text": "I understand the urgency. Looking at your premier plan, you are fully covered for glass",
+    "text": "I understand the urgency.",
     "start": 34.7,
+    "end": 36.1,
+    "duration": 1.4
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Looking at your premier plan, you are fully covered for glass",
+    "start": 36.88,
     "end": 40.14,
-    "duration": 5.44
+    "duration": 3.26
   },
   {
     "speaker_id": 0,
@@ -82,49 +122,121 @@
   {
     "speaker_id": 1,
     "speaker_raw": "SPEAKER_1",
-    "text": "location this afternoon. Oh, that would be a huge relief. Does it matter that I'm at",
+    "text": "location this afternoon.",
     "start": 44.64,
+    "end": 45.66,
+    "duration": 1.02
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Oh, that would be a huge relief.",
+    "start": 46.14,
+    "end": 48.06,
+    "duration": 1.92
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Does it matter that I'm at",
+    "start": 48.66,
     "end": 49.68,
-    "duration": 5.04
+    "duration": 1.02
   },
   {
     "speaker_id": 0,
     "speaker_raw": "SPEAKER_0",
-    "text": "my office and not at home? Not at all. We just need the vehicle's location and",
+    "text": "my office and not at home?",
     "start": 49.68,
+    "end": 51.08,
+    "duration": 1.4
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Not at all. We just need the vehicle's location and",
+    "start": 51.5,
     "end": 54.1,
-    "duration": 4.42
+    "duration": 2.6
   },
   {
     "speaker_id": 1,
     "speaker_raw": "SPEAKER_1",
-    "text": "the contact number. Shall I proceed with the booking for the 2PM slot? Yes, please.",
+    "text": "the contact number.",
     "start": 54.1,
-    "end": 58.68,
-    "duration": 4.58
+    "end": 54.8,
+    "duration": 0.7
   },
   {
     "speaker_id": 1,
     "speaker_raw": "SPEAKER_1",
-    "text": "That works perfectly for me. Thank you so much for making this easy. It's my",
+    "text": "Shall I proceed with the booking for the 2PM slot?",
+    "start": 55.3,
+    "end": 57.54,
+    "duration": 2.24
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Yes, please.",
+    "start": 58.04,
+    "end": 58.68,
+    "duration": 0.64
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "That works perfectly for me.",
     "start": 58.98,
+    "end": 60.34,
+    "duration": 1.36
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Thank you so much for making this easy.",
+    "start": 60.78,
+    "end": 62.4,
+    "duration": 1.62
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "It's my",
+    "start": 62.9,
     "end": 63.26,
-    "duration": 4.28
+    "duration": 0.36
   },
   {
     "speaker_id": 0,
     "speaker_raw": "SPEAKER_0",
-    "text": "pleasure, Sarah. I'm processing that now. You'll receive a confirmation text",
+    "text": "pleasure, Sarah. I'm processing that now.",
     "start": 63.26,
-    "end": 67.02,
-    "duration": 3.76
+    "end": 65.1,
+    "duration": 1.84
   },
   {
     "speaker_id": 0,
     "speaker_raw": "SPEAKER_0",
-    "text": "shortly. Is there anything else I can assist you with today?",
+    "text": "You'll receive a confirmation text",
+    "start": 65.56,
+    "end": 67.02,
+    "duration": 1.46
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "shortly.",
     "start": 67.02,
+    "end": 67.42,
+    "duration": 0.4
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Is there anything else I can assist you with today?",
+    "start": 68.0,
     "end": 69.8,
-    "duration": 2.78
+    "duration": 1.8
   }
 ]

@@ -1,34 +1,35 @@
 [00:00:00] Agent: Helo? Hah, nak apa? Kuali khidmat pelanggan ni.
-[00:00:03] Customer: Selamat pagi. Saya nak tanya pasal barang saya dah dua minggu tak sampai.
+[00:00:03] Agent: Selamat pagi.
+[00:00:04] Customer: Saya nak tanya pasal barang saya dah dua minggu tak sampai.
 [00:00:08] Customer: Status tulis dah hantar.
 [00:00:09] Customer: Dah tu? Kalau status tulis dah hantar, maninya dah hantarlah. Takkan tu pun nak kenal aja.
 [00:00:15] Customer: Masalahnya, saya tak terima apa-apa pun. Barang tu mahal kuat. Boleh tak tolong semak?
-[00:00:20] Agent: Bagilah nombor tracking tu. Nak semak macam mana kalau nombor pun tak pagi? Aduh, hai.
+[00:00:20] Customer: Bagilah nombor tracking tu. Nak semak macam mana kalau nombor pun tak pagi? Aduh, hai.
 [00:00:24] Customer: Nombor dia TR-99988.
 [00:00:29] Customer: Awak ni tak boleh kecakap iluk-iluk sikit, saya pelanggan tau.
-[00:00:33] Agent: Saya tengah banyak kerja ni, cik. Bukan cik sorang je pelanggan saya.
+[00:00:33] Customer: Saya tengah banyak kerja ni, cik. Bukan cik sorang je pelanggan saya.
 [00:00:37] Customer: Okey, kejap. Saya tengok.
-[00:00:38] Agent: Ha ni sistem cakap Korea dah letak atas pagah rumah cik.
+[00:00:38] Customer: Ha ni sistem cakap Korea dah letak atas pagah rumah cik.
 [00:00:42] Customer: Pergilah cari kat luar ruh.
 [00:00:43] Customer: Saya dah cari satu rumah tak ada pun.
 [00:00:46] Customer: Tantar dia hantar salah rumah, kapa?
-[00:00:48] Agent: Analah saya tahu. Saya duduk pejabat. Bukan saya yang hantar barang tu.
+[00:00:48] Customer: Analah saya tahu. Saya duduk pejabat. Bukan saya yang hantar barang tu.
 [00:00:52] Customer: Pergi call Korea tu sendiri.
 [00:00:53] Customer: Kan ni platform tempat saya beli barang, kenapa pula saya yang kena call Korea,
 [00:00:57] Customer: awak lah yang kena uruskan?
-[00:00:59] Agent: Anjik, tanggung jawab kita orang sampai barang tu keluar gudang je,
+[00:00:59] Customer: Anjik, tanggung jawab kita orang sampai barang tu keluar gudang je,
 [00:01:03] Customer: lepas tu pandai-pandailah Korea.
 [00:01:05] Customer: Ini tak masuk akal.
 [00:01:06] Customer: Saya nak buat aduan pasal servis awak.
 [00:01:08] Customer: Bagi saya nama penuh awak sekarang.
-[00:01:10] Agent: Buatlah aduan.
+[00:01:10] Customer: Buatlah aduan.
 [00:01:11] Customer: Inak saya takut ke?
-[00:01:12] Agent: Nama saya Rizal.
+[00:01:12] Customer: Nama saya Rizal.
 [00:01:13] Agent: Ada apa-apa lagi nak marah-marah ni?
 [00:01:15] Customer: Kurang aja betul.
 [00:01:16] Customer: Saya nak cakap dengan pengurus awak.
 [00:01:18] Customer: Saya tak nak berusian dengan orang macam awak.
-[00:01:20] Agent: Pengurus tak ada.
-[00:01:21] Agent: dia sibuk nak tunggu tunggu lah tak nak tunggu letak je telefon tu
+[00:01:20] Customer: Pengurus tak ada.
+[00:01:21] Customer: dia sibuk nak tunggu tunggu lah tak nak tunggu letak je telefon tu
 [00:01:25] Customer: dia adak betul punya perhimatan pelanggan
 [00:01:27] Customer: iyalah iyalah bye
