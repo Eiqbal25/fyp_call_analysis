@@ -1,0 +1,19 @@
+segment_id,role,text,start,end
+1,Agent,Selamat pagi Bank Harapan dengan saya Amirul boleh saya bantu encik,0.0,4.5
+2,Customer,Aku nak tahu kenapa ada tolak duit dari akaun aku seratus ringgit korang ni pandai pandai je tolak duit orang,5.0,12.0
+3,Agent,Harap bersabar encik saya minta maaf atas kesulitan ini boleh saya dapatkan nombor kad pengenalan untuk semakan,12.5,19.5
+4,Customer,Nak nombor kad pengenalan buat apa check je la nama aku Johan aku dah call banyak kali takkan takde rekod,20.0,27.5
+5,Agent,Maaf encik Johan prosedur keselamatan bank memerlukan nombor kad pengenalan untuk kami buka profil encik,28.0,34.5
+6,Customer,Menyusahkan betul lapan sembilan kosong dua satu empat kosong satu lima lima tiga tiga cepat sikit,35.0,43.0
+7,Agent,Terima kasih encik Johan sebentar ya saya semak transaksi terakhir encik,43.5,48.0
+8,Customer,Jangan suruh aku tunggu lama lama aku ada banyak kerja lain nak buat bukan nak layan bank korang,48.5,55.0
+9,Agent,Baik encik saya nampak ada penolakan seratus ringgit untuk caj tahunan kad kredit encik,55.5,61.5
+10,Customer,Caj tahunan apa benda pula aku dah guna kad ni lima tahun tak pernah ada caj tahunan korang ni nak menipu ke,62.0,70.0
+11,Agent,Untuk makluman encik pengecualian caj tahunan hanya untuk tiga tahun pertama bermula tahun keempat caj akan dikenakan,70.5,78.5
+12,Customer,Otak kau siapa yang cakap macam tu masa aku apply dulu ejen korang cakap free seumur hidup,79.0,85.5
+13,Agent,Saya faham kekecewaan encik saya boleh bantu hantar permohonan untuk membatalkan caj tersebut,86.0,92.0
+14,Customer,Tak payah nak hantar permohonan sangat kau cancel je terus sekarang kalau tak aku tutup akaun hari ni jugak,92.5,100.0
+15,Agent,Encik proses pembatalan perlukan kelulusan pihak pengurusan saya tidak boleh buat terus dari sistem saya,100.5,108.0
+16,Customer,Habis tu kau buat apa kat situ angkat telefon je ke panggil bos kau sekarang aku nak bercakap dengan dia,108.5,116.0
+17,Agent,Baiklah encik saya akan sambungkan panggilan ini kepada pegawai atasan saya mohon tunggu sebentar,116.5,123.0
+18,Customer,Cepat sikit jangan nak melengah lengahkan masa aku,123.5,127.5

@@ -1,0 +1,145 @@
+=================================================================
+FYP1 LABEL COMPARISON REPORT — System vs Human Transcript
+=================================================================
+
+── bank_malay ────────────────────────────────────────
+  Matched segments : 18 / 42
+  Label accuracy   : 83.3%  (Correct=15 Wrong=3)
+  Precision        : 87.5%
+  Recall           : 77.8%
+  F1-Score         : 82.3%
+  Confusion        : TP=7 TN=8 FP=1 FN=2
+  Avg text sim     : 0.58
+  Text overrides   : 2 segment(s) corrected by strong phrase detection
+
+  Wrong labels (3):
+    [36.8s] System=Agent    Human=Customer | "Cepat sikit."
+    [39.4s] System=Customer Human=Agent    | "Sementara saya simak transaksi terakhir, Encik."
+    [72.5s] System=Customer Human=Agent    | "Saya faham ke keciwaan, Encik."
+
+  Text override corrections (2):
+    ✅ [83.8s] → Agent (phrase: 'proses pembatalan') | "Encik, proses pembatalan perlukan kelelu"
+    ✅ [95.7s] → Agent (phrase: 'saya akan sambungkan') | "Baiklah, Cik. Saya akan sambungkan pangg"
+
+── billing_english ───────────────────────────────────
+  Matched segments : 15 / 15
+  Label accuracy   : 60.0%  (Correct=9 Wrong=6)
+  Precision        : 71.4%
+  Recall           : 55.6%
+  F1-Score         : 62.5%
+  Confusion        : TP=5 TN=4 FP=2 FN=4
+  Avg text sim     : 0.61
+  Text overrides   : 7 segment(s) corrected by strong phrase detection
+
+  Wrong labels (6):
+    [0.0s] System=Customer Human=Agent    | "Yeah, what do you want? This is Billy. Hi, I am ca"
+    [10.7s] System=Customer Human=Agent    | "data limit. Happens all the time. But I have an un"
+    [15.8s] System=Agent    Human=Customer | "before calling. Obviously, you don't or you wouldn"
+    [20.4s] System=Customer Human=Agent    | "number or are we just going to guess? Wow, okay, t"
+    [32.9s] System=Customer Human=Agent    | "you bought three premium movies last week. That's "
+    [49.9s] System=Agent    Human=Customer | "the login locations? I'm not technical support. I "
+
+  Text override corrections (7):
+    ❌ [15.8s] → Agent (phrase: 'do you have your') | "before calling. Obviously, you don't or "
+    ✅ [25.5s] → Agent (phrase: 'pulling it up now') | "number is 554321. I'm not being rude. I'"
+    ✅ [38.6s] → Agent (phrase: 'somebody in your house') | "movies. I was out of town all of last we"
+    ❌ [49.9s] → Agent (phrase: 'i just handle billing') | "the login locations? I'm not technical s"
+    ✅ [60.8s] → Agent (phrase: 'my supervisor is going to tell you') | "now. Look, my supervisor is going to tel"
+    ✅ [72.3s] → Agent (phrase: 'hold on and do not hang up') | "Whatever. Hold on and do not hang up bec"
+    ✅ [77.6s] → Agent (phrase: 'putting you in the queue') | "transfer me already. Yeah. Putting you i"
+
+── delivery_malay ────────────────────────────────────
+  Matched segments : 16 / 34
+  Label accuracy   : 81.2%  (Correct=13 Wrong=3)
+  Precision        : 85.7%
+  Recall           : 75.0%
+  F1-Score         : 80.0%
+  Confusion        : TP=6 TN=7 FP=1 FN=2
+  Avg text sim     : 0.77
+  Text overrides   : 6 segment(s) corrected by strong phrase detection
+
+  Wrong labels (3):
+    [9.7s] System=Customer Human=Agent    | "Dah tu? Kalau status tulis dah hantar, maninya dah"
+    [81.5s] System=Agent    Human=Customer | "dia sibuk nak tunggu tunggu lah tak nak tunggu let"
+    [87.8s] System=Customer Human=Agent    | "iyalah iyalah bye"
+
+  Text override corrections (6):
+    ✅ [20.5s] → Agent (phrase: 'nombor tracking') | "Bagilah nombor tracking tu. Nak semak ma"
+    ✅ [33.3s] → Agent (phrase: 'saya tengah banyak kerja') | "Saya tengah banyak kerja ni, cik. Bukan "
+    ✅ [38.7s] → Agent (phrase: 'sistem cakap') | "Ha ni sistem cakap Korea dah letak atas "
+    ✅ [48.8s] → Agent (phrase: 'bukan saya yang hantar') | "Analah saya tahu. Saya duduk pejabat. Bu"
+    ✅ [59.7s] → Agent (phrase: 'keluar gudang') | "Anjik, tanggung jawab kita orang sampai "
+    ❌ [81.5s] → Agent (phrase: 'dia sibuk') | "dia sibuk nak tunggu tunggu lah tak nak "
+
+── food_malay ────────────────────────────────────────
+  Matched segments : 9 / 15
+  Label accuracy   : 66.7%  (Correct=6 Wrong=3)
+  Precision        : 75.0%
+  Recall           : 60.0%
+  F1-Score         : 66.7%
+  Confusion        : TP=3 TN=3 FP=1 FN=2
+  Avg text sim     : 0.75
+  Text overrides   : 1 segment(s) corrected by strong phrase detection
+
+  Wrong labels (3):
+    [40.0s] System=Customer Human=Agent    | "Encik nak saya pulangkan duit, refund untuk bahagi"
+    [52.9s] System=Agent    Human=Customer | "Baiklah. Saya akan uruskan proses bayaran balik se"
+    [56.6s] System=Customer Human=Agent    | "Proses ini akan mengambil masa dalam 24 jam untuk "
+
+  Text override corrections (1):
+    ✅ [46.1s] → Customer (phrase: 'saya nak refund') | "Kalau boleh, saya nak refund sahajalah. "
+
+── insurance_english ─────────────────────────────────
+  Matched segments : 10 / 16
+  Label accuracy   : 90.0%  (Correct=9 Wrong=1)
+  Precision        : 100.0%
+  Recall           : 83.3%
+  F1-Score         : 90.9%
+  Confusion        : TP=5 TN=4 FP=0 FN=1
+  Avg text sim     : 0.66
+  Text overrides   : 4 segment(s) corrected by strong phrase detection
+
+  Wrong labels (1):
+    [49.7s] System=Customer Human=Agent    | "my office and not at home? Not at all. We just nee"
+
+  Text override corrections (4):
+    ✅ [40.1s] → Agent (phrase: 'i can schedule') | "repair with a zero dollar deductible. I "
+    ✅ [44.6s] → Customer (phrase: 'that would be a huge relief') | "location this afternoon. Oh, that would "
+    ✅ [59.0s] → Customer (phrase: 'that works perfectly') | "That works perfectly for me. Thank you s"
+    ✅ [63.3s] → Agent (phrase: 'confirmation text') | "pleasure, Sarah. I'm processing that now"
+
+── internet_english ──────────────────────────────────
+  Matched segments : 20 / 22
+  Label accuracy   : 100.0%  (Correct=20 Wrong=0)
+  Precision        : 100.0%
+  Recall           : 100.0%
+  F1-Score         : 100.0%
+  Confusion        : TP=10 TN=10 FP=0 FN=0
+  Avg text sim     : 0.94
+  Text overrides   : 7 segment(s) corrected by strong phrase detection
+  ✅ All matched segments labelled correctly!
+
+  Text override corrections (7):
+    ✅ [37.4s] → Agent (phrase: 'give me one moment') | "Thank you. Give me one moment while I ru"
+    ✅ [41.5s] → Customer (phrase: 'your company is a complete joke') | "Whatever. Just fix it. Your company is a"
+    ✅ [45.3s] → Agent (phrase: 'line error in your area') | "I am seeing a line error in your area. O"
+    ✅ [51.9s] → Customer (phrase: 'i do not care about nodes') | "I do not care about nodes or line errors"
+    ✅ [85.2s] → Customer (phrase: 'do not put me on hold') | "Do not put me on hold. Hello? Hello? Do "
+    ✅ [96.4s] → Customer (phrase: 'canceling my service today') | "If you put me on hold, I'm canceling my "
+    ✅ [103.7s] → Customer (phrase: 'you guys are absolutely') | "You guys are absolutely useless."
+
+=================================================================
+OVERALL SUMMARY
+=================================================================
+Call ID                   Accuracy      F1  Correct  Wrong
+-----------------------------------------------------------------
+bank_malay                   83.3%   82.3%       15      3
+billing_english              60.0%   62.5%        9      6
+delivery_malay               81.2%   80.0%       13      3
+food_malay                   66.7%   66.7%        6      3
+insurance_english            90.0%   90.9%        9      1
+internet_english            100.0%  100.0%       20      0
+-----------------------------------------------------------------
+AVERAGE                      80.2%   80.4%
+
+⚠ Labelling accuracy 75–90% — review wrong segments above

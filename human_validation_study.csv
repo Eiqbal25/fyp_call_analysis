@@ -1,0 +1,74 @@
+call_id,ground_truth_role,text,start,end,human_qa_score
+food_malay,Agent,Selamat petang Pusat Bantuan Makan Sini saya Siti Boleh saya bantu encik,0.0,4.2,75
+food_malay,Customer,Hello Siti saya nak tanya pasal pesanan saya tadi Saya baru perasan ada barang yang tertinggal dalam plastik ni,4.5,10.5,75
+food_malay,Agent,Minta maaf atas kesulitan tersebut encik Boleh saya dapatkan nombor pesanan encik untuk saya buat semakan dalam sistem,11.0,17.0,75
+food_malay,Customer,Nombor dia M S lapan lapan dua satu Saya pesan set nasi lemak ayam berempah dengan air sirap tapi ayamnya tak ada,17.5,24.5,75
+food_malay,Agent,Saya faham perasaan encik saya pun akan kecewa kalau jadi macam ni Berdasarkan rekod pesanan encik memang sepatutnya ada ayam,25.0,31.5,75
+food_malay,Customer,Kalau boleh saya nak refund sajalah sebab saya dah lapar sangat ni kena beli makanan lain pula nanti,36.5,42.5,75
+food_malay,Agent,Baiklah saya akan uruskan proses bayaran balik serta merta Proses ini akan mengambil masa dalam dua puluh empat jam,43.0,50.0,75
+food_malay,Customer,Okaylah kalau macam tu Harap lepas ni pihak restoran lebih peka lah ya jangan cuai sangat bungkus makanan,50.5,56.5,75
+food_malay,Agent,Betul encik kami akan hantar maklum balas tegas kepada pihak restoran Ada apa apa lagi yang boleh saya bantu,57.0,63.0,75
+insurance_english,Agent,Thank you for calling Silver Lining Insurance My name is Marcus To whom do I have the pleasure of speaking today,0.0,6.5,82
+insurance_english,Customer,Hi Marcus this is Sarah Jenkins I am calling because a rock hit my windshield on the highway this morning,7.0,15.0,82
+insurance_english,Agent,I am sorry to hear that Sarah I am glad you are safe Do you have your policy number handy,15.5,24.0,82
+insurance_english,Customer,Yes just a second it is four four nine two zero Alpha I am really worried because I have a long road trip,25.0,33.5,82
+insurance_english,Agent,I understand the urgency Looking at your Premier Plan you are fully covered for glass repair with a zero dollar deductible,34.0,40.5,82
+insurance_english,Customer,Oh that would be a huge relief Does it matter that I am at my office and not at home,45.5,50.5,82
+insurance_english,Agent,Not at all We just need the vehicle location and a contact number Shall I proceed with the booking for the two PM slot,51.0,58.0,82
+insurance_english,Customer,Yes please That works perfectly for me Thank you so much for making this easy,58.5,62.5,82
+insurance_english,Agent,It is my pleasure Sarah I am processing that now You will receive a confirmation text shortly Is there anything else I can assist with,63.0,69.5,82
+billing_english,Agent,Yeah what do you want this is billing,0.0,4.0,15
+billing_english,Customer,Hi I am calling because my bill is twice as high this month and I do not understand why,4.5,10.0,15
+billing_english,Agent,Look it is probably because you went over your data limit happens all the time,10.5,15.0,15
+billing_english,Customer,But I have an unlimited data plan I checked my contract before calling,15.5,22.0,15
+billing_english,Agent,Obviously you do not or you would not be charged do you have your account number or are we just going to guess,22.5,28.5,15
+billing_english,Customer,Wow okay there is no need to be rude my account number is five five four three two one,29.0,36.0,15
+billing_english,Agent,I am not being rude I am just busy alright pulling it up now,36.5,42.0,15
+billing_english,Customer,I definitely did not buy any movies I was out of town all of last week,48.5,55.0,15
+billing_english,Agent,Well somebody in your house did the system does not lie so you have to pay it,55.5,62.0,15
+billing_english,Customer,I want to speak to your supervisor right now,75.5,82.0,15
+billing_english,Agent,Fine whatever hold on and do not hang up because I am not calling you back,95.5,102.0,15
+bank_malay,Agent,Selamat pagi Bank Harapan dengan saya Amirul boleh saya bantu encik,0.0,4.5,62
+bank_malay,Customer,Aku nak tahu kenapa ada tolak duit dari akaun aku seratus ringgit korang ni pandai pandai je tolak duit orang,5.0,12.0,62
+bank_malay,Agent,Harap bersabar encik saya minta maaf atas kesulitan ini boleh saya dapatkan nombor kad pengenalan untuk semakan,12.5,19.5,62
+bank_malay,Customer,Nak nombor kad pengenalan buat apa check je la nama aku Johan aku dah call banyak kali takkan takde rekod,20.0,27.5,62
+bank_malay,Agent,Maaf encik Johan prosedur keselamatan bank memerlukan nombor kad pengenalan untuk kami buka profil encik,28.0,34.5,62
+bank_malay,Customer,lapan sembilan kosong dua satu empat kosong satu lima lima tiga tiga,35.0,43.0,62
+bank_malay,Agent,Baik encik saya nampak ada penolakan seratus ringgit untuk caj tahunan kad kredit encik,55.5,61.5,62
+bank_malay,Customer,Caj tahunan apa benda pula aku dah guna kad ni lima tahun tak pernah ada caj tahunan korang ni nak menipu ke,62.0,70.0,62
+bank_malay,Agent,Saya faham kekecewaan encik saya boleh bantu hantar permohonan untuk membatalkan caj tersebut,86.0,92.0,62
+bank_malay,Customer,Tak payah nak hantar permohonan sangat kau cancel je terus sekarang kalau tak aku tutup akaun hari ni jugak,92.5,100.0,62
+bank_malay,Agent,Baiklah encik saya akan sambungkan panggilan ini kepada pegawai atasan saya mohon tunggu sebentar,116.5,123.0,62
+internet_english,Agent,Thank you for calling ConnectNet technical support my name is Alex how can I help you today,0.0,5.5,68
+internet_english,Customer,My internet is down again this is the third time this week and I am sick of it,6.0,11.0,68
+internet_english,Agent,I apologize for the inconvenience let me pull up your account can I get your account number,11.5,16.5,68
+internet_english,Customer,Are you kidding me I just typed it into the automated system why do I have to repeat it to you,17.0,23.5,68
+internet_english,Agent,I understand your frustration sometimes the system does not pass the information over I just need it to access your router,24.0,30.5,68
+internet_english,Customer,Fine it is nine eight seven six five four three hurry up I work from home and I am losing money,31.0,38.0,68
+internet_english,Agent,I am seeing a line error in your area our technicians are already working on a node nearby,48.0,55.0,68
+internet_english,Customer,I do not care about nodes I care about when I can get back online give me a time,55.5,62.5,68
+internet_english,Agent,The estimated time of resolution is within the next two hours,63.0,67.0,68
+internet_english,Customer,Two hours I have a meeting in twenty minutes this is unacceptable,67.5,74.0,68
+internet_english,Agent,I sincerely apologize we can offer you a credit for the days you experienced outages,74.5,81.5,68
+internet_english,Customer,Keep your stupid five dollar credit I want a manager right now,82.0,86.5,68
+internet_english,Agent,I can certainly transfer you to a supervisor please hold on the line,87.0,93.0,68
+internet_english,Customer,If you put me on hold I am canceling my service today I swear,105.0,110.0,68
+internet_english,Agent,I am transferring you now please stay on the line,110.5,114.0,68
+delivery_malay,Agent,Hello hah nak apa call khidmat pelanggan ni,0.0,4.5,8
+delivery_malay,Customer,Selamat pagi saya nak tanya pasal barang saya dah dua minggu tak sampai status tulis dah hantar,5.0,12.0,8
+delivery_malay,Agent,Dah tu kalau status tulis dah hantar maknanya dah hantar la takkan tu pun nak kena ajar,12.5,18.0,8
+delivery_malay,Customer,Masalahnya saya tak terima apa apa pun barang tu mahal kot boleh tak tolong semak,18.5,25.0,8
+delivery_malay,Agent,Bagilah nombor tracking tu nak semak macam mana kalau nombor pun tak bagi aduhai,25.5,31.0,8
+delivery_malay,Customer,Nombor dia T R sembilan sembilan lapan lapan awak ni tak boleh ke cakap elok elok sikit saya pelanggan tau,31.5,39.0,8
+delivery_malay,Agent,Saya tengah banyak kerja ni encik bukan encik sorang je pelanggan saya okey kejap saya tengok,39.5,45.0,8
+delivery_malay,Agent,Hah ni sistem cakap courier dah letak atas pagar rumah encik pergi la cari kat luar tu,45.5,52.0,8
+delivery_malay,Customer,Saya dah cari satu rumah tak ada pun entah entah dia hantar salah rumah ke apa,52.5,59.0,8
+delivery_malay,Agent,Mana lah saya tahu saya duduk pejabat bukan saya yang hantar barang tu pergi call courier tu sendiri,59.5,66.0,8
+delivery_malay,Customer,Kan ni platform tempat saya beli barang kenapa pula saya yang kena call courier awak lah yang kena uruskan,66.5,74.0,8
+delivery_malay,Agent,Eh encik tanggungjawab kitorang sampai barang tu keluar gudang je lepas tu pandai pandai la courier,74.5,81.0,8
+delivery_malay,Customer,Ini tak masuk akal saya nak buat aduan pasal servis awak bagi saya nama penuh awak sekarang,81.5,88.0,8
+delivery_malay,Agent,Buatlah aduan ingat saya takut ke nama saya Rizal ada apa apa lagi nak marah marah ni,88.5,95.0,8
+delivery_malay,Customer,Kurang ajar betul saya nak cakap dengan pengurus awak saya tak nak berurusan dengan orang macam awak,95.5,103.0,8
+delivery_malay,Agent,Pengurus tak ada dia sibuk nak tunggu tunggu lah tak nak tunggu letak je telefon tu,103.5,110.0,8
+delivery_malay,Customer,Biadap betul punya perkhidmatan pelanggan,110.5,116.0,8
+delivery_malay,Agent,Yelah yelah bye,116.5,120.0,8

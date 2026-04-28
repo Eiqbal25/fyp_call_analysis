@@ -1,0 +1,21 @@
+segment_id,role,text,start,end
+1,Agent,Thank you for calling ConnectNet technical support my name is Alex how can I help you today,0.0,5.5
+2,Customer,My internet is down again this is the third time this week and I am sick of it,6.0,11.0
+3,Agent,I apologize for the inconvenience let me pull up your account can I get your account number,11.5,16.5
+4,Customer,Are you kidding me I just typed it into the automated system why do I have to repeat it to you,17.0,23.5
+5,Agent,I understand your frustration sometimes the system does not pass the information over I just need it to access your router,24.0,30.5
+6,Customer,Fine it is nine eight seven six five four three hurry up I work from home and I am losing money,31.0,38.0
+7,Agent,Thank you give me one moment while I run a diagnostic on your connection,38.5,43.0
+8,Customer,Whatever just fix it your company is a complete joke,43.5,47.5
+9,Agent,I am seeing a line error in your area our technicians are actually already working on a node nearby,48.0,55.0
+10,Customer,I do not care about nodes or line errors I care about when I can get back online give me a time,55.5,62.5
+11,Agent,The estimated time of resolution is within the next two hours,63.0,67.0
+12,Customer,Two hours are you out of your mind I have a meeting in twenty minutes this is unacceptable,67.5,74.0
+13,Agent,I sincerely apologize for the disruption we can offer you a credit for the days you experienced outages,74.5,81.5
+14,Customer,Keep your stupid five dollar credit I want a manager right now,82.0,86.5
+15,Agent,I can certainly transfer you to a supervisor please hold on the line for a brief moment,87.0,93.0
+16,Customer,Do not put me on hold hello hello do not you dare put me on hold,93.5,98.0
+17,Agent,Sir I have to place you on a brief hold to connect the supervisor it will only be a minute,98.5,104.5
+18,Customer,If you put me on hold I am canceling my service today I swear,105.0,110.0
+19,Agent,I am transferring you now please stay on the line,110.5,114.0
+20,Customer,You guys are absolutely useless,114.5,118.0

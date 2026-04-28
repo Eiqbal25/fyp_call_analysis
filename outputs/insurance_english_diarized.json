@@ -1,0 +1,130 @@
+[
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Thank you for calling Silver Lining Insurance. My name is Marcus.",
+    "start": 0.0,
+    "end": 3.36,
+    "duration": 3.36
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "To whom do I have the pleasure of speaking today?",
+    "start": 3.72,
+    "end": 5.56,
+    "duration": 1.84
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Hi, Marcus. This is Sarah Jenkins. I'm calling because a rock hit my windshield",
+    "start": 6.06,
+    "end": 10.9,
+    "duration": 4.84
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "on the highway this morning, and now there's a massive crack.",
+    "start": 10.9,
+    "end": 14.38,
+    "duration": 3.48
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Sorry to hear that, Sarah. I'm glad you're safe.",
+    "start": 15.06,
+    "end": 17.44,
+    "duration": 2.38
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Do you have your policy number handy so I can pull up your glass coverage details?",
+    "start": 18.02,
+    "end": 21.5,
+    "duration": 3.48
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Yes, just a second. It's 44920 Alpha. I'm really worried because I have a long road",
+    "start": 21.5,
+    "end": 31.06,
+    "duration": 9.56
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "trip planned for tomorrow and I need this fixed immediately.",
+    "start": 31.06,
+    "end": 34.18,
+    "duration": 3.12
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I understand the urgency. Looking at your premier plan, you are fully covered for glass",
+    "start": 34.7,
+    "end": 40.14,
+    "duration": 5.44
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "repair with a zero dollar deductible. I can schedule a mobile technician to come to your",
+    "start": 40.14,
+    "end": 44.64,
+    "duration": 4.5
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "location this afternoon. Oh, that would be a huge relief. Does it matter that I'm at",
+    "start": 44.64,
+    "end": 49.68,
+    "duration": 5.04
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "my office and not at home? Not at all. We just need the vehicle's location and",
+    "start": 49.68,
+    "end": 54.1,
+    "duration": 4.42
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "the contact number. Shall I proceed with the booking for the 2PM slot? Yes, please.",
+    "start": 54.1,
+    "end": 58.68,
+    "duration": 4.58
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "That works perfectly for me. Thank you so much for making this easy. It's my",
+    "start": 58.98,
+    "end": 63.26,
+    "duration": 4.28
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "pleasure, Sarah. I'm processing that now. You'll receive a confirmation text",
+    "start": 63.26,
+    "end": 67.02,
+    "duration": 3.76
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "shortly. Is there anything else I can assist you with today?",
+    "start": 67.02,
+    "end": 69.8,
+    "duration": 2.78
+  }
+]

@@ -1,0 +1,100 @@
+2026-04-11 21:50:51,634 [INFO] train: ============================================================
+2026-04-11 21:50:51,634 [INFO] train: Method 2 — Acoustic DNN Training
+2026-04-11 21:50:51,638 [INFO] train: ============================================================
+2026-04-11 21:50:51,638 [INFO] train: Data dir    : c:\fyp1_fixed\data
+2026-04-11 21:50:51,638 [INFO] train: Epochs      : 50
+2026-04-11 21:50:51,638 [INFO] train: Augmentation: ON
+2026-04-11 21:50:51,638 [INFO] train: Sources     : human_transcripts/ + human_validation_study.csv
+2026-04-11 21:50:51,639 [INFO] train: 
+Step 1: Building training dataset...
+2026-04-11 21:50:51,639 [INFO] train: Building training dataset from all available sources...
+2026-04-11 21:50:52,576 [INFO] train: Processing human transcript: bank_malay
+2026-04-11 21:50:52,634 [INFO] preprocessing.audio_processor: === Preprocessing: bank_malay.wav ===
+2026-04-11 21:50:56,429 [INFO] preprocessing.audio_processor: Loaded 'bank_malay.wav' | sr=24000 Hz | duration=103.89s | samples=2493383
+2026-04-11 21:50:56,460 [INFO] preprocessing.audio_processor: Resampled 24000 Hz → 16000 Hz
+2026-04-11 21:50:56,466 [INFO] preprocessing.audio_processor: SNR before cleaning: 1.63 dB
+2026-04-11 21:50:57,399 [INFO] preprocessing.audio_processor: Noise reduction applied | noise_profile_samples=166225
+2026-04-11 21:50:57,409 [INFO] preprocessing.audio_processor: Amplitude normalized | max_amplitude=0.6875 → 1.0000
+2026-04-11 21:50:57,415 [INFO] preprocessing.audio_processor: SNR after cleaning:  5.15 dB | Improvement: +3.52 dB
+2026-04-11 21:50:57,417 [INFO] train: Loaded audio: bank_malay (103.9s)
+2026-04-11 21:50:57,671 [INFO] methods.method2_acoustic: Loading Resemblyzer VoiceEncoder (cached)...
+2026-04-11 21:50:58,038 [INFO] methods.method2_acoustic: VoiceEncoder ready.
+2026-04-11 21:51:03,957 [INFO] train: Processing human transcript: billing_english
+2026-04-11 21:51:04,017 [INFO] preprocessing.audio_processor: === Preprocessing: billing_english.wav ===
+2026-04-11 21:51:04,021 [INFO] preprocessing.audio_processor: Loaded 'billing_english.wav' | sr=24000 Hz | duration=82.73s | samples=1985543
+2026-04-11 21:51:04,045 [INFO] preprocessing.audio_processor: Resampled 24000 Hz → 16000 Hz
+2026-04-11 21:51:04,047 [INFO] preprocessing.audio_processor: SNR before cleaning: 0.97 dB
+2026-04-11 21:51:04,886 [INFO] preprocessing.audio_processor: Noise reduction applied | noise_profile_samples=132369
+2026-04-11 21:51:04,889 [INFO] preprocessing.audio_processor: Amplitude normalized | max_amplitude=0.7556 → 1.0000
+2026-04-11 21:51:04,901 [INFO] preprocessing.audio_processor: SNR after cleaning:  0.72 dB | Improvement: +-0.25 dB
+2026-04-11 21:51:04,903 [INFO] train: Loaded audio: billing_english (82.7s)
+2026-04-11 21:51:08,952 [INFO] train: Processing human transcript: delivery_malay
+2026-04-11 21:51:08,952 [INFO] preprocessing.audio_processor: === Preprocessing: delivery_malay.wav ===
+2026-04-11 21:51:08,968 [INFO] preprocessing.audio_processor: Loaded 'delivery_malay.wav' | sr=24000 Hz | duration=88.97s | samples=2135303
+2026-04-11 21:51:08,987 [INFO] preprocessing.audio_processor: Resampled 24000 Hz → 16000 Hz
+2026-04-11 21:51:08,990 [INFO] preprocessing.audio_processor: SNR before cleaning: 1.83 dB
+2026-04-11 21:51:09,738 [INFO] preprocessing.audio_processor: Noise reduction applied | noise_profile_samples=142353
+2026-04-11 21:51:09,738 [INFO] preprocessing.audio_processor: Amplitude normalized | max_amplitude=0.6599 → 1.0000
+2026-04-11 21:51:09,755 [INFO] preprocessing.audio_processor: SNR after cleaning:  4.71 dB | Improvement: +2.88 dB
+2026-04-11 21:51:09,755 [INFO] train: Loaded audio: delivery_malay (89.0s)
+2026-04-11 21:51:13,810 [INFO] train: Processing human transcript: food_malay
+2026-04-11 21:51:13,824 [INFO] preprocessing.audio_processor: === Preprocessing: food_malay.wav ===
+2026-04-11 21:51:13,834 [INFO] preprocessing.audio_processor: Loaded 'food_malay.wav' | sr=24000 Hz | duration=80.69s | samples=1936583
+2026-04-11 21:51:13,849 [INFO] preprocessing.audio_processor: Resampled 24000 Hz → 16000 Hz
+2026-04-11 21:51:13,853 [INFO] preprocessing.audio_processor: SNR before cleaning: 0.83 dB
+2026-04-11 21:51:14,575 [INFO] preprocessing.audio_processor: Noise reduction applied | noise_profile_samples=129105
+2026-04-11 21:51:14,575 [INFO] preprocessing.audio_processor: Amplitude normalized | max_amplitude=0.5453 → 1.0000
+2026-04-11 21:51:14,585 [INFO] preprocessing.audio_processor: SNR after cleaning:  2.77 dB | Improvement: +1.94 dB
+2026-04-11 21:51:14,585 [INFO] train: Loaded audio: food_malay (80.7s)
+2026-04-11 21:51:17,539 [INFO] train: Processing human transcript: insurance_english
+2026-04-11 21:51:17,539 [INFO] preprocessing.audio_processor: === Preprocessing: insurance_english.wav ===
+2026-04-11 21:51:17,546 [INFO] preprocessing.audio_processor: Loaded 'insurance_english.wav' | sr=24000 Hz | duration=70.13s | samples=1683143
+2026-04-11 21:51:17,563 [INFO] preprocessing.audio_processor: Resampled 24000 Hz → 16000 Hz
+2026-04-11 21:51:17,563 [INFO] preprocessing.audio_processor: SNR before cleaning: -0.37 dB
+2026-04-11 21:51:18,028 [INFO] preprocessing.audio_processor: Noise reduction applied | noise_profile_samples=112209
+2026-04-11 21:51:18,033 [INFO] preprocessing.audio_processor: Amplitude normalized | max_amplitude=0.6170 → 1.0000
+2026-04-11 21:51:18,037 [INFO] preprocessing.audio_processor: SNR after cleaning:  -1.13 dB | Improvement: +-0.76 dB
+2026-04-11 21:51:18,038 [INFO] train: Loaded audio: insurance_english (70.1s)
+2026-04-11 21:51:21,055 [INFO] train: Processing human transcript: internet_english
+2026-04-11 21:51:21,059 [INFO] preprocessing.audio_processor: === Preprocessing: internet_english.wav ===
+2026-04-11 21:51:21,072 [INFO] preprocessing.audio_processor: Loaded 'internet_english.wav' | sr=24000 Hz | duration=106.17s | samples=2548103
+2026-04-11 21:51:21,091 [INFO] preprocessing.audio_processor: Resampled 24000 Hz → 16000 Hz
+2026-04-11 21:51:21,095 [INFO] preprocessing.audio_processor: SNR before cleaning: -0.63 dB
+2026-04-11 21:51:21,730 [INFO] preprocessing.audio_processor: Noise reduction applied | noise_profile_samples=169873
+2026-04-11 21:51:21,738 [INFO] preprocessing.audio_processor: Amplitude normalized | max_amplitude=0.6171 → 1.0000
+2026-04-11 21:51:21,744 [INFO] preprocessing.audio_processor: SNR after cleaning:  2.23 dB | Improvement: +2.86 dB
+2026-04-11 21:51:21,744 [INFO] train: Loaded audio: internet_english (106.2s)
+2026-04-11 21:51:26,751 [INFO] train: Human transcripts → 474 samples (Agent=258 Customer=216)
+2026-04-11 21:51:46,464 [INFO] train: Validation CSV → 390 samples (Agent=204 Customer=186)
+2026-04-11 21:51:46,464 [INFO] train: =======================================================
+2026-04-11 21:51:46,464 [INFO] train: TOTAL DATASET: 864 samples
+2026-04-11 21:51:46,464 [INFO] train:   Agent    (label 0): 462
+2026-04-11 21:51:46,464 [INFO] train:   Customer (label 1): 402
+2026-04-11 21:51:46,464 [INFO] train:   Feature dimension : 298
+2026-04-11 21:51:46,464 [INFO] train:   Augmentation      : ON
+2026-04-11 21:51:46,464 [INFO] train: =======================================================
+2026-04-11 21:51:46,464 [INFO] train: 
+Step 2: Training the DNN...
+2026-04-11 21:51:46,477 [INFO] methods.method2_acoustic: Training acoustic DNN | samples=864 | features=298 | epochs=50
+2026-04-11 21:51:46,505 [INFO] methods.method2_acoustic: Scaler saved → c:\fyp1_fixed\models\scaler.npy
+2026-04-11 21:51:46,505 [INFO] methods.method2_acoustic: Dropout rate: 0.3 (normal)
+2026-04-11 21:51:46,541 [INFO] methods.method2_acoustic: Class weights — Agent: 0.936, Customer: 1.073
+2026-04-11 21:51:55,963 [INFO] methods.method2_acoustic: Epoch  20/50 | train_loss=0.0341 acc=98.8% | val_loss=0.1589 val_acc=94.8%
+2026-04-11 21:52:01,196 [INFO] methods.method2_acoustic: Epoch  40/50 | train_loss=0.0004 acc=100.0% | val_loss=0.2312 val_acc=96.0%
+2026-04-11 21:52:03,848 [INFO] methods.method2_acoustic: Model saved → c:\fyp1_fixed\models\acoustic_model.pth
+2026-04-11 21:52:03,848 [INFO] train: 
+Step 3: Saving training history plot...
+2026-04-11 21:52:04,240 [INFO] methods.method2_acoustic: Training history plot saved → c:\fyp1_fixed\outputs\m2_training_history.png
+2026-04-11 21:52:04,240 [INFO] train: 
+============================================================
+2026-04-11 21:52:04,240 [INFO] train: TRAINING COMPLETE
+2026-04-11 21:52:04,240 [INFO] train:   Final train accuracy : 99.9%
+2026-04-11 21:52:04,240 [INFO] train:   Final val accuracy   : 96.0%
+2026-04-11 21:52:04,240 [INFO] train:   Final train loss     : 0.00166
+2026-04-11 21:52:04,240 [INFO] train:   Model saved          : models/acoustic_model.pth
+2026-04-11 21:52:04,240 [INFO] train:   Scaler saved         : models/scaler.npy
+2026-04-11 21:52:04,240 [INFO] train:   Training plot        : outputs/m2_training_history.png
+2026-04-11 21:52:04,240 [INFO] train: ============================================================
+2026-04-11 21:52:04,240 [INFO] train: ✅ Model accuracy acceptable — ready to use in main.py
+2026-04-11 21:52:04,240 [INFO] train: 
+Next step: python main.py

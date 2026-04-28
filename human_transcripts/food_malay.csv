@@ -1,0 +1,11 @@
+segment_id,role,text,start,end
+1,Agent,Selamat petang Pusat Bantuan Makan Sini saya Siti Boleh saya bantu encik,0.0,4.2
+2,Customer,Hello Siti saya nak tanya pasal pesanan saya tadi Saya baru perasan ada barang yang tertinggal dalam plastik ni,4.5,10.5
+3,Agent,Minta maaf atas kesulitan tersebut encik Boleh saya dapatkan nombor pesanan encik untuk saya buat semakan dalam sistem,11.0,17.0
+4,Customer,Nombor dia M S lapan lapan dua satu Saya pesan set nasi lemak ayam berempah dengan air sirap tapi ayamnya tak ada Nasi dengan sambal je ada,17.5,24.5
+5,Agent,Saya faham perasaan encik saya pun akan kecewa kalau jadi macam ni Berdasarkan rekod pesanan encik memang sepatutnya ada ayam,25.0,31.5
+6,Agent,Encik nak saya pulangkan duit atau encik nak baucar untuk pesanan akan datang,32.0,36.0
+7,Customer,Kalau boleh saya nak refund sajalah sebab saya dah lapar sangat ni kena beli makanan lain pula nanti,36.5,42.5
+8,Agent,Baiklah saya akan uruskan proses bayaran balik serta merta Proses ini akan mengambil masa dalam dua puluh empat jam untuk masuk semula ke e wallet,43.0,50.0
+9,Customer,Okaylah kalau macam tu Harap lepas ni pihak restoran lebih peka lah ya jangan cuai sangat bungkus makanan,50.5,56.5
+10,Agent,Betul encik kami akan hantar maklum balas tegas kepada pihak restoran Ada apa apa lagi yang boleh saya bantu,57.0,63.0

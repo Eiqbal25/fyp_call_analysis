@@ -1,0 +1,19 @@
+segment_id,role,text,start,end
+1,Agent,Yeah what do you want this is billing,0.0,4.0
+2,Customer,Hi I am calling because my bill is twice as high this month and I do not understand why,4.5,10.0
+3,Agent,Look it is probably because you went over your data limit happens all the time,10.5,15.0
+4,Customer,But I have an unlimited data plan I checked my contract before calling,15.5,22.0
+5,Agent,Obviously you do not or you would not be charged do you have your account number or are we just going to guess,22.5,28.5
+6,Customer,Wow okay there is no need to be rude my account number is five five four three two one,29.0,36.0
+7,Agent,I am not being rude I am just busy alright pulling it up now,36.5,42.0
+8,Agent,Yeah like I said you bought three premium movies last week that is why the bill is high,42.5,48.0
+9,Customer,I definitely did not buy any movies I was out of town all of last week,48.5,55.0
+10,Agent,Well somebody in your house did the system does not lie so you have to pay it,55.5,62.0
+11,Customer,I live alone no one else has access to my account can you please check the login locations,62.5,69.0
+12,Agent,I am not technical support I just handle billing the charge is there so you owe the money,69.5,75.0
+13,Customer,I am not paying for something I did not buy I want to speak to your supervisor right now,75.5,82.0
+14,Agent,Look my supervisor is going to tell you the exact same thing it is a waste of time,82.5,88.0
+15,Customer,I do not care I want to speak to them this is the worst customer service I have ever experienced,88.5,95.0
+16,Agent,Fine whatever hold on and do not hang up because I am not calling you back,95.5,102.0
+17,Customer,Unbelievable just transfer me already,102.5,108.0
+18,Agent,Yeah yeah putting you in the queue you might be waiting a while though bye,108.5,116.0

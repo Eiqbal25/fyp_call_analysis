@@ -1,0 +1,11 @@
+segment_id,role,text,start,end
+1,Agent,Thank you for calling how may I assist you today,0.0,5.2
+2,Customer,I need help with my order,5.5,8.1
+3,Agent,Sure may I have your order number please,8.3,11.0
+4,Customer,Yes it is one two three four five,11.2,13.5
+5,Agent,Thank you please hold while I check,13.8,16.0
+6,Customer,Okay sure,16.2,17.0
+7,Agent,I can see your order it will arrive tomorrow,17.3,20.5
+8,Customer,Great thank you,20.7,22.0
+9,Agent,Is there anything else I can help you with,22.2,24.5
+10,Customer,No that is all thank you,24.7,26.0

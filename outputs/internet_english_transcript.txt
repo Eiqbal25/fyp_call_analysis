@@ -1,0 +1,22 @@
+[00:00:00] Agent: Thank you for calling ConnectNet Technical Support. My name is Alex. How can I help you today?
+[00:00:05] Customer: My internet is down again. This is the third time this week and I am sick of it.
+[00:00:10] Agent: I apologize for the inconvenience. Let me pull up your account. Can I get your account number?
+[00:00:15] Customer: Are you kidding me? I just typed it into the automated system. Why do I have to repeat it to you?
+[00:00:21] Agent: I understand your frustration. Sometimes the system does not pass the information over.
+[00:00:26] Customer: I just need it to access your router.
+[00:00:28] Customer: Fine. It is 987-6543. Hurry up! I work from home and I am losing money!
+[00:00:37] Agent: Thank you. Give me one moment while I run a diagnostic on your connection.
+[00:00:41] Customer: Whatever. Just fix it. Your company is a complete joke.
+[00:00:45] Agent: I am seeing a line error in your area. Our technicians are actually already working on a node nearby.
+[00:00:51] Customer: I do not care about nodes or line errors. I care about when I can get back online.
+[00:00:57] Customer: Give me a time.
+[00:00:59] Agent: The estimated time of resolution is within the next two hours.
+[00:01:03] Customer: Two hours? Are you out of your mind? I have a meeting in 20 minutes. This is unacceptable.
+[00:01:09] Agent: I sincerely apologize for the disruption. We can offer you a credit through the days you experienced outages.
+[00:01:15] Customer: Keep your stupid $5 credit. I want a manager right now.
+[00:01:20] Agent: I can certainly transfer you to the supervisor. Please hold on the line for a brief moment.
+[00:01:25] Customer: Do not put me on hold. Hello? Hello? Do not you dare put me on hold.
+[00:01:31] Agent: Sir, I have to place you on a brief hold to connect to the supervisor and will only be a minute.
+[00:01:36] Customer: If you put me on hold, I'm canceling my service today. I swear.
+[00:01:40] Agent: I'm transferring you now. Please stay on line.
+[00:01:43] Customer: You guys are absolutely useless.

@@ -1,0 +1,16 @@
+[00:00:00] Agent: Thank you for calling Silver Lining Insurance. My name is Marcus.
+[00:00:03] Agent: To whom do I have the pleasure of speaking today?
+[00:00:06] Customer: Hi, Marcus. This is Sarah Jenkins. I'm calling because a rock hit my windshield
+[00:00:10] Customer: on the highway this morning, and now there's a massive crack.
+[00:00:15] Agent: Sorry to hear that, Sarah. I'm glad you're safe.
+[00:00:18] Agent: Do you have your policy number handy so I can pull up your glass coverage details?
+[00:00:21] Customer: Yes, just a second. It's 44920 Alpha. I'm really worried because I have a long road
+[00:00:31] Customer: trip planned for tomorrow and I need this fixed immediately.
+[00:00:34] Agent: I understand the urgency. Looking at your premier plan, you are fully covered for glass
+[00:00:40] Agent: repair with a zero dollar deductible. I can schedule a mobile technician to come to your
+[00:00:44] Customer: location this afternoon. Oh, that would be a huge relief. Does it matter that I'm at
+[00:00:49] Customer: my office and not at home? Not at all. We just need the vehicle's location and
+[00:00:54] Agent: the contact number. Shall I proceed with the booking for the 2PM slot? Yes, please.
+[00:00:58] Customer: That works perfectly for me. Thank you so much for making this easy. It's my
+[00:01:03] Agent: pleasure, Sarah. I'm processing that now. You'll receive a confirmation text
+[00:01:07] Agent: shortly. Is there anything else I can assist you with today?

@@ -1,0 +1,930 @@
+2026-04-11 21:52:47,472 [INFO] main: ======================================================================
+2026-04-11 21:52:47,472 [INFO] main: FYP1 CALL ANALYSIS SYSTEM
+2026-04-11 21:52:47,472 [INFO] main: Speaker Role Detection & Segmented Analysis in Customer Service Calls
+2026-04-11 21:52:47,472 [INFO] main: ======================================================================
+2026-04-11 21:52:47,474 [INFO] main: Found 6 audio file(s) in 'c:\fyp1_fixed\data'
+2026-04-11 21:52:47,516 [INFO] main: 
+============================================================
+Processing: bank_malay
+============================================================
+2026-04-11 21:52:47,516 [INFO] main: Phase 1: Audio preprocessing...
+2026-04-11 21:52:47,516 [INFO] preprocessing.audio_processor: === Preprocessing: bank_malay.wav ===
+2026-04-11 21:52:50,006 [INFO] preprocessing.audio_processor: Loaded 'bank_malay.wav' | sr=24000 Hz | duration=103.89s | samples=2493383
+2026-04-11 21:52:50,029 [INFO] preprocessing.audio_processor: Resampled 24000 Hz → 16000 Hz
+2026-04-11 21:52:50,035 [INFO] preprocessing.audio_processor: SNR before cleaning: 1.63 dB
+2026-04-11 21:52:50,797 [INFO] preprocessing.audio_processor: Noise reduction applied | noise_profile_samples=166225
+2026-04-11 21:52:50,805 [INFO] preprocessing.audio_processor: Amplitude normalized | max_amplitude=0.6875 → 1.0000
+2026-04-11 21:52:50,811 [INFO] preprocessing.audio_processor: SNR after cleaning:  5.15 dB | Improvement: +3.52 dB
+2026-04-11 21:52:50,835 [INFO] preprocessing.audio_processor: Saved cleaned audio → c:\fyp1_fixed\outputs\bank_malay_cleaned.wav
+2026-04-11 21:52:52,258 [INFO] preprocessing.audio_processor: Waveform comparison saved → c:\fyp1_fixed\outputs\bank_malay_waveform.png
+2026-04-11 21:52:57,643 [INFO] preprocessing.audio_processor: Spectrogram comparison saved → c:\fyp1_fixed\outputs\bank_malay_spectrogram.png
+2026-04-11 21:52:57,649 [INFO] main: Phase 1: Transcription + Diarization...
+2026-04-11 21:52:57,649 [INFO] preprocessing.transcriber: --- Starting Transcription + Diarization pipeline ---
+2026-04-11 21:52:57,691 [INFO] preprocessing.transcriber: Loading Whisper 'small' on cuda (first load — cached for all subsequent calls)...
+2026-04-11 21:53:01,424 [INFO] preprocessing.transcriber: Whisper 'small' ready.
+2026-04-11 21:53:01,431 [INFO] preprocessing.transcriber: Transcribing | model=small | device=cuda | lang=auto-detect | beam=5
+2026-04-11 21:53:56,623 [INFO] preprocessing.transcriber: Transcription complete | segments=42 | language detected=ms
+2026-04-11 21:53:57,364 [INFO] preprocessing.transcriber: Initializing Resemblyzer VoiceEncoder...
+2026-04-11 21:53:59,641 [INFO] preprocessing.transcriber: Extracted 121 embeddings | shape=(121, 256)
+2026-04-11 21:53:59,677 [INFO] preprocessing.transcriber: Clustering complete | speakers found=2
+2026-04-11 21:53:59,677 [INFO] preprocessing.transcriber: Speaker segments after merging: 18
+2026-04-11 21:53:59,689 [INFO] preprocessing.transcriber: Aligned 42 transcript segments to speakers
+2026-04-11 21:53:59,692 [INFO] preprocessing.transcriber: Diarized transcript saved → c:\fyp1_fixed\outputs\bank_malay_diarized.json
+2026-04-11 21:53:59,724 [INFO] preprocessing.transcriber: WER=103.95% | S=80 D=2 I=102 | ref_len=177
+2026-04-11 21:53:59,724 [INFO] main: WER for bank_malay: 103.95%
+2026-04-11 21:53:59,724 [INFO] main: Phase 2: Method 1 — Lexical classification...
+2026-04-11 21:53:59,730 [INFO] methods.method1_lexical: Loaded 120 agent keywords, 85 customer keywords
+2026-04-11 21:53:59,733 [INFO] methods.method1_lexical: Method 1 classification complete | speaker_roles={1: 'Customer', 0: 'Customer'}
+2026-04-11 21:53:59,980 [INFO] methods.method1_lexical: Keyword density plot saved → c:\fyp1_fixed\outputs\bank_malay_m1_keywords.png
+2026-04-11 21:54:00,175 [INFO] methods.method1_lexical: Confidence distribution plot saved → c:\fyp1_fixed\outputs\bank_malay_m1_confidence.png
+2026-04-11 21:54:00,181 [INFO] main: Phase 2: Method 2 — Acoustic DNN classification...
+2026-04-11 21:54:00,226 [INFO] methods.method2_acoustic: Loaded trained acoustic model for inference.
+2026-04-11 21:54:00,269 [INFO] methods.method2_acoustic: Loading Resemblyzer VoiceEncoder (cached)...
+2026-04-11 21:54:00,298 [INFO] methods.method2_acoustic: VoiceEncoder ready.
+2026-04-11 21:54:07,014 [INFO] methods.method2_acoustic: Method 2 acoustic complete | roles={1: 'Customer', 0: 'Customer'}
+2026-04-11 21:54:07,014 [INFO] main: Phase 2: Method 3 — Hybrid Ensemble Fusion...
+2026-04-11 21:54:07,016 [INFO] methods.method3_hybrid: Speaker anchor scores: {0: 0.0, 1: 4.0}
+2026-04-11 21:54:07,016 [INFO] methods.method3_hybrid: Speaker anchor result: {0: 'Customer', 1: 'Agent'}
+2026-04-11 21:54:07,016 [INFO] methods.method3_hybrid: Dynamic weights | lex_conf=0.599 ac_conf=0.990 → α=0.377 β=0.623
+2026-04-11 21:54:07,016 [WARNING] methods.method3_hybrid: Global consistency violation: all speakers labelled 'Customer'. Overriding with anchor map: {0: 'Customer', 1: 'Agent'}
+2026-04-11 21:54:07,016 [INFO] methods.method3_hybrid: Global consistency enforced | final_roles={0: 'Customer', 1: 'Agent'}
+2026-04-11 21:54:07,016 [INFO] methods.method3_hybrid:   Text override [15.7s]: Customer → Agent  (phrase: 'boleh saya dapatkan')
+  Text: "boleh saya dapatkan nomor kat pengenalan untuk saya makan?"
+2026-04-11 21:54:07,016 [INFO] methods.method3_hybrid: Segment text override: 1 segment(s) corrected
+2026-04-11 21:54:07,016 [INFO] methods.method3_hybrid: Method 3 Hybrid complete | segments=42 | agreement_rate=100.0% | text_overrides=1 | α=0.377 β=0.623 | final_roles={1: 'Agent', 0: 'Customer'}
+2026-04-11 21:54:07,904 [INFO] methods.method3_hybrid: Ensemble scores plot saved → c:\fyp1_fixed\outputs\bank_malay_m3_ensemble.png
+2026-04-11 21:54:08,088 [INFO] methods.method3_hybrid: Method comparison chart saved → c:\fyp1_fixed\outputs\bank_malay_method_comparison.png
+2026-04-11 21:54:08,088 [INFO] main: Phase 3: Analytics...
+2026-04-11 21:54:08,111 [INFO] analytics.sentiment: Sentiment | Agent=-0.010 (Neutral) | Customer=+0.050 (Neutral) | Trend=Stable | Mismatch=False
+2026-04-11 21:54:08,111 [INFO] analytics.talk_ratio: Talk ratio: Agent=42.43% | Customer=39.79% | Silence=17.78% | Type=Balanced (Interactive)
+2026-04-11 21:54:08,112 [INFO] analytics.compliance: Compliance: score=0.00 (Non-Compliant) | risk=Clean | non_compliant=['Missing Greeting', 'Missing Closing', 'Missing Recorded Disclaimer', 'Missing Identity Verification']
+2026-04-11 21:54:08,112 [INFO] analytics.talk_ratio: QA Score: 59.28/100 (Fair)
+2026-04-11 21:54:08,342 [INFO] analytics.sentiment: Sentiment trajectory saved → c:\fyp1_fixed\outputs\bank_malay_sentiment.png
+2026-04-11 21:54:08,356 [INFO] main: ✓ bank_malay | QA=59.28/100 (Fair) | Compliance=0% | Risk=Clean
+2026-04-11 21:54:08,359 [INFO] main: 
+============================================================
+Processing: billing_english
+============================================================
+2026-04-11 21:54:08,359 [INFO] main: Phase 1: Audio preprocessing...
+2026-04-11 21:54:08,359 [INFO] preprocessing.audio_processor: === Preprocessing: billing_english.wav ===
+2026-04-11 21:54:08,373 [INFO] preprocessing.audio_processor: Loaded 'billing_english.wav' | sr=24000 Hz | duration=82.73s | samples=1985543
+2026-04-11 21:54:08,397 [INFO] preprocessing.audio_processor: Resampled 24000 Hz → 16000 Hz
+2026-04-11 21:54:08,401 [INFO] preprocessing.audio_processor: SNR before cleaning: 0.97 dB
+2026-04-11 21:54:09,179 [INFO] preprocessing.audio_processor: Noise reduction applied | noise_profile_samples=132369
+2026-04-11 21:54:09,188 [INFO] preprocessing.audio_processor: Amplitude normalized | max_amplitude=0.7556 → 1.0000
+2026-04-11 21:54:09,194 [INFO] preprocessing.audio_processor: SNR after cleaning:  0.72 dB | Improvement: +-0.25 dB
+2026-04-11 21:54:09,207 [INFO] preprocessing.audio_processor: Saved cleaned audio → c:\fyp1_fixed\outputs\billing_english_cleaned.wav
+2026-04-11 21:54:10,395 [INFO] preprocessing.audio_processor: Waveform comparison saved → c:\fyp1_fixed\outputs\billing_english_waveform.png
+2026-04-11 21:54:14,925 [INFO] preprocessing.audio_processor: Spectrogram comparison saved → c:\fyp1_fixed\outputs\billing_english_spectrogram.png
+2026-04-11 21:54:14,927 [INFO] main: Phase 1: Transcription + Diarization...
+2026-04-11 21:54:14,928 [INFO] preprocessing.transcriber: --- Starting Transcription + Diarization pipeline ---
+2026-04-11 21:54:14,928 [INFO] preprocessing.transcriber: Transcribing | model=small | device=cuda | lang=auto-detect | beam=5
+2026-04-11 21:54:49,296 [INFO] preprocessing.transcriber: Transcription complete | segments=15 | language detected=en
+2026-04-11 21:54:49,296 [INFO] preprocessing.transcriber: Initializing Resemblyzer VoiceEncoder...
+2026-04-11 21:54:50,852 [INFO] preprocessing.transcriber: Extracted 88 embeddings | shape=(88, 256)
+2026-04-11 21:54:50,862 [INFO] preprocessing.transcriber: Clustering complete | speakers found=2
+2026-04-11 21:54:50,862 [INFO] preprocessing.transcriber: Speaker segments after merging: 2
+2026-04-11 21:54:50,863 [INFO] preprocessing.transcriber: Aligned 15 transcript segments to speakers
+2026-04-11 21:54:50,866 [INFO] preprocessing.transcriber: Diarized transcript saved → c:\fyp1_fixed\outputs\billing_english_diarized.json
+2026-04-11 21:54:50,899 [INFO] preprocessing.transcriber: WER=96.45% | S=49 D=4 I=110 | ref_len=169
+2026-04-11 21:54:50,899 [INFO] main: WER for billing_english: 96.45%
+2026-04-11 21:54:50,899 [INFO] main: Phase 2: Method 1 — Lexical classification...
+2026-04-11 21:54:50,901 [INFO] methods.method1_lexical: Method 1 classification complete | speaker_roles={0: 'Customer'}
+2026-04-11 21:54:51,154 [INFO] methods.method1_lexical: Keyword density plot saved → c:\fyp1_fixed\outputs\billing_english_m1_keywords.png
+2026-04-11 21:54:51,346 [INFO] methods.method1_lexical: Confidence distribution plot saved → c:\fyp1_fixed\outputs\billing_english_m1_confidence.png
+2026-04-11 21:54:51,346 [INFO] main: Phase 2: Method 2 — Acoustic DNN classification...
+2026-04-11 21:54:55,841 [INFO] methods.method2_acoustic: Method 2 acoustic complete | roles={0: 'Customer'}
+2026-04-11 21:54:55,841 [INFO] main: Phase 2: Method 3 — Hybrid Ensemble Fusion...
+2026-04-11 21:54:55,841 [WARNING] methods.method3_hybrid: Only 1 speaker found — labelling as Agent by default
+2026-04-11 21:54:55,841 [INFO] methods.method3_hybrid: Dynamic weights | lex_conf=0.734 ac_conf=0.797 → α=0.480 β=0.520
+2026-04-11 21:54:55,855 [INFO] methods.method3_hybrid: Global consistency enforced | final_roles={0: 'Customer'}
+2026-04-11 21:54:55,855 [INFO] methods.method3_hybrid:   Text override [15.8s]: Customer → Agent  (phrase: 'do you have your')
+  Text: "before calling. obviously, you don't or you wouldn't be charged. do yo"
+2026-04-11 21:54:55,855 [INFO] methods.method3_hybrid: Segment text override: 1 segment(s) corrected
+2026-04-11 21:54:55,855 [INFO] methods.method3_hybrid: Method 3 Hybrid complete | segments=15 | agreement_rate=100.0% | text_overrides=1 | α=0.479 β=0.520 | final_roles={0: 'Customer'}
+2026-04-11 21:54:56,173 [INFO] methods.method3_hybrid: Ensemble scores plot saved → c:\fyp1_fixed\outputs\billing_english_m3_ensemble.png
+2026-04-11 21:54:56,312 [INFO] methods.method3_hybrid: Method comparison chart saved → c:\fyp1_fixed\outputs\billing_english_method_comparison.png
+2026-04-11 21:54:56,312 [INFO] main: Phase 3: Analytics...
+2026-04-11 21:54:56,318 [INFO] analytics.sentiment: Sentiment | Agent=+0.151 (Positive) | Customer=+0.049 (Neutral) | Trend=Declining | Mismatch=False
+2026-04-11 21:54:56,319 [INFO] analytics.talk_ratio: Talk ratio: Agent=5.54% | Customer=93.15% | Silence=1.32% | Type=Customer Venting
+2026-04-11 21:54:56,319 [INFO] analytics.compliance: Compliance: score=0.00 (Non-Compliant) | risk=Medium | non_compliant=['Missing Greeting', 'Missing Closing', 'Missing Recorded Disclaimer', 'Missing Identity Verification']
+2026-04-11 21:54:56,319 [INFO] analytics.talk_ratio: QA Score: 34.97/100 (Needs Improvement)
+2026-04-11 21:54:56,543 [INFO] analytics.sentiment: Sentiment trajectory saved → c:\fyp1_fixed\outputs\billing_english_sentiment.png
+2026-04-11 21:54:56,549 [INFO] main: ✓ billing_english | QA=34.97/100 (Needs Improvement) | Compliance=0% | Risk=Medium
+2026-04-11 21:54:56,549 [INFO] main: 
+============================================================
+Processing: delivery_malay
+============================================================
+2026-04-11 21:54:56,549 [INFO] main: Phase 1: Audio preprocessing...
+2026-04-11 21:54:56,549 [INFO] preprocessing.audio_processor: === Preprocessing: delivery_malay.wav ===
+2026-04-11 21:54:56,563 [INFO] preprocessing.audio_processor: Loaded 'delivery_malay.wav' | sr=24000 Hz | duration=88.97s | samples=2135303
+2026-04-11 21:54:56,583 [INFO] preprocessing.audio_processor: Resampled 24000 Hz → 16000 Hz
+2026-04-11 21:54:56,585 [INFO] preprocessing.audio_processor: SNR before cleaning: 1.83 dB
+2026-04-11 21:54:57,229 [INFO] preprocessing.audio_processor: Noise reduction applied | noise_profile_samples=142353
+2026-04-11 21:54:57,235 [INFO] preprocessing.audio_processor: Amplitude normalized | max_amplitude=0.6599 → 1.0000
+2026-04-11 21:54:57,240 [INFO] preprocessing.audio_processor: SNR after cleaning:  4.71 dB | Improvement: +2.88 dB
+2026-04-11 21:54:57,252 [INFO] preprocessing.audio_processor: Saved cleaned audio → c:\fyp1_fixed\outputs\delivery_malay_cleaned.wav
+2026-04-11 21:54:58,339 [INFO] preprocessing.audio_processor: Waveform comparison saved → c:\fyp1_fixed\outputs\delivery_malay_waveform.png
+2026-04-11 21:55:03,168 [INFO] preprocessing.audio_processor: Spectrogram comparison saved → c:\fyp1_fixed\outputs\delivery_malay_spectrogram.png
+2026-04-11 21:55:03,169 [INFO] main: Phase 1: Transcription + Diarization...
+2026-04-11 21:55:03,169 [INFO] preprocessing.transcriber: --- Starting Transcription + Diarization pipeline ---
+2026-04-11 21:55:03,169 [INFO] preprocessing.transcriber: Transcribing | model=small | device=cuda | lang=auto-detect | beam=5
+2026-04-11 21:55:47,483 [INFO] preprocessing.transcriber: Transcription complete | segments=34 | language detected=ms
+2026-04-11 21:55:47,486 [INFO] preprocessing.transcriber: Initializing Resemblyzer VoiceEncoder...
+2026-04-11 21:55:49,328 [INFO] preprocessing.transcriber: Extracted 108 embeddings | shape=(108, 256)
+2026-04-11 21:55:49,330 [INFO] preprocessing.transcriber: Clustering complete | speakers found=2
+2026-04-11 21:55:49,330 [INFO] preprocessing.transcriber: Speaker segments after merging: 2
+2026-04-11 21:55:49,330 [INFO] preprocessing.transcriber: Aligned 34 transcript segments to speakers
+2026-04-11 21:55:49,333 [INFO] preprocessing.transcriber: Diarized transcript saved → c:\fyp1_fixed\outputs\delivery_malay_diarized.json
+2026-04-11 21:55:49,378 [INFO] preprocessing.transcriber: WER=37.31% | S=80 D=17 I=3 | ref_len=268
+2026-04-11 21:55:49,378 [INFO] main: WER for delivery_malay: 37.31%
+2026-04-11 21:55:49,378 [INFO] main: Phase 2: Method 1 — Lexical classification...
+2026-04-11 21:55:49,378 [INFO] methods.method1_lexical: Method 1 classification complete | speaker_roles={1: 'Customer', 0: 'Customer'}
+2026-04-11 21:55:49,603 [INFO] methods.method1_lexical: Keyword density plot saved → c:\fyp1_fixed\outputs\delivery_malay_m1_keywords.png
+2026-04-11 21:55:49,775 [INFO] methods.method1_lexical: Confidence distribution plot saved → c:\fyp1_fixed\outputs\delivery_malay_m1_confidence.png
+2026-04-11 21:55:49,775 [INFO] main: Phase 2: Method 2 — Acoustic DNN classification...
+2026-04-11 21:55:59,833 [INFO] methods.method2_acoustic: Method 2 acoustic complete | roles={1: 'Agent', 0: 'Agent'}
+2026-04-11 21:55:59,833 [INFO] main: Phase 2: Method 3 — Hybrid Ensemble Fusion...
+2026-04-11 21:55:59,833 [INFO] methods.method3_hybrid: Speaker anchor scores: {0: -1.0, 1: 2.0}
+2026-04-11 21:55:59,833 [INFO] methods.method3_hybrid: Speaker anchor result: {0: 'Customer', 1: 'Agent'}
+2026-04-11 21:55:59,833 [INFO] methods.method3_hybrid: Dynamic weights | lex_conf=0.653 ac_conf=1.000 → α=0.395 β=0.605
+2026-04-11 21:55:59,833 [WARNING] methods.method3_hybrid: Global consistency violation: all speakers labelled 'Agent'. Overriding with anchor map: {0: 'Customer', 1: 'Agent'}
+2026-04-11 21:55:59,833 [INFO] methods.method3_hybrid: Global consistency enforced | final_roles={0: 'Customer', 1: 'Agent'}
+2026-04-11 21:55:59,833 [INFO] methods.method3_hybrid:   Text override [73.7s]: Customer → Agent  (phrase: 'ada apa-apa lagi')
+  Text: "ada apa-apa lagi nak marah-marah ni?"
+2026-04-11 21:55:59,833 [INFO] methods.method3_hybrid: Segment text override: 1 segment(s) corrected
+2026-04-11 21:55:59,836 [INFO] methods.method3_hybrid: Method 3 Hybrid complete | segments=34 | agreement_rate=0.0% | text_overrides=1 | α=0.395 β=0.605 | final_roles={1: 'Agent', 0: 'Customer'}
+2026-04-11 21:56:00,301 [INFO] methods.method3_hybrid: Ensemble scores plot saved → c:\fyp1_fixed\outputs\delivery_malay_m3_ensemble.png
+2026-04-11 21:56:00,443 [INFO] methods.method3_hybrid: Method comparison chart saved → c:\fyp1_fixed\outputs\delivery_malay_method_comparison.png
+2026-04-11 21:56:00,443 [INFO] main: Phase 3: Analytics...
+2026-04-11 21:56:00,443 [INFO] analytics.sentiment: Sentiment | Agent=+0.000 (Neutral) | Customer=+0.011 (Neutral) | Trend=Stable | Mismatch=False
+2026-04-11 21:56:00,443 [INFO] analytics.talk_ratio: Talk ratio: Agent=4.72% | Customer=82.21% | Silence=13.07% | Type=Customer Venting
+2026-04-11 21:56:00,456 [INFO] analytics.compliance: Compliance: score=0.00 (Non-Compliant) | risk=Clean | non_compliant=['Missing Greeting', 'Missing Closing', 'Missing Recorded Disclaimer', 'Missing Identity Verification']
+2026-04-11 21:56:00,456 [INFO] analytics.talk_ratio: QA Score: 39.99/100 (Needs Improvement)
+2026-04-11 21:56:00,669 [INFO] analytics.sentiment: Sentiment trajectory saved → c:\fyp1_fixed\outputs\delivery_malay_sentiment.png
+2026-04-11 21:56:00,669 [INFO] main: ✓ delivery_malay | QA=39.99/100 (Needs Improvement) | Compliance=0% | Risk=Clean
+2026-04-11 21:56:00,669 [INFO] main: 
+============================================================
+Processing: food_malay
+============================================================
+2026-04-11 21:56:00,669 [INFO] main: Phase 1: Audio preprocessing...
+2026-04-11 21:56:00,669 [INFO] preprocessing.audio_processor: === Preprocessing: food_malay.wav ===
+2026-04-11 21:56:00,684 [INFO] preprocessing.audio_processor: Loaded 'food_malay.wav' | sr=24000 Hz | duration=80.69s | samples=1936583
+2026-04-11 21:56:00,702 [INFO] preprocessing.audio_processor: Resampled 24000 Hz → 16000 Hz
+2026-04-11 21:56:00,702 [INFO] preprocessing.audio_processor: SNR before cleaning: 0.83 dB
+2026-04-11 21:56:01,409 [INFO] preprocessing.audio_processor: Noise reduction applied | noise_profile_samples=129105
+2026-04-11 21:56:01,415 [INFO] preprocessing.audio_processor: Amplitude normalized | max_amplitude=0.5453 → 1.0000
+2026-04-11 21:56:01,422 [INFO] preprocessing.audio_processor: SNR after cleaning:  2.77 dB | Improvement: +1.94 dB
+2026-04-11 21:56:01,434 [INFO] preprocessing.audio_processor: Saved cleaned audio → c:\fyp1_fixed\outputs\food_malay_cleaned.wav
+2026-04-11 21:56:02,561 [INFO] preprocessing.audio_processor: Waveform comparison saved → c:\fyp1_fixed\outputs\food_malay_waveform.png
+2026-04-11 21:56:07,069 [INFO] preprocessing.audio_processor: Spectrogram comparison saved → c:\fyp1_fixed\outputs\food_malay_spectrogram.png
+2026-04-11 21:56:07,069 [INFO] main: Phase 1: Transcription + Diarization...
+2026-04-11 21:56:07,069 [INFO] preprocessing.transcriber: --- Starting Transcription + Diarization pipeline ---
+2026-04-11 21:56:07,069 [INFO] preprocessing.transcriber: Transcribing | model=small | device=cuda | lang=auto-detect | beam=5
+2026-04-11 21:56:44,359 [INFO] preprocessing.transcriber: Transcription complete | segments=15 | language detected=ms
+2026-04-11 21:56:44,361 [INFO] preprocessing.transcriber: Initializing Resemblyzer VoiceEncoder...
+2026-04-11 21:56:46,117 [INFO] preprocessing.transcriber: Extracted 95 embeddings | shape=(95, 256)
+2026-04-11 21:56:46,117 [INFO] preprocessing.transcriber: Clustering complete | speakers found=2
+2026-04-11 21:56:46,117 [INFO] preprocessing.transcriber: Speaker segments after merging: 11
+2026-04-11 21:56:46,117 [INFO] preprocessing.transcriber: Aligned 15 transcript segments to speakers
+2026-04-11 21:56:46,137 [INFO] preprocessing.transcriber: Diarized transcript saved → c:\fyp1_fixed\outputs\food_malay_diarized.json
+2026-04-11 21:56:46,163 [INFO] preprocessing.transcriber: WER=58.18% | S=41 D=6 I=49 | ref_len=165
+2026-04-11 21:56:46,163 [INFO] main: WER for food_malay: 58.18%
+2026-04-11 21:56:46,163 [INFO] main: Phase 2: Method 1 — Lexical classification...
+2026-04-11 21:56:46,165 [INFO] methods.method1_lexical: Method 1 classification complete | speaker_roles={1: 'Agent', 0: 'Customer'}
+2026-04-11 21:56:48,646 [INFO] methods.method1_lexical: Keyword density plot saved → c:\fyp1_fixed\outputs\food_malay_m1_keywords.png
+2026-04-11 21:56:48,830 [INFO] methods.method1_lexical: Confidence distribution plot saved → c:\fyp1_fixed\outputs\food_malay_m1_confidence.png
+2026-04-11 21:56:48,834 [INFO] main: Phase 2: Method 2 — Acoustic DNN classification...
+2026-04-11 21:56:51,299 [INFO] methods.method2_acoustic: Method 2 acoustic complete | roles={1: 'Customer', 0: 'Customer'}
+2026-04-11 21:56:51,299 [INFO] main: Phase 2: Method 3 — Hybrid Ensemble Fusion...
+2026-04-11 21:56:51,299 [INFO] methods.method3_hybrid: Speaker anchor scores: {0: -3.0, 1: 2.5}
+2026-04-11 21:56:51,299 [INFO] methods.method3_hybrid: Speaker anchor result: {0: 'Customer', 1: 'Agent'}
+2026-04-11 21:56:51,299 [INFO] methods.method3_hybrid: Dynamic weights | lex_conf=0.880 ac_conf=0.925 → α=0.487 β=0.513
+2026-04-11 21:56:51,299 [WARNING] methods.method3_hybrid: Global consistency violation: all speakers labelled 'Customer'. Overriding with anchor map: {0: 'Customer', 1: 'Agent'}
+2026-04-11 21:56:51,299 [INFO] methods.method3_hybrid: Global consistency enforced | final_roles={0: 'Customer', 1: 'Agent'}
+2026-04-11 21:56:51,299 [INFO] methods.method3_hybrid:   Text override [46.1s]: Agent → Customer  (phrase: 'saya nak refund')
+  Text: "kalau boleh, saya nak refund sahajalah. sebab saya dah lapar sangat ni"
+2026-04-11 21:56:51,299 [INFO] methods.method3_hybrid:   Text override [61.8s]: Agent → Customer  (phrase: 'harap lepas ni pihak')
+  Text: "okeylah. kalau macam tu, harap lepas ni pihak restoran lebih peka lah "
+2026-04-11 21:56:51,303 [INFO] methods.method3_hybrid:   Text override [68.4s]: Customer → Agent  (phrase: 'kami akan')
+  Text: "betul ncik. kami akan hantar maklum balas tegas kepada pihak restoran "
+2026-04-11 21:56:51,303 [INFO] methods.method3_hybrid:   Text override [73.1s]: Customer → Agent  (phrase: 'ada apa-apa lagi')
+  Text: "ada apa-apa lagi yang boleh saya bantu?"
+2026-04-11 21:56:51,303 [INFO] methods.method3_hybrid: Segment text override: 4 segment(s) corrected
+2026-04-11 21:56:51,303 [INFO] methods.method3_hybrid: Method 3 Hybrid complete | segments=15 | agreement_rate=60.0% | text_overrides=4 | α=0.487 β=0.512 | final_roles={0: 'Customer', 1: 'Customer'}
+2026-04-11 21:56:51,612 [INFO] methods.method3_hybrid: Ensemble scores plot saved → c:\fyp1_fixed\outputs\food_malay_m3_ensemble.png
+2026-04-11 21:56:51,762 [INFO] methods.method3_hybrid: Method comparison chart saved → c:\fyp1_fixed\outputs\food_malay_method_comparison.png
+2026-04-11 21:56:51,762 [INFO] main: Phase 3: Analytics...
+2026-04-11 21:56:51,766 [INFO] analytics.sentiment: Sentiment | Agent=+0.000 (Neutral) | Customer=+0.000 (Neutral) | Trend=Stable | Mismatch=False
+2026-04-11 21:56:51,766 [INFO] analytics.talk_ratio: Talk ratio: Agent=34.38% | Customer=57.88% | Silence=7.75% | Type=Balanced (Interactive)
+2026-04-11 21:56:51,766 [INFO] analytics.compliance: Compliance: score=0.00 (Non-Compliant) | risk=Medium | non_compliant=['Missing Greeting', 'Missing Closing', 'Missing Recorded Disclaimer', 'Missing Identity Verification']
+2026-04-11 21:56:51,766 [INFO] analytics.talk_ratio: QA Score: 54.69/100 (Needs Improvement)
+2026-04-11 21:56:51,977 [INFO] analytics.sentiment: Sentiment trajectory saved → c:\fyp1_fixed\outputs\food_malay_sentiment.png
+2026-04-11 21:56:51,992 [INFO] main: ✓ food_malay | QA=54.69/100 (Needs Improvement) | Compliance=0% | Risk=Medium
+2026-04-11 21:56:51,992 [INFO] main: 
+============================================================
+Processing: insurance_english
+============================================================
+2026-04-11 21:56:51,994 [INFO] main: Phase 1: Audio preprocessing...
+2026-04-11 21:56:51,994 [INFO] preprocessing.audio_processor: === Preprocessing: insurance_english.wav ===
+2026-04-11 21:56:51,994 [INFO] preprocessing.audio_processor: Loaded 'insurance_english.wav' | sr=24000 Hz | duration=70.13s | samples=1683143
+2026-04-11 21:56:52,009 [INFO] preprocessing.audio_processor: Resampled 24000 Hz → 16000 Hz
+2026-04-11 21:56:52,009 [INFO] preprocessing.audio_processor: SNR before cleaning: -0.37 dB
+2026-04-11 21:56:52,460 [INFO] preprocessing.audio_processor: Noise reduction applied | noise_profile_samples=112209
+2026-04-11 21:56:52,460 [INFO] preprocessing.audio_processor: Amplitude normalized | max_amplitude=0.6170 → 1.0000
+2026-04-11 21:56:52,469 [INFO] preprocessing.audio_processor: SNR after cleaning:  -1.13 dB | Improvement: +-0.76 dB
+2026-04-11 21:56:52,474 [INFO] preprocessing.audio_processor: Saved cleaned audio → c:\fyp1_fixed\outputs\insurance_english_cleaned.wav
+2026-04-11 21:56:53,453 [INFO] preprocessing.audio_processor: Waveform comparison saved → c:\fyp1_fixed\outputs\insurance_english_waveform.png
+2026-04-11 21:56:57,131 [INFO] preprocessing.audio_processor: Spectrogram comparison saved → c:\fyp1_fixed\outputs\insurance_english_spectrogram.png
+2026-04-11 21:56:57,136 [INFO] main: Phase 1: Transcription + Diarization...
+2026-04-11 21:56:57,136 [INFO] preprocessing.transcriber: --- Starting Transcription + Diarization pipeline ---
+2026-04-11 21:56:57,136 [INFO] preprocessing.transcriber: Transcribing | model=small | device=cuda | lang=auto-detect | beam=5
+2026-04-11 21:57:24,305 [INFO] preprocessing.transcriber: Transcription complete | segments=16 | language detected=en
+2026-04-11 21:57:24,305 [INFO] preprocessing.transcriber: Initializing Resemblyzer VoiceEncoder...
+2026-04-11 21:57:25,606 [INFO] preprocessing.transcriber: Extracted 78 embeddings | shape=(78, 256)
+2026-04-11 21:57:25,606 [INFO] preprocessing.transcriber: Clustering complete | speakers found=2
+2026-04-11 21:57:25,606 [INFO] preprocessing.transcriber: Speaker segments after merging: 9
+2026-04-11 21:57:25,606 [INFO] preprocessing.transcriber: Aligned 16 transcript segments to speakers
+2026-04-11 21:57:25,606 [INFO] preprocessing.transcriber: Diarized transcript saved → c:\fyp1_fixed\outputs\insurance_english_diarized.json
+2026-04-11 21:57:25,642 [INFO] preprocessing.transcriber: WER=48.68% | S=53 D=8 I=31 | ref_len=189
+2026-04-11 21:57:25,642 [INFO] main: WER for insurance_english: 48.68%
+2026-04-11 21:57:25,642 [INFO] main: Phase 2: Method 1 — Lexical classification...
+2026-04-11 21:57:25,647 [INFO] methods.method1_lexical: Method 1 classification complete | speaker_roles={1: 'Agent', 0: 'Agent'}
+2026-04-11 21:57:25,959 [INFO] methods.method1_lexical: Keyword density plot saved → c:\fyp1_fixed\outputs\insurance_english_m1_keywords.png
+2026-04-11 21:57:26,131 [INFO] methods.method1_lexical: Confidence distribution plot saved → c:\fyp1_fixed\outputs\insurance_english_m1_confidence.png
+2026-04-11 21:57:26,131 [INFO] main: Phase 2: Method 2 — Acoustic DNN classification...
+2026-04-11 21:57:28,086 [INFO] methods.method2_acoustic: Method 2 acoustic complete | roles={1: 'Agent', 0: 'Agent'}
+2026-04-11 21:57:28,086 [INFO] main: Phase 2: Method 3 — Hybrid Ensemble Fusion...
+2026-04-11 21:57:28,086 [INFO] methods.method3_hybrid: Speaker anchor scores: {0: 2.0, 1: 8.0}
+2026-04-11 21:57:28,086 [INFO] methods.method3_hybrid: Speaker anchor result: {0: 'Customer', 1: 'Agent'}
+2026-04-11 21:57:28,086 [INFO] methods.method3_hybrid: Dynamic weights | lex_conf=0.803 ac_conf=0.881 → α=0.477 β=0.523
+2026-04-11 21:57:28,086 [WARNING] methods.method3_hybrid: Global consistency violation: all speakers labelled 'Agent'. Overriding with anchor map: {0: 'Customer', 1: 'Agent'}
+2026-04-11 21:57:28,086 [INFO] methods.method3_hybrid: Global consistency enforced | final_roles={0: 'Customer', 1: 'Agent'}
+2026-04-11 21:57:28,088 [INFO] methods.method3_hybrid:   Text override [18.0s]: Customer → Agent  (phrase: 'do you have your')
+  Text: "do you have your policy number handy so i can pull up your glass cover"
+2026-04-11 21:57:28,088 [INFO] methods.method3_hybrid:   Text override [31.1s]: Agent → Customer  (phrase: 'i need this fixed')
+  Text: "trip planned for tomorrow and i need this fixed immediately."
+2026-04-11 21:57:28,088 [INFO] methods.method3_hybrid:   Text override [40.1s]: Customer → Agent  (phrase: 'i can schedule')
+  Text: "repair with a zero dollar deductible. i can schedule a mobile technici"
+2026-04-11 21:57:28,088 [INFO] methods.method3_hybrid:   Text override [44.6s]: Agent → Customer  (phrase: 'that would be a huge relief')
+  Text: "location this afternoon. oh, that would be a huge relief. does it matt"
+2026-04-11 21:57:28,088 [INFO] methods.method3_hybrid:   Text override [59.0s]: Agent → Customer  (phrase: 'that works perfectly')
+  Text: "that works perfectly for me. thank you so much for making this easy. i"
+2026-04-11 21:57:28,088 [INFO] methods.method3_hybrid:   Text override [63.3s]: Customer → Agent  (phrase: 'confirmation text')
+  Text: "pleasure, sarah. i'm processing that now. you'll receive a confirmatio"
+2026-04-11 21:57:28,088 [INFO] methods.method3_hybrid:   Text override [67.0s]: Customer → Agent  (phrase: 'is there anything else')
+  Text: "shortly. is there anything else i can assist you with today?"
+2026-04-11 21:57:28,088 [INFO] methods.method3_hybrid: Segment text override: 7 segment(s) corrected
+2026-04-11 21:57:28,088 [INFO] methods.method3_hybrid: Method 3 Hybrid complete | segments=16 | agreement_rate=100.0% | text_overrides=7 | α=0.477 β=0.523 | final_roles={1: 'Customer', 0: 'Agent'}
+2026-04-11 21:57:28,406 [INFO] methods.method3_hybrid: Ensemble scores plot saved → c:\fyp1_fixed\outputs\insurance_english_m3_ensemble.png
+2026-04-11 21:57:28,565 [INFO] methods.method3_hybrid: Method comparison chart saved → c:\fyp1_fixed\outputs\insurance_english_method_comparison.png
+2026-04-11 21:57:28,566 [INFO] main: Phase 3: Analytics...
+2026-04-11 21:57:28,568 [INFO] analytics.sentiment: Sentiment | Agent=+0.324 (Positive) | Customer=+0.229 (Positive) | Trend=Improving | Mismatch=False
+2026-04-11 21:57:28,569 [INFO] analytics.talk_ratio: Talk ratio: Agent=45.8% | Customer=49.54% | Silence=4.66% | Type=Balanced (Interactive)
+2026-04-11 21:57:28,569 [INFO] analytics.compliance: Compliance: score=0.50 (Partially Compliant) | risk=Clean | non_compliant=['Missing Recorded Disclaimer', 'Missing Identity Verification']
+2026-04-11 21:57:28,569 [INFO] analytics.talk_ratio: QA Score: 72.65/100 (Fair)
+2026-04-11 21:57:28,784 [INFO] analytics.sentiment: Sentiment trajectory saved → c:\fyp1_fixed\outputs\insurance_english_sentiment.png
+2026-04-11 21:57:28,798 [INFO] main: ✓ insurance_english | QA=72.65/100 (Fair) | Compliance=50% | Risk=Clean
+2026-04-11 21:57:28,800 [INFO] main: 
+============================================================
+Processing: internet_english
+============================================================
+2026-04-11 21:57:28,800 [INFO] main: Phase 1: Audio preprocessing...
+2026-04-11 21:57:28,800 [INFO] preprocessing.audio_processor: === Preprocessing: internet_english.wav ===
+2026-04-11 21:57:28,809 [INFO] preprocessing.audio_processor: Loaded 'internet_english.wav' | sr=24000 Hz | duration=106.17s | samples=2548103
+2026-04-11 21:57:28,834 [INFO] preprocessing.audio_processor: Resampled 24000 Hz → 16000 Hz
+2026-04-11 21:57:28,837 [INFO] preprocessing.audio_processor: SNR before cleaning: -0.63 dB
+2026-04-11 21:57:29,548 [INFO] preprocessing.audio_processor: Noise reduction applied | noise_profile_samples=169873
+2026-04-11 21:57:29,559 [INFO] preprocessing.audio_processor: Amplitude normalized | max_amplitude=0.6171 → 1.0000
+2026-04-11 21:57:29,565 [INFO] preprocessing.audio_processor: SNR after cleaning:  2.23 dB | Improvement: +2.86 dB
+2026-04-11 21:57:29,582 [INFO] preprocessing.audio_processor: Saved cleaned audio → c:\fyp1_fixed\outputs\internet_english_cleaned.wav
+2026-04-11 21:57:30,784 [INFO] preprocessing.audio_processor: Waveform comparison saved → c:\fyp1_fixed\outputs\internet_english_waveform.png
+2026-04-11 21:57:36,389 [INFO] preprocessing.audio_processor: Spectrogram comparison saved → c:\fyp1_fixed\outputs\internet_english_spectrogram.png
+2026-04-11 21:57:36,392 [INFO] main: Phase 1: Transcription + Diarization...
+2026-04-11 21:57:36,392 [INFO] preprocessing.transcriber: --- Starting Transcription + Diarization pipeline ---
+2026-04-11 21:57:36,392 [INFO] preprocessing.transcriber: Transcribing | model=small | device=cuda | lang=auto-detect | beam=5
+2026-04-11 21:58:13,237 [INFO] preprocessing.transcriber: Transcription complete | segments=22 | language detected=en
+2026-04-11 21:58:13,239 [INFO] preprocessing.transcriber: Initializing Resemblyzer VoiceEncoder...
+2026-04-11 21:58:15,426 [INFO] preprocessing.transcriber: Extracted 118 embeddings | shape=(118, 256)
+2026-04-11 21:58:15,437 [INFO] preprocessing.transcriber: Clustering complete | speakers found=2
+2026-04-11 21:58:15,439 [INFO] preprocessing.transcriber: Speaker segments after merging: 19
+2026-04-11 21:58:15,440 [INFO] preprocessing.transcriber: Aligned 22 transcript segments to speakers
+2026-04-11 21:58:15,445 [INFO] preprocessing.transcriber: Diarized transcript saved → c:\fyp1_fixed\outputs\internet_english_diarized.json
+2026-04-11 21:58:15,499 [INFO] preprocessing.transcriber: WER=55.23% | S=43 D=8 I=81 | ref_len=239
+2026-04-11 21:58:15,499 [INFO] main: WER for internet_english: 55.23%
+2026-04-11 21:58:15,499 [INFO] main: Phase 2: Method 1 — Lexical classification...
+2026-04-11 21:58:15,501 [INFO] methods.method1_lexical: Method 1 classification complete | speaker_roles={0: 'Agent', 1: 'Customer'}
+2026-04-11 21:58:15,787 [INFO] methods.method1_lexical: Keyword density plot saved → c:\fyp1_fixed\outputs\internet_english_m1_keywords.png
+2026-04-11 21:58:16,031 [INFO] methods.method1_lexical: Confidence distribution plot saved → c:\fyp1_fixed\outputs\internet_english_m1_confidence.png
+2026-04-11 21:58:16,031 [INFO] main: Phase 2: Method 2 — Acoustic DNN classification...
+2026-04-11 21:58:20,512 [INFO] methods.method2_acoustic: Method 2 acoustic complete | roles={0: 'Customer', 1: 'Customer'}
+2026-04-11 21:58:20,521 [INFO] main: Phase 2: Method 3 — Hybrid Ensemble Fusion...
+2026-04-11 21:58:20,521 [INFO] methods.method3_hybrid: Speaker anchor scores: {0: 9.5, 1: 2.5}
+2026-04-11 21:58:20,522 [INFO] methods.method3_hybrid: Speaker anchor result: {0: 'Agent', 1: 'Customer'}
+2026-04-11 21:58:20,522 [INFO] methods.method3_hybrid: Dynamic weights | lex_conf=0.711 ac_conf=0.969 → α=0.423 β=0.577
+2026-04-11 21:58:20,522 [WARNING] methods.method3_hybrid: Global consistency violation: all speakers labelled 'Customer'. Overriding with anchor map: {0: 'Agent', 1: 'Customer'}
+2026-04-11 21:58:20,522 [INFO] methods.method3_hybrid: Global consistency enforced | final_roles={0: 'Agent', 1: 'Customer'}
+2026-04-11 21:58:20,522 [INFO] methods.method3_hybrid: Segment text override: no corrections needed
+2026-04-11 21:58:20,522 [INFO] methods.method3_hybrid: Method 3 Hybrid complete | segments=22 | agreement_rate=40.9% | text_overrides=0 | α=0.423 β=0.577 | final_roles={1: 'Customer', 0: 'Agent'}
+2026-04-11 21:58:20,938 [INFO] methods.method3_hybrid: Ensemble scores plot saved → c:\fyp1_fixed\outputs\internet_english_m3_ensemble.png
+2026-04-11 21:58:21,106 [INFO] methods.method3_hybrid: Method comparison chart saved → c:\fyp1_fixed\outputs\internet_english_method_comparison.png
+2026-04-11 21:58:21,106 [INFO] main: Phase 3: Analytics...
+2026-04-11 21:58:21,115 [INFO] analytics.sentiment: Sentiment | Agent=+0.086 (Positive) | Customer=-0.149 (Negative) | Trend=Stable | Mismatch=True
+2026-04-11 21:58:21,115 [INFO] analytics.talk_ratio: Talk ratio: Agent=51.95% | Customer=37.13% | Silence=10.92% | Type=Balanced (Interactive)
+2026-04-11 21:58:21,117 [INFO] analytics.compliance: Compliance: score=0.75 (Partially Compliant) | risk=Medium | non_compliant=['Missing Recorded Disclaimer']
+2026-04-11 21:58:21,118 [INFO] analytics.talk_ratio: QA Score: 73.75/100 (Fair)
+2026-04-11 21:58:21,369 [INFO] analytics.sentiment: Sentiment trajectory saved → c:\fyp1_fixed\outputs\internet_english_sentiment.png
+2026-04-11 21:58:21,372 [INFO] main: ✓ internet_english | QA=73.75/100 (Fair) | Compliance=75% | Risk=Medium
+2026-04-11 21:58:21,372 [INFO] evaluation.metrics: RTF=0.6269 (Real-time capable) | 1.6× faster than audio
+2026-04-11 21:58:21,372 [INFO] main: 
+Pipeline complete | 6 call(s) | audio=532.6s | processing=333.9s | RTF=0.6269 | 1.6× faster than real-time
+2026-04-11 21:58:22,141 [INFO] analytics.talk_ratio: Talk time distribution plot saved → c:\fyp1_fixed\outputs\talk_time_distribution.png
+2026-04-11 21:58:22,405 [INFO] analytics.sentiment: Sentiment summary saved → c:\fyp1_fixed\outputs\sentiment_summary.png
+2026-04-11 21:58:22,633 [INFO] analytics.compliance: Compliance summary chart saved → c:\fyp1_fixed\outputs\compliance_summary.png
+2026-04-11 21:58:22,739 [INFO] analytics.compliance: Risk severity chart saved → c:\fyp1_fixed\outputs\risk_severity_distribution.png
+2026-04-11 21:58:22,739 [INFO] main: 
+Phase 4: Validation against ground truth...
+2026-04-11 21:58:22,814 [INFO] evaluation.validator: Loaded ground truth: c:\fyp1_fixed\human_validation_study.csv | rows=73 | calls=6 | roles={'Agent': 40, 'Customer': 33}
+2026-04-11 21:58:22,909 [INFO] evaluation.validator: [Method1-Lexical|bank_malay] Matched 9/42 segments (avg similarity=0.66)
+2026-04-11 21:58:22,909 [INFO] evaluation.validator: Label inversion check | normal_acc=33.3% | inverted_acc=66.7% | inverted=True
+2026-04-11 21:58:22,909 [WARNING] evaluation.validator: ⚠ Label inversion detected for 'bank_malay' — auto-correcting predictions
+2026-04-11 21:58:22,909 [INFO] evaluation.validator: Labels corrected — was inverted
+2026-04-11 21:58:23,003 [INFO] evaluation.metrics: [Method1-Lexical|bank_malay] Accuracy=66.7% | Precision=66.7% | Recall=100.0% | F1=80.0% | n=9
+2026-04-11 21:58:23,073 [INFO] evaluation.validator: [Method2-Acoustic|bank_malay] Matched 9/42 segments (avg similarity=0.66)
+2026-04-11 21:58:23,074 [INFO] evaluation.validator: Label inversion check | normal_acc=33.3% | inverted_acc=66.7% | inverted=True
+2026-04-11 21:58:23,074 [WARNING] evaluation.validator: ⚠ Label inversion detected for 'bank_malay' — auto-correcting predictions
+2026-04-11 21:58:23,074 [INFO] evaluation.validator: Labels corrected — was inverted
+2026-04-11 21:58:23,145 [INFO] evaluation.metrics: [Method2-Acoustic|bank_malay] Accuracy=66.7% | Precision=66.7% | Recall=100.0% | F1=80.0% | n=9
+2026-04-11 21:58:23,249 [INFO] evaluation.validator: [Method3-Hybrid|bank_malay] Matched 9/42 segments (avg similarity=0.66)
+2026-04-11 21:58:23,249 [INFO] evaluation.validator: Label inversion check | normal_acc=66.7% | inverted_acc=33.3% | inverted=False
+2026-04-11 21:58:23,249 [INFO] evaluation.metrics: [Method3-Hybrid|bank_malay] Accuracy=66.7% | Precision=80.0% | Recall=66.7% | F1=72.7% | n=9
+2026-04-11 21:58:23,294 [INFO] evaluation.validator: [Method1-Lexical|billing_english] Matched 9/15 segments (avg similarity=0.63)
+2026-04-11 21:58:23,294 [INFO] evaluation.validator: Label inversion check | normal_acc=33.3% | inverted_acc=66.7% | inverted=True
+2026-04-11 21:58:23,294 [WARNING] evaluation.validator: ⚠ Label inversion detected for 'billing_english' — auto-correcting predictions
+2026-04-11 21:58:23,294 [INFO] evaluation.validator: Labels corrected — was inverted
+2026-04-11 21:58:23,334 [INFO] evaluation.metrics: [Method1-Lexical|billing_english] Accuracy=66.7% | Precision=66.7% | Recall=100.0% | F1=80.0% | n=9
+2026-04-11 21:58:23,370 [INFO] evaluation.validator: [Method2-Acoustic|billing_english] Matched 9/15 segments (avg similarity=0.63)
+2026-04-11 21:58:23,370 [INFO] evaluation.validator: Label inversion check | normal_acc=33.3% | inverted_acc=66.7% | inverted=True
+2026-04-11 21:58:23,370 [WARNING] evaluation.validator: ⚠ Label inversion detected for 'billing_english' — auto-correcting predictions
+2026-04-11 21:58:23,370 [INFO] evaluation.validator: Labels corrected — was inverted
+2026-04-11 21:58:23,404 [INFO] evaluation.metrics: [Method2-Acoustic|billing_english] Accuracy=66.7% | Precision=66.7% | Recall=100.0% | F1=80.0% | n=9
+2026-04-11 21:58:23,437 [INFO] evaluation.validator: [Method3-Hybrid|billing_english] Matched 9/15 segments (avg similarity=0.63)
+2026-04-11 21:58:23,437 [INFO] evaluation.validator: Label inversion check | normal_acc=44.4% | inverted_acc=55.6% | inverted=True
+2026-04-11 21:58:23,438 [WARNING] evaluation.validator: ⚠ Label inversion detected for 'billing_english' — auto-correcting predictions
+2026-04-11 21:58:23,438 [INFO] evaluation.validator: Labels corrected — was inverted
+2026-04-11 21:58:23,470 [INFO] evaluation.metrics: [Method3-Hybrid|billing_english] Accuracy=55.6% | Precision=62.5% | Recall=83.3% | F1=71.4% | n=9
+2026-04-11 21:58:23,549 [INFO] evaluation.validator: [Method1-Lexical|delivery_malay] Matched 18/34 segments (avg similarity=0.73)
+2026-04-11 21:58:23,549 [INFO] evaluation.validator: Label inversion check | normal_acc=44.4% | inverted_acc=55.6% | inverted=True
+2026-04-11 21:58:23,549 [WARNING] evaluation.validator: ⚠ Label inversion detected for 'delivery_malay' — auto-correcting predictions
+2026-04-11 21:58:23,549 [INFO] evaluation.validator: Labels corrected — was inverted
+2026-04-11 21:58:23,666 [INFO] evaluation.metrics: [Method1-Lexical|delivery_malay] Accuracy=55.6% | Precision=55.6% | Recall=100.0% | F1=71.4% | n=18
+2026-04-11 21:58:23,749 [INFO] evaluation.validator: [Method2-Acoustic|delivery_malay] Matched 18/34 segments (avg similarity=0.73)
+2026-04-11 21:58:23,749 [INFO] evaluation.validator: Label inversion check | normal_acc=55.6% | inverted_acc=44.4% | inverted=False
+2026-04-11 21:58:23,749 [INFO] evaluation.metrics: [Method2-Acoustic|delivery_malay] Accuracy=55.6% | Precision=55.6% | Recall=100.0% | F1=71.4% | n=18
+2026-04-11 21:58:23,834 [INFO] evaluation.validator: [Method3-Hybrid|delivery_malay] Matched 18/34 segments (avg similarity=0.73)
+2026-04-11 21:58:23,834 [INFO] evaluation.validator: Label inversion check | normal_acc=55.6% | inverted_acc=44.4% | inverted=False
+2026-04-11 21:58:23,834 [INFO] evaluation.metrics: [Method3-Hybrid|delivery_malay] Accuracy=55.6% | Precision=100.0% | Recall=20.0% | F1=33.3% | n=18
+2026-04-11 21:58:23,892 [INFO] evaluation.validator: [Method1-Lexical|food_malay] Matched 9/15 segments (avg similarity=0.71)
+2026-04-11 21:58:23,894 [INFO] evaluation.validator: Label inversion check | normal_acc=88.9% | inverted_acc=11.1% | inverted=False
+2026-04-11 21:58:23,894 [INFO] evaluation.metrics: [Method1-Lexical|food_malay] Accuracy=88.9% | Precision=83.3% | Recall=100.0% | F1=90.9% | n=9
+2026-04-11 21:58:23,943 [INFO] evaluation.validator: [Method2-Acoustic|food_malay] Matched 9/15 segments (avg similarity=0.71)
+2026-04-11 21:58:23,943 [INFO] evaluation.validator: Label inversion check | normal_acc=44.4% | inverted_acc=55.6% | inverted=True
+2026-04-11 21:58:23,943 [WARNING] evaluation.validator: ⚠ Label inversion detected for 'food_malay' — auto-correcting predictions
+2026-04-11 21:58:23,944 [INFO] evaluation.validator: Labels corrected — was inverted
+2026-04-11 21:58:23,982 [INFO] evaluation.metrics: [Method2-Acoustic|food_malay] Accuracy=55.6% | Precision=55.6% | Recall=100.0% | F1=71.4% | n=9
+2026-04-11 21:58:24,024 [INFO] evaluation.validator: [Method3-Hybrid|food_malay] Matched 9/15 segments (avg similarity=0.71)
+2026-04-11 21:58:24,025 [INFO] evaluation.validator: Label inversion check | normal_acc=88.9% | inverted_acc=11.1% | inverted=False
+2026-04-11 21:58:24,025 [INFO] evaluation.metrics: [Method3-Hybrid|food_malay] Accuracy=88.9% | Precision=100.0% | Recall=80.0% | F1=88.9% | n=9
+2026-04-11 21:58:24,062 [INFO] evaluation.validator: [Method1-Lexical|insurance_english] Matched 9/16 segments (avg similarity=0.69)
+2026-04-11 21:58:24,062 [INFO] evaluation.validator: Label inversion check | normal_acc=55.6% | inverted_acc=44.4% | inverted=False
+2026-04-11 21:58:24,063 [INFO] evaluation.metrics: [Method1-Lexical|insurance_english] Accuracy=55.6% | Precision=55.6% | Recall=100.0% | F1=71.4% | n=9
+2026-04-11 21:58:24,098 [INFO] evaluation.validator: [Method2-Acoustic|insurance_english] Matched 9/16 segments (avg similarity=0.69)
+2026-04-11 21:58:24,098 [INFO] evaluation.validator: Label inversion check | normal_acc=55.6% | inverted_acc=44.4% | inverted=False
+2026-04-11 21:58:24,098 [INFO] evaluation.metrics: [Method2-Acoustic|insurance_english] Accuracy=55.6% | Precision=55.6% | Recall=100.0% | F1=71.4% | n=9
+2026-04-11 21:58:24,153 [INFO] evaluation.validator: [Method3-Hybrid|insurance_english] Matched 9/16 segments (avg similarity=0.69)
+2026-04-11 21:58:24,153 [INFO] evaluation.validator: Label inversion check | normal_acc=88.9% | inverted_acc=11.1% | inverted=False
+2026-04-11 21:58:24,153 [INFO] evaluation.metrics: [Method3-Hybrid|insurance_english] Accuracy=88.9% | Precision=100.0% | Recall=80.0% | F1=88.9% | n=9
+2026-04-11 21:58:24,231 [INFO] evaluation.validator: [Method1-Lexical|internet_english] Matched 15/22 segments (avg similarity=0.89)
+2026-04-11 21:58:24,231 [INFO] evaluation.validator: Label inversion check | normal_acc=80.0% | inverted_acc=20.0% | inverted=False
+2026-04-11 21:58:24,231 [INFO] evaluation.metrics: [Method1-Lexical|internet_english] Accuracy=80.0% | Precision=77.8% | Recall=87.5% | F1=82.4% | n=15
+2026-04-11 21:58:24,300 [INFO] evaluation.validator: [Method2-Acoustic|internet_english] Matched 15/22 segments (avg similarity=0.89)
+2026-04-11 21:58:24,302 [INFO] evaluation.validator: Label inversion check | normal_acc=46.7% | inverted_acc=53.3% | inverted=True
+2026-04-11 21:58:24,302 [WARNING] evaluation.validator: ⚠ Label inversion detected for 'internet_english' — auto-correcting predictions
+2026-04-11 21:58:24,302 [INFO] evaluation.validator: Labels corrected — was inverted
+2026-04-11 21:58:24,377 [INFO] evaluation.metrics: [Method2-Acoustic|internet_english] Accuracy=53.3% | Precision=53.3% | Recall=100.0% | F1=69.6% | n=15
+2026-04-11 21:58:24,439 [INFO] evaluation.validator: [Method3-Hybrid|internet_english] Matched 15/22 segments (avg similarity=0.89)
+2026-04-11 21:58:24,439 [INFO] evaluation.validator: Label inversion check | normal_acc=80.0% | inverted_acc=20.0% | inverted=False
+2026-04-11 21:58:24,439 [INFO] evaluation.metrics: [Method3-Hybrid|internet_english] Accuracy=80.0% | Precision=77.8% | Recall=87.5% | F1=82.4% | n=15
+2026-04-11 21:58:24,448 [INFO] evaluation.metrics: Paired t-test | t=0.3756 | p=0.3542 | reject_H0=False
+2026-04-11 21:58:24,455 [INFO] evaluation.metrics: Pearson r=0.8808 | p=0.0205 | Strong correlation
+2026-04-11 21:58:24,455 [INFO] evaluation.metrics: RTF=0.6269 (Real-time capable) | 1.6× faster than audio
+2026-04-11 21:58:24,455 [INFO] evaluation.validator: ============================================================
+2026-04-11 21:58:24,456 [INFO] evaluation.validator: VALIDATION SUMMARY
+2026-04-11 21:58:24,456 [INFO] evaluation.validator:   Method 1 (Keyword) : Acc=68.89% F1=79.35%
+2026-04-11 21:58:24,456 [INFO] evaluation.validator:   Method 2 (Acoustic): Acc=58.89% F1=73.98%
+2026-04-11 21:58:24,456 [INFO] evaluation.validator:   Method 3 (Hybrid)  : Acc=72.59% F1=72.94%
+2026-04-11 21:58:24,456 [WARNING] evaluation.validator:   Label inversions auto-corrected: {'m1': ['bank_malay', 'billing_english', 'delivery_malay'], 'm2': ['bank_malay', 'billing_english', 'food_malay', 'internet_english'], 'm3': ['billing_english']}
+2026-04-11 21:58:24,456 [INFO] evaluation.validator: ============================================================
+2026-04-11 21:58:24,757 [INFO] evaluation.metrics: Accuracy comparison chart saved → c:\fyp1_fixed\outputs\accuracy_comparison.png
+2026-04-11 21:58:24,944 [INFO] evaluation.metrics: t-test boxplot saved → c:\fyp1_fixed\outputs\ttest_boxplot.png
+2026-04-11 21:58:24,974 [INFO] utils.file_utils: Analytics CSV saved → c:\fyp1_fixed\outputs\analytics_summary.csv | rows=6
+2026-04-11 21:58:25,015 [INFO] main: 
+============================================================
+2026-04-11 21:58:25,015 [INFO] main: ✅ Results saved:
+2026-04-11 21:58:25,017 [INFO] main:    JSON      → c:\fyp1_fixed\outputs\pipeline_results.json
+2026-04-11 21:58:25,017 [INFO] main:    CSV       → c:\fyp1_fixed\outputs\analytics_summary.csv
+2026-04-11 21:58:25,017 [INFO] main:    Transcripts → c:\fyp1_fixed\outputs/*_transcript.txt
+2026-04-11 21:58:25,017 [INFO] main:    Plots     → c:\fyp1_fixed\outputs/
+2026-04-11 21:58:25,017 [INFO] main: 
+   Launch dashboard:  streamlit run dashboard/app.py
+2026-04-11 21:58:25,018 [INFO] main: ============================================================
+2026-04-11 22:07:29,058 [INFO] main: ======================================================================
+2026-04-11 22:07:29,058 [INFO] main: FYP1 CALL ANALYSIS SYSTEM
+2026-04-11 22:07:29,058 [INFO] main: Speaker Role Detection & Segmented Analysis in Customer Service Calls
+2026-04-11 22:07:29,058 [INFO] main: ======================================================================
+2026-04-11 22:07:29,058 [INFO] main: Found 6 audio file(s) in 'c:\fyp1_fixed\data'
+2026-04-11 22:07:29,100 [INFO] main: 
+============================================================
+Processing: bank_malay
+============================================================
+2026-04-11 22:07:29,100 [INFO] main: Phase 1: Audio preprocessing...
+2026-04-11 22:07:29,100 [INFO] preprocessing.audio_processor: === Preprocessing: bank_malay.wav ===
+2026-04-11 22:07:31,829 [INFO] preprocessing.audio_processor: Loaded 'bank_malay.wav' | sr=24000 Hz | duration=103.89s | samples=2493383
+2026-04-11 22:07:31,850 [INFO] preprocessing.audio_processor: Resampled 24000 Hz → 16000 Hz
+2026-04-11 22:07:31,859 [INFO] preprocessing.audio_processor: SNR before cleaning: 1.63 dB
+2026-04-11 22:07:32,804 [INFO] preprocessing.audio_processor: Noise reduction applied | noise_profile_samples=166225
+2026-04-11 22:07:32,815 [INFO] preprocessing.audio_processor: Amplitude normalized | max_amplitude=0.6875 → 1.0000
+2026-04-11 22:07:32,822 [INFO] preprocessing.audio_processor: SNR after cleaning:  5.15 dB | Improvement: +3.52 dB
+2026-04-11 22:07:32,839 [INFO] preprocessing.audio_processor: Saved cleaned audio → c:\fyp1_fixed\outputs\bank_malay_cleaned.wav
+2026-04-11 22:07:34,216 [INFO] preprocessing.audio_processor: Waveform comparison saved → c:\fyp1_fixed\outputs\bank_malay_waveform.png
+2026-04-11 22:07:39,561 [INFO] preprocessing.audio_processor: Spectrogram comparison saved → c:\fyp1_fixed\outputs\bank_malay_spectrogram.png
+2026-04-11 22:07:39,561 [INFO] main: Phase 1: Transcription + Diarization...
+2026-04-11 22:07:39,561 [INFO] preprocessing.transcriber: --- Starting Transcription + Diarization pipeline ---
+2026-04-11 22:07:39,606 [INFO] preprocessing.transcriber: Loading Whisper 'small' on cuda (first load — cached for all subsequent calls)...
+2026-04-11 22:07:43,237 [INFO] preprocessing.transcriber: Whisper 'small' ready.
+2026-04-11 22:07:43,237 [INFO] preprocessing.transcriber: Transcribing | model=small | device=cuda | lang=auto-detect | beam=5
+2026-04-11 22:08:36,220 [INFO] preprocessing.transcriber: Transcription complete | segments=42 | language detected=ms
+2026-04-11 22:08:36,877 [INFO] preprocessing.transcriber: Initializing Resemblyzer VoiceEncoder...
+2026-04-11 22:08:39,106 [INFO] preprocessing.transcriber: Extracted 121 embeddings | shape=(121, 256)
+2026-04-11 22:08:39,144 [INFO] preprocessing.transcriber: Clustering complete | speakers found=2
+2026-04-11 22:08:39,150 [INFO] preprocessing.transcriber: Speaker segments after merging: 18
+2026-04-11 22:08:39,150 [INFO] preprocessing.transcriber: Aligned 42 transcript segments to speakers
+2026-04-11 22:08:39,153 [INFO] preprocessing.transcriber: Diarized transcript saved → c:\fyp1_fixed\outputs\bank_malay_diarized.json
+2026-04-11 22:08:39,184 [INFO] preprocessing.transcriber: WER=103.95% | S=80 D=2 I=102 | ref_len=177
+2026-04-11 22:08:39,184 [INFO] main: WER for bank_malay: 103.95%
+2026-04-11 22:08:39,184 [INFO] main: Phase 2: Method 1 — Lexical classification...
+2026-04-11 22:08:39,184 [INFO] methods.method1_lexical: Loaded 120 agent keywords, 85 customer keywords
+2026-04-11 22:08:39,194 [INFO] methods.method1_lexical: Method 1 classification complete | speaker_roles={1: 'Customer', 0: 'Customer'}
+2026-04-11 22:08:39,417 [INFO] methods.method1_lexical: Keyword density plot saved → c:\fyp1_fixed\outputs\bank_malay_m1_keywords.png
+2026-04-11 22:08:39,607 [INFO] methods.method1_lexical: Confidence distribution plot saved → c:\fyp1_fixed\outputs\bank_malay_m1_confidence.png
+2026-04-11 22:08:39,607 [INFO] main: Phase 2: Method 2 — Acoustic DNN classification...
+2026-04-11 22:08:39,641 [INFO] methods.method2_acoustic: Loaded trained acoustic model for inference.
+2026-04-11 22:08:39,673 [INFO] methods.method2_acoustic: Loading Resemblyzer VoiceEncoder (cached)...
+2026-04-11 22:08:39,696 [INFO] methods.method2_acoustic: VoiceEncoder ready.
+2026-04-11 22:08:46,079 [INFO] methods.method2_acoustic: Method 2 acoustic complete | roles={1: 'Customer', 0: 'Customer'}
+2026-04-11 22:08:46,079 [INFO] main: Phase 2: Method 3 — Hybrid Ensemble Fusion...
+2026-04-11 22:08:46,079 [INFO] methods.method3_hybrid: Speaker anchor scores: {0: 0.0, 1: 4.0}
+2026-04-11 22:08:46,079 [INFO] methods.method3_hybrid: Speaker anchor result: {0: 'Customer', 1: 'Agent'}
+2026-04-11 22:08:46,079 [INFO] methods.method3_hybrid: Dynamic weights | lex_conf=0.599 ac_conf=0.990 → α=0.377 β=0.623
+2026-04-11 22:08:46,079 [WARNING] methods.method3_hybrid: Global consistency violation: all speakers labelled 'Customer'. Overriding with anchor map: {0: 'Customer', 1: 'Agent'}
+2026-04-11 22:08:46,079 [INFO] methods.method3_hybrid: Global consistency enforced | final_roles={0: 'Customer', 1: 'Agent'}
+2026-04-11 22:08:46,079 [INFO] methods.method3_hybrid:   Text override [15.7s]: Customer → Agent  (phrase: 'boleh saya dapatkan')
+  Text: "boleh saya dapatkan nomor kat pengenalan untuk saya makan?"
+2026-04-11 22:08:46,079 [INFO] methods.method3_hybrid:   Text override [28.6s]: Customer → Agent  (phrase: 'untuk kami buka profil')
+  Text: "untuk kami buka profil encik."
+2026-04-11 22:08:46,079 [INFO] methods.method3_hybrid:   Text override [80.1s]: Agent → Customer  (phrase: 'cancel je terus sekarang')
+  Text: "kau cancel je terus sekarang."
+2026-04-11 22:08:46,087 [INFO] methods.method3_hybrid:   Text override [83.8s]: Customer → Agent  (phrase: 'proses pembatalan')
+  Text: "encik, proses pembatalan perlukan keleluisan pihak"
+2026-04-11 22:08:46,087 [INFO] methods.method3_hybrid:   Text override [95.7s]: Customer → Agent  (phrase: 'saya akan sambungkan')
+  Text: "baiklah, cik. saya akan sambungkan panggilan ini kepada pegawai atasan"
+2026-04-11 22:08:46,087 [INFO] methods.method3_hybrid: Segment text override: 5 segment(s) corrected
+2026-04-11 22:08:46,087 [INFO] methods.method3_hybrid: Method 3 Hybrid complete | segments=42 | agreement_rate=100.0% | text_overrides=5 | α=0.377 β=0.623 | final_roles={0: 'Customer', 1: 'Agent'}
+2026-04-11 22:08:46,806 [INFO] methods.method3_hybrid: Ensemble scores plot saved → c:\fyp1_fixed\outputs\bank_malay_m3_ensemble.png
+2026-04-11 22:08:46,963 [INFO] methods.method3_hybrid: Method comparison chart saved → c:\fyp1_fixed\outputs\bank_malay_method_comparison.png
+2026-04-11 22:08:46,963 [INFO] main: Phase 3: Analytics...
+2026-04-11 22:08:46,990 [INFO] analytics.sentiment: Sentiment | Agent=+0.000 (Neutral) | Customer=+0.040 (Neutral) | Trend=Stable | Mismatch=False
+2026-04-11 22:08:46,990 [INFO] analytics.talk_ratio: Talk ratio: Agent=50.05% | Customer=32.17% | Silence=17.78% | Type=Balanced (Interactive)
+2026-04-11 22:08:46,993 [INFO] analytics.compliance: Compliance: score=0.00 (Non-Compliant) | risk=Medium | non_compliant=['Missing Greeting', 'Missing Closing', 'Missing Recorded Disclaimer', 'Missing Identity Verification']
+2026-04-11 22:08:46,993 [INFO] analytics.talk_ratio: QA Score: 62.98/100 (Fair)
+2026-04-11 22:08:47,247 [INFO] analytics.sentiment: Sentiment trajectory saved → c:\fyp1_fixed\outputs\bank_malay_sentiment.png
+2026-04-11 22:08:47,247 [INFO] main: ✓ bank_malay | QA=62.98/100 (Fair) | Compliance=0% | Risk=Medium
+2026-04-11 22:08:47,252 [INFO] main: 
+============================================================
+Processing: billing_english
+============================================================
+2026-04-11 22:08:47,252 [INFO] main: Phase 1: Audio preprocessing...
+2026-04-11 22:08:47,252 [INFO] preprocessing.audio_processor: === Preprocessing: billing_english.wav ===
+2026-04-11 22:08:47,269 [INFO] preprocessing.audio_processor: Loaded 'billing_english.wav' | sr=24000 Hz | duration=82.73s | samples=1985543
+2026-04-11 22:08:47,290 [INFO] preprocessing.audio_processor: Resampled 24000 Hz → 16000 Hz
+2026-04-11 22:08:47,293 [INFO] preprocessing.audio_processor: SNR before cleaning: 0.97 dB
+2026-04-11 22:08:48,149 [INFO] preprocessing.audio_processor: Noise reduction applied | noise_profile_samples=132369
+2026-04-11 22:08:48,163 [INFO] preprocessing.audio_processor: Amplitude normalized | max_amplitude=0.7556 → 1.0000
+2026-04-11 22:08:48,168 [INFO] preprocessing.audio_processor: SNR after cleaning:  0.72 dB | Improvement: +-0.25 dB
+2026-04-11 22:08:48,185 [INFO] preprocessing.audio_processor: Saved cleaned audio → c:\fyp1_fixed\outputs\billing_english_cleaned.wav
+2026-04-11 22:08:49,271 [INFO] preprocessing.audio_processor: Waveform comparison saved → c:\fyp1_fixed\outputs\billing_english_waveform.png
+2026-04-11 22:08:53,623 [INFO] preprocessing.audio_processor: Spectrogram comparison saved → c:\fyp1_fixed\outputs\billing_english_spectrogram.png
+2026-04-11 22:08:53,623 [INFO] main: Phase 1: Transcription + Diarization...
+2026-04-11 22:08:53,623 [INFO] preprocessing.transcriber: --- Starting Transcription + Diarization pipeline ---
+2026-04-11 22:08:53,623 [INFO] preprocessing.transcriber: Transcribing | model=small | device=cuda | lang=auto-detect | beam=5
+2026-04-11 22:09:27,882 [INFO] preprocessing.transcriber: Transcription complete | segments=15 | language detected=en
+2026-04-11 22:09:27,882 [INFO] preprocessing.transcriber: Initializing Resemblyzer VoiceEncoder...
+2026-04-11 22:09:29,410 [INFO] preprocessing.transcriber: Extracted 88 embeddings | shape=(88, 256)
+2026-04-11 22:09:29,410 [INFO] preprocessing.transcriber: Clustering complete | speakers found=2
+2026-04-11 22:09:29,410 [INFO] preprocessing.transcriber: Speaker segments after merging: 2
+2026-04-11 22:09:29,410 [INFO] preprocessing.transcriber: Aligned 15 transcript segments to speakers
+2026-04-11 22:09:29,410 [INFO] preprocessing.transcriber: Diarized transcript saved → c:\fyp1_fixed\outputs\billing_english_diarized.json
+2026-04-11 22:09:29,448 [INFO] preprocessing.transcriber: WER=96.45% | S=49 D=4 I=110 | ref_len=169
+2026-04-11 22:09:29,448 [INFO] main: WER for billing_english: 96.45%
+2026-04-11 22:09:29,448 [INFO] main: Phase 2: Method 1 — Lexical classification...
+2026-04-11 22:09:29,448 [INFO] methods.method1_lexical: Method 1 classification complete | speaker_roles={0: 'Customer'}
+2026-04-11 22:09:29,699 [INFO] methods.method1_lexical: Keyword density plot saved → c:\fyp1_fixed\outputs\billing_english_m1_keywords.png
+2026-04-11 22:09:29,904 [INFO] methods.method1_lexical: Confidence distribution plot saved → c:\fyp1_fixed\outputs\billing_english_m1_confidence.png
+2026-04-11 22:09:29,904 [INFO] main: Phase 2: Method 2 — Acoustic DNN classification...
+2026-04-11 22:09:34,232 [INFO] methods.method2_acoustic: Method 2 acoustic complete | roles={0: 'Customer'}
+2026-04-11 22:09:34,232 [INFO] main: Phase 2: Method 3 — Hybrid Ensemble Fusion...
+2026-04-11 22:09:34,232 [WARNING] methods.method3_hybrid: Only 1 speaker found — labelling as Agent by default
+2026-04-11 22:09:34,232 [INFO] methods.method3_hybrid: Dynamic weights | lex_conf=0.734 ac_conf=0.797 → α=0.480 β=0.520
+2026-04-11 22:09:34,232 [INFO] methods.method3_hybrid: Global consistency enforced | final_roles={0: 'Customer'}
+2026-04-11 22:09:34,232 [INFO] methods.method3_hybrid:   Text override [15.8s]: Customer → Agent  (phrase: 'do you have your')
+  Text: "before calling. obviously, you don't or you wouldn't be charged. do yo"
+2026-04-11 22:09:34,232 [INFO] methods.method3_hybrid:   Text override [25.5s]: Customer → Agent  (phrase: 'pulling it up now')
+  Text: "number is 554321. i'm not being rude. i'm just busy, right? pulling it"
+2026-04-11 22:09:34,232 [INFO] methods.method3_hybrid:   Text override [38.6s]: Customer → Agent  (phrase: 'somebody in your house')
+  Text: "movies. i was out of town all of last week. well, somebody in your hou"
+2026-04-11 22:09:34,232 [INFO] methods.method3_hybrid:   Text override [49.9s]: Customer → Agent  (phrase: 'i just handle billing')
+  Text: "the login locations? i'm not technical support. i just handle billing."
+2026-04-11 22:09:34,235 [INFO] methods.method3_hybrid:   Text override [60.8s]: Customer → Agent  (phrase: 'my supervisor is going to tell you')
+  Text: "now. look, my supervisor is going to tell you the exact same thing. it"
+2026-04-11 22:09:34,235 [INFO] methods.method3_hybrid:   Text override [72.3s]: Customer → Agent  (phrase: 'hold on and do not hang up')
+  Text: "whatever. hold on and do not hang up because i'm not calling you back."
+2026-04-11 22:09:34,235 [INFO] methods.method3_hybrid:   Text override [77.6s]: Customer → Agent  (phrase: 'putting you in the queue')
+  Text: "transfer me already. yeah. putting you in the queue. you might be wait"
+2026-04-11 22:09:34,235 [INFO] methods.method3_hybrid: Segment text override: 7 segment(s) corrected
+2026-04-11 22:09:34,235 [INFO] methods.method3_hybrid: Method 3 Hybrid complete | segments=15 | agreement_rate=100.0% | text_overrides=7 | α=0.479 β=0.520 | final_roles={0: 'Agent'}
+2026-04-11 22:09:34,557 [INFO] methods.method3_hybrid: Ensemble scores plot saved → c:\fyp1_fixed\outputs\billing_english_m3_ensemble.png
+2026-04-11 22:09:34,686 [INFO] methods.method3_hybrid: Method comparison chart saved → c:\fyp1_fixed\outputs\billing_english_method_comparison.png
+2026-04-11 22:09:34,686 [INFO] main: Phase 3: Analytics...
+2026-04-11 22:09:34,686 [INFO] analytics.sentiment: Sentiment | Agent=+0.101 (Positive) | Customer=+0.016 (Neutral) | Trend=Declining | Mismatch=False
+2026-04-11 22:09:34,700 [INFO] analytics.talk_ratio: Talk ratio: Agent=47.58% | Customer=51.11% | Silence=1.32% | Type=Balanced (Interactive)
+2026-04-11 22:09:34,700 [INFO] analytics.compliance: Compliance: score=0.25 (Non-Compliant) | risk=Medium | non_compliant=['Missing Greeting', 'Missing Closing', 'Missing Recorded Disclaimer']
+2026-04-11 22:09:34,700 [INFO] analytics.talk_ratio: QA Score: 67.0/100 (Fair)
+2026-04-11 22:09:34,913 [INFO] analytics.sentiment: Sentiment trajectory saved → c:\fyp1_fixed\outputs\billing_english_sentiment.png
+2026-04-11 22:09:34,929 [INFO] main: ✓ billing_english | QA=67.0/100 (Fair) | Compliance=25% | Risk=Medium
+2026-04-11 22:09:34,929 [INFO] main: 
+============================================================
+Processing: delivery_malay
+============================================================
+2026-04-11 22:09:34,929 [INFO] main: Phase 1: Audio preprocessing...
+2026-04-11 22:09:34,929 [INFO] preprocessing.audio_processor: === Preprocessing: delivery_malay.wav ===
+2026-04-11 22:09:34,929 [INFO] preprocessing.audio_processor: Loaded 'delivery_malay.wav' | sr=24000 Hz | duration=88.97s | samples=2135303
+2026-04-11 22:09:34,958 [INFO] preprocessing.audio_processor: Resampled 24000 Hz → 16000 Hz
+2026-04-11 22:09:34,962 [INFO] preprocessing.audio_processor: SNR before cleaning: 1.83 dB
+2026-04-11 22:09:35,673 [INFO] preprocessing.audio_processor: Noise reduction applied | noise_profile_samples=142353
+2026-04-11 22:09:35,676 [INFO] preprocessing.audio_processor: Amplitude normalized | max_amplitude=0.6599 → 1.0000
+2026-04-11 22:09:35,687 [INFO] preprocessing.audio_processor: SNR after cleaning:  4.71 dB | Improvement: +2.88 dB
+2026-04-11 22:09:35,704 [INFO] preprocessing.audio_processor: Saved cleaned audio → c:\fyp1_fixed\outputs\delivery_malay_cleaned.wav
+2026-04-11 22:09:36,780 [INFO] preprocessing.audio_processor: Waveform comparison saved → c:\fyp1_fixed\outputs\delivery_malay_waveform.png
+2026-04-11 22:09:41,647 [INFO] preprocessing.audio_processor: Spectrogram comparison saved → c:\fyp1_fixed\outputs\delivery_malay_spectrogram.png
+2026-04-11 22:09:41,647 [INFO] main: Phase 1: Transcription + Diarization...
+2026-04-11 22:09:41,647 [INFO] preprocessing.transcriber: --- Starting Transcription + Diarization pipeline ---
+2026-04-11 22:09:41,647 [INFO] preprocessing.transcriber: Transcribing | model=small | device=cuda | lang=auto-detect | beam=5
+2026-04-11 22:10:26,148 [INFO] preprocessing.transcriber: Transcription complete | segments=34 | language detected=ms
+2026-04-11 22:10:26,150 [INFO] preprocessing.transcriber: Initializing Resemblyzer VoiceEncoder...
+2026-04-11 22:10:28,101 [INFO] preprocessing.transcriber: Extracted 108 embeddings | shape=(108, 256)
+2026-04-11 22:10:28,111 [INFO] preprocessing.transcriber: Clustering complete | speakers found=2
+2026-04-11 22:10:28,111 [INFO] preprocessing.transcriber: Speaker segments after merging: 2
+2026-04-11 22:10:28,115 [INFO] preprocessing.transcriber: Aligned 34 transcript segments to speakers
+2026-04-11 22:10:28,118 [INFO] preprocessing.transcriber: Diarized transcript saved → c:\fyp1_fixed\outputs\delivery_malay_diarized.json
+2026-04-11 22:10:28,165 [INFO] preprocessing.transcriber: WER=37.31% | S=80 D=17 I=3 | ref_len=268
+2026-04-11 22:10:28,165 [INFO] main: WER for delivery_malay: 37.31%
+2026-04-11 22:10:28,165 [INFO] main: Phase 2: Method 1 — Lexical classification...
+2026-04-11 22:10:28,168 [INFO] methods.method1_lexical: Method 1 classification complete | speaker_roles={1: 'Customer', 0: 'Customer'}
+2026-04-11 22:10:28,402 [INFO] methods.method1_lexical: Keyword density plot saved → c:\fyp1_fixed\outputs\delivery_malay_m1_keywords.png
+2026-04-11 22:10:28,586 [INFO] methods.method1_lexical: Confidence distribution plot saved → c:\fyp1_fixed\outputs\delivery_malay_m1_confidence.png
+2026-04-11 22:10:28,588 [INFO] main: Phase 2: Method 2 — Acoustic DNN classification...
+2026-04-11 22:10:36,824 [INFO] methods.method2_acoustic: Method 2 acoustic complete | roles={1: 'Agent', 0: 'Agent'}
+2026-04-11 22:10:36,824 [INFO] main: Phase 2: Method 3 — Hybrid Ensemble Fusion...
+2026-04-11 22:10:36,824 [INFO] methods.method3_hybrid: Speaker anchor scores: {0: -1.0, 1: 2.0}
+2026-04-11 22:10:36,824 [INFO] methods.method3_hybrid: Speaker anchor result: {0: 'Customer', 1: 'Agent'}
+2026-04-11 22:10:36,824 [INFO] methods.method3_hybrid: Dynamic weights | lex_conf=0.653 ac_conf=1.000 → α=0.395 β=0.605
+2026-04-11 22:10:36,824 [WARNING] methods.method3_hybrid: Global consistency violation: all speakers labelled 'Agent'. Overriding with anchor map: {0: 'Customer', 1: 'Agent'}
+2026-04-11 22:10:36,824 [INFO] methods.method3_hybrid: Global consistency enforced | final_roles={0: 'Customer', 1: 'Agent'}
+2026-04-11 22:10:36,824 [INFO] methods.method3_hybrid:   Text override [20.5s]: Customer → Agent  (phrase: 'nombor tracking')
+  Text: "bagilah nombor tracking tu. nak semak macam mana kalau nombor pun tak "
+2026-04-11 22:10:36,824 [INFO] methods.method3_hybrid:   Text override [33.3s]: Customer → Agent  (phrase: 'saya tengah banyak kerja')
+  Text: "saya tengah banyak kerja ni, cik. bukan cik sorang je pelanggan saya."
+2026-04-11 22:10:36,824 [INFO] methods.method3_hybrid:   Text override [38.7s]: Customer → Agent  (phrase: 'sistem cakap')
+  Text: "ha ni sistem cakap korea dah letak atas pagah rumah cik."
+2026-04-11 22:10:36,824 [INFO] methods.method3_hybrid:   Text override [48.8s]: Customer → Agent  (phrase: 'bukan saya yang hantar')
+  Text: "analah saya tahu. saya duduk pejabat. bukan saya yang hantar barang tu"
+2026-04-11 22:10:36,824 [INFO] methods.method3_hybrid:   Text override [59.7s]: Customer → Agent  (phrase: 'keluar gudang')
+  Text: "anjik, tanggung jawab kita orang sampai barang tu keluar gudang je,"
+2026-04-11 22:10:36,824 [INFO] methods.method3_hybrid:   Text override [70.7s]: Customer → Agent  (phrase: 'buatlah aduan')
+  Text: "buatlah aduan."
+2026-04-11 22:10:36,824 [INFO] methods.method3_hybrid:   Text override [72.6s]: Customer → Agent  (phrase: 'nama saya rizal')
+  Text: "nama saya rizal."
+2026-04-11 22:10:36,824 [INFO] methods.method3_hybrid:   Text override [73.7s]: Customer → Agent  (phrase: 'ada apa-apa lagi')
+  Text: "ada apa-apa lagi nak marah-marah ni?"
+2026-04-11 22:10:36,824 [INFO] methods.method3_hybrid:   Text override [80.7s]: Customer → Agent  (phrase: 'pengurus tak ada')
+  Text: "pengurus tak ada."
+2026-04-11 22:10:36,824 [INFO] methods.method3_hybrid:   Text override [81.5s]: Customer → Agent  (phrase: 'dia sibuk')
+  Text: "dia sibuk nak tunggu tunggu lah tak nak tunggu letak je telefon tu"
+2026-04-11 22:10:36,824 [INFO] methods.method3_hybrid: Segment text override: 10 segment(s) corrected
+2026-04-11 22:10:36,824 [INFO] methods.method3_hybrid: Method 3 Hybrid complete | segments=34 | agreement_rate=0.0% | text_overrides=10 | α=0.395 β=0.605 | final_roles={0: 'Customer', 1: 'Agent'}
+2026-04-11 22:10:37,329 [INFO] methods.method3_hybrid: Ensemble scores plot saved → c:\fyp1_fixed\outputs\delivery_malay_m3_ensemble.png
+2026-04-11 22:10:37,482 [INFO] methods.method3_hybrid: Method comparison chart saved → c:\fyp1_fixed\outputs\delivery_malay_method_comparison.png
+2026-04-11 22:10:37,482 [INFO] main: Phase 3: Analytics...
+2026-04-11 22:10:37,482 [INFO] analytics.sentiment: Sentiment | Agent=+0.031 (Neutral) | Customer=+0.000 (Neutral) | Trend=Stable | Mismatch=False
+2026-04-11 22:10:37,482 [INFO] analytics.talk_ratio: Talk ratio: Agent=31.02% | Customer=55.91% | Silence=13.07% | Type=Balanced (Interactive)
+2026-04-11 22:10:37,482 [INFO] analytics.compliance: Compliance: score=0.00 (Non-Compliant) | risk=Clean | non_compliant=['Missing Greeting', 'Missing Closing', 'Missing Recorded Disclaimer', 'Missing Identity Verification']
+2026-04-11 22:10:37,482 [INFO] analytics.talk_ratio: QA Score: 53.16/100 (Needs Improvement)
+2026-04-11 22:10:37,698 [INFO] analytics.sentiment: Sentiment trajectory saved → c:\fyp1_fixed\outputs\delivery_malay_sentiment.png
+2026-04-11 22:10:37,698 [INFO] main: ✓ delivery_malay | QA=53.16/100 (Needs Improvement) | Compliance=0% | Risk=Clean
+2026-04-11 22:10:37,698 [INFO] main: 
+============================================================
+Processing: food_malay
+============================================================
+2026-04-11 22:10:37,698 [INFO] main: Phase 1: Audio preprocessing...
+2026-04-11 22:10:37,698 [INFO] preprocessing.audio_processor: === Preprocessing: food_malay.wav ===
+2026-04-11 22:10:37,715 [INFO] preprocessing.audio_processor: Loaded 'food_malay.wav' | sr=24000 Hz | duration=80.69s | samples=1936583
+2026-04-11 22:10:37,736 [INFO] preprocessing.audio_processor: Resampled 24000 Hz → 16000 Hz
+2026-04-11 22:10:37,741 [INFO] preprocessing.audio_processor: SNR before cleaning: 0.83 dB
+2026-04-11 22:10:38,533 [INFO] preprocessing.audio_processor: Noise reduction applied | noise_profile_samples=129105
+2026-04-11 22:10:38,540 [INFO] preprocessing.audio_processor: Amplitude normalized | max_amplitude=0.5453 → 1.0000
+2026-04-11 22:10:38,547 [INFO] preprocessing.audio_processor: SNR after cleaning:  2.77 dB | Improvement: +1.94 dB
+2026-04-11 22:10:38,566 [INFO] preprocessing.audio_processor: Saved cleaned audio → c:\fyp1_fixed\outputs\food_malay_cleaned.wav
+2026-04-11 22:10:39,813 [INFO] preprocessing.audio_processor: Waveform comparison saved → c:\fyp1_fixed\outputs\food_malay_waveform.png
+2026-04-11 22:10:45,452 [INFO] preprocessing.audio_processor: Spectrogram comparison saved → c:\fyp1_fixed\outputs\food_malay_spectrogram.png
+2026-04-11 22:10:45,452 [INFO] main: Phase 1: Transcription + Diarization...
+2026-04-11 22:10:45,452 [INFO] preprocessing.transcriber: --- Starting Transcription + Diarization pipeline ---
+2026-04-11 22:10:45,452 [INFO] preprocessing.transcriber: Transcribing | model=small | device=cuda | lang=auto-detect | beam=5
+2026-04-11 22:11:22,563 [INFO] preprocessing.transcriber: Transcription complete | segments=15 | language detected=ms
+2026-04-11 22:11:22,563 [INFO] preprocessing.transcriber: Initializing Resemblyzer VoiceEncoder...
+2026-04-11 22:11:24,418 [INFO] preprocessing.transcriber: Extracted 95 embeddings | shape=(95, 256)
+2026-04-11 22:11:24,425 [INFO] preprocessing.transcriber: Clustering complete | speakers found=2
+2026-04-11 22:11:24,425 [INFO] preprocessing.transcriber: Speaker segments after merging: 11
+2026-04-11 22:11:24,429 [INFO] preprocessing.transcriber: Aligned 15 transcript segments to speakers
+2026-04-11 22:11:24,432 [INFO] preprocessing.transcriber: Diarized transcript saved → c:\fyp1_fixed\outputs\food_malay_diarized.json
+2026-04-11 22:11:24,457 [INFO] preprocessing.transcriber: WER=58.18% | S=41 D=6 I=49 | ref_len=165
+2026-04-11 22:11:24,457 [INFO] main: WER for food_malay: 58.18%
+2026-04-11 22:11:24,457 [INFO] main: Phase 2: Method 1 — Lexical classification...
+2026-04-11 22:11:24,457 [INFO] methods.method1_lexical: Method 1 classification complete | speaker_roles={1: 'Agent', 0: 'Customer'}
+2026-04-11 22:11:24,758 [INFO] methods.method1_lexical: Keyword density plot saved → c:\fyp1_fixed\outputs\food_malay_m1_keywords.png
+2026-04-11 22:11:24,947 [INFO] methods.method1_lexical: Confidence distribution plot saved → c:\fyp1_fixed\outputs\food_malay_m1_confidence.png
+2026-04-11 22:11:24,947 [INFO] main: Phase 2: Method 2 — Acoustic DNN classification...
+2026-04-11 22:11:27,402 [INFO] methods.method2_acoustic: Method 2 acoustic complete | roles={1: 'Customer', 0: 'Customer'}
+2026-04-11 22:11:27,402 [INFO] main: Phase 2: Method 3 — Hybrid Ensemble Fusion...
+2026-04-11 22:11:27,402 [INFO] methods.method3_hybrid: Speaker anchor scores: {0: -3.0, 1: 2.5}
+2026-04-11 22:11:27,404 [INFO] methods.method3_hybrid: Speaker anchor result: {0: 'Customer', 1: 'Agent'}
+2026-04-11 22:11:27,404 [INFO] methods.method3_hybrid: Dynamic weights | lex_conf=0.880 ac_conf=0.925 → α=0.487 β=0.513
+2026-04-11 22:11:27,404 [WARNING] methods.method3_hybrid: Global consistency violation: all speakers labelled 'Customer'. Overriding with anchor map: {0: 'Customer', 1: 'Agent'}
+2026-04-11 22:11:27,404 [INFO] methods.method3_hybrid: Global consistency enforced | final_roles={0: 'Customer', 1: 'Agent'}
+2026-04-11 22:11:27,404 [INFO] methods.method3_hybrid:   Text override [46.1s]: Agent → Customer  (phrase: 'saya nak refund')
+  Text: "kalau boleh, saya nak refund sahajalah. sebab saya dah lapar sangat ni"
+2026-04-11 22:11:27,405 [INFO] methods.method3_hybrid:   Text override [61.8s]: Agent → Customer  (phrase: 'harap lepas ni pihak')
+  Text: "okeylah. kalau macam tu, harap lepas ni pihak restoran lebih peka lah "
+2026-04-11 22:11:27,405 [INFO] methods.method3_hybrid:   Text override [68.4s]: Customer → Agent  (phrase: 'kami akan')
+  Text: "betul ncik. kami akan hantar maklum balas tegas kepada pihak restoran "
+2026-04-11 22:11:27,405 [INFO] methods.method3_hybrid:   Text override [73.1s]: Customer → Agent  (phrase: 'ada apa-apa lagi')
+  Text: "ada apa-apa lagi yang boleh saya bantu?"
+2026-04-11 22:11:27,405 [INFO] methods.method3_hybrid: Segment text override: 4 segment(s) corrected
+2026-04-11 22:11:27,405 [INFO] methods.method3_hybrid: Method 3 Hybrid complete | segments=15 | agreement_rate=60.0% | text_overrides=4 | α=0.487 β=0.512 | final_roles={0: 'Customer', 1: 'Customer'}
+2026-04-11 22:11:27,769 [INFO] methods.method3_hybrid: Ensemble scores plot saved → c:\fyp1_fixed\outputs\food_malay_m3_ensemble.png
+2026-04-11 22:11:27,951 [INFO] methods.method3_hybrid: Method comparison chart saved → c:\fyp1_fixed\outputs\food_malay_method_comparison.png
+2026-04-11 22:11:27,951 [INFO] main: Phase 3: Analytics...
+2026-04-11 22:11:27,959 [INFO] analytics.sentiment: Sentiment | Agent=+0.000 (Neutral) | Customer=+0.000 (Neutral) | Trend=Stable | Mismatch=False
+2026-04-11 22:11:27,959 [INFO] analytics.talk_ratio: Talk ratio: Agent=34.38% | Customer=57.88% | Silence=7.75% | Type=Balanced (Interactive)
+2026-04-11 22:11:27,959 [INFO] analytics.compliance: Compliance: score=0.00 (Non-Compliant) | risk=Medium | non_compliant=['Missing Greeting', 'Missing Closing', 'Missing Recorded Disclaimer', 'Missing Identity Verification']
+2026-04-11 22:11:27,959 [INFO] analytics.talk_ratio: QA Score: 54.69/100 (Needs Improvement)
+2026-04-11 22:11:28,228 [INFO] analytics.sentiment: Sentiment trajectory saved → c:\fyp1_fixed\outputs\food_malay_sentiment.png
+2026-04-11 22:11:28,228 [INFO] main: ✓ food_malay | QA=54.69/100 (Needs Improvement) | Compliance=0% | Risk=Medium
+2026-04-11 22:11:28,231 [INFO] main: 
+============================================================
+Processing: insurance_english
+============================================================
+2026-04-11 22:11:28,231 [INFO] main: Phase 1: Audio preprocessing...
+2026-04-11 22:11:28,231 [INFO] preprocessing.audio_processor: === Preprocessing: insurance_english.wav ===
+2026-04-11 22:11:28,245 [INFO] preprocessing.audio_processor: Loaded 'insurance_english.wav' | sr=24000 Hz | duration=70.13s | samples=1683143
+2026-04-11 22:11:28,262 [INFO] preprocessing.audio_processor: Resampled 24000 Hz → 16000 Hz
+2026-04-11 22:11:28,265 [INFO] preprocessing.audio_processor: SNR before cleaning: -0.37 dB
+2026-04-11 22:11:28,903 [INFO] preprocessing.audio_processor: Noise reduction applied | noise_profile_samples=112209
+2026-04-11 22:11:28,913 [INFO] preprocessing.audio_processor: Amplitude normalized | max_amplitude=0.6170 → 1.0000
+2026-04-11 22:11:28,920 [INFO] preprocessing.audio_processor: SNR after cleaning:  -1.13 dB | Improvement: +-0.76 dB
+2026-04-11 22:11:28,945 [INFO] preprocessing.audio_processor: Saved cleaned audio → c:\fyp1_fixed\outputs\insurance_english_cleaned.wav
+2026-04-11 22:11:30,292 [INFO] preprocessing.audio_processor: Waveform comparison saved → c:\fyp1_fixed\outputs\insurance_english_waveform.png
+2026-04-11 22:11:34,589 [INFO] preprocessing.audio_processor: Spectrogram comparison saved → c:\fyp1_fixed\outputs\insurance_english_spectrogram.png
+2026-04-11 22:11:34,593 [INFO] main: Phase 1: Transcription + Diarization...
+2026-04-11 22:11:34,593 [INFO] preprocessing.transcriber: --- Starting Transcription + Diarization pipeline ---
+2026-04-11 22:11:34,593 [INFO] preprocessing.transcriber: Transcribing | model=small | device=cuda | lang=auto-detect | beam=5
+2026-04-11 22:12:01,881 [INFO] preprocessing.transcriber: Transcription complete | segments=16 | language detected=en
+2026-04-11 22:12:01,883 [INFO] preprocessing.transcriber: Initializing Resemblyzer VoiceEncoder...
+2026-04-11 22:12:03,326 [INFO] preprocessing.transcriber: Extracted 78 embeddings | shape=(78, 256)
+2026-04-11 22:12:03,341 [INFO] preprocessing.transcriber: Clustering complete | speakers found=2
+2026-04-11 22:12:03,342 [INFO] preprocessing.transcriber: Speaker segments after merging: 9
+2026-04-11 22:12:03,343 [INFO] preprocessing.transcriber: Aligned 16 transcript segments to speakers
+2026-04-11 22:12:03,345 [INFO] preprocessing.transcriber: Diarized transcript saved → c:\fyp1_fixed\outputs\insurance_english_diarized.json
+2026-04-11 22:12:03,375 [INFO] preprocessing.transcriber: WER=48.68% | S=53 D=8 I=31 | ref_len=189
+2026-04-11 22:12:03,375 [INFO] main: WER for insurance_english: 48.68%
+2026-04-11 22:12:03,375 [INFO] main: Phase 2: Method 1 — Lexical classification...
+2026-04-11 22:12:03,377 [INFO] methods.method1_lexical: Method 1 classification complete | speaker_roles={1: 'Agent', 0: 'Agent'}
+2026-04-11 22:12:03,706 [INFO] methods.method1_lexical: Keyword density plot saved → c:\fyp1_fixed\outputs\insurance_english_m1_keywords.png
+2026-04-11 22:12:03,885 [INFO] methods.method1_lexical: Confidence distribution plot saved → c:\fyp1_fixed\outputs\insurance_english_m1_confidence.png
+2026-04-11 22:12:03,885 [INFO] main: Phase 2: Method 2 — Acoustic DNN classification...
+2026-04-11 22:12:05,640 [INFO] methods.method2_acoustic: Method 2 acoustic complete | roles={1: 'Agent', 0: 'Agent'}
+2026-04-11 22:12:05,640 [INFO] main: Phase 2: Method 3 — Hybrid Ensemble Fusion...
+2026-04-11 22:12:05,640 [INFO] methods.method3_hybrid: Speaker anchor scores: {0: 2.0, 1: 8.0}
+2026-04-11 22:12:05,640 [INFO] methods.method3_hybrid: Speaker anchor result: {0: 'Customer', 1: 'Agent'}
+2026-04-11 22:12:05,640 [INFO] methods.method3_hybrid: Dynamic weights | lex_conf=0.803 ac_conf=0.881 → α=0.477 β=0.523
+2026-04-11 22:12:05,640 [WARNING] methods.method3_hybrid: Global consistency violation: all speakers labelled 'Agent'. Overriding with anchor map: {0: 'Customer', 1: 'Agent'}
+2026-04-11 22:12:05,640 [INFO] methods.method3_hybrid: Global consistency enforced | final_roles={0: 'Customer', 1: 'Agent'}
+2026-04-11 22:12:05,640 [INFO] methods.method3_hybrid:   Text override [18.0s]: Customer → Agent  (phrase: 'do you have your')
+  Text: "do you have your policy number handy so i can pull up your glass cover"
+2026-04-11 22:12:05,640 [INFO] methods.method3_hybrid:   Text override [31.1s]: Agent → Customer  (phrase: 'i need this fixed')
+  Text: "trip planned for tomorrow and i need this fixed immediately."
+2026-04-11 22:12:05,640 [INFO] methods.method3_hybrid:   Text override [40.1s]: Customer → Agent  (phrase: 'i can schedule')
+  Text: "repair with a zero dollar deductible. i can schedule a mobile technici"
+2026-04-11 22:12:05,640 [INFO] methods.method3_hybrid:   Text override [44.6s]: Agent → Customer  (phrase: 'that would be a huge relief')
+  Text: "location this afternoon. oh, that would be a huge relief. does it matt"
+2026-04-11 22:12:05,640 [INFO] methods.method3_hybrid:   Text override [59.0s]: Agent → Customer  (phrase: 'that works perfectly')
+  Text: "that works perfectly for me. thank you so much for making this easy. i"
+2026-04-11 22:12:05,640 [INFO] methods.method3_hybrid:   Text override [63.3s]: Customer → Agent  (phrase: 'confirmation text')
+  Text: "pleasure, sarah. i'm processing that now. you'll receive a confirmatio"
+2026-04-11 22:12:05,640 [INFO] methods.method3_hybrid:   Text override [67.0s]: Customer → Agent  (phrase: 'is there anything else')
+  Text: "shortly. is there anything else i can assist you with today?"
+2026-04-11 22:12:05,640 [INFO] methods.method3_hybrid: Segment text override: 7 segment(s) corrected
+2026-04-11 22:12:05,640 [INFO] methods.method3_hybrid: Method 3 Hybrid complete | segments=16 | agreement_rate=100.0% | text_overrides=7 | α=0.477 β=0.523 | final_roles={0: 'Agent', 1: 'Customer'}
+2026-04-11 22:12:05,985 [INFO] methods.method3_hybrid: Ensemble scores plot saved → c:\fyp1_fixed\outputs\insurance_english_m3_ensemble.png
+2026-04-11 22:12:06,136 [INFO] methods.method3_hybrid: Method comparison chart saved → c:\fyp1_fixed\outputs\insurance_english_method_comparison.png
+2026-04-11 22:12:06,136 [INFO] main: Phase 3: Analytics...
+2026-04-11 22:12:06,136 [INFO] analytics.sentiment: Sentiment | Agent=+0.324 (Positive) | Customer=+0.229 (Positive) | Trend=Improving | Mismatch=False
+2026-04-11 22:12:06,136 [INFO] analytics.talk_ratio: Talk ratio: Agent=45.8% | Customer=49.54% | Silence=4.66% | Type=Balanced (Interactive)
+2026-04-11 22:12:06,140 [INFO] analytics.compliance: Compliance: score=0.50 (Partially Compliant) | risk=Clean | non_compliant=['Missing Recorded Disclaimer', 'Missing Identity Verification']
+2026-04-11 22:12:06,140 [INFO] analytics.talk_ratio: QA Score: 72.65/100 (Fair)
+2026-04-11 22:12:06,382 [INFO] analytics.sentiment: Sentiment trajectory saved → c:\fyp1_fixed\outputs\insurance_english_sentiment.png
+2026-04-11 22:12:06,383 [INFO] main: ✓ insurance_english | QA=72.65/100 (Fair) | Compliance=50% | Risk=Clean
+2026-04-11 22:12:06,384 [INFO] main: 
+============================================================
+Processing: internet_english
+============================================================
+2026-04-11 22:12:06,385 [INFO] main: Phase 1: Audio preprocessing...
+2026-04-11 22:12:06,385 [INFO] preprocessing.audio_processor: === Preprocessing: internet_english.wav ===
+2026-04-11 22:12:06,402 [INFO] preprocessing.audio_processor: Loaded 'internet_english.wav' | sr=24000 Hz | duration=106.17s | samples=2548103
+2026-04-11 22:12:06,421 [INFO] preprocessing.audio_processor: Resampled 24000 Hz → 16000 Hz
+2026-04-11 22:12:06,430 [INFO] preprocessing.audio_processor: SNR before cleaning: -0.63 dB
+2026-04-11 22:12:07,186 [INFO] preprocessing.audio_processor: Noise reduction applied | noise_profile_samples=169873
+2026-04-11 22:12:07,192 [INFO] preprocessing.audio_processor: Amplitude normalized | max_amplitude=0.6171 → 1.0000
+2026-04-11 22:12:07,200 [INFO] preprocessing.audio_processor: SNR after cleaning:  2.23 dB | Improvement: +2.86 dB
+2026-04-11 22:12:07,215 [INFO] preprocessing.audio_processor: Saved cleaned audio → c:\fyp1_fixed\outputs\internet_english_cleaned.wav
+2026-04-11 22:12:08,474 [INFO] preprocessing.audio_processor: Waveform comparison saved → c:\fyp1_fixed\outputs\internet_english_waveform.png
+2026-04-11 22:12:14,289 [INFO] preprocessing.audio_processor: Spectrogram comparison saved → c:\fyp1_fixed\outputs\internet_english_spectrogram.png
+2026-04-11 22:12:14,291 [INFO] main: Phase 1: Transcription + Diarization...
+2026-04-11 22:12:14,292 [INFO] preprocessing.transcriber: --- Starting Transcription + Diarization pipeline ---
+2026-04-11 22:12:14,292 [INFO] preprocessing.transcriber: Transcribing | model=small | device=cuda | lang=auto-detect | beam=5
+2026-04-11 22:12:50,672 [INFO] preprocessing.transcriber: Transcription complete | segments=22 | language detected=en
+2026-04-11 22:12:50,677 [INFO] preprocessing.transcriber: Initializing Resemblyzer VoiceEncoder...
+2026-04-11 22:12:52,769 [INFO] preprocessing.transcriber: Extracted 118 embeddings | shape=(118, 256)
+2026-04-11 22:12:52,794 [INFO] preprocessing.transcriber: Clustering complete | speakers found=2
+2026-04-11 22:12:52,796 [INFO] preprocessing.transcriber: Speaker segments after merging: 19
+2026-04-11 22:12:52,796 [INFO] preprocessing.transcriber: Aligned 22 transcript segments to speakers
+2026-04-11 22:12:52,800 [INFO] preprocessing.transcriber: Diarized transcript saved → c:\fyp1_fixed\outputs\internet_english_diarized.json
+2026-04-11 22:12:52,855 [INFO] preprocessing.transcriber: WER=55.23% | S=43 D=8 I=81 | ref_len=239
+2026-04-11 22:12:52,855 [INFO] main: WER for internet_english: 55.23%
+2026-04-11 22:12:52,855 [INFO] main: Phase 2: Method 1 — Lexical classification...
+2026-04-11 22:12:52,859 [INFO] methods.method1_lexical: Method 1 classification complete | speaker_roles={0: 'Agent', 1: 'Customer'}
+2026-04-11 22:12:53,182 [INFO] methods.method1_lexical: Keyword density plot saved → c:\fyp1_fixed\outputs\internet_english_m1_keywords.png
+2026-04-11 22:12:53,392 [INFO] methods.method1_lexical: Confidence distribution plot saved → c:\fyp1_fixed\outputs\internet_english_m1_confidence.png
+2026-04-11 22:12:53,393 [INFO] main: Phase 2: Method 2 — Acoustic DNN classification...
+2026-04-11 22:12:57,491 [INFO] methods.method2_acoustic: Method 2 acoustic complete | roles={0: 'Customer', 1: 'Customer'}
+2026-04-11 22:12:57,493 [INFO] main: Phase 2: Method 3 — Hybrid Ensemble Fusion...
+2026-04-11 22:12:57,494 [INFO] methods.method3_hybrid: Speaker anchor scores: {0: 9.5, 1: 2.5}
+2026-04-11 22:12:57,494 [INFO] methods.method3_hybrid: Speaker anchor result: {0: 'Agent', 1: 'Customer'}
+2026-04-11 22:12:57,494 [INFO] methods.method3_hybrid: Dynamic weights | lex_conf=0.711 ac_conf=0.969 → α=0.423 β=0.577
+2026-04-11 22:12:57,494 [WARNING] methods.method3_hybrid: Global consistency violation: all speakers labelled 'Customer'. Overriding with anchor map: {0: 'Agent', 1: 'Customer'}
+2026-04-11 22:12:57,494 [INFO] methods.method3_hybrid: Global consistency enforced | final_roles={0: 'Agent', 1: 'Customer'}
+2026-04-11 22:12:57,494 [INFO] methods.method3_hybrid:   Text override [37.4s]: Customer → Agent  (phrase: 'give me one moment')
+  Text: "thank you. give me one moment while i run a diagnostic on your connect"
+2026-04-11 22:12:57,494 [INFO] methods.method3_hybrid:   Text override [41.5s]: Agent → Customer  (phrase: 'your company is a complete joke')
+  Text: "whatever. just fix it. your company is a complete joke."
+2026-04-11 22:12:57,494 [INFO] methods.method3_hybrid:   Text override [45.3s]: Customer → Agent  (phrase: 'line error in your area')
+  Text: "i am seeing a line error in your area. our technicians are actually al"
+2026-04-11 22:12:57,494 [INFO] methods.method3_hybrid:   Text override [51.9s]: Agent → Customer  (phrase: 'i do not care about nodes')
+  Text: "i do not care about nodes or line errors. i care about when i can get "
+2026-04-11 22:12:57,494 [INFO] methods.method3_hybrid:   Text override [85.2s]: Agent → Customer  (phrase: 'do not put me on hold')
+  Text: "do not put me on hold. hello? hello? do not you dare put me on hold."
+2026-04-11 22:12:57,494 [INFO] methods.method3_hybrid:   Text override [96.4s]: Agent → Customer  (phrase: 'canceling my service today')
+  Text: "if you put me on hold, i'm canceling my service today. i swear."
+2026-04-11 22:12:57,499 [INFO] methods.method3_hybrid:   Text override [103.7s]: Agent → Customer  (phrase: 'you guys are absolutely')
+  Text: "you guys are absolutely useless."
+2026-04-11 22:12:57,499 [INFO] methods.method3_hybrid: Segment text override: 7 segment(s) corrected
+2026-04-11 22:12:57,499 [INFO] methods.method3_hybrid: Method 3 Hybrid complete | segments=22 | agreement_rate=40.9% | text_overrides=7 | α=0.423 β=0.577 | final_roles={0: 'Customer', 1: 'Customer'}
+2026-04-11 22:12:57,890 [INFO] methods.method3_hybrid: Ensemble scores plot saved → c:\fyp1_fixed\outputs\internet_english_m3_ensemble.png
+2026-04-11 22:12:58,062 [INFO] methods.method3_hybrid: Method comparison chart saved → c:\fyp1_fixed\outputs\internet_english_method_comparison.png
+2026-04-11 22:12:58,062 [INFO] main: Phase 3: Analytics...
+2026-04-11 22:12:58,075 [INFO] analytics.sentiment: Sentiment | Agent=+0.151 (Positive) | Customer=-0.145 (Negative) | Trend=Declining | Mismatch=True
+2026-04-11 22:12:58,075 [INFO] analytics.talk_ratio: Talk ratio: Agent=42.35% | Customer=46.74% | Silence=10.92% | Type=Balanced (Interactive)
+2026-04-11 22:12:58,078 [INFO] analytics.compliance: Compliance: score=0.75 (Partially Compliant) | risk=Medium | non_compliant=['Missing Recorded Disclaimer']
+2026-04-11 22:12:58,078 [INFO] analytics.talk_ratio: QA Score: 72.62/100 (Fair)
+2026-04-11 22:12:58,309 [INFO] analytics.sentiment: Sentiment trajectory saved → c:\fyp1_fixed\outputs\internet_english_sentiment.png
+2026-04-11 22:12:58,309 [INFO] main: ✓ internet_english | QA=72.62/100 (Fair) | Compliance=75% | Risk=Medium
+2026-04-11 22:12:58,315 [INFO] evaluation.metrics: RTF=0.6181 (Real-time capable) | 1.6× faster than audio
+2026-04-11 22:12:58,315 [INFO] main: 
+Pipeline complete | 6 call(s) | audio=532.6s | processing=329.2s | RTF=0.6181 | 1.62× faster than real-time
+2026-04-11 22:12:59,485 [INFO] analytics.talk_ratio: Talk time distribution plot saved → c:\fyp1_fixed\outputs\talk_time_distribution.png
+2026-04-11 22:12:59,695 [INFO] analytics.sentiment: Sentiment summary saved → c:\fyp1_fixed\outputs\sentiment_summary.png
+2026-04-11 22:12:59,853 [INFO] analytics.compliance: Compliance summary chart saved → c:\fyp1_fixed\outputs\compliance_summary.png
+2026-04-11 22:12:59,944 [INFO] analytics.compliance: Risk severity chart saved → c:\fyp1_fixed\outputs\risk_severity_distribution.png
+2026-04-11 22:12:59,944 [INFO] main: 
+Phase 4: Validation against ground truth...
+2026-04-11 22:13:00,013 [INFO] evaluation.validator: Loaded ground truth: c:\fyp1_fixed\human_validation_study.csv | rows=73 | calls=6 | roles={'Agent': 40, 'Customer': 33}
+2026-04-11 22:13:00,093 [INFO] evaluation.validator: [Method1-Lexical|bank_malay] Matched 9/42 segments (avg similarity=0.66)
+2026-04-11 22:13:00,093 [INFO] evaluation.validator: Label inversion check | normal_acc=33.3% | inverted_acc=66.7% | inverted=True
+2026-04-11 22:13:00,093 [WARNING] evaluation.validator: ⚠ Label inversion detected for 'bank_malay' — auto-correcting predictions
+2026-04-11 22:13:00,093 [INFO] evaluation.validator: Labels corrected — was inverted
+2026-04-11 22:13:00,151 [INFO] evaluation.metrics: [Method1-Lexical|bank_malay] Accuracy=66.7% | Precision=66.7% | Recall=100.0% | F1=80.0% | n=9
+2026-04-11 22:13:00,220 [INFO] evaluation.validator: [Method2-Acoustic|bank_malay] Matched 9/42 segments (avg similarity=0.66)
+2026-04-11 22:13:00,220 [INFO] evaluation.validator: Label inversion check | normal_acc=33.3% | inverted_acc=66.7% | inverted=True
+2026-04-11 22:13:00,220 [WARNING] evaluation.validator: ⚠ Label inversion detected for 'bank_malay' — auto-correcting predictions
+2026-04-11 22:13:00,224 [INFO] evaluation.validator: Labels corrected — was inverted
+2026-04-11 22:13:00,290 [INFO] evaluation.metrics: [Method2-Acoustic|bank_malay] Accuracy=66.7% | Precision=66.7% | Recall=100.0% | F1=80.0% | n=9
+2026-04-11 22:13:00,338 [INFO] evaluation.validator: [Method3-Hybrid|bank_malay] Matched 9/42 segments (avg similarity=0.66)
+2026-04-11 22:13:00,338 [INFO] evaluation.validator: Label inversion check | normal_acc=77.8% | inverted_acc=22.2% | inverted=False
+2026-04-11 22:13:00,338 [INFO] evaluation.metrics: [Method3-Hybrid|bank_malay] Accuracy=77.8% | Precision=83.3% | Recall=83.3% | F1=83.3% | n=9
+2026-04-11 22:13:00,377 [INFO] evaluation.validator: [Method1-Lexical|billing_english] Matched 9/15 segments (avg similarity=0.63)
+2026-04-11 22:13:00,377 [INFO] evaluation.validator: Label inversion check | normal_acc=33.3% | inverted_acc=66.7% | inverted=True
+2026-04-11 22:13:00,377 [WARNING] evaluation.validator: ⚠ Label inversion detected for 'billing_english' — auto-correcting predictions
+2026-04-11 22:13:00,377 [INFO] evaluation.validator: Labels corrected — was inverted
+2026-04-11 22:13:00,415 [INFO] evaluation.metrics: [Method1-Lexical|billing_english] Accuracy=66.7% | Precision=66.7% | Recall=100.0% | F1=80.0% | n=9
+2026-04-11 22:13:00,449 [INFO] evaluation.validator: [Method2-Acoustic|billing_english] Matched 9/15 segments (avg similarity=0.63)
+2026-04-11 22:13:00,449 [INFO] evaluation.validator: Label inversion check | normal_acc=33.3% | inverted_acc=66.7% | inverted=True
+2026-04-11 22:13:00,449 [WARNING] evaluation.validator: ⚠ Label inversion detected for 'billing_english' — auto-correcting predictions
+2026-04-11 22:13:00,450 [INFO] evaluation.validator: Labels corrected — was inverted
+2026-04-11 22:13:00,479 [INFO] evaluation.metrics: [Method2-Acoustic|billing_english] Accuracy=66.7% | Precision=66.7% | Recall=100.0% | F1=80.0% | n=9
+2026-04-11 22:13:00,512 [INFO] evaluation.validator: [Method3-Hybrid|billing_english] Matched 9/15 segments (avg similarity=0.63)
+2026-04-11 22:13:00,513 [INFO] evaluation.validator: Label inversion check | normal_acc=77.8% | inverted_acc=22.2% | inverted=False
+2026-04-11 22:13:00,513 [INFO] evaluation.metrics: [Method3-Hybrid|billing_english] Accuracy=77.8% | Precision=100.0% | Recall=66.7% | F1=80.0% | n=9
+2026-04-11 22:13:00,607 [INFO] evaluation.validator: [Method1-Lexical|delivery_malay] Matched 18/34 segments (avg similarity=0.73)
+2026-04-11 22:13:00,607 [INFO] evaluation.validator: Label inversion check | normal_acc=44.4% | inverted_acc=55.6% | inverted=True
+2026-04-11 22:13:00,607 [WARNING] evaluation.validator: ⚠ Label inversion detected for 'delivery_malay' — auto-correcting predictions
+2026-04-11 22:13:00,607 [INFO] evaluation.validator: Labels corrected — was inverted
+2026-04-11 22:13:00,684 [INFO] evaluation.metrics: [Method1-Lexical|delivery_malay] Accuracy=55.6% | Precision=55.6% | Recall=100.0% | F1=71.4% | n=18
+2026-04-11 22:13:00,753 [INFO] evaluation.validator: [Method2-Acoustic|delivery_malay] Matched 18/34 segments (avg similarity=0.73)
+2026-04-11 22:13:00,753 [INFO] evaluation.validator: Label inversion check | normal_acc=55.6% | inverted_acc=44.4% | inverted=False
+2026-04-11 22:13:00,753 [INFO] evaluation.metrics: [Method2-Acoustic|delivery_malay] Accuracy=55.6% | Precision=55.6% | Recall=100.0% | F1=71.4% | n=18
+2026-04-11 22:13:00,842 [INFO] evaluation.validator: [Method3-Hybrid|delivery_malay] Matched 18/34 segments (avg similarity=0.73)
+2026-04-11 22:13:00,842 [INFO] evaluation.validator: Label inversion check | normal_acc=88.9% | inverted_acc=11.1% | inverted=False
+2026-04-11 22:13:00,842 [INFO] evaluation.metrics: [Method3-Hybrid|delivery_malay] Accuracy=88.9% | Precision=100.0% | Recall=80.0% | F1=88.9% | n=18
+2026-04-11 22:13:00,875 [INFO] evaluation.validator: [Method1-Lexical|food_malay] Matched 9/15 segments (avg similarity=0.71)
+2026-04-11 22:13:00,875 [INFO] evaluation.validator: Label inversion check | normal_acc=88.9% | inverted_acc=11.1% | inverted=False
+2026-04-11 22:13:00,875 [INFO] evaluation.metrics: [Method1-Lexical|food_malay] Accuracy=88.9% | Precision=83.3% | Recall=100.0% | F1=90.9% | n=9
+2026-04-11 22:13:00,907 [INFO] evaluation.validator: [Method2-Acoustic|food_malay] Matched 9/15 segments (avg similarity=0.71)
+2026-04-11 22:13:00,907 [INFO] evaluation.validator: Label inversion check | normal_acc=44.4% | inverted_acc=55.6% | inverted=True
+2026-04-11 22:13:00,907 [WARNING] evaluation.validator: ⚠ Label inversion detected for 'food_malay' — auto-correcting predictions
+2026-04-11 22:13:00,907 [INFO] evaluation.validator: Labels corrected — was inverted
+2026-04-11 22:13:00,935 [INFO] evaluation.metrics: [Method2-Acoustic|food_malay] Accuracy=55.6% | Precision=55.6% | Recall=100.0% | F1=71.4% | n=9
+2026-04-11 22:13:00,968 [INFO] evaluation.validator: [Method3-Hybrid|food_malay] Matched 9/15 segments (avg similarity=0.71)
+2026-04-11 22:13:00,968 [INFO] evaluation.validator: Label inversion check | normal_acc=88.9% | inverted_acc=11.1% | inverted=False
+2026-04-11 22:13:00,969 [INFO] evaluation.metrics: [Method3-Hybrid|food_malay] Accuracy=88.9% | Precision=100.0% | Recall=80.0% | F1=88.9% | n=9
+2026-04-11 22:13:00,996 [INFO] evaluation.validator: [Method1-Lexical|insurance_english] Matched 9/16 segments (avg similarity=0.69)
+2026-04-11 22:13:00,996 [INFO] evaluation.validator: Label inversion check | normal_acc=55.6% | inverted_acc=44.4% | inverted=False
+2026-04-11 22:13:00,997 [INFO] evaluation.metrics: [Method1-Lexical|insurance_english] Accuracy=55.6% | Precision=55.6% | Recall=100.0% | F1=71.4% | n=9
+2026-04-11 22:13:01,025 [INFO] evaluation.validator: [Method2-Acoustic|insurance_english] Matched 9/16 segments (avg similarity=0.69)
+2026-04-11 22:13:01,026 [INFO] evaluation.validator: Label inversion check | normal_acc=55.6% | inverted_acc=44.4% | inverted=False
+2026-04-11 22:13:01,026 [INFO] evaluation.metrics: [Method2-Acoustic|insurance_english] Accuracy=55.6% | Precision=55.6% | Recall=100.0% | F1=71.4% | n=9
+2026-04-11 22:13:01,053 [INFO] evaluation.validator: [Method3-Hybrid|insurance_english] Matched 9/16 segments (avg similarity=0.69)
+2026-04-11 22:13:01,053 [INFO] evaluation.validator: Label inversion check | normal_acc=88.9% | inverted_acc=11.1% | inverted=False
+2026-04-11 22:13:01,053 [INFO] evaluation.metrics: [Method3-Hybrid|insurance_english] Accuracy=88.9% | Precision=100.0% | Recall=80.0% | F1=88.9% | n=9
+2026-04-11 22:13:01,102 [INFO] evaluation.validator: [Method1-Lexical|internet_english] Matched 15/22 segments (avg similarity=0.89)
+2026-04-11 22:13:01,102 [INFO] evaluation.validator: Label inversion check | normal_acc=80.0% | inverted_acc=20.0% | inverted=False
+2026-04-11 22:13:01,102 [INFO] evaluation.metrics: [Method1-Lexical|internet_english] Accuracy=80.0% | Precision=77.8% | Recall=87.5% | F1=82.4% | n=15
+2026-04-11 22:13:01,143 [INFO] evaluation.validator: [Method2-Acoustic|internet_english] Matched 15/22 segments (avg similarity=0.89)
+2026-04-11 22:13:01,143 [INFO] evaluation.validator: Label inversion check | normal_acc=46.7% | inverted_acc=53.3% | inverted=True
+2026-04-11 22:13:01,143 [WARNING] evaluation.validator: ⚠ Label inversion detected for 'internet_english' — auto-correcting predictions
+2026-04-11 22:13:01,143 [INFO] evaluation.validator: Labels corrected — was inverted
+2026-04-11 22:13:01,206 [INFO] evaluation.metrics: [Method2-Acoustic|internet_english] Accuracy=53.3% | Precision=53.3% | Recall=100.0% | F1=69.6% | n=15
+2026-04-11 22:13:01,249 [INFO] evaluation.validator: [Method3-Hybrid|internet_english] Matched 15/22 segments (avg similarity=0.89)
+2026-04-11 22:13:01,249 [INFO] evaluation.validator: Label inversion check | normal_acc=100.0% | inverted_acc=0.0% | inverted=False
+2026-04-11 22:13:01,249 [INFO] evaluation.metrics: [Method3-Hybrid|internet_english] Accuracy=100.0% | Precision=100.0% | Recall=100.0% | F1=100.0% | n=15
+2026-04-11 22:13:01,264 [INFO] evaluation.metrics: Paired t-test | t=2.7708 | p=0.0036 | reject_H0=True
+2026-04-11 22:13:01,269 [INFO] evaluation.metrics: Pearson r=0.3963 | p=0.4367 | Weak correlation
+2026-04-11 22:13:01,269 [INFO] evaluation.metrics: RTF=0.6181 (Real-time capable) | 1.6× faster than audio
+2026-04-11 22:13:01,269 [INFO] evaluation.validator: ============================================================
+2026-04-11 22:13:01,269 [INFO] evaluation.validator: VALIDATION SUMMARY
+2026-04-11 22:13:01,269 [INFO] evaluation.validator:   Method 1 (Keyword) : Acc=68.89% F1=79.35%
+2026-04-11 22:13:01,272 [INFO] evaluation.validator:   Method 2 (Acoustic): Acc=58.89% F1=73.98%
+2026-04-11 22:13:01,272 [INFO] evaluation.validator:   Method 3 (Hybrid)  : Acc=87.04% F1=88.33%
+2026-04-11 22:13:01,272 [WARNING] evaluation.validator:   Label inversions auto-corrected: {'m1': ['bank_malay', 'billing_english', 'delivery_malay'], 'm2': ['bank_malay', 'billing_english', 'food_malay', 'internet_english'], 'm3': []}
+2026-04-11 22:13:01,272 [INFO] evaluation.validator: ============================================================
+2026-04-11 22:13:01,496 [INFO] evaluation.metrics: Accuracy comparison chart saved → c:\fyp1_fixed\outputs\accuracy_comparison.png
+2026-04-11 22:13:01,621 [INFO] evaluation.metrics: t-test boxplot saved → c:\fyp1_fixed\outputs\ttest_boxplot.png
+2026-04-11 22:13:01,646 [INFO] utils.file_utils: Analytics CSV saved → c:\fyp1_fixed\outputs\analytics_summary.csv | rows=6
+2026-04-11 22:13:01,677 [INFO] main: 
+============================================================
+2026-04-11 22:13:01,677 [INFO] main: ✅ Results saved:
+2026-04-11 22:13:01,677 [INFO] main:    JSON      → c:\fyp1_fixed\outputs\pipeline_results.json
+2026-04-11 22:13:01,677 [INFO] main:    CSV       → c:\fyp1_fixed\outputs\analytics_summary.csv
+2026-04-11 22:13:01,677 [INFO] main:    Transcripts → c:\fyp1_fixed\outputs/*_transcript.txt
+2026-04-11 22:13:01,677 [INFO] main:    Plots     → c:\fyp1_fixed\outputs/
+2026-04-11 22:13:01,677 [INFO] main: 
+   Launch dashboard:  streamlit run dashboard/app.py
+2026-04-11 22:13:01,677 [INFO] main: ============================================================
