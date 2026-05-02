@@ -4,8 +4,10 @@ config.py
 Central configuration file for the FYP1 Call Analysis System.
 All paths, constants, and hyperparameters are defined here.
 """
-
+from dotenv import load_dotenv
+load_dotenv()
 import os
+
 
 # ─────────────────────────────────────────────
 # BASE PATHS
@@ -66,6 +68,7 @@ WHISPER_MODEL_SIZE = "small"
 #   https://huggingface.co/pyannote/speaker-diarization-3.1
 #   https://huggingface.co/pyannote/segmentation-3.0
 HUGGINGFACE_TOKEN = os.environ.get("HUGGINGFACE_TOKEN", None)
+
 
 # ─────────────────────────────────────────────────────────────
 # METHOD 4 — LLM CLASSIFICATION (FREE — Google Gemini)
