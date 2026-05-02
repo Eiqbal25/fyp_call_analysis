@@ -1,0 +1,49 @@
+call_id,start_sec,system_text,human_text,text_similarity,combined_score,system_role,human_role,label_correct,matched,text_override,override_phrase,status
+bank_malay,0.0,Terselamat pagi.,Selamat pagi Bank Harapan dengan saya Amirul boleh saya bantu encik,0.289,0.573,Customer,Agent,False,True,False,,❌ WRONG
+bank_malay,1.36,"Bank harapan dengan saya Amirul. Boleh saya bantu, encik?",Selamat pagi Bank Harapan dengan saya Amirul boleh saya bantu encik,0.871,0.923,Customer,Agent,False,True,False,,❌ WRONG
+bank_malay,4.94,Aku nak tahu kenapa ada tolak duit dari air kawan aku seratus sikit.,Aku nak tahu kenapa ada tolak duit dari akaun aku seratus ringgit korang ni pand,0.678,0.8,Customer,Customer,True,True,False,,✅ CORRECT
+bank_malay,9.06,Orang ini pandai-pandai contoh tolak duit orang.,Aku nak tahu kenapa ada tolak duit dari akaun aku seratus ringgit korang ni pand,0.497,0.698,Customer,Customer,True,True,False,,✅ CORRECT
+bank_malay,11.6,"Harap bersabar, encik. Saya minta maaf atas kesultan ini.",Harap bersabar encik saya minta maaf atas kesulitan ini boleh saya dapatkan nomb,0.643,0.687,Agent,Agent,True,True,False,,✅ CORRECT
+bank_malay,15.68,Boleh saya dapatkan nombor kad pengenalan untuk saya makan?,Harap bersabar encik saya minta maaf atas kesulitan ini boleh saya dapatkan nomb,0.635,0.781,Agent,Agent,True,True,False,,✅ CORRECT
+bank_malay,18.64,Nak nombor kad pengenalan buat apa?,Harap bersabar encik saya minta maaf atas kesulitan ini boleh saya dapatkan nomb,0.397,0.511,Customer,Agent,False,True,False,,❌ WRONG
+bank_malay,20.3,"Cek jelah nama apa, Johan.",Nak nombor kad pengenalan buat apa check je la nama aku Johan aku dah call banya,0.321,0.592,Customer,Customer,True,True,False,,✅ CORRECT
+bank_malay,21.92,Aku dah telefon banyak kali. Takkan tak ada rekod.,Nak nombor kad pengenalan buat apa check je la nama aku Johan aku dah call banya,0.503,0.702,Customer,Customer,True,True,False,,✅ CORRECT
+bank_malay,24.28,"Maaf, Encik Johan.",Nak nombor kad pengenalan buat apa check je la nama aku Johan aku dah call banya,0.163,0.498,Agent,Customer,False,True,False,,❌ WRONG
+bank_malay,25.76,Prosedur keselamatan Bank memerlukan nombor kad pengenalan,Maaf encik Johan prosedur keselamatan bank memerlukan nombor kad pengenalan untu,0.716,0.516,Agent,Agent,True,True,False,,✅ CORRECT
+bank_malay,28.62,untuk kami buka profil Encik.,Maaf encik Johan prosedur keselamatan bank memerlukan nombor kad pengenalan untu,0.421,0.653,Agent,Agent,True,True,False,,✅ CORRECT
+bank_malay,31.0,Menusahkan betul.,Maaf encik Johan prosedur keselamatan bank memerlukan nombor kad pengenalan untu,0.198,0.519,Customer,Agent,False,True,False,,❌ WRONG
+bank_malay,33.52,890-2140-1553.,,0.0,0.177,Customer,Unknown,False,False,False,,⚠ UNMATCHED
+bank_malay,36.8,Cepat sikit.,Menyusahkan betul lapan sembilan kosong dua satu empat kosong satu lima lima tig,0.2,0.52,Customer,Customer,True,True,True,cepat sikit,✅ CORRECT
+bank_malay,37.7,"Terima kasih, Encik Johan.",Menyusahkan betul lapan sembilan kosong dua satu empat kosong satu lima lima tig,0.161,0.497,Customer,Customer,True,True,False,,✅ CORRECT
+bank_malay,39.4,"Sementara saya semak transaksi terakhir, Encik.",Menyusahkan betul lapan sembilan kosong dua satu empat kosong satu lima lima tig,0.262,0.557,Agent,Customer,False,True,False,,❌ WRONG
+bank_malay,42.58,Jangan suruh aku tunggu lama-lama.,,0.0,0.327,Customer,Unknown,False,False,False,,⚠ UNMATCHED
+bank_malay,44.22,Aku ada banyak kerja lain nak buat.,Terima kasih encik Johan sebentar ya saya semak transaksi terakhir encik,0.262,0.557,Customer,Agent,False,True,False,,❌ WRONG
+bank_malay,45.76,Bukan nak layan bank orang.,Terima kasih encik Johan sebentar ya saya semak transaksi terakhir encik,0.222,0.533,Customer,Agent,False,True,False,,❌ WRONG
+bank_malay,47.26,"Baik, Encik.",Terima kasih encik Johan sebentar ya saya semak transaksi terakhir encik,0.19,0.514,Agent,Agent,True,True,False,,✅ CORRECT
+bank_malay,48.3,Saya nampak ada penulakan 100 rigit,Jangan suruh aku tunggu lama lama aku ada banyak kerja lain nak buat bukan nak l,0.351,0.576,Agent,Customer,False,True,False,,❌ WRONG
+bank_malay,50.64,"untuk charge tahunan kat credit, Encik.",Jangan suruh aku tunggu lama lama aku ada banyak kerja lain nak buat bukan nak l,0.163,0.498,Agent,Customer,False,True,False,,❌ WRONG
+bank_malay,53.04,Charge tahunan apa benda pula?,Jangan suruh aku tunggu lama lama aku ada banyak kerja lain nak buat bukan nak l,0.222,0.533,Customer,Customer,True,True,False,,✅ CORRECT
+bank_malay,54.7,Aku dah guna kat ini 5 tahun.,,0.0,0.334,Customer,Unknown,False,False,False,,⚠ UNMATCHED
+bank_malay,56.32,Tak pernah ada charge tahunan.,Baik encik saya nampak ada penolakan seratus ringgit untuk caj tahunan kad kredi,0.291,0.574,Customer,Agent,False,True,False,,❌ WRONG
+bank_malay,57.38,Kau orang ini nak menipu ke?,Baik encik saya nampak ada penolakan seratus ringgit untuk caj tahunan kad kredi,0.261,0.557,Customer,Agent,False,True,False,,❌ WRONG
+bank_malay,59.28,"Untuk maklumat, Encik,",Baik encik saya nampak ada penolakan seratus ringgit untuk caj tahunan kad kredi,0.294,0.576,Agent,Agent,True,True,False,,✅ CORRECT
+bank_malay,60.74,pengetualian charge tahunan hanya untuk tiga tahun pertama.,Caj tahunan apa benda pula aku dah guna kad ni lima tahun tak pernah ada caj tah,0.383,0.463,Agent,Customer,False,True,False,,❌ WRONG
+bank_malay,64.18,"Bermula tahun ke empat,",Caj tahunan apa benda pula aku dah guna kad ni lima tahun tak pernah ada caj tah,0.214,0.528,Agent,Customer,False,True,False,,❌ WRONG
+bank_malay,65.76,charge akan dikenakan.,Caj tahunan apa benda pula aku dah guna kad ni lima tahun tak pernah ada caj tah,0.231,0.538,Agent,Customer,False,True,False,,❌ WRONG
+bank_malay,67.2,"Oh tak, kau!",Caj tahunan apa benda pula aku dah guna kad ni lima tahun tak pernah ada caj tah,0.15,0.49,Customer,Customer,True,True,False,,✅ CORRECT
+bank_malay,68.3,Siapa yang cakap macam tu?,Caj tahunan apa benda pula aku dah guna kad ni lima tahun tak pernah ada caj tah,0.194,0.516,Customer,Customer,True,True,False,,✅ CORRECT
+bank_malay,69.6,"Masa aku reply dulu, agent korang cakap free semua hidup.",Otak kau siapa yang cakap macam tu masa aku apply dulu ejen korang cakap free se,0.667,0.4,Customer,Customer,True,True,False,,✅ CORRECT
+bank_malay,72.54,"Saya faham ke keciwaan, Encik.",Untuk makluman encik pengecualian caj tahunan hanya untuk tiga tahun pertama ber,0.136,0.482,Agent,Agent,True,True,False,,✅ CORRECT
+bank_malay,74.5,Saya boleh bantu hantar permohonan untuk membatalkan charge tersebut.,Untuk makluman encik pengecualian caj tahunan hanya untuk tiga tahun pertama ber,0.28,0.568,Agent,Agent,True,True,False,,✅ CORRECT
+bank_malay,78.36,Tak payah nak hantar permohonan sangat.,,0.0,0.323,Customer,Unknown,False,False,False,,⚠ UNMATCHED
+bank_malay,80.12,Kau cancel je terus sekarang.,Otak kau siapa yang cakap macam tu masa aku apply dulu ejen korang cakap free se,0.269,0.561,Customer,Customer,True,True,False,,✅ CORRECT
+bank_malay,81.52,"Kalau tak, aku tutup ekon agar ini juga.",Otak kau siapa yang cakap macam tu masa aku apply dulu ejen korang cakap free se,0.215,0.529,Customer,Customer,True,True,False,,✅ CORRECT
+bank_malay,83.8,"Encik, proses pembatalan perlukan keleluisan pihak",Encik proses pembatalan perlukan kelulusan pihak pengurusan saya tidak boleh bua,0.61,0.366,Agent,Agent,True,True,False,,✅ CORRECT
+bank_malay,87.7,Saya tidak boleh buat terus dari sistem saya.,Saya faham kekecewaan encik saya boleh bantu hantar permohonan untuk membatalkan,0.348,0.609,Agent,Agent,True,True,False,,✅ CORRECT
+bank_malay,90.28,Habis itu kau buat apa di situ?,Saya faham kekecewaan encik saya boleh bantu hantar permohonan untuk membatalkan,0.21,0.526,Agent,Agent,True,True,True,habis itu kau buat apa,✅ CORRECT
+bank_malay,91.94,Angkat telefon je ke?,,0.0,0.255,Agent,Unknown,False,False,False,,⚠ UNMATCHED
+bank_malay,93.16,Panggil bos kau sekarang. Aku nak percakap dengan dia.,Tak payah nak hantar permohonan sangat kau cancel je terus sekarang kalau tak ak,0.373,0.624,Customer,Customer,True,True,False,,✅ CORRECT
+bank_malay,95.7,"Baiklah, Cik.",Tak payah nak hantar permohonan sangat kau cancel je terus sekarang kalau tak ak,0.133,0.48,Agent,Customer,False,True,False,,❌ WRONG
+bank_malay,96.72,Saya akan sambungkan panggilan ini kepada pegawai atasan saya.,Tak payah nak hantar permohonan sangat kau cancel je terus sekarang kalau tak ak,0.355,0.613,Agent,Customer,False,True,False,,❌ WRONG
+bank_malay,100.06,Mohon tunggu sebentar.,,0.0,0.346,Agent,Unknown,False,False,False,,⚠ UNMATCHED
+bank_malay,101.5,Sebab sikit. Jangan nak melinggal-linggalkan masa aku.,Encik proses pembatalan perlukan kelulusan pihak pengurusan saya tidak boleh bua,0.266,0.559,Agent,Agent,True,True,True,jangan nak melinggal,✅ CORRECT

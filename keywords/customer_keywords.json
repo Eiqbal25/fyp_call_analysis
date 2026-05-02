@@ -12,7 +12,12 @@
         "unable to",
         "does not work",
         "i cannot",
-        "i can not"
+        "i can not",
+        "i am really worried",
+        "i'm really worried",
+        "i need this fixed",
+        "this is not right",
+        "this is wrong"
     ],
     "account_inquiries": [
         "my account",
@@ -26,7 +31,10 @@
         "my balance",
         "i want to check",
         "i need to know",
-        "i am calling about"
+        "i am calling about",
+        "i was out of town",
+        "i live alone",
+        "i checked my"
     ],
     "complaint_language": [
         "very disappointed",
@@ -39,7 +47,12 @@
         "worst",
         "complain",
         "complaint",
-        "extremely unhappy"
+        "extremely unhappy",
+        "this is ridiculous",
+        "this is outrageous",
+        "your company",
+        "you people",
+        "absolutely useless"
     ],
     "request_language": [
         "i want",
@@ -53,7 +66,14 @@
         "i want to change",
         "i want to upgrade",
         "cancel my",
-        "refund my"
+        "refund my",
+        "i want my money back",
+        "give me a refund",
+        "i want to speak to",
+        "i want to talk to",
+        "i want a manager",
+        "speak to your supervisor",
+        "speak to your manager"
     ],
     "emotional_markers": [
         "why",
@@ -64,7 +84,13 @@
         "already called",
         "nobody helped",
         "keep telling me",
-        "wasted my time"
+        "wasted my time",
+        "do not put me on hold",
+        "do not dare",
+        "i do not care",
+        "keep your",
+        "canceling my service",
+        "cancel my account"
     ],
     "manglish_customer_phrases": [
         "boleh tolong",
@@ -94,6 +120,17 @@
         "tak betul",
         "barang tak sampai",
         "duit tak masuk",
-        "charge lebih"
+        "charge lebih",
+        "tak masuk akal",
+        "ini tak betul",
+        "kenapa pula",
+        "nak buat aduan",
+        "korang ni",
+        "korang memang",
+        "cepat sikit",
+        "angkat telefon je",
+        "menyusahkan",
+        "saya nak refund",
+        "saya nak cancel"
     ]
 }

@@ -1,0 +1,242 @@
+[
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Thank you for calling ConnectNet Technical Support. My name is Alex. How can I help you today?",
+    "start": 0.0,
+    "end": 4.7,
+    "duration": 4.7
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "My internet is down again. This is the third time this week and I am sick of it.",
+    "start": 5.3,
+    "end": 10.16,
+    "duration": 4.86
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I apologize for the inconvenience. Let me pull up your account. Can I get your account number?",
+    "start": 10.74,
+    "end": 15.3,
+    "duration": 4.56
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Are you kidding me? I just typed it into the automated system. Why do I have to repeat it to you?",
+    "start": 15.86,
+    "end": 20.98,
+    "duration": 5.12
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I understand your frustration.",
+    "start": 21.62,
+    "end": 23.04,
+    "duration": 1.42
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Sometimes the system does not pass the information over.",
+    "start": 23.5,
+    "end": 26.32,
+    "duration": 2.82
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I just need it to access your router.",
+    "start": 26.68,
+    "end": 28.48,
+    "duration": 1.8
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Fine. It is 987 -6543.",
+    "start": 28.48,
+    "end": 32.86,
+    "duration": 4.38
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Hurry up! I work from home and I am losing money!",
+    "start": 33.34,
+    "end": 36.54,
+    "duration": 3.2
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Thank you. Give me one moment while I run a diagnostic on your connection.",
+    "start": 37.36,
+    "end": 40.84,
+    "duration": 3.48
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Whatever. Just fix it. Your company is a complete joke.",
+    "start": 41.46,
+    "end": 44.62,
+    "duration": 3.16
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I am seeing a line error in your area. Our technicians are actually already working on a node nearby.",
+    "start": 45.28,
+    "end": 51.28,
+    "duration": 6.0
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I do not care about nodes or line errors. I care about when I can get back online.",
+    "start": 51.9,
+    "end": 57.24,
+    "duration": 5.34
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Give me a time.",
+    "start": 57.24,
+    "end": 58.52,
+    "duration": 1.28
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "The estimated time of resolution is within the next two hours.",
+    "start": 59.24,
+    "end": 63.12,
+    "duration": 3.88
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Two hours? Are you out of your mind? I have a meeting in 20 minutes. This is unacceptable.",
+    "start": 63.88,
+    "end": 68.66,
+    "duration": 4.78
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I sincerely apologize for the disruption.",
+    "start": 69.4,
+    "end": 71.76,
+    "duration": 2.36
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "We can offer you a credit through the days you experienced outages.",
+    "start": 72.16,
+    "end": 75.3,
+    "duration": 3.14
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Keep your stupid $5 credit. I want a manager right now.",
+    "start": 75.98,
+    "end": 80.02,
+    "duration": 4.04
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I can certainly transfer you to the supervisor.",
+    "start": 80.58,
+    "end": 83.04,
+    "duration": 2.46
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Please hold on the line for a brief moment.",
+    "start": 83.44,
+    "end": 85.24,
+    "duration": 1.8
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Do not put me on hold.",
+    "start": 85.24,
+    "end": 87.14,
+    "duration": 1.9
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Hello?",
+    "start": 87.5,
+    "end": 87.7,
+    "duration": 0.2
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Hello?",
+    "start": 88.2,
+    "end": 88.44,
+    "duration": 0.24
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Do not you dare put me on hold.",
+    "start": 88.98,
+    "end": 90.78,
+    "duration": 1.8
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Sir, I have to place you on a brief hold to connect to the supervisor and will only be a minute.",
+    "start": 91.3,
+    "end": 95.98,
+    "duration": 4.68
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "If you put me on hold, I'm canceling my service today.",
+    "start": 96.4,
+    "end": 99.34,
+    "duration": 2.94
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I swear.",
+    "start": 99.72,
+    "end": 100.2,
+    "duration": 0.48
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I'm transferring you now. Please stay on line.",
+    "start": 100.84,
+    "end": 103.24,
+    "duration": 2.4
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "You guys are absolutely useless.",
+    "start": 103.68,
+    "end": 105.52,
+    "duration": 1.84
+  }
+]

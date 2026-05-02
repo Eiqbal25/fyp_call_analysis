@@ -1,0 +1,34 @@
+call_id,start_sec,system_text,human_text,text_similarity,combined_score,system_role,human_role,label_correct,matched,text_override,override_phrase,status
+insurance_english,0.0,Thank you for calling Silver Lining Insurance.,Thank you for calling Silver Lining Insurance My name is Marcus To whom do I hav,0.57,0.742,Agent,Agent,True,True,False,,✅ CORRECT
+insurance_english,2.58,My name is Marcus.,Thank you for calling Silver Lining Insurance My name is Marcus To whom do I hav,0.262,0.557,Agent,Agent,True,True,False,,✅ CORRECT
+insurance_english,3.72,To whom do I have the pleasure of speaking today?,Thank you for calling Silver Lining Insurance My name is Marcus To whom do I hav,0.596,0.758,Agent,Agent,True,True,False,,✅ CORRECT
+insurance_english,6.06,"Hi, Marcus.",Thank you for calling Silver Lining Insurance My name is Marcus To whom do I hav,0.146,0.454,Customer,Agent,False,True,False,,❌ WRONG
+insurance_english,6.92,This is Sarah Jenkins.,Hi Marcus this is Sarah Jenkins I am calling because a rock hit my windshield on,0.263,0.529,Customer,Customer,True,True,False,,✅ CORRECT
+insurance_english,8.78,I'm calling because a rock hit my windshield,Hi Marcus this is Sarah Jenkins I am calling because a rock hit my windshield on,0.473,0.684,Customer,Customer,True,True,False,,✅ CORRECT
+insurance_english,10.9,"on the highway this morning, and now there's a massive crack.",Hi Marcus this is Sarah Jenkins I am calling because a rock hit my windshield on,0.583,0.75,Customer,Customer,True,True,False,,✅ CORRECT
+insurance_english,15.06,"Sorry to hear that, Sarah.",I am sorry to hear that Sarah I am glad you are safe Do you have your policy num,0.3,0.438,Agent,Agent,True,True,False,,✅ CORRECT
+insurance_english,16.66,I'm glad you're safe.,I am sorry to hear that Sarah I am glad you are safe Do you have your policy num,0.232,0.539,Agent,Agent,True,True,False,,✅ CORRECT
+insurance_english,18.02,Do you have your policy number handy so I can pull up your glass coverage detail,I am sorry to hear that Sarah I am glad you are safe Do you have your policy num,0.75,0.85,Agent,Agent,True,True,False,,✅ CORRECT
+insurance_english,21.5,"Yes,",I am sorry to hear that Sarah I am glad you are safe Do you have your policy num,0.043,0.426,Customer,Agent,False,True,False,,❌ WRONG
+insurance_english,22.86,just a second.,I am sorry to hear that Sarah I am glad you are safe Do you have your policy num,0.135,0.481,Customer,Agent,False,True,False,,❌ WRONG
+insurance_english,24.58,It's 44920 Alpha.,Yes just a second it is four four nine two zero Alpha I am really worried becaus,0.113,0.422,Customer,Customer,True,True,False,,✅ CORRECT
+insurance_english,28.72,I'm really worried because I have a long road,Yes just a second it is four four nine two zero Alpha I am really worried becaus,0.429,0.658,Customer,Customer,True,True,False,,✅ CORRECT
+insurance_english,31.06,trip planned for tomorrow and I need this fixed immediately.,Yes just a second it is four four nine two zero Alpha I am really worried becaus,0.536,0.635,Customer,Customer,True,True,False,,✅ CORRECT
+insurance_english,34.7,I understand the urgency.,I understand the urgency Looking at your Premier Plan you are fully covered for ,0.327,0.596,Agent,Agent,True,True,False,,✅ CORRECT
+insurance_english,36.88,"Looking at your premier plan, you are fully covered for glass",I understand the urgency Looking at your Premier Plan you are fully covered for ,0.656,0.793,Agent,Agent,True,True,False,,✅ CORRECT
+insurance_english,40.14,repair with a zero dollar deductible. I can schedule a mobile technician to come,I can schedule a mobile technician to come to your location this afternoon,0.617,0.694,Agent,Agent,True,True,False,,✅ CORRECT
+insurance_english,44.64,location this afternoon.,I can schedule a mobile technician to come to your location this afternoon,0.469,0.423,Agent,Agent,True,True,False,,✅ CORRECT
+insurance_english,46.14,"Oh, that would be a huge relief.",Oh that would be a huge relief Does it matter that I am at my office and not at ,0.517,0.71,Customer,Customer,True,True,False,,✅ CORRECT
+insurance_english,48.66,Does it matter that I'm at,Oh that would be a huge relief Does it matter that I am at my office and not at ,0.455,0.673,Customer,Customer,True,True,False,,✅ CORRECT
+insurance_english,49.68,my office and not at home?,Oh that would be a huge relief Does it matter that I am at my office and not at ,0.455,0.507,Customer,Customer,True,True,False,,✅ CORRECT
+insurance_english,51.5,Not at all. We just need the vehicle's location and,Not at all We just need the vehicle location and a contact number Shall I procee,0.568,0.741,Agent,Agent,True,True,False,,✅ CORRECT
+insurance_english,54.1,the contact number.,Not at all We just need the vehicle location and a contact number Shall I procee,0.263,0.558,Agent,Agent,True,True,False,,✅ CORRECT
+insurance_english,55.3,Shall I proceed with the booking for the 2PM slot?,Not at all We just need the vehicle location and a contact number Shall I procee,0.571,0.743,Agent,Agent,True,True,False,,✅ CORRECT
+insurance_english,58.04,"Yes, please.",,0.0,0.247,Customer,Unknown,False,False,False,,⚠ UNMATCHED
+insurance_english,58.98,That works perfectly for me.,Yes please That works perfectly for me Thank you so much for making this easy,0.514,0.709,Customer,Customer,True,True,False,,✅ CORRECT
+insurance_english,60.78,Thank you so much for making this easy.,Yes please That works perfectly for me Thank you so much for making this easy,0.655,0.793,Customer,Customer,True,True,False,,✅ CORRECT
+insurance_english,62.9,It's my,,0.0,0.34,Agent,Unknown,False,False,False,,⚠ UNMATCHED
+insurance_english,63.26,"pleasure, Sarah. I'm processing that now.",It is my pleasure Sarah I am processing that now You will receive a confirmation,0.423,0.654,Agent,Agent,True,True,False,,✅ CORRECT
+insurance_english,65.56,You'll receive a confirmation text,It is my pleasure Sarah I am processing that now You will receive a confirmation,0.393,0.636,Agent,Agent,True,True,False,,✅ CORRECT
+insurance_english,67.02,shortly.,It is my pleasure Sarah I am processing that now You will receive a confirmation,0.099,0.459,Agent,Agent,True,True,False,,✅ CORRECT
+insurance_english,68.0,Is there anything else I can assist you with today?,It is my pleasure Sarah I am processing that now You will receive a confirmation,0.432,0.593,Agent,Agent,True,True,False,,✅ CORRECT

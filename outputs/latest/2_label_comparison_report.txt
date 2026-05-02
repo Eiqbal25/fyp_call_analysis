@@ -1,0 +1,252 @@
+=================================================================
+FYP1 LABEL COMPARISON REPORT — System vs Human Transcript
+=================================================================
+
+── bank_malay ────────────────────────────────────────
+  Total segments   : 48  (Matched=42  Unmatched=6)
+  Label accuracy   : 59.5%  (Correct=25  Wrong=23  Unmatched counted as wrong=6)
+  Precision        : 57.1%
+  Recall           : 60.0%
+  F1-Score         : 58.5%
+  Confusion        : TP=12 TN=13 FP=9 FN=8
+  Avg text sim     : 0.34
+  Text overrides   : 3 segment(s) corrected by strong phrase detection
+
+  Wrong labels (23):
+    [0.0s] System=Customer Human=Agent    | "Terselamat pagi."
+    [1.4s] System=Customer Human=Agent    | "Bank harapan dengan saya Amirul. Boleh saya bantu,"
+    [18.6s] System=Customer Human=Agent    | "Nak nombor kad pengenalan buat apa?"
+    [24.3s] System=Agent    Human=Customer | "Maaf, Encik Johan."
+    [31.0s] System=Customer Human=Agent    | "Menusahkan betul."
+    [33.5s] System=Customer Human=Unknown  | "890-2140-1553."
+    [39.4s] System=Agent    Human=Customer | "Sementara saya semak transaksi terakhir, Encik."
+    [42.6s] System=Customer Human=Unknown  | "Jangan suruh aku tunggu lama-lama."
+    [44.2s] System=Customer Human=Agent    | "Aku ada banyak kerja lain nak buat."
+    [45.8s] System=Customer Human=Agent    | "Bukan nak layan bank orang."
+    [48.3s] System=Agent    Human=Customer | "Saya nampak ada penulakan 100 rigit"
+    [50.6s] System=Agent    Human=Customer | "untuk charge tahunan kat credit, Encik."
+    [54.7s] System=Customer Human=Unknown  | "Aku dah guna kat ini 5 tahun."
+    [56.3s] System=Customer Human=Agent    | "Tak pernah ada charge tahunan."
+    [57.4s] System=Customer Human=Agent    | "Kau orang ini nak menipu ke?"
+    [60.7s] System=Agent    Human=Customer | "pengetualian charge tahunan hanya untuk tiga tahun"
+    [64.2s] System=Agent    Human=Customer | "Bermula tahun ke empat,"
+    [65.8s] System=Agent    Human=Customer | "charge akan dikenakan."
+    [78.4s] System=Customer Human=Unknown  | "Tak payah nak hantar permohonan sangat."
+    [91.9s] System=Agent    Human=Unknown  | "Angkat telefon je ke?"
+    [95.7s] System=Agent    Human=Customer | "Baiklah, Cik."
+    [96.7s] System=Agent    Human=Customer | "Saya akan sambungkan panggilan ini kepada pegawai "
+    [100.1s] System=Agent    Human=Unknown  | "Mohon tunggu sebentar."
+
+  Text override corrections (3):
+    ✅ [36.8s] → Customer (phrase: 'cepat sikit') | "Cepat sikit."
+    ✅ [90.3s] → Agent (phrase: 'habis itu kau buat apa') | "Habis itu kau buat apa di situ?"
+    ✅ [101.5s] → Agent (phrase: 'jangan nak melinggal') | "Sebab sikit. Jangan nak melinggal-lingga"
+
+── billing_english ───────────────────────────────────
+  Total segments   : 35  (Matched=35  Unmatched=0)
+  Label accuracy   : 54.3%  (Correct=19  Wrong=16  Unmatched counted as wrong=0)
+  Precision        : 52.9%
+  Recall           : 52.9%
+  F1-Score         : 52.9%
+  Confusion        : TP=9 TN=10 FP=8 FN=8
+  Avg text sim     : 0.43
+  Text overrides   : 5 segment(s) corrected by strong phrase detection
+
+  Wrong labels (16):
+    [6.0s] System=Agent    Human=Customer | "this month and I do not understand why."
+    [8.6s] System=Agent    Human=Customer | "Look, it's probably because you went over with you"
+    [10.7s] System=Customer Human=Agent    | "data limit. Happens all the time. But I have an un"
+    [15.8s] System=Agent    Human=Customer | "before calling."
+    [16.9s] System=Agent    Human=Customer | "Obviously, you don't or you wouldn't be charged."
+    [19.7s] System=Agent    Human=Customer | "Do you have your account"
+    [20.4s] System=Agent    Human=Customer | "number or are we just going to guess?"
+    [31.9s] System=Agent    Human=Customer | "Yeah, like I said,"
+    [38.6s] System=Customer Human=Agent    | "movies. I was out of town all of last week."
+    [51.4s] System=Agent    Human=Customer | "I'm not technical support. I just handle billing."
+    [55.4s] System=Customer Human=Agent    | "owe the money."
+    [60.8s] System=Customer Human=Agent    | "now."
+    [61.6s] System=Customer Human=Agent    | "Look, my supervisor is going to tell you the exact"
+    [71.7s] System=Customer Human=Agent    | "Fine."
+    [72.3s] System=Customer Human=Agent    | "Whatever."
+    [73.0s] System=Customer Human=Agent    | "Hold on and do not hang up because I'm not calling"
+
+  Text override corrections (5):
+    ✅ [2.7s] → Customer (phrase: 'i am calling because') | "Hi, I am calling because my bill is twic"
+    ❌ [10.7s] → Customer (phrase: 'i checked my') | "data limit. Happens all the time. But I "
+    ❌ [38.6s] → Customer (phrase: 'i was out of town') | "movies. I was out of town all of last we"
+    ❌ [51.4s] → Agent (phrase: 'i just handle') | "I'm not technical support. I just handle"
+    ✅ [79.0s] → Agent (phrase: 'putting you in the queue') | "Yeah. Putting you in the queue. You migh"
+
+── center_english ────────────────────────────────────
+  Total segments   : 42  (Matched=41  Unmatched=1)
+  Label accuracy   : 65.8%  (Correct=27  Wrong=15  Unmatched counted as wrong=1)
+  Precision        : 65.8%
+  Recall           : 96.2%
+  F1-Score         : 78.1%
+  Confusion        : TP=25 TN=2 FP=13 FN=1
+  Avg text sim     : 0.36
+
+  Wrong labels (15):
+    [7.8s] System=Agent    Human=Customer | "Hi, Marcus."
+    [9.0s] System=Agent    Human=Customer | "This is Sarah Jenkins."
+    [10.5s] System=Agent    Human=Customer | "I'm calling because I've noticed a double charge o"
+    [29.1s] System=Agent    Human=Customer | "Sure, it's 4492."
+    [49.0s] System=Agent    Human=Unknown  | "Oh, that's strange."
+    [51.4s] System=Agent    Human=Customer | "I didn't manually trigger anything."
+    [54.0s] System=Agent    Human=Customer | "Can we get that second one refunded today?"
+    [70.1s] System=Agent    Human=Customer | "I definitely didn't do that."
+    [72.1s] System=Agent    Human=Customer | "I was asleep at 3am when that charge went through."
+    [75.3s] System=Agent    Human=Customer | "Is there a supervisor I could talk to?"
+    [78.2s] System=Agent    Human=Customer | "Look,"
+    [86.4s] System=Customer Human=Agent    | "Excuse me?"
+    [93.6s] System=Agent    Human=Customer | "My tone?"
+    [109.9s] System=Agent    Human=Customer | "Giving your employee ID number right now."
+    [113.0s] System=Agent    Human=Customer | "How about you?"
+
+── delivery_malay ────────────────────────────────────
+  Total segments   : 36  (Matched=34  Unmatched=2)
+  Label accuracy   : 58.8%  (Correct=20  Wrong=16  Unmatched counted as wrong=2)
+  Precision        : 70.0%
+  Recall           : 38.9%
+  F1-Score         : 50.0%
+  Confusion        : TP=7 TN=13 FP=3 FN=11
+  Avg text sim     : 0.41
+  Text overrides   : 3 segment(s) corrected by strong phrase detection
+
+  Wrong labels (16):
+    [8.0s] System=Agent    Human=Customer | "Status tulis dah hantar."
+    [33.3s] System=Agent    Human=Customer | "Saya tengah banyak kerja ni, cik. Bukan cik sorang"
+    [37.3s] System=Agent    Human=Customer | "Okey, kejap. Saya tengok."
+    [42.3s] System=Customer Human=Agent    | "Pergilah cari kat luar ruh."
+    [43.8s] System=Customer Human=Agent    | "Saya dah cari satu rumah tak ada pun."
+    [46.5s] System=Customer Human=Agent    | "Hantar dia hantar salah rumah, kenapa?"
+    [48.8s] System=Customer Human=Agent    | "Alah saya tahu. Saya duduk pejabat. Bukan saya yan"
+    [59.7s] System=Customer Human=Agent    | "Anjik, tanggung jawab kita orang sampai barang tu "
+    [63.2s] System=Customer Human=Agent    | "lepas tu pandai-pandailah Korea."
+    [65.1s] System=Customer Human=Agent    | "Ini tak masuk akal."
+    [73.7s] System=Agent    Human=Unknown  | "Ada apa-apa lagi nak marah-marah ni?"
+    [75.5s] System=Customer Human=Agent    | "Kurang aja betul."
+    [76.7s] System=Customer Human=Agent    | "Saya nak cakap dengan pengurus awak."
+    [78.4s] System=Customer Human=Agent    | "Saya tak nak berusian dengan orang macam awak."
+    [80.7s] System=Customer Human=Unknown  | "Pengurus tak ada."
+    [87.8s] System=Customer Human=Agent    | "iyalah iyalah bye"
+
+  Text override corrections (3):
+    ✅ [4.4s] → Customer (phrase: 'saya nak tanya') | "Saya nak tanya pasal barang saya dah dua"
+    ✅ [15.4s] → Customer (phrase: 'saya tak terima') | "Masalahnya, saya tak terima apa-apa pun."
+    ✅ [29.7s] → Customer (phrase: 'saya pelanggan') | "Awak ni tak boleh kecakap iluk-iluk siki"
+
+── food_malay ────────────────────────────────────────
+  Total segments   : 24  (Matched=20  Unmatched=4)
+  Label accuracy   : 80.0%  (Correct=16  Wrong=8  Unmatched counted as wrong=4)
+  Precision        : 81.8%
+  Recall           : 81.8%
+  F1-Score         : 81.8%
+  Confusion        : TP=9 TN=7 FP=2 FN=2
+  Avg text sim     : 0.48
+
+  Wrong labels (8):
+    [27.9s] System=Customer Human=Agent    | "Nasi dengan sambal saja ada."
+    [30.0s] System=Customer Human=Agent    | "Macam mana nak makan macam ni?"
+    [36.4s] System=Agent    Human=Customer | "Berdasarkan rekod pesanan encik memang sepatutnya "
+    [52.9s] System=Agent    Human=Customer | "Baiklah. Saya akan uruskan proses bayaran balik se"
+    [73.1s] System=Agent    Human=Unknown  | "Ada apa-apa lagi yang boleh saya bantu?"
+    [74.6s] System=Customer Human=Unknown  | "Tak ada dah. Itu saja."
+    [76.7s] System=Agent    Human=Unknown  | "Terima kasih, Ya."
+    [77.8s] System=Agent    Human=Unknown  | "Sama-sama, Cik. Terima kasih kerana menghubungi ka"
+
+── insurance_english ─────────────────────────────────
+  Total segments   : 33  (Matched=31  Unmatched=2)
+  Label accuracy   : 90.3%  (Correct=28  Wrong=5  Unmatched counted as wrong=2)
+  Precision        : 100.0%
+  Recall           : 85.0%
+  F1-Score         : 91.9%
+  Confusion        : TP=17 TN=11 FP=0 FN=3
+  Avg text sim     : 0.41
+
+  Wrong labels (5):
+    [6.1s] System=Customer Human=Agent    | "Hi, Marcus."
+    [21.5s] System=Customer Human=Agent    | "Yes,"
+    [22.9s] System=Customer Human=Agent    | "just a second."
+    [58.0s] System=Customer Human=Unknown  | "Yes, please."
+    [62.9s] System=Agent    Human=Unknown  | "It's my"
+
+── internet_english ──────────────────────────────────
+  Total segments   : 30  (Matched=28  Unmatched=2)
+  Label accuracy   : 64.3%  (Correct=18  Wrong=12  Unmatched counted as wrong=2)
+  Precision        : 68.8%
+  Recall           : 68.8%
+  F1-Score         : 68.8%
+  Confusion        : TP=11 TN=7 FP=5 FN=5
+  Avg text sim     : 0.64
+  Text overrides   : 1 segment(s) corrected by strong phrase detection
+
+  Wrong labels (12):
+    [21.6s] System=Agent    Human=Customer | "I understand your frustration."
+    [28.5s] System=Customer Human=Unknown  | "Fine. It is 987 -6543."
+    [51.9s] System=Agent    Human=Customer | "I do not care about nodes or line errors. I care a"
+    [57.2s] System=Agent    Human=Customer | "Give me a time."
+    [69.4s] System=Agent    Human=Customer | "I sincerely apologize for the disruption."
+    [76.0s] System=Customer Human=Agent    | "Keep your stupid $5 credit. I want a manager right"
+    [83.4s] System=Agent    Human=Customer | "Please hold on the line for a brief moment."
+    [85.2s] System=Customer Human=Unknown  | "Do not put me on hold."
+    [87.5s] System=Customer Human=Agent    | "Hello?"
+    [88.2s] System=Customer Human=Agent    | "Hello?"
+    [89.0s] System=Customer Human=Agent    | "Do not you dare put me on hold."
+    [99.7s] System=Customer Human=Agent    | "I swear."
+
+  Text override corrections (1):
+    ❌ [51.9s] → Agent (phrase: 'line error') | "I do not care about nodes or line errors"
+
+── sky_malay ─────────────────────────────────────────
+  Total segments   : 42  (Matched=36  Unmatched=6)
+  Label accuracy   : 66.7%  (Correct=24  Wrong=18  Unmatched counted as wrong=6)
+  Precision        : 91.7%
+  Recall           : 50.0%
+  F1-Score         : 64.7%
+  Confusion        : TP=11 TN=13 FP=1 FN=11
+  Avg text sim     : 0.30
+  Text overrides   : 3 segment(s) corrected by strong phrase detection
+
+  Wrong labels (18):
+    [8.3s] System=Agent    Human=Customer | "Selamat petang, Fidoz."
+    [47.9s] System=Customer Human=Agent    | "Boleh tak awak pun hubungi rider itu untuk kepasti"
+    [54.5s] System=Customer Human=Agent    | "Kalau dia tulis delivery,"
+    [55.7s] System=Customer Human=Agent    | "makna dia dah sampai lah."
+    [56.7s] System=Customer Human=Agent    | "Itu kan sistem nak dipiklock."
+    [68.9s] System=Customer Human=Agent    | "Cik ini tak faham bahasa."
+    [70.7s] System=Customer Human=Agent    | "Aku dah cakap dah sampai. Sampai lah."
+    [73.3s] System=Customer Human=Agent    | "Kau ingat aku ada masa nak layan drama orang yang "
+    [84.6s] System=Customer Human=Unknown  | "Uuh, Ros."
+    [85.8s] System=Customer Human=Agent    | "Tak yuk nak beranggan."
+    [87.2s] System=Customer Human=Agent    | "Kau ingat kau siapa?"
+    [88.6s] System=Customer Human=Agent    | "Stakek beranggan, macam tu pun nak bising-bising."
+    [91.0s] System=Customer Human=Agent    | "Kalau kawasan kakak pandai sangat, lain kali kegia"
+    [94.4s] System=Customer Human=Unknown  | "Uyau, minum mokkul aku kat petang."
+    [96.4s] System=Customer Human=Unknown  | "Saya akan buat riput tentang peranggan yang wok ni"
+    [99.1s] System=Customer Human=Unknown  | "Pegilah, rikut. Ada kesaw."
+    [101.6s] System=Customer Human=Unknown  | "Dahlah, malah ilmu layan orang -orang cikgu ni."
+    [103.7s] System=Customer Human=Unknown  | "Cikaknya kerja lain lah daripada kacau orang."
+
+  Text override corrections (3):
+    ✅ [10.1s] → Customer (phrase: 'saya nak tanya') | "Saya nak tanya pasal barang saya."
+    ✅ [33.0s] → Agent (phrase: 'mengikut rekod') | "Tak mengikut rekod, rider kami dah hanta"
+    ✅ [52.5s] → Agent (phrase: 'sistem kami') | "Sistem kami automati."
+
+=================================================================
+OVERALL SUMMARY
+=================================================================
+Call ID                   Accuracy      F1  Correct  Wrong
+-----------------------------------------------------------------
+bank_malay                   59.5%   58.5%       25     23
+billing_english              54.3%   52.9%       19     16
+center_english               65.8%   78.1%       27     15
+delivery_malay               58.8%   50.0%       20     16
+food_malay                   80.0%   81.8%       16      8
+insurance_english            90.3%   91.9%       28      5
+internet_english             64.3%   68.8%       18     12
+sky_malay                    66.7%   64.7%       24     18
+-----------------------------------------------------------------
+AVERAGE                      67.5%   68.3%
+
+❌ Labelling accuracy below 75% — check diarization output in outputs/{call_id}_diarized.json

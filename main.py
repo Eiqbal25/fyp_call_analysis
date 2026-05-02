@@ -32,25 +32,26 @@ import logging
 import argparse
 import numpy as np
 
-# ── FIX: Create outputs/ BEFORE FileHandler is instantiated ─────
-os.makedirs("outputs", exist_ok=True)
+# ── Import config FIRST so OUTPUTS_DIR (run folder) exists before logging ──
+from config import (
+    DATA_DIR, OUTPUTS_DIR, GROUND_TRUTH_CSV, AUDIO_SAMPLE_RATE,
+    WHISPER_LANGUAGE_MAP,
+)
+import config as _cfg   # allow runtime override of WHISPER_MODEL_SIZE
+os.makedirs(OUTPUTS_DIR, exist_ok=True)
 
-# ── Logging setup ────────────────────────────────────────────────
+# ── Logging setup — log goes into the active run folder ──────────────
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
     handlers=[
         logging.StreamHandler(sys.stdout),
-        logging.FileHandler("outputs/pipeline.log", encoding="utf-8"),
+        logging.FileHandler(
+            os.path.join(OUTPUTS_DIR, "pipeline.log"), encoding="utf-8"
+        ),
     ],
 )
 logger = logging.getLogger("main")
-
-# ── Local imports ─────────────────────────────────────────────────
-from config import (
-    DATA_DIR, OUTPUTS_DIR, GROUND_TRUTH_CSV, AUDIO_SAMPLE_RATE,
-)
-import config as _cfg   # allow runtime override of WHISPER_MODEL_SIZE
 
 from preprocessing.audio_processor import (
     preprocess_audio, plot_waveform_comparison, plot_spectrogram_comparison,
@@ -63,6 +64,7 @@ from methods.method1_lexical import (
     plot_keyword_density, plot_confidence_distribution,
 )
 from methods.method2_acoustic import classify_transcript_acoustic
+from methods.method4_llm import is_llm_available, get_llm_status
 from methods.method3_hybrid import (
     classify_transcript_hybrid, compute_confidence_statistics,
     plot_method_comparison, plot_ensemble_scores,
@@ -115,6 +117,30 @@ def parse_args():
 # ─────────────────────────────────────────────────────────────────
 # FIND AUDIO FILES
 # ─────────────────────────────────────────────────────────────────
+
+
+# ─────────────────────────────────────────────────────────────
+# LANGUAGE DETECTION
+# ─────────────────────────────────────────────────────────────
+
+def detect_call_language(call_id: str) -> str | None:
+    """
+    Detect the Whisper language code for a call from its filename.
+
+    Uses WHISPER_LANGUAGE_MAP in config.py — default mapping:
+        "_malay"   → "ms"
+        "_english" → "en"
+
+    Returns None (auto-detect) if no suffix matches.
+    """
+    call_lower = call_id.lower()
+    for suffix, lang_code in WHISPER_LANGUAGE_MAP.items():
+        if suffix.lower() in call_lower:
+            logger.info(f"Language detected from filename: '{call_id}' → '{lang_code}'")
+            return lang_code
+    logger.info(f"No language suffix matched for '{call_id}' — using auto-detect")
+    return None
+
 
 def find_audio_files(data_dir: str, call_id_filter: str = None) -> list[str]:
     """
@@ -186,9 +212,11 @@ def process_call(audio_path: str,
 
     # ── Phase 1B: Transcription + Diarization ────────────────────
     logger.info("Phase 1: Transcription + Diarization...")
+    call_language = detect_call_language(call_id)
     diarized = run_transcription_diarization(
         y, sr,
         save_json=os.path.join(OUTPUTS_DIR, f"{call_id}_diarized.json"),
+        language=call_language,
     )
     turn_stats = compute_diarization_turn_counts(diarized)
     result["diarization"] = {
@@ -381,6 +409,17 @@ def main():
     logger.info("FYP1 CALL ANALYSIS SYSTEM")
     logger.info("Speaker Role Detection & Segmented Analysis in Customer Service Calls")
     logger.info("=" * 70)
+    logger.info(f"  Run name    : {_cfg.RUN_NAME}")
+    logger.info(f"  Output dir  : {OUTPUTS_DIR}")
+    logger.info(f"  Whisper     : {_cfg.WHISPER_MODEL_SIZE}")
+    logger.info(f"  Device      : {_cfg.DEVICE}  ({_cfg.GPU_NAME})")
+    llm_status = get_llm_status()
+    if llm_status["available"]:
+        logger.info(f"  Method 4   : ✅ LLM enabled ({llm_status['model']})")
+    else:
+        logger.info("  Method 4   : ❌ LLM disabled (set ANTHROPIC_API_KEY in config.py)")
+    logger.info("  -- To change run folder: edit RUN_NAME in config.py --")
+    logger.info("=" * 70)
 
     audio_files = find_audio_files(args.data_dir, call_id_filter=args.call_id)
     if not audio_files:
@@ -485,7 +524,7 @@ def main():
         "validation_results": validation_results,
     }
 
-    csv_path = os.path.join(OUTPUTS_DIR, "analytics_summary.csv")
+    csv_path = os.path.join(OUTPUTS_DIR, "3_analytics_summary.csv")
     save_analytics_csv(all_results, csv_path)
     save_json(output_payload, args.output_json)
 

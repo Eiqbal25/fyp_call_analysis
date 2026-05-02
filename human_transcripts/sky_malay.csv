@@ -1,0 +1,10 @@
+segment_id,role,text,start,end
+1,Agent,"Selamat petang, terima kasih kerana menghubungi Khidmat Pelanggan Sky-Link Express. Nama saya Firdaus. Boleh saya bantu encik hari ini?",0.0,8.5
+2,Customer,"Selamat petang, Firdaus. Saya nak tanya pasal barang saya. Nombor tracking MY-9920-X. Dah tiga hari status dia 'Out for Delivery' tapi saya masih tak terima apa-apa.",8.5,20.0
+3,Agent,"Minta maaf atas kesulitan tersebut, encik. Saya faham perasaan encik. Sebentar ya, biar saya semak dalam sistem kami... (Sound of typing) ...Oh, saya dah nampak. Mengikut rekod, rider kami dah hantar barang ni semalam pada pukul dua petang.",20.0,38.0
+4,Customer,"Dah semak, memang tak ada. CCTV rumah saya pun tak nampak ada motor lalu semalam. Boleh tak awak tolong hubungi rider tu untuk kepastian?",38.0,48.0
+5,Agent,"Encik, sistem kami automatik. Kalau dia tulis 'Delivered,' maknanya dah sampailah tu. Takkan sistem nak tipu pulak?",48.0,58.0
+6,Customer,"Saya bukan kata sistem tipu, tapi mungkin rider tu salah hantar rumah. Tolonglah check balik, sebab barang tu barang mahal.",58.0,68.0
+7,Agent,"(Heavy sigh) Aduhai... encik ni tak faham bahasa ke? Aku dah cakap dah sampai, sampailah! Kau ingat aku ada masa ke nak layan drama barang hilang kau ni?",68.0,78.0
+8,Customer,"Eh, kenapa awak tukar bahasa macam ni? Saya bercakap dengan cara baik, ya. Saya nak bercakap dengan pengurus awak sekarang.",78.0,85.0
+9,Agent,"Pengurus? Tak payah nak beranganlah. Kau ingat kau siapa? Setakat barang murah macam tu pun nak bising-bising. Pergi ambil sendiri kat gudang lah! Berhenti menyemak call aku!",85.0,95.0

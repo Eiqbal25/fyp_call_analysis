@@ -1,0 +1,43 @@
+=================================================================
+FYP1 CALL ANALYSIS — EVALUATION REPORT
+=================================================================
+
+Calls evaluated  : 6
+Total audio      : 532.6 s
+Processing time  : 335.2 s
+
+── Classification Performance ───────────────────────────
+Method                       Accuracy Precision  Recall     F1
+-----------------------------------------------------------------
+Method 1 (Keyword-Lexical)      59.5%    59.8%   96.7%  73.0%
+Method 2 (Acoustic DNN)         57.1%    73.0%   67.0%  55.9%
+Method 3 (Hybrid Ensemble)      77.6%    84.4%   73.5%  77.3%
+
+── Paired t-test (Method 3 vs Method 1) ────────────────
+  t-statistic : 2.193
+  p-value     : 0.0158 (α = 0.05)
+  Reject H₀   : True
+  Conclusion  : Reject H0 (p=0.0158 < α=0.05): Hybrid Ensemble is SIGNIFICANTLY better than Keyword baseline.
+
+── System vs. Human QA Correlation ─────────────────────
+  Pearson r     : 0.8528
+  p-value       : 0.0309
+  Interpretation: Strong correlation
+
+── Efficiency (Real-Time Factor) ────────────────────────
+  RTF              : 0.6294
+  Real-time capable: True
+  Speed multiplier : 1.59×
+
+⚠ Auto-corrected label inversions: ['bank_malay', 'food_malay', 'internet_english', 'billing_english', 'delivery_malay', 'insurance_english']
+
+── Per-Call QA Score Comparison ─────────────────────────
+          call_id  system_score  human_score  difference     alignment     system_rating
+       bank_malay         61.81         62.0        0.19     ✅ Aligned              Fair
+  billing_english         55.88         15.0       40.88 ⚠️ Divergence              Fair
+   delivery_malay         46.27          8.0       38.27 ⚠️ Divergence Needs Improvement
+       food_malay         60.38         75.0       14.62     ✅ Aligned              Fair
+insurance_english         71.64         82.0       10.36     ✅ Aligned              Fair
+ internet_english         71.81         68.0        3.81     ✅ Aligned              Fair
+
+=================================================================

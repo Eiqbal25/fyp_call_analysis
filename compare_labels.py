@@ -148,15 +148,18 @@ def match_and_compare(system_segments: list[dict],
 
         combined = (text_similarity × 0.6) + (timestamp_overlap × 0.4)
 
-    This prevents the old bug where two consecutive system segments both
-    fall within one GT row's time range, causing one to be matched to a
-    completely wrong row because the first match consumed the best text match.
+    KEY FIX — Many-to-one matching:
+    Human annotators write coarse segments (e.g. one row = 8 seconds).
+    Whisper splits the same audio into many fine segments (3-4 per human row).
+    The old code used used_human_idx to prevent one human row matching twice,
+    which caused all but the first system segment in a time range to be silently
+    dropped — inflating accuracy by only counting easy matches.
 
-    The 0.6 / 0.4 weighting keeps text as primary but uses timestamp to
-    break ties and prevent cross-call mismatches.
+    Fix: each human row CAN match multiple system segments.
+    Unmatched system segments (below threshold) are recorded as UNMATCHED
+    and counted as wrong in the accuracy, giving a true result.
     """
-    rows           = []
-    used_human_idx = set()
+    rows = []
 
     # Pre-compute GT start/end (fill missing with estimated values)
     gt_starts = []
@@ -181,10 +184,8 @@ def match_and_compare(system_segments: list[dict],
         best_row      = None
         best_text_sim = 0.0
 
+        # No used_human_idx — each human row can match multiple system segments
         for idx, hrow in human_df.iterrows():
-            if idx in used_human_idx:
-                continue
-
             gt_s = gt_starts[idx]
             gt_e = gt_ends[idx]
 
@@ -198,11 +199,10 @@ def match_and_compare(system_segments: list[dict],
                 best_row       = hrow
                 best_text_sim  = text_sim
 
-        # Accept match if combined score meets threshold
         if best_combined >= LABEL_MATCH_SIMILARITY_THRESHOLD and best_row is not None:
-            used_human_idx.add(best_idx)
-            human_role  = best_row["role"]
-            label_match = (sys_role == human_role)
+            # Matched — compare labels normally
+            human_role    = best_row["role"]
+            label_match   = (sys_role == human_role)
             text_override = seg.get("text_override", False)
 
             rows.append({
@@ -215,12 +215,31 @@ def match_and_compare(system_segments: list[dict],
                 "system_role":     sys_role,
                 "human_role":      human_role,
                 "label_correct":   label_match,
+                "matched":         True,
                 "text_override":   text_override,
                 "override_phrase": seg.get("text_override_phrase", ""),
                 "status":          "✅ CORRECT" if label_match else "❌ WRONG",
             })
+        else:
+            # Unmatched — count as wrong so accuracy is not inflated
+            rows.append({
+                "call_id":         call_id,
+                "start_sec":       sys_start,
+                "system_text":     sys_text[:80],
+                "human_text":      "",
+                "text_similarity": 0.0,
+                "combined_score":  round(best_combined, 3),
+                "system_role":     sys_role,
+                "human_role":      "Unknown",
+                "label_correct":   False,
+                "matched":         False,
+                "text_override":   False,
+                "override_phrase": "",
+                "status":          "⚠ UNMATCHED",
+            })
 
     return pd.DataFrame(rows)
+
 
 
 # ─────────────────────────────────────────────────────────────
@@ -250,16 +269,22 @@ def compute_label_metrics(comparison_df: pd.DataFrame) -> dict:
     f1        = 2 * precision * recall / (precision + recall) \
                 if (precision + recall) > 0 else 0.0
 
-    n_matched  = len(comparison_df)
-    n_correct  = int(comparison_df["label_correct"].sum())
-    n_override = int(comparison_df["text_override"].sum()) \
-                 if "text_override" in comparison_df.columns else 0
-    avg_sim    = float(comparison_df["text_similarity"].mean())
+    n_total     = len(comparison_df)
+    n_matched   = int(comparison_df["matched"].sum()) if "matched" in comparison_df.columns else n_total
+    n_unmatched = n_total - n_matched
+    n_correct   = int(comparison_df["label_correct"].sum())
+    n_wrong     = n_total - n_correct
+    n_override  = int(comparison_df["text_override"].sum()) \
+                  if "text_override" in comparison_df.columns else 0
+    avg_sim     = float(comparison_df[comparison_df["matched"] == True]["text_similarity"].mean()) \
+                  if n_matched > 0 else 0.0
 
     return {
+        "n_total":         n_total,
         "n_matched":       n_matched,
+        "n_unmatched":     n_unmatched,
         "n_correct":       n_correct,
-        "n_wrong":         n_matched - n_correct,
+        "n_wrong":         n_wrong,
         "n_text_override": n_override,
         "accuracy_pct":    round(accuracy  * 100, 2),
         "precision_pct":   round(precision * 100, 2),
@@ -417,11 +442,13 @@ def main():
         sep = "─" * (50 - len(cid))
         report_lines.append(f"\n── {cid} {sep}")
         report_lines.append(
-            f"  Matched segments : {metrics['n_matched']} / {len(system_segs)}"
+            f"  Total segments   : {metrics['n_total']}  "
+            f"(Matched={metrics['n_matched']}  Unmatched={metrics['n_unmatched']})"
         )
         report_lines.append(
             f"  Label accuracy   : {metrics['accuracy_pct']:.1f}%  "
-            f"(Correct={metrics['n_correct']} Wrong={metrics['n_wrong']})"
+            f"(Correct={metrics['n_correct']}  Wrong={metrics['n_wrong']}  "
+            f"Unmatched counted as wrong={metrics['n_unmatched']})"
         )
         report_lines.append(f"  Precision        : {metrics['precision_pct']:.1f}%")
         report_lines.append(f"  Recall           : {metrics['recall_pct']:.1f}%")
@@ -507,7 +534,7 @@ def main():
     report = "\n".join(report_lines)
     print(report)
 
-    report_path = os.path.join(OUTPUTS_DIR, "label_comparison_report.txt")
+    report_path = os.path.join(OUTPUTS_DIR, "2_label_comparison_report.txt")
     with open(report_path, "w", encoding="utf-8") as f:
         f.write(report)
     logger.info(f"\nReport saved → {report_path}")

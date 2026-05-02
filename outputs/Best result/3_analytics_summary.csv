@@ -1,0 +1,7 @@
+call_id,duration_sec,snr_before_db,snr_after_db,snr_improvement_db,agent_talk_pct,customer_talk_pct,silence_pct,interaction_type,customer_sentiment,agent_sentiment,sentiment_trend,interpretation,compliance_score,compliance_label,risk_severity,qa_score,rating
+bank_malay,103.891,1.63,5.15,3.52,49.74,30.11,20.15,Balanced (Interactive),0.0525,-0.0081,Improving,Successful Service Recovery,0.0,Non-Compliant,Clean,61.81,Fair
+billing_english,82.731,0.97,0.72,-0.25,38.39,48.08,13.53,Balanced (Interactive),-0.0008,0.0733,Declining,Churn Risk — Unresolved Issue,0.0,Non-Compliant,Medium,55.88,Fair
+delivery_malay,88.971,1.83,4.71,2.88,17.11,68.85,14.04,Asymmetric Interaction,0.0,0.0425,Stable,Routine Interaction,0.0,Non-Compliant,Clean,46.27,Needs Improvement
+food_malay,80.691,0.83,2.77,1.94,54.23,32.67,13.1,Balanced (Interactive),0.0,0.0,Stable,Routine Interaction,0.0,Non-Compliant,Medium,60.38,Fair
+insurance_english,70.131,-0.37,-1.13,-0.76,46.2,36.19,17.61,Balanced (Interactive),0.1772,0.1288,Improving,Successful Service Recovery,0.5,Partially Compliant,Clean,71.64,Fair
+internet_english,106.171,-0.63,2.23,2.86,39.39,46.38,14.23,Balanced (Interactive),-0.0633,0.081,Improving,Churn Risk — Unresolved Issue,0.75,Partially Compliant,Medium,71.81,Fair

@@ -1,0 +1,31 @@
+call_id,start_sec,system_text,human_text,text_similarity,combined_score,system_role,human_role,label_correct,matched,text_override,override_phrase,status
+internet_english,0.0,Thank you for calling ConnectNet Technical Support. My name is Alex. How can I h,Thank you for calling ConnectNet technical support my name is Alex how can I hel,0.984,0.99,Agent,Agent,True,True,False,,✅ CORRECT
+internet_english,5.3,My internet is down again. This is the third time this week and I am sick of it.,My internet is down again this is the third time this week and I am sick of it,0.987,0.935,Customer,Customer,True,True,False,,✅ CORRECT
+internet_english,10.74,I apologize for the inconvenience. Let me pull up your account. Can I get your a,I apologize for the inconvenience let me pull up your account can I get your acc,0.984,0.924,Agent,Agent,True,True,False,,✅ CORRECT
+internet_english,15.86,Are you kidding me? I just typed it into the automated system. Why do I have to ,Are you kidding me I just typed it into the automated system why do I have to re,0.984,0.902,Customer,Customer,True,True,False,,✅ CORRECT
+internet_english,21.62,I understand your frustration.,Are you kidding me I just typed it into the automated system why do I have to re,0.21,0.526,Agent,Customer,False,True,False,,❌ WRONG
+internet_english,23.5,Sometimes the system does not pass the information over.,I understand your frustration sometimes the system does not pass the information,0.618,0.7,Agent,Agent,True,True,False,,✅ CORRECT
+internet_english,26.68,I just need it to access your router.,I understand your frustration sometimes the system does not pass the information,0.453,0.672,Agent,Agent,True,True,False,,✅ CORRECT
+internet_english,28.48,Fine. It is 987 -6543.,,0.0,0.293,Customer,Unknown,False,False,False,,⚠ UNMATCHED
+internet_english,33.34,Hurry up! I work from home and I am losing money!,Fine it is nine eight seven six five four three hurry up I work from home and I ,0.653,0.792,Customer,Customer,True,True,False,,✅ CORRECT
+internet_english,37.36,Thank you. Give me one moment while I run a diagnostic on your connection.,Thank you give me one moment while I run a diagnostic on your connection,0.986,0.861,Agent,Agent,True,True,False,,✅ CORRECT
+internet_english,41.46,Whatever. Just fix it. Your company is a complete joke.,Whatever just fix it your company is a complete joke,0.972,0.725,Customer,Customer,True,True,False,,✅ CORRECT
+internet_english,45.28,I am seeing a line error in your area. Our technicians are actually already work,I am seeing a line error in your area our technicians are actually already worki,0.99,0.813,Agent,Agent,True,True,False,,✅ CORRECT
+internet_english,51.9,I do not care about nodes or line errors. I care about when I can get back onlin,I do not care about nodes or line errors I care about when I can get back online,0.904,0.673,Agent,Customer,False,True,True,line error,❌ WRONG
+internet_english,57.24,Give me a time.,I do not care about nodes or line errors I care about when I can get back online,0.255,0.553,Agent,Customer,False,True,False,,❌ WRONG
+internet_english,59.24,The estimated time of resolution is within the next two hours.,The estimated time of resolution is within the next two hours,0.992,0.607,Agent,Agent,True,True,False,,✅ CORRECT
+internet_english,63.88,Two hours? Are you out of your mind? I have a meeting in 20 minutes. This is una,Two hours are you out of your mind I have a meeting in twenty minutes this is un,0.933,0.657,Customer,Customer,True,True,False,,✅ CORRECT
+internet_english,69.4,I sincerely apologize for the disruption.,Two hours are you out of your mind I have a meeting in twenty minutes this is un,0.26,0.556,Agent,Customer,False,True,False,,❌ WRONG
+internet_english,72.16,We can offer you a credit through the days you experienced outages.,I sincerely apologize for the disruption we can offer you a credit for the days ,0.706,0.525,Agent,Agent,True,True,False,,✅ CORRECT
+internet_english,75.98,Keep your stupid $5 credit. I want a manager right now.,I sincerely apologize for the disruption we can offer you a credit for the days ,0.278,0.567,Customer,Agent,False,True,False,,❌ WRONG
+internet_english,80.58,I can certainly transfer you to the supervisor.,I can certainly transfer you to a supervisor please hold on the line for a brief,0.642,0.385,Agent,Agent,True,True,False,,✅ CORRECT
+internet_english,83.44,Please hold on the line for a brief moment.,Keep your stupid five dollar credit I want a manager right now,0.324,0.594,Agent,Customer,False,True,False,,❌ WRONG
+internet_english,85.24,Do not put me on hold.,,0.0,0.337,Customer,Unknown,False,False,False,,⚠ UNMATCHED
+internet_english,87.5,Hello?,I can certainly transfer you to a supervisor please hold on the line for a brief,0.086,0.452,Customer,Agent,False,True,False,,❌ WRONG
+internet_english,88.2,Hello?,I can certainly transfer you to a supervisor please hold on the line for a brief,0.086,0.452,Customer,Agent,False,True,False,,❌ WRONG
+internet_english,88.98,Do not you dare put me on hold.,I can certainly transfer you to a supervisor please hold on the line for a brief,0.305,0.583,Customer,Agent,False,True,False,,❌ WRONG
+internet_english,91.3,"Sir, I have to place you on a brief hold to connect to the supervisor and will o",Sir I have to place you on a brief hold to connect the supervisor it will only b,0.946,0.568,Agent,Agent,True,True,False,,✅ CORRECT
+internet_english,96.4,"If you put me on hold, I'm canceling my service today.",If you put me on hold I am canceling my service today I swear,0.887,0.532,Customer,Customer,True,True,False,,✅ CORRECT
+internet_english,99.72,I swear.,Sir I have to place you on a brief hold to connect the supervisor it will only b,0.122,0.473,Customer,Agent,False,True,False,,❌ WRONG
+internet_english,100.84,I'm transferring you now. Please stay on line.,Sir I have to place you on a brief hold to connect the supervisor it will only b,0.368,0.621,Agent,Agent,True,True,False,,✅ CORRECT
+internet_english,103.68,You guys are absolutely useless.,You guys are absolutely useless,0.984,0.59,Customer,Customer,True,True,False,,✅ CORRECT

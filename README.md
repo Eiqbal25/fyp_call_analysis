@@ -1,442 +1,369 @@
 # Speaker Role Detection and Segmented Analysis in Customer Service Calls
 
 **FYP1 — Muhammad Eiqbal Bin Hasbollah (2216911)**  
-Department of Mechatronics Engineering, IIUM · January 2026
+Department of Mechatronics Engineering, IIUM · 2026  
+Supervisor: Prof. Dr. Ir. Siti Fauziah Bt. Toha @ Tohara
 
 ---
 
-## Overview
+## What This System Does
 
-An automated **Call Analysis System** that processes raw audio recordings of customer service calls and produces structured quality assurance (QA) intelligence.
+An automated AI pipeline that takes raw customer service call recordings and:
 
-The system solves the "who spoke when" problem through speaker diarization, then classifies each speaker as **Agent** or **Customer** using three progressively sophisticated methods, and finally extracts actionable analytics including talk-time ratios, sentiment trajectories, and compliance flags.
-
-| Method | Approach | Accuracy |
-|--------|----------|----------|
-| Method 1 | Keyword Density (Lexical baseline) | ~30% |
-| Method 2 | Acoustic DNN (MFCC + d-vector) | ~50% |
-| **Method 3** | **Hybrid Ensemble Fusion (proposed)** | **~92%** |
-
-**Key result:** The system processes audio **21.7× faster** than human review (RTF = 0.11), enabling 100% call coverage instead of the industry-standard <5% random sampling.
+1. Transcribes speech using OpenAI Whisper
+2. Separates speakers using pyannote.audio neural diarization
+3. Classifies each speaker as **Agent** or **Customer** using three methods
+4. Computes QA analytics — talk ratio, sentiment, compliance, overall score
+5. Validates accuracy against human-verified transcripts
+6. Displays everything on an interactive Streamlit dashboard
 
 ---
 
 ## Project Structure
 
 ```
-fyp1_call_analysis/
+fyp1_fixed/
 │
-├── config.py                   # Central configuration (paths, hyperparameters)
+├── config.py                    ← ALL settings live here (edit this first)
+├── main.py                      ← Run this to process all calls
+├── train.py                     ← Train the Method 2 acoustic DNN
+├── evaluate.py                  ← Evaluate accuracy vs human_validation_study.csv
+├── compare_labels.py            ← Segment-by-segment label diff vs human_transcripts/
+├── gpu_check.py                 ← Check GPU, packages, and data files before running
+├── requirements.txt
+├── README.md
 │
-├── main.py                     # ★ Entry point — run the full pipeline
+├── data/                        ← Drop your .wav / .mp3 files here
 │
-├── preprocessing/
-│   ├── __init__.py
-│   ├── audio_processor.py      # DSP: noise reduction, normalization, SNR calculation
-│   └── transcriber.py          # Whisper ASR + Resemblyzer diarization + WER
+├── human_transcripts/           ← Human-verified per-segment labels (one CSV per call)
+│   └── example_format.csv       ← Reference format
 │
-├── methods/
-│   ├── __init__.py
-│   ├── method1_lexical.py      # Keyword density classifier (baseline)
-│   ├── method2_acoustic.py     # PyTorch DNN on MFCC + d-vector features
-│   └── method3_hybrid.py       # Confidence-weighted ensemble fusion
-│
-├── analytics/
-│   ├── __init__.py
-│   ├── talk_ratio.py           # Talk-time ratio, silence %, QA score
-│   ├── sentiment.py            # VADER sentiment trajectory
-│   └── compliance.py           # SOP checklist + behavioural risk flagging
-│
-├── evaluation/
-│   ├── __init__.py
-│   ├── metrics.py              # Accuracy, Precision, Recall, F1, DER, t-test, Pearson r
-│   └── validator.py            # Ground truth comparison pipeline
-│
-├── dashboard/
-│   ├── __init__.py
-│   └── app.py                  # Streamlit QA dashboard
-│
-├── utils/
-│   ├── logger.py               # Centralised logging
-│   └── file_utils.py           # JSON / CSV / transcript I/O helpers
+├── human_validation_study.csv   ← Ground truth labels + human QA scores
 │
 ├── keywords/
-│   ├── agent_keywords.json     # Agent SOP lexicon (greetings, compliance, closings)
-│   └── customer_keywords.json  # Customer inquiry / complaint lexicon
+│   ├── agent_keywords.json      ← Agent lexicon
+│   └── customer_keywords.json   ← Customer lexicon
 │
-├── data/                       # ★ Place your .wav / .mp3 files here
-├── models/                     # Saved PyTorch model weights (auto-generated)
-├── outputs/                    # All plots, logs, JSON results (auto-generated)
+├── preprocessing/
+│   ├── audio_processor.py       ← Noise reduction, normalization, SNR
+│   └── transcriber.py           ← Whisper ASR + pyannote diarization
 │
-├── human_validation_study.csv  # Ground truth labels for validation
-└── requirements.txt            # Python dependencies
+├── methods/
+│   ├── method1_lexical.py       ← Keyword density classifier (baseline)
+│   ├── method2_acoustic.py      ← PyTorch DNN on MFCC + d-vector features
+│   └── method3_hybrid.py        ← Hybrid ensemble (proposed method)
+│
+├── analytics/
+│   ├── talk_ratio.py            ← Talk-time ratio, silence %, QA score
+│   ├── sentiment.py             ← VADER sentiment trajectory
+│   └── compliance.py            ← SOP checklist, risk flagging
+│
+├── evaluation/
+│   ├── metrics.py               ← Accuracy, F1, DER, t-test, Pearson r, RTF
+│   └── validator.py             ← Text-similarity matching vs ground truth
+│
+├── dashboard/
+│   └── app.py                   ← Streamlit QA dashboard
+│
+├── models/
+│   ├── acoustic_model.pth       ← Trained DNN weights (auto-generated by train.py)
+│   └── scaler.npy               ← StandardScaler params (auto-generated by train.py)
+│
+└── outputs/                     ← Auto-generated results (see Run Management below)
+    ├── latest/                  ← Default — always overwritten on each run
+    ├── run_01/                  ← Archived run (you named it)
+    └── run_02/                  ← Another archived run
 ```
 
 ---
 
-## System Architecture
+## STEP 0 — First Time Setup (Do This Once)
 
-```
-Raw Audio (.wav/.mp3)
-        │
-        ▼
-┌─────────────────────────────────────────────────────────┐
-│  Phase 1: Pre-processing                                │
-│  • Resample → 16 kHz mono                               │
-│  • Spectral Gating Noise Reduction                      │
-│  • Amplitude Normalization [-1, +1]                     │
-│  • SNR computed: before & after (mathematically)        │
-│                        │                                │
-│  ┌──────────────┐  ┌───────────────────────────────┐   │
-│  │ Whisper ASR  │  │  Resemblyzer Diarization       │   │
-│  │ Timestamped  │  │  d-vector + Agglomerative      │   │
-│  │ Transcript   │  │  Hierarchical Clustering       │   │
-│  └──────┬───────┘  └──────────────┬────────────────┘   │
-│         └──────────────┬──────────┘                    │
-│               Temporal Alignment                        │
-│          Diarized Transcript: {speaker_id, text,        │
-│                                start, end}              │
-└─────────────────────────────────────────────────────────┘
-        │
-        ▼
-┌─────────────────────────────────────────────────────────┐
-│  Phase 2: Speaker Role Detection                        │
-│                                                         │
-│  Method 1 (Lexical)    Method 2 (Acoustic)              │
-│  D = (K/N) × 100       298-dim vector:                  │
-│  Agent / Customer      [40 MFCC mean+std, 256 d-vec]   │
-│  keyword density       → PyTorch MLP (256→128→64→32→2)  │
-│           │                      │                      │
-│           └──────────┬───────────┘                      │
-│                      ▼                                   │
-│              Method 3 (Hybrid)                          │
-│  S = (P_lex×C_lex×α + P_ac×C_ac×β) / (α+β)            │
-│  α=0.4  β=0.6  Conflict → Acoustic fallback            │
-└─────────────────────────────────────────────────────────┘
-        │
-        ▼
-┌─────────────────────────────────────────────────────────┐
-│  Phase 3: Analytics                                     │
-│  • Talk-Time Ratio:  R_agent = (Σd_agent/D_total)×100   │
-│  • Sentiment:        VADER compound score per segment    │
-│  • Compliance:       SOP keyword checklist (4 items)    │
-│  • QA Score:         Weighted composite (0–100)          │
-└─────────────────────────────────────────────────────────┘
-        │
-        ▼
-┌─────────────────────────────────────────────────────────┐
-│  Phase 4: Evaluation                                    │
-│  • Accuracy / Precision / Recall / F1                   │
-│  • DER (Diarization Error Rate)                         │
-│  • Paired t-test (Method 3 vs Method 1)                 │
-│  • Pearson r (System vs Human QA scores)                │
-│  • RTF (Real-Time Factor)                               │
-└─────────────────────────────────────────────────────────┘
-        │
-        ▼
-┌─────────────────────────────────────────────────────────┐
-│  Phase 5: Dashboard                                     │
-│  streamlit run dashboard/app.py                         │
-│  • Executive KPIs (calls, quality, sentiment, alerts)   │
-│  • Quality distribution, talk ratio charts              │
-│  • Per-call: transcript, sentiment trajectory,          │
-│    compliance flags, method comparison                  │
-└─────────────────────────────────────────────────────────┘
-```
+### Prerequisites
 
----
+- Python 3.9 or newer
+- NVIDIA GPU with CUDA 12.1 (recommended — works on CPU but slow)
+- Conda environment named `fyp2`
+- ffmpeg installed and on PATH
 
-## Installation
+**Install ffmpeg:**
+- Windows: Download from https://ffmpeg.org → add `bin/` folder to system PATH
+- macOS: `brew install ffmpeg`
+- Ubuntu: `sudo apt install ffmpeg`
 
-### 1. Clone the repository
+### Install Python packages
 
 ```bash
-git clone https://github.com/Eiqbal25/fyp1_call_analysis.git
-cd fyp1_call_analysis
-```
-
-### 2. Create a virtual environment (recommended)
-
-```bash
-python -m venv venv
-
-# Windows
-venv\Scripts\activate
-
-# macOS / Linux
-source venv/bin/activate
-```
-
-### 3. Install dependencies
-
-```bash
+conda activate fyp2
 pip install -r requirements.txt
 ```
 
-> **Note on PyTorch:** For GPU acceleration (recommended for Whisper), install the CUDA version:
-> ```bash
-> pip install torch --index-url https://download.pytorch.org/whl/cu118
-> ```
-> For CPU-only (slower but works):
-> ```bash
-> pip install torch
-> ```
+### Set up HuggingFace token (required for pyannote.audio diarization)
 
-### 4. FFmpeg (required by Whisper for .mp3 files)
+1. Create a free account at https://huggingface.co/join
+2. Get your token at https://huggingface.co/settings/tokens — type: **Read**
+3. Accept the model license at https://huggingface.co/pyannote/speaker-diarization-3.1
+4. Accept the model license at https://huggingface.co/pyannote/segmentation-3.0
+5. Open `config.py` and paste your token:
 
-- **Windows:** Download from [ffmpeg.org](https://ffmpeg.org/download.html) and add to PATH
-- **macOS:** `brew install ffmpeg`
-- **Ubuntu/Debian:** `sudo apt install ffmpeg`
+```python
+HUGGINGFACE_TOKEN = "hf_your_token_here"
+```
+
+### Verify everything is ready
+
+```bash
+python gpu_check.py
+```
+
+This checks GPU, all packages, and that your audio files are found. Fix any errors before moving on.
 
 ---
 
-## Quick Start
+## STEP 1 — Set Your Run Name (Before Every Session)
 
-### Step 1 — Add your audio files
+Open `config.py` and find this section near the top:
 
-Place `.wav` or `.mp3` call recordings in the `data/` folder:
-
-```
-data/
-├── airasia_call.wav
-├── celcom_call.mp3
-└── ...
+```python
+RUN_NAME = "latest"
 ```
 
-> Audio should be single-channel (mono) or stereo — both are handled automatically.  
-> Supported sampling rates: any (resampled to 16 kHz internally).
+**Choose what to set it to:**
 
-### Step 2 — Run the pipeline
+| You want to... | Set RUN_NAME to |
+|---|---|
+| Quick test, don't need to keep results | `"latest"` |
+| Save this run permanently | `"run_01"` (or any name you like) |
+| Save another run | `"run_02"`, `"after_fix"`, `"final"` etc. |
+
+Results will be saved to `outputs/<RUN_NAME>/`. Named runs are never overwritten unless you reuse the same name.
+
+> **When sharing results with Claude:** just zip the 3 files from your run folder:
+> - `outputs/<RUN_NAME>/evaluation_report.txt`
+> - `outputs/<RUN_NAME>/label_comparison_report.txt`
+> - `outputs/<RUN_NAME>/analytics_summary.csv`
+
+---
+
+## STEP 2 — Train the Acoustic Model (Only When You Add New Audio)
+
+You only need to do this when you add new `.wav` files to `data/` and new rows to `human_transcripts/`. You do not need to retrain for every run.
+
+```bash
+conda activate fyp2
+cd C:\fyp1_fixed
+
+python train.py
+```
+
+Training takes about 2–3 minutes on GPU. When done, `models/acoustic_model.pth` is updated automatically.
+
+---
+
+## STEP 3 — Run the Full Pipeline
 
 ```bash
 python main.py
 ```
 
+This processes every `.wav`/`.mp3` file in `data/` and saves all outputs to `outputs/<RUN_NAME>/`.
+
 **Optional flags:**
 
-| Flag | Description |
-|------|-------------|
-| `--data_dir path/` | Custom audio folder (default: `data/`) |
-| `--skip_acoustic` | Skip Method 2 DNN (runs faster, no GPU needed) |
-| `--skip_validation` | Skip ground truth comparison |
-| `--output_json path` | Custom output JSON path |
-
-Example — fast run without GPU:
-
 ```bash
+# Skip Method 2 DNN — faster, no GPU needed
 python main.py --skip_acoustic
+
+# Process only one specific call
+python main.py --call_id bank_malay
+
+# Use a better (slower) Whisper model
+python main.py --whisper_model medium
+
+# Combine flags
+python main.py --call_id food_malay --whisper_model medium
 ```
 
-### Step 3 — Launch the dashboard
+---
+
+## STEP 4 — Check Accuracy
+
+```bash
+# Full evaluation vs human_validation_study.csv (accuracy, F1, t-test, Pearson r, RTF)
+python evaluate.py
+
+# Segment-by-segment label comparison vs human_transcripts/*.csv
+python compare_labels.py
+```
+
+Both save their reports to `outputs/<RUN_NAME>/`.
+
+---
+
+## STEP 5 — View Dashboard
 
 ```bash
 streamlit run dashboard/app.py
 ```
 
-Open your browser at `http://localhost:8501`
+Opens in your browser at http://localhost:8501
 
 ---
 
-## Outputs
+## Adding a New Call
 
-After running `main.py`, the `outputs/` folder contains:
+1. Drop the `.wav` or `.mp3` file into `data/`
+
+2. Create a matching CSV in `human_transcripts/` — **filename must match exactly**:
+   - Audio: `data/new_call.wav`
+   - Transcript: `human_transcripts/new_call.csv`
+
+   **CSV format:**
+   ```csv
+   segment_id,role,text,start,end
+   1,Agent,Thank you for calling how may I assist you today,0.0,5.2
+   2,Customer,I need help with my order,5.5,8.1
+   3,Agent,Sure let me pull up your account,8.3,10.5
+   ```
+
+   | Column | Required | Notes |
+   |--------|----------|-------|
+   | `segment_id` | Yes | Sequential: 1, 2, 3... |
+   | `role` | Yes | Exactly `Agent` or `Customer` |
+   | `text` | Yes | Approximate text — fuzzy matched, does not need to be perfect |
+   | `start` | No | Segment start in seconds |
+   | `end` | No | Segment end in seconds |
+
+3. Add rows to `human_validation_study.csv`:
+   ```csv
+   call_id,ground_truth_role,text,start,end,human_qa_score
+   new_call,Agent,Thank you for calling how may I assist,0.0,5.2,75
+   new_call,Customer,I need help with my order,5.5,8.1,75
+   ```
+
+4. Retrain and run:
+   ```bash
+   python train.py
+   python main.py
+   python compare_labels.py
+   ```
+
+---
+
+## Key Settings in config.py
+
+| Setting | Default | What it does |
+|---------|---------|--------------|
+| `RUN_NAME` | `"latest"` | Output folder name — change this to archive a run |
+| `WHISPER_MODEL_SIZE` | `"small"` | ASR accuracy vs speed: tiny / base / small / medium / large |
+| `WHISPER_LANGUAGE` | `None` | `None` = auto-detect, `"ms"` = Malay, `"en"` = English |
+| `HUGGINGFACE_TOKEN` | `"hf_..."` | Required for pyannote diarization |
+| `HYBRID_ALPHA` | `0.4` | Lexical weight in ensemble (Method 3) |
+| `HYBRID_BETA` | `0.6` | Acoustic weight in ensemble (Method 3) |
+| `HYBRID_DYNAMIC_WEIGHTS` | `True` | Auto-adjusts α/β per call based on confidence |
+| `SPEAKER_ANCHOR_WINDOW` | `8` | How many segments to scan for Agent greeting anchor |
+
+---
+
+## Output Files (inside outputs/\<RUN_NAME\>/)
 
 | File | Description |
 |------|-------------|
-| `pipeline_results.json` | Full results for all calls (used by dashboard) |
-| `pipeline.log` | Detailed execution log |
-| `{call}_waveform.png` | Before/after waveform comparison (Figure 3.2) |
-| `{call}_spectrogram.png` | Before/after spectrogram (Figure 4.1) |
-| `{call}_diarized.json` | Raw diarized transcript with timestamps |
-| `{call}_m1_keywords.png` | Keyword density analysis (Figure 4.3) |
-| `{call}_m1_confidence.png` | Confidence distribution (Figure 4.2) |
-| `{call}_m3_ensemble.png` | Hybrid ensemble scores per segment |
-| `{call}_sentiment.png` | Sentiment trajectory (per call) |
-| `{call}_method_comparison.png` | Method 1/2/3 confidence comparison |
-| `accuracy_comparison.png` | Accuracy/F1 grouped bar chart |
-| `ttest_boxplot.png` | Paired t-test box plot (Figure 3.10) |
-| `talk_time_distribution.png` | Stacked bar: Agent/Customer/Silence |
-| `sentiment_summary.png` | Cross-call sentiment chart |
-| `compliance_summary.png` | Compliance adherence rates |
-| `qa_score_comparison.png` | System vs Human QA correlation scatter |
+| `evaluation_report.txt` | Main accuracy results — share this with Claude |
+| `label_comparison_report.txt` | Per-call segment accuracy — share this with Claude |
+| `analytics_summary.csv` | QA metrics per call — share this with Claude |
+| `pipeline_results.json` | Full results used by Streamlit dashboard |
+| `pipeline.log` | Full execution log with timestamps |
+| `{call}_transcript.txt` | Human-readable labelled transcript |
+| `{call}_diarized.json` | Raw Whisper + pyannote diarization output |
+| `{call}_waveform.png` | Before/after noise reduction waveform |
+| `{call}_spectrogram.png` | Before/after spectrogram |
+| `{call}_sentiment.png` | Sentiment trajectory chart |
+| `{call}_m3_ensemble.png` | Hybrid ensemble score per segment |
+| `confusion_matrix_*.png` | Confusion matrix for each method |
 
 ---
 
-## Configuration
-
-All parameters are centralised in `config.py`. Key settings:
-
-```python
-# Whisper model size: "tiny" | "base" | "small" | "medium" | "large"
-WHISPER_MODEL_SIZE = "base"
-
-# Hybrid ensemble weights (must sum to 1.0 in effect)
-HYBRID_ALPHA = 0.4   # Lexical weight
-HYBRID_BETA  = 0.6   # Acoustic weight (more stable than keywords)
-
-# QA Score sub-metric weights (must sum to 1.0)
-QA_SCORE_WEIGHTS = {
-    "talk_balance":  0.25,
-    "turn_taking":   0.20,
-    "sentiment":     0.25,
-    "compliance":    0.20,
-    "politeness":    0.10,
-}
-
-# DNN architecture
-ACOUSTIC_HIDDEN_DIMS = [256, 128, 64, 32]
-ACOUSTIC_EPOCHS      = 50
-```
-
----
-
-## How Accuracy is Measured
-
-The system classifies Agent and Customer **automatically from audio** — you never manually label anything at runtime. The `human_validation_study.csv` is your fixed reference that you fill in **once, offline**, by listening to your calls.
+## System Pipeline Summary
 
 ```
-Audio (.wav)
-    │
-    ▼
-System auto-classifies each segment → "Agent" or "Customer"
-    │
-    ▼
-Compare against human_validation_study.csv (your verified labels)
-    │
-    ▼
-Accuracy / Precision / Recall / F1 reported
-```
-
-The validator matches system segments to ground truth rows using **text similarity** (fuzzy matching), not speaker ID numbers. This fixes the label inversion problem where Resemblyzer randomly assigns speaker 0 and 1 differently each call.
-
-## Ground Truth Validation
-
-The `human_validation_study.csv` file maps each call's speaker segments to manually verified ground-truth roles and human QA scores.
-
-**Required columns:**
-
-| Column | Description |
-|--------|-------------|
-| `call_id` | Must match the audio filename without extension (e.g. `airasia_call`) |
-| `ground_truth_role` | What this speaker actually is: `Agent` or `Customer` |
-| `text` | What this speaker actually said — used for fuzzy matching against Whisper output |
-| `start` | *(optional)* Segment start time in seconds |
-| `end` | *(optional)* Segment end time in seconds |
-| `human_qa_score` | *(optional)* Your overall quality score for this call (0–100) |
-
-**There is NO `speaker_id` column.** The old approach of matching by speaker ID was wrong because Resemblyzer assigns IDs randomly each call. The new validator matches by text similarity instead.
-
-**How to fill in this CSV for your real audio:**
-1. Listen to each call
-2. Write down what each speaker said in the `text` column
-3. Label them `Agent` or `Customer` in `ground_truth_role`
-4. The text does not need to be perfectly accurate — fuzzy matching handles small differences
-5. Save the file and run `python evaluate.py` to see true accuracy
-
----
-
-## Statistical Tests
-
-All statistics are computed mathematically from real data — nothing is hardcoded.
-
-| Metric | Formula | Purpose |
-|--------|---------|---------|
-| Accuracy | (TP+TN)/(TP+TN+FP+FN) | Overall correctness |
-| Precision | TP/(TP+FP) | Agent identification exactness |
-| Recall | TP/(TP+FN) | Agent identification completeness |
-| F1-Score | 2×(P×R)/(P+R) | Balanced metric |
-| DER | (FA+MS+SC)/TotalTime | Diarization quality |
-| SNR | 10×log10(P_signal/P_noise) | Audio quality improvement |
-| WER | (S+D+I)/N | Transcription accuracy |
-| RTF | ProcessingTime/AudioDuration | Speed efficiency |
-| Pearson r | scipy.stats.pearsonr | System vs Human correlation |
-| Paired t-test | scipy.stats.ttest_rel | Method 3 significance test |
-
----
-
-## Key Formulas (from Thesis)
-
-**Lexical Density (Method 1):**
-```
-D = (K / N) × 100
-```
-Where K = matched keywords, N = total words in segment.
-
-**Hybrid Ensemble Score (Method 3):**
-```
-S_ensemble = (P_lex × C_lex × α + P_ac × C_ac × β) / (α + β)
-```
-Where P = role probability, C = model confidence.
-
-**Talk-Time Ratio:**
-```
-R_agent = (Σ d_agent / D_total) × 100
-```
-
-**Composite QA Score:**
-```
-Q_score = Σ (weight_i × sub_score_i) × 100
+Audio (.wav/.mp3)
+      │
+      ▼
+Phase 1 — Preprocessing
+  Resample → 16 kHz mono
+  Spectral gating noise reduction
+  Whisper ASR → word-level timestamps
+  pyannote.audio → speaker segments
+  Temporal alignment: text ↔ speaker
+      │
+      ▼
+Phase 2 — Speaker Role Detection
+  Method 1 (Lexical)   D = (K / N) × 100
+  Method 2 (Acoustic)  MLP on 298-dim features [MFCC + d-vector]
+  Method 3 (Hybrid)    S = (P_lex × C_lex × α + P_ac × C_ac × β) / (α + β)
+                        + Speaker Anchoring + Text Override
+      │
+      ▼
+Phase 3 — Analytics
+  Talk-time ratio, silence %, QA composite score
+  VADER sentiment trajectory
+  SOP compliance checklist + risk flags
+      │
+      ▼
+Phase 4 — Evaluation
+  Accuracy / Precision / Recall / F1
+  Paired t-test (Method 3 vs Method 1)
+  Pearson r (system QA vs human QA)
+  RTF (Real-Time Factor)
+      │
+      ▼
+Phase 5 — Dashboard
+  streamlit run dashboard/app.py
 ```
 
 ---
 
-## Dependencies
+## Current Results
 
-| Library | Version | Purpose |
-|---------|---------|---------|
-| `openai-whisper` | ≥20231117 | Speech-to-text transcription |
-| `resemblyzer` | ≥0.1.1 | Speaker d-vector embeddings |
-| `torch` | ≥2.0.0 | DNN acoustic classifier |
-| `librosa` | ≥0.10.0 | Audio processing, MFCC extraction |
-| `noisereduce` | ≥3.0.0 | Spectral gating noise reduction |
-| `vaderSentiment` | ≥3.3.2 | Rule-based sentiment analysis |
-| `scikit-learn` | ≥1.3.0 | Agglomerative clustering |
-| `scipy` | ≥1.11.0 | Statistical tests |
-| `streamlit` | ≥1.27.0 | Interactive QA dashboard |
-| `plotly` | ≥5.15.0 | Interactive charts in dashboard |
-| `pandas` | ≥2.0.0 | Data handling and CSV I/O |
-| `matplotlib` | ≥3.7.0 | Static figure generation |
+```
+Method                       Accuracy    F1
+────────────────────────────────────────────
+Method 1 (Keyword-Lexical)    60.6%    64.9%
+Method 2 (Acoustic DNN)       58.7%    64.6%
+Method 3 (Hybrid Ensemble)    72.1%    65.7%
 
----
+Paired t-test (Method 3 vs Method 1):
+  t = 1.54,  p = 0.065  → No significant difference (α = 0.05)
 
-## Troubleshooting
+Pearson r (system vs human QA):
+  r = 0.94,  p = 0.005  → Strong correlation
 
-**`ModuleNotFoundError: No module named 'whisper'`**  
-→ Run: `pip install openai-whisper`
+RTF: 0.63 (real-time capable — 1.59× faster than audio duration)
+```
 
-**`resemblyzer` installation fails on Windows**  
-→ Install Visual C++ Build Tools first, then: `pip install resemblyzer`
+Per-call accuracy:
 
-**Whisper is very slow**  
-→ Use `WHISPER_MODEL_SIZE = "tiny"` in `config.py` for fastest speed, or install the CUDA version of PyTorch.
-
-**`FileNotFoundError: Audio file not found`**  
-→ Ensure audio files are in the `data/` directory with `.wav` or `.mp3` extension.
-
-**Dashboard shows "No results found"**  
-→ Run `python main.py` first to generate `outputs/pipeline_results.json`.
-
-**WER is very high (>50%)**  
-→ This is expected for Manglish/code-switching audio with the base Whisper model. Use `WHISPER_MODEL_SIZE = "medium"` or `"large"` for better accuracy on Malaysian English.
+| Call | Accuracy | Notes |
+|------|----------|-------|
+| `bank_malay` | 100% | Structured Malay — agent uses clear SOP phrases |
+| `internet_english` | 100% | Angry but scripted — strong keyword signal |
+| `food_malay` | 80% | Good — minor label confusion on neutral phrases |
+| `insurance_english` | 60% | Agent and customer have similar speaking styles |
+| `delivery_malay` | 56% | Agent is rude and informal — no SOP, hard to detect |
+| `billing_english` | 50% | Agent sounds like a customer — hostile, non-scripted |
 
 ---
 
-## Project Supervisor
+## Common Errors
 
-**Prof. Dr. Ir. Siti Fauziah Bt. Toha @ Tohara**  
-Department of Mechatronics Engineering, IIUM
-
----
-
-## Author
-
-**Muhammad Eiqbal Bin Hasbollah** (2216911)  
-Bachelor of Engineering (Mechatronics) (Honours)  
-International Islamic University Malaysia · January 2026
-
----
-
-## License
-
-This project is submitted as a Final Year Project for academic purposes at IIUM.  
-All rights reserved © 2026 Muhammad Eiqbal Bin Hasbollah.
+| Error | Fix |
+|-------|-----|
+| `No audio files found` | Check `.wav` files are in `data/` folder |
+| `ImportError: pyannote` | `pip install pyannote.audio` |
+| `401 Unauthorized` (HuggingFace) | Check token in `config.py` and accept model licenses |
+| Dashboard shows no data | Run `python main.py` first |
+| `No human transcript CSVs found` | Create CSV in `human_transcripts/` matching audio filename |
+| `CUDA out of memory` | Use `python main.py --whisper_model tiny` or `--skip_acoustic` |
+| `scipy version error` | `pip install scipy==1.10.1` |
+| `outputs/ is empty` | Check `RUN_NAME` in config.py — results go to `outputs/<RUN_NAME>/` |

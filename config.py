@@ -13,8 +13,28 @@ import os
 BASE_DIR     = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR     = os.path.join(BASE_DIR, "data")
 MODELS_DIR   = os.path.join(BASE_DIR, "models")
-OUTPUTS_DIR  = os.path.join(BASE_DIR, "outputs")
 KEYWORDS_DIR = os.path.join(BASE_DIR, "keywords")
+
+# ─────────────────────────────────────────────
+# RUN MANAGEMENT
+# ─────────────────────────────────────────────
+# Change RUN_NAME to save results into a named folder you can keep.
+#
+#   "latest"  →  outputs/latest/   (always overwritten — good for quick runs)
+#   "run_01"  →  outputs/run_01/   (archived — share this folder with Claude)
+#   "run_02"  →  outputs/run_02/   (another archived run)
+#
+# Usage:
+#   Just edit RUN_NAME below, then run:  python main.py
+#
+# To share with Claude for analysis, zip or upload only:
+#   outputs/<RUN_NAME>/evaluation_report.txt
+#   outputs/<RUN_NAME>/label_comparison_report.txt
+#   outputs/<RUN_NAME>/analytics_summary.csv
+#   + any specific .py file you want to improve
+#
+RUN_NAME    = "latest"
+OUTPUTS_DIR = os.path.join(BASE_DIR, "outputs", RUN_NAME)
 
 # Ensure all output directories exist
 for _d in [DATA_DIR, MODELS_DIR, OUTPUTS_DIR]:
@@ -38,10 +58,40 @@ NOISE_STATIONARY_PROP = 0.1     # Fraction of audio used for noise profile
 # medium: ~769M params, WER ~22% on Malaysian English, ~4 min/call on GPU
 WHISPER_MODEL_SIZE = "small"
 
+# ─────────────────────────────────────────────
+# HUGGINGFACE TOKEN (required for pyannote.audio)
+# ─────────────────────────────────────────────
+# Get your token from: https://huggingface.co/settings/tokens
+# Accept model licenses at:
+#   https://huggingface.co/pyannote/speaker-diarization-3.1
+#   https://huggingface.co/pyannote/segmentation-3.0
+HUGGINGFACE_TOKEN = os.environ.get("HUGGINGFACE_TOKEN", None)
+
+# ─────────────────────────────────────────────────────────────
+# METHOD 4 — LLM CLASSIFICATION (FREE — Google Gemini)
+# ─────────────────────────────────────────────────────────────
+# Set your Google AI Studio API key to enable LLM-based classification.
+# Get a FREE key at: https://aistudio.google.com/apikey
+# Cost: $0.00 — Gemini Flash free tier (15 req/min, 1M tokens/day).
+# Leave as None to disable Method 4.
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", None)  # e.g. "AIzaSy..."
+LLM_MODEL = "gemini-2.0-flash"
+
+
 # Language — None = auto-detect each call.
 # Set to "ms" to force Malay, "en" to force English.
 # Leave as None for mixed-language calls (auto-detect per call).
 WHISPER_LANGUAGE = None
+
+# Per-call language detection — maps filename suffix to Whisper language code.
+# If the call_id contains "_malay" the transcriber forces Malay (ms).
+# If it contains "_english" it forces English (en).
+# Any other name → None (auto-detect per Whisper).
+# You can extend this map freely — e.g. {"_mandarin": "zh"}.
+WHISPER_LANGUAGE_MAP = {
+    "_malay":   "ms",
+    "_english": "en",
+}
 
 # Initial prompt — primes Whisper to expect Malaysian English patterns.
 # This reduces errors on Manglish words, code-switching, and

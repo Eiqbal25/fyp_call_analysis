@@ -1,0 +1,42 @@
+[00:00:00] Agent: Hah,
+[00:00:00] Agent: selamat petang.
+[00:00:01] Agent: Terima kasih kerana menghubungi khidmat pelanggan Skyling Express.
+[00:00:05] Agent: Nama saya Fidoz. Boleh saya bantu encik hari ini?
+[00:00:08] Agent: Selamat petang, Fidoz.
+[00:00:10] Customer: Saya nak tanya pasal barang saya.
+[00:00:12] Customer: Nombor tracking MY-9920X.
+[00:00:16] Customer: Dah tiga hari status di output delivery.
+[00:00:19] Customer: Tapi saya masih tak terima apa-apa.
+[00:00:21] Agent: Tidak, Mak. Af atas kesulitan tersebut encik.
+[00:00:24] Agent: Saya faham perasaan encik.
+[00:00:26] Agent: Sementara ya, biar saya semak dalam sistem kami,
+[00:00:30] Agent: Oh,
+[00:00:31] Agent: saya dah nampak.
+[00:00:32] Agent: Tak mengikut rekod, rider kami dah hantar bangun semalam pada pukul dua putang.
+[00:00:38] Customer: Encik ada semak dengan ziran atau letak di dalam petiswan.
+[00:00:42] Customer: Dah semak, memang tak ada.
+[00:00:44] Customer: CCTV rumah saya pun tak nampak ada motor lalu semalam.
+[00:00:47] Customer: Boleh tak awak pun hubungi rider itu untuk kepastian?
+[00:00:52] Agent: Sistem kami automati.
+[00:00:54] Customer: Kalau dia tulis delivery,
+[00:00:55] Customer: makna dia dah sampai lah.
+[00:00:56] Customer: Itu kan sistem nak dipiklock.
+[00:00:59] Customer: Saya bukan kata sistem itu.
+[00:01:01] Customer: Tapi mungkin Raido itu salah hantar rumah.
+[00:01:04] Customer: Kulunglah cek balik sebab barang itu banyak.
+[00:01:08] Customer: Cik ini tak faham bahasa.
+[00:01:10] Customer: Aku dah cakap dah sampai. Sampai lah.
+[00:01:13] Customer: Kau ingat aku ada masa nak layan drama orang yang bilang kau ini.
+[00:01:17] Customer: kenapa aku buat dukau bahasa macam ini?
+[00:01:19] Customer: Saya bercakap dengan cara baik ya.
+[00:01:21] Customer: Saya nak bercakap dengan pengurus awak sekarang.
+[00:01:24] Customer: Uuh, Ros.
+[00:01:25] Customer: Tak yuk nak beranggan.
+[00:01:27] Customer: Kau ingat kau siapa?
+[00:01:28] Customer: Stakek beranggan, macam tu pun nak bising-bising.
+[00:01:31] Customer: Kalau kawasan kakak pandai sangat, lain kali kegiam bising-bising kat budang.
+[00:01:34] Customer: Uyau, minum mokkul aku kat petang.
+[00:01:36] Customer: Saya akan buat riput tentang peranggan yang wok ni.
+[00:01:39] Customer: Pegilah, rikut. Ada kesaw.
+[00:01:41] Customer: Dahlah, malah ilmu layan orang -orang cikgu ni.
+[00:01:43] Customer: Cikaknya kerja lain lah daripada kacau orang.

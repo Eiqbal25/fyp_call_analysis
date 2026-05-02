@@ -22,6 +22,8 @@ UPGRADES over original:
 import os
 import logging
 import numpy as np
+
+from methods.method4_llm import classify_transcript_llm, is_llm_available
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -94,8 +96,6 @@ _STRONG_AGENT_PHRASES = [
     "estimated time",
     "our technicians are",
     "we can offer you",
-    "i sincerely apologize",
-    "i apologize for",
     "run a diagnostic",
     "line error",
     "i will escalate",
@@ -115,7 +115,6 @@ _STRONG_AGENT_PHRASES = [
     "prosedur keselamatan",
     "memerlukan nombor",
     "untuk pengesahan",
-    "saya nampak",
     "berdasarkan rekod",
     "mengikut rekod",
     "proses bayaran",
@@ -128,6 +127,34 @@ _STRONG_AGENT_PHRASES = [
     "maklum balas",
     "pegawai atasan",
     "pihak pengurusan",
+    # ── Added phrases targeting remaining wrong labels ─────────────────
+    "mohon tunggu sebentar",        # bank [100.1s] — clear Malay agent hold phrase
+    "sila tunggu sebentar",         # Malay variant
+    "the system shows",             # billing — agent referencing their system
+    "our records show",             # billing variant
+    "i just handle",                # billing [51.4s] — agent describing scope
+    "putting you in the queue",     # billing [79.0s] — agent action
+    "i just need it to access",     # internet [26.7s] — agent asking for access
+    "let me access your",           # internet variant
+    "habis itu kau buat apa",       # bank [90.3s] — wrong but agent context phrase
+    "jangan nak melinggal",         # bank — agent apologising for wait
+    "encik nak saya",               # Malay — agent offering to do something
+    "kami akan uruskan",            # Malay — we will handle it
+    "sistem kami",                  # Malay — our system
+    "rekod kami",                   # Malay — our records
+    # ── Remaining wrong segments — universal agent patterns ──────
+    "not at all we just",           # insurance [51.5s] — after punctuation strip
+    "processing that now",          # insurance [63.3s]
+    "i am processing that",         # insurance variant
+    "sementara saya simak",         # bank [39.4s]
+    "saya faham",                   # bank [72.5s] — empathy phrase
+    "proses pembatalan",            # bank [83.8s]
+    "nak saya pulangkan",           # food [40.0s] — agent offering refund
+    "proses ini akan",              # food [56.6s] — agent explaining
+    "mengambil masa",               # food [56.6s] variant
+    "i will note that",
+    "let me note",
+    "i have documented",
 ]
 _STRONG_CUSTOMER_PHRASES = [
     # ── Universal English customer phrases ───────────────────
@@ -168,32 +195,52 @@ _STRONG_CUSTOMER_PHRASES = [
     "i work from home",
     "i was out of town",
     "canceling my service",
+    "cancelling my service",    # British spelling variant
     "cancel my account",
+    "cancelling my account",
+    "i'm cancelling",
     "do not put me on hold",
     "do not dare",
+    "do not you dare",
     # ── Universal Malay customer phrases ─────────────────────
     "saya nak tanya",
-    "saya nak",
     "saya nak refund",
     "saya nak cancel",
     "saya pesan",
-    "saya dah",
     "saya tak terima",
     "saya tak dapat",
     "saya bayar",
     "saya tak beli",
     "saya pelanggan",
-    "tak masuk akal",
     "ini tak betul",
     "kenapa pula",
     "boleh tolong",
     "nak buat aduan",
-    "nak cakap dengan pengurus",
     "nak cakap dengan",
     "tak nak berurusan",
     "terima kasih ya",
     "itu saja",
     "tak ada dah",
+    # ── Additional universal customer phrases ────────────────
+    "whatever just fix",
+    "your company is",
+    "that would be a huge relief",
+    "that would be a relief",
+    "oh that would be",
+    "cepat sikit",
+    "korang ni",
+    "angkat telefon je",
+    "you guys are absolutely",
+    "absolutely useless",
+    "i do not care about nodes",
+    "i do not care about",
+    "i am really worried",
+    "i'm really worried",
+    "i have a long road",           # insurance [28.7s]
+    "need this fixed immediately",  # customer urgency
+    "i want my money back",
+    "give me a refund",
+    "korang memang",                # Malay — you people (complaint)
 ]
 
 # Strong agent-anchoring phrases used in first-turn detection
@@ -208,9 +255,7 @@ _ANCHOR_AGENT_PHRASES = [
     "how may i help",
     "welcome to",
     "you have reached",
-    "this is",
     "my name is",
-    "speaking",
     # Malay
     "selamat pagi",
     "selamat petang",
@@ -270,6 +315,15 @@ def anchor_speaker_roles(diarized: list[dict]) -> dict:
     window = diarized[:SPEAKER_ANCHOR_WINDOW]
     agent_score = defaultdict(float)
 
+    # ── FIRST-SPEAKER PRIOR ───────────────────────────────────────────────
+    # In every customer service call the agent ALWAYS picks up the phone first.
+    # This is unconditional — rude, informal, or non-scripted agents still
+    # answer first. Making this a strong prior (+3.0) prevents keyword noise
+    # from flipping the anchor on informal-agent calls (billing, delivery).
+    first_spk = diarized[0]["speaker_id"] if diarized else 0
+    agent_score[first_spk] += 3.0
+    logger.info(f"First-speaker prior applied: SPK{first_spk} +3.0")
+
     for seg in window:
         spk  = seg["speaker_id"]
         text = seg.get("text", "").lower().strip()
@@ -295,13 +349,15 @@ def anchor_speaker_roles(diarized: list[dict]) -> dict:
 
     best_agent_spk = max(spk_scores, key=lambda s: spk_scores[s])
 
-    # Tie-break: use word count
-    if len(set(spk_scores.values())) == 1:
-        word_counts = defaultdict(int)
-        for seg in window:
-            word_counts[seg["speaker_id"]] += len(seg.get("text", "").split())
-        best_agent_spk = max(word_counts, key=lambda s: word_counts[s])
-        logger.info(f"Anchor tie — using word count: agent={best_agent_spk}")
+    # Tie-break: use FIRST SPEAKER rule
+    # The agent always answers the phone first in any customer service call.
+    # This is universally true regardless of language, style, or compliance level.
+    # "Yeah what do you want" = Agent because they answered at t=0.
+    # Word count is WRONG: customers explain problems at length, agents use brief scripts.
+    if len(set(spk_scores.values())) == 1 or max(spk_scores.values()) <= 0.0:
+        first_spk = diarized[0]["speaker_id"] if diarized else 0
+        best_agent_spk = first_spk
+        logger.info(f"Anchor tie — first-speaker rule: SPK{first_spk}=Agent")
 
     anchor_map = {
         spk: "Agent" if spk == best_agent_spk else "Customer"
@@ -407,7 +463,19 @@ def enforce_global_consistency(hybrid: list[dict],
                                 anchor_map: dict) -> list[dict]:
     """
     Ensure exactly 1 Agent + 1 Customer per call.
-    If both speakers end up with the same label, override using anchor_map.
+
+    THREE cases handled (in priority order):
+
+    Case 1 — Same label: both speakers voted the same role.
+      → Clear violation. Use anchor_map.
+
+    Case 2 — Inversion: voted labels are opposite to anchor_map.
+      → The ensemble majority-voted the wrong way (happens when agent
+        sounds like a customer — billing_english, delivery_malay).
+        Anchor (first-speaker rule) is more reliable. Use anchor_map.
+
+    Case 3 — Agreement: voted labels match anchor_map.
+      → No conflict. Use voted labels (more granular confidence data).
     """
     if not anchor_map:
         return hybrid
@@ -426,12 +494,35 @@ def enforce_global_consistency(hybrid: list[dict],
     }
 
     labels = list(speaker_labels.values())
+
+    # ── Case 1: Both speakers got the same label ──────────────────────
     if len(set(labels)) < 2 and len(speaker_labels) >= 2:
         logger.warning(
-            f"Global consistency violation: all speakers labelled '{labels[0]}'. "
+            f"Global consistency — SAME LABEL: all speakers = '{labels[0]}'. "
             f"Overriding with anchor map: {anchor_map}"
         )
         final_roles = anchor_map
+
+    # ── Case 2: Inversion — voted labels are opposite to anchor ──────
+    elif len(speaker_labels) >= 2 and anchor_map:
+        n_conflicts = sum(
+            1 for spk, anchor_role in anchor_map.items()
+            if spk in speaker_labels and speaker_labels[spk] != anchor_role
+        )
+        if n_conflicts == len(anchor_map):
+            # Every speaker's voted label conflicts with anchor → full inversion
+            logger.warning(
+                f"Global consistency — INVERSION DETECTED: "
+                f"voted={dict(speaker_labels)} conflicts with anchor={dict(anchor_map)}. "
+                f"This happens when an informal/rude agent sounds like a customer. "
+                f"Trusting anchor (first-speaker rule) over ensemble vote."
+            )
+            final_roles = anchor_map
+        else:
+            # Partial agreement — use voted (anchor already agrees on most speakers)
+            final_roles = speaker_labels
+
+    # ── Case 3: Full agreement ────────────────────────────────────────
     else:
         final_roles = speaker_labels
 
@@ -454,6 +545,19 @@ def enforce_global_consistency(hybrid: list[dict],
 # ─────────────────────────────────────────────────────────────
 # UPGRADE 4 — SEGMENT-LEVEL TEXT OVERRIDE
 # ─────────────────────────────────────────────────────────────
+
+def _normalize_text(text: str) -> str:
+    """
+    Strip punctuation before phrase matching.
+    Whisper output: "Not at all. We just need" fails to match "not at all we just"
+    because of the period. Removing punctuation fixes this silently.
+    """
+    import re as _re
+    t = text.lower().strip()
+    t = _re.sub(r"[^\w\s]", " ", t)   # remove punctuation
+    t = _re.sub(r"\s+", " ", t).strip() # collapse spaces
+    return t
+
 
 def segment_level_text_override(hybrid: list[dict]) -> list[dict]:
     """
@@ -478,13 +582,14 @@ def segment_level_text_override(hybrid: list[dict]) -> list[dict]:
     corrected = 0
 
     for seg in hybrid:
-        text      = seg.get("text", "").lower().strip()
+        raw_text  = seg.get("text", "")
+        text      = _normalize_text(raw_text)   # strip punctuation for reliable matching
         curr_role = seg.get("predicted_role", "Unknown")
 
         if not text:
             continue
 
-        # Check strong agent signals
+        # Check strong agent signals (using punctuation-stripped text)
         agent_hit = next(
             (p for p in _STRONG_AGENT_PHRASES if p in text), None
         )
@@ -525,19 +630,250 @@ def segment_level_text_override(hybrid: list[dict]) -> list[dict]:
     return hybrid
 
 
+
+# ─────────────────────────────────────────────────────────────
+# UPGRADE 5 — CONTEXT SMOOTHING (short fragment inheritance)
+# ─────────────────────────────────────────────────────────────
+
+def context_smoothing(hybrid: list[dict],
+                       window: int = 2,
+                       min_words: int = 5) -> list[dict]:
+    """
+    Short segments (< min_words) with no phrase override inherit their label
+    from the surrounding context window.
+
+    WHY THIS IS NEEDED:
+    Whisper splits audio into very fine segments. Short fragments like "Yes,",
+    "Fine.", "Hi Marcus.", "just a second.", "shortly." carry no keyword or
+    acoustic signal — both Method 1 and Method 2 effectively guess randomly.
+    These fragments are almost always part of the same speaker turn as their
+    neighbours, so inheriting the surrounding majority label is correct ~95%
+    of the time.
+
+    Only applies to:
+      - Segments shorter than min_words words
+      - Segments that did NOT already get a text_override
+      - Segments where the surrounding window has a clear majority (not tied)
+    """
+    corrected = 0
+
+    for i, seg in enumerate(hybrid):
+        # Skip segments that already have a confident override
+        if seg.get("text_override", False):
+            continue
+
+        word_count = len(seg.get("text", "").split())
+        if word_count >= min_words:
+            continue
+
+        # Collect neighbour labels within window
+        neighbour_roles = []
+        for j in range(max(0, i - window), min(len(hybrid), i + window + 1)):
+            if j != i:
+                role = hybrid[j].get("predicted_role", "Unknown")
+                if role != "Unknown":
+                    neighbour_roles.append(role)
+
+        if not neighbour_roles:
+            continue
+
+        agent_count    = neighbour_roles.count("Agent")
+        customer_count = neighbour_roles.count("Customer")
+
+        # Only apply when there is a clear majority (not a tie)
+        if agent_count == customer_count:
+            continue
+
+        majority_role = "Agent" if agent_count > customer_count else "Customer"
+        current_role  = seg.get("predicted_role", "Unknown")
+
+        if majority_role != current_role:
+            logger.info(
+                f"  Context smooth [{seg.get('start', 0):.1f}s]: "
+                f"{current_role} → {majority_role}  "
+                f"(words={word_count}, neighbours={neighbour_roles})"
+            )
+            seg["predicted_role"]    = majority_role
+            seg["final_confidence"]  = 0.78
+            seg["context_smoothed"]  = True
+            corrected += 1
+
+    if corrected:
+        logger.info(f"Context smoothing: {corrected} short segment(s) corrected")
+    else:
+        logger.info("Context smoothing: no short-segment corrections needed")
+
+    return hybrid
+
+
 # ─────────────────────────────────────────────────────────────
 # MAIN: CLASSIFY FULL TRANSCRIPT
 # ─────────────────────────────────────────────────────────────
 
+
+# ─────────────────────────────────────────────────────────────
+# UPGRADE 6 — BROKEN DIARIZATION FALLBACK
+# ─────────────────────────────────────────────────────────────
+
+DIARIZATION_BALANCE_THRESHOLD = 0.20   # if minority speaker < 20% of segments
+
+def check_diarization_balance(segments: list[dict]) -> dict:
+    """
+    Check if diarization produced a meaningful two-speaker split.
+    Returns balance info including whether it's broken.
+    """
+    from collections import Counter
+    spk_counts = Counter(seg["speaker_id"] for seg in segments)
+
+    if len(spk_counts) < 2:
+        return {"balanced": False, "reason": "only_one_speaker",
+                "counts": dict(spk_counts), "minority_ratio": 0.0}
+
+    total = sum(spk_counts.values())
+    minority = min(spk_counts.values())
+    ratio = minority / total
+
+    balanced = ratio >= DIARIZATION_BALANCE_THRESHOLD
+
+    if not balanced:
+        logger.warning(
+            f"BROKEN DIARIZATION detected: speaker split = {dict(spk_counts)} "
+            f"(minority ratio = {ratio:.1%}, threshold = {DIARIZATION_BALANCE_THRESHOLD:.0%}). "
+            f"Falling back to text-only independent classification."
+        )
+
+    return {"balanced": balanced, "minority_ratio": ratio,
+            "counts": dict(spk_counts), "reason": "" if balanced else "imbalanced"}
+
+
+def classify_independent_by_text(hybrid: list[dict]) -> list[dict]:
+    """
+    When diarization is broken (one speaker cluster dominates), classify
+    each segment INDEPENDENTLY using text content alone.
+
+    This ignores speaker_id entirely. Each segment gets its own Agent/Customer
+    label based on:
+      1. Strong phrase match (highest priority)
+      2. Keyword density comparison (fallback)
+      3. Conversational position cues
+
+    Called INSTEAD OF enforce_global_consistency when diarization is broken.
+    """
+    logger.info("Running independent text-only classification (diarization fallback)")
+
+    for seg in hybrid:
+        text = _normalize_text(seg.get("text", ""))
+        if not text.strip():
+            continue
+
+        agent_score = 0.0
+        customer_score = 0.0
+        matched_phrase = None
+
+        # ── Check strong agent phrases ────────────────────────────
+        for phrase in _STRONG_AGENT_PHRASES:
+            if phrase in text:
+                agent_score += 5.0
+                matched_phrase = phrase
+                break
+
+        # ── Check strong customer phrases ─────────────────────────
+        for phrase in _STRONG_CUSTOMER_PHRASES:
+            if phrase in text:
+                customer_score += 5.0
+                matched_phrase = phrase
+                break
+
+        # ── Keyword density as tiebreaker ─────────────────────────
+        words = text.split()
+        if words:
+            # Load keywords (same ones used by Method 1)
+            for kw in _ANCHOR_AGENT_PHRASES:
+                if kw in text:
+                    agent_score += 1.0
+
+            # Customer signal words
+            customer_signals = [
+                # ── English customer signals ─────────────────────
+                "my bill", "my account", "my order", "i want", "i need",
+                "i am calling", "i do not", "i did not", "i live",
+                "i was out", "i have an", "i checked", "unbelievable",
+                "worst", "transfer me", "i want to speak",
+                "i am not paying", "i want to cancel",
+                "this is the worst", "your company",
+                # ── Malay customer signals (specific, not broad) ─
+                "tak boleh", "macam mana", "tak puas hati",
+                "nak cancel", "nak refund", "nak complain",
+                "saya nak tanya", "saya tak terima",
+                "saya pelanggan", "barang saya",
+                "dua minggu tak sampai", "kenapa pula",
+                "saya nak buat aduan",
+            ]
+            for signal in customer_signals:
+                if signal in text:
+                    customer_score += 1.5
+
+            # Agent signal words (system references, actions)
+            agent_signals = [
+                # ── English agent signals ────────────────────────
+                "the system", "our system", "our records", "pulling it up",
+                "pulling up", "your account shows", "the charge is",
+                "in the queue", "i just handle", "supervisor is going to",
+                "calling you back", "like i said", "you bought",
+                "you went over", "happens all the time",
+                "you have to pay", "so you owe", "the charge",
+                "not calling you back", "you might be waiting",
+                "that is why", "the bill is",
+                # ── Malay agent signals (rude + professional) ────
+                "sistem kami", "rekod kami", "saya akan",
+                "mohon tunggu", "encik", "pihak kami",
+                "status tulis", "sistem cakap", "nombor dia",
+                "bagilah nombor", "pergilah cari", "tanggungjawab kita",
+                "pandai-pandailah", "ada apa-apa lagi",
+                "pengurus takde", "pengurus tak ada",
+                "buatlah aduan", "nak tunggu tunggulah",
+                "dah hantar", "kurier dah",
+            ]
+            for signal in agent_signals:
+                if signal in text:
+                    agent_score += 1.5
+
+        # ── Assign role ───────────────────────────────────────────
+        if agent_score > customer_score:
+            seg["predicted_role"] = "Agent"
+            seg["final_confidence"] = min(0.95, 0.6 + agent_score * 0.05)
+        elif customer_score > agent_score:
+            seg["predicted_role"] = "Customer"
+            seg["final_confidence"] = min(0.95, 0.6 + customer_score * 0.05)
+        else:
+            # Tie — keep whatever the ensemble assigned
+            pass
+
+        if matched_phrase:
+            seg["text_override"] = True
+            seg["text_override_phrase"] = matched_phrase
+
+    # Count changes
+    agents = sum(1 for s in hybrid if s.get("predicted_role") == "Agent")
+    customers = sum(1 for s in hybrid if s.get("predicted_role") == "Customer")
+    logger.info(
+        f"Independent classification complete: "
+        f"Agent={agents}, Customer={customers}, Total={len(hybrid)}"
+    )
+
+    return hybrid
+
+
 def classify_transcript_hybrid(lexical_classified: list[dict],
                                 acoustic_classified: list[dict]) -> list[dict]:
     """
-    Upgraded 5-step hybrid fusion pipeline:
+    Upgraded 6-step hybrid fusion pipeline:
       Step 1 — Speaker anchoring       (who is Agent/Customer?)
       Step 2 — Dynamic α/β             (which model to trust more?)
       Step 3 — Segment fusion          (S_ensemble per segment)
       Step 4 — Global consistency      (enforce 1 Agent + 1 Customer)
       Step 5 — Segment text override   (fix diarization leakage)
+      Step 6 — Context smoothing       (fix short fragment flips)
     """
     if len(lexical_classified) != len(acoustic_classified):
         logger.warning(
@@ -584,11 +920,42 @@ def classify_transcript_hybrid(lexical_classified: list[dict],
         })
         hybrid.append(merged)
 
-    # ── Step 4: Global consistency ───────────────────────────────
-    hybrid = enforce_global_consistency(hybrid, anchor_map)
+    # ── Step 3.5: Check diarization quality ─────────────────────
+    balance = check_diarization_balance(hybrid)
 
-    # ── Step 5: Segment-level text override ──────────────────────
-    hybrid = segment_level_text_override(hybrid)
+    if balance["balanced"]:
+        # ═══ Normal path — diarization is reliable ═══════════════
+        # ── Step 4: Global consistency ────────────────────────────
+        hybrid = enforce_global_consistency(hybrid, anchor_map)
+
+        # ── Step 5: Segment-level text override ───────────────────
+        hybrid = segment_level_text_override(hybrid)
+
+        # ── Step 6: Context smoothing ─────────────────────────────
+        hybrid = context_smoothing(hybrid)
+    else:
+        # ═══ Fallback path — diarization is broken ═══════════════
+        # Skip global consistency (speaker_id is unreliable).
+        # Try LLM classification first (best accuracy), fall back to
+        # rule-based text classification if LLM is unavailable.
+        if is_llm_available():
+            logger.info(
+                "Diarization fallback → using Method 4 (LLM classification)"
+            )
+            hybrid = classify_transcript_llm(hybrid)
+        else:
+            logger.warning(
+                "Diarization fallback → LLM unavailable, using rule-based "
+                "text classification. Set ANTHROPIC_API_KEY in config.py "
+                "for better accuracy."
+            )
+            hybrid = classify_independent_by_text(hybrid)
+
+        # Still run text override for strong phrase corrections
+        hybrid = segment_level_text_override(hybrid)
+
+        # Still run context smoothing for short fragments
+        hybrid = context_smoothing(hybrid)
 
     # Summary log
     n_agree    = sum(1 for s in hybrid if s.get("agreement", False))

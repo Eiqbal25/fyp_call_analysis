@@ -65,7 +65,7 @@ def parse_args():
     )
     parser.add_argument(
         "--save_report",
-        default=os.path.join(OUTPUTS_DIR, "evaluation_report.txt"),
+        default=os.path.join(OUTPUTS_DIR, "1_evaluation_report.txt"),
         help="Save text report to this path",
     )
     return parser.parse_args()
