@@ -1,0 +1,266 @@
+[
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Selamat petang.",
+    "start": 0.0,
+    "end": 1.2,
+    "duration": 1.2
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Terima kasih kerana menghubungi Takaful Bersatu. Nama saya Syifa.",
+    "start": 1.64,
+    "end": 5.68,
+    "duration": 4.04
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Boleh saya bantu urusan Encik hari ini?",
+    "start": 6.12,
+    "end": 8.26,
+    "duration": 2.14
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Selamat petang, Encik Syifa. Saya Khairul di sini.",
+    "start": 8.54,
+    "end": 11.2,
+    "duration": 2.66
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Saya ingin membuat semakkan tentang status tuntutan insurans perubatan saya bagi pembedahan minggu lepas.",
+    "start": 11.56,
+    "end": 17.36,
+    "duration": 5.8
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Boleh tolong semakkan?",
+    "start": 17.82,
+    "end": 18.76,
+    "duration": 0.94
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Boleh.",
+    "start": 18.76,
+    "end": 19.78,
+    "duration": 1.02
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Tiada masalah, Encik Khairul.",
+    "start": 20.2,
+    "end": 21.48,
+    "duration": 1.28
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Pertama sekali, saya harap Encik berada dalam keadaan sihat dan sedang berehat dengan baik selepas pembedahan.",
+    "start": 21.84,
+    "end": 28.02,
+    "duration": 6.18
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Boleh saya dapatkan nombor kad pengenalan atau nombor polisi insurans, Encik?",
+    "start": 28.46,
+    "end": 32.7,
+    "duration": 4.24
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Terima kasih atas keprihatinan, Encik. Alhamdulillah, saya semakin pulih.",
+    "start": 32.86,
+    "end": 36.82,
+    "duration": 3.96
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Nombor polisi saya ialah TKF 987654.",
+    "start": 37.34,
+    "end": 42.66,
+    "duration": 5.32
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Terima kasih, Encik Khairul.",
+    "start": 42.66,
+    "end": 44.4,
+    "duration": 1.74
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Mohon tunggu sebentar ya. Saya sedang membuka sistem.",
+    "start": 44.86,
+    "end": 47.44,
+    "duration": 2.58
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Sila tunggu dalam talian.",
+    "start": 47.84,
+    "end": 49.18,
+    "duration": 1.34
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Baik, Encik Syifa. Sila ambil masa secukupnya. Saya tidak tergesa-gesa.",
+    "start": 49.56,
+    "end": 53.26,
+    "duration": 3.7
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Terima kasih kerana menunggu, Encik Khairul. Saya telah melihat rekod tuntutan Encik untuk pembedahan appendix di hospital pakar tempoh hari.",
+    "start": 53.56,
+    "end": 60.96,
+    "duration": 7.4
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Tuntutan ini sudah disemak. Cuma buat masa ini, statusnya adalah pembetulan dokumen.",
+    "start": 61.42,
+    "end": 66.66,
+    "duration": 5.24
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Oh, begitu. Boleh saya tahu dokumen apa yang belum lengkap atau tersilap? Supaya saya boleh sediakan dan hantar semula secepat mungkin.",
+    "start": 66.66,
+    "end": 74.48,
+    "duration": 7.82
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Mengikut nota daripada pihak penilai, kami memerlukan salinan laporan perubatan rasmi yang ditanda tangani oleh doktor pakar yang merawat Encik.",
+    "start": 75.1,
+    "end": 83.48,
+    "duration": 8.38
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Dokumen yang dihantar sebelum ini cuma risid bayaran dan ringkasan keluar hospital sahaja.",
+    "start": 83.9,
+    "end": 89.28,
+    "duration": 5.38
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Ah, betul juga.",
+    "start": 89.78,
+    "end": 90.66,
+    "duration": 0.88
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Laporan itu memang ada pada saya. Cuma saya terlepas pandang untuk imbas sekali hari itu.",
+    "start": 91.1,
+    "end": 95.7,
+    "duration": 4.6
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Saya boleh emailkan laporan tersebut petang ini juga. Boleh saya tahu alamat email yang betul?",
+    "start": 95.7,
+    "end": 100.4,
+    "duration": 4.7
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Boleh, Encik Khairul. Encik boleh terus hantarkan ke email tuntutan kami di claim at takafulbersatu.com.my.",
+    "start": 100.78,
+    "end": 108.86,
+    "duration": 8.08
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Selepas email dihantar,",
+    "start": 109.16,
+    "end": 110.8,
+    "duration": 1.64
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "mohon Encik sertakan sekali nombor polisi Encik pada bahagian tajuk atau subjek email untuk memudahkan rujukan.",
+    "start": 111.26,
+    "end": 117.56,
+    "duration": 6.3
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Baik, saya faham dengan jelas. Saya akan pastikan nombor polisi diletakkan pada tajuk email.",
+    "start": 117.86,
+    "end": 123.26,
+    "duration": 5.4
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Terima kasih banyak-banyak atas bantuan dan layanan yang sangat mesra daripada Encik Shifa petang ini.",
+    "start": 123.26,
+    "end": 128.08,
+    "duration": 4.82
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Sama-sama Encik Khairul. Sudah menjadi tanggungjawab kami untuk membantu memudahkan urusan tuntutan Encik.",
+    "start": 128.36,
+    "end": 134.54,
+    "duration": 6.18
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Sebaik sahaja laporan diterima, kami akan teruskan proses kelulusan dalam masa tiga hari bekerja.",
+    "start": 134.84,
+    "end": 140.54,
+    "duration": 5.7
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Selamat berehat dan selamat petang.",
+    "start": 140.88,
+    "end": 143.28,
+    "duration": 2.4
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Terima kasih telah menonton!",
+    "start": 143.28,
+    "end": 143.36,
+    "duration": 0.08
+  }
+]

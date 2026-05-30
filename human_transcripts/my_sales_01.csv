@@ -1,0 +1,57 @@
+segment_id,role,text,start,end
+1,Agent,Selamat petang. Assalamualaikum Encik Hazik. Saya Syahrul dari Hydro Pure Malaysia. Saya harap Encik sihat hari ini.,0.0,6.5
+2,Customer,Waalaikumsalam Encik Syahrul.,7.1,8.4
+3,Customer,"Ya, saya sihat Alhamdulillah. Ada apa ya? Hubungi saya petang -petang begini?",8.76,12.54
+4,Agent,"Begini Encik Hazik. Pertama sekali, kami ingin mengucapkan terima kasih kerana Encik telah menjadi pelanggan setia penapis udara kami selama dua tahun.",12.82,21.48
+5,Agent,"Sila jangan risau. Saya hubungi ini bukan untuk cas apa-apa bayaran, tetapi untuk berkongsi satu ganjaran eksklusif sempena bulan penghargaan pelanggan.",21.48,31.12
+6,Customer,"Oh,",31.38,31.8
+7,Customer,ganjaran apa itu ya? Saya ingatkan fasal servis penapis udara tadi.,32.26,36.5
+8,Customer,Pakaj promosi baharukah?,36.9,38.48
+9,Agent,Betul Encik Hazik.,38.62,39.74
+10,Agent,"Berdasarkan profil kesetiaan Encik, pihak pengurusan telah memilih Encik untuk menerima tawaran rebate khas sebanyak 40 % bagi pelancaran produk terbaharu kami,",40.12,50.3
+11,Agent,"iaitu Hydro Pure Smart Purifier,",50.3,52.72
+12,Agent,penapis air pintar dengan fungsi pensterilan UV otomatik.,53.08,56.9
+13,Agent,"Kebetulan pula,",57.28,58.1
+14,Customer,memang saya dan isteri ada terfikir nak pasang penapis air kat rumah baru kami bulan depan.,58.5,63.06
+15,Customer,"Tapi itulah, sekarang ni banyak sangat jenama kat luar sana. Apa yang beza sangat penapis air pintar syarikat awak ni dengan jenama lain?",63.26,71.26
+16,Agent,Soalan yang sangat bagus Encik Hazik.,71.6,73.68
+17,Agent,Model pintar terbaharu ini dilengkapi dengan teknologi ekosensor yang menjimatkan elektrik sehingga 30%.,73.68,80.96
+18,Agent,"Paling penting,",80.96,82.18
+19,Agent,ia mempunyai reka bentuk yang sangat kompak dan minimalis.,82.56,85.8
+20,Agent,Jadi ia tidak akan memakan ruang yang banyak di dapur rumah baru Encik nanti.,85.98,89.64
+21,Customer,"Hmm,",90.18,90.36
+22,Customer,jimat elektrik dan kompak ya? Menarik juga tu.,91.04,93.82
+23,Customer,"Sebab dapur rumah baru saya tu reka bentuknya modern, lurus.",93.98,97.44
+24,Customer,Memang tak luas sangat.,97.6,98.76
+25,Agent,Berapa ya komitmen bulanan kalau saya ambil pelan sewa beli?,99.2,102.26
+26,Agent,"Untuk harga pasaran biasa,",102.26,104.22
+27,Agent,komitmen bulanan adalah RM110.,104.66,106.62
+28,Agent,"Tetapi khas untuk Encik Hazik sebagai pelanggan VIP kami,",107.16,110.56
+29,Agent,"dengan ribit 40 % tadi,",110.74,112.84
+30,Customer,Encik cuma perlu bayar RM65 sahaja sebulan.,113.26,116.46
+31,Customer,Harga ini sudah termasuk servis penukaran penapis percuma setiap 4 bulan,116.8,120.78
+32,Customer,dan jaminan penuh sepanjang tempoh kontrak.,120.78,123.4
+33,Agent,Bia betul. RM65 sahaja sebulan.,123.64,126.82
+34,Agent,Jarak harganya agak jauh berbanding harga asal ya.,127.24,129.94
+35,Agent,Tapi saya kena berbincang dengan isteri saya dululah untuk pemilihan warna dan lokasi pemasangan.,129.94,135.3
+36,Agent,"Sila ambil masa, Encik.",135.56,136.92
+37,Agent,Berbincang dengan isteri adalah perkara yang sangat penting.,137.14,139.86
+38,Customer,"Untuk memudahkan perancangan Encik berdua,",140.12,142.3
+39,Customer,apa kata saya hantarkan seorang pakar konsultan kami ke rumah Encik Sabtu ini,142.64,146.72
+40,Customer,untuk tunjukkan demo produk secara ringkas.,146.72,149.34
+41,Agent,"Encik boleh tengok sendiri saiz sebenar dan pilihan warna,",149.52,152.44
+42,Agent,tanpa sebarang komitmen bayaran pun.,152.56,154.6
+43,Agent,"Kalau macam tu, bagus juga.",154.96,156.34
+44,Agent,"Hari Sabtu petang dalam pukul 3 petang, kami berdua ada di rumah baru untuk kemas barang.",156.34,161.64
+45,Customer,Awak boleh hantar konsultan datang waktu itu ya?,161.96,164.08
+46,Customer,Baik Encik Hazik.,164.28,165.14
+47,Customer,Saya dah jadualkan slot janji temu untuk hari Sabtu ini jam 3 petang.,165.36,169.16
+48,Agent,Konsultan kami akan hubungi Encik terlebih dahulu sebelum datang.,169.58,172.72
+49,Agent,Terima kasih banyak atas masa Encik dan tahniah atas rumah baru.,173.04,176.36
+50,Agent,Selamat petang.,176.66,177.32
+51,Agent,Sama-sama Encik Syarul.,177.32,178.66
+52,Agent,Terima kasih kembali atas tawaran hebat ini.,178.84,180.84
+53,Agent,Kita jumpa hari Sabtu nanti.,181.22,182.4
+54,Agent,Assalamualaikum.,182.74,183.3
+55,Agent,Waalaikumsalam warahmatullahi ta'ala wabarakatuh.,183.98,185.98
+56,Agent,Terima kasih Encik Hazik.,186.22,187.2

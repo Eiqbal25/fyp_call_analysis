@@ -30,7 +30,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger("evaluate")
 
-from config import GROUND_TRUTH_CSV, OUTPUTS_DIR
+from config import GROUND_TRUTH_CSV, OUTPUTS_DIR, HUMAN_TRANSCRIPTS_DIR
 from evaluation.metrics import (
     compute_classification_metrics,
     compute_paired_ttest,
@@ -98,7 +98,12 @@ def main():
 
     # Load pipeline results
     data   = _load_results(args.results)
-    calls  = data.get("calls", {})
+    calls_raw = data.get("calls", {})
+    # Handle both list and dict formats
+    if isinstance(calls_raw, list):
+        calls = {c["call_id"]: c for c in calls_raw if isinstance(c, dict)}
+    else:
+        calls = calls_raw
     summary = data.get("summary", {})
 
     if not calls:
@@ -119,18 +124,32 @@ def main():
 
     for cid, call_data in calls.items():
 
+        # Try loading full human transcript for better evaluation
+        ht_path = os.path.join(HUMAN_TRANSCRIPTS_DIR, f"{cid}.csv")
+        if os.path.isfile(ht_path):
+            import pandas as _pd
+            call_gt_df = _pd.read_csv(ht_path)
+            if "role" in call_gt_df.columns:
+                call_gt_df = call_gt_df.rename(columns={"role": "ground_truth_role"})
+        else:
+            call_gt_df = gt_df[gt_df["call_id"] == cid]
+
         for key, method_name, collector in [
-            ("method1", "Method1-Lexical",  all_m1),
-            ("method2", "Method2-Acoustic", all_m2),
-            ("method3", "Method3-Hybrid",   all_m3),
+            ("method1",    "Method1-Lexical",  all_m1),
+            ("method2",    "Method2-Acoustic", all_m2),
+            ("method3",    "Method3-LLM",      all_m3),
         ]:
-            # FIX: validate_call now takes (classified_list, gt_df, call_id)
-            # NOT (pred_df, gt_df, call_id) — that was the old broken API
             classified = call_data.get(key, {}).get("classified", [])
+            # For LLM — only use segments that were classified by LLM
+            if method_name == "Method3-LLM":
+                classified = [s for s in classified if s.get("llm_classified")]
             if not classified:
                 continue
 
-            result = validate_call(classified, gt_df, cid, method_name)
+            # Disable inversion correction for M3 LLM — it's reliable
+            auto_correct = (method_name != "Method3-LLM")
+            result = validate_call(classified, call_gt_df, cid, method_name,
+                                   auto_correct_inversion=auto_correct)
             if result:
                 collector.append(result)
                 if key == "method1":
@@ -158,9 +177,9 @@ def main():
             "f1":        round(float(np.mean([r["f1"]        for r in results_list])), 2),
         }
 
-    agg_m1 = _agg(all_m1)
-    agg_m2 = _agg(all_m2)
-    agg_m3 = _agg(all_m3)
+    agg_m1     = _agg(all_m1)
+    agg_m2     = _agg(all_m2)
+    agg_m3     = _agg(all_m3)
 
     # ── Statistical tests ─────────────────────────────────────────
     n = min(len(scores_m1_flat), len(scores_m3_flat))
@@ -195,7 +214,8 @@ def main():
     for label, m in [
         ("Method 1 (Keyword-Lexical)", agg_m1),
         ("Method 2 (Acoustic DNN)",    agg_m2),
-        ("Method 3 (Hybrid Ensemble)", agg_m3),
+        ("Method 3 (LLM — Llama 3.3)", agg_m3),
+
     ]:
         lines.append(
             f"{label:<28} "
@@ -205,7 +225,7 @@ def main():
             f"{m['f1']:>6.1f}%"
         )
 
-    lines.append("\n── Paired t-test (Method 3 vs Method 1) ────────────────")
+    lines.append("\n── Paired t-test (Method 4 vs Method 1) ────────────────")
     if ttest:
         lines.append(f"  t-statistic : {ttest.get('t_statistic', 'N/A')}")
         lines.append(f"  p-value     : {ttest.get('p_value', 'N/A')} (α = {ttest.get('alpha', 0.05)})")
@@ -257,6 +277,66 @@ def main():
     else:
         lines.append("  No human_qa_score in CSV")
 
+    # ── WER + Language Summary ───────────────────────────────
+    from analytics.advanced import format_wer_summary
+    wer_data = [
+        {"call_id": cid,
+         "wer": cdata.get("wer", {}),
+         "language": cdata.get("language", {})}
+        for cid, cdata in calls.items()
+    ]
+    lines.append(format_wer_summary(wer_data))
+
+    # ── Agent Response Time + Interruptions ───────────────────
+    lines.append("\n── Agent Performance Metrics ────────────────────────────")
+    lines.append(f"  {'Call ID':<25} {'Lang':<12} {'Resp Time':>10} {'Interrupts':>12} {'Rating'}")
+    lines.append("  " + "-" * 70)
+    for cid, cdata in sorted(calls.items()):
+        rt   = cdata.get("response_time", {})
+        intr = cdata.get("interruptions", {})
+        lang = cdata.get("language", {}).get("detected_language", "?")
+        avg_rt   = f"{rt.get('avg_response_time_sec', 0):.2f}s" if rt.get("avg_response_time_sec") else "N/A"
+        n_intr   = intr.get("total_interruptions", 0)
+        rating   = rt.get("rating", "N/A")
+        lines.append(f"  {cid:<25} {lang:<12} {avg_rt:>10} {n_intr:>12} {rating}")
+
+    # ── Call Outcome Summary ─────────────────────────────────
+    lines.append("\n── Call Outcome Summary ─────────────────────────────────")
+    outcome_counts = {"Resolved": 0, "Unresolved": 0, "Escalated": 0, "Transferred": 0}
+    for cid, call_data in calls.items():
+        outcome = call_data.get("call_outcome", {})
+        if outcome:
+            o = outcome.get("outcome", "Resolved")
+            outcome_counts[o] = outcome_counts.get(o, 0) + 1
+            emoji = outcome.get("emoji", "✅")
+            lines.append(f"  {cid:<25} {emoji} {o}")
+    lines.append(f"\n  Summary: Resolved={outcome_counts['Resolved']} | "
+                 f"Unresolved={outcome_counts['Unresolved']} | "
+                 f"Escalated={outcome_counts['Escalated']} | "
+                 f"Transferred={outcome_counts['Transferred']}")
+
+    # ── Rude Behavior Summary ────────────────────────────────
+    lines.append("\n── Rude Behavior Warnings ───────────────────────────────")
+    has_rude = False
+    for cid, call_data in calls.items():
+        rude = call_data.get("rude_behavior")
+        if not rude:
+            continue
+        agent_level = rude.get("agent_rudeness_level", "NONE")
+        cust_level  = rude.get("customer_rudeness_level", "NONE")
+        if agent_level != "NONE" or cust_level != "NONE":
+            has_rude = True
+            a_count = rude.get("total_agent_incidents", 0)
+            c_count = rude.get("total_customer_incidents", 0)
+            lines.append(
+                f"  {cid:<25} Agent={agent_level:<6} ({a_count} incidents) | "
+                f"Customer={cust_level:<6} ({c_count} incidents)"
+            )
+            for w in rude.get("warnings", []):
+                lines.append(f"    {w}")
+    if not has_rude:
+        lines.append("  No significant rude behavior detected across all calls.")
+
     lines.append("\n" + "=" * 65)
     report = "\n".join(lines)
 
@@ -272,10 +352,35 @@ def main():
     if n >= 2:
         plot_ttest_boxplot(scores_m1_flat[:n], scores_m3_flat[:n], ttest)
 
+    # ── Save validation summary JSON for dashboard ───────────
+    import json as _json
+    eval_summary = {
+        "aggregated": {
+            "m1":     {"accuracy": agg_m1["accuracy"], "f1": agg_m1["f1"],
+                       "precision": agg_m1["precision"], "recall": agg_m1["recall"]},
+            "m2":     {"accuracy": agg_m2["accuracy"], "f1": agg_m2["f1"],
+                       "precision": agg_m2["precision"], "recall": agg_m2["recall"]},
+            "m3":     {"accuracy": agg_m3["accuracy"], "f1": agg_m3["f1"],
+                       "precision": agg_m3["precision"], "recall": agg_m3["recall"]},
+        },
+        "ttest": {
+            "t_statistic": float(ttest.get("t_statistic", 0)),
+            "p_value":     float(ttest.get("p_value", 1)),
+            "reject_null": bool(ttest.get("reject_null", False)),
+            "conclusion":  str(ttest.get("conclusion", "")),
+        },
+        "n_calls": len(calls),
+        "source": "evaluate.py — full 30-call evaluation",
+    }
+    eval_json_path = os.path.join(OUTPUTS_DIR, "evaluation_summary.json")
+    with open(eval_json_path, "w", encoding="utf-8") as f:
+        _json.dump(eval_summary, f, indent=2)
+    logger.info(f"Evaluation summary saved → {eval_json_path}")
+
     for method_name, results_list in [
         ("Method 1 Lexical",  all_m1),
         ("Method 2 Acoustic", all_m2),
-        ("Method 3 Hybrid",   all_m3),
+        ("Method 3 LLM",      all_m3),
     ]:
         if results_list:
             tp = sum(r["confusion_matrix"]["TP"] for r in results_list)

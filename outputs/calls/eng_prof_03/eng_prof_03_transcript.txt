@@ -1,0 +1,30 @@
+[00:00:00] Agent: Emergency Home Restoration and Plumbing Hotline. My name is Marcus.
+[00:00:04] Agent: What is the nature of your emergency today?
+[00:00:06] Customer: Help! I just got home and my entire living room is flooded. Water is literally gushing out from under the kitchen sink like a fountain.
+[00:00:14] Customer: It's ruining the hardwood floors. Oh my god, what do I do?
+[00:00:18] Agent: Ma 'am, please take a deep breath.
+[00:00:21] Agent: I'm here to help you and we are going to stop the water together.
+[00:00:24] Agent: First,
+[00:00:25] Agent: can I get your name and your current address so I can get a technician moving to you right now?
+[00:00:31] Customer: My name is Clara. Clara Jenkins. I'm at 425 Pine Street.
+[00:00:36] Customer: Please tell them to hurry. The water is already spreading into the hallway. It's reaching the power outlets.
+[00:00:41] Agent: Clara, I have dispatched our emergency team to 425 Pine Street. They will be there in 15 minutes.
+[00:00:49] Agent: Right now, I need you to stay away from those power outlets. Is it safe for you to walk over to the main water shutoff valve?
+[00:00:57] Customer: The main valve? I think it's in the basement or outside near the garage. I've never had to touch it before. I don't know what it looks like.
+[00:01:05] Agent: Don't worry, Clara. Walk over towards the garage or basement steps safely. Look for a bright red wheel or a blue lever on a pipe coming straight out of the wall.
+[00:01:16] Agent: Do you see anything like that?
+[00:01:19] Customer: Wait. I'm checking the basement door area now.
+[00:01:22] Customer: Okay, yes, there is a pipe near the water heater with a big red circular handle. Is that it?
+[00:01:28] Agent: Yes, that is exactly it. Perfect job, Clara. Now, I want you to turn that red handle clockwise. Turn it all the way to the right until it tightens and won't turn anymore.
+[00:01:40] Agent: That will shut off the water supply to the whole house.
+[00:01:44] Customer: Okay, it's really stiff.
+[00:01:47] Customer: Wait. Okay, I'm turning it. It stopped turning.
+[00:01:51] Customer: Let me look upstairs.
+[00:01:52] Customer: Oh, thank goodness the gushing sound under the sink just stopped.
+[00:01:57] Agent: Brilliant.
+[00:01:58] Agent: You did an amazing job, Clara. The active flooding has completely stopped. Now leave that valve exactly as it is. Can you confirm if any water actually got inside the electrical outlets?
+[00:02:10] Customer: No, it looks like it stopped just a few inches short of the hallway sockets. It's just a massive puddle on the floor now. Wow, my heart is beating so fast. Thank you so much for walking me through that.
+[00:02:22] Agent: You're very welcome, Clara. You reacted incredibly fast, and you just saved your home from much worse damage. Our restoration truck is only about 10 minutes away from your location now. They will handle the water extraction and dry out your floors completely.
+[00:02:38] Customer: Okay, great. I will just wait by the front door for them to arrive. Thanks again, Marcus. I really appreciate your calm voice.
+[00:02:44] Agent: It's my pleasure, Clara.
+[00:02:46] Agent: Hang tight, stay safe, and the team will see you shortly. Have a better rest of your day.

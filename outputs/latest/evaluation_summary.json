@@ -1,0 +1,30 @@
+{
+  "aggregated": {
+    "m1": {
+      "accuracy": 71.28,
+      "f1": 73.86,
+      "precision": 66.18,
+      "recall": 87.26
+    },
+    "m2": {
+      "accuracy": 72.63,
+      "f1": 76.33,
+      "precision": 70.16,
+      "recall": 88.71
+    },
+    "m3": {
+      "accuracy": 93.13,
+      "f1": 93.97,
+      "precision": 95.31,
+      "recall": 92.86
+    }
+  },
+  "ttest": {
+    "t_statistic": 14.376,
+    "p_value": 0.0,
+    "reject_null": true,
+    "conclusion": "Reject H0 (p=0.0000 < \u03b1=0.05): Hybrid Ensemble is SIGNIFICANTLY better than Keyword baseline."
+  },
+  "n_calls": 30,
+  "source": "evaluate.py \u2014 full 30-call evaluation"
+}

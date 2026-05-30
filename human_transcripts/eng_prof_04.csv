@@ -1,0 +1,24 @@
+segment_id,role,text,start,end
+1,Agent,Thank you for calling Silver Lining Insurance.,0.0,2.1
+2,Agent,My name is Marcus.,2.48,3.34
+3,Agent,To whom do I have the pleasure,3.7,4.78
+4,Agent,of speaking today?,4.78,5.58
+5,Customer,"Hi, Marcus. This is Sarah Jenkins.",6.08,8.18
+6,Customer,I'm calling because a rock hit my,8.58,10.58
+7,Customer,"windshield on the highway this morning, and now there's a massive crack.",10.58,14.38
+8,Agent,"I'm sorry to hear that,",14.78,16.06
+9,Agent,Sarah. I'm glad you're safe. Do you have your policy number handy so I can pull up your glass,16.18,20.78
+10,Agent,coverage details?,20.78,21.58
+11,Customer,"Yes, just a second.",22.0,23.6
+12,Customer,It's 44920 Alpha. I'm really worried because I have a long,24.46,30.78
+13,Customer,"road trip planned for tomorrow, and I need this fixed immediately.",30.78,34.24
+14,Agent,I understand the urgency.,34.64,36.26
+15,Agent,"Looking at your premier plan, you are fully covered for glass repair with a $0 deductible.",36.72,42.02
+16,Agent,I can schedule a mobile technician to come to your location this afternoon.,42.22,45.68
+17,Customer,"Oh, that would be a huge relief.",45.68,48.12
+18,Customer,Does it matter that I'm at my office and not at home?,48.48,51.1
+19,Agent,Not at all. We just need the vehicle's location and a contact number.,51.48,54.8
+20,Agent,Shall I proceed with the booking for the 2 p.m. slot?,55.08,57.62
+21,Customer,"Yes, please. That works perfectly for me. Thank you so much for making this easy.",57.94,62.44
+22,Agent,"It's my pleasure, Sarah. I'm processing that now. You'll receive a confirmation text shortly.",62.72,67.46
+23,Agent,Is there anything else I can assist you with today?,67.78,69.76

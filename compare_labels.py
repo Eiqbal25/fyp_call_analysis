@@ -46,6 +46,7 @@ logger = logging.getLogger("compare_labels")
 from config import (
     HUMAN_TRANSCRIPTS_DIR,
     OUTPUTS_DIR,
+    get_call_dir,
     LABEL_MATCH_SIMILARITY_THRESHOLD,
 )
 
@@ -355,7 +356,11 @@ def main():
 
     with open(args.results, "r", encoding="utf-8") as f:
         pipeline_data = json.load(f)
-    calls = pipeline_data.get("calls", {})
+    calls_raw = pipeline_data.get("calls", {})
+    if isinstance(calls_raw, list):
+        calls = {c["call_id"]: c for c in calls_raw if isinstance(c, dict)}
+    else:
+        calls = calls_raw
 
     # Find human transcripts
     available = list_available_human_transcripts()
@@ -434,7 +439,7 @@ def main():
         all_metrics[cid] = metrics
 
         # Save diff CSV
-        diff_csv = os.path.join(OUTPUTS_DIR, f"label_comparison_{cid}.csv")
+        diff_csv = os.path.join(get_call_dir(cid), f"label_comparison_{cid}.csv")
         comparison_df.to_csv(diff_csv, index=False)
         logger.info(f"Diff saved → {diff_csv}")
 
@@ -530,6 +535,34 @@ def main():
                 f"in outputs/{{call_id}}_diarized.json"
             )
 
+    # ── Call Outcome + Rude Behavior Summary ─────────────────
+    report_lines.append("\n" + "="*65)
+    report_lines.append("CALL OUTCOME & BEHAVIOR SUMMARY")
+    report_lines.append("="*65)
+    report_lines.append(f"{'Call ID':<25} {'Outcome':<14} {'Agent Rude':<12} {'Cust Rude'}")
+    report_lines.append("-"*65)
+
+    outcome_counts = {"Resolved": 0, "Unresolved": 0, "Escalated": 0, "Transferred": 0}
+    for call_id in sorted(calls.keys()):
+        call_data = calls[call_id]
+        outcome  = call_data.get("call_outcome", {})
+        rude     = call_data.get("rude_behavior", {})
+        o_label  = f"{outcome.get('emoji','?')} {outcome.get('outcome','?')}" if outcome else "N/A"
+        a_rude   = rude.get("agent_rudeness_level", "N/A") if rude else "N/A"
+        c_rude   = rude.get("customer_rudeness_level", "N/A") if rude else "N/A"
+        report_lines.append(f"{call_id:<25} {o_label:<14} {a_rude:<12} {c_rude}")
+        if outcome:
+            outcome_counts[outcome.get("outcome", "Resolved")] = \
+                outcome_counts.get(outcome.get("outcome", "Resolved"), 0) + 1
+
+    report_lines.append("-"*65)
+    report_lines.append(
+        f"Outcomes: ✅ Resolved={outcome_counts['Resolved']}  "
+        f"❌ Unresolved={outcome_counts['Unresolved']}  "
+        f"🔄 Escalated={outcome_counts['Escalated']}  "
+        f"📞 Transferred={outcome_counts['Transferred']}"
+    )
+
     # Print + save
     report = "\n".join(report_lines)
     print(report)
@@ -538,6 +571,34 @@ def main():
     with open(report_path, "w", encoding="utf-8") as f:
         f.write(report)
     logger.info(f"\nReport saved → {report_path}")
+
+    # ── Save accuracy summary JSON for dashboard ──────────────
+    import json as _json
+    accuracy_summary = {
+        cid: {
+            "accuracy":  m.get("accuracy_pct", 0),
+            "f1":        m.get("f1_pct", 0),
+            "precision": m.get("precision_pct", 0),
+            "recall":    m.get("recall_pct", 0),
+            "correct":   m.get("correct", 0),
+            "wrong":     m.get("wrong", 0),
+            "total":     m.get("total_matched", 0),
+            "wrong_labels": m.get("wrong_labels", []),
+        }
+        for cid, m in all_metrics.items()
+    }
+    overall_acc = sum(m.get("accuracy_pct",0) for m in all_metrics.values()) / max(len(all_metrics),1)
+    overall_f1  = sum(m.get("f1_pct",0) for m in all_metrics.values()) / max(len(all_metrics),1)
+    summary_json = {
+        "per_call":       accuracy_summary,
+        "overall_accuracy": round(overall_acc, 2),
+        "overall_f1":       round(overall_f1, 2),
+        "total_calls":      len(all_metrics),
+    }
+    json_path = os.path.join(OUTPUTS_DIR, "label_accuracy_summary.json")
+    with open(json_path, "w", encoding="utf-8") as f:
+        _json.dump(summary_json, f, ensure_ascii=False, indent=2)
+    logger.info(f"Accuracy summary JSON → {json_path}")
 
     if all_metrics:
         plot_accuracy_per_call(all_metrics)

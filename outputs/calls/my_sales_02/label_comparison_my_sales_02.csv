@@ -1,0 +1,48 @@
+call_id,start_sec,system_text,human_text,text_similarity,combined_score,system_role,human_role,label_correct,matched,text_override,override_phrase,status
+my_sales_02,0.0,Selamat petang. Terima kasih kerana menjadi pelanggan setia Megafiber.,Selamat petang. Terima kasih kerana menjadi pelanggan setia Megafiber.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_02,4.44,Nama saya Nadia. Boleh saya bercakap dengan Encik Faiz?,Nama saya Nadia. Boleh saya bercakap dengan Encik Faiz?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_02,8.5,"Ya, saya Faiz. Kenapa ya?","Ya, saya Faiz. Kenapa ya?",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_sales_02,10.6,"Kalau nak jual pakej baru, maaflah.","Kalau nak jual pakej baru, maaflah.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_sales_02,13.1,Saya tengah agak sibuk sekarang ni.,Saya tengah agak sibuk sekarang ni.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_sales_02,14.82,"Lagipun, internet rumah saya sekarang dah okey.","Lagipun, internet rumah saya sekarang dah okey.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_sales_02,17.54,"Saya faham, Encik Faiz. Maaf mengganggu waktu sibuk, Encik.","Saya faham, Encik Faiz. Maaf mengganggu waktu sibuk, Encik.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_02,21.74,"Saya ringkaskan, ya?","Saya ringkaskan, ya?",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_02,23.1,"Saya hubungi hari ini bukan nak jual pelan baharu,","Saya hubungi hari ini bukan nak jual pelan baharu,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_02,26.38,tetapi mahu memberikan ganjaran naik taraf kelajuan internet sedia ada,tetapi mahu memberikan ganjaran naik taraf kelajuan internet sedia ada,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_02,31.3,khas untuk pelanggan setia seperti Encik.,khas untuk pelanggan setia seperti Encik.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_02,34.22,"Eh, tak apalah, Encik. Pakej 100 Mbps saya sekarang ni pun dah cukup rasanya.","Eh, tak apalah, Encik. Pakej 100 Mbps saya sekarang ni pun dah cukup rasanya.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_sales_02,39.32,"Kalau upgrade nanti, bil bulanan jadi makin mahal pula.","Kalau upgrade nanti, bil bulanan jadi makin mahal pula.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_sales_02,42.36,Zaman sekarang ni kena berjimat sikit.,Zaman sekarang ni kena berjimat sikit.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_sales_02,44.44,"Betul, Encik Faiz. Bab berjimat tu memang saya sokong sangat.","Betul, Encik Faiz. Bab berjimat tu memang saya sokong sangat.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_02,48.74,Sebab itu saya hubungi Encik hari ini.,Sebab itu saya hubungi Encik hari ini.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_02,50.92,"Mengikat sistem kami, penggunaan internet rumah Encik kerap mencecah tahap maksi","Mengikat sistem kami, penggunaan internet rumah Encik kerap mencecah tahap maksi",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_02,56.9,terutamanya pada waktu malam.,terutamanya pada waktu malam.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_02,58.94,Encik ada hadapi masalah internet lag atau tersangkut-sangkut tak kebelakangan n,Encik ada hadapi masalah internet lag atau tersangkut-sangkut tak kebelakangan n,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_02,64.4,"Hmm,","Hmm,",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_sales_02,65.28,kalau waktu malam tu memang adalah sangkut sikit.,kalau waktu malam tu memang adalah sangkut sikit.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_sales_02,68.36,Terutamanya bila saya main game dan adik-adik saya layan penstriman video serent,Terutamanya bila saya main game dan adik-adik saya layan penstriman video serent,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_sales_02,73.54,Tapi takkan kalau upgrade tak kena tambah duit banyak?,Tapi takkan kalau upgrade tak kena tambah duit banyak?,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_sales_02,76.08,"Khas untuk kempen kesetiaan bulan ini, kami mahu naikkan kelajuan rumah Encik da","Khas untuk kempen kesetiaan bulan ini, kami mahu naikkan kelajuan rumah Encik da",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_02,85.54,"Yang menariknya,","Yang menariknya,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_02,86.96,Encik cuma perlu tambah RM10 sahaja daripada komitmen bulanan sekarang.,Encik cuma perlu tambah RM10 sahaja daripada komitmen bulanan sekarang.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_02,91.8,Malah kami akan tukar ruta lama Encik kepada ruta Wi-Fi 6 yang baru secara percu,Malah kami akan tukar ruta lama Encik kepada ruta Wi-Fi 6 yang baru secara percu,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_02,97.88,"Biar betul. Tambah RM10 sahaja sebulan, dapat kelajuan 500 Mbps.","Biar betul. Tambah RM10 sahaja sebulan, dapat kelajuan 500 Mbps.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_sales_02,102.14,Ruta baru pun percuma.,Ruta baru pun percuma.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_sales_02,104.2,"Pastikan tak ada bayaran tersembunyi yang tiba -tiba naik lepas beberapa bulan, ","Pastikan tak ada bayaran tersembunyi yang tiba -tiba naik lepas beberapa bulan, ",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_sales_02,108.28,"Betul. Saya jamin tiada sebarang cas tersembunyi, Encik Faiz.","Betul. Saya jamin tiada sebarang cas tersembunyi, Encik Faiz.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_02,112.46,Harga tambahan RM10 ini tetap dan dikunci sepanjang kontrak berjalan.,Harga tambahan RM10 ini tetap dan dikunci sepanjang kontrak berjalan.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_02,117.52,Ruta Wi-Fi 6 percuma itu pula akan kami hantar dan pasangkan terus ke rumah Enci,Ruta Wi-Fi 6 percuma itu pula akan kami hantar dan pasangkan terus ke rumah Enci,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_02,124.4,Masalah lag waktu malam di rumah Encik pasti selesai terus lepas ini.,Masalah lag waktu malam di rumah Encik pasti selesai terus lepas ini.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_02,128.44,"Tambah RM10 sahaja, eh?","Tambah RM10 sahaja, eh?",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_sales_02,131.02,Ruta dekat rumah itu pun memang dah lama sangat.,Ruta dekat rumah itu pun memang dah lama sangat.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_sales_02,133.34,Selalu kena restart kalau sangkut.,Selalu kena restart kalau sangkut.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_sales_02,135.4,Okeylah kalau macam itu. Berbaloi juga rasanya kalau cuma tambah RM10.,Okeylah kalau macam itu. Berbaloi juga rasanya kalau cuma tambah RM10.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_sales_02,139.72,"Alhamdulillah. Pilihan yang sangat bijak, Encik Faiz.","Alhamdulillah. Pilihan yang sangat bijak, Encik Faiz.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_02,142.86,Saya akan proseskan permohonan naik taraf kelajuan ini sekarang dalam sistem,Saya akan proseskan permohonan naik taraf kelajuan ini sekarang dalam sistem,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_02,147.5,dan kelajuan 500 Mbps itu akan aktif dalam masa 24 jam.,dan kelajuan 500 Mbps itu akan aktif dalam masa 24 jam.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_02,152.58,"Untuk pemasanan ruta baharu, Encik, Encik ada di rumah hari Sabtu ini jam 10 pag","Untuk pemasanan ruta baharu, Encik, Encik ada di rumah hari Sabtu ini jam 10 pag",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_02,158.68,Hari Sabtu pagi? Okey. Saya memang ada di rumah.,Hari Sabtu pagi? Okey. Saya memang ada di rumah.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_sales_02,161.48,"Terima kasih banyak, ya, Encik, sebab maklumkan pasal tawaran ini.","Terima kasih banyak, ya, Encik, sebab maklumkan pasal tawaran ini.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_sales_02,164.54,Mujo saya tak letak telefon terus tadi.,Mujo saya tak letak telefon terus tadi.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_sales_02,166.46,"Terima kasih atas masa, Encik, dan selamat petang.","Terima kasih atas masa, Encik, dan selamat petang.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_02,169.46,Sampai jumpa.,Sampai jumpa.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT

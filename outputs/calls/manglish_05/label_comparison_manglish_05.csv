@@ -1,0 +1,42 @@
+call_id,start_sec,system_text,human_text,text_similarity,combined_score,system_role,human_role,label_correct,matched,text_override,override_phrase,status
+manglish_05,0.0,"Hi, good afternoon.","Hi, good afternoon.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_05,1.92,Thanks for calling our priority hotline. My name is Amanda. Am I speaking to Kev,Thanks for calling our priority hotline. My name is Amanda. Am I speaking to Kev,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_05,7.54,"Yeah, Kevin here. Who's this? Sales caller.","Yeah, Kevin here. Who's this? Sales caller.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_05,11.14,"I'm quite busy now, chasing timeline.","I'm quite busy now, chasing timeline.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_05,14.14,"Sorry to bother you, Kevin.","Sorry to bother you, Kevin.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_05,15.86,"I'll make it fast -fast, yeah?","I'll make it fast -fast, yeah?",1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+manglish_05,17.48,I see your current line contract is actually ending this month.,I see your current line contract is actually ending this month.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_05,21.52,So I'm calling to pass you an exclusive voucher to get a brand new 5G smartphone,So I'm calling to pass you an exclusive voucher to get a brand new 5G smartphone,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_05,27.82,Zero upfront payment one.,Zero upfront payment one.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_05,30.0,"Free phone. No such thing as free lunch, lah, sis.","Free phone. No such thing as free lunch, lah, sis.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_05,33.88,Surely got catch one.,Surely got catch one.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_05,35.5,"Later you upgrade my plan, then my monthly bill bomb up, then I cry only.","Later you upgrade my plan, then my monthly bill bomb up, then I cry only.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_05,39.56,Better I just stay on my old plan.,Better I just stay on my old plan.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_05,41.78,"Haha, no catch lah, Kevin.","Haha, no catch lah, Kevin.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_05,44.34,Don't worry.,Don't worry.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_05,45.54,"Your current plan is RM80, right?","Your current plan is RM80, right?",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_05,48.14,"If you just upgrade slightly to our 5G Advanced plan at RM95,","If you just upgrade slightly to our 5G Advanced plan at RM95,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_05,53.54,you can get the latest Samsung or iPhone model for literally zero phone installm,you can get the latest Samsung or iPhone model for literally zero phone installm,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_05,60.38,"Just add RM15 extra only, per month.","Just add RM15 extra only, per month.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_05,63.82,"15 RM only? But I need to log contract, right? How many years?","15 RM only? But I need to log contract, right? How many years?",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_05,68.68,My phone now is actually a bit lagging already.,My phone now is actually a bit lagging already.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_05,71.46,"Battery fast drain, but two years' contract is a bit long, lah.","Battery fast drain, but two years' contract is a bit long, lah.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_05,74.88,"Yes, it's a 24-month contract. But think about it. If you buy this phone outside","Yes, it's a 24-month contract. But think about it. If you buy this phone outside",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_05,85.92,"If you divide by 24 months, that's like 75 RM a month. With us, you only pay RM1","If you divide by 24 months, that's like 75 RM a month. With us, you only pay RM1",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_05,95.0,"Hmm,","Hmm,",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_05,96.54,true also. My current phone battery really cannot make it already. Need to charg,true also. My current phone battery really cannot make it already. Need to charg,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_05,102.2,"If I buy new phone outside, quite pain to pay lump sum. What models can I choose","If I buy new phone outside, quite pain to pay lump sum. What models can I choose",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_05,107.42,We have the latest model available in sleek black or matte silver.,We have the latest model available in sleek black or matte silver.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_05,112.26,"Plus, you don't even need to queue up at our outlet. We will courier the phone d","Plus, you don't even need to queue up at our outlet. We will courier the phone d",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_05,119.7,"Okay lah, sounds like a solid deal. Since I also need a new phone anyway, might ","Okay lah, sounds like a solid deal. Since I also need a new phone anyway, might ",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_05,125.0,Can I choose the black colour one?,Can I choose the black colour one?,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_05,127.06,"Can, no problem.","Can, no problem.",1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+manglish_05,128.62,Black colour looks very premium.,Black colour looks very premium.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+manglish_05,130.92,"I will lock down the stock for you in the system now, yeah?","I will lock down the stock for you in the system now, yeah?",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_05,133.64,Can I double-check your delivery address?,Can I double-check your delivery address?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_05,136.32,"Just ship to my office address registered in your system, lah. Easier.","Just ship to my office address registered in your system, lah. Easier.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_05,140.02,"Thanks lah, Amanda.","Thanks lah, Amanda.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_05,141.22,"Luckily, I didn't hang up on you just now.","Luckily, I didn't hang up on you just now.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_05,143.52,"Most welcome, Kevin.","Most welcome, Kevin.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_05,145.1,Happy to help you get a good deal.,Happy to help you get a good deal.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_05,147.0,"The phone will arrive at your office in two to three working days, yeah? Have a ","The phone will arrive at your office in two to three working days, yeah? Have a ",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT

@@ -1,0 +1,306 @@
+[
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Thank you for calling Global Connect Premium Support.",
+    "start": 0.0,
+    "end": 3.2,
+    "duration": 3.2
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "My name is Marcus.",
+    "start": 3.52,
+    "end": 4.54,
+    "duration": 1.02
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "To whom do I have the pleasure of speaking today?",
+    "start": 4.94,
+    "end": 6.92,
+    "duration": 1.98
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Hi, Marcus.",
+    "start": 7.84,
+    "end": 8.6,
+    "duration": 0.76
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "This is Sarah Jenkins.",
+    "start": 8.9,
+    "end": 9.96,
+    "duration": 1.06
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I'm calling because I noticed a double charge on my credit card statement this morning for my monthly subscription.",
+    "start": 10.4,
+    "end": 15.68,
+    "duration": 5.28
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I'm very sorry to hear that, Ms. Jenkins.",
+    "start": 16.38,
+    "end": 18.76,
+    "duration": 2.38
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I certainly understand how frustrating unexpected charges can be.",
+    "start": 19.08,
+    "end": 23.0,
+    "duration": 3.92
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Let me pull up your account profile.",
+    "start": 23.26,
+    "end": 25.02,
+    "duration": 1.76
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Could you please verify the last four digits of the card on file?",
+    "start": 25.44,
+    "end": 28.46,
+    "duration": 3.02
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Sure. It's 4492.",
+    "start": 28.46,
+    "end": 31.84,
+    "duration": 3.38
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Thank you. Just a moment while the system refreshes.",
+    "start": 32.22,
+    "end": 36.0,
+    "duration": 3.78
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Okay. I see the two charges of $45.",
+    "start": 37.72,
+    "end": 41.24,
+    "duration": 3.52
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "It looks like the first one was a system-generated renewal and the second was a manual trigger.",
+    "start": 41.92,
+    "end": 48.26,
+    "duration": 6.34
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Oh, that's strange. I didn't manually trigger anything.",
+    "start": 48.84,
+    "end": 53.4,
+    "duration": 4.56
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Can we get that second one refunded today?",
+    "start": 53.78,
+    "end": 56.1,
+    "duration": 2.32
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Well,",
+    "start": 56.7,
+    "end": 57.26,
+    "duration": 0.56
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "looking at the logs, the request came from your IP address, Ms. Jenkins.",
+    "start": 58.16,
+    "end": 62.5,
+    "duration": 4.34
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Our policy generally states that manual overrides are non-refundable.",
+    "start": 62.94,
+    "end": 67.16,
+    "duration": 4.22
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Wait. I'm sorry?",
+    "start": 67.66,
+    "end": 69.52,
+    "duration": 1.86
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I definitely didn't do that.",
+    "start": 69.8,
+    "end": 71.72,
+    "duration": 1.92
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I was asleep at 3 a.m. when that charge went through.",
+    "start": 71.92,
+    "end": 74.76,
+    "duration": 2.84
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Is there a supervisor I could talk to?",
+    "start": 75.04,
+    "end": 77.02,
+    "duration": 1.98
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Look, Sarah, a supervisor is going to tell you the exact same thing I just did.",
+    "start": 78.6,
+    "end": 82.96,
+    "duration": 4.36
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Do you think I'm just making this up for fun?",
+    "start": 83.42,
+    "end": 85.54,
+    "duration": 2.12
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Excuse me? I'm just asking for a correction on a mistake your system made.",
+    "start": 86.34,
+    "end": 90.78,
+    "duration": 4.44
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "There's no need for that tone.",
+    "start": 91.06,
+    "end": 92.8,
+    "duration": 1.74
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "My tone?",
+    "start": 93.52,
+    "end": 94.58,
+    "duration": 1.06
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Honestly, I'm tired of people calling in and playing dumb about their own mistakes.",
+    "start": 95.64,
+    "end": 99.92,
+    "duration": 4.28
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "It's $45.",
+    "start": 100.36,
+    "end": 101.64,
+    "duration": 1.28
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "If you're that desperate for the money, maybe you shouldn't have a premium subscription in the first place.",
+    "start": 102.4,
+    "end": 106.96,
+    "duration": 4.56
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I cannot believe you just said that.",
+    "start": 107.26,
+    "end": 109.86,
+    "duration": 2.6
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Give me your employee ID number right now.",
+    "start": 110.22,
+    "end": 112.42,
+    "duration": 2.2
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "How about no?",
+    "start": 113.0,
+    "end": 114.1,
+    "duration": 1.1
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "How about you just hang up and stop wasting my time?",
+    "start": 114.52,
+    "end": 117.28,
+    "duration": 2.76
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I've got actual customers with real problems.",
+    "start": 117.58,
+    "end": 120.18,
+    "duration": 2.6
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Goodbye, Sarah.",
+    "start": 120.86,
+    "end": 121.86,
+    "duration": 1.0
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Goodbye.",
+    "start": 121.86,
+    "end": 121.98,
+    "duration": 0.12
+  }
+]

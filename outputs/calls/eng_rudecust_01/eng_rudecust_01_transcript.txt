@@ -1,0 +1,45 @@
+[00:00:00] Agent: Good afternoon.
+[00:00:01] Agent: Welcome to Horizon Airways Customer Care. My name is Elena. How may I assist you today?
+[00:00:07] Customer: You can assist me by firing whoever's running your joke of an airline.
+[00:00:11] Customer: My flight to London was just cancelled and some useless automated text told me I have to wait
+[00:00:17] Customer: until tomorrow.
+[00:00:18] Customer: Do you have any idea who I am or how much money I lose because of your incompetence?
+[00:00:23] Agent: I completely understand your frustrations, sir. And I am incredibly sorry for the massive
+[00:00:29] Agent: disruption to your travel plans. The cancellation was due to a severe thunderstorm over the Atlantic,
+[00:00:35] Agent: which triggered a safety grounding.
+[00:00:37] Agent: Let me look at your booking right away to see how we can get
+[00:00:40] Agent: you to London safely.
+[00:00:42] Customer: May I have your ticket or a last name? I don't care about a little rain.
+[00:00:46] Customer: Other airlines are taking off, so your pilots are clearly just lazy. My name is Arthur Vance.
+[00:00:51] Customer: Look it up. I am a Platinum Elite Flyer, and I demand you put me on a private charter
+[00:00:57] Customer: or buy me a first-class seat on a British Airways flight right now.
+[00:01:01] Agent: I thank you, Mr. Vance. I have pulled up your Platinum profile. I see the urgency,
+[00:01:07] Agent: especially with your elite status.
+[00:01:09] Agent: Regarding other airlines, all transatlantic routes are currently
+[00:01:13] Agent: blocked by air traffic control for safety, so British Airways is grounded as well. However,
+[00:01:18] Agent: because you are a priority member, I am looking at alternative routing options through our European
+[00:01:24] Customer: hubs. Oh, so now you want me to do a layover?
+[00:01:28] Customer: Brilliant! Truly spectacular service. I pay thousands
+[00:01:32] Customer: of dollars a year to fly direct,
+[00:01:34] Customer: not to sit in some secondary airport eating stale sandwiches because
+[00:01:37] Customer: your company can't handle a thunderstorm.
+[00:01:40] Customer: You are completely useless.
+[00:01:42] Agent: I know. A connection is far from ideal when you paid for a direct flight, Mr. Vance,
+[00:01:47] Agent: and I apologize for that. However, I have found a rerouting option through Paris that departs in
+[00:01:53] Agent: exactly two hours. It will get you to London tonight, just four hours later than your original arrival
+[00:01:59] Agent: time. I can upgrade your seat to first class for that entire journey at no extra charge.
+[00:02:05] Customer: Two hours? So I have to sit in this crowded terminal for another two hours because of you?
+[00:02:10] Customer: Fine. Whatever. Just book it. But you better ensure my luggage actually makes it onto that plane,
+[00:02:16] Agent: or I will sue this entire airline. I am processing the first class ticket through Paris right now,
+[00:02:22] Agent: Mr. Vance. I am also manually tagging your baggage in the system to ensure it is personally transferred
+[00:02:28] Agent: by our priority ground crew during your connection. You won't have to recheck it yourself.
+[00:02:33] Customer: Hmm.
+[00:02:34] Customer: Wow. That's the bare minimum you should be doing anyway. Give me my new boarding passes. I
+[00:02:38] Customer: don't have all day to stand here watching you click buttons.
+[00:02:41] Agent: Here are your updated boarding passes for both flights, Mr. Vance. Your gate is B-12,
+[00:02:46] Agent: and priority boarding will begin in 45 minutes. I have also issued a complimentary $50 airport
+[00:02:52] Agent: lounge voucher to your email so you can wait comfortably.
+[00:02:56] Customer: Grab the papers. I'm going to the lounge. Just make sure the plane actually flies this time.
+[00:03:00] Agent: We will do everything we can, sir.
+[00:03:03] Agent: Thank you for your patience.
+[00:03:04] Agent: Safe travels to London, and have a good afternoon.

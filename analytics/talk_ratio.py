@@ -176,7 +176,8 @@ def compute_turn_taking(classified: list[dict]) -> dict:
 def compute_qa_score(talk_ratio: dict,
                       turn_taking: dict,
                       sentiment_result: dict,
-                      compliance_result: dict) -> dict:
+                      compliance_result: dict,
+                      rude_result: dict = None) -> dict:
     """
     Compute composite Automated Quality Score (Q_score ∈ [0, 100]).
 
@@ -219,9 +220,19 @@ def compute_qa_score(talk_ratio: dict,
     # Sub-score 4: Compliance adherence
     compliance_score = compliance_result.get("compliance_score", 0.0)
 
-    # Sub-score 5: Agent politeness (from agent avg sentiment positivity)
+    # Sub-score 5: Agent politeness — sentiment + rude behavior penalty
     agent_avg = sentiment_result.get("agent_avg_compound", 0.0)
     politeness_score = (float(agent_avg) + 1.0) / 2.0
+
+    # Apply rude behavior penalty to politeness score
+    if rude_result:
+        agent_level = rude_result.get("agent_rudeness_level", "NONE")
+        if agent_level == "HIGH":
+            politeness_score = max(0.0, politeness_score - 0.50)
+            logger.info("QA: Agent HIGH rudeness — politeness penalized -0.50")
+        elif agent_level == "MEDIUM":
+            politeness_score = max(0.0, politeness_score - 0.25)
+            logger.info("QA: Agent MEDIUM rudeness — politeness penalized -0.25")
 
     sub_scores = {
         "talk_balance":  round(talk_balance_score,  4),

@@ -1,0 +1,38 @@
+[00:00:00] Agent: Thank you for calling Global Connect Premium Support.
+[00:00:03] Agent: My name is Marcus.
+[00:00:04] Agent: To whom do I have the pleasure of speaking today?
+[00:00:07] Customer: Hi, Marcus.
+[00:00:08] Customer: This is Sarah Jenkins.
+[00:00:10] Customer: I'm calling because I noticed a double charge on my credit card statement this morning for my monthly subscription.
+[00:00:16] Agent: I'm very sorry to hear that, Ms. Jenkins.
+[00:00:19] Agent: I certainly understand how frustrating unexpected charges can be.
+[00:00:23] Agent: Let me pull up your account profile.
+[00:00:25] Agent: Could you please verify the last four digits of the card on file?
+[00:00:28] Agent: Sure. It's 4492.
+[00:00:32] Agent: Thank you. Just a moment while the system refreshes.
+[00:00:37] Agent: Okay. I see the two charges of $45.
+[00:00:41] Agent: It looks like the first one was a system-generated renewal and the second was a manual trigger.
+[00:00:48] Customer: Oh, that's strange. I didn't manually trigger anything.
+[00:00:53] Customer: Can we get that second one refunded today?
+[00:00:56] Agent: Well,
+[00:00:58] Agent: looking at the logs, the request came from your IP address, Ms. Jenkins.
+[00:01:02] Agent: Our policy generally states that manual overrides are non-refundable.
+[00:01:07] Customer: Wait. I'm sorry?
+[00:01:09] Customer: I definitely didn't do that.
+[00:01:11] Customer: I was asleep at 3 a.m. when that charge went through.
+[00:01:15] Customer: Is there a supervisor I could talk to?
+[00:01:18] Agent: Look, Sarah, a supervisor is going to tell you the exact same thing I just did.
+[00:01:23] Customer: Do you think I'm just making this up for fun?
+[00:01:26] Customer: Excuse me? I'm just asking for a correction on a mistake your system made.
+[00:01:31] Agent: There's no need for that tone.
+[00:01:33] Customer: My tone?
+[00:01:35] Customer: Honestly, I'm tired of people calling in and playing dumb about their own mistakes.
+[00:01:40] Agent: It's $45.
+[00:01:42] Agent: If you're that desperate for the money, maybe you shouldn't have a premium subscription in the first place.
+[00:01:47] Customer: I cannot believe you just said that.
+[00:01:50] Customer: Give me your employee ID number right now.
+[00:01:53] Agent: How about no?
+[00:01:54] Agent: How about you just hang up and stop wasting my time?
+[00:01:57] Agent: I've got actual customers with real problems.
+[00:02:00] Agent: Goodbye, Sarah.
+[00:02:01] Customer: Goodbye.

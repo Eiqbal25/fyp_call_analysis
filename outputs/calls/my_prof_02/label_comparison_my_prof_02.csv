@@ -1,0 +1,34 @@
+call_id,start_sec,system_text,human_text,text_similarity,combined_score,system_role,human_role,label_correct,matched,text_override,override_phrase,status
+my_prof_02,0.0,Selamat petang.,Selamat petang.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_02,1.64,Terima kasih kerana menghubungi Takaful Bersatu. Nama saya Syifa.,Terima kasih kerana menghubungi Takaful Bersatu. Nama saya Syifa.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_02,6.12,Boleh saya bantu urusan Encik hari ini?,Boleh saya bantu urusan Encik hari ini?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_02,8.54,"Selamat petang, Encik Syifa. Saya Khairul di sini.","Selamat petang, Encik Syifa. Saya Khairul di sini.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_02,11.56,Saya ingin membuat semakkan tentang status tuntutan insurans perubatan saya bagi,Saya ingin membuat semakkan tentang status tuntutan insurans perubatan saya bagi,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_02,17.82,Boleh tolong semakkan?,Boleh tolong semakkan?,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_02,18.76,Boleh.,Boleh.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_02,20.2,"Tiada masalah, Encik Khairul.","Tiada masalah, Encik Khairul.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_02,21.84,"Pertama sekali, saya harap Encik berada dalam keadaan sihat dan sedang berehat d","Pertama sekali, saya harap Encik berada dalam keadaan sihat dan sedang berehat d",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_02,28.46,"Boleh saya dapatkan nombor kad pengenalan atau nombor polisi insurans, Encik?","Boleh saya dapatkan nombor kad pengenalan atau nombor polisi insurans, Encik?",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_02,32.86,"Terima kasih atas keprihatinan, Encik. Alhamdulillah, saya semakin pulih.","Terima kasih atas keprihatinan, Encik. Alhamdulillah, saya semakin pulih.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_02,37.34,Nombor polisi saya ialah TKF 987654.,Nombor polisi saya ialah TKF 987654.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_02,42.66,"Terima kasih, Encik Khairul.","Terima kasih, Encik Khairul.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_02,44.86,Mohon tunggu sebentar ya. Saya sedang membuka sistem.,Mohon tunggu sebentar ya. Saya sedang membuka sistem.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_02,47.84,Sila tunggu dalam talian.,Sila tunggu dalam talian.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_02,49.56,"Baik, Encik Syifa. Sila ambil masa secukupnya. Saya tidak tergesa-gesa.","Baik, Encik Syifa. Sila ambil masa secukupnya. Saya tidak tergesa-gesa.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_02,53.56,"Terima kasih kerana menunggu, Encik Khairul. Saya telah melihat rekod tuntutan E","Terima kasih kerana menunggu, Encik Khairul. Saya telah melihat rekod tuntutan E",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_02,61.42,"Tuntutan ini sudah disemak. Cuma buat masa ini, statusnya adalah pembetulan doku","Tuntutan ini sudah disemak. Cuma buat masa ini, statusnya adalah pembetulan doku",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_02,66.66,"Oh, begitu. Boleh saya tahu dokumen apa yang belum lengkap atau tersilap? Supaya","Oh, begitu. Boleh saya tahu dokumen apa yang belum lengkap atau tersilap? Supaya",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_02,75.1,"Mengikut nota daripada pihak penilai, kami memerlukan salinan laporan perubatan ","Mengikut nota daripada pihak penilai, kami memerlukan salinan laporan perubatan ",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_02,83.9,Dokumen yang dihantar sebelum ini cuma risid bayaran dan ringkasan keluar hospit,Dokumen yang dihantar sebelum ini cuma risid bayaran dan ringkasan keluar hospit,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_02,89.78,"Ah, betul juga.","Ah, betul juga.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_02,91.1,Laporan itu memang ada pada saya. Cuma saya terlepas pandang untuk imbas sekali ,Laporan itu memang ada pada saya. Cuma saya terlepas pandang untuk imbas sekali ,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_02,95.7,Saya boleh emailkan laporan tersebut petang ini juga. Boleh saya tahu alamat ema,Saya boleh emailkan laporan tersebut petang ini juga. Boleh saya tahu alamat ema,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_02,100.78,"Boleh, Encik Khairul. Encik boleh terus hantarkan ke email tuntutan kami di clai","Boleh, Encik Khairul. Encik boleh terus hantarkan ke email tuntutan kami di clai",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_02,109.16,"Selepas email dihantar,","Selepas email dihantar,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_02,111.26,mohon Encik sertakan sekali nombor polisi Encik pada bahagian tajuk atau subjek ,mohon Encik sertakan sekali nombor polisi Encik pada bahagian tajuk atau subjek ,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_02,117.86,"Baik, saya faham dengan jelas. Saya akan pastikan nombor polisi diletakkan pada ","Baik, saya faham dengan jelas. Saya akan pastikan nombor polisi diletakkan pada ",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_02,123.26,Terima kasih banyak-banyak atas bantuan dan layanan yang sangat mesra daripada E,Terima kasih banyak-banyak atas bantuan dan layanan yang sangat mesra daripada E,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_02,128.36,Sama-sama Encik Khairul. Sudah menjadi tanggungjawab kami untuk membantu memudah,Sama-sama Encik Khairul. Sudah menjadi tanggungjawab kami untuk membantu memudah,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_02,134.84,"Sebaik sahaja laporan diterima, kami akan teruskan proses kelulusan dalam masa t","Sebaik sahaja laporan diterima, kami akan teruskan proses kelulusan dalam masa t",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_02,140.88,Selamat berehat dan selamat petang.,Selamat berehat dan selamat petang.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_02,143.28,Terima kasih telah menonton!,Terima kasih telah menonton!,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT

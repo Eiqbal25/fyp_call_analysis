@@ -1,0 +1,48 @@
+call_id,start_sec,system_text,human_text,text_similarity,combined_score,system_role,human_role,label_correct,matched,text_override,override_phrase,status
+manglish_02,0.0,"Hello, you orang ni memang tak rati buat kerja ke apa? Kenapa line I kena bar, h",you orang ni memang tak reti buat kerja ke apa?,0.713,0.597,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_02,4.48,"I baru je bayar semua billa swing, okay? You orang jangan nak main-main. Kerja I","I baru je bayar semua bilas wing, ok?",0.5,0.459,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_02,10.28,"Selamat petang, encik. Saya minta maaf sangat-sangat atas kesulitan ni, encik Al",Saya minta maaf sangat-sangat atas kesulitan yang Encik alami.,0.663,0.594,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_02,16.08,Tak payah nak selamat petang sangatlah. I tak ada masa nak berbora. Nama I Mansu,Tak payah nak selamat petang sangat lah.,0.639,0.529,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_02,20.72,Sekarang ni I nak you aktifkan balik line I sekarang juga. Jangan beri alasan si,Sekarang ni I nak you aktifkan balik line I sekarang juga.,0.744,0.696,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_02,25.94,"Baik Encik Mansur, saya faham Encik tengah marah. Boleh Encik berikan nombor aku",Boleh Encik berikan nombor akaun atau nombor telefon Encik untuk saya buat semak,0.785,0.721,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_02,33.56,"Nombor akun saya 101 098 765. Cek sekarang, saya dah bayar RM150 cash guna onlin",I dah bayar RM150 cash guna online banking selasa lepas.,0.692,0.58,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_02,42.36,Awak jangan nak tuduh saya tak bayar pula. Resit semua ada dengan saya ni.,You jangan nak tuduh I tak bayar pula.,0.607,0.538,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_02,45.74,"Terima kasih Encik Mansur. Tolong tunggu sekejap ya, saya semak.",Terima kasih Encik Mansur.,0.578,0.487,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_02,49.68,"Okay, saya nampak ada bayaran RM150 pada hari selasa.","Ok, saya nampak ada bayaran RM150 pada hari selasa.",0.981,0.936,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_02,54.28,"Tapi Encik Mansur, kalau ikutkan rekod di sini,","Tapi Encik Mansur, kalau ikutkan rekod di sini,",1.0,0.961,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_02,57.42,"Encik tersalah maksudkan,",Encik tersalah masukkan...,0.863,0.905,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_02,59.14,eh mana ada salah?,"Eh, mana ada salah?",0.973,0.92,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_02,60.38,I click dekat istri banking I je tau.,I klik dekat history banking I je tau.,0.907,0.924,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_02,62.76,You jangan nak pusing selita pula.,You jangan nak pusing cerita pula.,0.941,0.911,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_02,64.56,"Nampak sangat sistem company you yang bodoh,",Nampak sangat sistem company you yang bodoh.,0.977,0.964,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_02,66.44,lepas tu sengaja nak salahkan customer.,Lepas tu sengaja nak salahkan customer.,1.0,0.963,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_02,68.5,"Saya minta maaf Encik Mansur,",Saya minta maaf Encik Mansur.,0.966,0.944,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_02,69.96,tetapi bayaran tersebut telah masuk ke nombor akun lama Encik,Tetapi bayaran tersebut telah masuk ke nombor akaun lama Encik,0.992,0.964,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_02,73.28,yang sudah ditunjukkan tahun lepas.,yang sudah diterminit tahun lepas.,0.812,0.812,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_02,75.62,"Disebabkan akun aktif Encik yang sekarang masih ditumbakan,","Disebabkan akaun aktif Encik yang sekarang masih ada tunggakan,",0.918,0.936,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_02,78.28,Sebab itu sistem bar line cik sekarang otomatik,sebab itu sistem bar lain Encik sekarang otomatik.,0.948,0.924,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_02,81.14,"Eh, akaun lama?",akaun lama?,0.846,0.638,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_02,83.36,Mana saya tahu?,I... mana I tahu?,0.688,0.73,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_02,84.48,"Kalau dah terminit, kenapa bank still simpan history?","Kalau dah terminate, kenapa bank still simpan history?",0.972,0.941,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_02,86.94,You orang patutnya delete lah,You orang patutnya delete lah.,0.983,0.863,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_02,88.52,Habis itu sekarang macam mana?,Habis tu sekarang macam mana?,0.983,0.949,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_02,89.68,Takkan saya kena bayar lagi sekali?,Takkan I kena bayar lagi sekali?,0.925,0.882,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_02,91.44,"Tak apa, jangan risau Encik Nusor",Jangan risau Encik Mansur.,0.746,0.652,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_02,93.2,Encik tak perlu bayar lagi sekali,Encik tak perlu bayar lagi sekali.,0.985,0.936,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_02,94.66,Saya boleh bantu buat internal transfer,Saya boleh bantu buat internal transfer untuk pindahkan duit RM150 itu,0.716,0.801,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_02,96.64,untuk pindahkan duit RM150 itu dari akaun lama,Saya boleh bantu buat internal transfer untuk pindahkan duit RM150 itu,0.517,0.586,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_02,99.66,ke akaun aktif encik sekarang juga,dari akaun lama ke akaun aktif Encik sekarang juga.,0.8,0.786,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_02,101.96,Proses ini ambil masa se minit sahaja,Proses ini ambil masa seminit sahaja.,0.973,0.912,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_02,103.96,"Nah, tahu pun boleh buat",tahu pun boleh buat.,0.864,0.703,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_02,105.78,Memang patutnya awak terus buat macam tu dari awal tadi,Memang patutnya you terus buat macam tu dari awal tadi.,0.927,0.918,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_02,108.28,Tak payah nak banyak alasan sangat,Tak payah nak banyak alasan sangat.,0.986,0.938,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_02,109.78,Menusahkan orang betul lah kena call bagai,Menyusahkan orang betullah.,0.725,0.604,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_02,112.14,Selesai Encik Mansur,Selesai Encik Mansur.,0.976,0.892,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_02,113.34,Saya sudah berjaya pindahkan bayaran tersebut,Saya sudah berjaya pindahkan bayaran tersebut,1.0,0.992,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_02,115.32,Dan bar pada line Encik sudah pun dibuku,dan bar pada line Encik sudah pun dibuka.,0.963,0.918,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_02,117.6,Encik boleh cuba restart telefon Encik,Encik boleh cuba restart telefon Encik dalam masa 5 minit ya?,0.768,0.829,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_02,119.36,Dalam masa lima minit ya,Encik boleh cuba restart telefon Encik dalam masa 5 minit ya?,0.471,0.588,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_02,120.72,Ada apa-apa lagi yang boleh saya bantu?,Ada apa-apa lagi yang boleh saya bantu?,1.0,0.904,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_02,122.74,"Dah, itu je",itu je.,0.667,0.537,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_02,123.56,Make sure lepas ni sistem awak tak bodoh macam ni lagi,Make sure lepas ni sistem you tak bodoh macam ni lagi.,0.926,0.906,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_02,125.96,Saya lekat dulu,I lekat dulu.,0.786,0.754,Agent,Customer,False,True,False,,❌ WRONG

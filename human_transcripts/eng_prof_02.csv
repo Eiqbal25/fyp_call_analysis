@@ -1,0 +1,44 @@
+segment_id,role,text,start,end
+1,Agent,Good afternoon.,0.0,0.78
+2,Agent,Thank you for calling Grand Horizon Resort's Guest Relations.,1.16,4.2
+3,Agent,My name is Julian.,4.5,5.28
+4,Agent,How may I assist you with your travel plans today?,5.68,7.62
+5,Customer,"Good afternoon, Julian.",7.84,9.2
+6,Customer,This is Dr. Rachel speaking.,9.68,11.28
+7,Customer,"I have a reservation at your Kuala Lumpur property starting tonight,",11.62,15.62
+8,Customer,but my international flight has just been delayed by 12 hours.,15.64,19.62
+9,Customer,"I am going to miss my first night, and I wanted to know if it's possible to adjust my check-in date.",19.8,25.3
+10,Agent,"Oh, I am so sorry to hear about your flight delay, Dr. Rachel.",25.68,29.42
+11,Agent,Travel disruptions can be incredibly exhausting.,30.0,32.44
+12,Agent,Please rest assured that I am more than happy to help you adjust your reservation so you don't lose your booking.,32.84,38.14
+13,Agent,May I please have your reservation confirmation number?,38.4,41.4
+14,Customer,"Thank you so much, Julian. I appreciate your kindness.",41.64,44.8
+15,Customer,"Yes, my confirmation number is GHR44921.",45.26,52.12
+16,Agent,Thank you very much. Please hold for just a brief moment while I access our reservation database.,52.64,57.86
+17,Agent,I am pulling up your details right now.,57.86,60.3
+18,Customer,"Take your time, Julian. Thank you.",60.5,62.34
+19,Agent,"Thank you for waiting, Dr. Rachel.",62.66,64.14
+20,Agent,I see you're booking for a deluxe King Suite for four nights.,64.5,68.28
+21,Agent,"Because this was a promotional, non-refundable rate, the system usually locks the dates automatically.",68.66,74.06
+22,Agent,"However,",74.4,74.86
+23,Agent,"given your flight situation, I am going to manually override the penalty and shift your check -in date to tomorrow.",75.24,80.94
+24,Customer,"Oh, that is absolutely wonderful news.",80.94,83.8
+25,Customer,I was quite worried I would be charged for a room I couldn't use.,84.0,87.44
+26,Customer,"Will I still be able to keep the full four nights, or will the stay be shortened?",87.78,91.98
+27,Agent,"I have checked our availability, and luckily, the suite is free for an extra night at the end of your stay.",92.44,98.18
+28,Agent,"So, I have successfully shifted your entire four-night block.",98.42,101.88
+29,Agent,"Your new checkout date will be this coming Wednesday instead of Tuesday, at no extra charge.",102.08,107.02
+30,Customer,"Wow, that is incredibly generous of you.",107.02,110.16
+31,Customer,"I honestly expected a lot of corporate red tape, but you have made this entire process completely stress-free.",110.34,116.58
+32,Agent,"It is entirely our pleasure, Dr. Rachel.",116.92,119.48
+33,Agent,"Our priority is ensuring your stay with us is perfect, right from the moment you travel.",119.78,124.34
+34,Agent,"I have also added a note to the front desk team to expect a late morning arrival for you tomorrow,",124.54,129.62
+35,Agent,so your room will be fully prepped and ready.,129.68,131.9
+36,Customer,Excellent. That sounds absolutely perfect.,132.44,134.74
+37,Customer,"Thank you so much for your stellar efficiency and wonderful customer service today, Julian.",134.74,139.94
+38,Customer,You've truly turned my day around.,140.24,141.86
+39,Agent,"You are most welcome, Dr. Rachel.",142.18,144.26
+40,Agent,It was an absolute pleasure assisting you.,144.54,146.32
+41,Agent,I have just sent the updated booking confirmation to your email.,146.52,149.66
+42,Agent,"Safe travels on your flight tonight, and we look forward to welcoming you tomorrow.",149.94,153.58
+43,Agent,Have a great afternoon.,153.82,154.66

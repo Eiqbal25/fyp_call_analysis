@@ -1,0 +1,362 @@
+[
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Good afternoon.",
+    "start": 0.0,
+    "end": 0.74,
+    "duration": 0.74
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Welcome to Horizon Airways Customer Care. My name is Elena. How may I assist you today?",
+    "start": 1.14,
+    "end": 6.42,
+    "duration": 5.28
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "You can assist me by firing whoever's running your joke of an airline.",
+    "start": 7.04,
+    "end": 10.96,
+    "duration": 3.92
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "My flight to London was just cancelled and some useless automated text told me I have to wait",
+    "start": 11.22,
+    "end": 17.16,
+    "duration": 5.94
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "until tomorrow.",
+    "start": 17.16,
+    "end": 18.02,
+    "duration": 0.86
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Do you have any idea who I am or how much money I lose because of your incompetence?",
+    "start": 18.38,
+    "end": 23.68,
+    "duration": 5.3
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I completely understand your frustrations, sir. And I am incredibly sorry for the massive",
+    "start": 23.68,
+    "end": 29.56,
+    "duration": 5.88
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "disruption to your travel plans. The cancellation was due to a severe thunderstorm over the Atlantic,",
+    "start": 29.56,
+    "end": 35.24,
+    "duration": 5.68
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "which triggered a safety grounding.",
+    "start": 35.24,
+    "end": 37.2,
+    "duration": 1.96
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Let me look at your booking right away to see how we can get",
+    "start": 37.56,
+    "end": 40.56,
+    "duration": 3.0
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "you to London safely.",
+    "start": 40.56,
+    "end": 41.68,
+    "duration": 1.12
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "May I have your ticket or a last name? I don't care about a little rain.",
+    "start": 42.1,
+    "end": 46.24,
+    "duration": 4.14
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Other airlines are taking off, so your pilots are clearly just lazy. My name is Arthur Vance.",
+    "start": 46.7,
+    "end": 51.94,
+    "duration": 5.24
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Look it up. I am a Platinum Elite Flyer, and I demand you put me on a private charter",
+    "start": 51.94,
+    "end": 57.32,
+    "duration": 5.38
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "or buy me a first-class seat on a British Airways flight right now.",
+    "start": 57.32,
+    "end": 61.58,
+    "duration": 4.26
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I thank you, Mr. Vance. I have pulled up your Platinum profile. I see the urgency,",
+    "start": 61.8,
+    "end": 66.98,
+    "duration": 5.18
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "especially with your elite status.",
+    "start": 67.2,
+    "end": 68.98,
+    "duration": 1.78
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Regarding other airlines, all transatlantic routes are currently",
+    "start": 69.44,
+    "end": 73.1,
+    "duration": 3.66
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "blocked by air traffic control for safety, so British Airways is grounded as well. However,",
+    "start": 73.1,
+    "end": 78.62,
+    "duration": 5.52
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "because you are a priority member, I am looking at alternative routing options through our European",
+    "start": 78.62,
+    "end": 84.36,
+    "duration": 5.74
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "hubs. Oh, so now you want me to do a layover?",
+    "start": 84.36,
+    "end": 87.7,
+    "duration": 3.34
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Brilliant! Truly spectacular service. I pay thousands",
+    "start": 88.06,
+    "end": 92.02,
+    "duration": 3.96
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "of dollars a year to fly direct,",
+    "start": 92.02,
+    "end": 93.88,
+    "duration": 1.86
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "not to sit in some secondary airport eating stale sandwiches because",
+    "start": 94.28,
+    "end": 97.98,
+    "duration": 3.7
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "your company can't handle a thunderstorm.",
+    "start": 97.98,
+    "end": 99.84,
+    "duration": 1.86
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "You are completely useless.",
+    "start": 100.22,
+    "end": 102.16,
+    "duration": 1.94
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I know. A connection is far from ideal when you paid for a direct flight, Mr. Vance,",
+    "start": 102.16,
+    "end": 107.34,
+    "duration": 5.18
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "and I apologize for that. However, I have found a rerouting option through Paris that departs in",
+    "start": 107.46,
+    "end": 113.94,
+    "duration": 6.48
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "exactly two hours. It will get you to London tonight, just four hours later than your original arrival",
+    "start": 113.94,
+    "end": 119.62,
+    "duration": 5.68
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "time. I can upgrade your seat to first class for that entire journey at no extra charge.",
+    "start": 119.62,
+    "end": 125.0,
+    "duration": 5.38
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Two hours? So I have to sit in this crowded terminal for another two hours because of you?",
+    "start": 125.0,
+    "end": 130.58,
+    "duration": 5.58
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Fine. Whatever. Just book it. But you better ensure my luggage actually makes it onto that plane,",
+    "start": 130.88,
+    "end": 136.56,
+    "duration": 5.68
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "or I will sue this entire airline. I am processing the first class ticket through Paris right now,",
+    "start": 136.56,
+    "end": 142.46,
+    "duration": 5.9
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Mr. Vance. I am also manually tagging your baggage in the system to ensure it is personally transferred",
+    "start": 142.58,
+    "end": 148.4,
+    "duration": 5.82
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "by our priority ground crew during your connection. You won't have to recheck it yourself.",
+    "start": 148.4,
+    "end": 153.02,
+    "duration": 4.62
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Hmm.",
+    "start": 153.02,
+    "end": 153.86,
+    "duration": 0.84
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Wow. That's the bare minimum you should be doing anyway. Give me my new boarding passes. I",
+    "start": 154.22,
+    "end": 158.52,
+    "duration": 4.3
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "don't have all day to stand here watching you click buttons.",
+    "start": 158.52,
+    "end": 161.0,
+    "duration": 2.48
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Here are your updated boarding passes for both flights, Mr. Vance. Your gate is B-12,",
+    "start": 161.46,
+    "end": 166.6,
+    "duration": 5.14
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "and priority boarding will begin in 45 minutes. I have also issued a complimentary $50 airport",
+    "start": 166.6,
+    "end": 172.72,
+    "duration": 6.12
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "lounge voucher to your email so you can wait comfortably.",
+    "start": 172.72,
+    "end": 175.68,
+    "duration": 2.96
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Grab the papers. I'm going to the lounge. Just make sure the plane actually flies this time.",
+    "start": 176.04,
+    "end": 180.78,
+    "duration": 4.74
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "We will do everything we can, sir.",
+    "start": 180.78,
+    "end": 182.94,
+    "duration": 2.16
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Thank you for your patience.",
+    "start": 183.32,
+    "end": 184.28,
+    "duration": 0.96
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Safe travels to London, and have a good afternoon.",
+    "start": 184.6,
+    "end": 186.92,
+    "duration": 2.32
+  }
+]

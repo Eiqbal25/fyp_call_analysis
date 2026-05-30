@@ -2,42 +2,206 @@
 FYP1 CALL ANALYSIS — EVALUATION REPORT
 =================================================================
 
-Calls evaluated  : 8
-Total audio      : 760.5 s
-Processing time  : 823.7 s
+Calls evaluated  : 30
+Total audio      : 148.6 s
+Processing time  : 33.6 s
 
 ── Classification Performance ───────────────────────────
 Method                       Accuracy Precision  Recall     F1
 -----------------------------------------------------------------
-Method 1 (Keyword-Lexical)      65.0%    66.4%   93.3%  75.5%
-Method 2 (Acoustic DNN)         72.8%    74.3%   90.5%  80.0%
-Method 3 (Hybrid Ensemble)      79.3%    82.6%   81.1%  81.0%
+Method 1 (Keyword-Lexical)      71.3%    66.2%   87.3%  73.9%
+Method 2 (Acoustic DNN)         72.6%    70.2%   88.7%  76.3%
+Method 3 (LLM — Llama 3.3)      93.1%    95.3%   92.9%  94.0%
 
-── Paired t-test (Method 3 vs Method 1) ────────────────
-  t-statistic : 2.5406
-  p-value     : 0.0066 (α = 0.05)
+── Paired t-test (Method 4 vs Method 1) ────────────────
+  t-statistic : 14.376
+  p-value     : 0.0 (α = 0.05)
   Reject H₀   : True
-  Conclusion  : Reject H0 (p=0.0066 < α=0.05): Hybrid Ensemble is SIGNIFICANTLY better than Keyword baseline.
+  Conclusion  : Reject H0 (p=0.0000 < α=0.05): Hybrid Ensemble is SIGNIFICANTLY better than Keyword baseline.
 
 ── System vs. Human QA Correlation ─────────────────────
-  Pearson r     : 0.6015
-  p-value       : 0.2066
-  Interpretation: Moderate correlation
+  Pearson r     : 0.3511
+  p-value       : 0.0571
+  Interpretation: Weak correlation
 
 ── Efficiency (Real-Time Factor) ────────────────────────
-  RTF              : 1.083
-  Real-time capable: False
-  Speed multiplier : 0.92×
+  RTF              : 0.2264
+  Real-time capable: True
+  Speed multiplier : 4.42×
 
-⚠ Auto-corrected label inversions: ['billing_english', 'internet_english', 'delivery_malay', 'bank_malay']
+⚠ Auto-corrected label inversions: ['eng_rudeagt_02', 'manglish_04', 'my_sales_01', 'manglish_05', 'eng_rudecust_02', 'manglish_03', 'my_sales_02', 'eng_rudeagt_01', 'my_rude_01', 'my_rude_03', 'eng_prof_02', 'eng_rudeagt_04', 'my_rude_02', 'eng_rudeagt_03', 'eng_rudecust_05', 'eng_prof_03', 'my_prof_02', 'my_prof_05', 'manglish_01', 'eng_prof_05']
 
 ── Per-Call QA Score Comparison ─────────────────────────
-          call_id  system_score  human_score  difference     alignment     system_rating
-       bank_malay         59.38         62.0        2.62     ✅ Aligned              Fair
-  billing_english         62.39         15.0       47.39 ⚠️ Divergence              Fair
-   delivery_malay         52.98          8.0       44.98 ⚠️ Divergence Needs Improvement
-       food_malay         60.14         75.0       14.86     ✅ Aligned              Fair
-insurance_english         70.78         82.0       11.22     ✅ Aligned              Fair
- internet_english         76.17         68.0        8.17     ✅ Aligned              Good
+        call_id  system_score  human_score  difference     alignment     system_rating
+    eng_prof_02         73.36        67.44        5.92     ✅ Aligned              Fair
+    eng_prof_03         69.23        67.65        1.58     ✅ Aligned              Fair
+    eng_prof_04         72.97        66.32        6.65     ✅ Aligned              Fair
+    eng_prof_05         67.14        67.18        0.04     ✅ Aligned              Fair
+ eng_rudeagt_01         67.40        20.00       47.40 ⚠️ Divergence              Fair
+ eng_rudeagt_02         62.99        20.00       42.99 ⚠️ Divergence              Fair
+ eng_rudeagt_03         67.14        20.00       47.14 ⚠️ Divergence              Fair
+ eng_rudeagt_04         64.30        51.88       12.42     ✅ Aligned              Fair
+eng_rudecust_01         69.28        35.95       33.33 ⚠️ Divergence              Fair
+eng_rudecust_02         72.20        65.16        7.04     ✅ Aligned              Fair
+eng_rudecust_03         74.81        56.45       18.36     ✅ Aligned              Fair
+eng_rudecust_04         72.87        66.08        6.79     ✅ Aligned              Fair
+eng_rudecust_05         78.79        67.70       11.09     ✅ Aligned              Good
+        long_01         77.92        68.40        9.52     ✅ Aligned              Good
+    eng_prof_01         78.06        68.16        9.90     ✅ Aligned              Good
+    manglish_01         70.46        65.69        4.77     ✅ Aligned              Fair
+    manglish_02         61.27        59.73        1.54     ✅ Aligned              Fair
+    manglish_03         73.91        64.91        9.00     ✅ Aligned              Fair
+    manglish_04         57.30        20.00       37.30 ⚠️ Divergence              Fair
+    manglish_05         67.53        67.04        0.49     ✅ Aligned              Fair
+     my_prof_01         60.00        64.95        4.95     ✅ Aligned              Fair
+     my_prof_02         57.23        64.65        7.42     ✅ Aligned              Fair
+     my_prof_03         59.86        64.59        4.73     ✅ Aligned              Fair
+     my_prof_04         61.16        64.84        3.68     ✅ Aligned              Fair
+     my_prof_05         57.41        58.80        1.39     ✅ Aligned              Fair
+     my_rude_01         57.35        65.05        7.70     ✅ Aligned              Fair
+     my_rude_02         55.09        20.00       35.09 ⚠️ Divergence              Fair
+     my_rude_03         54.40        20.00       34.40 ⚠️ Divergence Needs Improvement
+    my_sales_01         56.52        64.89        8.37     ✅ Aligned              Fair
+    my_sales_02         55.30        64.50        9.20     ✅ Aligned              Fair
+
+── Word Error Rate (WER) per Call ───────────────────────
+  Call ID                   Language          WER  Quality
+  -------------------------------------------------------
+  eng_prof_01               English        206.5%  Poor
+  eng_prof_02               English        190.3%  Poor
+  eng_prof_03               English        104.1%  Poor
+  eng_prof_04               English         27.5%  Fair
+  eng_prof_05               English         16.1%  Good
+  eng_rudeagt_01            Manglish       191.7%  Poor
+  eng_rudeagt_02            English        105.8%  Poor
+  eng_rudeagt_03            English         96.2%  Poor
+  eng_rudeagt_04            English         24.8%  Good
+  eng_rudecust_01           English        152.7%  Poor
+  eng_rudecust_02           English        124.1%  Poor
+  eng_rudecust_03           English         69.3%  Poor
+  eng_rudecust_04           English        107.2%  Poor
+  eng_rudecust_05           Manglish        37.0%  Fair
+  long_01                   Manglish       207.6%  Poor
+  manglish_01               Manglish       259.7%  Poor
+  manglish_02               Malay          244.4%  Poor
+  manglish_03               Manglish       273.6%  Poor
+  manglish_04               Malay           69.3%  Poor
+  manglish_05               English        128.7%  Poor
+  my_prof_01                Malay           13.9%  Good
+  my_prof_02                Malay           81.5%  Poor
+  my_prof_03                Malay           24.6%  Good
+  my_prof_04                Malay           65.7%  Poor
+  my_prof_05                Malay          129.1%  Poor
+  my_rude_01                Malay          242.8%  Poor
+  my_rude_02                Malay          328.4%  Poor
+  my_rude_03                Malay           97.1%  Poor
+  my_sales_01               Malay          143.4%  Poor
+  my_sales_02               Malay          194.3%  Poor
+  -------------------------------------------------------
+  AVERAGE                                  131.9%
+
+── Agent Performance Metrics ────────────────────────────
+  Call ID                   Lang          Resp Time   Interrupts Rating
+  ----------------------------------------------------------------------
+  eng_prof_01               English           0.41s            0 Excellent
+  eng_prof_02               English           0.39s            0 Excellent
+  eng_prof_03               English           0.42s            0 Excellent
+  eng_prof_04               English           0.36s            0 Excellent
+  eng_prof_05               English           0.43s            0 Excellent
+  eng_rudeagt_01            Manglish          0.24s            0 Excellent
+  eng_rudeagt_02            English           0.29s            0 Excellent
+  eng_rudeagt_03            English           0.70s            0 Good
+  eng_rudeagt_04            English           0.41s            0 Excellent
+  eng_rudecust_01           English           0.11s            0 Excellent
+  eng_rudecust_02           English           0.14s            0 Excellent
+  eng_rudecust_03           English           0.38s            0 Excellent
+  eng_rudecust_04           English           0.34s            0 Excellent
+  eng_rudecust_05           Manglish          0.46s            0 Excellent
+  long_01                   Manglish          0.23s            0 Excellent
+  manglish_01               Manglish          0.45s            0 Excellent
+  manglish_02               Malay             0.26s            0 Excellent
+  manglish_03               Manglish          0.60s            0 Good
+  manglish_04               Malay             0.27s            0 Excellent
+  manglish_05               English           0.43s            0 Excellent
+  my_prof_01                Malay             0.27s            0 Excellent
+  my_prof_02                Malay             0.26s            0 Excellent
+  my_prof_03                Malay             0.34s            0 Excellent
+  my_prof_04                Malay             0.36s            0 Excellent
+  my_prof_05                Malay             0.55s            0 Good
+  my_rude_01                Malay             0.34s            0 Excellent
+  my_rude_02                Malay             0.88s            0 Good
+  my_rude_03                Malay             1.13s            0 Good
+  my_sales_01               Malay             0.27s            0 Excellent
+  my_sales_02               Malay             0.42s            0 Excellent
+
+── Call Outcome Summary ─────────────────────────────────
+  eng_prof_02               ✅ Resolved
+  eng_prof_03               ✅ Resolved
+  eng_prof_04               ✅ Resolved
+  eng_prof_05               ✅ Resolved
+  eng_rudeagt_01            ✅ Resolved
+  eng_rudeagt_02            🔄 Escalated
+  eng_rudeagt_03            ✅ Resolved
+  eng_rudeagt_04            📞 Transferred
+  eng_rudecust_01           ❌ Unresolved
+  eng_rudecust_02           ✅ Resolved
+  eng_rudecust_03           📞 Transferred
+  eng_rudecust_04           ✅ Resolved
+  eng_rudecust_05           ✅ Resolved
+  long_01                   ✅ Resolved
+  eng_prof_01               ✅ Resolved
+  manglish_01               ✅ Resolved
+  manglish_02               ✅ Resolved
+  manglish_03               ✅ Resolved
+  manglish_04               🔄 Escalated
+  manglish_05               ✅ Resolved
+  my_prof_01                ✅ Resolved
+  my_prof_02                ✅ Resolved
+  my_prof_03                ✅ Resolved
+  my_prof_04                ✅ Resolved
+  my_prof_05                ✅ Resolved
+  my_rude_01                ✅ Resolved
+  my_rude_02                ✅ Resolved
+  my_rude_03                ✅ Resolved
+  my_sales_01               ✅ Resolved
+  my_sales_02               ✅ Resolved
+
+  Summary: Resolved=25 | Unresolved=1 | Escalated=2 | Transferred=2
+
+── Rude Behavior Warnings ───────────────────────────────
+  eng_rudeagt_01            Agent=HIGH   (2 incidents) | Customer=NONE   (0 incidents)
+    ⚠️  CRITICAL: Agent displayed highly unprofessional behavior. Immediate supervisor review required.
+  eng_rudeagt_02            Agent=HIGH   (9 incidents) | Customer=HIGH   (1 incidents)
+    ⚠️  CRITICAL: Agent displayed highly unprofessional behavior. Immediate supervisor review required.
+    ℹ️  NOTE: Customer used hostile or abusive language. Consider escalation protocol.
+  eng_rudeagt_03            Agent=HIGH   (3 incidents) | Customer=NONE   (0 incidents)
+    ⚠️  CRITICAL: Agent displayed highly unprofessional behavior. Immediate supervisor review required.
+  eng_rudeagt_04            Agent=MEDIUM (1 incidents) | Customer=HIGH   (2 incidents)
+    ⚠️  WARNING: Agent displayed dismissive or condescending behavior. Coaching recommended.
+    ℹ️  NOTE: Customer used hostile or abusive language. Consider escalation protocol.
+  eng_rudecust_01           Agent=NONE   (0 incidents) | Customer=HIGH   (3 incidents)
+    ℹ️  NOTE: Customer used hostile or abusive language. Consider escalation protocol.
+  eng_rudecust_02           Agent=NONE   (0 incidents) | Customer=HIGH   (3 incidents)
+    ℹ️  NOTE: Customer used hostile or abusive language. Consider escalation protocol.
+  eng_rudecust_03           Agent=NONE   (0 incidents) | Customer=HIGH   (3 incidents)
+    ℹ️  NOTE: Customer used hostile or abusive language. Consider escalation protocol.
+  eng_rudecust_04           Agent=NONE   (0 incidents) | Customer=HIGH   (3 incidents)
+    ℹ️  NOTE: Customer used hostile or abusive language. Consider escalation protocol.
+  manglish_02               Agent=NONE   (0 incidents) | Customer=HIGH   (3 incidents)
+    ℹ️  NOTE: Customer used hostile or abusive language. Consider escalation protocol.
+  manglish_04               Agent=HIGH   (6 incidents) | Customer=HIGH   (3 incidents)
+    ⚠️  CRITICAL: Agent displayed highly unprofessional behavior. Immediate supervisor review required.
+    ℹ️  NOTE: Customer used hostile or abusive language. Consider escalation protocol.
+  my_prof_04                Agent=NONE   (0 incidents) | Customer=HIGH   (2 incidents)
+    ℹ️  NOTE: Customer used hostile or abusive language. Consider escalation protocol.
+  my_prof_05                Agent=MEDIUM (1 incidents) | Customer=NONE   (0 incidents)
+    ⚠️  WARNING: Agent displayed dismissive or condescending behavior. Coaching recommended.
+  my_rude_01                Agent=NONE   (0 incidents) | Customer=HIGH   (1 incidents)
+    ℹ️  NOTE: Customer used hostile or abusive language. Consider escalation protocol.
+  my_rude_02                Agent=HIGH   (3 incidents) | Customer=HIGH   (1 incidents)
+    ⚠️  CRITICAL: Agent displayed highly unprofessional behavior. Immediate supervisor review required.
+    ℹ️  NOTE: Customer used hostile or abusive language. Consider escalation protocol.
+  my_rude_03                Agent=HIGH   (1 incidents) | Customer=NONE   (0 incidents)
+    ⚠️  CRITICAL: Agent displayed highly unprofessional behavior. Immediate supervisor review required.
 
 =================================================================

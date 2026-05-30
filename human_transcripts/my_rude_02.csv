@@ -1,0 +1,81 @@
+segment_id,role,text,start,end
+1,Agent,Selamat petang. Terima kasih kerana menghubungi Telco Line Care.,0.0,3.6
+2,Agent,Nama saya Imran. Ada apa-apa yang boleh saya bantu uruskan hari ini?,3.92,7.78
+3,Customer,"Selamat petang, Encik Imran. Saya harap Encik sihat.",8.1,11.02
+4,Customer,Saya nak tanya sedikit fasil akaun saya bulan ini.,11.5,14.2
+5,Customer,Biasanya bil saya cuma RM60 sahaja setiap bulan.,14.5,17.46
+6,Customer,Tapi kali ini saya tengok dalam aplikasi naik sampai RM140.,17.68,21.58
+7,Customer,Boleh tolong semakkan kalau ada kesilapan sistem.,22.16,24.66
+8,Agent,"Tak ada silapnya tu, Encik.",26.32,28.12
+9,Agent,Sistem kami dilaraskan secara otomatik.,28.12,30.9
+10,Agent,Jadi memang mustahil untuk salah kira.,31.06,33.24
+11,Agent,RM140 tu maksudnya Encik ada guna data roaming,34.2,37.3
+12,Agent,atau langganan pihak ketiga lah tu masa pergi bercuti hari tu.,37.3,40.7
+13,Agent,Pihak kami cuma cas apa yang telefon Encik guna sahaja.,41.3,44.66
+14,Customer,"Oh, bercuti keluar negara.",45.26,46.76
+15,Customer,"Tapi Encik, sepanjang dua bulan lepas,",47.18,49.42
+16,Customer,saya memang tak ada keluar dari kawasan Kuala Rumpur pun.,49.58,52.38
+17,Customer,Apatah lagi luar negara.,52.58,53.82
+18,Customer,Boleh saya tahu tarikh atau butiran terperinci data roaming tu digunakan?,54.04,57.96
+19,Customer,Manalah tahu sistem tersalah letak cas bawah nombor akaun saya.,58.12,61.42
+20,Agent,"Eh, mana boleh salah?",62.0,63.52
+21,Agent,Encik ingat sistem syarikat gergasi macam kami ni bodoh sangat ke,63.98,67.84
+22,Agent,sampai boleh sesuka hati tukai akaun orang?,67.84,70.12
+23,Agent,Tak payah nak petikaikan sistem lah.,70.76,72.64
+24,Agent,"Dah kalau dalam rekod komputer tulis ada guna,",73.18,75.74
+25,Agent,maksudnya Encik yang gunalah tu.,75.98,77.88
+26,Agent,Takkanlah hantu pula yang curik-curik guna telefon Encik kot.,78.48,81.2
+27,Customer,"Encik Imran, tolong jaga bahasa Encik ya.",81.6,84.22
+28,Customer,Saya tanya elok-elok sebagai pelanggan sedia ada.,84.22,86.88
+29,Customer,Dan saya rasa saya berhak untuk tahu butiran bil saya sendiri.,87.06,90.12
+30,Customer,Saya cuba minta penjelasan yang jelas sahaja.,90.4,92.58
+31,Agent,Tidak perlu sampai menyindir saya seperti itu.,92.76,94.66
+32,Agent,"Penjelasan apa lagi, Encik?",95.3,96.92
+33,Agent,Saya dah bagitahu kan?,97.26,98.3
+34,Agent,"Dalam sistem, tertera cas tusah.",98.6,100.64
+35,Agent,Kalau Encik sendiri tak tahu apa yang Encik langgan,100.84,103.76
+36,Agent,"atau anak-anak Encik ada main telefon sampai tertekan iklan,",103.76,107.02
+37,Agent,itu bukan salah kamilah.,107.2,108.8
+38,Customer,kami tak ada masa nak pantau aktiviti harian telefon Encik satu persatu.,109.4,113.04
+39,Customer,"Encik Imran, saya tinggal seorang diri",113.4,115.96
+40,Customer,"dan tidak ada anak kecil yang main telefon saya, Encik.",115.96,118.74
+41,Customer,"Memandangkan Encik Enggan membantu saya menyemak butiran ini dengan betul,",119.08,122.72
+42,Agent,tolong pas talian ini kepada pengurus,123.2,125.14
+43,Agent,atau supervisor Encik sekarang juga.,125.14,126.9
+44,Agent,Saya mahu bercakap dengan pihak atasan yang lebih profesional.,127.1,130.04
+45,Agent,"Hmph,",130.9,131.5
+46,Agent,supervisor saya pun tak ada masalah,132.16,133.6
+47,Agent,nak layan benda remeh-temeh macam ni.,133.6,135.18
+48,Customer,ingat manajer kami duduk kat pejabat sahaja-sahaja tunggu panggilan Encik ke?,135.18,138.92
+49,Customer,"Bil dah keluar dalam sistem,",139.42,140.82
+50,Customer,maksudnya Encik wagit bayar je lah.,141.06,142.96
+51,Agent,Tak payah nak banyak songih sangat sampai nak panggil manajer bagai.,143.4,146.5
+52,Agent,Saya benar-benar terkejut dengan layanan Encik hari ni.,146.82,149.42
+53,Agent,Ini bukan cara perkhidmatan korporat dikendalikan.,149.72,152.02
+54,Agent,Sila berikan nama penuh Encik,152.58,153.86
+55,Agent,dan juga nombor ID pekerja Encik sekarang.,153.86,155.82
+56,Agent,Saya akan buat laporan rasmi terus ke ibu pejabat,156.12,158.48
+57,Agent,dan juga aduan ke SKMM.,158.48,159.84
+58,Agent,"Hmph,",160.64,161.16
+59,Agent,aduh lah aduh.,161.52,162.5
+60,Agent,Ingat saya takut ke dengan ugutan macam tu?,162.84,165.06
+61,Agent,"Setakat nak lapor ke SKMM,",165.7,167.28
+62,Agent,beribu-ribu orang dah buatlah Encik.,167.8,169.6
+63,Agent,Tak ada kesan apa pun dekat saya.,169.78,171.14
+64,Agent,Nama saya Imran.,171.7,173.1
+65,Agent,Eja betul-betul ya.,173.38,174.18
+66,Agent,ID pekerja saya tak payah tahu.,174.66,176.28
+67,Agent,Bukan urusan Encik pun.,176.54,177.74
+68,Agent,Baik Encik Imran.,178.36,179.22
+69,Agent,Perbualan ini sedang dirakam oleh sistem Encik sendiri,179.44,182.26
+70,Agent,dan saya pasti pihak pengurusan tertinggi,182.26,184.52
+71,Agent,tidak akan bertoleransi dengan sikap biadab sebegini terhadap pelanggan.,184.52,187.84
+72,Agent,Terima kasih kerana tidak menyelesaikan masalah saya.,188.18,190.56
+73,Agent,Saya akan gunakan saluran lain.,190.82,192.28
+74,Agent,Ada saya kisah pasal rakaman.,192.84,194.32
+75,Agent,Lagipun malaslah saya nak bazir masa,195.04,196.88
+76,Agent,melayan pelanggan yang tak faham bahasa macam Encik ni.,196.88,199.1
+77,Agent,Menyemak petang saya je.,199.6,200.74
+78,Agent,"Dahlah,",201.24,201.58
+79,Agent,bayar je bil tu kalau tak nak land kena sekat.,201.94,203.86
+80,Agent,Bye.,204.2,204.42

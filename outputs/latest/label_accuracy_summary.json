@@ -1,0 +1,307 @@
+{
+  "per_call": {
+    "eng_prof_01": {
+      "accuracy": 100.0,
+      "f1": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "correct": 0,
+      "wrong": 0,
+      "total": 0,
+      "wrong_labels": []
+    },
+    "eng_prof_02": {
+      "accuracy": 100.0,
+      "f1": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "correct": 0,
+      "wrong": 0,
+      "total": 0,
+      "wrong_labels": []
+    },
+    "eng_prof_03": {
+      "accuracy": 100.0,
+      "f1": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "correct": 0,
+      "wrong": 0,
+      "total": 0,
+      "wrong_labels": []
+    },
+    "eng_prof_04": {
+      "accuracy": 100.0,
+      "f1": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "correct": 0,
+      "wrong": 0,
+      "total": 0,
+      "wrong_labels": []
+    },
+    "eng_prof_05": {
+      "accuracy": 91.3,
+      "f1": 90.0,
+      "precision": 90.0,
+      "recall": 90.0,
+      "correct": 0,
+      "wrong": 0,
+      "total": 0,
+      "wrong_labels": []
+    },
+    "eng_rudeagt_01": {
+      "accuracy": 81.25,
+      "f1": 82.35,
+      "precision": 84.0,
+      "recall": 80.77,
+      "correct": 0,
+      "wrong": 0,
+      "total": 0,
+      "wrong_labels": []
+    },
+    "eng_rudeagt_02": {
+      "accuracy": 97.14,
+      "f1": 97.3,
+      "precision": 100.0,
+      "recall": 94.74,
+      "correct": 0,
+      "wrong": 0,
+      "total": 0,
+      "wrong_labels": []
+    },
+    "eng_rudeagt_03": {
+      "accuracy": 86.84,
+      "f1": 88.89,
+      "precision": 90.91,
+      "recall": 86.96,
+      "correct": 0,
+      "wrong": 0,
+      "total": 0,
+      "wrong_labels": []
+    },
+    "eng_rudeagt_04": {
+      "accuracy": 100.0,
+      "f1": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "correct": 0,
+      "wrong": 0,
+      "total": 0,
+      "wrong_labels": []
+    },
+    "eng_rudecust_01": {
+      "accuracy": 97.78,
+      "f1": 98.04,
+      "precision": 100.0,
+      "recall": 96.15,
+      "correct": 0,
+      "wrong": 0,
+      "total": 0,
+      "wrong_labels": []
+    },
+    "eng_rudecust_02": {
+      "accuracy": 92.31,
+      "f1": 94.12,
+      "precision": 96.0,
+      "recall": 92.31,
+      "correct": 0,
+      "wrong": 0,
+      "total": 0,
+      "wrong_labels": []
+    },
+    "eng_rudecust_03": {
+      "accuracy": 100.0,
+      "f1": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "correct": 0,
+      "wrong": 0,
+      "total": 0,
+      "wrong_labels": []
+    },
+    "eng_rudecust_04": {
+      "accuracy": 88.57,
+      "f1": 88.24,
+      "precision": 83.33,
+      "recall": 93.75,
+      "correct": 0,
+      "wrong": 0,
+      "total": 0,
+      "wrong_labels": []
+    },
+    "eng_rudecust_05": {
+      "accuracy": 96.67,
+      "f1": 96.97,
+      "precision": 100.0,
+      "recall": 94.12,
+      "correct": 0,
+      "wrong": 0,
+      "total": 0,
+      "wrong_labels": []
+    },
+    "long_01": {
+      "accuracy": 87.69,
+      "f1": 90.7,
+      "precision": 97.5,
+      "recall": 84.78,
+      "correct": 0,
+      "wrong": 0,
+      "total": 0,
+      "wrong_labels": []
+    },
+    "manglish_01": {
+      "accuracy": 79.22,
+      "f1": 80.49,
+      "precision": 86.84,
+      "recall": 75.0,
+      "correct": 0,
+      "wrong": 0,
+      "total": 0,
+      "wrong_labels": []
+    },
+    "manglish_02": {
+      "accuracy": 97.87,
+      "f1": 97.87,
+      "precision": 95.83,
+      "recall": 100.0,
+      "correct": 0,
+      "wrong": 0,
+      "total": 0,
+      "wrong_labels": []
+    },
+    "manglish_03": {
+      "accuracy": 98.68,
+      "f1": 98.77,
+      "precision": 100.0,
+      "recall": 97.56,
+      "correct": 0,
+      "wrong": 0,
+      "total": 0,
+      "wrong_labels": []
+    },
+    "manglish_04": {
+      "accuracy": 95.83,
+      "f1": 96.0,
+      "precision": 100.0,
+      "recall": 92.31,
+      "correct": 0,
+      "wrong": 0,
+      "total": 0,
+      "wrong_labels": []
+    },
+    "manglish_05": {
+      "accuracy": 92.68,
+      "f1": 93.33,
+      "precision": 100.0,
+      "recall": 87.5,
+      "correct": 0,
+      "wrong": 0,
+      "total": 0,
+      "wrong_labels": []
+    },
+    "my_prof_01": {
+      "accuracy": 100.0,
+      "f1": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "correct": 0,
+      "wrong": 0,
+      "total": 0,
+      "wrong_labels": []
+    },
+    "my_prof_02": {
+      "accuracy": 100.0,
+      "f1": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "correct": 0,
+      "wrong": 0,
+      "total": 0,
+      "wrong_labels": []
+    },
+    "my_prof_03": {
+      "accuracy": 100.0,
+      "f1": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "correct": 0,
+      "wrong": 0,
+      "total": 0,
+      "wrong_labels": []
+    },
+    "my_prof_04": {
+      "accuracy": 96.67,
+      "f1": 96.97,
+      "precision": 94.12,
+      "recall": 100.0,
+      "correct": 0,
+      "wrong": 0,
+      "total": 0,
+      "wrong_labels": []
+    },
+    "my_prof_05": {
+      "accuracy": 98.15,
+      "f1": 98.36,
+      "precision": 100.0,
+      "recall": 96.77,
+      "correct": 0,
+      "wrong": 0,
+      "total": 0,
+      "wrong_labels": []
+    },
+    "my_rude_01": {
+      "accuracy": 83.61,
+      "f1": 85.29,
+      "precision": 87.88,
+      "recall": 82.86,
+      "correct": 0,
+      "wrong": 0,
+      "total": 0,
+      "wrong_labels": []
+    },
+    "my_rude_02": {
+      "accuracy": 70.37,
+      "f1": 77.78,
+      "precision": 85.71,
+      "recall": 71.19,
+      "correct": 0,
+      "wrong": 0,
+      "total": 0,
+      "wrong_labels": []
+    },
+    "my_rude_03": {
+      "accuracy": 100.0,
+      "f1": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "correct": 0,
+      "wrong": 0,
+      "total": 0,
+      "wrong_labels": []
+    },
+    "my_sales_01": {
+      "accuracy": 66.07,
+      "f1": 72.46,
+      "precision": 75.76,
+      "recall": 69.44,
+      "correct": 0,
+      "wrong": 0,
+      "total": 0,
+      "wrong_labels": []
+    },
+    "my_sales_02": {
+      "accuracy": 100.0,
+      "f1": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "correct": 0,
+      "wrong": 0,
+      "total": 0,
+      "wrong_labels": []
+    }
+  },
+  "overall_accuracy": 93.29,
+  "overall_f1": 94.13,
+  "total_calls": 30
+}

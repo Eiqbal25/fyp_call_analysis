@@ -57,6 +57,8 @@ from config import (
     DIARIZATION_MIN_SEGMENT_SEC,
     DIARIZATION_NUM_SPEAKERS,
     OUTPUTS_DIR,
+    CALLS_DIR,
+    get_call_dir,
     WHISPER_DEVICE,
     HUGGINGFACE_TOKEN,
 )

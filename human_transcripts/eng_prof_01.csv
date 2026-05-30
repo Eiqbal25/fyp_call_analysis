@@ -1,0 +1,43 @@
+segment_id,role,text,start,end
+1,Agent,Good morning. Thank you for calling Beacon Health Telehealth Coordination.,0.0,4.2
+2,Agent,My name is Evelyn. How may I assist you with your medical appointments today?,4.52,8.4
+3,Customer,"Good morning, Evelyn. This is Arthur speaking.",8.82,11.48
+4,Customer,"I have a virtual consultation scheduled with Dr. Aris, the cardiologist, tomorrow at 2 p.m.",11.72,18.26
+5,Customer,"However, an urgent board meeting was just moved to that exact time.",18.5,22.6
+6,Customer,"I am incredibly sorry for the short notice, but is there any way I could reschedule?",22.84,27.74
+7,Agent,"Good morning, Mr. Arthur. Please don't worry at all.",27.74,31.2
+8,Agent,We completely understand that unexpected professional commitments arise.,31.36,35.62
+9,Agent,"Dr. Aris has a busy clinic, but ensuring your health tracking remains uninterrupted is our top priority.",35.94,42.3
+10,Agent,Let me pull up your patient file right away. May I please have your full name and date of birth?,42.6,47.78
+11,Customer,"Thank you, Evelyn. I appreciate your understanding.",48.2,50.9
+12,Customer,"My full name is Arthur Pendleton, and my date of birth is March 22,",50.9,56.28
+13,Customer,1978.,56.74,57.9
+14,Agent,"Thank you very much, Mr. Pendleton.",59.04,60.66
+15,Agent,Please give me just a moment while I access Dr. Aris' calendar for the upcoming week.,60.86,65.9
+16,Agent,I am reviewing his availability right now.,66.02,68.66
+17,Customer,Please take your time. I know specialist slots can be quite difficult to secure.,69.08,73.94
+18,Agent,"Thank you for your patience. You are correct. His calendar is quite full, and we usually require a 48-hour notice.",73.94,81.86
+19,Agent,"But because this is a follow-up consultation, and I can see your recent lab reports are already uploaded,",82.06,88.18
+20,Agent,I want to make sure you speak to him soon.,88.46,90.8
+21,Agent,I see a slot opened up this Friday morning at 9 a.m. due to a cancellation.,91.22,95.8
+22,Agent,Would that time work for you?,96.12,97.5
+23,Customer,"Oh, Friday morning at 9 a.m. would be absolutely perfect. That is much sooner than I expected.",97.5,103.64
+24,Customer,"Will I need to resubmit my medical history forms, or will they carry over automatically?",103.92,109.1
+25,Agent,"Everything carries over automatically, Mr. Pendleton.",109.64,112.62
+26,Agent,"Your file, lab reports, and insurance authorization are already linked to the new slot.",113.0,118.78
+27,Agent,"I have officially locked in your appointment for Friday at 9 a.m. fully virtual, just like before.",119.02,124.98
+28,Customer,Wonderful.,124.98,126.06
+29,Customer,"You have been incredibly efficient, Evelyn.",126.42,128.64
+30,Customer,"Navigating medical appointments can sometimes feel daunting, but you made this transition entirely seamless.",129.22,135.18
+31,Agent,"It is truly my pleasure, Mr. Pendleton.",135.72,138.0
+32,Agent,We want to ensure your journey with Beacon Health is as comfortable as possible.,138.26,142.62
+33,Agent,I have added a note to Dr. Aris regarding the date shift so he is fully prepared.,142.84,147.72
+34,Agent,"You will receive a new, secure video link via SMS and email in just a few moments.",147.98,153.76
+35,Customer,Perfect.,153.76,154.78
+36,Customer,I see the confirmation email hitting my inbox right now.,155.14,158.46
+37,Customer,"Thank you once again for your stellar support and wonderful professionalism today, Evelyn.",158.68,163.72
+38,Customer,Have a fantastic day ahead.,163.98,165.66
+39,Agent,"You are very welcome, Mr. Pendleton.",165.92,168.08
+40,Agent,It was a pleasure assisting you.,168.3,170.02
+41,Agent,"Best of luck with your board meeting tomorrow, and we will see you virtually this Friday.",170.18,174.68
+42,Agent,Take care and goodbye.,175.06,176.02

@@ -1,0 +1,30 @@
+[00:00:00] Agent: Selamat pagi, Bank Harapan dengan saya Amirul. Boleh saya bantu Encik?
+[00:00:04] Customer: Aku nak tahu kenapa ada tolak duit dari ikon aku RM100.
+[00:00:08] Customer: Korang ni pandai -pandai je tolak duit orang.
+[00:00:11] Agent: Harap bersabar Encik. Saya minta maaf atas kesulitan ini.
+[00:00:15] Agent: Boleh saya dapatkan nombor kad pengenalan untuk saya makan?
+[00:00:18] Customer: Nak nombor kad pengenalan buat apa? Check je lah nama apa Johan.
+[00:00:21] Customer: Aku dah call banyak kali, takkan tak ada rekod?
+[00:00:23] Agent: Maaf Encik Johan,
+[00:00:25] Agent: prosedur keselamatan bank memerlukan nombor kad pengenalan untuk kami buka profil Encik.
+[00:00:31] Agent: Menyusahkan betul.
+[00:00:32] Customer: 890 -2140 -15533. Cepat sikit.
+[00:00:37] Agent: Terima kasih Encik Johan.
+[00:00:39] Agent: Sebentar ya, saya semak transaksi terakhir Encik.
+[00:00:42] Customer: Jangan suruh aku tunggu lama-lama. Aku ada banyak kerja layan nak buat, bukan nak layan bank orang.
+[00:00:47] Agent: Baik Encik,
+[00:00:48] Agent: saya nampak ada penolakan RM100 untuk casj tahunan kad kredit Encik.
+[00:00:52] Customer: Casj tahunan apa benda pula? Aku dah guna kad ni 5 tahun. Tak pernah ada casj tahunan. Korang ni nak menipu ke?
+[00:00:59] Agent: Untuk makluman Encik, pengecualian casj tahunan hanya untuk 3 tahun pertama. Bermula tahun keempat,
+[00:01:05] Agent: casj akan dikenakan.
+[00:01:07] Customer: Otak kau. Siapa yang cakap macam tu?
+[00:01:09] Customer: Masa aku apply dulu, ejen korang cakap free semua hidup.
+[00:01:12] Agent: Saya faham kekecewaan Encik. Saya boleh bantu hantar permohonan untuk membatalkan casj tersebut.
+[00:01:17] Customer: Tak payah nak hantar permohonan sangat. Kau cancel je terus sekarang. Kalau tak, aku tutup akaun hari ni juga.
+[00:01:23] Agent: Encik, proses pembatalan perlukan kelulusan pihak pengurusan. Saya tidak boleh buat terus dari sistem saya.
+[00:01:30] Customer: Habis tu kau buat apa kat situ? Angkat telefon je ke?
+[00:01:33] Customer: Panggil bos kau sekarang. Aku nak bercakap dengan dia.
+[00:01:35] Agent: Baiklah Encik. Saya akan sambungkan panggilan ini kepada pegawai atasan saya.
+[00:01:40] Agent: Mohon tunggu sebentar.
+[00:01:41] Customer: Cepat sikit. Jangan nak melengah-lengahkan masa aku.
+[00:01:43] Agent: Terima kasih kerana menonton!

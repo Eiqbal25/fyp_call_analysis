@@ -1,0 +1,24 @@
+call_id,start_sec,system_text,human_text,text_similarity,combined_score,system_role,human_role,label_correct,matched,text_override,override_phrase,status
+eng_prof_05,0.0,Hello.,Hello.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+eng_prof_05,1.12,Thank you for being a valued Horizon Mobile customer. My name is Chloe. Am I spe,Thank you for being a valued Horizon Mobile customer. My name is Chloe. Am I spe,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_05,7.62,"Yeah, this is Jason.","Yeah, this is Jason.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_05,9.08,"Look, if this is a sales call, I'm really not interested. I'm quite happy with m","Look, if this is a sales call, I'm really not interested. I'm quite happy with m",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_05,14.46,"I completely understand, Jason. Your time is valuable, and I promise I won't was","I completely understand, Jason. Your time is valuable, and I promise I won't was",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_05,20.4,"I'm actually looking at your account data usage over the past three months, and ","I'm actually looking at your account data usage over the past three months, and ",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_05,28.66,"Yeah, well, that's because my kids use my hotspot when we are out. I just pay th","Yeah, well, that's because my kids use my hotspot when we are out. I just pay th",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_05,37.82,That's exactly why I'm calling. What if I told you that you could get completely,That's exactly why I'm calling. What if I told you that you could get completely,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_05,50.62,"Wait,","Wait,",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_05,51.98,less? How is it less?,less? How is it less?,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_05,54.42,Usually these upgrades end up costing me way more after a few months. Is there a,Usually these upgrades end up costing me way more after a few months. Is there a,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_05,60.1,"No catch at all, Jason. Because you've been a loyal customer with us for over th","No catch at all, Jason. Because you've been a loyal customer with us for over th",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_05,68.48,Your current bill averages $60 due to those extra data fees. This upgrade is a f,Your current bill averages $60 due to those extra data fees. This upgrade is a f,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_05,77.48,Huh.,Huh.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_05,78.8,$55 fixed? And you said it comes with a streaming subscription?,$55 fixed? And you said it comes with a streaming subscription?,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_05,82.82,Which one is it?,Which one is it?,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_05,84.32,Yes. It includes a free standard Netflix subscription for as long as you keep th,Yes. It includes a free standard Netflix subscription for as long as you keep th,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_05,95.64,Wow. Okay. We actually do pay for Netflix separately right now. So that would sa,Wow. Okay. We actually do pay for Netflix separately right now. So that would sa,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_05,103.06,"Honestly, that sounds like a pretty good deal.","Honestly, that sounds like a pretty good deal.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_05,105.08,It really is one of our best exclusive offers. I can apply this change to your a,It really is one of our best exclusive offers. I can apply this change to your a,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_05,116.86,Yeah. Let's do it. Might as well save some money and stop worrying about the kid,Yeah. Let's do it. Might as well save some money and stop worrying about the kid,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_05,122.52,"Perfect. I've just updated your account, and you'll receive a confirmation email","Perfect. I've just updated your account, and you'll receive a confirmation email",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_05,134.56,Thank you.,Thank you.,1.0,1.0,Agent,Customer,False,True,False,,❌ WRONG

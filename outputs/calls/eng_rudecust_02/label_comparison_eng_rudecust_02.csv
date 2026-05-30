@@ -1,0 +1,40 @@
+call_id,start_sec,system_text,human_text,text_similarity,combined_score,system_role,human_role,label_correct,matched,text_override,override_phrase,status
+eng_rudecust_02,0.0,Good afternoon.,Good afternoon.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_02,1.26,Thank you for calling SkyPass Travel Solutions.,Thank you for calling SkyPass Travel Solutions.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_02,4.48,My name is Fiona.,My name is Fiona.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_02,5.72,How may I assist you with your flight booking today?,How may I assist you with your flight booking today?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_02,8.92,"Finally! I've been on hold for 20 minutes. Listen, Fiona, I just got an alert sa","Finally! I've been on hold for 20 minutes. Listen, Fiona, I just got an alert sa",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_02,23.28,"I am so sorry for the surprise schedule change, ma 'am. I completely understand ","I am so sorry for the surprise schedule change, ma 'am. I completely understand ",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_02,33.34,Let me look at your booking right away so I can...,Let me look at your booking right away so I can...,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_02,36.24,Don't just apologize. Fix it. My name is Regina Vance. The booking code is XYZ55,Don't just apologize. Fix it. My name is Regina Vance. The booking code is XYZ55,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_02,53.78,right.,right.,1.0,1.0,Agent,Customer,False,True,False,,❌ WRONG
+eng_rudecust_02,53.98,"Thank you, Regina. I have pulled up your itinerary. I see the shift here.","Thank you, Regina. I have pulled up your itinerary. I see the shift here.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_02,60.14,"Just to explain briefly, the airline actually canceled the 10 a .m. aircraft due","Just to explain briefly, the airline actually canceled the 10 a .m. aircraft due",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_02,71.82,"I don't care about their mechanical issues. That is your problem to solve, not m","I don't care about their mechanical issues. That is your problem to solve, not m",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_02,83.34,"I know for a fact United Airlines has a flight around that time, so just transfe","I know for a fact United Airlines has a flight around that time, so just transfe",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_02,89.16,"I completely hear you, Regina. Let me check the live availability for the United","I completely hear you, Regina. Let me check the live availability for the United",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_02,97.86,"Okay, I do see open seats in their cabin, but because it is a different airline ","Okay, I do see open seats in their cabin, but because it is a different airline ",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_02,106.74,I don't care about your system's requirements or your alliances. Do you not unde,I don't care about your system's requirements or your alliances. Do you not unde,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_02,112.82,"I paid full price for a premium ticket on your website, and I expect you to clic","I paid full price for a premium ticket on your website, and I expect you to clic",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_02,120.16,I am not hanging up this phone until I get...,I am not hanging up this phone until I get...,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_02,122.48,"I understand completely, and I am not going to hang up until we have a solution ","I understand completely, and I am not going to hang up until we have a solution ",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_02,129.14,I am currently bypassing the automated system to issue a priority partner overri,I am currently bypassing the automated system to issue a priority partner overri,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_02,135.52,This will allow me to transfer your booking to the United Airlines at 10 .15 a .,This will allow me to transfer your booking to the United Airlines at 10 .15 a .,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_02,141.64,without charging you any...,without charging you any...,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_02,143.3,"Well, do it faster, then. Why does everything take so long with you people?","Well, do it faster, then. Why does everything take so long with you people?",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_02,147.52,"And what about my baggage? If you transfer me to United, is my luggage going to ","And what about my baggage? If you transfer me to United, is my luggage going to ",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_02,155.92,"Your baggage data will sync perfectly, Regina.","Your baggage data will sync perfectly, Regina.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_02,159.46,I am manually linking your original baggage tags directly to the new United Airl,I am manually linking your original baggage tags directly to the new United Airl,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_02,167.06,"You will check in at the United desk tomorrow morning, exactly like normal, and ","You will check in at the United desk tomorrow morning, exactly like normal, and ",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_02,173.66,"Fine. They better be there when I land. Now, what about my seat assignment? I or","Fine. They better be there when I land. Now, what about my seat assignment? I or",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_02,187.52,I completely understand.,I completely understand.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_02,189.86,Quick deplaning is crucial for your schedule. I have just checked the United sea,Quick deplaning is crucial for your schedule. I have just checked the United sea,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_02,208.3,"Fine. Row 4? Hmm. Well, I suppose that is acceptable. Send the new boarding pass","Fine. Row 4? Hmm. Well, I suppose that is acceptable. Send the new boarding pass",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_02,220.16,"I have just clicked Send, Regina. The new United Airlines e-ticket and confirmat","I have just clicked Send, Regina. The new United Airlines e-ticket and confirmat",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_02,235.14,Is there any other detail I can double-check for your travel tomorrow?,Is there any other detail I can double-check for your travel tomorrow?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_02,239.46,"No, that's all. Next time, your agency needs to notify people before you go chan","No, that's all. Next time, your agency needs to notify people before you go chan",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_02,246.18,"We will certainly take that feedback to heart, Regina.","We will certainly take that feedback to heart, Regina.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_02,249.82,"Safe travels on your flight tomorrow,","Safe travels on your flight tomorrow,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_02,252.04,"best of luck with your business presentation, and have a wonderful evening.","best of luck with your business presentation, and have a wonderful evening.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_02,256.06,Let's have a evening.,Let's have a evening.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+eng_rudecust_02,256.32,You're exercisingvuiosa.,You're exercisingvuiosa.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG

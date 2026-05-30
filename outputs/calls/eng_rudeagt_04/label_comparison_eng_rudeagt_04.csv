@@ -1,0 +1,22 @@
+call_id,start_sec,system_text,human_text,text_similarity,combined_score,system_role,human_role,label_correct,matched,text_override,override_phrase,status
+eng_rudeagt_04,0.0,"Yeah, what do you want? This is billing.","Yeah, what do you want? This is billing.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_04,2.68,"Hi, I am calling because my bill is twice as high this month, and I do not under","Hi, I am calling because my bill is twice as high this month, and I do not under",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_04,8.56,"Look, it's probably because you went over your data limit. Happens all the time.","Look, it's probably because you went over your data limit. Happens all the time.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_04,12.68,But I have an unlimited data plan. I checked my contract before calling.,But I have an unlimited data plan. I checked my contract before calling.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_04,16.94,"Obviously, you don't or you wouldn't be charged.","Obviously, you don't or you wouldn't be charged.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_04,19.6,Do you have your account number or are we just going to guess?,Do you have your account number or are we just going to guess?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_04,22.28,"Wow, okay, there is no need to be rude. My account number is 554321.","Wow, okay, there is no need to be rude. My account number is 554321.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_04,27.82,"I'm not being rude. I'm just busy, all right? Pulling it up now.","I'm not being rude. I'm just busy, all right? Pulling it up now.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_04,31.94,"Yeah, like I said, you bought three premium movies last week. That's why the bil","Yeah, like I said, you bought three premium movies last week. That's why the bil",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_04,36.7,I definitely did not buy any movies. I was out of town all of last week.,I definitely did not buy any movies. I was out of town all of last week.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_04,41.18,"Well, somebody in your house did. The system does not lie, so you have to pay it","Well, somebody in your house did. The system does not lie, so you have to pay it",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_04,46.04,I live alone. No one else has access to my account. Can you please check the log,I live alone. No one else has access to my account. Can you please check the log,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_04,51.34,"I'm not technical support. I just handle billing. The charge is there, so you ow","I'm not technical support. I just handle billing. The charge is there, so you ow",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_04,55.94,I'm not paying for something I did not buy. I want to speak to your supervisor r,I'm not paying for something I did not buy. I want to speak to your supervisor r,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_04,61.52,"Look, my supervisor is going to tell you the exact same thing. It's a waste of t","Look, my supervisor is going to tell you the exact same thing. It's a waste of t",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_04,66.32,I don't care. I want to speak to them. This is the worst customer service I have,I don't care. I want to speak to them. This is the worst customer service I have,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_04,71.78,"Fine, whatever. Hold on and do not hang up because I'm not calling you back.","Fine, whatever. Hold on and do not hang up because I'm not calling you back.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_04,76.56,Unbelievable.,Unbelievable.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_04,77.5,Just transfer me already.,Just transfer me already.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_04,79.04,"Yeah, yeah, putting you in the queue. You might be waiting a while though. Bye.","Yeah, yeah, putting you in the queue. You might be waiting a while though. Bye.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_04,82.32,Bye.,Bye.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT

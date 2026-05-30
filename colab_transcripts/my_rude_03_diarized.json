@@ -1,0 +1,354 @@
+[
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Selamat petang. Terima kasih kerana menghubungi khidmat pelanggan Skylink Express.",
+    "start": 0.54,
+    "end": 4.68,
+    "duration": 4.14
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Nama saya Fidaus. Boleh saya bantu Encik hari ini?",
+    "start": 5.16,
+    "end": 7.92,
+    "duration": 2.76
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Selamat petang, Fidaus.",
+    "start": 8.18,
+    "end": 9.54,
+    "duration": 1.36
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Saya nak tanya pasal barang saya.",
+    "start": 9.92,
+    "end": 11.8,
+    "duration": 1.88
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Nombor tracking MY9920X.",
+    "start": 12.42,
+    "end": 16.32,
+    "duration": 3.9
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Dah tiga hari status dia out for delivery, tapi saya masih tak terima apa-apa.",
+    "start": 16.64,
+    "end": 20.9,
+    "duration": 4.26
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Minta maaf atas kesulitan tersebut, Encik.",
+    "start": 21.52,
+    "end": 24.08,
+    "duration": 2.56
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Saya faham perasaan Encik.",
+    "start": 24.44,
+    "end": 26.18,
+    "duration": 1.74
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Sebentar ya, biar saya semak dalam sistem kami.",
+    "start": 26.54,
+    "end": 28.78,
+    "duration": 2.24
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Oh,",
+    "start": 30.28,
+    "end": 30.86,
+    "duration": 0.58
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "saya dah nampak.",
+    "start": 31.44,
+    "end": 32.48,
+    "duration": 1.04
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Mengikut rekod,",
+    "start": 33.16,
+    "end": 34.28,
+    "duration": 1.12
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "rider kami dah hantar barang ni semalam pada pukul 2 petang.",
+    "start": 34.68,
+    "end": 37.94,
+    "duration": 3.26
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Encik ada semak dengan jiran atau letak kat dalam peti suat?",
+    "start": 38.4,
+    "end": 41.64,
+    "duration": 3.24
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Dah semak? Memang tak ada.",
+    "start": 41.96,
+    "end": 43.72,
+    "duration": 1.76
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "CCTV rumah saya pun tak nampak ada motor lalu semalam.",
+    "start": 44.36,
+    "end": 47.32,
+    "duration": 2.96
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Boleh tak awak tolong hubungi rider tu untuk kepastian?",
+    "start": 47.64,
+    "end": 50.16,
+    "duration": 2.52
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Encik,",
+    "start": 51.52,
+    "end": 52.1,
+    "duration": 0.58
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "sistem kami automatik.",
+    "start": 52.6,
+    "end": 54.02,
+    "duration": 1.42
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Kalau dia tulis delivered, maknanya dah sampai lah tu.",
+    "start": 54.4,
+    "end": 56.9,
+    "duration": 2.5
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Takkan sistem nak tipu pula?",
+    "start": 57.4,
+    "end": 58.8,
+    "duration": 1.4
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Saya bukan kata sistem tipu.",
+    "start": 59.3,
+    "end": 61.3,
+    "duration": 2.0
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Tapi mungkin rider tu salah hantar rumah.",
+    "start": 61.52,
+    "end": 63.42,
+    "duration": 1.9
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Tolonglah cek balik sebab barang tu barang mahal.",
+    "start": 64.06,
+    "end": 66.58,
+    "duration": 2.52
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Aduh, Encik ni tak faham bahasakah?",
+    "start": 68.34,
+    "end": 70.54,
+    "duration": 2.2
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Aku dah cakap dah sampai.",
+    "start": 70.78,
+    "end": 71.86,
+    "duration": 1.08
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Sampailah.",
+    "start": 72.2,
+    "end": 72.76,
+    "duration": 0.56
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Kau ingat aku ada masakah nak layan drama barang hilang kau ni?",
+    "start": 73.2,
+    "end": 76.02,
+    "duration": 2.82
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Eh,",
+    "start": 76.64,
+    "end": 76.84,
+    "duration": 0.2
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "kenapa awak tukar bahasa macam ni?",
+    "start": 77.4,
+    "end": 78.96,
+    "duration": 1.56
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Saya bercakap dengan cara baik ya.",
+    "start": 79.32,
+    "end": 81.12,
+    "duration": 1.8
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Saya nak bercakap dengan pengurus awak sekarang.",
+    "start": 81.62,
+    "end": 83.54,
+    "duration": 1.92
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Pengurus?",
+    "start": 84.78,
+    "end": 85.34,
+    "duration": 0.56
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Tak payah nak berangan lah.",
+    "start": 85.58,
+    "end": 87.06,
+    "duration": 1.48
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Kau ingat kau siapa?",
+    "start": 87.34,
+    "end": 88.12,
+    "duration": 0.78
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Setakat barang murah macam tu pun nak bisin-bisin.",
+    "start": 88.54,
+    "end": 90.6,
+    "duration": 2.06
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Kalau kau rasa kau pandai sangat, lain kali pergi ambil sendiri kat gudang.",
+    "start": 90.6,
+    "end": 93.98,
+    "duration": 3.38
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Tak payah menyemok call aku petang-petang ni.",
+    "start": 94.32,
+    "end": 96.02,
+    "duration": 1.7
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Saya akan buat report pasal perangai awak ni.",
+    "start": 96.52,
+    "end": 98.56,
+    "duration": 2.04
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Pergilah report.",
+    "start": 99.22,
+    "end": 100.1,
+    "duration": 0.88
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Ada aku kisah.",
+    "start": 100.42,
+    "end": 101.16,
+    "duration": 0.74
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Dahlah, malah aku nak layan orang macam aku ni.",
+    "start": 101.58,
+    "end": 103.32,
+    "duration": 1.74
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Cari kerja lain lah daripada kacau orang.",
+    "start": 103.68,
+    "end": 105.2,
+    "duration": 1.52
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Terima kasih kerana menonton!",
+    "start": 105.2,
+    "end": 105.24,
+    "duration": 0.04
+  }
+]

@@ -1,0 +1,378 @@
+[
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Selamat petang. Terima kasih kerana menjadi pelanggan setia Megafiber.",
+    "start": 0.0,
+    "end": 4.08,
+    "duration": 4.08
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Nama saya Nadia. Boleh saya bercakap dengan Encik Faiz?",
+    "start": 4.44,
+    "end": 8.3,
+    "duration": 3.86
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Ya, saya Faiz. Kenapa ya?",
+    "start": 8.5,
+    "end": 10.22,
+    "duration": 1.72
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Kalau nak jual pakej baru, maaflah.",
+    "start": 10.6,
+    "end": 12.7,
+    "duration": 2.1
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Saya tengah agak sibuk sekarang ni.",
+    "start": 13.1,
+    "end": 14.48,
+    "duration": 1.38
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Lagipun, internet rumah saya sekarang dah okey.",
+    "start": 14.82,
+    "end": 17.06,
+    "duration": 2.24
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Saya faham, Encik Faiz. Maaf mengganggu waktu sibuk, Encik.",
+    "start": 17.54,
+    "end": 21.56,
+    "duration": 4.02
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Saya ringkaskan, ya?",
+    "start": 21.74,
+    "end": 22.9,
+    "duration": 1.16
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Saya hubungi hari ini bukan nak jual pelan baharu,",
+    "start": 23.1,
+    "end": 26.38,
+    "duration": 3.28
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "tetapi mahu memberikan ganjaran naik taraf kelajuan internet sedia ada",
+    "start": 26.38,
+    "end": 31.3,
+    "duration": 4.92
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "khas untuk pelanggan setia seperti Encik.",
+    "start": 31.3,
+    "end": 33.94,
+    "duration": 2.64
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Eh, tak apalah, Encik. Pakej 100 Mbps saya sekarang ni pun dah cukup rasanya.",
+    "start": 34.22,
+    "end": 38.84,
+    "duration": 4.62
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Kalau upgrade nanti, bil bulanan jadi makin mahal pula.",
+    "start": 39.32,
+    "end": 41.92,
+    "duration": 2.6
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Zaman sekarang ni kena berjimat sikit.",
+    "start": 42.36,
+    "end": 44.06,
+    "duration": 1.7
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Betul, Encik Faiz. Bab berjimat tu memang saya sokong sangat.",
+    "start": 44.44,
+    "end": 48.52,
+    "duration": 4.08
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Sebab itu saya hubungi Encik hari ini.",
+    "start": 48.74,
+    "end": 50.92,
+    "duration": 2.18
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Mengikat sistem kami, penggunaan internet rumah Encik kerap mencecah tahap maksimum,",
+    "start": 50.92,
+    "end": 56.72,
+    "duration": 5.8
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "terutamanya pada waktu malam.",
+    "start": 56.9,
+    "end": 58.7,
+    "duration": 1.8
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Encik ada hadapi masalah internet lag atau tersangkut-sangkut tak kebelakangan ni?",
+    "start": 58.94,
+    "end": 64.0,
+    "duration": 5.06
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Hmm,",
+    "start": 64.4,
+    "end": 64.76,
+    "duration": 0.36
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "kalau waktu malam tu memang adalah sangkut sikit.",
+    "start": 65.28,
+    "end": 68.12,
+    "duration": 2.84
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Terutamanya bila saya main game dan adik-adik saya layan penstriman video serentak.",
+    "start": 68.36,
+    "end": 73.08,
+    "duration": 4.72
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Tapi takkan kalau upgrade tak kena tambah duit banyak?",
+    "start": 73.54,
+    "end": 76.08,
+    "duration": 2.54
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Khas untuk kempen kesetiaan bulan ini, kami mahu naikkan kelajuan rumah Encik dari 100 Mbps terus ke 500 Mbps.",
+    "start": 76.08,
+    "end": 85.24,
+    "duration": 9.16
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Yang menariknya,",
+    "start": 85.54,
+    "end": 86.54,
+    "duration": 1.0
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Encik cuma perlu tambah RM10 sahaja daripada komitmen bulanan sekarang.",
+    "start": 86.96,
+    "end": 91.32,
+    "duration": 4.36
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Malah kami akan tukar ruta lama Encik kepada ruta Wi-Fi 6 yang baru secara percuma.",
+    "start": 91.8,
+    "end": 97.54,
+    "duration": 5.74
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Biar betul. Tambah RM10 sahaja sebulan, dapat kelajuan 500 Mbps.",
+    "start": 97.88,
+    "end": 102.14,
+    "duration": 4.26
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Ruta baru pun percuma.",
+    "start": 102.14,
+    "end": 103.74,
+    "duration": 1.6
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Pastikan tak ada bayaran tersembunyi yang tiba -tiba naik lepas beberapa bulan, ya?",
+    "start": 104.2,
+    "end": 107.86,
+    "duration": 3.66
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Betul. Saya jamin tiada sebarang cas tersembunyi, Encik Faiz.",
+    "start": 108.28,
+    "end": 112.28,
+    "duration": 4.0
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Harga tambahan RM10 ini tetap dan dikunci sepanjang kontrak berjalan.",
+    "start": 112.46,
+    "end": 117.16,
+    "duration": 4.7
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Ruta Wi-Fi 6 percuma itu pula akan kami hantar dan pasangkan terus ke rumah Encik oleh pihak teknikal.",
+    "start": 117.52,
+    "end": 124.0,
+    "duration": 6.48
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Masalah lag waktu malam di rumah Encik pasti selesai terus lepas ini.",
+    "start": 124.4,
+    "end": 128.44,
+    "duration": 4.04
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Tambah RM10 sahaja, eh?",
+    "start": 128.44,
+    "end": 130.38,
+    "duration": 1.94
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Ruta dekat rumah itu pun memang dah lama sangat.",
+    "start": 131.02,
+    "end": 133.1,
+    "duration": 2.08
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Selalu kena restart kalau sangkut.",
+    "start": 133.34,
+    "end": 134.9,
+    "duration": 1.56
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Okeylah kalau macam itu. Berbaloi juga rasanya kalau cuma tambah RM10.",
+    "start": 135.4,
+    "end": 138.78,
+    "duration": 3.38
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Alhamdulillah. Pilihan yang sangat bijak, Encik Faiz.",
+    "start": 139.72,
+    "end": 142.68,
+    "duration": 2.96
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Saya akan proseskan permohonan naik taraf kelajuan ini sekarang dalam sistem",
+    "start": 142.86,
+    "end": 147.5,
+    "duration": 4.64
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "dan kelajuan 500 Mbps itu akan aktif dalam masa 24 jam.",
+    "start": 147.5,
+    "end": 152.32,
+    "duration": 4.82
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Untuk pemasanan ruta baharu, Encik, Encik ada di rumah hari Sabtu ini jam 10 pagi?",
+    "start": 152.58,
+    "end": 158.46,
+    "duration": 5.88
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Hari Sabtu pagi? Okey. Saya memang ada di rumah.",
+    "start": 158.68,
+    "end": 161.04,
+    "duration": 2.36
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Terima kasih banyak, ya, Encik, sebab maklumkan pasal tawaran ini.",
+    "start": 161.48,
+    "end": 164.1,
+    "duration": 2.62
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Mujo saya tak letak telefon terus tadi.",
+    "start": 164.54,
+    "end": 166.16,
+    "duration": 1.62
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Terima kasih atas masa, Encik, dan selamat petang.",
+    "start": 166.46,
+    "end": 169.46,
+    "duration": 3.0
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Sampai jumpa.",
+    "start": 169.46,
+    "end": 169.48,
+    "duration": 0.02
+  }
+]

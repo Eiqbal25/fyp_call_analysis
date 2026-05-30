@@ -28,6 +28,7 @@ from config import (
     NOISE_STATIONARY_PROP,
     AUDIO_NORMALIZE_PEAK,
     OUTPUTS_DIR,
+    get_call_dir,
 )
 
 logger = logging.getLogger(__name__)
@@ -208,7 +209,8 @@ def preprocess_audio(file_path: str,
     cleaned_path = None
     if save_cleaned:
         stem = os.path.splitext(os.path.basename(file_path))[0]
-        cleaned_path = os.path.join(OUTPUTS_DIR, f"{stem}_cleaned.wav")
+        # Save to per-call folder
+        cleaned_path = os.path.join(get_call_dir(stem), f"{stem}_cleaned.wav")
         sf.write(cleaned_path, y_clean, AUDIO_SAMPLE_RATE)
         logger.info(f"Saved cleaned audio → {cleaned_path}")
 

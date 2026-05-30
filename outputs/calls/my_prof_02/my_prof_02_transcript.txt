@@ -1,0 +1,33 @@
+[00:00:00] Agent: Selamat petang.
+[00:00:01] Agent: Terima kasih kerana menghubungi Takaful Bersatu. Nama saya Syifa.
+[00:00:06] Agent: Boleh saya bantu urusan Encik hari ini?
+[00:00:08] Customer: Selamat petang, Encik Syifa. Saya Khairul di sini.
+[00:00:11] Customer: Saya ingin membuat semakkan tentang status tuntutan insurans perubatan saya bagi pembedahan minggu lepas.
+[00:00:17] Customer: Boleh tolong semakkan?
+[00:00:18] Agent: Boleh.
+[00:00:20] Agent: Tiada masalah, Encik Khairul.
+[00:00:21] Agent: Pertama sekali, saya harap Encik berada dalam keadaan sihat dan sedang berehat dengan baik selepas pembedahan.
+[00:00:28] Agent: Boleh saya dapatkan nombor kad pengenalan atau nombor polisi insurans, Encik?
+[00:00:32] Customer: Terima kasih atas keprihatinan, Encik. Alhamdulillah, saya semakin pulih.
+[00:00:37] Customer: Nombor polisi saya ialah TKF 987654.
+[00:00:42] Agent: Terima kasih, Encik Khairul.
+[00:00:44] Agent: Mohon tunggu sebentar ya. Saya sedang membuka sistem.
+[00:00:47] Agent: Sila tunggu dalam talian.
+[00:00:49] Customer: Baik, Encik Syifa. Sila ambil masa secukupnya. Saya tidak tergesa-gesa.
+[00:00:53] Agent: Terima kasih kerana menunggu, Encik Khairul. Saya telah melihat rekod tuntutan Encik untuk pembedahan appendix di hospital pakar tempoh hari.
+[00:01:01] Agent: Tuntutan ini sudah disemak. Cuma buat masa ini, statusnya adalah pembetulan dokumen.
+[00:01:06] Customer: Oh, begitu. Boleh saya tahu dokumen apa yang belum lengkap atau tersilap? Supaya saya boleh sediakan dan hantar semula secepat mungkin.
+[00:01:15] Agent: Mengikut nota daripada pihak penilai, kami memerlukan salinan laporan perubatan rasmi yang ditanda tangani oleh doktor pakar yang merawat Encik.
+[00:01:23] Agent: Dokumen yang dihantar sebelum ini cuma risid bayaran dan ringkasan keluar hospital sahaja.
+[00:01:29] Customer: Ah, betul juga.
+[00:01:31] Customer: Laporan itu memang ada pada saya. Cuma saya terlepas pandang untuk imbas sekali hari itu.
+[00:01:35] Customer: Saya boleh emailkan laporan tersebut petang ini juga. Boleh saya tahu alamat email yang betul?
+[00:01:40] Agent: Boleh, Encik Khairul. Encik boleh terus hantarkan ke email tuntutan kami di claim at takafulbersatu.com.my.
+[00:01:49] Agent: Selepas email dihantar,
+[00:01:51] Agent: mohon Encik sertakan sekali nombor polisi Encik pada bahagian tajuk atau subjek email untuk memudahkan rujukan.
+[00:01:57] Customer: Baik, saya faham dengan jelas. Saya akan pastikan nombor polisi diletakkan pada tajuk email.
+[00:02:03] Customer: Terima kasih banyak-banyak atas bantuan dan layanan yang sangat mesra daripada Encik Shifa petang ini.
+[00:02:08] Agent: Sama-sama Encik Khairul. Sudah menjadi tanggungjawab kami untuk membantu memudahkan urusan tuntutan Encik.
+[00:02:14] Agent: Sebaik sahaja laporan diterima, kami akan teruskan proses kelulusan dalam masa tiga hari bekerja.
+[00:02:20] Agent: Selamat berehat dan selamat petang.
+[00:02:23] Agent: Terima kasih telah menonton!

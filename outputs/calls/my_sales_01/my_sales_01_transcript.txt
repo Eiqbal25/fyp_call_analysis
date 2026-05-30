@@ -1,0 +1,56 @@
+[00:00:00] Agent: Selamat petang. Assalamualaikum Encik Hazik. Saya Syahrul dari Hydro Pure Malaysia. Saya harap Encik sihat hari ini.
+[00:00:07] Customer: Waalaikumsalam Encik Syahrul.
+[00:00:08] Customer: Ya, saya sihat Alhamdulillah. Ada apa ya? Hubungi saya petang -petang begini?
+[00:00:12] Agent: Begini Encik Hazik. Pertama sekali, kami ingin mengucapkan terima kasih kerana Encik telah menjadi pelanggan setia penapis udara kami selama dua tahun.
+[00:00:21] Agent: Sila jangan risau. Saya hubungi ini bukan untuk cas apa-apa bayaran, tetapi untuk berkongsi satu ganjaran eksklusif sempena bulan penghargaan pelanggan.
+[00:00:31] Customer: Oh,
+[00:00:32] Customer: ganjaran apa itu ya? Saya ingatkan fasal servis penapis udara tadi.
+[00:00:36] Customer: Pakaj promosi baharukah?
+[00:00:38] Agent: Betul Encik Hazik.
+[00:00:40] Agent: Berdasarkan profil kesetiaan Encik, pihak pengurusan telah memilih Encik untuk menerima tawaran rebate khas sebanyak 40 % bagi pelancaran produk terbaharu kami,
+[00:00:50] Agent: iaitu Hydro Pure Smart Purifier,
+[00:00:53] Agent: penapis air pintar dengan fungsi pensterilan UV otomatik.
+[00:00:57] Customer: Kebetulan pula,
+[00:00:58] Customer: memang saya dan isteri ada terfikir nak pasang penapis air kat rumah baru kami bulan depan.
+[00:01:03] Customer: Tapi itulah, sekarang ni banyak sangat jenama kat luar sana. Apa yang beza sangat penapis air pintar syarikat awak ni dengan jenama lain?
+[00:01:11] Agent: Soalan yang sangat bagus Encik Hazik.
+[00:01:13] Agent: Model pintar terbaharu ini dilengkapi dengan teknologi ekosensor yang menjimatkan elektrik sehingga 30%.
+[00:01:20] Agent: Paling penting,
+[00:01:22] Agent: ia mempunyai reka bentuk yang sangat kompak dan minimalis.
+[00:01:25] Agent: Jadi ia tidak akan memakan ruang yang banyak di dapur rumah baru Encik nanti.
+[00:01:30] Customer: Hmm,
+[00:01:31] Customer: jimat elektrik dan kompak ya? Menarik juga tu.
+[00:01:33] Customer: Sebab dapur rumah baru saya tu reka bentuknya modern, lurus.
+[00:01:37] Customer: Memang tak luas sangat.
+[00:01:39] Customer: Berapa ya komitmen bulanan kalau saya ambil pelan sewa beli?
+[00:01:42] Agent: Untuk harga pasaran biasa,
+[00:01:44] Agent: komitmen bulanan adalah RM110.
+[00:01:47] Agent: Tetapi khas untuk Encik Hazik sebagai pelanggan VIP kami,
+[00:01:50] Agent: dengan ribit 40 % tadi,
+[00:01:53] Agent: Encik cuma perlu bayar RM65 sahaja sebulan.
+[00:01:56] Agent: Harga ini sudah termasuk servis penukaran penapis percuma setiap 4 bulan
+[00:02:00] Agent: dan jaminan penuh sepanjang tempoh kontrak.
+[00:02:03] Customer: Bia betul. RM65 sahaja sebulan.
+[00:02:07] Customer: Jarak harganya agak jauh berbanding harga asal ya.
+[00:02:09] Customer: Tapi saya kena berbincang dengan isteri saya dululah untuk pemilihan warna dan lokasi pemasangan.
+[00:02:15] Agent: Sila ambil masa, Encik.
+[00:02:17] Agent: Berbincang dengan isteri adalah perkara yang sangat penting.
+[00:02:20] Agent: Untuk memudahkan perancangan Encik berdua,
+[00:02:22] Agent: apa kata saya hantarkan seorang pakar konsultan kami ke rumah Encik Sabtu ini
+[00:02:26] Agent: untuk tunjukkan demo produk secara ringkas.
+[00:02:29] Agent: Encik boleh tengok sendiri saiz sebenar dan pilihan warna,
+[00:02:32] Agent: tanpa sebarang komitmen bayaran pun.
+[00:02:34] Customer: Kalau macam tu, bagus juga.
+[00:02:36] Customer: Hari Sabtu petang dalam pukul 3 petang, kami berdua ada di rumah baru untuk kemas barang.
+[00:02:41] Customer: Awak boleh hantar konsultan datang waktu itu ya?
+[00:02:44] Agent: Baik Encik Hazik.
+[00:02:45] Agent: Saya dah jadualkan slot janji temu untuk hari Sabtu ini jam 3 petang.
+[00:02:49] Agent: Konsultan kami akan hubungi Encik terlebih dahulu sebelum datang.
+[00:02:53] Agent: Terima kasih banyak atas masa Encik dan tahniah atas rumah baru.
+[00:02:56] Agent: Selamat petang.
+[00:02:57] Customer: Sama-sama Encik Syarul.
+[00:02:58] Customer: Terima kasih kembali atas tawaran hebat ini.
+[00:03:01] Customer: Kita jumpa hari Sabtu nanti.
+[00:03:02] Customer: Assalamualaikum.
+[00:03:03] Agent: Waalaikumsalam warahmatullahi ta'ala wabarakatuh.
+[00:03:06] Agent: Terima kasih Encik Hazik.

@@ -1,0 +1,78 @@
+call_id,start_sec,system_text,human_text,text_similarity,combined_score,system_role,human_role,label_correct,matched,text_override,override_phrase,status
+manglish_01,0.0,Thank you for calling Tech Gadget Malaysia Support.,Thank you for calling Tech Gadget Malaysia Support.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_01,2.62,My name is Sharif.,My name is Sharif.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_01,4.06,How can I help you today?,How can I help you today?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_01,5.58,Hello.,Hello.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_01,6.18,I want to make a big complaint.,I want to make a big complaint.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_01,8.5,Yesterday only I bought the new phone from your Mid-Valley outlet.,Yesterday only I bought the new phone from your Mid-Valley outlet.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_01,11.76,Then this morning the screen totally blank already.,Then this morning the screen totally blank already.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_01,14.82,Cannot turn on way.,Cannot turn on way.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_01,16.28,"Gila, baru buy one day only.","Gila, baru buy one day only.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_01,18.3,Costly phones or more.,Costly phones or more.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_01,19.36,How can like this?,How can like this?,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_01,20.62,"I'm so sorry to hear that, miss.","I'm so sorry to hear that, miss.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_01,22.96,I completely understand your frustration.,I completely understand your frustration.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_01,25.58,Buy a new phone?,Buy a new phone?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_01,26.7,"Definitely expect it to work perfectly, one.","Definitely expect it to work perfectly, one.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_01,29.42,"Don't worry, we will help you check.","Don't worry, we will help you check.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_01,31.36,May I know your name and the phone model?,May I know your name and the phone model?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_01,33.72,My name is Daphne.,My name is Daphne.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_01,35.62,The model is the Pro Max Edition one.,The model is the Pro Max Edition one.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_01,38.16,"I already buy a full cache yesterday, you know.","I already buy a full cache yesterday, you know.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_01,40.64,"I need to use the phone for my work now, but it's totally dead.","I need to use the phone for my work now, but it's totally dead.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_01,44.56,You better give me a one-to-one replacement now.,You better give me a one-to-one replacement now.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_01,47.52,Don't ask me to wait for repair.,Don't ask me to wait for repair.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_01,48.84,I don't want.,I don't want.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_01,50.14,"I understand, Daphne.","I understand, Daphne.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_01,51.8,"Since you just bought it yesterday,","Since you just bought it yesterday,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_01,53.78,it is definitely covered under our 7-day one-to-one instant replacement warranty,it is definitely covered under our 7-day one-to-one instant replacement warranty,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_01,58.84,Let me pull out your receipt data first.,Let me pull out your receipt data first.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_01,61.2,Can you pass me your phone number or the serial number on the box?,Can you pass me your phone number or the serial number on the box?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_01,65.18,My phone number is 012-345-6789.,My phone number is 012-345-6789.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_01,69.98,Check fast-fast lah.,Check fast-fast lah.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_01,71.26,I got meeting soon.,I got meeting soon.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_01,72.42,"If you guys tell me need to send to HQ for two weeks,","If you guys tell me need to send to HQ for two weeks,",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_01,75.48,I strictly cannot accept ya.,I strictly cannot accept ya.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_01,77.32,Brand new phone already hardware failure.,Brand new phone already hardware failure.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_01,79.48,Very kantoi lah like this.,Very kantoi lah like this.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_01,81.44,"Okay, Daphne.","Okay, Daphne.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_01,82.5,I already found your receipt in our system.,I already found your receipt in our system.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_01,84.9,"Bought yesterday at 4pm, correct?","Bought yesterday at 4pm, correct?",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_01,87.5,Don't worry.,Don't worry.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_01,88.36,You don't need to send to HQ and wait for two weeks.,You don't need to send to HQ and wait for two weeks.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_01,91.24,I can issue an instant replacement voucher to your email right now.,I can issue an instant replacement voucher to your email right now.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_01,95.62,Voucher?,Voucher?,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+manglish_01,96.42,Then how do I get the new phone?,Then how do I get the new phone?,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+manglish_01,98.16,I don't want to go to the shop and then the staff there say no stop.,I don't want to go to the shop and then the staff there say no stop.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_01,101.74,Then I wait long-long again.,Then I wait long-long again.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_01,103.7,"Understand, Daphne.","Understand, Daphne.",1.0,1.0,Agent,Customer,False,True,False,,❌ WRONG
+manglish_01,104.9,That's why this voucher will lock the physical stock at the Mid-Valley outlet im,That's why this voucher will lock the physical stock at the Mid-Valley outlet im,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_01,109.88,I already double-checked their inventory.,I already double-checked their inventory.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_01,111.82,They have three units of your exact colour ready.,They have three units of your exact colour ready.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_01,114.86,"You just show up, show the email,","You just show up, show the email,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_01,116.9,"and they will pass you a fresh, unboxed unit on the spot.","and they will pass you a fresh, unboxed unit on the spot.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_01,120.64,"Oh,","Oh,",1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+manglish_01,121.7,"okay, okay.","okay, okay.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_01,122.6,Like that better.,Like that better.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_01,123.48,So I just bring the dead phone with the original box and full accessories back t,So I just bring the dead phone with the original box and full accessories back t,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_01,128.16,"No need to pay any extra fees, right?","No need to pay any extra fees, right?",1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+manglish_01,130.78,"Yes, correct.","Yes, correct.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_01,132.16,Just bring the whole box set together with the dead phone.,Just bring the whole box set together with the dead phone.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_01,135.34,No extra charges at all.,No extra charges at all.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_01,137.16,Everything is zero cost under your warranty.,Everything is zero cost under your warranty.,1.0,1.0,Agent,Customer,False,True,False,,❌ WRONG
+manglish_01,139.64,I have already sent the voucher to your email.,I have already sent the voucher to your email.,1.0,1.0,Agent,Customer,False,True,False,,❌ WRONG
+manglish_01,142.04,Can you check if you got it or not?,Can you check if you got it or not?,1.0,1.0,Agent,Customer,False,True,False,,❌ WRONG
+manglish_01,144.08,"Wait, ah.","Wait, ah.",1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+manglish_01,145.2,"Okay, got it already.","Okay, got it already.",1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+manglish_01,146.8,Instant exchange voucher for Mid-Valley outlet.,Instant exchange voucher for Mid-Valley outlet.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+manglish_01,149.78,"Whew, nasib baik.","Whew, nasib baik.",1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+manglish_01,151.26,Luckily you settled this fast for me.,Luckily you settled this fast for me.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_01,153.44,"Most welcome, Daphne.","Most welcome, Daphne.",1.0,1.0,Agent,Customer,False,True,False,,❌ WRONG
+manglish_01,154.96,"Truly sorry for the bad experience with the first unit,","Truly sorry for the bad experience with the first unit,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_01,158.16,but I'm glad we can lock the new one for you.,but I'm glad we can lock the new one for you.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_01,160.18,Is there anything else I can assist you with today?,Is there anything else I can assist you with today?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_01,162.86,"No, that's all.","No, that's all.",1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+manglish_01,163.76,I will go to the outlet straight after my meeting later.,I will go to the outlet straight after my meeting later.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+manglish_01,166.52,"Thanks, Sharif.","Thanks, Sharif.",1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+manglish_01,167.46,"No problem at all, Daphne.","No problem at all, Daphne.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_01,169.18,Have a smooth meeting today and take care.,Have a smooth meeting today and take care.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT

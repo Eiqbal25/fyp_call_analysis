@@ -1,0 +1,30 @@
+call_id,start_sec,system_text,human_text,text_similarity,combined_score,system_role,human_role,label_correct,matched,text_override,override_phrase,status
+my_prof_01,0.0,Selamat pagi.,Selamat pagi.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_01,1.26,Terima kasih kerana menghubungi My Career Care.,Terima kasih kerana menghubungi My Career Care.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_01,4.0,Nama saya Syahrul. Boleh saya bantu urusan Puan hari ini?,Nama saya Syahrul. Boleh saya bantu urusan Puan hari ini?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_01,7.6,Selamat pagi Encik Syahrul. Saya Linda di sini. Saya ada satu barang yang sepatu,Selamat pagi Encik Syahrul. Saya Linda di sini. Saya ada satu barang yang sepatu,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_01,21.28,Boleh. Tiada masalah Puan Linda. Kami sedia membantu mengubah suai laluan pengha,Boleh. Tiada masalah Puan Linda. Kami sedia membantu mengubah suai laluan pengha,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_01,32.04,Boleh. Sekejap ya.,Boleh. Sekejap ya.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_01,33.86,Nombor penjejakannya ialah MYC777821.,Nombor penjejakannya ialah MYC777821.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_01,41.8,Terima kasih Puan Linda. Sila tunggu sebentar ya. Saya semak status terkini bara,Terima kasih Puan Linda. Sila tunggu sebentar ya. Saya semak status terkini bara,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_01,47.82,Baik. Silakan Encik Syahrul. Terima kasih.,Baik. Silakan Encik Syahrul. Terima kasih.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_01,50.08,Terima kasih kerana menunggu Puan Linda. Saya nampak barang Puan sekarang berada,Terima kasih kerana menunggu Puan Linda. Saya nampak barang Puan sekarang berada,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_01,63.88,Oh. Alhamdulillah.,Oh. Alhamdulillah.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_01,65.7,Mujur saya telefon awal.,Mujur saya telefon awal.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_01,67.3,Jadi apa maklumat yang Encik perlukan untuk proses penukaran alamat ini ya?,Jadi apa maklumat yang Encik perlukan untuk proses penukaran alamat ini ya?,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_01,71.92,"Demi keselamatan barang Puan, boleh saya sahkan nama penuh penerima dan alamat p","Demi keselamatan barang Puan, boleh saya sahkan nama penuh penerima dan alamat p",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_01,78.78,Boleh.,Boleh.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_01,79.9,"Nama penuh saya Linda binti Ahmad dan alamat asal ialah Menara Merdeka,","Nama penuh saya Linda binti Ahmad dan alamat asal ialah Menara Merdeka,",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_01,85.7,"tingkat 12,","tingkat 12,",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_01,86.88,"Jalan Ampang, Kuala Lumpur.","Jalan Ampang, Kuala Lumpur.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_01,88.54,Pengesahan data adalah tepat. Terima kasih Puan Linda.,Pengesahan data adalah tepat. Terima kasih Puan Linda.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_01,92.0,Sekarang boleh Puan berikan alamat baharu yang lengkap beserta poskod untuk saya,Sekarang boleh Puan berikan alamat baharu yang lengkap beserta poskod untuk saya,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_01,96.26,"Alamat baharu ialah nombor 15,","Alamat baharu ialah nombor 15,",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_01,99.24,"Jalan Melati 3,","Jalan Melati 3,",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_01,101.26,"Taman Melati,","Taman Melati,",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_01,102.56,"4300,","4300,",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_01,104.32,"Kajang, Selangor.","Kajang, Selangor.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_01,105.52,Baik. Saya dah kemas kini alamat baharu ke Sistem Agihan Hub Syah Alam. Sistem a,Baik. Saya dah kemas kini alamat baharu ke Sistem Agihan Hub Syah Alam. Sistem a,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_01,119.38,Bagus sangat. Semuanya jelas dan cepat. Terima kasih banyak-banyak atas bantuan ,Bagus sangat. Semuanya jelas dan cepat. Terima kasih banyak-banyak atas bantuan ,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_01,129.46,"Sama -sama, Puan Linda.","Sama -sama, Puan Linda.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_01,131.1,Sudah menjadi tugas kami untuk pastikan barang Puan sampai ke tangan dengan sela,Sudah menjadi tugas kami untuk pastikan barang Puan sampai ke tangan dengan sela,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT

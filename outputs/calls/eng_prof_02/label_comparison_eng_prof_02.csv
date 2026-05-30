@@ -1,0 +1,44 @@
+call_id,start_sec,system_text,human_text,text_similarity,combined_score,system_role,human_role,label_correct,matched,text_override,override_phrase,status
+eng_prof_02,0.0,Good afternoon.,Good afternoon.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_02,1.16,Thank you for calling Grand Horizon Resort's Guest Relations.,Thank you for calling Grand Horizon Resort's Guest Relations.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_02,4.5,My name is Julian.,My name is Julian.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_02,5.68,How may I assist you with your travel plans today?,How may I assist you with your travel plans today?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_02,7.84,"Good afternoon, Julian.","Good afternoon, Julian.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_02,9.68,This is Dr. Rachel speaking.,This is Dr. Rachel speaking.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_02,11.62,"I have a reservation at your Kuala Lumpur property starting tonight,","I have a reservation at your Kuala Lumpur property starting tonight,",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_02,15.64,but my international flight has just been delayed by 12 hours.,but my international flight has just been delayed by 12 hours.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_02,19.8,"I am going to miss my first night, and I wanted to know if it's possible to adju","I am going to miss my first night, and I wanted to know if it's possible to adju",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_02,25.68,"Oh, I am so sorry to hear about your flight delay, Dr. Rachel.","Oh, I am so sorry to hear about your flight delay, Dr. Rachel.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_02,30.0,Travel disruptions can be incredibly exhausting.,Travel disruptions can be incredibly exhausting.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_02,32.84,Please rest assured that I am more than happy to help you adjust your reservatio,Please rest assured that I am more than happy to help you adjust your reservatio,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_02,38.4,May I please have your reservation confirmation number?,May I please have your reservation confirmation number?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_02,41.64,"Thank you so much, Julian. I appreciate your kindness.","Thank you so much, Julian. I appreciate your kindness.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_02,45.26,"Yes, my confirmation number is GHR44921.","Yes, my confirmation number is GHR44921.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_02,52.64,Thank you very much. Please hold for just a brief moment while I access our rese,Thank you very much. Please hold for just a brief moment while I access our rese,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_02,57.86,I am pulling up your details right now.,I am pulling up your details right now.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_02,60.5,"Take your time, Julian. Thank you.","Take your time, Julian. Thank you.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_02,62.66,"Thank you for waiting, Dr. Rachel.","Thank you for waiting, Dr. Rachel.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_02,64.5,I see you're booking for a deluxe King Suite for four nights.,I see you're booking for a deluxe King Suite for four nights.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_02,68.66,"Because this was a promotional, non-refundable rate, the system usually locks th","Because this was a promotional, non-refundable rate, the system usually locks th",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_02,74.4,"However,","However,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_02,75.24,"given your flight situation, I am going to manually override the penalty and shi","given your flight situation, I am going to manually override the penalty and shi",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_02,80.94,"Oh, that is absolutely wonderful news.","Oh, that is absolutely wonderful news.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_02,84.0,I was quite worried I would be charged for a room I couldn't use.,I was quite worried I would be charged for a room I couldn't use.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_02,87.78,"Will I still be able to keep the full four nights, or will the stay be shortened","Will I still be able to keep the full four nights, or will the stay be shortened",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_02,92.44,"I have checked our availability, and luckily, the suite is free for an extra nig","I have checked our availability, and luckily, the suite is free for an extra nig",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_02,98.42,"So, I have successfully shifted your entire four-night block.","So, I have successfully shifted your entire four-night block.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_02,102.08,"Your new checkout date will be this coming Wednesday instead of Tuesday, at no e","Your new checkout date will be this coming Wednesday instead of Tuesday, at no e",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_02,107.02,"Wow, that is incredibly generous of you.","Wow, that is incredibly generous of you.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_02,110.34,"I honestly expected a lot of corporate red tape, but you have made this entire p","I honestly expected a lot of corporate red tape, but you have made this entire p",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_02,116.92,"It is entirely our pleasure, Dr. Rachel.","It is entirely our pleasure, Dr. Rachel.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_02,119.78,"Our priority is ensuring your stay with us is perfect, right from the moment you","Our priority is ensuring your stay with us is perfect, right from the moment you",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_02,124.54,I have also added a note to the front desk team to expect a late morning arrival,I have also added a note to the front desk team to expect a late morning arrival,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_02,129.68,so your room will be fully prepped and ready.,so your room will be fully prepped and ready.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_02,132.44,Excellent. That sounds absolutely perfect.,Excellent. That sounds absolutely perfect.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_02,134.74,Thank you so much for your stellar efficiency and wonderful customer service tod,Thank you so much for your stellar efficiency and wonderful customer service tod,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_02,140.24,You've truly turned my day around.,You've truly turned my day around.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_02,142.18,"You are most welcome, Dr. Rachel.","You are most welcome, Dr. Rachel.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_02,144.54,It was an absolute pleasure assisting you.,It was an absolute pleasure assisting you.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_02,146.52,I have just sent the updated booking confirmation to your email.,I have just sent the updated booking confirmation to your email.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_02,149.94,"Safe travels on your flight tonight, and we look forward to welcoming you tomorr","Safe travels on your flight tonight, and we look forward to welcoming you tomorr",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_02,153.82,Have a great afternoon.,Have a great afternoon.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT

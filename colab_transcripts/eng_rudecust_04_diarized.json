@@ -1,0 +1,282 @@
+[
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Hello? Is anyone actually working over there?",
+    "start": 0.0,
+    "end": 2.78,
+    "duration": 2.78
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I paid for overnight express shipping for a designer dress.",
+    "start": 2.94,
+    "end": 6.5,
+    "duration": 3.56
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "The tracking says delivered, but I have absolutely nothing.",
+    "start": 6.74,
+    "end": 9.96,
+    "duration": 3.22
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Your courier company is either completely incompetent or they stole my package.",
+    "start": 10.32,
+    "end": 14.56,
+    "duration": 4.24
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Good afternoon. I am so sorry to hear that you haven't received your package yet.",
+    "start": 15.16,
+    "end": 19.62,
+    "duration": 4.46
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I can certainly look into this for you right away. May I please have your...",
+    "start": 19.8,
+    "end": 24.14,
+    "duration": 4.34
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I don't need you to apologize. I need you to find my dress.",
+    "start": 24.14,
+    "end": 27.34,
+    "duration": 3.2
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "My name is Victoria.",
+    "start": 27.34,
+    "end": 29.0,
+    "duration": 1.66
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I have a gala tonight and I am not going to miss it",
+    "start": 29.36,
+    "end": 31.92,
+    "duration": 2.56
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "because your people don't know how to drop off a box. Fix this right now.",
+    "start": 31.92,
+    "end": 36.06,
+    "duration": 4.14
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I understand the urgency, Victoria. Let me pull up the delivery details.",
+    "start": 36.34,
+    "end": 41.18,
+    "duration": 4.84
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Could you please provide your order reference number so I can check the exact GPS tracking drop-off?",
+    "start": 41.48,
+    "end": 47.52,
+    "duration": 6.04
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "It is LX9942.",
+    "start": 47.94,
+    "end": 50.74,
+    "duration": 2.8
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "It says it was signed for at noon today.",
+    "start": 51.12,
+    "end": 53.68,
+    "duration": 2.56
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "That is a blatant lie because I have been sitting in my living room all day and nobody even rang the bell.",
+    "start": 53.68,
+    "end": 59.5,
+    "duration": 5.82
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Thank you for the number. Let me check the system.",
+    "start": 59.88,
+    "end": 63.14,
+    "duration": 3.26
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Okay, I see the delivery confirmation and the photo receipt attached by the driver.",
+    "start": 63.72,
+    "end": 68.98,
+    "duration": 5.26
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Victoria, it looks like it was delivered to Unit 4B at 120 Oak Avenue.",
+    "start": 69.44,
+    "end": 74.88,
+    "duration": 5.44
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Wait, what did you just say? Unit 4B? Are you joking?",
+    "start": 75.26,
+    "end": 79.2,
+    "duration": 3.94
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I live in Unit 12A. Why on earth would your driver blindly leave a luxury item at a completely different apartment number?",
+    "start": 79.2,
+    "end": 86.94,
+    "duration": 7.74
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I see the confusion, Victoria, but I am looking at the original invoice submitted during checkout.",
+    "start": 87.16,
+    "end": 93.28,
+    "duration": 6.12
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "The address entered on the order form explicitly lists Unit 4B, 120 Oak Avenue.",
+    "start": 93.5,
+    "end": 99.72,
+    "duration": 6.22
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "The driver was simply following the exact address provided to us.",
+    "start": 100.0,
+    "end": 103.86,
+    "duration": 3.86
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Unit 4B.",
+    "start": 103.86,
+    "end": 105.68,
+    "duration": 1.82
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "That's… oh, that is my old apartment.",
+    "start": 106.16,
+    "end": 108.9,
+    "duration": 2.74
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Well, your website's autofill system must have glitched and selected my old address.",
+    "start": 109.28,
+    "end": 114.16,
+    "duration": 4.88
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "A well-designed system should have flagged that my billing address didn't match.",
+    "start": 114.44,
+    "end": 118.64,
+    "duration": 4.2
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Our system does register multiple addresses under your profile, so it is possible the older one was selected by mistake.",
+    "start": 118.86,
+    "end": 126.34,
+    "duration": 7.48
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Fortunately,",
+    "start": 126.88,
+    "end": 127.38,
+    "duration": 0.5
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "since it is in the same building, I can immediately call the building concierge and have them retrieve the package from Unit 4B and bring it up to Unit 12A.",
+    "start": 127.74,
+    "end": 136.8,
+    "duration": 9.06
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Is there anything else I can assist you with today?",
+    "start": 137.02,
+    "end": 139.46,
+    "duration": 2.44
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "No, that's all.",
+    "start": 139.74,
+    "end": 140.78,
+    "duration": 1.04
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Just make sure your system doesn't mess up my profile next time.",
+    "start": 140.96,
+    "end": 144.22,
+    "duration": 3.26
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Goodbye.",
+    "start": 144.52,
+    "end": 144.84,
+    "duration": 0.32
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Goodbye.",
+    "start": 144.84,
+    "end": 145.02,
+    "duration": 0.18
+  }
+]

@@ -38,9 +38,66 @@ KEYWORDS_DIR = os.path.join(BASE_DIR, "keywords")
 RUN_NAME    = "latest"
 OUTPUTS_DIR = os.path.join(BASE_DIR, "outputs", RUN_NAME)
 
+# Per-call output directory — each call gets its own subfolder
+CALLS_DIR         = os.path.join(BASE_DIR, "outputs", "calls")
+
+# Colab transcripts — raw diarized JSON from Google Colab (never auto-deleted)
+COLAB_TRANSCRIPTS_DIR = os.path.join(BASE_DIR, "colab_transcripts")
+
 # Ensure all output directories exist
-for _d in [DATA_DIR, MODELS_DIR, OUTPUTS_DIR]:
+for _d in [DATA_DIR, MODELS_DIR, OUTPUTS_DIR, CALLS_DIR, COLAB_TRANSCRIPTS_DIR]:
     os.makedirs(_d, exist_ok=True)
+
+def get_call_dir(call_id: str) -> str:
+    """Get (and create) the per-call output subfolder."""
+    d = os.path.join(CALLS_DIR, call_id)
+    os.makedirs(d, exist_ok=True)
+    return d
+
+
+def discover_calls() -> dict:
+    """
+    Dynamically discover all calls from colab_transcripts/.
+    Returns dict: {"day1": [...], "day2": [...], "all": [...]}
+
+    Split rule:
+      - Day 1: first 15 calls alphabetically
+      - Day 2: remaining calls
+      - If total <= 15: all go to Day 1
+
+    To override the split, create a file called call_schedule.json
+    in the project root with this format:
+      {"day1": ["eng_prof_01", ...], "day2": ["manglish_01", ...]}
+    """
+    # Check for manual override schedule first
+    schedule_path = os.path.join(BASE_DIR, "call_schedule.json")
+    if os.path.exists(schedule_path):
+        import json as _json
+        with open(schedule_path, encoding="utf-8") as f:
+            schedule = _json.load(f)
+        all_calls = schedule.get("day1", []) + schedule.get("day2", [])
+        return {
+            "day1": schedule.get("day1", []),
+            "day2": schedule.get("day2", []),
+            "all":  all_calls,
+        }
+
+    # Auto-discover from colab_transcripts/
+    if not os.path.isdir(COLAB_TRANSCRIPTS_DIR):
+        return {"day1": [], "day2": [], "all": []}
+
+    all_calls = sorted([
+        f.replace("_diarized.json", "")
+        for f in os.listdir(COLAB_TRANSCRIPTS_DIR)
+        if f.endswith("_diarized.json") and not f.endswith("_diarized_original.json")
+    ])
+
+    mid = len(all_calls) // 2 if len(all_calls) > 15 else len(all_calls)
+    return {
+        "day1": all_calls[:mid],
+        "day2": all_calls[mid:],
+        "all":  all_calls,
+    }
 
 # ─────────────────────────────────────────────
 # AUDIO PREPROCESSING
@@ -58,7 +115,7 @@ NOISE_STATIONARY_PROP = 0.1     # Fraction of audio used for noise profile
 # base  : ~74M params, WER ~44% on Malaysian English, ~1 min/call on GPU
 # small : ~244M params, WER ~28% on Malaysian English, ~2 min/call on GPU
 # medium: ~769M params, WER ~22% on Malaysian English, ~4 min/call on GPU
-WHISPER_MODEL_SIZE = "small"
+WHISPER_MODEL_SIZE = "medium"
 
 # ─────────────────────────────────────────────
 # HUGGINGFACE TOKEN (required for pyannote.audio)
@@ -76,9 +133,10 @@ HUGGINGFACE_TOKEN = os.environ.get("HUGGINGFACE_TOKEN", None)
 # Set your Google AI Studio API key to enable LLM-based classification.
 # Get a FREE key at: https://aistudio.google.com/apikey
 # Cost: $0.00 — Gemini Flash free tier (15 req/min, 1M tokens/day).
-# Leave as None to disable Method 4.
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", None)  # e.g. "AIzaSy..."
-LLM_MODEL = "gemini-2.0-flash"
+# Leave as None to disable Method 3.
+GROQ_API_KEY  = os.environ.get("GROQ_API_KEY",  None)  # from .env — get free key at console.groq.com
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", None)  # kept for backward compat, not used
+LLM_MODEL = "llama-3.3-70b-versatile"
 
 
 # Language — None = auto-detect each call.

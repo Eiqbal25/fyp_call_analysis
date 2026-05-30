@@ -1,0 +1,55 @@
+call_id,start_sec,system_text,human_text,text_similarity,combined_score,system_role,human_role,label_correct,matched,text_override,override_phrase,status
+my_prof_05,0.0,Selamat malam.,Selamat malam.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_05,1.4,Bantuan kecemasan jalan raya di sini. Nama saya Amir.,Bantuan kecemasan jalan raya di sini. Nama saya Amir.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_05,5.4,Boleh saya bantu?,Boleh saya bantu?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_05,7.8,Tolong saya.,Tolong saya.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_05,9.04,Kereta saya tiba -tiba mati tengah -tengah lebuh raya pelas ni.,Kereta saya tiba -tiba mati tengah -tengah lebuh raya pelas ni.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_05,12.32,Ada asap keluar dari enjin. Lepas tu lori besar semua lalu. Laju sangat. Saya ta,Ada asap keluar dari enjin. Lepas tu lori besar semua lalu. Laju sangat. Saya ta,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_05,19.66,"Cik Farah,","Cik Farah,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_05,21.2,bertenang ya.,bertenang ya.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_05,22.32,Ambil nafas dalam -dalam dulu.,Ambil nafas dalam -dalam dulu.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_05,24.92,Cik selamat sekarang.,Cik selamat sekarang.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_05,26.74,Saya ada di sini untuk bantu Cik.,Saya ada di sini untuk bantu Cik.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_05,29.24,"Boleh saya tahu, Cik ada di kilometer berapa sekarang?","Boleh saya tahu, Cik ada di kilometer berapa sekarang?",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_05,33.54,Kejap. Kejap. Saya tengok papan tanda dekat tepi ni.,Kejap. Kejap. Saya tengok papan tanda dekat tepi ni.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_05,38.62,KM240.,KM240.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_05,39.64,Tapi kereta saya tersangkut dekat lorong kanan sekali.,Tapi kereta saya tersangkut dekat lorong kanan sekali.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_05,42.66,Kereta lain semua bawa laju. Saya takut nak keluar dari kereta.,Kereta lain semua bawa laju. Saya takut nak keluar dari kereta.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_05,46.56,Baik Farah.,Baik Farah.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_05,47.86,Dengar cakap saya ya.,Dengar cakap saya ya.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_05,49.74,Jangan keluar dari kereta kalau berada di lorong kanan.,Jangan keluar dari kereta kalau berada di lorong kanan.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_05,53.16,Sangat bahaya.,Sangat bahaya.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_05,55.32,Pastikan Cik dah nyalakan lampu kecemasan atau hazard light sekarang juga.,Pastikan Cik dah nyalakan lampu kecemasan atau hazard light sekarang juga.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_05,60.1,Saya sedang hantarkan trak tunda dan pasukan peronda ke lokasi Cik.,Saya sedang hantarkan trak tunda dan pasukan peronda ke lokasi Cik.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_05,64.68,Dah.,Dah.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_05,65.42,Lampu hazard saya dah buka.,Lampu hazard saya dah buka.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_05,67.16,Betul kebantuan dah on the way.,Betul kebantuan dah on the way.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_05,69.12,Berapa lama nak sampai?,Berapa lama nak sampai?,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_05,70.86,Lori kat belakang ni asyik bunyikan horn.,Lori kat belakang ni asyik bunyikan horn.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_05,73.12,Saya risau betul.,Saya risau betul.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_05,74.18,Ya betul. Pasukan peronda lebuh raya dah bergerak.,Ya betul. Pasukan peronda lebuh raya dah bergerak.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_05,79.0,Mereka akan sampai dalam masa 10 hingga 15 minit sahaja untuk sekat trafik dan t,Mereka akan sampai dalam masa 10 hingga 15 minit sahaja untuk sekat trafik dan t,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_05,86.62,Cik duduk diam-diam dalam kereta dan pakai tali pinggang keledar ya.,Cik duduk diam-diam dalam kereta dan pakai tali pinggang keledar ya.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_05,91.68,Okey.,Okey.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_05,92.72,Okey.,Okey.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_05,93.46,Saya dah pakai tali pinggang.,Saya dah pakai tali pinggang.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_05,94.92,Tadi enjin berbunyi kuat sangat. Saya ingat kereta ni nak meletup tadi.,Tadi enjin berbunyi kuat sangat. Saya ingat kereta ni nak meletup tadi.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_05,99.24,Risau sangat saya dibuatnya.,Risau sangat saya dibuatnya.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_05,101.32,Saya faham.,Saya faham.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_05,102.8,Situasi macam ni memang menakutkan kalau kena sebatang kara.,Situasi macam ni memang menakutkan kalau kena sebatang kara.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_05,106.36,Tapi Cik dah buat tindakan yang betul dengan terus telefon kami.,Tapi Cik dah buat tindakan yang betul dengan terus telefon kami.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_05,110.18,Asap tu mungkin sebab enjin terlalu panas sahaja. Bukannya nak meletup.,Asap tu mungkin sebab enjin terlalu panas sahaja. Bukannya nak meletup.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_05,114.9,Cik jangan risau ya.,Cik jangan risau ya.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_05,116.32,Semuanya terkawal.,Semuanya terkawal.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_05,118.36,Terima kasih Amir.,Terima kasih Amir.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_05,120.04,Lapang sikit dada saya dengan penjelasan awak.,Lapang sikit dada saya dengan penjelasan awak.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_05,122.58,Sekarang saya cuma perlu tunggu peronda sampai sahaja kan?,Sekarang saya cuma perlu tunggu peronda sampai sahaja kan?,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_05,126.02,Betul Farah.,Betul Farah.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_05,127.66,Saya akan terus tunggu dalam talian dengan Cik sampai Cik nampak lampu peronda t,Saya akan terus tunggu dalam talian dengan Cik sampai Cik nampak lampu peronda t,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_05,132.3,"Sementara itu, boleh Cik sahkan nombor pelik kereta Cik untuk mudahkan mereka bu","Sementara itu, boleh Cik sahkan nombor pelik kereta Cik untuk mudahkan mereka bu",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_05,138.62,Boleh. Nombor pelik saya VEB1234.,Boleh. Nombor pelik saya VEB1234.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_05,144.02,Terima kasih banyak-banyak sebab temankan saya waktu tengah takut macam ni.,Terima kasih banyak-banyak sebab temankan saya waktu tengah takut macam ni.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_05,147.86,Sama -sama Farah.,Sama -sama Farah.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_05,149.68,Dah memang tanggungjawab kami untuk pastikan keselamatan Cik.,Dah memang tanggungjawab kami untuk pastikan keselamatan Cik.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_05,153.14,Ha.,Ha.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_prof_05,153.86,Trak tunda pun saya nampak dah nak hampir sampai ke lokasi Cik sekarang.,Trak tunda pun saya nampak dah nak hampir sampai ke lokasi Cik sekarang.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT

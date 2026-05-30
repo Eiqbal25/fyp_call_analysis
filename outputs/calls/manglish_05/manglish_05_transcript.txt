@@ -1,0 +1,41 @@
+[00:00:00] Agent: Hi, good afternoon.
+[00:00:01] Agent: Thanks for calling our priority hotline. My name is Amanda. Am I speaking to Kevin?
+[00:00:07] Customer: Yeah, Kevin here. Who's this? Sales caller.
+[00:00:11] Customer: I'm quite busy now, chasing timeline.
+[00:00:14] Agent: Sorry to bother you, Kevin.
+[00:00:15] Customer: I'll make it fast -fast, yeah?
+[00:00:17] Agent: I see your current line contract is actually ending this month.
+[00:00:21] Agent: So I'm calling to pass you an exclusive voucher to get a brand new 5G smartphone.
+[00:00:27] Agent: Zero upfront payment one.
+[00:00:30] Customer: Free phone. No such thing as free lunch, lah, sis.
+[00:00:33] Customer: Surely got catch one.
+[00:00:35] Customer: Later you upgrade my plan, then my monthly bill bomb up, then I cry only.
+[00:00:39] Customer: Better I just stay on my old plan.
+[00:00:41] Agent: Haha, no catch lah, Kevin.
+[00:00:44] Agent: Don't worry.
+[00:00:45] Agent: Your current plan is RM80, right?
+[00:00:48] Agent: If you just upgrade slightly to our 5G Advanced plan at RM95,
+[00:00:53] Agent: you can get the latest Samsung or iPhone model for literally zero phone installment.
+[00:01:00] Agent: Just add RM15 extra only, per month.
+[00:01:03] Customer: 15 RM only? But I need to log contract, right? How many years?
+[00:01:08] Customer: My phone now is actually a bit lagging already.
+[00:01:11] Customer: Battery fast drain, but two years' contract is a bit long, lah.
+[00:01:14] Agent: Yes, it's a 24-month contract. But think about it. If you buy this phone outside at retail price, it is easily RM1800.
+[00:01:25] Agent: If you divide by 24 months, that's like 75 RM a month. With us, you only pay RM15 a month. Huge savings, kan?
+[00:01:35] Customer: Hmm,
+[00:01:36] Customer: true also. My current phone battery really cannot make it already. Need to charge three times a day.
+[00:01:42] Customer: If I buy new phone outside, quite pain to pay lump sum. What models can I choose from?
+[00:01:47] Agent: We have the latest model available in sleek black or matte silver.
+[00:01:52] Agent: Plus, you don't even need to queue up at our outlet. We will courier the phone directly to your house or office for free.
+[00:01:59] Customer: Okay lah, sounds like a solid deal. Since I also need a new phone anyway, might as well.
+[00:02:05] Customer: Can I choose the black colour one?
+[00:02:07] Customer: Can, no problem.
+[00:02:08] Customer: Black colour looks very premium.
+[00:02:10] Agent: I will lock down the stock for you in the system now, yeah?
+[00:02:13] Agent: Can I double-check your delivery address?
+[00:02:16] Customer: Just ship to my office address registered in your system, lah. Easier.
+[00:02:20] Customer: Thanks lah, Amanda.
+[00:02:21] Customer: Luckily, I didn't hang up on you just now.
+[00:02:23] Agent: Most welcome, Kevin.
+[00:02:25] Agent: Happy to help you get a good deal.
+[00:02:27] Agent: The phone will arrive at your office in two to three working days, yeah? Have a great day ahead.

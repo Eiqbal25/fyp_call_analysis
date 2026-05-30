@@ -1,0 +1,24 @@
+call_id,start_sec,system_text,human_text,text_similarity,combined_score,system_role,human_role,label_correct,matched,text_override,override_phrase,status
+my_prof_03,0.0,"Sama petang, pusat bantuan makan sini.","Sama petang, pusat bantuan makan sini.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_03,2.54,Saya Siti. Boleh saya bantu Encik?,Saya Siti. Boleh saya bantu Encik?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_03,4.92,"Helo, Siti.","Helo, Siti.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_03,6.2,Saya nak tanya pasal pesanan saya tadi. Saya baru perasan ada barang yang tertin,Saya nak tanya pasal pesanan saya tadi. Saya baru perasan ada barang yang tertin,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_03,11.76,"Minta maaf atas kesulitan tersebut, Encik. Boleh saya dapatkan nombor pesanan En","Minta maaf atas kesulitan tersebut, Encik. Boleh saya dapatkan nombor pesanan En",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_03,18.78,Nombor dia MS8821.,Nombor dia MS8821.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_03,22.46,Saya pesan set nasi lemak ayam berempah dengan air sirap.,Saya pesan set nasi lemak ayam berempah dengan air sirap.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_03,25.82,Tapi ayamnya tak ada.,Tapi ayamnya tak ada.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_03,28.0,Nasi dengan sambal je ada.,Nasi dengan sambal je ada.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_03,30.0,Macam mana nak makan macam ni?,Macam mana nak makan macam ni?,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_03,31.64,Saya faham perasaan Encik. Saya pun akan kecewa kalau jadi macam ni.,Saya faham perasaan Encik. Saya pun akan kecewa kalau jadi macam ni.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_03,36.42,"Berdasarkan rekod, pesanan Encik memang sepatutnya ada ayam.","Berdasarkan rekod, pesanan Encik memang sepatutnya ada ayam.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_03,39.84,"Encik nak saya pulangkan duit, refund untuk bahagian ayam itu?","Encik nak saya pulangkan duit, refund untuk bahagian ayam itu?",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_03,43.76,Atau Encik nak baucer untuk pesanan akan datang?,Atau Encik nak baucer untuk pesanan akan datang?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_03,46.54,"Kalau boleh, saya nak refund sajalah. Sebab saya dah lapar sangat ni. Kena beli ","Kalau boleh, saya nak refund sajalah. Sebab saya dah lapar sangat ni. Kena beli ",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_03,52.24,Baiklah. Saya akan uruskan proses bayaran balik serta-merta.,Baiklah. Saya akan uruskan proses bayaran balik serta-merta.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_03,56.5,Proses ini akan mengambil masa dalam 24 jam untuk masuk semula ke dalam e-wallet,Proses ini akan mengambil masa dalam 24 jam untuk masuk semula ke dalam e-wallet,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_03,61.86,Okeylah kalau macam tu. Harap lepas ni pihak restoran lebih peka lah ya.,Okeylah kalau macam tu. Harap lepas ni pihak restoran lebih peka lah ya.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_03,66.3,Jangan cuai sangat bungkus makanan.,Jangan cuai sangat bungkus makanan.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_03,68.42,"Betul, Encik. Kami akan hantar maklum balas tegas kepada pihak restoran tersebut","Betul, Encik. Kami akan hantar maklum balas tegas kepada pihak restoran tersebut",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_03,72.9,Ada apa-apa lagi yang boleh saya bantu?,Ada apa-apa lagi yang boleh saya bantu?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_03,75.24,Tak ada dah. Itu sahaja. Terima kasih ya.,Tak ada dah. Itu sahaja. Terima kasih ya.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_03,77.66,"Sama-sama, Encik. Terima kasih kerana menghubungi kami.","Sama-sama, Encik. Terima kasih kerana menghubungi kami.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT

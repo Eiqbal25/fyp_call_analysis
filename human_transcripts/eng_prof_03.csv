@@ -1,0 +1,31 @@
+segment_id,role,text,start,end
+1,Agent,Emergency Home Restoration and Plumbing Hotline. My name is Marcus.,0.0,4.08
+2,Agent,What is the nature of your emergency today?,4.46,6.32
+3,Customer,Help! I just got home and my entire living room is flooded. Water is literally gushing out from under the kitchen sink like a fountain.,6.92,14.42
+4,Customer,"It's ruining the hardwood floors. Oh my god, what do I do?",14.68,18.06
+5,Agent,"Ma 'am, please take a deep breath.",18.56,20.74
+6,Agent,I'm here to help you and we are going to stop the water together.,21.12,24.42
+7,Agent,"First,",24.42,25.44
+8,Agent,can I get your name and your current address so I can get a technician moving to you right now?,25.82,30.78
+9,Customer,My name is Clara. Clara Jenkins. I'm at 425 Pine Street.,31.54,35.92
+10,Customer,Please tell them to hurry. The water is already spreading into the hallway. It's reaching the power outlets.,36.34,41.42
+11,Agent,"Clara, I have dispatched our emergency team to 425 Pine Street. They will be there in 15 minutes.",41.94,49.24
+12,Agent,"Right now, I need you to stay away from those power outlets. Is it safe for you to walk over to the main water shutoff valve?",49.24,57.28
+13,Customer,The main valve? I think it's in the basement or outside near the garage. I've never had to touch it before. I don't know what it looks like.,57.64,65.64
+14,Agent,"Don't worry, Clara. Walk over towards the garage or basement steps safely. Look for a bright red wheel or a blue lever on a pipe coming straight out of the wall.",65.96,76.7
+15,Agent,Do you see anything like that?,76.7,78.74
+16,Customer,Wait. I'm checking the basement door area now.,79.24,81.94
+17,Customer,"Okay, yes, there is a pipe near the water heater with a big red circular handle. Is that it?",82.38,88.22
+18,Agent,"Yes, that is exactly it. Perfect job, Clara. Now, I want you to turn that red handle clockwise. Turn it all the way to the right until it tightens and won't turn anymore.",88.68,100.42
+19,Agent,That will shut off the water supply to the whole house.,100.42,104.06
+20,Customer,"Okay, it's really stiff.",104.4,106.74
+21,Customer,"Wait. Okay, I'm turning it. It stopped turning.",107.12,110.94
+22,Customer,Let me look upstairs.,111.3,112.36
+23,Customer,"Oh, thank goodness the gushing sound under the sink just stopped.",112.88,116.94
+24,Agent,Brilliant.,117.66,118.18
+25,Agent,"You did an amazing job, Clara. The active flooding has completely stopped. Now leave that valve exactly as it is. Can you confirm if any water actually got inside the electrical outlets?",118.54,130.34
+26,Customer,"No, it looks like it stopped just a few inches short of the hallway sockets. It's just a massive puddle on the floor now. Wow, my heart is beating so fast. Thank you so much for walking me through that.",130.98,142.1
+27,Agent,"You're very welcome, Clara. You reacted incredibly fast, and you just saved your home from much worse damage. Our restoration truck is only about 10 minutes away from your location now. They will handle the water extraction and dry out your floors completely.",142.1,157.74
+28,Customer,"Okay, great. I will just wait by the front door for them to arrive. Thanks again, Marcus. I really appreciate your calm voice.",158.6,164.58
+29,Agent,"It's my pleasure, Clara.",164.98,166.32
+30,Agent,"Hang tight, stay safe, and the team will see you shortly. Have a better rest of your day.",166.72,171.36

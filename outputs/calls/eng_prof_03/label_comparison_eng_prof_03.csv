@@ -1,0 +1,31 @@
+call_id,start_sec,system_text,human_text,text_similarity,combined_score,system_role,human_role,label_correct,matched,text_override,override_phrase,status
+eng_prof_03,0.0,Emergency Home Restoration and Plumbing Hotline. My name is Marcus.,Emergency Home Restoration and Plumbing Hotline. My name is Marcus.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_03,4.46,What is the nature of your emergency today?,What is the nature of your emergency today?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_03,6.92,Help! I just got home and my entire living room is flooded. Water is literally g,Help! I just got home and my entire living room is flooded. Water is literally g,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_03,14.68,"It's ruining the hardwood floors. Oh my god, what do I do?","It's ruining the hardwood floors. Oh my god, what do I do?",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_03,18.56,"Ma 'am, please take a deep breath.","Ma 'am, please take a deep breath.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_03,21.12,I'm here to help you and we are going to stop the water together.,I'm here to help you and we are going to stop the water together.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_03,24.42,"First,","First,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_03,25.82,can I get your name and your current address so I can get a technician moving to,can I get your name and your current address so I can get a technician moving to,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_03,31.54,My name is Clara. Clara Jenkins. I'm at 425 Pine Street.,My name is Clara. Clara Jenkins. I'm at 425 Pine Street.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_03,36.34,Please tell them to hurry. The water is already spreading into the hallway. It's,Please tell them to hurry. The water is already spreading into the hallway. It's,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_03,41.94,"Clara, I have dispatched our emergency team to 425 Pine Street. They will be the","Clara, I have dispatched our emergency team to 425 Pine Street. They will be the",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_03,49.24,"Right now, I need you to stay away from those power outlets. Is it safe for you ","Right now, I need you to stay away from those power outlets. Is it safe for you ",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_03,57.64,The main valve? I think it's in the basement or outside near the garage. I've ne,The main valve? I think it's in the basement or outside near the garage. I've ne,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_03,65.96,"Don't worry, Clara. Walk over towards the garage or basement steps safely. Look ","Don't worry, Clara. Walk over towards the garage or basement steps safely. Look ",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_03,76.7,Do you see anything like that?,Do you see anything like that?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_03,79.24,Wait. I'm checking the basement door area now.,Wait. I'm checking the basement door area now.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_03,82.38,"Okay, yes, there is a pipe near the water heater with a big red circular handle.","Okay, yes, there is a pipe near the water heater with a big red circular handle.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_03,88.68,"Yes, that is exactly it. Perfect job, Clara. Now, I want you to turn that red ha","Yes, that is exactly it. Perfect job, Clara. Now, I want you to turn that red ha",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_03,100.42,That will shut off the water supply to the whole house.,That will shut off the water supply to the whole house.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_03,104.4,"Okay, it's really stiff.","Okay, it's really stiff.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_03,107.12,"Wait. Okay, I'm turning it. It stopped turning.","Wait. Okay, I'm turning it. It stopped turning.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_03,111.3,Let me look upstairs.,Let me look upstairs.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_03,112.88,"Oh, thank goodness the gushing sound under the sink just stopped.","Oh, thank goodness the gushing sound under the sink just stopped.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_03,117.66,Brilliant.,Brilliant.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_03,118.54,"You did an amazing job, Clara. The active flooding has completely stopped. Now l","You did an amazing job, Clara. The active flooding has completely stopped. Now l",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_03,130.98,"No, it looks like it stopped just a few inches short of the hallway sockets. It'","No, it looks like it stopped just a few inches short of the hallway sockets. It'",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_03,142.1,"You're very welcome, Clara. You reacted incredibly fast, and you just saved your","You're very welcome, Clara. You reacted incredibly fast, and you just saved your",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_03,158.6,"Okay, great. I will just wait by the front door for them to arrive. Thanks again","Okay, great. I will just wait by the front door for them to arrive. Thanks again",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_03,164.98,"It's my pleasure, Clara.","It's my pleasure, Clara.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_03,166.72,"Hang tight, stay safe, and the team will see you shortly. Have a better rest of ","Hang tight, stay safe, and the team will see you shortly. Have a better rest of ",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT

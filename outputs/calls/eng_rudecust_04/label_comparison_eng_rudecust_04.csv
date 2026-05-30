@@ -1,0 +1,36 @@
+call_id,start_sec,system_text,human_text,text_similarity,combined_score,system_role,human_role,label_correct,matched,text_override,override_phrase,status
+eng_rudecust_04,0.0,Hello? Is anyone actually working over there?,Hello? Is anyone actually working over there?,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_04,2.94,I paid for overnight express shipping for a designer dress.,I paid for overnight express shipping for a designer dress.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_04,6.74,"The tracking says delivered, but I have absolutely nothing.","The tracking says delivered, but I have absolutely nothing.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_04,10.32,Your courier company is either completely incompetent or they stole my package.,Your courier company is either completely incompetent or they stole my package.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_04,15.16,Good afternoon. I am so sorry to hear that you haven't received your package yet,Good afternoon. I am so sorry to hear that you haven't received your package yet,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_04,19.8,I can certainly look into this for you right away. May I please have your...,I can certainly look into this for you right away. May I please have your...,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_04,24.14,I don't need you to apologize. I need you to find my dress.,I don't need you to apologize. I need you to find my dress.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_04,27.34,My name is Victoria.,My name is Victoria.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_04,29.36,I have a gala tonight and I am not going to miss it,I have a gala tonight and I am not going to miss it,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_04,31.92,because your people don't know how to drop off a box. Fix this right now.,because your people don't know how to drop off a box. Fix this right now.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_04,36.34,"I understand the urgency, Victoria. Let me pull up the delivery details.","I understand the urgency, Victoria. Let me pull up the delivery details.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_04,41.48,Could you please provide your order reference number so I can check the exact GP,Could you please provide your order reference number so I can check the exact GP,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_04,47.94,It is LX9942.,It is LX9942.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_04,51.12,It says it was signed for at noon today.,It says it was signed for at noon today.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_04,53.68,That is a blatant lie because I have been sitting in my living room all day and ,That is a blatant lie because I have been sitting in my living room all day and ,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_04,59.88,Thank you for the number. Let me check the system.,Thank you for the number. Let me check the system.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_04,63.72,"Okay, I see the delivery confirmation and the photo receipt attached by the driv","Okay, I see the delivery confirmation and the photo receipt attached by the driv",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_04,69.44,"Victoria, it looks like it was delivered to Unit 4B at 120 Oak Avenue.","Victoria, it looks like it was delivered to Unit 4B at 120 Oak Avenue.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_04,75.26,"Wait, what did you just say? Unit 4B? Are you joking?","Wait, what did you just say? Unit 4B? Are you joking?",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_04,79.2,I live in Unit 12A. Why on earth would your driver blindly leave a luxury item a,I live in Unit 12A. Why on earth would your driver blindly leave a luxury item a,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_04,87.16,"I see the confusion, Victoria, but I am looking at the original invoice submitte","I see the confusion, Victoria, but I am looking at the original invoice submitte",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_04,93.5,"The address entered on the order form explicitly lists Unit 4B, 120 Oak Avenue.","The address entered on the order form explicitly lists Unit 4B, 120 Oak Avenue.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_04,100.0,The driver was simply following the exact address provided to us.,The driver was simply following the exact address provided to us.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_04,103.86,Unit 4B.,Unit 4B.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+eng_rudecust_04,106.16,"That's… oh, that is my old apartment.","That's… oh, that is my old apartment.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_04,109.28,"Well, your website's autofill system must have glitched and selected my old addr","Well, your website's autofill system must have glitched and selected my old addr",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_04,114.44,A well-designed system should have flagged that my billing address didn't match.,A well-designed system should have flagged that my billing address didn't match.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_04,118.86,"Our system does register multiple addresses under your profile, so it is possibl","Our system does register multiple addresses under your profile, so it is possibl",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_04,126.88,"Fortunately,","Fortunately,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_04,127.74,"since it is in the same building, I can immediately call the building concierge ","since it is in the same building, I can immediately call the building concierge ",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_04,137.02,Is there anything else I can assist you with today?,Is there anything else I can assist you with today?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_04,139.74,"No, that's all.","No, that's all.",1.0,1.0,Agent,Customer,False,True,False,,❌ WRONG
+eng_rudecust_04,140.96,Just make sure your system doesn't mess up my profile next time.,Just make sure your system doesn't mess up my profile next time.,1.0,1.0,Agent,Customer,False,True,False,,❌ WRONG
+eng_rudecust_04,144.52,Goodbye.,Goodbye.,1.0,1.0,Agent,Customer,False,True,False,,❌ WRONG
+eng_rudecust_04,144.84,Goodbye.,Goodbye.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT

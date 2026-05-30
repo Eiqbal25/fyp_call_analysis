@@ -1,0 +1,242 @@
+[
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Selamat pagi, Bank Harapan dengan saya Amirul. Boleh saya bantu Encik?",
+    "start": 0.0,
+    "end": 4.42,
+    "duration": 4.42
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Aku nak tahu kenapa ada tolak duit dari ikon aku RM100.",
+    "start": 4.72,
+    "end": 8.34,
+    "duration": 3.62
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Korang ni pandai -pandai je tolak duit orang.",
+    "start": 8.92,
+    "end": 10.92,
+    "duration": 2.0
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Harap bersabar Encik. Saya minta maaf atas kesulitan ini.",
+    "start": 11.46,
+    "end": 15.16,
+    "duration": 3.7
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Boleh saya dapatkan nombor kad pengenalan untuk saya makan?",
+    "start": 15.64,
+    "end": 18.18,
+    "duration": 2.54
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Nak nombor kad pengenalan buat apa? Check je lah nama apa Johan.",
+    "start": 18.5,
+    "end": 21.54,
+    "duration": 3.04
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Aku dah call banyak kali, takkan tak ada rekod?",
+    "start": 21.9,
+    "end": 23.78,
+    "duration": 1.88
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Maaf Encik Johan,",
+    "start": 23.78,
+    "end": 25.26,
+    "duration": 1.48
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "prosedur keselamatan bank memerlukan nombor kad pengenalan untuk kami buka profil Encik.",
+    "start": 25.74,
+    "end": 30.6,
+    "duration": 4.86
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Menyusahkan betul.",
+    "start": 31.0,
+    "end": 31.9,
+    "duration": 0.9
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "890 -2140 -15533. Cepat sikit.",
+    "start": 32.3,
+    "end": 37.22,
+    "duration": 4.92
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Terima kasih Encik Johan.",
+    "start": 37.62,
+    "end": 38.98,
+    "duration": 1.36
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Sebentar ya, saya semak transaksi terakhir Encik.",
+    "start": 39.38,
+    "end": 42.14,
+    "duration": 2.76
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Jangan suruh aku tunggu lama-lama. Aku ada banyak kerja layan nak buat, bukan nak layan bank orang.",
+    "start": 42.5,
+    "end": 46.72,
+    "duration": 4.22
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Baik Encik,",
+    "start": 47.22,
+    "end": 47.9,
+    "duration": 0.68
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "saya nampak ada penolakan RM100 untuk casj tahunan kad kredit Encik.",
+    "start": 48.28,
+    "end": 52.72,
+    "duration": 4.44
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Casj tahunan apa benda pula? Aku dah guna kad ni 5 tahun. Tak pernah ada casj tahunan. Korang ni nak menipu ke?",
+    "start": 52.72,
+    "end": 58.74,
+    "duration": 6.02
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Untuk makluman Encik, pengecualian casj tahunan hanya untuk 3 tahun pertama. Bermula tahun keempat,",
+    "start": 59.14,
+    "end": 65.3,
+    "duration": 6.16
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "casj akan dikenakan.",
+    "start": 65.72,
+    "end": 66.78,
+    "duration": 1.06
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Otak kau. Siapa yang cakap macam tu?",
+    "start": 67.26,
+    "end": 69.16,
+    "duration": 1.9
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Masa aku apply dulu, ejen korang cakap free semua hidup.",
+    "start": 69.52,
+    "end": 72.04,
+    "duration": 2.52
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Saya faham kekecewaan Encik. Saya boleh bantu hantar permohonan untuk membatalkan casj tersebut.",
+    "start": 72.44,
+    "end": 77.86,
+    "duration": 5.42
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Tak payah nak hantar permohonan sangat. Kau cancel je terus sekarang. Kalau tak, aku tutup akaun hari ni juga.",
+    "start": 77.86,
+    "end": 83.3,
+    "duration": 5.44
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Encik, proses pembatalan perlukan kelulusan pihak pengurusan. Saya tidak boleh buat terus dari sistem saya.",
+    "start": 83.84,
+    "end": 89.92,
+    "duration": 6.08
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Habis tu kau buat apa kat situ? Angkat telefon je ke?",
+    "start": 90.32,
+    "end": 92.76,
+    "duration": 2.44
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Panggil bos kau sekarang. Aku nak bercakap dengan dia.",
+    "start": 93.16,
+    "end": 95.2,
+    "duration": 2.04
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Baiklah Encik. Saya akan sambungkan panggilan ini kepada pegawai atasan saya.",
+    "start": 95.7,
+    "end": 99.68,
+    "duration": 3.98
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Mohon tunggu sebentar.",
+    "start": 100.08,
+    "end": 101.0,
+    "duration": 0.92
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Cepat sikit. Jangan nak melengah-lengahkan masa aku.",
+    "start": 101.36,
+    "end": 103.5,
+    "duration": 2.14
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Terima kasih kerana menonton!",
+    "start": 103.5,
+    "end": 103.56,
+    "duration": 0.06
+  }
+]

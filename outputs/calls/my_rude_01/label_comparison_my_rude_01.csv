@@ -1,0 +1,62 @@
+call_id,start_sec,system_text,human_text,text_similarity,combined_score,system_role,human_role,label_correct,matched,text_override,override_phrase,status
+my_rude_01,0.0,Selamat petang. Selamat datang ke Grand Horizon Resort.,Selamat petang. Selamat datang ke Grand Horizon Resort.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_01,3.84,Saya nama Ilyana.,Saya nama Ilyana.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_01,5.58,Boleh saya bantu urusan daftar masuk Encik hari ini?,Boleh saya bantu urusan daftar masuk Encik hari ini?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_01,9.22,"Akhirnya. Saya dah tunggu dekat lobi korang yang panas ni dekat setengah jam, ta","Akhirnya. Saya dah tunggu dekat lobi korang yang panas ni dekat setengah jam, ta",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_01,13.72,Nama saya Encik Razlan. Saya dah tempah private pool suite untuk tiga malam.,Nama saya Encik Razlan. Saya dah tempah private pool suite untuk tiga malam.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_01,17.84,"Bagi saya kunci bilik sekarang, saya dah penat nak rehat.","Bagi saya kunci bilik sekarang, saya dah penat nak rehat.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_01,20.66,"Baik Encik Razlan. Saya semak tempahan Encik sekejap, ya?","Baik Encik Razlan. Saya semak tempahan Encik sekejap, ya?",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_01,24.56,Sila tunggu sebentar.,Sila tunggu sebentar.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_01,25.72,"Ah, Encik Razlan. Mengikut sistem kami, waktu daftar masuk rasmi resort adalah p","Ah, Encik Razlan. Mengikut sistem kami, waktu daftar masuk rasmi resort adalah p",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_01,33.9,Sekarang baru pukul satu tengah hari.,Sekarang baru pukul satu tengah hari.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_01,36.28,Jadi bilik Encik sedang dibersihkan dan disanitasi oleh pihak housekeeping demi ,Jadi bilik Encik sedang dibersihkan dan disanitasi oleh pihak housekeeping demi ,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_01,42.92,"Eh, I tak pedulilah pukul berapa sekarang.","Eh, I tak pedulilah pukul berapa sekarang.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_01,45.08,"I bayar satu malam dekat dua ribu ringgit, tahu tak? Bukan murah.","I bayar satu malam dekat dua ribu ringgit, tahu tak? Bukan murah.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_01,48.32,Korang punya housekeeping buat kerja lembab macam siput.,Korang punya housekeeping buat kerja lembab macam siput.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_01,51.02,Lepas tu nak suruh I terconggok tunggu kat lobi ni lagi dua jam.,Lepas tu nak suruh I terconggok tunggu kat lobi ni lagi dua jam.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_01,53.8,You tahu tak Aiz apa? Korang ni memang tak ada ti buat kerja ke apa?,You tahu tak Aiz apa? Korang ni memang tak ada ti buat kerja ke apa?,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_01,57.42,"Saya benar-benar minta maaf atas kesulitan ini, Encik Razlan.","Saya benar-benar minta maaf atas kesulitan ini, Encik Razlan.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_01,61.32,Kami sangat menghargai tempahan Encik.,Kami sangat menghargai tempahan Encik.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_01,63.94,Bilik tersebut baru sahaja dikosongkan oleh pelanggan terdahulu pada jam 12 teng,Bilik tersebut baru sahaja dikosongkan oleh pelanggan terdahulu pada jam 12 teng,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_01,69.7,Pihak kami sedang berusaha mempercepatkan proses pembersihan bilik Encik,Pihak kami sedang berusaha mempercepatkan proses pembersihan bilik Encik,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_01,73.76,supaya Encik boleh masuk dengan kadar segera.,supaya Encik boleh masuk dengan kadar segera.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_01,76.84,"Hah,","Hah,",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_01,77.38,alasan.,alasan.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_01,78.26,Korang punya manajemen memang bodoh dan tak cekap.,Korang punya manajemen memang bodoh dan tak cekap.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_01,80.68,"I tak nak dengar alasan bilik penuh ke apa. Sekarang ni, I nak you upgrade I ke ","I tak nak dengar alasan bilik penuh ke apa. Sekarang ni, I nak you upgrade I ke ",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_01,86.68,sebagai ganti rugi masa I.,sebagai ganti rugi masa I.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_01,88.52,"Kalau tak, I bising dekat sini sampai semua guest lain dengar.","Kalau tak, I bising dekat sini sampai semua guest lain dengar.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_01,91.38,"Encik Razlan, saya faham Encik penat selepas perjalanan jauh.","Encik Razlan, saya faham Encik penat selepas perjalanan jauh.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_01,95.8,"Mengenai Presidential Suite,","Mengenai Presidential Suite,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_01,97.82,bilik tersebut telahpun dihuni oleh tetamu lain buat masa ini.,bilik tersebut telahpun dihuni oleh tetamu lain buat masa ini.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_01,101.1,"Namun, sebagai alternatif, untuk keselesaan Encik sementara menunggu bilik sedia","Namun, sebagai alternatif, untuk keselesaan Encik sementara menunggu bilik sedia",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_01,106.84,saya telah menyediakan dua keping pas masuk premium ke VIP lounge kami di tingka,saya telah menyediakan dua keping pas masuk premium ke VIP lounge kami di tingka,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_01,114.16,VIP lounge?,VIP lounge?,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_01,115.64,You ingat I tak mampu nak beli pas tu sendirikah?,You ingat I tak mampu nak beli pas tu sendirikah?,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_01,118.28,"I datang sini nak bilik, bukan nak minum kopi kat lounge you yang tak seberapa t","I datang sini nak bilik, bukan nak minum kopi kat lounge you yang tak seberapa t",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_01,122.66,"Berapa lama lagi I kena tunggu, eh?","Berapa lama lagi I kena tunggu, eh?",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_01,124.38,Tolong jangan bazirkan masa I yang berharga ni.,Tolong jangan bazirkan masa I yang berharga ni.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_01,126.34,"Pas lounge ini adalah tanda permohonan maaf ikhlas daripada pihak kami, Encik Ra","Pas lounge ini adalah tanda permohonan maaf ikhlas daripada pihak kami, Encik Ra",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_01,131.78,"Di sana, pihak kami telah menyediakan hidangan bufet ringan","Di sana, pihak kami telah menyediakan hidangan bufet ringan",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_01,135.24,dan ruang rehat berhawa dingin yang sangat selesa untuk Encik dan isteri.,dan ruang rehat berhawa dingin yang sangat selesa untuk Encik dan isteri.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_01,140.0,Saya juga sudah meminta penyelia housekeeping,Saya juga sudah meminta penyelia housekeeping,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_01,142.26,untuk meletakkan status bilik Encik sebagai keutamaan tertinggi.,untuk meletakkan status bilik Encik sebagai keutamaan tertinggi.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_01,146.62,Bilik Encik akan siap dalam masa 30 minit sahaja lagi.,Bilik Encik akan siap dalam masa 30 minit sahaja lagi.,1.0,1.0,Agent,Customer,False,True,False,,❌ WRONG
+my_rude_01,150.92,"30 minit, ya?","30 minit, ya?",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_01,152.64,"Kalau lebih 1 minit, I sendiri akan cari general manager you","Kalau lebih 1 minit, I sendiri akan cari general manager you",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_01,155.44,dan pastikan you kena pecat hari ini juga.,dan pastikan you kena pecat hari ini juga.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_01,157.72,Ambil pas tu.,Ambil pas tu.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_rude_01,158.98,"Baggage I, you suruh bellboy hantar terus macam bilik nanti.","Baggage I, you suruh bellboy hantar terus macam bilik nanti.",1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_rude_01,161.64,I tak nak tengok bag I sadai dekat lobi ni.,I tak nak tengok bag I sadai dekat lobi ni.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_rude_01,163.92,"Baik, Encik Razlan.","Baik, Encik Razlan.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_01,165.24,Baggage Encik akan kami uruskan dengan selamat,Baggage Encik akan kami uruskan dengan selamat,1.0,1.0,Agent,Customer,False,True,False,,❌ WRONG
+my_rude_01,167.78,dan dihantar terus ke dalam bilik sebaik sahaja bilik sedia.,dan dihantar terus ke dalam bilik sebaik sahaja bilik sedia.,1.0,1.0,Agent,Customer,False,True,False,,❌ WRONG
+my_rude_01,171.34,"Ini pas masuk ke VIP lounge Encik,","Ini pas masuk ke VIP lounge Encik,",1.0,1.0,Agent,Customer,False,True,False,,❌ WRONG
+my_rude_01,174.4,pihak staf kami di lift akan tunjukkan arah.,pihak staf kami di lift akan tunjukkan arah.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_01,177.28,"Dah, tak payah nak tunjuk-tunjuk jalan.","Dah, tak payah nak tunjuk-tunjuk jalan.",1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_rude_01,178.84,I tahulah sendiri mana nak pergi.,I tahulah sendiri mana nak pergi.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_rude_01,180.56,Nyusah kan betul.,Nyusah kan betul.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_rude_01,181.68,Terima kasih atas kesabaran Encik.,Terima kasih atas kesabaran Encik.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_01,183.72,Kami mohon maaf sekali lagi atas kelewatan ini,Kami mohon maaf sekali lagi atas kelewatan ini,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_01,186.64,"dan selamat berehat di resort kami, Encik Razlan.","dan selamat berehat di resort kami, Encik Razlan.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_01,189.76,Selamat petang.,Selamat petang.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT

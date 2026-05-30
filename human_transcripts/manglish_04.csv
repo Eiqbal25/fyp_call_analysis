@@ -1,0 +1,25 @@
+segment_id,role,text,start,end
+1,Agent,Selamat petang. Terima kasih kerana menghubungi Luxe Butik Care. Nama saya Zara. Boleh saya bantu urusan Cik hari ini?,0.0,6.52
+2,Customer,Hai saya. Saya nak tanya pasal refund untuk order baju saya hari itu.,6.84,10.62
+3,Customer,"I kena cancel sebab tersalah pilih saiz, tapi dah dua minggu still tak masuk akaun I lagi. Boleh tolong cek kan?",11.18,17.46
+4,Agent,Boleh. Tiada masalah.,17.86,19.24
+5,Agent,"Bagi saya order ID sekejap, ya?",19.68,21.34
+6,Agent,"Ah saya dah jumpa. Untuk refund ni memang lambat sikit ya sis. Sebab ikut terms and conditions kami,",21.34,27.84
+7,Agent,proses pemulangan akan ambil masa 14 hingga 30 hari bekerja.,28.28,32.1
+8,Customer,Oh 30 hari bekerja? Lamanya.,32.7,35.7
+9,Customer,Sebab hari tu dekat website tulis 3 to 5 days bank transfer sahaja.,36.1,40.48
+10,Customer,Tak ada cara nak expedite ke? Sebab I nak pakai duit tu untuk beli baju lain.,40.98,44.9
+11,Agent,"Haa. Website tu untuk normal season, sis.",45.6,48.8
+12,Agent,"Sekarang kan tengah peak season, logiklah kalau lambat. Takkan benda macam tu pun tak boleh fikir kot. Kita ada beribu customer lain nak kena layan, bukan you sorang je.",49.16,58.4
+13,Customer,Eh tapi mana I tahu? Dekat confirmation email tak ada pula tulis pasal 30 hari tu.,58.98,64.4
+14,Customer,"Takpelah. Kalau macam tu boleh I cakap dengan manager you,",65.0,67.92
+15,Customer,mana tahu dia boleh tolong ajas.,68.28,69.76
+16,Agent,Excuse me?,69.76,71.12
+17,Agent,"Tak payah nak pass kat manager sangatlah. Manager I pun busy. Tak ada masa nak layan benda kecik macam ni. Sebab itu sebelum beli, kena rajin membaca terms and conditions. Jangan tahu nak salahkan seller je bila lamat.",71.48,83.72
+18,Customer,"Amboi. Kenapa biadab sangat ni, Zara? I tanya elok-elok kan? You ni agent customer service ke apa? Cakap macam ni dengan pelanggan.",84.42,92.06
+19,Agent,"I cakap benda betul, sis. You yang tak sabar, lepas tu nak menyusahkan orang lain pula. Duit tu nanti masuklah. Bukannya company kami nak songlap duit you yang tak seberapa tu. Sikit-sikit nak panggil manager. Rimas lah.",92.06,104.76
+20,Customer,"You ni memang melampau ya. Bagi tahu I, nama penuh you sekarang. I nak buat aduan rasmi dekat HQ dan I akan viralkan rakaman call ni dekat TikTok biar semua orang tahu perangai you.",105.2,116.28
+21,Agent,"Ha, viral lah viral. Ingat I takut ke? Setakat ugut nak masuk TikTok, I pun tak heran lah. Nama I Zara. Eja betul-betul tau. Nanti jangan lupa share link kat I. Boleh I tengok sekali kebiadapan you tu.",116.28,128.5
+22,Customer,Kurang ajar betul. I tak pernah jumpa customer service seburuk you ni. I akan report kes ni dekat KPDN sekali. Biar padan muka you orang.,129.0,138.08
+23,Agent,"Report lah kat mana -mana yang you suka, sis. Ada I kisah.",138.6,141.78
+24,Agent,"Dah lah, malas I nak layan orang macam you ni. Menyemak je. Bye.",142.16,145.92

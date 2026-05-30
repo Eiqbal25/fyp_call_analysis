@@ -1,0 +1,47 @@
+[00:00:00] Agent: Selamat petang. Terima kasih kerana menjadi pelanggan setia Megafiber.
+[00:00:04] Agent: Nama saya Nadia. Boleh saya bercakap dengan Encik Faiz?
+[00:00:08] Customer: Ya, saya Faiz. Kenapa ya?
+[00:00:10] Customer: Kalau nak jual pakej baru, maaflah.
+[00:00:13] Customer: Saya tengah agak sibuk sekarang ni.
+[00:00:14] Customer: Lagipun, internet rumah saya sekarang dah okey.
+[00:00:17] Agent: Saya faham, Encik Faiz. Maaf mengganggu waktu sibuk, Encik.
+[00:00:21] Agent: Saya ringkaskan, ya?
+[00:00:23] Agent: Saya hubungi hari ini bukan nak jual pelan baharu,
+[00:00:26] Agent: tetapi mahu memberikan ganjaran naik taraf kelajuan internet sedia ada
+[00:00:31] Agent: khas untuk pelanggan setia seperti Encik.
+[00:00:34] Customer: Eh, tak apalah, Encik. Pakej 100 Mbps saya sekarang ni pun dah cukup rasanya.
+[00:00:39] Customer: Kalau upgrade nanti, bil bulanan jadi makin mahal pula.
+[00:00:42] Customer: Zaman sekarang ni kena berjimat sikit.
+[00:00:44] Agent: Betul, Encik Faiz. Bab berjimat tu memang saya sokong sangat.
+[00:00:48] Agent: Sebab itu saya hubungi Encik hari ini.
+[00:00:50] Agent: Mengikat sistem kami, penggunaan internet rumah Encik kerap mencecah tahap maksimum,
+[00:00:56] Agent: terutamanya pada waktu malam.
+[00:00:58] Agent: Encik ada hadapi masalah internet lag atau tersangkut-sangkut tak kebelakangan ni?
+[00:01:04] Customer: Hmm,
+[00:01:05] Customer: kalau waktu malam tu memang adalah sangkut sikit.
+[00:01:08] Customer: Terutamanya bila saya main game dan adik-adik saya layan penstriman video serentak.
+[00:01:13] Customer: Tapi takkan kalau upgrade tak kena tambah duit banyak?
+[00:01:16] Agent: Khas untuk kempen kesetiaan bulan ini, kami mahu naikkan kelajuan rumah Encik dari 100 Mbps terus ke 500 Mbps.
+[00:01:25] Agent: Yang menariknya,
+[00:01:26] Agent: Encik cuma perlu tambah RM10 sahaja daripada komitmen bulanan sekarang.
+[00:01:31] Agent: Malah kami akan tukar ruta lama Encik kepada ruta Wi-Fi 6 yang baru secara percuma.
+[00:01:37] Customer: Biar betul. Tambah RM10 sahaja sebulan, dapat kelajuan 500 Mbps.
+[00:01:42] Customer: Ruta baru pun percuma.
+[00:01:44] Customer: Pastikan tak ada bayaran tersembunyi yang tiba -tiba naik lepas beberapa bulan, ya?
+[00:01:48] Agent: Betul. Saya jamin tiada sebarang cas tersembunyi, Encik Faiz.
+[00:01:52] Agent: Harga tambahan RM10 ini tetap dan dikunci sepanjang kontrak berjalan.
+[00:01:57] Agent: Ruta Wi-Fi 6 percuma itu pula akan kami hantar dan pasangkan terus ke rumah Encik oleh pihak teknikal.
+[00:02:04] Agent: Masalah lag waktu malam di rumah Encik pasti selesai terus lepas ini.
+[00:02:08] Customer: Tambah RM10 sahaja, eh?
+[00:02:11] Customer: Ruta dekat rumah itu pun memang dah lama sangat.
+[00:02:13] Customer: Selalu kena restart kalau sangkut.
+[00:02:15] Customer: Okeylah kalau macam itu. Berbaloi juga rasanya kalau cuma tambah RM10.
+[00:02:19] Agent: Alhamdulillah. Pilihan yang sangat bijak, Encik Faiz.
+[00:02:22] Agent: Saya akan proseskan permohonan naik taraf kelajuan ini sekarang dalam sistem
+[00:02:27] Agent: dan kelajuan 500 Mbps itu akan aktif dalam masa 24 jam.
+[00:02:32] Agent: Untuk pemasanan ruta baharu, Encik, Encik ada di rumah hari Sabtu ini jam 10 pagi?
+[00:02:38] Customer: Hari Sabtu pagi? Okey. Saya memang ada di rumah.
+[00:02:41] Customer: Terima kasih banyak, ya, Encik, sebab maklumkan pasal tawaran ini.
+[00:02:44] Customer: Mujo saya tak letak telefon terus tadi.
+[00:02:46] Agent: Terima kasih atas masa, Encik, dan selamat petang.
+[00:02:49] Agent: Sampai jumpa.

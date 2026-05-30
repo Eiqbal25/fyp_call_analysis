@@ -1,0 +1,35 @@
+[00:00:00] Agent: Thank you for calling Nexus Stream Support. My name is David. How can I provide you with
+[00:00:04] Agent: excellent service today?
+[00:00:05] Customer: Hi, David. I'm calling because my bell just came out and it's $30
+[00:00:09] Customer: higher than usual. I just wanted to check if there was a mistake or a glitch on my account.
+[00:00:15] Agent: I can certainly check that for you. Let me pull up your account.
+[00:00:19] Agent: Ah, I see here that your 12-month promotional discount has ended,
+[00:00:22] Agent: so your account has reverted to our standard corporate pricing tier.
+[00:00:26] Customer: Oh, I see. I didn't receive any email warning me that the price was going to jump that much.
+[00:00:32] Customer: Is there any way I can renew the promotional rate or maybe sign up for a different package?
+[00:00:36] Agent: Well, the expiration date was clearly printed in bold on your original contract, sir.
+[00:00:42] Agent: We don't send out individual reminders to every single person.
+[00:00:46] Agent: If you wanted a cheaper plan, you should have called us before the deadline.
+[00:00:49] Customer: Right, but life gets busy and I missed it.
+[00:00:52] Customer: $30 is just a big jump for my budget.
+[00:00:54] Customer: Is there a supervisor or a retention specialist I could speak with to see if we can work something
+[00:00:59] Customer: out?
+[00:01:00] Agent: Look, a supervisor is just going to tell you the exact same thing I just did.
+[00:01:05] Agent: Transferring you is just wasting their time and mine. It's really not that hard to read your
+[00:01:10] Agent: own monthly statements, you know.
+[00:01:12] Customer: Excuse me?
+[00:01:13] Customer: Wow, there is absolutely no need
+[00:01:15] Customer: to be condescending. I am just asking a simple question about my options as a customer.
+[00:01:19] Agent: And I'm giving you a simple answer. You enjoyed a cheap discount for a whole year and now you have
+[00:01:26] Agent: to pay normal price like everyone else. That's how a business works. I can't just hand out freebies
+[00:01:31] Agent: because you forgot to check your emails.
+[00:01:33] Customer: This is completely unacceptable behavior for a support
+[00:01:36] Customer: agent. What is your full name and employee ID number? I am absolutely reporting this attitude
+[00:01:41] Customer: to your corporate office. Go right ahead. Look it up on your online portal. If you can find it,
+[00:01:46] Agent: that is, since you seem to have trouble reading basic information on your screen anyway.
+[00:01:50] Agent: I don't have time to hold your hand through a standard contract.
+[00:01:54] Customer: Unbelievable!
+[00:01:55] Customer: You know what? Cancel my service right now. I am not paying a single cent more
+[00:01:59] Customer: to a company that employs people like you.
+[00:02:02] Agent: Perfect. Consider it canceled. Let me press
+[00:02:04] Agent: the button for you so you can go complain somewhere else. Have a wonderful day.

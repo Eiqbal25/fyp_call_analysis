@@ -1,0 +1,170 @@
+[
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Yeah, what do you want? This is billing.",
+    "start": 0.0,
+    "end": 1.9,
+    "duration": 1.9
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Hi, I am calling because my bill is twice as high this month, and I do not understand why.",
+    "start": 2.68,
+    "end": 8.1,
+    "duration": 5.42
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Look, it's probably because you went over your data limit. Happens all the time.",
+    "start": 8.56,
+    "end": 12.46,
+    "duration": 3.9
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "But I have an unlimited data plan. I checked my contract before calling.",
+    "start": 12.68,
+    "end": 16.5,
+    "duration": 3.82
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Obviously, you don't or you wouldn't be charged.",
+    "start": 16.94,
+    "end": 19.38,
+    "duration": 2.44
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Do you have your account number or are we just going to guess?",
+    "start": 19.6,
+    "end": 21.78,
+    "duration": 2.18
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Wow, okay, there is no need to be rude. My account number is 554321.",
+    "start": 22.28,
+    "end": 27.82,
+    "duration": 5.54
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I'm not being rude. I'm just busy, all right? Pulling it up now.",
+    "start": 27.82,
+    "end": 31.46,
+    "duration": 3.64
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Yeah, like I said, you bought three premium movies last week. That's why the bill is high.",
+    "start": 31.94,
+    "end": 36.38,
+    "duration": 4.44
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I definitely did not buy any movies. I was out of town all of last week.",
+    "start": 36.7,
+    "end": 40.88,
+    "duration": 4.18
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Well, somebody in your house did. The system does not lie, so you have to pay it.",
+    "start": 41.18,
+    "end": 45.78,
+    "duration": 4.6
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I live alone. No one else has access to my account. Can you please check the login locations?",
+    "start": 46.04,
+    "end": 50.86,
+    "duration": 4.82
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I'm not technical support. I just handle billing. The charge is there, so you owe the money.",
+    "start": 51.34,
+    "end": 55.94,
+    "duration": 4.6
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I'm not paying for something I did not buy. I want to speak to your supervisor right now.",
+    "start": 55.94,
+    "end": 61.0,
+    "duration": 5.06
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Look, my supervisor is going to tell you the exact same thing. It's a waste of time.",
+    "start": 61.52,
+    "end": 65.92,
+    "duration": 4.4
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I don't care. I want to speak to them. This is the worst customer service I have ever experienced.",
+    "start": 66.32,
+    "end": 71.26,
+    "duration": 4.94
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Fine, whatever. Hold on and do not hang up because I'm not calling you back.",
+    "start": 71.78,
+    "end": 75.88,
+    "duration": 4.1
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Unbelievable.",
+    "start": 76.56,
+    "end": 77.0,
+    "duration": 0.44
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Just transfer me already.",
+    "start": 77.5,
+    "end": 78.52,
+    "duration": 1.02
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Yeah, yeah, putting you in the queue. You might be waiting a while though. Bye.",
+    "start": 79.04,
+    "end": 82.32,
+    "duration": 3.28
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Bye.",
+    "start": 82.32,
+    "end": 82.4,
+    "duration": 0.08
+  }
+]

@@ -2,251 +2,510 @@
 FYP1 LABEL COMPARISON REPORT — System vs Human Transcript
 =================================================================
 
-── bank_malay ────────────────────────────────────────
-  Total segments   : 48  (Matched=42  Unmatched=6)
-  Label accuracy   : 59.5%  (Correct=25  Wrong=23  Unmatched counted as wrong=6)
-  Precision        : 57.1%
-  Recall           : 60.0%
-  F1-Score         : 58.5%
-  Confusion        : TP=12 TN=13 FP=9 FN=8
-  Avg text sim     : 0.34
-  Text overrides   : 3 segment(s) corrected by strong phrase detection
-
-  Wrong labels (23):
-    [0.0s] System=Customer Human=Agent    | "Terselamat pagi."
-    [1.4s] System=Customer Human=Agent    | "Bank harapan dengan saya Amirul. Boleh saya bantu,"
-    [18.6s] System=Customer Human=Agent    | "Nak nombor kad pengenalan buat apa?"
-    [24.3s] System=Agent    Human=Customer | "Maaf, Encik Johan."
-    [31.0s] System=Customer Human=Agent    | "Menusahkan betul."
-    [33.5s] System=Customer Human=Unknown  | "890-2140-1553."
-    [39.4s] System=Agent    Human=Customer | "Sementara saya semak transaksi terakhir, Encik."
-    [42.6s] System=Customer Human=Unknown  | "Jangan suruh aku tunggu lama-lama."
-    [44.2s] System=Customer Human=Agent    | "Aku ada banyak kerja lain nak buat."
-    [45.8s] System=Customer Human=Agent    | "Bukan nak layan bank orang."
-    [48.3s] System=Agent    Human=Customer | "Saya nampak ada penulakan 100 rigit"
-    [50.6s] System=Agent    Human=Customer | "untuk charge tahunan kat credit, Encik."
-    [54.7s] System=Customer Human=Unknown  | "Aku dah guna kat ini 5 tahun."
-    [56.3s] System=Customer Human=Agent    | "Tak pernah ada charge tahunan."
-    [57.4s] System=Customer Human=Agent    | "Kau orang ini nak menipu ke?"
-    [60.7s] System=Agent    Human=Customer | "pengetualian charge tahunan hanya untuk tiga tahun"
-    [64.2s] System=Agent    Human=Customer | "Bermula tahun ke empat,"
-    [65.8s] System=Agent    Human=Customer | "charge akan dikenakan."
-    [78.4s] System=Customer Human=Unknown  | "Tak payah nak hantar permohonan sangat."
-    [91.9s] System=Agent    Human=Unknown  | "Angkat telefon je ke?"
-    [95.7s] System=Agent    Human=Customer | "Baiklah, Cik."
-    [96.7s] System=Agent    Human=Customer | "Saya akan sambungkan panggilan ini kepada pegawai "
-    [100.1s] System=Agent    Human=Unknown  | "Mohon tunggu sebentar."
-
-  Text override corrections (3):
-    ✅ [36.8s] → Customer (phrase: 'cepat sikit') | "Cepat sikit."
-    ✅ [90.3s] → Agent (phrase: 'habis itu kau buat apa') | "Habis itu kau buat apa di situ?"
-    ✅ [101.5s] → Agent (phrase: 'jangan nak melinggal') | "Sebab sikit. Jangan nak melinggal-lingga"
-
-── billing_english ───────────────────────────────────
-  Total segments   : 35  (Matched=35  Unmatched=0)
-  Label accuracy   : 54.3%  (Correct=19  Wrong=16  Unmatched counted as wrong=0)
-  Precision        : 52.9%
-  Recall           : 52.9%
-  F1-Score         : 52.9%
-  Confusion        : TP=9 TN=10 FP=8 FN=8
-  Avg text sim     : 0.43
-  Text overrides   : 5 segment(s) corrected by strong phrase detection
-
-  Wrong labels (16):
-    [6.0s] System=Agent    Human=Customer | "this month and I do not understand why."
-    [8.6s] System=Agent    Human=Customer | "Look, it's probably because you went over with you"
-    [10.7s] System=Customer Human=Agent    | "data limit. Happens all the time. But I have an un"
-    [15.8s] System=Agent    Human=Customer | "before calling."
-    [16.9s] System=Agent    Human=Customer | "Obviously, you don't or you wouldn't be charged."
-    [19.7s] System=Agent    Human=Customer | "Do you have your account"
-    [20.4s] System=Agent    Human=Customer | "number or are we just going to guess?"
-    [31.9s] System=Agent    Human=Customer | "Yeah, like I said,"
-    [38.6s] System=Customer Human=Agent    | "movies. I was out of town all of last week."
-    [51.4s] System=Agent    Human=Customer | "I'm not technical support. I just handle billing."
-    [55.4s] System=Customer Human=Agent    | "owe the money."
-    [60.8s] System=Customer Human=Agent    | "now."
-    [61.6s] System=Customer Human=Agent    | "Look, my supervisor is going to tell you the exact"
-    [71.7s] System=Customer Human=Agent    | "Fine."
-    [72.3s] System=Customer Human=Agent    | "Whatever."
-    [73.0s] System=Customer Human=Agent    | "Hold on and do not hang up because I'm not calling"
-
-  Text override corrections (5):
-    ✅ [2.7s] → Customer (phrase: 'i am calling because') | "Hi, I am calling because my bill is twic"
-    ❌ [10.7s] → Customer (phrase: 'i checked my') | "data limit. Happens all the time. But I "
-    ❌ [38.6s] → Customer (phrase: 'i was out of town') | "movies. I was out of town all of last we"
-    ❌ [51.4s] → Agent (phrase: 'i just handle') | "I'm not technical support. I just handle"
-    ✅ [79.0s] → Agent (phrase: 'putting you in the queue') | "Yeah. Putting you in the queue. You migh"
-
-── center_english ────────────────────────────────────
-  Total segments   : 42  (Matched=41  Unmatched=1)
-  Label accuracy   : 65.8%  (Correct=27  Wrong=15  Unmatched counted as wrong=1)
-  Precision        : 65.8%
-  Recall           : 96.2%
-  F1-Score         : 78.1%
-  Confusion        : TP=25 TN=2 FP=13 FN=1
-  Avg text sim     : 0.36
-
-  Wrong labels (15):
-    [7.8s] System=Agent    Human=Customer | "Hi, Marcus."
-    [9.0s] System=Agent    Human=Customer | "This is Sarah Jenkins."
-    [10.5s] System=Agent    Human=Customer | "I'm calling because I've noticed a double charge o"
-    [29.1s] System=Agent    Human=Customer | "Sure, it's 4492."
-    [49.0s] System=Agent    Human=Unknown  | "Oh, that's strange."
-    [51.4s] System=Agent    Human=Customer | "I didn't manually trigger anything."
-    [54.0s] System=Agent    Human=Customer | "Can we get that second one refunded today?"
-    [70.1s] System=Agent    Human=Customer | "I definitely didn't do that."
-    [72.1s] System=Agent    Human=Customer | "I was asleep at 3am when that charge went through."
-    [75.3s] System=Agent    Human=Customer | "Is there a supervisor I could talk to?"
-    [78.2s] System=Agent    Human=Customer | "Look,"
-    [86.4s] System=Customer Human=Agent    | "Excuse me?"
-    [93.6s] System=Agent    Human=Customer | "My tone?"
-    [109.9s] System=Agent    Human=Customer | "Giving your employee ID number right now."
-    [113.0s] System=Agent    Human=Customer | "How about you?"
-
-── delivery_malay ────────────────────────────────────
-  Total segments   : 36  (Matched=34  Unmatched=2)
-  Label accuracy   : 58.8%  (Correct=20  Wrong=16  Unmatched counted as wrong=2)
-  Precision        : 70.0%
-  Recall           : 38.9%
-  F1-Score         : 50.0%
-  Confusion        : TP=7 TN=13 FP=3 FN=11
-  Avg text sim     : 0.41
-  Text overrides   : 3 segment(s) corrected by strong phrase detection
-
-  Wrong labels (16):
-    [8.0s] System=Agent    Human=Customer | "Status tulis dah hantar."
-    [33.3s] System=Agent    Human=Customer | "Saya tengah banyak kerja ni, cik. Bukan cik sorang"
-    [37.3s] System=Agent    Human=Customer | "Okey, kejap. Saya tengok."
-    [42.3s] System=Customer Human=Agent    | "Pergilah cari kat luar ruh."
-    [43.8s] System=Customer Human=Agent    | "Saya dah cari satu rumah tak ada pun."
-    [46.5s] System=Customer Human=Agent    | "Hantar dia hantar salah rumah, kenapa?"
-    [48.8s] System=Customer Human=Agent    | "Alah saya tahu. Saya duduk pejabat. Bukan saya yan"
-    [59.7s] System=Customer Human=Agent    | "Anjik, tanggung jawab kita orang sampai barang tu "
-    [63.2s] System=Customer Human=Agent    | "lepas tu pandai-pandailah Korea."
-    [65.1s] System=Customer Human=Agent    | "Ini tak masuk akal."
-    [73.7s] System=Agent    Human=Unknown  | "Ada apa-apa lagi nak marah-marah ni?"
-    [75.5s] System=Customer Human=Agent    | "Kurang aja betul."
-    [76.7s] System=Customer Human=Agent    | "Saya nak cakap dengan pengurus awak."
-    [78.4s] System=Customer Human=Agent    | "Saya tak nak berusian dengan orang macam awak."
-    [80.7s] System=Customer Human=Unknown  | "Pengurus tak ada."
-    [87.8s] System=Customer Human=Agent    | "iyalah iyalah bye"
-
-  Text override corrections (3):
-    ✅ [4.4s] → Customer (phrase: 'saya nak tanya') | "Saya nak tanya pasal barang saya dah dua"
-    ✅ [15.4s] → Customer (phrase: 'saya tak terima') | "Masalahnya, saya tak terima apa-apa pun."
-    ✅ [29.7s] → Customer (phrase: 'saya pelanggan') | "Awak ni tak boleh kecakap iluk-iluk siki"
-
-── food_malay ────────────────────────────────────────
-  Total segments   : 24  (Matched=20  Unmatched=4)
-  Label accuracy   : 80.0%  (Correct=16  Wrong=8  Unmatched counted as wrong=4)
-  Precision        : 81.8%
-  Recall           : 81.8%
-  F1-Score         : 81.8%
-  Confusion        : TP=9 TN=7 FP=2 FN=2
-  Avg text sim     : 0.48
-
-  Wrong labels (8):
-    [27.9s] System=Customer Human=Agent    | "Nasi dengan sambal saja ada."
-    [30.0s] System=Customer Human=Agent    | "Macam mana nak makan macam ni?"
-    [36.4s] System=Agent    Human=Customer | "Berdasarkan rekod pesanan encik memang sepatutnya "
-    [52.9s] System=Agent    Human=Customer | "Baiklah. Saya akan uruskan proses bayaran balik se"
-    [73.1s] System=Agent    Human=Unknown  | "Ada apa-apa lagi yang boleh saya bantu?"
-    [74.6s] System=Customer Human=Unknown  | "Tak ada dah. Itu saja."
-    [76.7s] System=Agent    Human=Unknown  | "Terima kasih, Ya."
-    [77.8s] System=Agent    Human=Unknown  | "Sama-sama, Cik. Terima kasih kerana menghubungi ka"
-
-── insurance_english ─────────────────────────────────
-  Total segments   : 33  (Matched=31  Unmatched=2)
-  Label accuracy   : 90.3%  (Correct=28  Wrong=5  Unmatched counted as wrong=2)
+── eng_prof_01 ───────────────────────────────────────
+  Total segments   : 42  (Matched=42  Unmatched=0)
+  Label accuracy   : 100.0%  (Correct=42  Wrong=0  Unmatched counted as wrong=0)
   Precision        : 100.0%
-  Recall           : 85.0%
-  F1-Score         : 91.9%
-  Confusion        : TP=17 TN=11 FP=0 FN=3
-  Avg text sim     : 0.41
+  Recall           : 100.0%
+  F1-Score         : 100.0%
+  Confusion        : TP=25 TN=17 FP=0 FN=0
+  Avg text sim     : 1.00
+  ✅ All matched segments labelled correctly!
+
+── eng_prof_02 ───────────────────────────────────────
+  Total segments   : 43  (Matched=43  Unmatched=0)
+  Label accuracy   : 100.0%  (Correct=43  Wrong=0  Unmatched counted as wrong=0)
+  Precision        : 100.0%
+  Recall           : 100.0%
+  F1-Score         : 100.0%
+  Confusion        : TP=27 TN=16 FP=0 FN=0
+  Avg text sim     : 1.00
+  ✅ All matched segments labelled correctly!
+
+── eng_prof_03 ───────────────────────────────────────
+  Total segments   : 30  (Matched=30  Unmatched=0)
+  Label accuracy   : 100.0%  (Correct=30  Wrong=0  Unmatched counted as wrong=0)
+  Precision        : 100.0%
+  Recall           : 100.0%
+  F1-Score         : 100.0%
+  Confusion        : TP=17 TN=13 FP=0 FN=0
+  Avg text sim     : 1.00
+  ✅ All matched segments labelled correctly!
+
+── eng_prof_04 ───────────────────────────────────────
+  Total segments   : 23  (Matched=23  Unmatched=0)
+  Label accuracy   : 100.0%  (Correct=23  Wrong=0  Unmatched counted as wrong=0)
+  Precision        : 100.0%
+  Recall           : 100.0%
+  F1-Score         : 100.0%
+  Confusion        : TP=14 TN=9 FP=0 FN=0
+  Avg text sim     : 1.00
+  ✅ All matched segments labelled correctly!
+
+── eng_prof_05 ───────────────────────────────────────
+  Total segments   : 23  (Matched=23  Unmatched=0)
+  Label accuracy   : 91.3%  (Correct=21  Wrong=2  Unmatched counted as wrong=0)
+  Precision        : 90.0%
+  Recall           : 90.0%
+  F1-Score         : 90.0%
+  Confusion        : TP=9 TN=12 FP=1 FN=1
+  Avg text sim     : 1.00
+
+  Wrong labels (2):
+    [0.0s] System=Customer Human=Agent    | "Hello."
+    [134.6s] System=Agent    Human=Customer | "Thank you."
+
+── eng_rudeagt_01 ────────────────────────────────────
+  Total segments   : 48  (Matched=48  Unmatched=0)
+  Label accuracy   : 81.2%  (Correct=39  Wrong=9  Unmatched counted as wrong=0)
+  Precision        : 84.0%
+  Recall           : 80.8%
+  F1-Score         : 82.3%
+  Confusion        : TP=21 TN=18 FP=4 FN=5
+  Avg text sim     : 1.00
+
+  Wrong labels (9):
+    [50.3s] System=Agent    Human=Customer | "certainly your own doing. Oh, I see."
+    [113.3s] System=Agent    Human=Customer | "so we can resolve the mistake politely. And I'm te"
+    [139.5s] System=Customer Human=Agent    | "you. My financial situation is absolutely none of "
+    [159.0s] System=Agent    Human=Customer | "employee ID number right now."
+    [177.1s] System=Customer Human=Agent    | "but it's just going to get filtered out anyway. I "
+    [198.7s] System=Agent    Human=Customer | "Go ahead and dispute it with your credit card comp"
+    [214.5s] System=Customer Human=Agent    | "so you won't be missed at all. That is perfectly f"
+    [220.8s] System=Customer Human=Agent    | "support a brand that treats people this way. This "
+    [226.9s] System=Customer Human=Agent    | "your upper management will be appalled when they r"
+
+── eng_rudeagt_02 ────────────────────────────────────
+  Total segments   : 35  (Matched=35  Unmatched=0)
+  Label accuracy   : 97.1%  (Correct=34  Wrong=1  Unmatched counted as wrong=0)
+  Precision        : 100.0%
+  Recall           : 94.7%
+  F1-Score         : 97.3%
+  Confusion        : TP=18 TN=16 FP=0 FN=1
+  Avg text sim     : 1.00
+
+  Wrong labels (1):
+    [101.4s] System=Customer Human=Agent    | "to your corporate office. Go right ahead. Look it "
+
+── eng_rudeagt_03 ────────────────────────────────────
+  Total segments   : 38  (Matched=38  Unmatched=0)
+  Label accuracy   : 86.8%  (Correct=33  Wrong=5  Unmatched counted as wrong=0)
+  Precision        : 90.9%
+  Recall           : 87.0%
+  F1-Score         : 88.9%
+  Confusion        : TP=20 TN=13 FP=2 FN=3
+  Avg text sim     : 1.00
 
   Wrong labels (5):
-    [6.1s] System=Customer Human=Agent    | "Hi, Marcus."
-    [21.5s] System=Customer Human=Agent    | "Yes,"
-    [22.9s] System=Customer Human=Agent    | "just a second."
-    [58.0s] System=Customer Human=Unknown  | "Yes, please."
-    [62.9s] System=Agent    Human=Unknown  | "It's my"
+    [28.5s] System=Agent    Human=Customer | "Sure. It's 4492."
+    [83.4s] System=Customer Human=Agent    | "Do you think I'm just making this up for fun?"
+    [91.1s] System=Agent    Human=Customer | "There's no need for that tone."
+    [93.5s] System=Customer Human=Agent    | "My tone?"
+    [95.6s] System=Customer Human=Agent    | "Honestly, I'm tired of people calling in and playi"
 
-── internet_english ──────────────────────────────────
-  Total segments   : 30  (Matched=28  Unmatched=2)
-  Label accuracy   : 64.3%  (Correct=18  Wrong=12  Unmatched counted as wrong=2)
-  Precision        : 68.8%
-  Recall           : 68.8%
-  F1-Score         : 68.8%
-  Confusion        : TP=11 TN=7 FP=5 FN=5
-  Avg text sim     : 0.64
-  Text overrides   : 1 segment(s) corrected by strong phrase detection
+── eng_rudeagt_04 ────────────────────────────────────
+  Total segments   : 21  (Matched=21  Unmatched=0)
+  Label accuracy   : 100.0%  (Correct=21  Wrong=0  Unmatched counted as wrong=0)
+  Precision        : 100.0%
+  Recall           : 100.0%
+  F1-Score         : 100.0%
+  Confusion        : TP=11 TN=10 FP=0 FN=0
+  Avg text sim     : 1.00
+  ✅ All matched segments labelled correctly!
 
-  Wrong labels (12):
-    [21.6s] System=Agent    Human=Customer | "I understand your frustration."
-    [28.5s] System=Customer Human=Unknown  | "Fine. It is 987 -6543."
-    [51.9s] System=Agent    Human=Customer | "I do not care about nodes or line errors. I care a"
-    [57.2s] System=Agent    Human=Customer | "Give me a time."
-    [69.4s] System=Agent    Human=Customer | "I sincerely apologize for the disruption."
-    [76.0s] System=Customer Human=Agent    | "Keep your stupid $5 credit. I want a manager right"
-    [83.4s] System=Agent    Human=Customer | "Please hold on the line for a brief moment."
-    [85.2s] System=Customer Human=Unknown  | "Do not put me on hold."
-    [87.5s] System=Customer Human=Agent    | "Hello?"
-    [88.2s] System=Customer Human=Agent    | "Hello?"
-    [89.0s] System=Customer Human=Agent    | "Do not you dare put me on hold."
-    [99.7s] System=Customer Human=Agent    | "I swear."
+── eng_rudecust_01 ───────────────────────────────────
+  Total segments   : 45  (Matched=45  Unmatched=0)
+  Label accuracy   : 97.8%  (Correct=44  Wrong=1  Unmatched counted as wrong=0)
+  Precision        : 100.0%
+  Recall           : 96.2%
+  F1-Score         : 98.0%
+  Confusion        : TP=25 TN=19 FP=0 FN=1
+  Avg text sim     : 1.00
 
-  Text override corrections (1):
-    ❌ [51.9s] → Agent (phrase: 'line error') | "I do not care about nodes or line errors"
+  Wrong labels (1):
+    [42.1s] System=Customer Human=Agent    | "May I have your ticket or a last name? I don't car"
 
-── sky_malay ─────────────────────────────────────────
-  Total segments   : 42  (Matched=36  Unmatched=6)
-  Label accuracy   : 66.7%  (Correct=24  Wrong=18  Unmatched counted as wrong=6)
-  Precision        : 91.7%
-  Recall           : 50.0%
-  F1-Score         : 64.7%
-  Confusion        : TP=11 TN=13 FP=1 FN=11
-  Avg text sim     : 0.30
-  Text overrides   : 3 segment(s) corrected by strong phrase detection
+── eng_rudecust_02 ───────────────────────────────────
+  Total segments   : 39  (Matched=39  Unmatched=0)
+  Label accuracy   : 92.3%  (Correct=36  Wrong=3  Unmatched counted as wrong=0)
+  Precision        : 96.0%
+  Recall           : 92.3%
+  F1-Score         : 94.1%
+  Confusion        : TP=24 TN=12 FP=1 FN=2
+  Avg text sim     : 1.00
 
-  Wrong labels (18):
-    [8.3s] System=Agent    Human=Customer | "Selamat petang, Fidoz."
-    [47.9s] System=Customer Human=Agent    | "Boleh tak awak pun hubungi rider itu untuk kepasti"
-    [54.5s] System=Customer Human=Agent    | "Kalau dia tulis delivery,"
-    [55.7s] System=Customer Human=Agent    | "makna dia dah sampai lah."
-    [56.7s] System=Customer Human=Agent    | "Itu kan sistem nak dipiklock."
-    [68.9s] System=Customer Human=Agent    | "Cik ini tak faham bahasa."
-    [70.7s] System=Customer Human=Agent    | "Aku dah cakap dah sampai. Sampai lah."
-    [73.3s] System=Customer Human=Agent    | "Kau ingat aku ada masa nak layan drama orang yang "
-    [84.6s] System=Customer Human=Unknown  | "Uuh, Ros."
-    [85.8s] System=Customer Human=Agent    | "Tak yuk nak beranggan."
-    [87.2s] System=Customer Human=Agent    | "Kau ingat kau siapa?"
-    [88.6s] System=Customer Human=Agent    | "Stakek beranggan, macam tu pun nak bising-bising."
-    [91.0s] System=Customer Human=Agent    | "Kalau kawasan kakak pandai sangat, lain kali kegia"
-    [94.4s] System=Customer Human=Unknown  | "Uyau, minum mokkul aku kat petang."
-    [96.4s] System=Customer Human=Unknown  | "Saya akan buat riput tentang peranggan yang wok ni"
-    [99.1s] System=Customer Human=Unknown  | "Pegilah, rikut. Ada kesaw."
-    [101.6s] System=Customer Human=Unknown  | "Dahlah, malah ilmu layan orang -orang cikgu ni."
-    [103.7s] System=Customer Human=Unknown  | "Cikaknya kerja lain lah daripada kacau orang."
+  Wrong labels (3):
+    [53.8s] System=Agent    Human=Customer | "right."
+    [256.1s] System=Customer Human=Agent    | "Let's have a evening."
+    [256.3s] System=Customer Human=Agent    | "You're exercisingvuiosa."
 
-  Text override corrections (3):
-    ✅ [10.1s] → Customer (phrase: 'saya nak tanya') | "Saya nak tanya pasal barang saya."
-    ✅ [33.0s] → Agent (phrase: 'mengikut rekod') | "Tak mengikut rekod, rider kami dah hanta"
-    ✅ [52.5s] → Agent (phrase: 'sistem kami') | "Sistem kami automati."
+── eng_rudecust_03 ───────────────────────────────────
+  Total segments   : 31  (Matched=31  Unmatched=0)
+  Label accuracy   : 100.0%  (Correct=31  Wrong=0  Unmatched counted as wrong=0)
+  Precision        : 100.0%
+  Recall           : 100.0%
+  F1-Score         : 100.0%
+  Confusion        : TP=15 TN=16 FP=0 FN=0
+  Avg text sim     : 1.00
+  ✅ All matched segments labelled correctly!
+
+── eng_rudecust_04 ───────────────────────────────────
+  Total segments   : 35  (Matched=35  Unmatched=0)
+  Label accuracy   : 88.6%  (Correct=31  Wrong=4  Unmatched counted as wrong=0)
+  Precision        : 83.3%
+  Recall           : 93.8%
+  F1-Score         : 88.2%
+  Confusion        : TP=15 TN=16 FP=3 FN=1
+  Avg text sim     : 1.00
+
+  Wrong labels (4):
+    [103.9s] System=Customer Human=Agent    | "Unit 4B."
+    [139.7s] System=Agent    Human=Customer | "No, that's all."
+    [141.0s] System=Agent    Human=Customer | "Just make sure your system doesn't mess up my prof"
+    [144.5s] System=Agent    Human=Customer | "Goodbye."
+
+── eng_rudecust_05 ───────────────────────────────────
+  Total segments   : 30  (Matched=30  Unmatched=0)
+  Label accuracy   : 96.7%  (Correct=29  Wrong=1  Unmatched counted as wrong=0)
+  Precision        : 100.0%
+  Recall           : 94.1%
+  F1-Score         : 97.0%
+  Confusion        : TP=16 TN=13 FP=0 FN=1
+  Avg text sim     : 1.00
+
+  Wrong labels (1):
+    [85.5s] System=Customer Human=Agent    | "These phishing scams are incredibly sophisticated "
+
+── long_01 ───────────────────────────────────────────
+  Total segments   : 65  (Matched=65  Unmatched=0)
+  Label accuracy   : 87.7%  (Correct=57  Wrong=8  Unmatched counted as wrong=0)
+  Precision        : 97.5%
+  Recall           : 84.8%
+  F1-Score         : 90.7%
+  Confusion        : TP=39 TN=18 FP=1 FN=7
+  Avg text sim     : 1.00
+
+  Wrong labels (8):
+    [318.0s] System=Customer Human=Agent    | "Perfect. Oh, by the way, I just checked my laptop "
+    [328.4s] System=Agent    Human=Customer | "Wonderful."
+    [352.5s] System=Customer Human=Agent    | "I really appreciate the stellar service."
+    [368.2s] System=Customer Human=Agent    | "Thank you, Gilbert. You too."
+    [370.0s] System=Customer Human=Agent    | "Goodbye."
+    [370.6s] System=Customer Human=Agent    | "Goodbye."
+    [371.0s] System=Customer Human=Agent    | "Goodbye."
+    [371.4s] System=Customer Human=Agent    | "Goodbye."
+
+── manglish_01 ───────────────────────────────────────
+  Total segments   : 77  (Matched=77  Unmatched=0)
+  Label accuracy   : 79.2%  (Correct=61  Wrong=16  Unmatched counted as wrong=0)
+  Precision        : 86.8%
+  Recall           : 75.0%
+  F1-Score         : 80.5%
+  Confusion        : TP=33 TN=28 FP=5 FN=11
+  Avg text sim     : 1.00
+
+  Wrong labels (16):
+    [95.6s] System=Customer Human=Agent    | "Voucher?"
+    [96.4s] System=Customer Human=Agent    | "Then how do I get the new phone?"
+    [103.7s] System=Agent    Human=Customer | "Understand, Daphne."
+    [120.6s] System=Customer Human=Agent    | "Oh,"
+    [128.2s] System=Customer Human=Agent    | "No need to pay any extra fees, right?"
+    [137.2s] System=Agent    Human=Customer | "Everything is zero cost under your warranty."
+    [139.6s] System=Agent    Human=Customer | "I have already sent the voucher to your email."
+    [142.0s] System=Agent    Human=Customer | "Can you check if you got it or not?"
+    [144.1s] System=Customer Human=Agent    | "Wait, ah."
+    [145.2s] System=Customer Human=Agent    | "Okay, got it already."
+    [146.8s] System=Customer Human=Agent    | "Instant exchange voucher for Mid-Valley outlet."
+    [149.8s] System=Customer Human=Agent    | "Whew, nasib baik."
+    [153.4s] System=Agent    Human=Customer | "Most welcome, Daphne."
+    [162.9s] System=Customer Human=Agent    | "No, that's all."
+    [163.8s] System=Customer Human=Agent    | "I will go to the outlet straight after my meeting "
+    [166.5s] System=Customer Human=Agent    | "Thanks, Sharif."
+
+── manglish_02 ───────────────────────────────────────
+  Total segments   : 47  (Matched=47  Unmatched=0)
+  Label accuracy   : 97.9%  (Correct=46  Wrong=1  Unmatched counted as wrong=0)
+  Precision        : 95.8%
+  Recall           : 100.0%
+  F1-Score         : 97.9%
+  Confusion        : TP=23 TN=23 FP=1 FN=0
+  Avg text sim     : 0.84
+
+  Wrong labels (1):
+    [126.0s] System=Agent    Human=Customer | "Saya lekat dulu"
+
+── manglish_03 ───────────────────────────────────────
+  Total segments   : 76  (Matched=76  Unmatched=0)
+  Label accuracy   : 98.7%  (Correct=75  Wrong=1  Unmatched counted as wrong=0)
+  Precision        : 100.0%
+  Recall           : 97.6%
+  F1-Score         : 98.8%
+  Confusion        : TP=40 TN=35 FP=0 FN=1
+  Avg text sim     : 1.00
+
+  Wrong labels (1):
+    [139.4s] System=Customer Human=Agent    | "Awesome."
+
+── manglish_04 ───────────────────────────────────────
+  Total segments   : 24  (Matched=24  Unmatched=0)
+  Label accuracy   : 95.8%  (Correct=23  Wrong=1  Unmatched counted as wrong=0)
+  Precision        : 100.0%
+  Recall           : 92.3%
+  F1-Score         : 96.0%
+  Confusion        : TP=12 TN=11 FP=0 FN=1
+  Avg text sim     : 1.00
+
+  Wrong labels (1):
+    [142.2s] System=Customer Human=Agent    | "Dah lah, malas I nak layan orang macam you ni. Men"
+
+── manglish_05 ───────────────────────────────────────
+  Total segments   : 41  (Matched=41  Unmatched=0)
+  Label accuracy   : 92.7%  (Correct=38  Wrong=3  Unmatched counted as wrong=0)
+  Precision        : 100.0%
+  Recall           : 87.5%
+  F1-Score         : 93.3%
+  Confusion        : TP=21 TN=17 FP=0 FN=3
+  Avg text sim     : 1.00
+
+  Wrong labels (3):
+    [15.9s] System=Customer Human=Agent    | "I'll make it fast -fast, yeah?"
+    [127.1s] System=Customer Human=Agent    | "Can, no problem."
+    [128.6s] System=Customer Human=Agent    | "Black colour looks very premium."
+
+── my_prof_01 ────────────────────────────────────────
+  Total segments   : 29  (Matched=29  Unmatched=0)
+  Label accuracy   : 100.0%  (Correct=29  Wrong=0  Unmatched counted as wrong=0)
+  Precision        : 100.0%
+  Recall           : 100.0%
+  F1-Score         : 100.0%
+  Confusion        : TP=12 TN=17 FP=0 FN=0
+  Avg text sim     : 1.00
+  ✅ All matched segments labelled correctly!
+
+── my_prof_02 ────────────────────────────────────────
+  Total segments   : 33  (Matched=33  Unmatched=0)
+  Label accuracy   : 100.0%  (Correct=33  Wrong=0  Unmatched counted as wrong=0)
+  Precision        : 100.0%
+  Recall           : 100.0%
+  F1-Score         : 100.0%
+  Confusion        : TP=21 TN=12 FP=0 FN=0
+  Avg text sim     : 1.00
+  ✅ All matched segments labelled correctly!
+
+── my_prof_03 ────────────────────────────────────────
+  Total segments   : 23  (Matched=23  Unmatched=0)
+  Label accuracy   : 100.0%  (Correct=23  Wrong=0  Unmatched counted as wrong=0)
+  Precision        : 100.0%
+  Recall           : 100.0%
+  F1-Score         : 100.0%
+  Confusion        : TP=12 TN=11 FP=0 FN=0
+  Avg text sim     : 1.00
+  ✅ All matched segments labelled correctly!
+
+── my_prof_04 ────────────────────────────────────────
+  Total segments   : 30  (Matched=30  Unmatched=0)
+  Label accuracy   : 96.7%  (Correct=29  Wrong=1  Unmatched counted as wrong=0)
+  Precision        : 94.1%
+  Recall           : 100.0%
+  F1-Score         : 97.0%
+  Confusion        : TP=16 TN=13 FP=1 FN=0
+  Avg text sim     : 1.00
+
+  Wrong labels (1):
+    [31.0s] System=Agent    Human=Customer | "Menyusahkan betul."
+
+── my_prof_05 ────────────────────────────────────────
+  Total segments   : 54  (Matched=54  Unmatched=0)
+  Label accuracy   : 98.2%  (Correct=53  Wrong=1  Unmatched counted as wrong=0)
+  Precision        : 100.0%
+  Recall           : 96.8%
+  F1-Score         : 98.4%
+  Confusion        : TP=30 TN=23 FP=0 FN=1
+  Avg text sim     : 1.00
+
+  Wrong labels (1):
+    [153.1s] System=Customer Human=Agent    | "Ha."
+
+── my_rude_01 ────────────────────────────────────────
+  Total segments   : 61  (Matched=61  Unmatched=0)
+  Label accuracy   : 83.6%  (Correct=51  Wrong=10  Unmatched counted as wrong=0)
+  Precision        : 87.9%
+  Recall           : 82.9%
+  F1-Score         : 85.3%
+  Confusion        : TP=29 TN=22 FP=4 FN=6
+  Avg text sim     : 1.00
+
+  Wrong labels (10):
+    [146.6s] System=Agent    Human=Customer | "Bilik Encik akan siap dalam masa 30 minit sahaja l"
+    [157.7s] System=Customer Human=Agent    | "Ambil pas tu."
+    [159.0s] System=Customer Human=Agent    | "Baggage I, you suruh bellboy hantar terus macam bi"
+    [161.6s] System=Customer Human=Agent    | "I tak nak tengok bag I sadai dekat lobi ni."
+    [165.2s] System=Agent    Human=Customer | "Baggage Encik akan kami uruskan dengan selamat"
+    [167.8s] System=Agent    Human=Customer | "dan dihantar terus ke dalam bilik sebaik sahaja bi"
+    [171.3s] System=Agent    Human=Customer | "Ini pas masuk ke VIP lounge Encik,"
+    [177.3s] System=Customer Human=Agent    | "Dah, tak payah nak tunjuk-tunjuk jalan."
+    [178.8s] System=Customer Human=Agent    | "I tahulah sendiri mana nak pergi."
+    [180.6s] System=Customer Human=Agent    | "Nyusah kan betul."
+
+── my_rude_02 ────────────────────────────────────────
+  Total segments   : 81  (Matched=81  Unmatched=0)
+  Label accuracy   : 70.4%  (Correct=57  Wrong=24  Unmatched counted as wrong=0)
+  Precision        : 85.7%
+  Recall           : 71.2%
+  F1-Score         : 77.8%
+  Confusion        : TP=42 TN=15 FP=7 FN=17
+  Avg text sim     : 0.99
+
+  Wrong labels (24):
+    [45.3s] System=Agent    Human=Customer | "Oh, bercuti keluar negara."
+    [47.2s] System=Agent    Human=Customer | "Tapi Encik, sepanjang dua bulan lepas,"
+    [49.6s] System=Agent    Human=Customer | "saya memang tak ada keluar dari kawasan Kuala Rump"
+    [92.8s] System=Customer Human=Agent    | "Tidak perlu sampai menyindir saya seperti itu."
+    [109.4s] System=Agent    Human=Customer | "kami tak ada masa nak pantau aktiviti harian telef"
+    [123.2s] System=Customer Human=Agent    | "tolong pas talian ini kepada pengurus"
+    [125.1s] System=Customer Human=Agent    | "atau supervisor Encik sekarang juga."
+    [127.1s] System=Customer Human=Agent    | "Saya mahu bercakap dengan pihak atasan yang lebih "
+    [135.2s] System=Agent    Human=Customer | "ingat manajer kami duduk kat pejabat sahaja-sahaja"
+    [139.4s] System=Agent    Human=Customer | "Bil dah keluar dalam sistem,"
+    [141.1s] System=Agent    Human=Customer | "maksudnya Encik wagit bayar je lah."
+    [146.8s] System=Customer Human=Agent    | "Saya benar-benar terkejut dengan layanan Encik har"
+    [149.7s] System=Customer Human=Agent    | "Ini bukan cara perkhidmatan korporat dikendalikan."
+    [152.6s] System=Customer Human=Agent    | "Sila berikan nama penuh Encik"
+    [153.9s] System=Customer Human=Agent    | "dan juga nombor ID pekerja Encik sekarang."
+    [156.1s] System=Customer Human=Agent    | "Saya akan buat laporan rasmi terus ke ibu pejabat"
+    [158.5s] System=Customer Human=Agent    | "dan juga aduan ke SKMM."
+    [178.4s] System=Customer Human=Agent    | "Baik Encik Imran."
+    [179.4s] System=Customer Human=Agent    | "Perbualan ini sedang dirakam oleh sistem Encik sen"
+    [182.3s] System=Customer Human=Agent    | "dan saya pasti pihak pengurusan tertinggi"
+    [184.5s] System=Customer Human=Agent    | "tidak akan bertoleransi dengan sikap biadab sebegi"
+    [188.2s] System=Customer Human=Agent    | "Terima kasih kerana tidak menyelesaikan masalah sa"
+    [190.8s] System=Customer Human=Agent    | "Saya akan gunakan saluran lain."
+    [192.8s] System=Customer Human=Agent    | "Ada saya kisah pasal rakaman."
+
+── my_rude_03 ────────────────────────────────────────
+  Total segments   : 44  (Matched=44  Unmatched=0)
+  Label accuracy   : 100.0%  (Correct=44  Wrong=0  Unmatched counted as wrong=0)
+  Precision        : 100.0%
+  Recall           : 100.0%
+  F1-Score         : 100.0%
+  Confusion        : TP=29 TN=15 FP=0 FN=0
+  Avg text sim     : 1.00
+  ✅ All matched segments labelled correctly!
+
+── my_sales_01 ───────────────────────────────────────
+  Total segments   : 56  (Matched=56  Unmatched=0)
+  Label accuracy   : 66.1%  (Correct=37  Wrong=19  Unmatched counted as wrong=0)
+  Precision        : 75.8%
+  Recall           : 69.4%
+  F1-Score         : 72.5%
+  Confusion        : TP=25 TN=12 FP=8 FN=11
+  Avg text sim     : 1.00
+
+  Wrong labels (19):
+    [57.3s] System=Customer Human=Agent    | "Kebetulan pula,"
+    [99.2s] System=Customer Human=Agent    | "Berapa ya komitmen bulanan kalau saya ambil pelan "
+    [113.3s] System=Agent    Human=Customer | "Encik cuma perlu bayar RM65 sahaja sebulan."
+    [116.8s] System=Agent    Human=Customer | "Harga ini sudah termasuk servis penukaran penapis "
+    [120.8s] System=Agent    Human=Customer | "dan jaminan penuh sepanjang tempoh kontrak."
+    [123.6s] System=Customer Human=Agent    | "Bia betul. RM65 sahaja sebulan."
+    [127.2s] System=Customer Human=Agent    | "Jarak harganya agak jauh berbanding harga asal ya."
+    [129.9s] System=Customer Human=Agent    | "Tapi saya kena berbincang dengan isteri saya dulul"
+    [140.1s] System=Agent    Human=Customer | "Untuk memudahkan perancangan Encik berdua,"
+    [142.6s] System=Agent    Human=Customer | "apa kata saya hantarkan seorang pakar konsultan ka"
+    [146.7s] System=Agent    Human=Customer | "untuk tunjukkan demo produk secara ringkas."
+    [155.0s] System=Customer Human=Agent    | "Kalau macam tu, bagus juga."
+    [156.3s] System=Customer Human=Agent    | "Hari Sabtu petang dalam pukul 3 petang, kami berdu"
+    [164.3s] System=Agent    Human=Customer | "Baik Encik Hazik."
+    [165.4s] System=Agent    Human=Customer | "Saya dah jadualkan slot janji temu untuk hari Sabt"
+    [177.3s] System=Customer Human=Agent    | "Sama-sama Encik Syarul."
+    [178.8s] System=Customer Human=Agent    | "Terima kasih kembali atas tawaran hebat ini."
+    [181.2s] System=Customer Human=Agent    | "Kita jumpa hari Sabtu nanti."
+    [182.7s] System=Customer Human=Agent    | "Assalamualaikum."
+
+── my_sales_02 ───────────────────────────────────────
+  Total segments   : 47  (Matched=47  Unmatched=0)
+  Label accuracy   : 100.0%  (Correct=47  Wrong=0  Unmatched counted as wrong=0)
+  Precision        : 100.0%
+  Recall           : 100.0%
+  F1-Score         : 100.0%
+  Confusion        : TP=26 TN=21 FP=0 FN=0
+  Avg text sim     : 1.00
+  ✅ All matched segments labelled correctly!
 
 =================================================================
 OVERALL SUMMARY
 =================================================================
 Call ID                   Accuracy      F1  Correct  Wrong
 -----------------------------------------------------------------
-bank_malay                   59.5%   58.5%       25     23
-billing_english              54.3%   52.9%       19     16
-center_english               65.8%   78.1%       27     15
-delivery_malay               58.8%   50.0%       20     16
-food_malay                   80.0%   81.8%       16      8
-insurance_english            90.3%   91.9%       28      5
-internet_english             64.3%   68.8%       18     12
-sky_malay                    66.7%   64.7%       24     18
+eng_prof_01                 100.0%  100.0%       42      0
+eng_prof_02                 100.0%  100.0%       43      0
+eng_prof_03                 100.0%  100.0%       30      0
+eng_prof_04                 100.0%  100.0%       23      0
+eng_prof_05                  91.3%   90.0%       21      2
+eng_rudeagt_01               81.2%   82.3%       39      9
+eng_rudeagt_02               97.1%   97.3%       34      1
+eng_rudeagt_03               86.8%   88.9%       33      5
+eng_rudeagt_04              100.0%  100.0%       21      0
+eng_rudecust_01              97.8%   98.0%       44      1
+eng_rudecust_02              92.3%   94.1%       36      3
+eng_rudecust_03             100.0%  100.0%       31      0
+eng_rudecust_04              88.6%   88.2%       31      4
+eng_rudecust_05              96.7%   97.0%       29      1
+long_01                      87.7%   90.7%       57      8
+manglish_01                  79.2%   80.5%       61     16
+manglish_02                  97.9%   97.9%       46      1
+manglish_03                  98.7%   98.8%       75      1
+manglish_04                  95.8%   96.0%       23      1
+manglish_05                  92.7%   93.3%       38      3
+my_prof_01                  100.0%  100.0%       29      0
+my_prof_02                  100.0%  100.0%       33      0
+my_prof_03                  100.0%  100.0%       23      0
+my_prof_04                   96.7%   97.0%       29      1
+my_prof_05                   98.2%   98.4%       53      1
+my_rude_01                   83.6%   85.3%       51     10
+my_rude_02                   70.4%   77.8%       57     24
+my_rude_03                  100.0%  100.0%       44      0
+my_sales_01                  66.1%   72.5%       37     19
+my_sales_02                 100.0%  100.0%       47      0
 -----------------------------------------------------------------
-AVERAGE                      67.5%   68.3%
+AVERAGE                      93.3%   94.1%
 
-❌ Labelling accuracy below 75% — check diarization output in outputs/{call_id}_diarized.json
+✅ Labelling accuracy ≥ 90% — good performance
+
+=================================================================
+CALL OUTCOME & BEHAVIOR SUMMARY
+=================================================================
+Call ID                   Outcome        Agent Rude   Cust Rude
+-----------------------------------------------------------------
+eng_prof_01               ✅ Resolved     NONE         NONE
+eng_prof_02               ✅ Resolved     NONE         NONE
+eng_prof_03               ✅ Resolved     NONE         NONE
+eng_prof_04               ✅ Resolved     NONE         NONE
+eng_prof_05               ✅ Resolved     NONE         NONE
+eng_rudeagt_01            ✅ Resolved     HIGH         NONE
+eng_rudeagt_02            🔄 Escalated    HIGH         HIGH
+eng_rudeagt_03            ✅ Resolved     HIGH         NONE
+eng_rudeagt_04            📞 Transferred  MEDIUM       HIGH
+eng_rudecust_01           ❌ Unresolved   NONE         HIGH
+eng_rudecust_02           ✅ Resolved     NONE         HIGH
+eng_rudecust_03           📞 Transferred  NONE         HIGH
+eng_rudecust_04           ✅ Resolved     NONE         HIGH
+eng_rudecust_05           ✅ Resolved     NONE         NONE
+long_01                   ✅ Resolved     NONE         NONE
+manglish_01               ✅ Resolved     NONE         NONE
+manglish_02               ✅ Resolved     NONE         HIGH
+manglish_03               ✅ Resolved     NONE         NONE
+manglish_04               🔄 Escalated    HIGH         HIGH
+manglish_05               ✅ Resolved     NONE         NONE
+my_prof_01                ✅ Resolved     NONE         NONE
+my_prof_02                ✅ Resolved     NONE         NONE
+my_prof_03                ✅ Resolved     NONE         NONE
+my_prof_04                ✅ Resolved     NONE         HIGH
+my_prof_05                ✅ Resolved     MEDIUM       NONE
+my_rude_01                ✅ Resolved     NONE         HIGH
+my_rude_02                ✅ Resolved     HIGH         HIGH
+my_rude_03                ✅ Resolved     HIGH         NONE
+my_sales_01               ✅ Resolved     NONE         NONE
+my_sales_02               ✅ Resolved     NONE         NONE
+-----------------------------------------------------------------
+Outcomes: ✅ Resolved=25  ❌ Unresolved=1  🔄 Escalated=2  📞 Transferred=2

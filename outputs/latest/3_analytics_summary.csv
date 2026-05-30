@@ -1,9 +1,31 @@
 call_id,duration_sec,snr_before_db,snr_after_db,snr_improvement_db,agent_talk_pct,customer_talk_pct,silence_pct,interaction_type,customer_sentiment,agent_sentiment,sentiment_trend,interpretation,compliance_score,compliance_label,risk_severity,qa_score,rating
-bank_malay,103.891,1.63,5.15,3.52,43.33,36.52,20.15,Balanced (Interactive),0.0104,0.0166,Stable,Routine Interaction,0.0,Non-Compliant,Medium,59.38,Fair
-billing_english,82.731,0.97,0.72,-0.25,43.85,42.62,13.53,Balanced (Interactive),-0.0708,0.1343,Declining,Churn Risk — Unresolved Issue,0.25,Non-Compliant,Medium,62.39,Fair
-center_english,122.32,-0.88,0.36,1.24,70.55,4.53,24.92,Asymmetric Interaction,-0.1863,0.0358,Stable,Churn Risk — Unresolved Issue,0.5,Partially Compliant,Clean,53.41,Needs Improvement
-delivery_malay,88.971,1.83,4.71,2.88,30.66,55.3,14.04,Balanced (Interactive),0.0,0.0309,Stable,Routine Interaction,0.0,Non-Compliant,Clean,52.98,Needs Improvement
-food_malay,80.691,0.83,2.77,1.94,51.08,35.82,13.1,Balanced (Interactive),0.0,0.0,Stable,Routine Interaction,0.0,Non-Compliant,Medium,60.14,Fair
-insurance_english,70.131,-0.37,-1.13,-0.76,45.26,37.13,17.61,Balanced (Interactive),0.179,0.1273,Improving,Successful Service Recovery,0.5,Partially Compliant,Clean,70.78,Fair
-internet_english,106.171,-0.63,2.23,2.86,49.09,36.68,14.23,Balanced (Interactive),-0.1062,0.0915,Improving,Churn Risk — Unresolved Issue,0.75,Partially Compliant,Medium,76.17,Good
-sky_malay,105.64,0.98,-0.36,-1.34,20.3,53.22,26.49,Asymmetric Interaction,0.0,0.0,Stable,Routine Interaction,0.0,Non-Compliant,Clean,47.65,Needs Improvement
+eng_prof_02,155.011,0.58,2.65,2.07,55.18,36.97,7.85,Balanced (Interactive),0.3024,0.2411,Improving,Successful Service Recovery,0.5,Partially Compliant,Clean,73.36,Fair
+eng_prof_03,171.651,-1.59,0.21,1.8,55.25,38.02,6.73,Balanced (Interactive),0.358,0.2427,Improving,Successful Service Recovery,0.25,Non-Compliant,Clean,69.23,Fair
+eng_prof_04,70.131,-0.37,-1.13,-0.76,49.17,41.12,9.71,Balanced (Interactive),0.1846,0.16,Improving,Successful Service Recovery,0.5,Partially Compliant,Clean,72.97,Fair
+eng_prof_05,134.96,-1.03,-0.97,0.06,62.09,31.43,6.48,Asymmetric Interaction,0.2455,0.523,Improving,Successful Service Recovery,0.25,Non-Compliant,Clean,67.14,Fair
+eng_rudeagt_01,244.931,2.54,4.14,1.6,50.72,46.6,2.67,Balanced (Interactive),0.1027,0.1021,Improving,Successful Service Recovery,0.5,Partially Compliant,Medium,67.4,Fair
+eng_rudeagt_02,152.211,1.72,4.14,2.42,42.39,36.03,21.58,Balanced (Interactive),-0.0233,0.2253,Improving,Emotional Mismatch — Agent Too Cheerful for Context,0.5,Partially Compliant,Medium,62.99,Fair
+eng_rudeagt_03,122.32,-0.88,0.36,1.24,51.36,32.21,16.43,Balanced (Interactive),0.0137,0.0291,Declining,Churn Risk — Unresolved Issue,0.5,Partially Compliant,Medium,67.14,Fair
+eng_rudeagt_04,82.731,0.97,0.72,-0.25,47.72,42.69,9.59,Balanced (Interactive),-0.0265,0.1541,Declining,Churn Risk — Unresolved Issue,0.25,Non-Compliant,Medium,64.3,Fair
+eng_rudecust_01,187.371,-1.42,-2.39,-0.97,55.64,40.2,4.16,Balanced (Interactive),0.0171,0.1845,Improving,Successful Service Recovery,0.5,Partially Compliant,Clean,69.28,Fair
+eng_rudecust_02,256.491,-0.92,-0.12,0.8,54.6,42.34,3.06,Balanced (Interactive),0.0334,0.3169,Improving,Successful Service Recovery,0.5,Partially Compliant,Low,72.2,Fair
+eng_rudecust_03,106.171,-0.63,2.23,2.86,45.91,44.61,9.49,Balanced (Interactive),-0.0938,0.1058,Declining,Churn Risk — Unresolved Issue,0.75,Partially Compliant,Medium,74.81,Fair
+eng_rudecust_04,145.331,-0.05,0.16,0.21,51.0,42.56,6.43,Balanced (Interactive),0.0078,0.1537,Improving,Successful Service Recovery,0.5,Partially Compliant,Clean,72.87,Fair
+eng_rudecust_05,128.28,-3.75,-3.29,0.46,54.26,34.72,11.02,Balanced (Interactive),0.1443,0.3224,Stable,Routine Interaction,0.75,Partially Compliant,Clean,78.79,Good
+long_01,371.491,0.52,2.04,1.52,60.42,34.68,4.9,Asymmetric Interaction,0.322,0.3201,Stable,Routine Interaction,0.75,Partially Compliant,Clean,77.92,Good
+eng_prof_01,176.491,1.12,1.76,0.64,56.85,36.23,6.92,Balanced (Interactive),0.301,0.3525,Improving,Successful Service Recovery,0.75,Partially Compliant,Clean,78.06,Good
+manglish_01,171.651,-0.74,1.0,1.74,46.62,39.07,14.31,Balanced (Interactive),0.0283,0.126,Improving,Successful Service Recovery,0.5,Partially Compliant,Medium,70.46,Fair
+manglish_02,126.931,-0.22,-0.38,-0.16,47.41,45.65,6.94,Balanced (Interactive),0.0017,0.0094,Stable,Routine Interaction,0.0,Non-Compliant,Clean,61.27,Fair
+manglish_03,148.56,-2.16,-1.71,0.45,42.33,34.59,23.09,Balanced (Interactive),0.106,0.0912,Improving,Successful Service Recovery,0.75,Partially Compliant,Low,73.91,Fair
+manglish_04,146.291,3.14,7.04,3.9,50.6,42.89,6.52,Balanced (Interactive),-0.0208,0.0723,Stable,Routine Interaction,0.0,Non-Compliant,Medium,57.3,Fair
+manglish_05,128.691,0.45,1.25,0.8,64.0,41.09,0.0,Balanced (Interactive),0.1651,0.2592,Improving,Successful Service Recovery,0.5,Partially Compliant,Clean,67.53,Fair
+my_prof_01,139.411,1.53,3.42,1.89,52.75,40.14,7.11,Balanced (Interactive),0.0,0.0412,Stable,Routine Interaction,0.0,Non-Compliant,Clean,60.0,Fair
+my_prof_02,143.611,1.71,2.28,0.57,57.47,35.23,7.29,Balanced (Interactive),0.0,0.0,Stable,Routine Interaction,0.0,Non-Compliant,Clean,57.23,Fair
+my_prof_03,80.691,0.83,2.77,1.94,51.65,37.77,10.57,Balanced (Interactive),0.0,0.0,Stable,Routine Interaction,0.0,Non-Compliant,Medium,59.86,Fair
+my_prof_04,103.891,1.63,5.15,3.52,48.92,40.6,10.48,Balanced (Interactive),0.02,0.0,Stable,Routine Interaction,0.0,Non-Compliant,Medium,61.16,Fair
+my_prof_05,157.12,-1.74,-2.48,-0.74,47.49,30.73,21.78,Balanced (Interactive),0.0,0.0,Stable,Routine Interaction,0.0,Non-Compliant,Clean,57.41,Fair
+my_rude_01,190.891,-1.1,-2.48,-1.38,58.28,32.32,9.39,Asymmetric Interaction,0.022,0.0513,Stable,Routine Interaction,0.0,Non-Compliant,Medium,57.35,Fair
+my_rude_02,204.571,1.48,3.37,1.89,48.15,38.09,13.76,Balanced (Interactive),0.0,0.0101,Stable,Routine Interaction,0.0,Non-Compliant,Medium,55.09,Fair
+my_rude_03,105.64,0.98,-0.36,-1.34,47.44,30.84,21.72,Balanced (Interactive),0.0,0.0,Stable,Routine Interaction,0.0,Non-Compliant,Low,54.4,Needs Improvement
+my_sales_01,187.451,1.84,1.57,-0.27,59.6,32.25,8.15,Asymmetric Interaction,0.0,0.0309,Stable,Routine Interaction,0.0,Non-Compliant,Clean,56.52,Fair
+my_sales_02,169.771,0.93,1.78,0.85,61.07,30.57,8.36,Asymmetric Interaction,0.0,-0.0262,Stable,Routine Interaction,0.0,Non-Compliant,Clean,55.3,Fair

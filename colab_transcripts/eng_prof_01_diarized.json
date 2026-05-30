@@ -1,0 +1,338 @@
+[
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Good morning. Thank you for calling Beacon Health Telehealth Coordination.",
+    "start": 0.0,
+    "end": 4.2,
+    "duration": 4.2
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "My name is Evelyn. How may I assist you with your medical appointments today?",
+    "start": 4.52,
+    "end": 8.4,
+    "duration": 3.88
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Good morning, Evelyn. This is Arthur speaking.",
+    "start": 8.82,
+    "end": 11.48,
+    "duration": 2.66
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I have a virtual consultation scheduled with Dr. Aris, the cardiologist, tomorrow at 2 p.m.",
+    "start": 11.72,
+    "end": 18.26,
+    "duration": 6.54
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "However, an urgent board meeting was just moved to that exact time.",
+    "start": 18.5,
+    "end": 22.6,
+    "duration": 4.1
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I am incredibly sorry for the short notice, but is there any way I could reschedule?",
+    "start": 22.84,
+    "end": 27.74,
+    "duration": 4.9
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Good morning, Mr. Arthur. Please don't worry at all.",
+    "start": 27.74,
+    "end": 31.2,
+    "duration": 3.46
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "We completely understand that unexpected professional commitments arise.",
+    "start": 31.36,
+    "end": 35.62,
+    "duration": 4.26
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Dr. Aris has a busy clinic, but ensuring your health tracking remains uninterrupted is our top priority.",
+    "start": 35.94,
+    "end": 42.3,
+    "duration": 6.36
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Let me pull up your patient file right away. May I please have your full name and date of birth?",
+    "start": 42.6,
+    "end": 47.78,
+    "duration": 5.18
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Thank you, Evelyn. I appreciate your understanding.",
+    "start": 48.2,
+    "end": 50.9,
+    "duration": 2.7
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "My full name is Arthur Pendleton, and my date of birth is March 22,",
+    "start": 50.9,
+    "end": 56.28,
+    "duration": 5.38
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "1978.",
+    "start": 56.74,
+    "end": 57.9,
+    "duration": 1.16
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Thank you very much, Mr. Pendleton.",
+    "start": 59.04,
+    "end": 60.66,
+    "duration": 1.62
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Please give me just a moment while I access Dr. Aris' calendar for the upcoming week.",
+    "start": 60.86,
+    "end": 65.9,
+    "duration": 5.04
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I am reviewing his availability right now.",
+    "start": 66.02,
+    "end": 68.66,
+    "duration": 2.64
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Please take your time. I know specialist slots can be quite difficult to secure.",
+    "start": 69.08,
+    "end": 73.94,
+    "duration": 4.86
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Thank you for your patience. You are correct. His calendar is quite full, and we usually require a 48-hour notice.",
+    "start": 73.94,
+    "end": 81.86,
+    "duration": 7.92
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "But because this is a follow-up consultation, and I can see your recent lab reports are already uploaded,",
+    "start": 82.06,
+    "end": 88.18,
+    "duration": 6.12
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I want to make sure you speak to him soon.",
+    "start": 88.46,
+    "end": 90.8,
+    "duration": 2.34
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I see a slot opened up this Friday morning at 9 a.m. due to a cancellation.",
+    "start": 91.22,
+    "end": 95.8,
+    "duration": 4.58
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Would that time work for you?",
+    "start": 96.12,
+    "end": 97.5,
+    "duration": 1.38
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Oh, Friday morning at 9 a.m. would be absolutely perfect. That is much sooner than I expected.",
+    "start": 97.5,
+    "end": 103.64,
+    "duration": 6.14
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Will I need to resubmit my medical history forms, or will they carry over automatically?",
+    "start": 103.92,
+    "end": 109.1,
+    "duration": 5.18
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Everything carries over automatically, Mr. Pendleton.",
+    "start": 109.64,
+    "end": 112.62,
+    "duration": 2.98
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Your file, lab reports, and insurance authorization are already linked to the new slot.",
+    "start": 113.0,
+    "end": 118.78,
+    "duration": 5.78
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I have officially locked in your appointment for Friday at 9 a.m. fully virtual, just like before.",
+    "start": 119.02,
+    "end": 124.98,
+    "duration": 5.96
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Wonderful.",
+    "start": 124.98,
+    "end": 126.06,
+    "duration": 1.08
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "You have been incredibly efficient, Evelyn.",
+    "start": 126.42,
+    "end": 128.64,
+    "duration": 2.22
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Navigating medical appointments can sometimes feel daunting, but you made this transition entirely seamless.",
+    "start": 129.22,
+    "end": 135.18,
+    "duration": 5.96
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "It is truly my pleasure, Mr. Pendleton.",
+    "start": 135.72,
+    "end": 138.0,
+    "duration": 2.28
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "We want to ensure your journey with Beacon Health is as comfortable as possible.",
+    "start": 138.26,
+    "end": 142.62,
+    "duration": 4.36
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I have added a note to Dr. Aris regarding the date shift so he is fully prepared.",
+    "start": 142.84,
+    "end": 147.72,
+    "duration": 4.88
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "You will receive a new, secure video link via SMS and email in just a few moments.",
+    "start": 147.98,
+    "end": 153.76,
+    "duration": 5.78
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Perfect.",
+    "start": 153.76,
+    "end": 154.78,
+    "duration": 1.02
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I see the confirmation email hitting my inbox right now.",
+    "start": 155.14,
+    "end": 158.46,
+    "duration": 3.32
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Thank you once again for your stellar support and wonderful professionalism today, Evelyn.",
+    "start": 158.68,
+    "end": 163.72,
+    "duration": 5.04
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Have a fantastic day ahead.",
+    "start": 163.98,
+    "end": 165.66,
+    "duration": 1.68
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "You are very welcome, Mr. Pendleton.",
+    "start": 165.92,
+    "end": 168.08,
+    "duration": 2.16
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "It was a pleasure assisting you.",
+    "start": 168.3,
+    "end": 170.02,
+    "duration": 1.72
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Best of luck with your board meeting tomorrow, and we will see you virtually this Friday.",
+    "start": 170.18,
+    "end": 174.68,
+    "duration": 4.5
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Take care and goodbye.",
+    "start": 175.06,
+    "end": 176.02,
+    "duration": 0.96
+  }
+]

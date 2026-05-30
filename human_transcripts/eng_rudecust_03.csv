@@ -1,0 +1,32 @@
+segment_id,role,text,start,end
+1,Agent,Thank you for calling ConnectNet Technical Support. My name is Alex. How can I help you today?,0.0,4.68
+2,Customer,My internet is down again. This is the third time this week and I am sick of it.,5.26,10.2
+3,Agent,I apologize for the inconvenience. Let me pull up your account. Can I get your account number?,10.5,15.32
+4,Customer,Are you kidding me? I just typed it into the automated system. Why do I have to repeat it to you?,15.72,21.0
+5,Agent,I understand your frustration. Sometimes the system does not pass the information over.,21.38,26.32
+6,Agent,I just need it to access your router.,26.32,28.52
+7,Customer,Fine. It is 987 -6543.,29.26,32.76
+8,Customer,Hurry up. I work from home and I am,33.16,35.54
+9,Customer,losing money.,35.54,36.62
+10,Agent,Thank you. Give me one moment while I run a diagnostic on your connection.,37.12,40.9
+11,Customer,Whatever. Just fix it. Your company is a complete joke.,41.38,44.66
+12,Agent,I am seeing a line error in your area.,45.04,47.82
+13,Agent,Our technicians are actually already working on a node nearby.,48.1,51.32
+14,Customer,I do not care about nodes or line,51.74,54.72
+15,Customer,errors. I care about when I can get back online.,54.72,57.2
+16,Customer,Give me a time.,57.64,58.66
+17,Agent,The estimated time of resolution,59.08,61.18
+18,Agent,is within the next two hours.,61.18,63.18
+19,Customer,Two hours? Are you out of your mind? I have a meeting in 20 minutes. This,63.66,67.96
+20,Customer,is unacceptable.,67.96,68.76
+21,Agent,I sincerely apologize for the disruption.,69.42,71.8
+22,Agent,We can offer you a credit for the,72.2,73.72
+23,Agent,days you experienced outages.,73.72,75.34
+24,Customer,Keep your stupid $5 credit. I want a manager right now.,75.78,80.1
+25,Agent,I can certainly transfer you to a supervisor. Please hold on the line for a brief moment.,80.1,85.34
+26,Customer,Do not put me on hold. Hello? Hello?,85.66,88.44
+27,Customer,Do not you dare put me on hold.,88.82,90.82
+28,Agent,"Sir, I have to place you on a brief hold to connect the supervisor. It will only be a minute.",91.16,95.98
+29,Customer,"If you put me on hold, I am canceling my service today. I swear.",96.28,100.22
+30,Agent,I am transferring you now. Please stay on the line.,100.66,103.3
+31,Customer,You guys are absolutely useless.,103.3,105.58

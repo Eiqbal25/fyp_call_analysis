@@ -1,0 +1,49 @@
+segment_id,role,text,start,end
+1,Agent,Good afternoon.,0.0,0.7
+2,Agent,Thank you for calling Velvet Glow Beauty Care. My name is Chloe. How may I add a,1.12,5.92
+3,Customer,"little radiance to your day today? Good afternoon, Chloe. I hope you're having a lovely day.",5.92,11.08
+4,Customer,I'm calling because I noticed a discrepancy on my bank statement this morning. I am a subscriber,11.42,17.36
+5,Customer,"to your premium gold skincare box, which is $90 a month, but I was charged twice this month for",17.36,24.22
+6,Customer,a total of $180.,24.22,25.78
+7,Customer,Could you help me look into this error?,26.46,28.42
+8,Agent,"Sigh. Well, our system processes",28.86,32.0
+9,Agent,"thousands of transactions flawlessly every day, ma'am, so it's highly unlikely to be a system",32.0,37.86
+10,Agent,error on our end. You probably just clicked the submit order button twice on our checkout page,37.86,44.0
+11,Agent,"during your monthly renewal, or your banking app refreshed abnormally. The double charge is almost",44.0,50.32
+12,Customer,"certainly your own doing. Oh, I see.",50.32,53.18
+13,Customer,"However, my account is set to automatic renewal, so I didn't",53.54,57.82
+14,Customer,actually manually check out or press any buttons this month. Both charges have the exact same,57.82,63.9
+15,Customer,transaction timestamp. Could you please pull up my profile and check if the duplicate payment can,63.9,69.32
+16,Agent,"be refunded back to my card? Look, I am looking at your profile right now, and I really don't have",69.32,75.78
+17,Agent,time to deep dive into your personal banking history. All sales on our premium boxes are,75.78,81.74
+18,Agent,strictly final and non-refundable. It's clearly stated in our terms of service. If you have an,81.74,87.86
+19,Agent,"issue with your bank showing two charges, you need to go complain to your bank, not to us.",87.86,93.24
+20,Customer,"Chloe, there is no need to be defensive or use that tone with me. I am asking a very standard question",93.68,100.44
+21,Customer,as a loyal subscriber. The bank confirmed the funds went directly to your company under two,100.44,106.58
+22,Customer,identical invoice numbers. I am simply asking for a supervisor or a billing specialist to review this,106.58,113.26
+23,Customer,so we can resolve the mistake politely. And I'm telling you that my supervisor is incredibly busy,113.26,120.14
+24,Agent,"preparing for a massive product launch, and she definitely doesn't have the time to sit down",120.14,125.32
+25,Agent,"and audit a single $90 charge for you. It's just $90 for luxury skincare, ma'am. If this minor",125.32,133.4
+26,Agent,"amount is causing such a massive crisis for your budget, maybe luxury subscriptions aren't right for",133.4,139.48
+27,Agent,"you. My financial situation is absolutely none of your business, Chloe, and that comment was",139.48,146.12
+28,Customer,incredibly disrespectful.,146.12,147.54
+29,Customer,The amount is a matter of principle and corporate honesty. Since you are,147.98,152.6
+30,Customer,"actively refusing to assist me or transfer me to a manager,",152.6,156.28
+31,Customer,please provide your full name and your,156.74,159.04
+32,Customer,employee ID number right now.,159.04,160.76
+33,Agent,"Go right ahead and get offended, ma 'am. My name is Chloe. You can spell",161.48,166.0
+34,Agent,it exactly how it sounds. I don't have an employee ID number to give you because our corporate data is,166.0,171.96
+35,Agent,"confidential. Feel free to send a long email to our support inbox if it makes you feel better,",171.96,177.14
+36,Agent,but it's just going to get filtered out anyway. I am honestly stunned by your lack of professionalism.,177.14,183.76
+37,Customer,This is easily the most hostile customer service experience I have ever had. I will be contacting,183.96,190.2
+38,Customer,"your corporate headquarters directly, and I will also file a formal dispute through my credit card",190.2,195.68
+39,Customer,company for unauthorized billing.,195.68,197.64
+40,Customer,Go ahead and dispute it with your credit card company. Do whatever,198.66,202.6
+41,Agent,"you want, ma'am. If you file a chargeback, our system will automatically blacklist your account",202.6,208.18
+42,Agent,"and cancel your subscription permanently anyway. We have plenty of VIP clients waiting for that spot,",208.18,214.5
+43,Agent,"so you won't be missed at all. That is perfectly fine with me, as I have absolutely no desire to",214.52,220.8
+44,Agent,"support a brand that treats people this way. This call is recorded on your network, and I am confident",220.8,226.88
+45,Agent,"your upper management will be appalled when they review your behavior. Goodbye, Chloe. I really",226.88,232.86
+46,Agent,"couldn't care less about your threats or your recordings, ma'am. I have actual clients on my",232.86,238.06
+47,Agent,other line who don't waste my entire afternoon over $90.,238.06,241.72
+48,Agent,Enjoy your bank dispute. Goodbye.,242.34,244.54

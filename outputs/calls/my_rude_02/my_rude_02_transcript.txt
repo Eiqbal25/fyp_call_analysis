@@ -1,0 +1,81 @@
+[00:00:00] Agent: Selamat petang. Terima kasih kerana menghubungi Telco Line Care.
+[00:00:03] Agent: Nama saya Imran. Ada apa-apa yang boleh saya bantu uruskan hari ini?
+[00:00:08] Customer: Selamat petang, Encik Imran. Saya harap Encik sihat.
+[00:00:11] Customer: Saya nak tanya sedikit fasil akaun saya bulan ini.
+[00:00:14] Customer: Biasanya bil saya cuma RM60 sahaja setiap bulan.
+[00:00:17] Customer: Tapi kali ini saya tengok dalam aplikasi naik sampai RM140.
+[00:00:22] Customer: Boleh tolong semakkan kalau ada kesilapan sistem.
+[00:00:26] Agent: Tak ada silapnya tu, Encik.
+[00:00:28] Agent: Sistem kami dilaraskan secara otomatik.
+[00:00:31] Agent: Jadi memang mustahil untuk salah kira.
+[00:00:34] Agent: RM140 tu maksudnya Encik ada guna data roaming
+[00:00:37] Agent: atau langganan pihak ketiga lah tu masa pergi bercuti hari tu.
+[00:00:41] Agent: Pihak kami cuma cas apa yang telefon Encik guna sahaja.
+[00:00:45] Agent: Oh, bercuti keluar negara.
+[00:00:47] Agent: Tapi Encik, sepanjang dua bulan lepas,
+[00:00:49] Agent: saya memang tak ada keluar dari kawasan Kuala Rumpur pun.
+[00:00:52] Customer: Apatah lagi luar negara.
+[00:00:54] Customer: Boleh saya tahu tarikh atau butiran terperinci data roaming tu digunakan?
+[00:00:58] Customer: Manalah tahu sistem tersalah letak cas bawah nombor akaun saya.
+[00:01:02] Agent: Eh, mana boleh salah?
+[00:01:03] Agent: Encik ingat sistem syarikat gergasi macam kami ni bodoh sangat ke
+[00:01:07] Agent: sampai boleh sesuka hati tukai akaun orang?
+[00:01:10] Agent: Tak payah nak petikaikan sistem lah.
+[00:01:13] Agent: Dah kalau dalam rekod komputer tulis ada guna,
+[00:01:15] Agent: maksudnya Encik yang gunalah tu.
+[00:01:18] Agent: Takkanlah hantu pula yang curik-curik guna telefon Encik kot.
+[00:01:21] Customer: Encik Imran, tolong jaga bahasa Encik ya.
+[00:01:24] Customer: Saya tanya elok-elok sebagai pelanggan sedia ada.
+[00:01:27] Customer: Dan saya rasa saya berhak untuk tahu butiran bil saya sendiri.
+[00:01:30] Customer: Saya cuba minta penjelasan yang jelas sahaja.
+[00:01:32] Customer: Tidak perlu sampai menyindir saya seperti itu.
+[00:01:35] Agent: Penjelasan apa lagi, Encik?
+[00:01:37] Agent: Saya dah bagitahu kan?
+[00:01:38] Agent: Dalam sistem, tertera cas tusah.
+[00:01:40] Agent: Kalau Encik sendiri tak tahu apa yang Encik langgan
+[00:01:43] Agent: atau anak-anak Encik ada main telefon sampai tertekan iklan,
+[00:01:47] Agent: itu bukan salah kamilah.
+[00:01:49] Agent: kami tak ada masa nak pantau aktiviti harian telefon Encik satu persatu.
+[00:01:53] Customer: Encik Imran, saya tinggal seorang diri
+[00:01:55] Customer: dan tidak ada anak kecil yang main telefon saya, Encik.
+[00:01:59] Customer: Memandangkan Encik Enggan membantu saya menyemak butiran ini dengan betul,
+[00:02:03] Customer: tolong pas talian ini kepada pengurus
+[00:02:05] Customer: atau supervisor Encik sekarang juga.
+[00:02:07] Customer: Saya mahu bercakap dengan pihak atasan yang lebih profesional.
+[00:02:10] Agent: Hmph,
+[00:02:12] Agent: supervisor saya pun tak ada masalah
+[00:02:13] Agent: nak layan benda remeh-temeh macam ni.
+[00:02:15] Agent: ingat manajer kami duduk kat pejabat sahaja-sahaja tunggu panggilan Encik ke?
+[00:02:19] Agent: Bil dah keluar dalam sistem,
+[00:02:21] Agent: maksudnya Encik wagit bayar je lah.
+[00:02:23] Agent: Tak payah nak banyak songih sangat sampai nak panggil manajer bagai.
+[00:02:26] Customer: Saya benar-benar terkejut dengan layanan Encik hari ni.
+[00:02:29] Customer: Ini bukan cara perkhidmatan korporat dikendalikan.
+[00:02:32] Customer: Sila berikan nama penuh Encik
+[00:02:33] Customer: dan juga nombor ID pekerja Encik sekarang.
+[00:02:36] Customer: Saya akan buat laporan rasmi terus ke ibu pejabat
+[00:02:38] Customer: dan juga aduan ke SKMM.
+[00:02:40] Agent: Hmph,
+[00:02:41] Agent: aduh lah aduh.
+[00:02:42] Agent: Ingat saya takut ke dengan ugutan macam tu?
+[00:02:45] Agent: Setakat nak lapor ke SKMM,
+[00:02:47] Agent: beribu-ribu orang dah buatlah Encik.
+[00:02:49] Agent: Tak ada kesan apa pun dekat saya.
+[00:02:51] Agent: Nama saya Imran.
+[00:02:53] Agent: Eja betul-betul ya.
+[00:02:54] Agent: ID pekerja saya tak payah tahu.
+[00:02:56] Agent: Bukan urusan Encik pun.
+[00:02:58] Customer: Baik Encik Imran.
+[00:02:59] Customer: Perbualan ini sedang dirakam oleh sistem Encik sendiri
+[00:03:02] Customer: dan saya pasti pihak pengurusan tertinggi
+[00:03:04] Customer: tidak akan bertoleransi dengan sikap biadab sebegini terhadap pelanggan.
+[00:03:08] Customer: Terima kasih kerana tidak menyelesaikan masalah saya.
+[00:03:10] Customer: Saya akan gunakan saluran lain.
+[00:03:12] Customer: Ada saya kisah pasal rakaman.
+[00:03:15] Agent: Lagipun malaslah saya nak bazir masa
+[00:03:16] Agent: melayan pelanggan yang tak faham bahasa macam Encik ni.
+[00:03:19] Agent: Menyemak petang saya je.
+[00:03:21] Agent: Dahlah,
+[00:03:21] Agent: bayar je bil tu kalau tak nak land kena sekat.
+[00:03:24] Agent: Bye.
+[00:03:24] Agent: Terima kasih kerana menonton!

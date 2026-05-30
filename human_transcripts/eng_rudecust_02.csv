@@ -1,0 +1,40 @@
+segment_id,role,text,start,end
+1,Agent,Good afternoon.,0.0,0.78
+2,Agent,Thank you for calling SkyPass Travel Solutions.,1.26,4.06
+3,Agent,My name is Fiona.,4.48,5.36
+4,Agent,How may I assist you with your flight booking today?,5.72,8.22
+5,Customer,"Finally! I've been on hold for 20 minutes. Listen, Fiona, I just got an alert saying my flight to Chicago tomorrow morning was changed from 10 a.m. to 7 a.m. This is completely unacceptable. I am not waking up at 4 in the morning just because you're company.",8.92,23.28
+6,Agent,"I am so sorry for the surprise schedule change, ma 'am. I completely understand that a three -hour shift is incredibly inconvenient.",23.28,32.76
+7,Agent,Let me look at your booking right away so I can...,33.34,36.24
+8,Customer,Don't just apologize. Fix it. My name is Regina Vance. The booking code is XYZ552. I have an incredibly important business presentation at 2 p .m. and moving my flight to 7 a .m. completely ruins my entire morning schedule. I demand you change it back to 10 a .m.,36.24,53.4
+9,Customer,right.,53.78,53.98
+10,Agent,"Thank you, Regina. I have pulled up your itinerary. I see the shift here.",53.98,59.74
+11,Agent,"Just to explain briefly, the airline actually canceled the 10 a .m. aircraft due to a mechanical issue, so they automatically moved all passengers to the earlier...",60.14,71.82
+12,Customer,"I don't care about their mechanical issues. That is your problem to solve, not mine. Why am I being penalized for their broken planes? If that flight is canceled, then put me on a different airline at 10 a.m.",71.82,83.3
+13,Customer,"I know for a fact United Airlines has a flight around that time, so just transfer my ticket over.",83.34,88.86
+14,Agent,"I completely hear you, Regina. Let me check the live availability for the United Airlines at 10.15 a.m. for you right now.",89.16,97.86
+15,Agent,"Okay, I do see open seats in their cabin, but because it is a different airline alliance, our system requires...",97.86,106.74
+16,Customer,I don't care about your system's requirements or your alliances. Do you not understand what urgent business means?,106.74,112.64
+17,Customer,"I paid full price for a premium ticket on your website, and I expect you to click whatever buttons you need to click to make this right.",112.82,119.98
+18,Customer,I am not hanging up this phone until I get...,120.16,122.48
+19,Agent,"I understand completely, and I am not going to hang up until we have a solution you are happy with.",122.48,128.9
+20,Agent,I am currently bypassing the automated system to issue a priority partner override.,129.14,135.32
+21,Agent,This will allow me to transfer your booking to the United Airlines at 10 .15 a .m.,135.52,141.24
+22,Agent,without charging you any...,141.64,143.3
+23,Customer,"Well, do it faster, then. Why does everything take so long with you people?",143.3,147.32
+24,Customer,"And what about my baggage? If you transfer me to United, is my luggage going to get lost in transition, or are you actually going to manually ensure that it...",147.52,155.92
+25,Agent,"Your baggage data will sync perfectly, Regina.",155.92,159.06
+26,Agent,I am manually linking your original baggage tags directly to the new United Airlines profile right now.,159.46,166.86
+27,Agent,"You will check in at the United desk tomorrow morning, exactly like normal, and your baggage will...",167.06,173.66
+28,Customer,"Fine. They better be there when I land. Now, what about my seat assignment? I originally paid extra for an aisle seat in row 5 because I need to get off the plane quickly for my meeting. If you put me in a middle seat at the back of the plane, I'm going to be absolutely...",173.66,187.52
+29,Agent,I completely understand.,187.52,189.48
+30,Agent,"Quick deplaning is crucial for your schedule. I have just checked the United seating map, and I was able to secure seat 4C for you, which is a premium aisle seat even closer to the front of the aircraft. I have also waived the fee for that selection as a gesture of our...",189.86,208.3
+31,Customer,"Fine. Row 4? Hmm. Well, I suppose that is acceptable. Send the new boarding passes to my email immediately. I need to print them out before I leave the office tonight. And make sure the confirmation number doesn't...",208.3,220.16
+32,Agent,"I have just clicked Send, Regina. The new United Airlines e-ticket and confirmation code should be hitting your inbox in about 30 seconds. I highly recommend checking your spam folder, just in case it takes a moment to route through.",220.16,235.14
+33,Agent,Is there any other detail I can double-check for your travel tomorrow?,235.14,239.14
+34,Customer,"No, that's all. Next time, your agency needs to notify people before you go changing their lives around. Goodbye.",239.46,245.78
+35,Agent,"We will certainly take that feedback to heart, Regina.",246.18,249.32
+36,Agent,"Safe travels on your flight tomorrow,",249.82,251.64
+37,Agent,"best of luck with your business presentation, and have a wonderful evening.",252.04,256.06
+38,Agent,Let's have a evening.,256.06,256.16
+39,Agent,You're exercisingvuiosa.,256.32,256.46

@@ -1,0 +1,186 @@
+[
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Sama petang, pusat bantuan makan sini.",
+    "start": 0.0,
+    "end": 2.18,
+    "duration": 2.18
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Saya Siti. Boleh saya bantu Encik?",
+    "start": 2.54,
+    "end": 4.62,
+    "duration": 2.08
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Helo, Siti.",
+    "start": 4.92,
+    "end": 5.82,
+    "duration": 0.9
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Saya nak tanya pasal pesanan saya tadi. Saya baru perasan ada barang yang tertinggal dalam plastik ni.",
+    "start": 6.2,
+    "end": 11.4,
+    "duration": 5.2
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Minta maaf atas kesulitan tersebut, Encik. Boleh saya dapatkan nombor pesanan Encik untuk saya buat semakan dalam sistem?",
+    "start": 11.76,
+    "end": 18.3,
+    "duration": 6.54
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Nombor dia MS8821.",
+    "start": 18.78,
+    "end": 21.98,
+    "duration": 3.2
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Saya pesan set nasi lemak ayam berempah dengan air sirap.",
+    "start": 22.46,
+    "end": 25.82,
+    "duration": 3.36
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Tapi ayamnya tak ada.",
+    "start": 25.82,
+    "end": 27.5,
+    "duration": 1.68
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Nasi dengan sambal je ada.",
+    "start": 28.0,
+    "end": 29.48,
+    "duration": 1.48
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Macam mana nak makan macam ni?",
+    "start": 30.0,
+    "end": 31.28,
+    "duration": 1.28
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Saya faham perasaan Encik. Saya pun akan kecewa kalau jadi macam ni.",
+    "start": 31.64,
+    "end": 35.82,
+    "duration": 4.18
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Berdasarkan rekod, pesanan Encik memang sepatutnya ada ayam.",
+    "start": 36.42,
+    "end": 39.62,
+    "duration": 3.2
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Encik nak saya pulangkan duit, refund untuk bahagian ayam itu?",
+    "start": 39.84,
+    "end": 43.54,
+    "duration": 3.7
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Atau Encik nak baucer untuk pesanan akan datang?",
+    "start": 43.76,
+    "end": 46.14,
+    "duration": 2.38
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Kalau boleh, saya nak refund sajalah. Sebab saya dah lapar sangat ni. Kena beli makanan lain pula nanti.",
+    "start": 46.54,
+    "end": 52.24,
+    "duration": 5.7
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Baiklah. Saya akan uruskan proses bayaran balik serta-merta.",
+    "start": 52.24,
+    "end": 56.2,
+    "duration": 3.96
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Proses ini akan mengambil masa dalam 24 jam untuk masuk semula ke dalam e-wallet, Encik.",
+    "start": 56.5,
+    "end": 61.38,
+    "duration": 4.88
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Okeylah kalau macam tu. Harap lepas ni pihak restoran lebih peka lah ya.",
+    "start": 61.86,
+    "end": 65.96,
+    "duration": 4.1
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Jangan cuai sangat bungkus makanan.",
+    "start": 66.3,
+    "end": 67.82,
+    "duration": 1.52
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Betul, Encik. Kami akan hantar maklum balas tegas kepada pihak restoran tersebut.",
+    "start": 68.42,
+    "end": 72.64,
+    "duration": 4.22
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Ada apa-apa lagi yang boleh saya bantu?",
+    "start": 72.9,
+    "end": 74.68,
+    "duration": 1.78
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Tak ada dah. Itu sahaja. Terima kasih ya.",
+    "start": 75.24,
+    "end": 77.3,
+    "duration": 2.06
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Sama-sama, Encik. Terima kasih kerana menghubungi kami.",
+    "start": 77.66,
+    "end": 80.24,
+    "duration": 2.58
+  }
+]

@@ -1,0 +1,23 @@
+[00:00:00] Customer: Hello.
+[00:00:01] Agent: Thank you for being a valued Horizon Mobile customer. My name is Chloe. Am I speaking with Jason today?
+[00:00:07] Customer: Yeah, this is Jason.
+[00:00:09] Customer: Look, if this is a sales call, I'm really not interested. I'm quite happy with my current phone plan.
+[00:00:14] Agent: I completely understand, Jason. Your time is valuable, and I promise I won't waste it.
+[00:00:20] Agent: I'm actually looking at your account data usage over the past three months, and I noticed you've been hitting your data limit early every single month.
+[00:00:28] Customer: Yeah, well, that's because my kids use my hotspot when we are out. I just pay the extra overage charges on the bill. It's fine. I really don't need a more expensive plan.
+[00:00:37] Agent: That's exactly why I'm calling. What if I told you that you could get completely unlimited high-speed data plus a free streaming subscription for $5 less than what you are currently paying with those extra charges?
+[00:00:50] Customer: Wait,
+[00:00:51] Customer: less? How is it less?
+[00:00:54] Customer: Usually these upgrades end up costing me way more after a few months. Is there a hidden catch here?
+[00:01:00] Agent: No catch at all, Jason. Because you've been a loyal customer with us for over three years, you qualify for our Loyalty Unlimited tier.
+[00:01:08] Agent: Your current bill averages $60 due to those extra data fees. This upgrade is a flat $55 a month, locked in for two years.
+[00:01:17] Customer: Huh.
+[00:01:18] Customer: $55 fixed? And you said it comes with a streaming subscription?
+[00:01:22] Customer: Which one is it?
+[00:01:24] Agent: Yes. It includes a free standard Netflix subscription for as long as you keep the plan. So you'd actually save on your phone bill and stop paying for Netflix separately if you already have it.
+[00:01:35] Customer: Wow. Okay. We actually do pay for Netflix separately right now. So that would save us another $15.
+[00:01:43] Customer: Honestly, that sounds like a pretty good deal.
+[00:01:45] Agent: It really is one of our best exclusive offers. I can apply this change to your account right now, and the unlimited data will kick in immediately for your family. Would you like me to go ahead with that?
+[00:01:56] Customer: Yeah. Let's do it. Might as well save some money and stop worrying about the kids using up all the data.
+[00:02:02] Agent: Perfect. I've just updated your account, and you'll receive a confirmation email with your new details and your Netflix activation link in a few minutes. Thank you so much for your time, Jason, and have a wonderful day.
+[00:02:14] Agent: Thank you.

@@ -1,0 +1,67 @@
+segment_id,role,text,start,end
+1,Customer,"Hello,",0.0,0.44
+2,Customer,you orang ni memang tak reti buat kerja ke apa?,0.8,2.54
+3,Customer,Kenapa line I kena bar ha?,2.8,4.02
+4,Customer,"I baru je bayar semua bilas wing, ok?",4.36,6.56
+5,Customer,You orang jangan nak main-main.,6.88,7.78
+6,Customer,Kerja I semua tergendala sekarang ni.,8.0,9.7
+7,Agent,Selamat petang Encik.,9.98,11.1
+8,Agent,Saya minta maaf sangat-sangat atas kesulitan yang Encik alami.,11.32,14.16
+9,Agent,Boleh saya dapatkan nama dan...,14.56,16.02
+10,Customer,Tak payah nak selamat petang sangat lah.,16.02,17.64
+11,Customer,I tak ada masa nak berborak.,17.86,19.04
+12,Customer,Nama I Mansur.,19.32,20.26
+13,Customer,Sekarang ni I nak you aktifkan balik line I sekarang juga.,20.54,23.98
+14,Customer,Jangan bagi alasan sistem problem pula.,24.2,25.82
+15,Agent,Baik Encik Mansur.,26.06,27.04
+16,Agent,Saya faham Encik tengah marah.,27.2,28.44
+17,Agent,Boleh Encik berikan nombor akaun atau nombor telefon Encik untuk saya buat semakan dalam sistem?,28.44,32.82
+18,Customer,Nombor akaun I 101-098-765.,33.28,37.18
+19,Customer,Cek sekarang.,37.4,38.06
+20,Customer,I dah bayar RM150 cash guna online banking selasa lepas.,38.44,41.94
+21,Customer,You jangan nak tuduh I tak bayar pula.,42.28,43.66
+22,Customer,Resit semua ada dengan I ni.,43.92,45.22
+23,Agent,Terima kasih Encik Mansur.,45.46,46.86
+24,Agent,Tolong tunggu sekejap ya.,47.34,48.26
+25,Agent,Saya semak.,48.44,48.9
+26,Agent,"Ok, saya nampak ada bayaran RM150 pada hari selasa.",49.74,53.58
+27,Agent,"Tapi Encik Mansur, kalau ikutkan rekod di sini,",53.88,56.68
+28,Agent,Encik tersalah masukkan...,56.68,58.62
+29,Customer,"Eh, mana ada salah?",58.62,59.88
+30,Customer,I klik dekat history banking I je tau.,60.24,62.32
+31,Customer,You jangan nak pusing cerita pula.,62.52,64.06
+32,Customer,Nampak sangat sistem company you yang bodoh.,64.24,66.24
+33,Customer,Lepas tu sengaja nak salahkan customer.,66.38,67.8
+34,Agent,Saya minta maaf Encik Mansur.,68.3,69.74
+35,Agent,Tetapi bayaran tersebut telah masuk ke nombor akaun lama Encik,69.88,73.02
+36,Agent,yang sudah diterminit tahun lepas.,73.02,74.94
+37,Agent,"Disebabkan akaun aktif Encik yang sekarang masih ada tunggakan,",75.4,78.18
+38,Agent,sebab itu sistem bar lain Encik sekarang otomatik.,78.18,80.82
+39,Customer,"Eh,",81.16,81.42
+40,Customer,akaun lama?,81.8,82.32
+41,Customer,I... mana I tahu?,82.76,83.98
+42,Customer,"Kalau dah terminate, kenapa bank still simpan history?",84.22,86.36
+43,Customer,You orang patutnya delete lah.,86.74,88.02
+44,Customer,Habis tu sekarang macam mana?,88.44,89.4
+45,Customer,Takkan I kena bayar lagi sekali?,89.6,90.84
+46,Agent,"Eh, tak apa.",91.16,91.76
+47,Agent,Jangan risau Encik Mansur.,92.02,92.92
+48,Agent,Encik tak perlu bayar lagi sekali.,93.24,94.5
+49,Agent,Saya boleh bantu buat internal transfer untuk pindahkan duit RM150 itu,94.8,98.72
+50,Agent,dari akaun lama ke akaun aktif Encik sekarang juga.,98.72,101.42
+51,Agent,Proses ini ambil masa seminit sahaja.,101.94,103.6
+52,Customer,"Hah,",103.6,104.14
+53,Customer,tahu pun boleh buat.,104.78,105.62
+54,Customer,Memang patutnya you terus buat macam tu dari awal tadi.,105.9,108.16
+55,Customer,Tak payah nak banyak alasan sangat.,108.34,109.64
+56,Customer,Menyusahkan orang betullah.,109.88,110.88
+57,Customer,Kena call bagai.,111.04,111.78
+58,Agent,Selesai Encik Mansur.,112.12,113.06
+59,Agent,Saya sudah berjaya pindahkan bayaran tersebut,113.24,115.28
+60,Agent,dan bar pada line Encik sudah pun dibuka.,115.28,117.26
+61,Agent,Encik boleh cuba restart telefon Encik dalam masa 5 minit ya?,117.74,120.4
+62,Agent,Ada apa-apa lagi yang boleh saya bantu?,120.8,122.2
+63,Customer,"Dah,",122.58,122.82
+64,Customer,itu je.,123.18,123.46
+65,Customer,Make sure lepas ni sistem you tak bodoh macam ni lagi.,123.68,125.78
+66,Customer,I lekat dulu.,126.06,126.54

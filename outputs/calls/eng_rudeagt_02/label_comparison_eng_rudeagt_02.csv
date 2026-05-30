@@ -1,0 +1,36 @@
+call_id,start_sec,system_text,human_text,text_similarity,combined_score,system_role,human_role,label_correct,matched,text_override,override_phrase,status
+eng_rudeagt_02,0.0,Thank you for calling Nexus Stream Support. My name is David. How can I provide ,Thank you for calling Nexus Stream Support. My name is David. How can I provide ,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_02,4.22,excellent service today?,excellent service today?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_02,5.96,"Hi, David. I'm calling because my bell just came out and it's $30","Hi, David. I'm calling because my bell just came out and it's $30",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_02,9.9,higher than usual. I just wanted to check if there was a mistake or a glitch on ,higher than usual. I just wanted to check if there was a mistake or a glitch on ,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_02,15.22,I can certainly check that for you. Let me pull up your account.,I can certainly check that for you. Let me pull up your account.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_02,19.1,"Ah, I see here that your 12-month promotional discount has ended,","Ah, I see here that your 12-month promotional discount has ended,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_02,22.78,so your account has reverted to our standard corporate pricing tier.,so your account has reverted to our standard corporate pricing tier.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_02,26.7,"Oh, I see. I didn't receive any email warning me that the price was going to jum","Oh, I see. I didn't receive any email warning me that the price was going to jum",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_02,32.12,Is there any way I can renew the promotional rate or maybe sign up for a differe,Is there any way I can renew the promotional rate or maybe sign up for a differe,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_02,36.88,"Well, the expiration date was clearly printed in bold on your original contract,","Well, the expiration date was clearly printed in bold on your original contract,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_02,42.2,We don't send out individual reminders to every single person.,We don't send out individual reminders to every single person.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_02,46.04,"If you wanted a cheaper plan, you should have called us before the deadline.","If you wanted a cheaper plan, you should have called us before the deadline.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_02,49.58,"Right, but life gets busy and I missed it.","Right, but life gets busy and I missed it.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_02,52.56,$30 is just a big jump for my budget.,$30 is just a big jump for my budget.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_02,54.78,Is there a supervisor or a retention specialist I could speak with to see if we ,Is there a supervisor or a retention specialist I could speak with to see if we ,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_02,59.52,out?,out?,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_02,60.3,"Look, a supervisor is just going to tell you the exact same thing I just did.","Look, a supervisor is just going to tell you the exact same thing I just did.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_02,65.52,Transferring you is just wasting their time and mine. It's really not that hard ,Transferring you is just wasting their time and mine. It's really not that hard ,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_02,70.26,"own monthly statements, you know.","own monthly statements, you know.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_02,72.06,Excuse me?,Excuse me?,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_02,73.28,"Wow, there is absolutely no need","Wow, there is absolutely no need",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_02,75.54,to be condescending. I am just asking a simple question about my options as a cu,to be condescending. I am just asking a simple question about my options as a cu,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_02,79.92,And I'm giving you a simple answer. You enjoyed a cheap discount for a whole yea,And I'm giving you a simple answer. You enjoyed a cheap discount for a whole yea,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_02,86.12,to pay normal price like everyone else. That's how a business works. I can't jus,to pay normal price like everyone else. That's how a business works. I can't jus,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_02,91.52,because you forgot to check your emails.,because you forgot to check your emails.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_02,93.7,This is completely unacceptable behavior for a support,This is completely unacceptable behavior for a support,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_02,96.5,agent. What is your full name and employee ID number? I am absolutely reporting ,agent. What is your full name and employee ID number? I am absolutely reporting ,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_02,101.36,to your corporate office. Go right ahead. Look it up on your online portal. If y,to your corporate office. Go right ahead. Look it up on your online portal. If y,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+eng_rudeagt_02,106.54,"that is, since you seem to have trouble reading basic information on your screen","that is, since you seem to have trouble reading basic information on your screen",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_02,110.88,I don't have time to hold your hand through a standard contract.,I don't have time to hold your hand through a standard contract.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_02,114.8,Unbelievable!,Unbelievable!,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_02,115.78,You know what? Cancel my service right now. I am not paying a single cent more,You know what? Cancel my service right now. I am not paying a single cent more,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_02,119.88,to a company that employs people like you.,to a company that employs people like you.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_02,122.14,Perfect. Consider it canceled. Let me press,Perfect. Consider it canceled. Let me press,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_02,124.6,the button for you so you can go complain somewhere else. Have a wonderful day.,the button for you so you can go complain somewhere else. Have a wonderful day.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT

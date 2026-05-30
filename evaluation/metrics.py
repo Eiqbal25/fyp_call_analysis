@@ -261,14 +261,14 @@ def compute_pearson_correlation(system_scores: list[float],
 
 
 # ─────────────────────────────────────────────────────────────
-# PAIRED t-TEST (Method 3 vs. Method 1 per-sample accuracy)
+# PAIRED t-TEST (Method 4 vs. Method 1 per-sample accuracy)
 # ─────────────────────────────────────────────────────────────
 
 def compute_paired_ttest(scores_method1: list[float],
                           scores_method3: list[float],
                           alpha: float = TTEST_ALPHA) -> dict:
     """
-    Paired sample t-test to determine if Method 3 improvement is statistically
+    Paired sample t-test to determine if Method 4 improvement is statistically
     significant over Method 1 (Section 3.6.3).
 
     H0: mean(m3) == mean(m1)   (no significant difference)
@@ -277,7 +277,7 @@ def compute_paired_ttest(scores_method1: list[float],
     Parameters
     ----------
     scores_method1 : per-sample correctness scores for Method 1 (0 or 1)
-    scores_method3 : per-sample correctness scores for Method 3 (0 or 1)
+    scores_method3 : per-sample correctness scores for Method 4 (0 or 1)
     alpha          : significance level (default 0.05)
 
     Returns
@@ -375,7 +375,7 @@ def plot_accuracy_comparison(metrics_m1: dict, metrics_m2: dict, metrics_m3: dic
 
     ax.bar(x - w,   m1_vals, width=w, label="Method 1 (Keyword)",  color="#1f77b4", alpha=0.85)
     ax.bar(x,       m2_vals, width=w, label="Method 2 (Acoustic)", color="#ff7f0e", alpha=0.85)
-    ax.bar(x + w,   m3_vals, width=w, label="Method 3 (Hybrid)",   color="#2ca02c", alpha=0.85)
+    ax.bar(x + w,   m3_vals, width=w, label="Method 4 (Hybrid)",   color="#2ca02c", alpha=0.85)
 
     # Value labels
     for bars in [ax.containers[0], ax.containers[1], ax.containers[2]]:
@@ -445,7 +445,7 @@ def plot_ttest_boxplot(scores_m1: list[float], scores_m3: list[float],
     """
     fig, ax = plt.subplots(figsize=(7, 6))
     bp = ax.boxplot([scores_m1, scores_m3],
-                    labels=["Method 1\n(Keyword)", "Method 3\n(Hybrid)"],
+                    labels=["Method 1\n(Keyword)", "Method 4\n(Hybrid)"],
                     patch_artist=True,
                     medianprops={"color": "red", "linewidth": 2})
 
@@ -456,7 +456,7 @@ def plot_ttest_boxplot(scores_m1: list[float], scores_m3: list[float],
 
     p = ttest_result.get("p_value", 1.0)
     sig = "***" if p < 0.001 else "**" if p < 0.01 else "*" if p < 0.05 else "ns"
-    ax.set_title(f"Method 1 vs. Method 3 (Paired t-test: p={p:.4f} {sig})")
+    ax.set_title(f"Method 1 vs. Method 4 (Paired t-test: p={p:.4f} {sig})")
     ax.set_ylabel("Per-Sample Accuracy Score")
     ax.grid(True, axis="y", alpha=0.3)
     plt.tight_layout()

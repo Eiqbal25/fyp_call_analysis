@@ -1,0 +1,330 @@
+[
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Hi, good afternoon.",
+    "start": 0.0,
+    "end": 1.3,
+    "duration": 1.3
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Thanks for calling our priority hotline. My name is Amanda. Am I speaking to Kevin?",
+    "start": 1.92,
+    "end": 6.86,
+    "duration": 4.94
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Yeah, Kevin here. Who's this? Sales caller.",
+    "start": 7.54,
+    "end": 10.24,
+    "duration": 2.7
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I'm quite busy now, chasing timeline.",
+    "start": 11.14,
+    "end": 13.44,
+    "duration": 2.3
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Sorry to bother you, Kevin.",
+    "start": 14.14,
+    "end": 15.44,
+    "duration": 1.3
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I'll make it fast -fast, yeah?",
+    "start": 15.86,
+    "end": 17.1,
+    "duration": 1.24
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I see your current line contract is actually ending this month.",
+    "start": 17.48,
+    "end": 21.5,
+    "duration": 4.02
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "So I'm calling to pass you an exclusive voucher to get a brand new 5G smartphone.",
+    "start": 21.52,
+    "end": 27.4,
+    "duration": 5.88
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Zero upfront payment one.",
+    "start": 27.82,
+    "end": 29.58,
+    "duration": 1.76
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Free phone. No such thing as free lunch, lah, sis.",
+    "start": 30.0,
+    "end": 33.5,
+    "duration": 3.5
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Surely got catch one.",
+    "start": 33.88,
+    "end": 35.02,
+    "duration": 1.14
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Later you upgrade my plan, then my monthly bill bomb up, then I cry only.",
+    "start": 35.5,
+    "end": 39.16,
+    "duration": 3.66
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Better I just stay on my old plan.",
+    "start": 39.56,
+    "end": 41.18,
+    "duration": 1.62
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Haha, no catch lah, Kevin.",
+    "start": 41.78,
+    "end": 43.98,
+    "duration": 2.2
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Don't worry.",
+    "start": 44.34,
+    "end": 44.94,
+    "duration": 0.6
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Your current plan is RM80, right?",
+    "start": 45.54,
+    "end": 47.92,
+    "duration": 2.38
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "If you just upgrade slightly to our 5G Advanced plan at RM95,",
+    "start": 48.14,
+    "end": 53.54,
+    "duration": 5.4
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "you can get the latest Samsung or iPhone model for literally zero phone installment.",
+    "start": 53.54,
+    "end": 59.96,
+    "duration": 6.42
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Just add RM15 extra only, per month.",
+    "start": 60.38,
+    "end": 63.26,
+    "duration": 2.88
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "15 RM only? But I need to log contract, right? How many years?",
+    "start": 63.82,
+    "end": 68.18,
+    "duration": 4.36
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "My phone now is actually a bit lagging already.",
+    "start": 68.68,
+    "end": 71.1,
+    "duration": 2.42
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Battery fast drain, but two years' contract is a bit long, lah.",
+    "start": 71.46,
+    "end": 74.88,
+    "duration": 3.42
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Yes, it's a 24-month contract. But think about it. If you buy this phone outside at retail price, it is easily RM1800.",
+    "start": 74.88,
+    "end": 85.52,
+    "duration": 10.64
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "If you divide by 24 months, that's like 75 RM a month. With us, you only pay RM15 a month. Huge savings, kan?",
+    "start": 85.92,
+    "end": 95.0,
+    "duration": 9.08
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Hmm,",
+    "start": 95.0,
+    "end": 95.92,
+    "duration": 0.92
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "true also. My current phone battery really cannot make it already. Need to charge three times a day.",
+    "start": 96.54,
+    "end": 101.94,
+    "duration": 5.4
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "If I buy new phone outside, quite pain to pay lump sum. What models can I choose from?",
+    "start": 102.2,
+    "end": 107.1,
+    "duration": 4.9
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "We have the latest model available in sleek black or matte silver.",
+    "start": 107.42,
+    "end": 111.92,
+    "duration": 4.5
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Plus, you don't even need to queue up at our outlet. We will courier the phone directly to your house or office for free.",
+    "start": 112.26,
+    "end": 119.14,
+    "duration": 6.88
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Okay lah, sounds like a solid deal. Since I also need a new phone anyway, might as well.",
+    "start": 119.7,
+    "end": 124.7,
+    "duration": 5.0
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Can I choose the black colour one?",
+    "start": 125.0,
+    "end": 126.54,
+    "duration": 1.54
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Can, no problem.",
+    "start": 127.06,
+    "end": 128.22,
+    "duration": 1.16
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Black colour looks very premium.",
+    "start": 128.62,
+    "end": 130.46,
+    "duration": 1.84
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I will lock down the stock for you in the system now, yeah?",
+    "start": 130.92,
+    "end": 133.4,
+    "duration": 2.48
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Can I double-check your delivery address?",
+    "start": 133.64,
+    "end": 135.68,
+    "duration": 2.04
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Just ship to my office address registered in your system, lah. Easier.",
+    "start": 136.32,
+    "end": 139.6,
+    "duration": 3.28
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Thanks lah, Amanda.",
+    "start": 140.02,
+    "end": 140.74,
+    "duration": 0.72
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Luckily, I didn't hang up on you just now.",
+    "start": 141.22,
+    "end": 142.98,
+    "duration": 1.76
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Most welcome, Kevin.",
+    "start": 143.52,
+    "end": 144.7,
+    "duration": 1.18
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Happy to help you get a good deal.",
+    "start": 145.1,
+    "end": 146.76,
+    "duration": 1.66
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "The phone will arrive at your office in two to three working days, yeah? Have a great day ahead.",
+    "start": 147.0,
+    "end": 151.82,
+    "duration": 4.82
+  }
+]

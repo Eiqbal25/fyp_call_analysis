@@ -1,0 +1,522 @@
+[
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Good morning.",
+    "start": 0.0,
+    "end": 0.76,
+    "duration": 0.76
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Thank you for calling Horizon FiberCare. My name is Gilbert. How may I assist you with your internet service today?",
+    "start": 1.16,
+    "end": 7.36,
+    "duration": 6.2
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Good morning, Gilbert. I hope you're having a good day. I'm calling because my home Wi-Fi connection has been incredibly slow for the past 48 hours.",
+    "start": 7.94,
+    "end": 15.3,
+    "duration": 7.36
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I run an online consulting business from home, and my video calls keep dropping. I was hoping you could help me check if there's an issue with my line.",
+    "start": 15.5,
+    "end": 22.84,
+    "duration": 7.34
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I completely understand how critical a stable connection is for running a business from home, Mrs. Sandra. We will definitely get this sorted out for you today.",
+    "start": 22.84,
+    "end": 31.9,
+    "duration": 9.06
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "To get started, may I please have your full name and your account number or registered home address?",
+    "start": 32.16,
+    "end": 37.92,
+    "duration": 5.76
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Of course. My name is Sandra Bennett, and the account number is HFB77419. The registered address is 142 Skyline Drive.",
+    "start": 38.18,
+    "end": 48.48,
+    "duration": 10.3
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Thank you so much, Mrs. Bennett. I have successfully pulled up your account details. I see you are currently on our 100 megabits per second home fiber plan.",
+    "start": 48.48,
+    "end": 59.38,
+    "duration": 10.9
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I am running a quick diagnostic on our main exchange line leading to your street.",
+    "start": 59.58,
+    "end": 64.62,
+    "duration": 5.04
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Okay, the physical line signal coming into your house looks perfectly healthy and is delivering the full speed.",
+    "start": 65.08,
+    "end": 71.74,
+    "duration": 6.66
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Oh, that's interesting. If the main line is healthy, does that mean the issue is coming from my actual router inside the house?",
+    "start": 71.74,
+    "end": 78.78,
+    "duration": 7.04
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "The signal bars on my laptop look full, but the actual loading speed is just crawling.",
+    "start": 78.98,
+    "end": 83.96,
+    "duration": 4.98
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Yes, that is highly likely. It usually means the router is struggling to distribute the data wirelessly.",
+    "start": 84.48,
+    "end": 91.06,
+    "duration": 6.58
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Before they do any system resets, let's do a quick physical check.",
+    "start": 91.48,
+    "end": 95.32,
+    "duration": 3.84
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Are you currently near your Wi-Fi router, Mrs. Bennett?",
+    "start": 95.52,
+    "end": 98.66,
+    "duration": 3.14
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Yes, I am standing right next to it in the living room.",
+    "start": 98.66,
+    "end": 101.64,
+    "duration": 2.98
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Perfect.",
+    "start": 101.98,
+    "end": 102.48,
+    "duration": 0.5
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Please take a look at the front panel of the router. Can you tell me what color the lights are and if any of them are blinking abnormally, specifically the one labeled PON or Internet?",
+    "start": 102.84,
+    "end": 113.32,
+    "duration": 10.48
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Let's see. The power light is solid green, the PON light is also solid green, but the wireless-slash-WLAN light is blinking rapidly in amber instead of green. Is that bad?",
+    "start": 113.94,
+    "end": 125.86,
+    "duration": 11.92
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Not bad at all. It just means the wireless chip inside the router is experiencing high data congestion or a temporary firmware lockup.",
+    "start": 125.86,
+    "end": 134.38,
+    "duration": 8.52
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Let's perform a clean power cycle.",
+    "start": 134.62,
+    "end": 136.88,
+    "duration": 2.26
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Please look at the back of the router,",
+    "start": 137.26,
+    "end": 138.9,
+    "duration": 1.64
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "find the black power cable, and unplug it directly from the device.",
+    "start": 139.3,
+    "end": 143.3,
+    "duration": 4.0
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Okay, I'm reaching around the back, and I have unplugged the power cable. The lights are completely off now.",
+    "start": 143.56,
+    "end": 149.78,
+    "duration": 6.22
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Excellent.",
+    "start": 149.78,
+    "end": 150.68,
+    "duration": 0.9
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Now we want to leave it unplugged for exactly 30 seconds. This allows the internal capacitors to drain completely and clears out any clogged data cache.",
+    "start": 151.04,
+    "end": 160.84,
+    "duration": 9.8
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "While we wait, I am going to initiate a remote signal refresh from my server backend to sync up with your device the moment it powers back on.",
+    "start": 161.0,
+    "end": 169.68,
+    "duration": 8.68
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "All right, that sounds great. I didn't know you could refresh it from your end while it was turned off. It's been about 20 seconds now. Should I hold on a bit longer?",
+    "start": 169.68,
+    "end": 177.92,
+    "duration": 8.24
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Yes, let's give it just 10 more seconds to be completely sure.",
+    "start": 178.48,
+    "end": 182.36,
+    "duration": 3.88
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "All right,",
+    "start": 183.02,
+    "end": 183.56,
+    "duration": 0.54
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "30 seconds are up. You can go ahead and plug the power cable firmly back into the router now, Mrs. Bennett.",
+    "start": 184.04,
+    "end": 189.3,
+    "duration": 5.26
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Okay,",
+    "start": 189.86,
+    "end": 190.3,
+    "duration": 0.44
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "plugging it back in now. The power light is back on. The other lights are starting to cycle through and flash. How long does it usually take to fully boot?",
+    "start": 190.66,
+    "end": 199.12,
+    "duration": 8.46
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "It will take about one to two minutes for the fiber signal to fully re-establish. While the lights are stabilizing, I was looking into your hadware history on my screen.",
+    "start": 199.68,
+    "end": 208.8,
+    "duration": 9.12
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I noticed that this specific router model was issued to you back in 2021. Is that correct?",
+    "start": 209.02,
+    "end": 214.48,
+    "duration": 5.46
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Yes, that sounds about right. We haven't changed the equipment since we first moved into this house and signed up with your company.",
+    "start": 214.9,
+    "end": 220.62,
+    "duration": 5.72
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I see. That actually explains a lot of the congestion you're experiencing. That older router model uses Wi-Fi 5 technology.",
+    "start": 221.04,
+    "end": 229.28,
+    "duration": 8.24
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Which struggles when you have multiple modern devices like smart TVs,",
+    "start": 229.68,
+    "end": 233.7,
+    "duration": 4.02
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "smartphones, and laptops connected at the same time, especially for heavy usage like your business video calls.",
+    "start": 234.06,
+    "end": 240.42,
+    "duration": 6.36
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Ah, that makes sense. We've added quite a few smart home devices over the last year. Is it possible for me to buy a newer router from you guys, or do I need to source one online myself?",
+    "start": 240.82,
+    "end": 250.38,
+    "duration": 9.56
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "You definitely don't need to buy one yourself. Since you're out of your contract period, you're actually eligible for a free equipment upgrade.",
+    "start": 250.38,
+    "end": 258.64,
+    "duration": 8.26
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "We currently have a promotion where if you renew your plan today, we will upgrade your hardware to our latest Wi-Fi 6 smart mesh system completely free.",
+    "start": 258.9,
+    "end": 267.78,
+    "duration": 8.88
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "It completely eliminates dead zones and handles up to 40 devices seamlessly.",
+    "start": 268.04,
+    "end": 272.48,
+    "duration": 4.44
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Oh, that sounds absolutely wonderful. Will my monthly bill change if I renew the contract for the free hardware upgrade?",
+    "start": 272.48,
+    "end": 279.58,
+    "duration": 7.1
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Your monthly bill will actually stay exactly the same at your current rate. The only change is that you get a brand new, highly advanced mesh router delivered to your doorstep and a fresh 24-month service warranty.",
+    "start": 279.78,
+    "end": 292.04,
+    "duration": 12.26
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "That is an excellent deal, Gilbert. Let's definitely go ahead and process that renewal and upgrade. It will give me total peace of mind for my home business.",
+    "start": 292.32,
+    "end": 300.38,
+    "duration": 8.06
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Fantastic choice, Mrs. Bennett. I am locking in the hardware order right now. A courier will deliver the new Wi-Fi 6 mesh system to 142 Skyline Drive within two working days.",
+    "start": 301.02,
+    "end": 312.04,
+    "duration": 11.02
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "It comes with a simple plug-and-play guide, but our technical team will also call you to assist with setup.",
+    "start": 312.24,
+    "end": 317.46,
+    "duration": 5.22
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Perfect. Oh, by the way, I just checked my laptop and all the lights on my current router are solid green now.",
+    "start": 318.0,
+    "end": 323.74,
+    "duration": 5.74
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I just loaded up a video call test and the speed is back to being fast and smooth again.",
+    "start": 323.92,
+    "end": 328.36,
+    "duration": 4.44
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Wonderful.",
+    "start": 328.36,
+    "end": 329.3,
+    "duration": 0.94
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "The remote refresh and power cycle successfully cleared the line congestion for now.",
+    "start": 329.7,
+    "end": 334.12,
+    "duration": 4.42
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "This should keep your business running smoothly until the new, stronger router arrives on Thursday.",
+    "start": 334.32,
+    "end": 339.04,
+    "duration": 4.72
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I have sent the contract renewal confirmation to your registered email address.",
+    "start": 339.4,
+    "end": 343.34,
+    "duration": 3.94
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I see the email confirmation popping up right now. Thank you so much, Gilbert.",
+    "start": 343.58,
+    "end": 347.58,
+    "duration": 4.0
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "You've been incredibly patient, knowledgeable, and helpful throughout this entire call.",
+    "start": 347.8,
+    "end": 352.32,
+    "duration": 4.52
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I really appreciate the stellar service.",
+    "start": 352.48,
+    "end": 354.68,
+    "duration": 2.2
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "It was an absolute pleasure assisting you today, Mrs. Bennett.",
+    "start": 354.68,
+    "end": 358.34,
+    "duration": 3.66
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I'm glad we got your current connection fixed and secured a great upgrade for your business.",
+    "start": 358.68,
+    "end": 363.08,
+    "duration": 4.4
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Thank you for choosing Horizon Fiber. Have a highly productive and wonderful day ahead.",
+    "start": 363.28,
+    "end": 367.98,
+    "duration": 4.7
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Thank you, Gilbert. You too.",
+    "start": 368.22,
+    "end": 369.6,
+    "duration": 1.38
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Goodbye.",
+    "start": 369.98,
+    "end": 370.22,
+    "duration": 0.24
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Goodbye.",
+    "start": 370.64,
+    "end": 371.04,
+    "duration": 0.4
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Goodbye.",
+    "start": 371.04,
+    "end": 371.2,
+    "duration": 0.16
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Goodbye.",
+    "start": 371.44,
+    "end": 371.46,
+    "duration": 0.02
+  }
+]

@@ -1,0 +1,490 @@
+[
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Selamat petang. Selamat datang ke Grand Horizon Resort.",
+    "start": 0.0,
+    "end": 3.46,
+    "duration": 3.46
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Saya nama Ilyana.",
+    "start": 3.84,
+    "end": 5.22,
+    "duration": 1.38
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Boleh saya bantu urusan daftar masuk Encik hari ini?",
+    "start": 5.58,
+    "end": 8.54,
+    "duration": 2.96
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Akhirnya. Saya dah tunggu dekat lobi korang yang panas ni dekat setengah jam, tahu tak?",
+    "start": 9.22,
+    "end": 13.3,
+    "duration": 4.08
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Nama saya Encik Razlan. Saya dah tempah private pool suite untuk tiga malam.",
+    "start": 13.72,
+    "end": 17.52,
+    "duration": 3.8
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Bagi saya kunci bilik sekarang, saya dah penat nak rehat.",
+    "start": 17.84,
+    "end": 20.16,
+    "duration": 2.32
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Baik Encik Razlan. Saya semak tempahan Encik sekejap, ya?",
+    "start": 20.66,
+    "end": 24.08,
+    "duration": 3.42
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Sila tunggu sebentar.",
+    "start": 24.56,
+    "end": 25.72,
+    "duration": 1.16
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Ah, Encik Razlan. Mengikut sistem kami, waktu daftar masuk rasmi resort adalah pada jam tiga petang.",
+    "start": 25.72,
+    "end": 33.66,
+    "duration": 7.94
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Sekarang baru pukul satu tengah hari.",
+    "start": 33.9,
+    "end": 35.86,
+    "duration": 1.96
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Jadi bilik Encik sedang dibersihkan dan disanitasi oleh pihak housekeeping demi keselesaan Encik.",
+    "start": 36.28,
+    "end": 42.68,
+    "duration": 6.4
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Eh, I tak pedulilah pukul berapa sekarang.",
+    "start": 42.92,
+    "end": 44.82,
+    "duration": 1.9
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I bayar satu malam dekat dua ribu ringgit, tahu tak? Bukan murah.",
+    "start": 45.08,
+    "end": 47.98,
+    "duration": 2.9
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Korang punya housekeeping buat kerja lembab macam siput.",
+    "start": 48.32,
+    "end": 50.86,
+    "duration": 2.54
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Lepas tu nak suruh I terconggok tunggu kat lobi ni lagi dua jam.",
+    "start": 51.02,
+    "end": 53.8,
+    "duration": 2.78
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "You tahu tak Aiz apa? Korang ni memang tak ada ti buat kerja ke apa?",
+    "start": 53.8,
+    "end": 57.1,
+    "duration": 3.3
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Saya benar-benar minta maaf atas kesulitan ini, Encik Razlan.",
+    "start": 57.42,
+    "end": 61.1,
+    "duration": 3.68
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Kami sangat menghargai tempahan Encik.",
+    "start": 61.32,
+    "end": 63.58,
+    "duration": 2.26
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Bilik tersebut baru sahaja dikosongkan oleh pelanggan terdahulu pada jam 12 tengah hari tadi.",
+    "start": 63.94,
+    "end": 69.2,
+    "duration": 5.26
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Pihak kami sedang berusaha mempercepatkan proses pembersihan bilik Encik",
+    "start": 69.7,
+    "end": 73.76,
+    "duration": 4.06
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "supaya Encik boleh masuk dengan kadar segera.",
+    "start": 73.76,
+    "end": 76.38,
+    "duration": 2.62
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Hah,",
+    "start": 76.84,
+    "end": 77.0,
+    "duration": 0.16
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "alasan.",
+    "start": 77.38,
+    "end": 77.88,
+    "duration": 0.5
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Korang punya manajemen memang bodoh dan tak cekap.",
+    "start": 78.26,
+    "end": 80.68,
+    "duration": 2.42
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I tak nak dengar alasan bilik penuh ke apa. Sekarang ni, I nak you upgrade I ke Presidential Suite sekarang juga secara percuma",
+    "start": 80.68,
+    "end": 86.68,
+    "duration": 6.0
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "sebagai ganti rugi masa I.",
+    "start": 86.68,
+    "end": 88.28,
+    "duration": 1.6
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Kalau tak, I bising dekat sini sampai semua guest lain dengar.",
+    "start": 88.52,
+    "end": 90.96,
+    "duration": 2.44
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Encik Razlan, saya faham Encik penat selepas perjalanan jauh.",
+    "start": 91.38,
+    "end": 95.48,
+    "duration": 4.1
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Mengenai Presidential Suite,",
+    "start": 95.8,
+    "end": 97.42,
+    "duration": 1.62
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "bilik tersebut telahpun dihuni oleh tetamu lain buat masa ini.",
+    "start": 97.82,
+    "end": 101.1,
+    "duration": 3.28
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Namun, sebagai alternatif, untuk keselesaan Encik sementara menunggu bilik sedia,",
+    "start": 101.1,
+    "end": 106.34,
+    "duration": 5.24
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "saya telah menyediakan dua keping pas masuk premium ke VIP lounge kami di tingkat atas secara percuma.",
+    "start": 106.84,
+    "end": 113.58,
+    "duration": 6.74
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "VIP lounge?",
+    "start": 114.16,
+    "end": 115.14,
+    "duration": 0.98
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "You ingat I tak mampu nak beli pas tu sendirikah?",
+    "start": 115.64,
+    "end": 118.02,
+    "duration": 2.38
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I datang sini nak bilik, bukan nak minum kopi kat lounge you yang tak seberapa tu.",
+    "start": 118.28,
+    "end": 122.2,
+    "duration": 3.92
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Berapa lama lagi I kena tunggu, eh?",
+    "start": 122.66,
+    "end": 124.02,
+    "duration": 1.36
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Tolong jangan bazirkan masa I yang berharga ni.",
+    "start": 124.38,
+    "end": 126.34,
+    "duration": 1.96
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Pas lounge ini adalah tanda permohonan maaf ikhlas daripada pihak kami, Encik Razlan.",
+    "start": 126.34,
+    "end": 131.58,
+    "duration": 5.24
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Di sana, pihak kami telah menyediakan hidangan bufet ringan",
+    "start": 131.78,
+    "end": 135.24,
+    "duration": 3.46
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "dan ruang rehat berhawa dingin yang sangat selesa untuk Encik dan isteri.",
+    "start": 135.24,
+    "end": 139.52,
+    "duration": 4.28
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Saya juga sudah meminta penyelia housekeeping",
+    "start": 140.0,
+    "end": 142.26,
+    "duration": 2.26
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "untuk meletakkan status bilik Encik sebagai keutamaan tertinggi.",
+    "start": 142.26,
+    "end": 146.42,
+    "duration": 4.16
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Bilik Encik akan siap dalam masa 30 minit sahaja lagi.",
+    "start": 146.62,
+    "end": 150.16,
+    "duration": 3.54
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "30 minit, ya?",
+    "start": 150.92,
+    "end": 152.3,
+    "duration": 1.38
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Kalau lebih 1 minit, I sendiri akan cari general manager you",
+    "start": 152.64,
+    "end": 155.44,
+    "duration": 2.8
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "dan pastikan you kena pecat hari ini juga.",
+    "start": 155.44,
+    "end": 157.38,
+    "duration": 1.94
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Ambil pas tu.",
+    "start": 157.72,
+    "end": 158.52,
+    "duration": 0.8
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Baggage I, you suruh bellboy hantar terus macam bilik nanti.",
+    "start": 158.98,
+    "end": 161.24,
+    "duration": 2.26
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I tak nak tengok bag I sadai dekat lobi ni.",
+    "start": 161.64,
+    "end": 163.44,
+    "duration": 1.8
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Baik, Encik Razlan.",
+    "start": 163.92,
+    "end": 164.94,
+    "duration": 1.02
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Baggage Encik akan kami uruskan dengan selamat",
+    "start": 165.24,
+    "end": 167.78,
+    "duration": 2.54
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "dan dihantar terus ke dalam bilik sebaik sahaja bilik sedia.",
+    "start": 167.78,
+    "end": 171.08,
+    "duration": 3.3
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Ini pas masuk ke VIP lounge Encik,",
+    "start": 171.34,
+    "end": 174.12,
+    "duration": 2.78
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "pihak staf kami di lift akan tunjukkan arah.",
+    "start": 174.4,
+    "end": 176.88,
+    "duration": 2.48
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Dah, tak payah nak tunjuk-tunjuk jalan.",
+    "start": 177.28,
+    "end": 178.64,
+    "duration": 1.36
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I tahulah sendiri mana nak pergi.",
+    "start": 178.84,
+    "end": 180.08,
+    "duration": 1.24
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Nyusah kan betul.",
+    "start": 180.56,
+    "end": 181.34,
+    "duration": 0.78
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Terima kasih atas kesabaran Encik.",
+    "start": 181.68,
+    "end": 183.72,
+    "duration": 2.04
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Kami mohon maaf sekali lagi atas kelewatan ini",
+    "start": 183.72,
+    "end": 186.64,
+    "duration": 2.92
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "dan selamat berehat di resort kami, Encik Razlan.",
+    "start": 186.64,
+    "end": 189.52,
+    "duration": 2.88
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Selamat petang.",
+    "start": 189.76,
+    "end": 190.58,
+    "duration": 0.82
+  }
+]

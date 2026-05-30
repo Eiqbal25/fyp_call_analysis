@@ -1,0 +1,378 @@
+[
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Hello, you orang ni memang tak rati buat kerja ke apa? Kenapa line I kena bar, ha?",
+    "start": 0.0,
+    "end": 4.12,
+    "duration": 4.12
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I baru je bayar semua billa swing, okay? You orang jangan nak main-main. Kerja I semua tergendala sekarang.",
+    "start": 4.48,
+    "end": 9.72,
+    "duration": 5.24
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Selamat petang, encik. Saya minta maaf sangat-sangat atas kesulitan ni, encik Alami. Boleh saya dapatkan lama dan...",
+    "start": 10.28,
+    "end": 16.08,
+    "duration": 5.8
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Tak payah nak selamat petang sangatlah. I tak ada masa nak berbora. Nama I Mansur.",
+    "start": 16.08,
+    "end": 20.38,
+    "duration": 4.3
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Sekarang ni I nak you aktifkan balik line I sekarang juga. Jangan beri alasan sistem problem pula.",
+    "start": 20.72,
+    "end": 25.94,
+    "duration": 5.22
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Baik Encik Mansur, saya faham Encik tengah marah. Boleh Encik berikan nombor akun atau nombor telefon Encik untuk saya buat semakkan dalam sistem?",
+    "start": 25.94,
+    "end": 32.94,
+    "duration": 7.0
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Nombor akun saya 101 098 765. Cek sekarang, saya dah bayar RM150 cash guna online banking selasa lepas.",
+    "start": 33.56,
+    "end": 42.06,
+    "duration": 8.5
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Awak jangan nak tuduh saya tak bayar pula. Resit semua ada dengan saya ni.",
+    "start": 42.36,
+    "end": 45.36,
+    "duration": 3.0
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Terima kasih Encik Mansur. Tolong tunggu sekejap ya, saya semak.",
+    "start": 45.74,
+    "end": 48.94,
+    "duration": 3.2
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Okay, saya nampak ada bayaran RM150 pada hari selasa.",
+    "start": 49.68,
+    "end": 54.1,
+    "duration": 4.42
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Tapi Encik Mansur, kalau ikutkan rekod di sini,",
+    "start": 54.28,
+    "end": 56.94,
+    "duration": 2.66
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Encik tersalah maksudkan,",
+    "start": 57.42,
+    "end": 58.66,
+    "duration": 1.24
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "eh mana ada salah?",
+    "start": 59.14,
+    "end": 60.02,
+    "duration": 0.88
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I click dekat istri banking I je tau.",
+    "start": 60.38,
+    "end": 62.42,
+    "duration": 2.04
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "You jangan nak pusing selita pula.",
+    "start": 62.76,
+    "end": 64.26,
+    "duration": 1.5
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Nampak sangat sistem company you yang bodoh,",
+    "start": 64.56,
+    "end": 66.34,
+    "duration": 1.78
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "lepas tu sengaja nak salahkan customer.",
+    "start": 66.44,
+    "end": 67.94,
+    "duration": 1.5
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Saya minta maaf Encik Mansur,",
+    "start": 68.5,
+    "end": 69.86,
+    "duration": 1.36
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "tetapi bayaran tersebut telah masuk ke nombor akun lama Encik",
+    "start": 69.96,
+    "end": 73.28,
+    "duration": 3.32
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "yang sudah ditunjukkan tahun lepas.",
+    "start": 73.28,
+    "end": 75.32,
+    "duration": 2.04
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Disebabkan akun aktif Encik yang sekarang masih ditumbakan,",
+    "start": 75.62,
+    "end": 78.28,
+    "duration": 2.66
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Sebab itu sistem bar line cik sekarang otomatik",
+    "start": 78.28,
+    "end": 81.14,
+    "duration": 2.86
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Eh, akaun lama?",
+    "start": 81.14,
+    "end": 82.74,
+    "duration": 1.6
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Mana saya tahu?",
+    "start": 83.36,
+    "end": 84.14,
+    "duration": 0.78
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Kalau dah terminit, kenapa bank still simpan history?",
+    "start": 84.48,
+    "end": 86.58,
+    "duration": 2.1
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "You orang patutnya delete lah",
+    "start": 86.94,
+    "end": 88.52,
+    "duration": 1.58
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Habis itu sekarang macam mana?",
+    "start": 88.52,
+    "end": 89.5,
+    "duration": 0.98
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Takkan saya kena bayar lagi sekali?",
+    "start": 89.68,
+    "end": 91.1,
+    "duration": 1.42
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Tak apa, jangan risau Encik Nusor",
+    "start": 91.44,
+    "end": 93.2,
+    "duration": 1.76
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Encik tak perlu bayar lagi sekali",
+    "start": 93.2,
+    "end": 94.66,
+    "duration": 1.46
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Saya boleh bantu buat internal transfer",
+    "start": 94.66,
+    "end": 96.64,
+    "duration": 1.98
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "untuk pindahkan duit RM150 itu dari akaun lama",
+    "start": 96.64,
+    "end": 99.66,
+    "duration": 3.02
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "ke akaun aktif encik sekarang juga",
+    "start": 99.66,
+    "end": 101.96,
+    "duration": 2.3
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Proses ini ambil masa se minit sahaja",
+    "start": 101.96,
+    "end": 103.96,
+    "duration": 2.0
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Nah, tahu pun boleh buat",
+    "start": 103.96,
+    "end": 105.78,
+    "duration": 1.82
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Memang patutnya awak terus buat macam tu dari awal tadi",
+    "start": 105.78,
+    "end": 108.28,
+    "duration": 2.5
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Tak payah nak banyak alasan sangat",
+    "start": 108.28,
+    "end": 109.78,
+    "duration": 1.5
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Menusahkan orang betul lah kena call bagai",
+    "start": 109.78,
+    "end": 112.14,
+    "duration": 2.36
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Selesai Encik Mansur",
+    "start": 112.14,
+    "end": 113.34,
+    "duration": 1.2
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Saya sudah berjaya pindahkan bayaran tersebut",
+    "start": 113.34,
+    "end": 115.32,
+    "duration": 1.98
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Dan bar pada line Encik sudah pun dibuku",
+    "start": 115.32,
+    "end": 117.6,
+    "duration": 2.28
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Encik boleh cuba restart telefon Encik",
+    "start": 117.6,
+    "end": 119.36,
+    "duration": 1.76
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Dalam masa lima minit ya",
+    "start": 119.36,
+    "end": 120.72,
+    "duration": 1.36
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Ada apa-apa lagi yang boleh saya bantu?",
+    "start": 120.72,
+    "end": 122.56,
+    "duration": 1.84
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Dah, itu je",
+    "start": 122.74,
+    "end": 123.56,
+    "duration": 0.82
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Make sure lepas ni sistem awak tak bodoh macam ni lagi",
+    "start": 123.56,
+    "end": 125.96,
+    "duration": 2.4
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Saya lekat dulu",
+    "start": 125.96,
+    "end": 126.64,
+    "duration": 0.68
+  }
+]

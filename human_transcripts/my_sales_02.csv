@@ -1,0 +1,48 @@
+segment_id,role,text,start,end
+1,Agent,Selamat petang. Terima kasih kerana menjadi pelanggan setia Megafiber.,0.0,4.08
+2,Agent,Nama saya Nadia. Boleh saya bercakap dengan Encik Faiz?,4.44,8.3
+3,Customer,"Ya, saya Faiz. Kenapa ya?",8.5,10.22
+4,Customer,"Kalau nak jual pakej baru, maaflah.",10.6,12.7
+5,Customer,Saya tengah agak sibuk sekarang ni.,13.1,14.48
+6,Customer,"Lagipun, internet rumah saya sekarang dah okey.",14.82,17.06
+7,Agent,"Saya faham, Encik Faiz. Maaf mengganggu waktu sibuk, Encik.",17.54,21.56
+8,Agent,"Saya ringkaskan, ya?",21.74,22.9
+9,Agent,"Saya hubungi hari ini bukan nak jual pelan baharu,",23.1,26.38
+10,Agent,tetapi mahu memberikan ganjaran naik taraf kelajuan internet sedia ada,26.38,31.3
+11,Agent,khas untuk pelanggan setia seperti Encik.,31.3,33.94
+12,Customer,"Eh, tak apalah, Encik. Pakej 100 Mbps saya sekarang ni pun dah cukup rasanya.",34.22,38.84
+13,Customer,"Kalau upgrade nanti, bil bulanan jadi makin mahal pula.",39.32,41.92
+14,Customer,Zaman sekarang ni kena berjimat sikit.,42.36,44.06
+15,Agent,"Betul, Encik Faiz. Bab berjimat tu memang saya sokong sangat.",44.44,48.52
+16,Agent,Sebab itu saya hubungi Encik hari ini.,48.74,50.92
+17,Agent,"Mengikat sistem kami, penggunaan internet rumah Encik kerap mencecah tahap maksimum,",50.92,56.72
+18,Agent,terutamanya pada waktu malam.,56.9,58.7
+19,Agent,Encik ada hadapi masalah internet lag atau tersangkut-sangkut tak kebelakangan ni?,58.94,64.0
+20,Customer,"Hmm,",64.4,64.76
+21,Customer,kalau waktu malam tu memang adalah sangkut sikit.,65.28,68.12
+22,Customer,Terutamanya bila saya main game dan adik-adik saya layan penstriman video serentak.,68.36,73.08
+23,Customer,Tapi takkan kalau upgrade tak kena tambah duit banyak?,73.54,76.08
+24,Agent,"Khas untuk kempen kesetiaan bulan ini, kami mahu naikkan kelajuan rumah Encik dari 100 Mbps terus ke 500 Mbps.",76.08,85.24
+25,Agent,"Yang menariknya,",85.54,86.54
+26,Agent,Encik cuma perlu tambah RM10 sahaja daripada komitmen bulanan sekarang.,86.96,91.32
+27,Agent,Malah kami akan tukar ruta lama Encik kepada ruta Wi-Fi 6 yang baru secara percuma.,91.8,97.54
+28,Customer,"Biar betul. Tambah RM10 sahaja sebulan, dapat kelajuan 500 Mbps.",97.88,102.14
+29,Customer,Ruta baru pun percuma.,102.14,103.74
+30,Customer,"Pastikan tak ada bayaran tersembunyi yang tiba -tiba naik lepas beberapa bulan, ya?",104.2,107.86
+31,Agent,"Betul. Saya jamin tiada sebarang cas tersembunyi, Encik Faiz.",108.28,112.28
+32,Agent,Harga tambahan RM10 ini tetap dan dikunci sepanjang kontrak berjalan.,112.46,117.16
+33,Agent,Ruta Wi-Fi 6 percuma itu pula akan kami hantar dan pasangkan terus ke rumah Encik oleh pihak teknikal.,117.52,124.0
+34,Agent,Masalah lag waktu malam di rumah Encik pasti selesai terus lepas ini.,124.4,128.44
+35,Customer,"Tambah RM10 sahaja, eh?",128.44,130.38
+36,Customer,Ruta dekat rumah itu pun memang dah lama sangat.,131.02,133.1
+37,Customer,Selalu kena restart kalau sangkut.,133.34,134.9
+38,Customer,Okeylah kalau macam itu. Berbaloi juga rasanya kalau cuma tambah RM10.,135.4,138.78
+39,Agent,"Alhamdulillah. Pilihan yang sangat bijak, Encik Faiz.",139.72,142.68
+40,Agent,Saya akan proseskan permohonan naik taraf kelajuan ini sekarang dalam sistem,142.86,147.5
+41,Agent,dan kelajuan 500 Mbps itu akan aktif dalam masa 24 jam.,147.5,152.32
+42,Agent,"Untuk pemasanan ruta baharu, Encik, Encik ada di rumah hari Sabtu ini jam 10 pagi?",152.58,158.46
+43,Customer,Hari Sabtu pagi? Okey. Saya memang ada di rumah.,158.68,161.04
+44,Customer,"Terima kasih banyak, ya, Encik, sebab maklumkan pasal tawaran ini.",161.48,164.1
+45,Customer,Mujo saya tak letak telefon terus tadi.,164.54,166.16
+46,Agent,"Terima kasih atas masa, Encik, dan selamat petang.",166.46,169.46
+47,Agent,Sampai jumpa.,169.46,169.48

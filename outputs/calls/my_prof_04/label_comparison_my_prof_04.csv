@@ -1,0 +1,31 @@
+call_id,start_sec,system_text,human_text,text_similarity,combined_score,system_role,human_role,label_correct,matched,text_override,override_phrase,status
+my_prof_04,0.0,"Selamat pagi, Bank Harapan dengan saya Amirul. Boleh saya bantu Encik?","Selamat pagi, Bank Harapan dengan saya Amirul. Boleh saya bantu Encik?",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_04,4.72,Aku nak tahu kenapa ada tolak duit dari ikon aku RM100.,Aku nak tahu kenapa ada tolak duit dari ikon aku RM100.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_04,8.92,Korang ni pandai -pandai je tolak duit orang.,Korang ni pandai -pandai je tolak duit orang.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_04,11.46,Harap bersabar Encik. Saya minta maaf atas kesulitan ini.,Harap bersabar Encik. Saya minta maaf atas kesulitan ini.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_04,15.64,Boleh saya dapatkan nombor kad pengenalan untuk saya makan?,Boleh saya dapatkan nombor kad pengenalan untuk saya makan?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_04,18.5,Nak nombor kad pengenalan buat apa? Check je lah nama apa Johan.,Nak nombor kad pengenalan buat apa? Check je lah nama apa Johan.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_04,21.9,"Aku dah call banyak kali, takkan tak ada rekod?","Aku dah call banyak kali, takkan tak ada rekod?",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_04,23.78,"Maaf Encik Johan,","Maaf Encik Johan,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_04,25.74,prosedur keselamatan bank memerlukan nombor kad pengenalan untuk kami buka profi,prosedur keselamatan bank memerlukan nombor kad pengenalan untuk kami buka profi,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_04,31.0,Menyusahkan betul.,Menyusahkan betul.,1.0,1.0,Agent,Customer,False,True,False,,❌ WRONG
+my_prof_04,32.3,890 -2140 -15533. Cepat sikit.,890 -2140 -15533. Cepat sikit.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_04,37.62,Terima kasih Encik Johan.,Terima kasih Encik Johan.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_04,39.38,"Sebentar ya, saya semak transaksi terakhir Encik.","Sebentar ya, saya semak transaksi terakhir Encik.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_04,42.5,"Jangan suruh aku tunggu lama-lama. Aku ada banyak kerja layan nak buat, bukan na","Jangan suruh aku tunggu lama-lama. Aku ada banyak kerja layan nak buat, bukan na",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_04,47.22,"Baik Encik,","Baik Encik,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_04,48.28,saya nampak ada penolakan RM100 untuk casj tahunan kad kredit Encik.,saya nampak ada penolakan RM100 untuk casj tahunan kad kredit Encik.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_04,52.72,Casj tahunan apa benda pula? Aku dah guna kad ni 5 tahun. Tak pernah ada casj ta,Casj tahunan apa benda pula? Aku dah guna kad ni 5 tahun. Tak pernah ada casj ta,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_04,59.14,"Untuk makluman Encik, pengecualian casj tahunan hanya untuk 3 tahun pertama. Ber","Untuk makluman Encik, pengecualian casj tahunan hanya untuk 3 tahun pertama. Ber",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_04,65.72,casj akan dikenakan.,casj akan dikenakan.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_04,67.26,Otak kau. Siapa yang cakap macam tu?,Otak kau. Siapa yang cakap macam tu?,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_04,69.52,"Masa aku apply dulu, ejen korang cakap free semua hidup.","Masa aku apply dulu, ejen korang cakap free semua hidup.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_04,72.44,Saya faham kekecewaan Encik. Saya boleh bantu hantar permohonan untuk membatalka,Saya faham kekecewaan Encik. Saya boleh bantu hantar permohonan untuk membatalka,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_04,77.86,"Tak payah nak hantar permohonan sangat. Kau cancel je terus sekarang. Kalau tak,","Tak payah nak hantar permohonan sangat. Kau cancel je terus sekarang. Kalau tak,",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_04,83.84,"Encik, proses pembatalan perlukan kelulusan pihak pengurusan. Saya tidak boleh b","Encik, proses pembatalan perlukan kelulusan pihak pengurusan. Saya tidak boleh b",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_04,90.32,Habis tu kau buat apa kat situ? Angkat telefon je ke?,Habis tu kau buat apa kat situ? Angkat telefon je ke?,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_04,93.16,Panggil bos kau sekarang. Aku nak bercakap dengan dia.,Panggil bos kau sekarang. Aku nak bercakap dengan dia.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_04,95.7,Baiklah Encik. Saya akan sambungkan panggilan ini kepada pegawai atasan saya.,Baiklah Encik. Saya akan sambungkan panggilan ini kepada pegawai atasan saya.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_04,100.08,Mohon tunggu sebentar.,Mohon tunggu sebentar.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_prof_04,101.36,Cepat sikit. Jangan nak melengah-lengahkan masa aku.,Cepat sikit. Jangan nak melengah-lengahkan masa aku.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_prof_04,103.5,Terima kasih kerana menonton!,Terima kasih kerana menonton!,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT

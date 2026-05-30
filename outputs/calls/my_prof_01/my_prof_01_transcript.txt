@@ -1,0 +1,29 @@
+[00:00:00] Agent: Selamat pagi.
+[00:00:01] Agent: Terima kasih kerana menghubungi My Career Care.
+[00:00:04] Agent: Nama saya Syahrul. Boleh saya bantu urusan Puan hari ini?
+[00:00:07] Customer: Selamat pagi Encik Syahrul. Saya Linda di sini. Saya ada satu barang yang sepatutnya dihantar ke pejabat saya hari ini. Tetapi saya terpaksa bercuti kecemasan. Boleh saya mohon tukar alamat penghantaran ke rumah saya?
+[00:00:21] Agent: Boleh. Tiada masalah Puan Linda. Kami sedia membantu mengubah suai laluan penghantaran tersebut. Boleh saya dapatkan nombor penjejakan atau tracing nombor barang Puan?
+[00:00:32] Customer: Boleh. Sekejap ya.
+[00:00:33] Customer: Nombor penjejakannya ialah MYC777821.
+[00:00:41] Agent: Terima kasih Puan Linda. Sila tunggu sebentar ya. Saya semak status terkini barangan Puan dalam sistem.
+[00:00:47] Customer: Baik. Silakan Encik Syahrul. Terima kasih.
+[00:00:50] Agent: Terima kasih kerana menunggu Puan Linda. Saya nampak barang Puan sekarang berada di Hub Agihan Syah Alam dan dijadualkan untuk keluar bersama Korea Petang ini. Jadi kita memang sempat untuk tukar alamat sebelum barang dibawa keluar.
+[00:01:03] Customer: Oh. Alhamdulillah.
+[00:01:05] Customer: Mujur saya telefon awal.
+[00:01:07] Customer: Jadi apa maklumat yang Encik perlukan untuk proses penukaran alamat ini ya?
+[00:01:11] Agent: Demi keselamatan barang Puan, boleh saya sahkan nama penuh penerima dan alamat pejabat asal yang tertera pada bungkusan tersebut?
+[00:01:18] Customer: Boleh.
+[00:01:19] Customer: Nama penuh saya Linda binti Ahmad dan alamat asal ialah Menara Merdeka,
+[00:01:25] Customer: tingkat 12,
+[00:01:26] Customer: Jalan Ampang, Kuala Lumpur.
+[00:01:28] Agent: Pengesahan data adalah tepat. Terima kasih Puan Linda.
+[00:01:32] Agent: Sekarang boleh Puan berikan alamat baharu yang lengkap beserta poskod untuk saya kemas kini?
+[00:01:36] Customer: Alamat baharu ialah nombor 15,
+[00:01:39] Customer: Jalan Melati 3,
+[00:01:41] Customer: Taman Melati,
+[00:01:42] Customer: 4300,
+[00:01:44] Customer: Kajang, Selangor.
+[00:01:45] Agent: Baik. Saya dah kemas kini alamat baharu ke Sistem Agihan Hub Syah Alam. Sistem akan menjadualkan semula penghantaran ke kawasan Kajang dan barang Puan dijangka sampai ke rumah esok pagi. Puan juga akan terima SMS penjejakan baharu sebentar lagi.
+[00:01:59] Customer: Bagus sangat. Semuanya jelas dan cepat. Terima kasih banyak-banyak atas bantuan dan hikmat yang sangat efisien petang ini, Encik Syahrol. Sangat menyenangkan urusan saya.
+[00:02:09] Agent: Sama -sama, Puan Linda.
+[00:02:11] Agent: Sudah menjadi tugas kami untuk pastikan barang Puan sampai ke tangan dengan selamat. Semoga urusan kecemasan Puan dipermudahkan. Selamat pagi.

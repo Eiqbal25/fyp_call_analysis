@@ -1,0 +1,234 @@
+[
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Selamat pagi.",
+    "start": 0.0,
+    "end": 0.9,
+    "duration": 0.9
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Terima kasih kerana menghubungi My Career Care.",
+    "start": 1.26,
+    "end": 3.64,
+    "duration": 2.38
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Nama saya Syahrul. Boleh saya bantu urusan Puan hari ini?",
+    "start": 4.0,
+    "end": 7.38,
+    "duration": 3.38
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Selamat pagi Encik Syahrul. Saya Linda di sini. Saya ada satu barang yang sepatutnya dihantar ke pejabat saya hari ini. Tetapi saya terpaksa bercuti kecemasan. Boleh saya mohon tukar alamat penghantaran ke rumah saya?",
+    "start": 7.6,
+    "end": 21.28,
+    "duration": 13.68
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Boleh. Tiada masalah Puan Linda. Kami sedia membantu mengubah suai laluan penghantaran tersebut. Boleh saya dapatkan nombor penjejakan atau tracing nombor barang Puan?",
+    "start": 21.28,
+    "end": 31.76,
+    "duration": 10.48
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Boleh. Sekejap ya.",
+    "start": 32.04,
+    "end": 33.36,
+    "duration": 1.32
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Nombor penjejakannya ialah MYC777821.",
+    "start": 33.86,
+    "end": 41.28,
+    "duration": 7.42
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Terima kasih Puan Linda. Sila tunggu sebentar ya. Saya semak status terkini barangan Puan dalam sistem.",
+    "start": 41.8,
+    "end": 47.5,
+    "duration": 5.7
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Baik. Silakan Encik Syahrul. Terima kasih.",
+    "start": 47.82,
+    "end": 50.08,
+    "duration": 2.26
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Terima kasih kerana menunggu Puan Linda. Saya nampak barang Puan sekarang berada di Hub Agihan Syah Alam dan dijadualkan untuk keluar bersama Korea Petang ini. Jadi kita memang sempat untuk tukar alamat sebelum barang dibawa keluar.",
+    "start": 50.08,
+    "end": 63.5,
+    "duration": 13.42
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Oh. Alhamdulillah.",
+    "start": 63.88,
+    "end": 65.16,
+    "duration": 1.28
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Mujur saya telefon awal.",
+    "start": 65.7,
+    "end": 66.92,
+    "duration": 1.22
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Jadi apa maklumat yang Encik perlukan untuk proses penukaran alamat ini ya?",
+    "start": 67.3,
+    "end": 71.6,
+    "duration": 4.3
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Demi keselamatan barang Puan, boleh saya sahkan nama penuh penerima dan alamat pejabat asal yang tertera pada bungkusan tersebut?",
+    "start": 71.92,
+    "end": 78.78,
+    "duration": 6.86
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Boleh.",
+    "start": 78.78,
+    "end": 79.4,
+    "duration": 0.62
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Nama penuh saya Linda binti Ahmad dan alamat asal ialah Menara Merdeka,",
+    "start": 79.9,
+    "end": 85.34,
+    "duration": 5.44
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "tingkat 12,",
+    "start": 85.7,
+    "end": 86.48,
+    "duration": 0.78
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Jalan Ampang, Kuala Lumpur.",
+    "start": 86.88,
+    "end": 88.28,
+    "duration": 1.4
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Pengesahan data adalah tepat. Terima kasih Puan Linda.",
+    "start": 88.54,
+    "end": 91.56,
+    "duration": 3.02
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Sekarang boleh Puan berikan alamat baharu yang lengkap beserta poskod untuk saya kemas kini?",
+    "start": 92.0,
+    "end": 96.26,
+    "duration": 4.26
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Alamat baharu ialah nombor 15,",
+    "start": 96.26,
+    "end": 98.84,
+    "duration": 2.58
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Jalan Melati 3,",
+    "start": 99.24,
+    "end": 100.6,
+    "duration": 1.36
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Taman Melati,",
+    "start": 101.26,
+    "end": 102.14,
+    "duration": 0.88
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "4300,",
+    "start": 102.56,
+    "end": 103.48,
+    "duration": 0.92
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Kajang, Selangor.",
+    "start": 104.32,
+    "end": 105.22,
+    "duration": 0.9
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Baik. Saya dah kemas kini alamat baharu ke Sistem Agihan Hub Syah Alam. Sistem akan menjadualkan semula penghantaran ke kawasan Kajang dan barang Puan dijangka sampai ke rumah esok pagi. Puan juga akan terima SMS penjejakan baharu sebentar lagi.",
+    "start": 105.52,
+    "end": 119.38,
+    "duration": 13.86
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Bagus sangat. Semuanya jelas dan cepat. Terima kasih banyak-banyak atas bantuan dan hikmat yang sangat efisien petang ini, Encik Syahrol. Sangat menyenangkan urusan saya.",
+    "start": 119.38,
+    "end": 128.98,
+    "duration": 9.6
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Sama -sama, Puan Linda.",
+    "start": 129.46,
+    "end": 130.72,
+    "duration": 1.26
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Sudah menjadi tugas kami untuk pastikan barang Puan sampai ke tangan dengan selamat. Semoga urusan kecemasan Puan dipermudahkan. Selamat pagi.",
+    "start": 131.1,
+    "end": 139.12,
+    "duration": 8.02
+  }
+]

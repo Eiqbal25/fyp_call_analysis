@@ -1,0 +1,55 @@
+segment_id,role,text,start,end
+1,Agent,Selamat malam.,0.0,0.9
+2,Agent,Bantuan kecemasan jalan raya di sini. Nama saya Amir.,1.4,4.96
+3,Agent,Boleh saya bantu?,5.4,6.4
+4,Customer,Tolong saya.,7.8,8.68
+5,Customer,Kereta saya tiba -tiba mati tengah -tengah lebuh raya pelas ni.,9.04,11.98
+6,Customer,Ada asap keluar dari enjin. Lepas tu lori besar semua lalu. Laju sangat. Saya takut sangat ni. Tak tahu nak buat apa.,12.32,18.94
+7,Agent,"Cik Farah,",19.66,20.62
+8,Agent,bertenang ya.,21.2,21.8
+9,Agent,Ambil nafas dalam -dalam dulu.,22.32,24.2
+10,Agent,Cik selamat sekarang.,24.92,26.26
+11,Agent,Saya ada di sini untuk bantu Cik.,26.74,28.56
+12,Agent,"Boleh saya tahu, Cik ada di kilometer berapa sekarang?",29.24,32.72
+13,Customer,Kejap. Kejap. Saya tengok papan tanda dekat tepi ni.,33.54,36.56
+14,Customer,KM240.,38.62,39.22
+15,Customer,Tapi kereta saya tersangkut dekat lorong kanan sekali.,39.64,42.22
+16,Customer,Kereta lain semua bawa laju. Saya takut nak keluar dari kereta.,42.66,45.9
+17,Agent,Baik Farah.,46.56,47.46
+18,Agent,Dengar cakap saya ya.,47.86,49.04
+19,Agent,Jangan keluar dari kereta kalau berada di lorong kanan.,49.74,53.16
+20,Agent,Sangat bahaya.,53.16,54.58
+21,Agent,Pastikan Cik dah nyalakan lampu kecemasan atau hazard light sekarang juga.,55.32,59.32
+22,Agent,Saya sedang hantarkan trak tunda dan pasukan peronda ke lokasi Cik.,60.1,63.98
+23,Customer,Dah.,64.68,64.94
+24,Customer,Lampu hazard saya dah buka.,65.42,66.66
+25,Customer,Betul kebantuan dah on the way.,67.16,68.76
+26,Customer,Berapa lama nak sampai?,69.12,70.34
+27,Customer,Lori kat belakang ni asyik bunyikan horn.,70.86,72.76
+28,Customer,Saya risau betul.,73.12,74.18
+29,Agent,Ya betul. Pasukan peronda lebuh raya dah bergerak.,74.18,78.56
+30,Agent,Mereka akan sampai dalam masa 10 hingga 15 minit sahaja untuk sekat trafik dan tunda kereta Cik ke tempat selamat.,79.0,85.96
+31,Agent,Cik duduk diam-diam dalam kereta dan pakai tali pinggang keledar ya.,86.62,90.18
+32,Customer,Okey.,91.68,92.26
+33,Customer,Okey.,92.72,93.02
+34,Customer,Saya dah pakai tali pinggang.,93.46,94.48
+35,Customer,Tadi enjin berbunyi kuat sangat. Saya ingat kereta ni nak meletup tadi.,94.92,98.68
+36,Customer,Risau sangat saya dibuatnya.,99.24,100.62
+37,Agent,Saya faham.,101.32,102.34
+38,Agent,Situasi macam ni memang menakutkan kalau kena sebatang kara.,102.8,105.76
+39,Agent,Tapi Cik dah buat tindakan yang betul dengan terus telefon kami.,106.36,109.44
+40,Agent,Asap tu mungkin sebab enjin terlalu panas sahaja. Bukannya nak meletup.,110.18,114.1
+41,Agent,Cik jangan risau ya.,114.9,115.88
+42,Agent,Semuanya terkawal.,116.32,117.3
+43,Customer,Terima kasih Amir.,118.36,119.54
+44,Customer,Lapang sikit dada saya dengan penjelasan awak.,120.04,121.96
+45,Customer,Sekarang saya cuma perlu tunggu peronda sampai sahaja kan?,122.58,125.38
+46,Agent,Betul Farah.,126.02,126.9
+47,Agent,Saya akan terus tunggu dalam talian dengan Cik sampai Cik nampak lampu peronda tiba.,127.66,131.62
+48,Agent,"Sementara itu, boleh Cik sahkan nombor pelik kereta Cik untuk mudahkan mereka buat pengecaman?",132.3,137.38
+49,Customer,Boleh. Nombor pelik saya VEB1234.,138.62,143.36
+50,Customer,Terima kasih banyak-banyak sebab temankan saya waktu tengah takut macam ni.,144.02,147.28
+51,Agent,Sama -sama Farah.,147.86,149.0
+52,Agent,Dah memang tanggungjawab kami untuk pastikan keselamatan Cik.,149.68,152.24
+53,Agent,Ha.,153.14,153.32
+54,Agent,Trak tunda pun saya nampak dah nak hampir sampai ke lokasi Cik sekarang.,153.86,156.68

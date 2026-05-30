@@ -1,0 +1,36 @@
+segment_id,role,text,start,end
+1,Agent,Thank you for calling Nexus Stream Support. My name is David. How can I provide you with,0.0,4.22
+2,Agent,excellent service today?,4.22,5.32
+3,Customer,"Hi, David. I'm calling because my bell just came out and it's $30",5.96,9.9
+4,Customer,higher than usual. I just wanted to check if there was a mistake or a glitch on my account.,9.9,14.82
+5,Agent,I can certainly check that for you. Let me pull up your account.,15.22,18.3
+6,Agent,"Ah, I see here that your 12-month promotional discount has ended,",19.1,22.78
+7,Agent,so your account has reverted to our standard corporate pricing tier.,22.78,26.18
+8,Customer,"Oh, I see. I didn't receive any email warning me that the price was going to jump that much.",26.7,31.88
+9,Customer,Is there any way I can renew the promotional rate or maybe sign up for a different package?,32.12,36.4
+10,Agent,"Well, the expiration date was clearly printed in bold on your original contract, sir.",36.88,41.82
+11,Agent,We don't send out individual reminders to every single person.,42.2,45.78
+12,Agent,"If you wanted a cheaper plan, you should have called us before the deadline.",46.04,49.1
+13,Customer,"Right, but life gets busy and I missed it.",49.58,52.1
+14,Customer,$30 is just a big jump for my budget.,52.56,54.78
+15,Customer,Is there a supervisor or a retention specialist I could speak with to see if we can work something,54.78,59.52
+16,Customer,out?,59.52,59.78
+17,Agent,"Look, a supervisor is just going to tell you the exact same thing I just did.",60.3,64.94
+18,Agent,Transferring you is just wasting their time and mine. It's really not that hard to read your,65.52,70.26
+19,Agent,"own monthly statements, you know.",70.26,71.56
+20,Customer,Excuse me?,72.06,72.88
+21,Customer,"Wow, there is absolutely no need",73.28,75.54
+22,Customer,to be condescending. I am just asking a simple question about my options as a customer.,75.54,79.92
+23,Agent,And I'm giving you a simple answer. You enjoyed a cheap discount for a whole year and now you have,79.92,86.12
+24,Agent,to pay normal price like everyone else. That's how a business works. I can't just hand out freebies,86.12,91.52
+25,Agent,because you forgot to check your emails.,91.52,93.3
+26,Customer,This is completely unacceptable behavior for a support,93.7,96.5
+27,Customer,agent. What is your full name and employee ID number? I am absolutely reporting this attitude,96.5,101.36
+28,Agent,"to your corporate office. Go right ahead. Look it up on your online portal. If you can find it,",101.36,106.54
+29,Agent,"that is, since you seem to have trouble reading basic information on your screen anyway.",106.54,110.58
+30,Agent,I don't have time to hold your hand through a standard contract.,110.88,114.08
+31,Customer,Unbelievable!,114.8,115.28
+32,Customer,You know what? Cancel my service right now. I am not paying a single cent more,115.78,119.88
+33,Customer,to a company that employs people like you.,119.88,121.78
+34,Agent,Perfect. Consider it canceled. Let me press,122.14,124.6
+35,Agent,the button for you so you can go complain somewhere else. Have a wonderful day.,124.6,128.3

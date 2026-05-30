@@ -1,0 +1,45 @@
+segment_id,role,text,start,end
+1,Agent,Selamat petang. Terima kasih kerana menghubungi khidmat pelanggan Skylink Express.,0.54,4.68
+2,Agent,Nama saya Fidaus. Boleh saya bantu Encik hari ini?,5.16,7.92
+3,Customer,"Selamat petang, Fidaus.",8.18,9.54
+4,Customer,Saya nak tanya pasal barang saya.,9.92,11.8
+5,Customer,Nombor tracking MY9920X.,12.42,16.32
+6,Customer,"Dah tiga hari status dia out for delivery, tapi saya masih tak terima apa-apa.",16.64,20.9
+7,Agent,"Minta maaf atas kesulitan tersebut, Encik.",21.52,24.08
+8,Agent,Saya faham perasaan Encik.,24.44,26.18
+9,Agent,"Sebentar ya, biar saya semak dalam sistem kami.",26.54,28.78
+10,Agent,"Oh,",30.28,30.86
+11,Agent,saya dah nampak.,31.44,32.48
+12,Agent,"Mengikut rekod,",33.16,34.28
+13,Agent,rider kami dah hantar barang ni semalam pada pukul 2 petang.,34.68,37.94
+14,Agent,Encik ada semak dengan jiran atau letak kat dalam peti suat?,38.4,41.64
+15,Customer,Dah semak? Memang tak ada.,41.96,43.72
+16,Customer,CCTV rumah saya pun tak nampak ada motor lalu semalam.,44.36,47.32
+17,Customer,Boleh tak awak tolong hubungi rider tu untuk kepastian?,47.64,50.16
+18,Agent,"Encik,",51.52,52.1
+19,Agent,sistem kami automatik.,52.6,54.02
+20,Agent,"Kalau dia tulis delivered, maknanya dah sampai lah tu.",54.4,56.9
+21,Agent,Takkan sistem nak tipu pula?,57.4,58.8
+22,Customer,Saya bukan kata sistem tipu.,59.3,61.3
+23,Customer,Tapi mungkin rider tu salah hantar rumah.,61.52,63.42
+24,Customer,Tolonglah cek balik sebab barang tu barang mahal.,64.06,66.58
+25,Agent,"Aduh, Encik ni tak faham bahasakah?",68.34,70.54
+26,Agent,Aku dah cakap dah sampai.,70.78,71.86
+27,Agent,Sampailah.,72.2,72.76
+28,Agent,Kau ingat aku ada masakah nak layan drama barang hilang kau ni?,73.2,76.02
+29,Customer,"Eh,",76.64,76.84
+30,Customer,kenapa awak tukar bahasa macam ni?,77.4,78.96
+31,Customer,Saya bercakap dengan cara baik ya.,79.32,81.12
+32,Customer,Saya nak bercakap dengan pengurus awak sekarang.,81.62,83.54
+33,Agent,Pengurus?,84.78,85.34
+34,Agent,Tak payah nak berangan lah.,85.58,87.06
+35,Agent,Kau ingat kau siapa?,87.34,88.12
+36,Agent,Setakat barang murah macam tu pun nak bisin-bisin.,88.54,90.6
+37,Agent,"Kalau kau rasa kau pandai sangat, lain kali pergi ambil sendiri kat gudang.",90.6,93.98
+38,Agent,Tak payah menyemok call aku petang-petang ni.,94.32,96.02
+39,Customer,Saya akan buat report pasal perangai awak ni.,96.52,98.56
+40,Agent,Pergilah report.,99.22,100.1
+41,Agent,Ada aku kisah.,100.42,101.16
+42,Agent,"Dahlah, malah aku nak layan orang macam aku ni.",101.58,103.32
+43,Agent,Cari kerja lain lah daripada kacau orang.,103.68,105.2
+44,Agent,Terima kasih kerana menonton!,105.2,105.24

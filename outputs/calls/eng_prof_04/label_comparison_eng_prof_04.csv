@@ -1,0 +1,24 @@
+call_id,start_sec,system_text,human_text,text_similarity,combined_score,system_role,human_role,label_correct,matched,text_override,override_phrase,status
+eng_prof_04,0.0,Thank you for calling Silver Lining Insurance.,Thank you for calling Silver Lining Insurance.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_04,2.48,My name is Marcus.,My name is Marcus.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_04,3.7,To whom do I have the pleasure,To whom do I have the pleasure,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_04,4.78,of speaking today?,of speaking today?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_04,6.08,"Hi, Marcus. This is Sarah Jenkins.","Hi, Marcus. This is Sarah Jenkins.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_04,8.58,I'm calling because a rock hit my,I'm calling because a rock hit my,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_04,10.58,"windshield on the highway this morning, and now there's a massive crack.","windshield on the highway this morning, and now there's a massive crack.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_04,14.78,"I'm sorry to hear that,","I'm sorry to hear that,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_04,16.18,Sarah. I'm glad you're safe. Do you have your policy number handy so I can pull ,Sarah. I'm glad you're safe. Do you have your policy number handy so I can pull ,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_04,20.78,coverage details?,coverage details?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_04,22.0,"Yes, just a second.","Yes, just a second.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_04,24.46,It's 44920 Alpha. I'm really worried because I have a long,It's 44920 Alpha. I'm really worried because I have a long,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_04,30.78,"road trip planned for tomorrow, and I need this fixed immediately.","road trip planned for tomorrow, and I need this fixed immediately.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_04,34.64,I understand the urgency.,I understand the urgency.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_04,36.72,"Looking at your premier plan, you are fully covered for glass repair with a $0 d","Looking at your premier plan, you are fully covered for glass repair with a $0 d",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_04,42.22,I can schedule a mobile technician to come to your location this afternoon.,I can schedule a mobile technician to come to your location this afternoon.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_04,45.68,"Oh, that would be a huge relief.","Oh, that would be a huge relief.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_04,48.48,Does it matter that I'm at my office and not at home?,Does it matter that I'm at my office and not at home?,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_04,51.48,Not at all. We just need the vehicle's location and a contact number.,Not at all. We just need the vehicle's location and a contact number.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_04,55.08,Shall I proceed with the booking for the 2 p.m. slot?,Shall I proceed with the booking for the 2 p.m. slot?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_04,57.94,"Yes, please. That works perfectly for me. Thank you so much for making this easy","Yes, please. That works perfectly for me. Thank you so much for making this easy",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_04,62.72,"It's my pleasure, Sarah. I'm processing that now. You'll receive a confirmation ","It's my pleasure, Sarah. I'm processing that now. You'll receive a confirmation ",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_04,67.78,Is there anything else I can assist you with today?,Is there anything else I can assist you with today?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT

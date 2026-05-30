@@ -1,0 +1,31 @@
+segment_id,role,text,start,end
+1,Agent,"Selamat pagi, Bank Harapan dengan saya Amirul. Boleh saya bantu Encik?",0.0,4.42
+2,Customer,Aku nak tahu kenapa ada tolak duit dari ikon aku RM100.,4.72,8.34
+3,Customer,Korang ni pandai -pandai je tolak duit orang.,8.92,10.92
+4,Agent,Harap bersabar Encik. Saya minta maaf atas kesulitan ini.,11.46,15.16
+5,Agent,Boleh saya dapatkan nombor kad pengenalan untuk saya makan?,15.64,18.18
+6,Customer,Nak nombor kad pengenalan buat apa? Check je lah nama apa Johan.,18.5,21.54
+7,Customer,"Aku dah call banyak kali, takkan tak ada rekod?",21.9,23.78
+8,Agent,"Maaf Encik Johan,",23.78,25.26
+9,Agent,prosedur keselamatan bank memerlukan nombor kad pengenalan untuk kami buka profil Encik.,25.74,30.6
+10,Customer,Menyusahkan betul.,31.0,31.9
+11,Customer,890 -2140 -15533. Cepat sikit.,32.3,37.22
+12,Agent,Terima kasih Encik Johan.,37.62,38.98
+13,Agent,"Sebentar ya, saya semak transaksi terakhir Encik.",39.38,42.14
+14,Customer,"Jangan suruh aku tunggu lama-lama. Aku ada banyak kerja layan nak buat, bukan nak layan bank orang.",42.5,46.72
+15,Agent,"Baik Encik,",47.22,47.9
+16,Agent,saya nampak ada penolakan RM100 untuk casj tahunan kad kredit Encik.,48.28,52.72
+17,Customer,Casj tahunan apa benda pula? Aku dah guna kad ni 5 tahun. Tak pernah ada casj tahunan. Korang ni nak menipu ke?,52.72,58.74
+18,Agent,"Untuk makluman Encik, pengecualian casj tahunan hanya untuk 3 tahun pertama. Bermula tahun keempat,",59.14,65.3
+19,Agent,casj akan dikenakan.,65.72,66.78
+20,Customer,Otak kau. Siapa yang cakap macam tu?,67.26,69.16
+21,Customer,"Masa aku apply dulu, ejen korang cakap free semua hidup.",69.52,72.04
+22,Agent,Saya faham kekecewaan Encik. Saya boleh bantu hantar permohonan untuk membatalkan casj tersebut.,72.44,77.86
+23,Customer,"Tak payah nak hantar permohonan sangat. Kau cancel je terus sekarang. Kalau tak, aku tutup akaun hari ni juga.",77.86,83.3
+24,Agent,"Encik, proses pembatalan perlukan kelulusan pihak pengurusan. Saya tidak boleh buat terus dari sistem saya.",83.84,89.92
+25,Customer,Habis tu kau buat apa kat situ? Angkat telefon je ke?,90.32,92.76
+26,Customer,Panggil bos kau sekarang. Aku nak bercakap dengan dia.,93.16,95.2
+27,Agent,Baiklah Encik. Saya akan sambungkan panggilan ini kepada pegawai atasan saya.,95.7,99.68
+28,Agent,Mohon tunggu sebentar.,100.08,101.0
+29,Customer,Cepat sikit. Jangan nak melengah-lengahkan masa aku.,101.36,103.5
+30,Agent,Terima kasih kerana menonton!,103.5,103.56

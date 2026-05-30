@@ -13,6 +13,7 @@ Orchestrates the full pipeline:
 Usage:
     python main.py
     python main.py --skip_acoustic                   # faster, no GPU needed
+    python main.py --skip_transcription              # use existing Colab diarized JSONs
     python main.py --whisper_model small             # better accuracy on Manglish
     python main.py --call_id airasia_call            # process one file only
     python main.py --data_dir path/to/audio/
@@ -34,7 +35,7 @@ import numpy as np
 
 # ── Import config FIRST so OUTPUTS_DIR (run folder) exists before logging ──
 from config import (
-    DATA_DIR, OUTPUTS_DIR, GROUND_TRUTH_CSV, AUDIO_SAMPLE_RATE,
+    DATA_DIR, OUTPUTS_DIR, CALLS_DIR, COLAB_TRANSCRIPTS_DIR, GROUND_TRUTH_CSV, AUDIO_SAMPLE_RATE, get_call_dir,
     WHISPER_LANGUAGE_MAP,
 )
 import config as _cfg   # allow runtime override of WHISPER_MODEL_SIZE
@@ -64,9 +65,9 @@ from methods.method1_lexical import (
     plot_keyword_density, plot_confidence_distribution,
 )
 from methods.method2_acoustic import classify_transcript_acoustic
-from methods.method4_llm import is_llm_available, get_llm_status
-from methods.method3_hybrid import (
-    classify_transcript_hybrid, compute_confidence_statistics,
+from methods.method3_llm import (
+    classify_transcript_llm, is_llm_available, get_llm_status,
+    generate_call_summary, compute_confidence_statistics,
     plot_method_comparison, plot_ensemble_scores,
 )
 from analytics.talk_ratio import (
@@ -76,11 +77,17 @@ from analytics.talk_ratio import (
 from analytics.sentiment import (
     analyze_sentiment, plot_sentiment_trajectory, plot_sentiment_summary,
 )
+from analytics.rude_behavior import detect_rude_behavior, format_rude_behavior_report
+from analytics.advanced import (
+    compute_agent_response_time, detect_interruptions,
+    detect_language, format_wer_summary,
+)
 from analytics.compliance import (
-    check_compliance, plot_compliance_summary, plot_risk_severity_distribution,
+    check_compliance, detect_call_outcome, plot_compliance_summary, plot_risk_severity_distribution,
 )
 from evaluation.metrics import compute_classification_metrics, compute_rtf
 from utils.file_utils import save_json, save_transcript_txt, save_analytics_csv
+from run_tracker import update_tracker
 
 
 # ─────────────────────────────────────────────────────────────────
@@ -100,6 +107,10 @@ def parse_args():
     parser.add_argument(
         "--skip_acoustic", action="store_true",
         help="Skip Method 2 DNN — runs faster, no GPU required")
+    parser.add_argument(
+        "--skip_transcription", action="store_true",
+        help="Skip Whisper + pyannote — load existing *_diarized.json files instead. "
+             "Use this after running transcription on Colab with better GPU/model.")
     parser.add_argument(
         "--output_json",
         default=os.path.join(OUTPUTS_DIR, "pipeline_results.json"),
@@ -169,6 +180,7 @@ def find_audio_files(data_dir: str, call_id_filter: str = None) -> list[str]:
 
 def process_call(audio_path: str,
                  skip_acoustic: bool = False,
+                 skip_transcription: bool = False,
                  reference_transcripts: dict = None) -> dict:
     """
     Full 5-phase pipeline for a single audio file.
@@ -177,6 +189,7 @@ def process_call(audio_path: str,
     ----------
     audio_path            : path to .wav/.mp3
     skip_acoustic         : skip Method 2 DNN classification
+    skip_transcription    : skip Whisper+pyannote, load existing *_diarized.json
     reference_transcripts : {call_id: str} ground-truth text for WER (optional)
 
     Returns
@@ -202,22 +215,42 @@ def process_call(audio_path: str,
     plot_waveform_comparison(
         prep["y_raw"], y, sr,
         title=f"Waveform Comparison — {call_id}",
-        save_path=os.path.join(OUTPUTS_DIR, f"{call_id}_waveform.png"),
+        save_path=os.path.join(get_call_dir(call_id), f"{call_id}_waveform.png"),
     )
     plot_spectrogram_comparison(
         prep["y_raw"], y, sr,
         title=f"Spectrogram — {call_id}",
-        save_path=os.path.join(OUTPUTS_DIR, f"{call_id}_spectrogram.png"),
+        save_path=os.path.join(get_call_dir(call_id), f"{call_id}_spectrogram.png"),
     )
 
     # ── Phase 1B: Transcription + Diarization ────────────────────
-    logger.info("Phase 1: Transcription + Diarization...")
-    call_language = detect_call_language(call_id)
-    diarized = run_transcription_diarization(
-        y, sr,
-        save_json=os.path.join(OUTPUTS_DIR, f"{call_id}_diarized.json"),
-        language=call_language,
-    )
+    # Look for diarized JSON in order: colab_transcripts/ → calls/<id>/ → outputs/latest/
+    existing_json = os.path.join(COLAB_TRANSCRIPTS_DIR, f"{call_id}_diarized.json")
+    if not os.path.exists(existing_json):
+        existing_json = os.path.join(get_call_dir(call_id), f"{call_id}_diarized.json")
+    if not os.path.exists(existing_json):
+        existing_json = os.path.join(OUTPUTS_DIR, f"{call_id}_diarized.json")
+    if skip_transcription and os.path.isfile(existing_json):
+        logger.info(
+            f"Phase 1: Transcription SKIPPED — loading existing JSON: {existing_json}"
+        )
+        import json as _json
+        with open(existing_json, encoding="utf-8") as _f:
+            diarized = _json.load(_f)
+        logger.info(f"  Loaded {len(diarized)} segments from existing diarized JSON")
+    else:
+        if skip_transcription:
+            logger.warning(
+                f"--skip_transcription requested but no JSON found at {existing_json}. "
+                f"Running transcription normally."
+            )
+        logger.info("Phase 1: Transcription + Diarization...")
+        call_language = detect_call_language(call_id)
+        diarized = run_transcription_diarization(
+            y, sr,
+            save_json=existing_json,
+            language=call_language,
+        )
     turn_stats = compute_diarization_turn_counts(diarized)
     result["diarization"] = {
         "num_segments":      len(diarized),
@@ -255,11 +288,11 @@ def process_call(audio_path: str,
     kw_freq = analyze_keyword_frequency(m1_classified)
     plot_keyword_density(
         kw_freq,
-        save_path=os.path.join(OUTPUTS_DIR, f"{call_id}_m1_keywords.png"),
+        save_path=os.path.join(get_call_dir(call_id), f"{call_id}_m1_keywords.png"),
     )
     plot_confidence_distribution(
         m1_classified,
-        save_path=os.path.join(OUTPUTS_DIR, f"{call_id}_m1_confidence.png"),
+        save_path=os.path.join(get_call_dir(call_id), f"{call_id}_m1_confidence.png"),
     )
     m1_stats = compute_confidence_statistics(m1_classified)
     result["method1"] = {
@@ -275,7 +308,7 @@ def process_call(audio_path: str,
         logger.warning(
             "Method 2 skipped — no trained model at models/acoustic_model.pth\n"
             "  Run  python train.py  first to enable acoustic classification.\n"
-            "  Continuing with Method 1 + Method 3 (lexical + hybrid)."
+            "  Continuing with Method 1 + Method 2 fallback."
         )
         skip_acoustic = True
 
@@ -311,22 +344,18 @@ def process_call(audio_path: str,
         "stats":      m2_stats,
     }
 
-    # ── Phase 2C: Method 3 — Hybrid Ensemble ─────────────────────
-    logger.info("Phase 2: Method 3 — Hybrid Ensemble Fusion...")
-    m3_classified = classify_transcript_hybrid(m1_classified, m2_classified)
+    # ── Phase 2C: Method 3 — LLM Classification (Proposed) ──────
+    logger.info("Phase 2C: Method 3 — LLM Llama 3.3 70B (proposed system)...")
+    m3_classified = classify_transcript_llm(diarized)
 
     m3_stats = compute_confidence_statistics(m3_classified)
-    plot_ensemble_scores(
-        m3_classified,
-        save_path=os.path.join(OUTPUTS_DIR, f"{call_id}_m3_ensemble.png"),
-    )
     result["method3"] = {
         "classified": _serialize(m3_classified),
         "stats":      m3_stats,
     }
     plot_method_comparison(
         m1_stats, m2_stats, m3_stats,
-        save_path=os.path.join(OUTPUTS_DIR, f"{call_id}_method_comparison.png"),
+        save_path=os.path.join(get_call_dir(call_id), f"{call_id}_method_comparison.png"),
     )
 
     # ── Phase 3: Analytics ───────────────────────────────────────
@@ -337,34 +366,60 @@ def process_call(audio_path: str,
     talk_ratio        = compute_talk_time_ratio(m3_with_sentiment, prep["duration_sec"])
     turn_flow         = compute_turn_taking(m3_with_sentiment)
     compliance_result = check_compliance(m3_with_sentiment)
+    rude_result       = detect_rude_behavior(m3_with_sentiment)
+    outcome_result    = detect_call_outcome(m3_with_sentiment)
+    summary_result    = generate_call_summary(m3_with_sentiment, call_id)
+    response_time     = compute_agent_response_time(m3_with_sentiment)
+    interruptions     = detect_interruptions(m3_with_sentiment)
+    language_result   = detect_language(m3_with_sentiment)
+    summary_result    = generate_call_summary(m3_with_sentiment, call_id)
     qa_result         = compute_qa_score(talk_ratio, turn_flow,
-                                          sentiment_result, compliance_result)
+                                          sentiment_result, compliance_result,
+                                          rude_result=rude_result)
 
     result["sentiment"]         = {k: v for k, v in sentiment_result.items()
                                    if k != "segments_with_sentiment"}
     result["talk_ratio"]        = talk_ratio
     result["turn_flow"]         = turn_flow
     result["compliance"]        = compliance_result
+    result["rude_behavior"]     = rude_result
+    result["call_outcome"]      = outcome_result
+    result["call_summary"]      = summary_result
+    result["response_time"]     = response_time
+    result["interruptions"]     = interruptions
+    result["language"]          = language_result
     result["qa_result"]         = qa_result
-    result["transcript_hybrid"] = _serialize(m3_with_sentiment)
+    result["transcript_m3"] = _serialize(m3_with_sentiment)
+    result["transcript_m1"] = _serialize(m1_classified)
+    result["transcript_m2"] = _serialize(m2_classified)
 
     # Sentiment trajectory plot
     plot_sentiment_trajectory(
         sentiment_result, call_id,
-        save_path=os.path.join(OUTPUTS_DIR, f"{call_id}_sentiment.png"),
+        save_path=os.path.join(get_call_dir(call_id), f"{call_id}_sentiment.png"),
     )
 
     # Export human-readable transcript
     save_transcript_txt(
         m3_with_sentiment,
-        os.path.join(OUTPUTS_DIR, f"{call_id}_transcript.txt"),
+        os.path.join(get_call_dir(call_id), f"{call_id}_transcript.txt"),
     )
 
     logger.info(
         f"✓ {call_id} | QA={qa_result['qa_score']}/100 ({qa_result['rating']}) | "
         f"Compliance={compliance_result['compliance_score']*100:.0f}% | "
-        f"Risk={compliance_result['risk_severity']}"
+        f"Risk={compliance_result['risk_severity']} | "
+                f"Outcome={outcome_result['emoji']} {outcome_result['outcome']} | "
+                f"AgentRude={rude_result['agent_rudeness_level']} | "
+                f"CustRude={rude_result['customer_rudeness_level']}"
     )
+    # Update run tracker
+    _day1 = ["eng_prof_01","eng_prof_02","eng_prof_03","eng_prof_04","eng_prof_05",
+             "eng_rudeagt_01","eng_rudeagt_02","eng_rudeagt_03","eng_rudeagt_04",
+             "eng_rudecust_01","eng_rudecust_02","eng_rudecust_03","eng_rudecust_04",
+             "eng_rudecust_05","long_01"]
+    _day = 1 if call_id in _day1 else 2
+    update_tracker(call_id, "done", day=_day)
     return result
 
 
@@ -415,9 +470,9 @@ def main():
     logger.info(f"  Device      : {_cfg.DEVICE}  ({_cfg.GPU_NAME})")
     llm_status = get_llm_status()
     if llm_status["available"]:
-        logger.info(f"  Method 4   : ✅ LLM enabled ({llm_status['model']})")
+        logger.info(f"  Method 3   : ✅ LLM enabled ({llm_status['model']})")
     else:
-        logger.info("  Method 4   : ❌ LLM disabled (set ANTHROPIC_API_KEY in config.py)")
+        logger.info("  Method 3   : ❌ LLM disabled (set ANTHROPIC_API_KEY in config.py)")
     logger.info("  -- To change run folder: edit RUN_NAME in config.py --")
     logger.info("=" * 70)
 
@@ -452,6 +507,7 @@ def main():
         call_result = process_call(
             audio_path,
             skip_acoustic=args.skip_acoustic,
+            skip_transcription=args.skip_transcription,
             reference_transcripts=reference_transcripts,
         )
         cid = call_result["call_id"]
@@ -493,6 +549,10 @@ def main():
         logger.info("\nPhase 4: Validation against ground truth...")
         try:
             from evaluation.validator import run_validation
+            # Extract LLM-only labels (segments with llm_classified=True)
+            def _llm_only(segs):
+                return [s for s in segs if s.get("llm_classified")]
+
             validation_results = run_validation(
                 calls_m1=[all_results[cid].get("method1", {}).get("classified", [])
                            for cid in all_results],
@@ -500,6 +560,8 @@ def main():
                            for cid in all_results],
                 calls_m3=[all_results[cid].get("method3", {}).get("classified", [])
                            for cid in all_results],
+                calls_m3_llm=[_llm_only(all_results[cid].get("method3", {}).get("classified", []))
+                               for cid in all_results],
                 call_ids=list(all_results.keys()),
                 system_qa_scores=[all_results[cid].get("qa_result", {}).get("qa_score", 50)
                                    for cid in all_results],
@@ -524,16 +586,50 @@ def main():
         "validation_results": validation_results,
     }
 
+    # ── Merge with existing results (supports --call_id incremental runs) ──
+    if args.call_id and os.path.isfile(args.output_json):
+        import json as _json
+        with open(args.output_json, encoding="utf-8") as _f:
+            existing_payload = _json.load(_f)
+        existing_calls = {}
+        for c in existing_payload.get("calls", []):
+            if isinstance(c, dict):
+                existing_calls[c["call_id"]] = c
+        # all_results is a dict {call_id: result_dict}
+        for cid, cdata in all_results.items():
+            existing_calls[cid] = cdata
+        output_payload["calls"] = list(existing_calls.values())
+        # Keep existing validation_results — don't overwrite with single-call result
+        # Full validation is done by evaluate.py across all 30 calls
+        existing_val = existing_payload.get("validation_results", {})
+        if existing_val:
+            # Only update per_call entries for the current call_id
+            new_val = validation_results or {}
+            for method, per_call_list in new_val.get("per_call", {}).items():
+                if method not in existing_val.get("per_call", {}):
+                    existing_val.setdefault("per_call", {})[method] = []
+                # Remove old entry for this call_id and add new one
+                existing_val["per_call"][method] = [
+                    c for c in existing_val["per_call"].get(method, [])
+                    if c.get("call_id") not in all_results
+                ] + per_call_list
+            output_payload["validation_results"] = existing_val
+        else:
+            output_payload["validation_results"] = validation_results
+        logger.info(
+            f"Merged results: {len(output_payload['calls'])} calls total in {args.output_json}"
+        )
+
     csv_path = os.path.join(OUTPUTS_DIR, "3_analytics_summary.csv")
-    save_analytics_csv(all_results, csv_path)
+    save_analytics_csv(output_payload["calls"], csv_path)
     save_json(output_payload, args.output_json)
 
     logger.info(f"\n{'='*60}")
     logger.info(f"✅ Results saved:")
     logger.info(f"   JSON      → {args.output_json}")
     logger.info(f"   CSV       → {csv_path}")
-    logger.info(f"   Transcripts → {OUTPUTS_DIR}/*_transcript.txt")
-    logger.info(f"   Plots     → {OUTPUTS_DIR}/")
+    logger.info(f"   Transcripts → {CALLS_DIR}/<call_id>/*_transcript.txt")
+    logger.info(f"   Plots       → {CALLS_DIR}/<call_id>/")
     logger.info(f"\n   Launch dashboard:  streamlit run dashboard/app.py")
     logger.info(f"{'='*60}")
 

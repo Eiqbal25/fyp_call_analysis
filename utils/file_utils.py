@@ -78,6 +78,9 @@ def save_analytics_csv(all_results: dict, path: str) -> None:
              compliance_score, risk_severity, qa_score, rating
     """
     rows = []
+    # Handle both list and dict formats
+    if isinstance(all_results, list):
+        all_results = {c["call_id"]: c for c in all_results if isinstance(c, dict)}
     for cid, r in all_results.items():
         prep  = r.get("preprocessing", {})
         talk  = r.get("talk_ratio",    {})

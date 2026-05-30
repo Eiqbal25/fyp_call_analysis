@@ -1,0 +1,76 @@
+[00:00:00] Agent: Thank you for calling Mega Proud Pen Support.
+[00:00:03] Agent: My name is Arif.
+[00:00:04] Agent: How can I help you today?
+[00:00:05] Customer: Weh, help me lah.
+[00:00:07] Customer: My internet suddenly red light blinking.
+[00:00:09] Customer: Completely down eh.
+[00:00:10] Customer: I got 10 minutes only to submit my university final project.
+[00:00:13] Customer: If not, I fail.
+[00:00:14] Customer: Jalat already.
+[00:00:16] Customer: Macam mana now?
+[00:00:17] Agent: Me, don't panic first.
+[00:00:19] Agent: Take a deep breath.
+[00:00:21] Agent: 10 minutes is enough time.
+[00:00:23] Agent: We can sort this out one.
+[00:00:24] Agent: Let me check your line state from my side.
+[00:00:27] Agent: Can you give me your account number or IC number?
+[00:00:30] Customer: I see it's 991122145678.
+[00:00:34] Customer: Please check fast-fast lah.
+[00:00:35] Customer: My laptop portal is just spinning and spinning only.
+[00:00:38] Customer: I cannot fill this paper.
+[00:00:39] Customer: My parents will kill me weh.
+[00:00:41] Agent: Okay, Mei.
+[00:00:42] Agent: I already pulled up your account.
+[00:00:44] Agent: I see there is a sudden fibre cable cut in your area.
+[00:00:47] Agent: So the main line is down.
+[00:00:49] Agent: Don't worry.
+[00:00:50] Agent: The portal problem we can bypass.
+[00:00:52] Agent: Do you have your phone with mobile data nearby?
+[00:00:55] Customer: God, my phone got 5G.
+[00:00:57] Customer: But my project file is 500 megabyte way.
+[00:01:01] Customer: Hotspot can manage meh.
+[00:01:03] Customer: Very slow, right?
+[00:01:04] Customer: I'm literally shaking now.
+[00:01:07] Agent: Ken,
+[00:01:08] Agent: 5G hotspot is more than fast enough for 500 meg.
+[00:01:12] Agent: Don't think about the router now.
+[00:01:14] Agent: Focus on your phone.
+[00:01:15] Agent: Turn on your personal hotspot immediately and connect your laptop to it.
+[00:01:19] Customer: Okay, okay, wait.
+[00:01:21] Customer: I'm connecting now.
+[00:01:22] Customer: Aduh, my hands are shaking so hard.
+[00:01:24] Customer: I cannot type my password properly.
+[00:01:26] Customer: Okay, connected already.
+[00:01:28] Customer: The page is loading.
+[00:01:29] Agent: Good job, Mei.
+[00:01:31] Agent: See, you still have 7 minutes left.
+[00:01:33] Agent: Ample time.
+[00:01:34] Agent: Upload the file now.
+[00:01:36] Agent: While it's uploading,
+[00:01:37] Agent: I will write an official system downtime report
+[00:01:39] Agent: and email it to you right away.
+[00:01:41] Agent: If anything happens,
+[00:01:43] Agent: you can use that email as proof for your lecturer.
+[00:01:45] Customer: Oh my god, thank you so much.
+[00:01:47] Customer: The file is uploading already.
+[00:01:49] Customer: Looks like it's going up quite fast eh.
+[00:01:51] Customer: You are a lifesaver lah, seriously.
+[00:01:54] Customer: I was about to cry just now.
+[00:01:56] Agent: No worries lah, Mei.
+[00:01:58] Agent: We all know the stress of submission deadlines.
+[00:02:01] Agent: Just make sure the submission goes through completely.
+[00:02:04] Agent: Once you finish,
+[00:02:05] Agent: I can help you log your report for your house router repair.
+[00:02:08] Agent: Can or not?
+[00:02:09] Customer: Can, can.
+[00:02:10] Customer: Submission success already.
+[00:02:11] Customer: Double check.
+[00:02:12] Customer: Safe.
+[00:02:14] Customer: Luckily, you replied so fast.
+[00:02:16] Customer: For the router,
+[00:02:17] Customer: you just proceed with the report lah.
+[00:02:19] Customer: Awesome.
+[00:02:20] Agent: Congrats on submitting.
+[00:02:22] Agent: I've logged the repair ticket for your house router.
+[00:02:24] Agent: The technician will come over tomorrow morning.
+[00:02:26] Agent: Anything else I can help you with?

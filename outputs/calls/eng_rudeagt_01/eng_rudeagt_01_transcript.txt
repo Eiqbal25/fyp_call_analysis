@@ -1,0 +1,48 @@
+[00:00:00] Agent: Good afternoon.
+[00:00:01] Agent: Thank you for calling Velvet Glow Beauty Care. My name is Chloe. How may I add a
+[00:00:05] Customer: little radiance to your day today? Good afternoon, Chloe. I hope you're having a lovely day.
+[00:00:11] Customer: I'm calling because I noticed a discrepancy on my bank statement this morning. I am a subscriber
+[00:00:17] Customer: to your premium gold skincare box, which is $90 a month, but I was charged twice this month for
+[00:00:24] Customer: a total of $180.
+[00:00:26] Customer: Could you help me look into this error?
+[00:00:28] Agent: Sigh. Well, our system processes
+[00:00:32] Agent: thousands of transactions flawlessly every day, ma'am, so it's highly unlikely to be a system
+[00:00:37] Agent: error on our end. You probably just clicked the submit order button twice on our checkout page
+[00:00:44] Agent: during your monthly renewal, or your banking app refreshed abnormally. The double charge is almost
+[00:00:50] Agent: certainly your own doing. Oh, I see.
+[00:00:53] Customer: However, my account is set to automatic renewal, so I didn't
+[00:00:57] Customer: actually manually check out or press any buttons this month. Both charges have the exact same
+[00:01:03] Customer: transaction timestamp. Could you please pull up my profile and check if the duplicate payment can
+[00:01:09] Agent: be refunded back to my card? Look, I am looking at your profile right now, and I really don't have
+[00:01:15] Agent: time to deep dive into your personal banking history. All sales on our premium boxes are
+[00:01:21] Agent: strictly final and non-refundable. It's clearly stated in our terms of service. If you have an
+[00:01:27] Agent: issue with your bank showing two charges, you need to go complain to your bank, not to us.
+[00:01:33] Customer: Chloe, there is no need to be defensive or use that tone with me. I am asking a very standard question
+[00:01:40] Customer: as a loyal subscriber. The bank confirmed the funds went directly to your company under two
+[00:01:46] Customer: identical invoice numbers. I am simply asking for a supervisor or a billing specialist to review this
+[00:01:53] Agent: so we can resolve the mistake politely. And I'm telling you that my supervisor is incredibly busy
+[00:02:00] Agent: preparing for a massive product launch, and she definitely doesn't have the time to sit down
+[00:02:05] Agent: and audit a single $90 charge for you. It's just $90 for luxury skincare, ma'am. If this minor
+[00:02:13] Agent: amount is causing such a massive crisis for your budget, maybe luxury subscriptions aren't right for
+[00:02:19] Customer: you. My financial situation is absolutely none of your business, Chloe, and that comment was
+[00:02:26] Customer: incredibly disrespectful.
+[00:02:27] Customer: The amount is a matter of principle and corporate honesty. Since you are
+[00:02:32] Customer: actively refusing to assist me or transfer me to a manager,
+[00:02:36] Customer: please provide your full name and your
+[00:02:39] Agent: employee ID number right now.
+[00:02:41] Agent: Go right ahead and get offended, ma 'am. My name is Chloe. You can spell
+[00:02:46] Agent: it exactly how it sounds. I don't have an employee ID number to give you because our corporate data is
+[00:02:51] Agent: confidential. Feel free to send a long email to our support inbox if it makes you feel better,
+[00:02:57] Customer: but it's just going to get filtered out anyway. I am honestly stunned by your lack of professionalism.
+[00:03:03] Customer: This is easily the most hostile customer service experience I have ever had. I will be contacting
+[00:03:10] Customer: your corporate headquarters directly, and I will also file a formal dispute through my credit card
+[00:03:15] Customer: company for unauthorized billing.
+[00:03:18] Agent: Go ahead and dispute it with your credit card company. Do whatever
+[00:03:22] Agent: you want, ma'am. If you file a chargeback, our system will automatically blacklist your account
+[00:03:28] Agent: and cancel your subscription permanently anyway. We have plenty of VIP clients waiting for that spot,
+[00:03:34] Customer: so you won't be missed at all. That is perfectly fine with me, as I have absolutely no desire to
+[00:03:40] Customer: support a brand that treats people this way. This call is recorded on your network, and I am confident
+[00:03:46] Customer: your upper management will be appalled when they review your behavior. Goodbye, Chloe. I really
+[00:03:52] Agent: couldn't care less about your threats or your recordings, ma'am. I have actual clients on my
+[00:03:58] Agent: other line who don't waste my entire afternoon over $90.
+[00:04:02] Agent: Enjoy your bank dispute. Goodbye.

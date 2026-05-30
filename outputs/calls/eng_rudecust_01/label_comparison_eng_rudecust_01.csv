@@ -1,0 +1,46 @@
+call_id,start_sec,system_text,human_text,text_similarity,combined_score,system_role,human_role,label_correct,matched,text_override,override_phrase,status
+eng_rudecust_01,0.0,Good afternoon.,Good afternoon.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_01,1.14,Welcome to Horizon Airways Customer Care. My name is Elena. How may I assist you,Welcome to Horizon Airways Customer Care. My name is Elena. How may I assist you,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_01,7.04,You can assist me by firing whoever's running your joke of an airline.,You can assist me by firing whoever's running your joke of an airline.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_01,11.22,My flight to London was just cancelled and some useless automated text told me I,My flight to London was just cancelled and some useless automated text told me I,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_01,17.16,until tomorrow.,until tomorrow.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_01,18.38,Do you have any idea who I am or how much money I lose because of your incompete,Do you have any idea who I am or how much money I lose because of your incompete,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_01,23.68,"I completely understand your frustrations, sir. And I am incredibly sorry for th","I completely understand your frustrations, sir. And I am incredibly sorry for th",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_01,29.56,disruption to your travel plans. The cancellation was due to a severe thundersto,disruption to your travel plans. The cancellation was due to a severe thundersto,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_01,35.24,which triggered a safety grounding.,which triggered a safety grounding.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_01,37.56,Let me look at your booking right away to see how we can get,Let me look at your booking right away to see how we can get,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_01,40.56,you to London safely.,you to London safely.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_01,42.1,May I have your ticket or a last name? I don't care about a little rain.,May I have your ticket or a last name? I don't care about a little rain.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+eng_rudecust_01,46.7,"Other airlines are taking off, so your pilots are clearly just lazy. My name is ","Other airlines are taking off, so your pilots are clearly just lazy. My name is ",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_01,51.94,"Look it up. I am a Platinum Elite Flyer, and I demand you put me on a private ch","Look it up. I am a Platinum Elite Flyer, and I demand you put me on a private ch",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_01,57.32,or buy me a first-class seat on a British Airways flight right now.,or buy me a first-class seat on a British Airways flight right now.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_01,61.8,"I thank you, Mr. Vance. I have pulled up your Platinum profile. I see the urgenc","I thank you, Mr. Vance. I have pulled up your Platinum profile. I see the urgenc",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_01,67.2,especially with your elite status.,especially with your elite status.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_01,69.44,"Regarding other airlines, all transatlantic routes are currently","Regarding other airlines, all transatlantic routes are currently",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_01,73.1,"blocked by air traffic control for safety, so British Airways is grounded as wel","blocked by air traffic control for safety, so British Airways is grounded as wel",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_01,78.62,"because you are a priority member, I am looking at alternative routing options t","because you are a priority member, I am looking at alternative routing options t",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_01,84.36,"hubs. Oh, so now you want me to do a layover?","hubs. Oh, so now you want me to do a layover?",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_01,88.06,Brilliant! Truly spectacular service. I pay thousands,Brilliant! Truly spectacular service. I pay thousands,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_01,92.02,"of dollars a year to fly direct,","of dollars a year to fly direct,",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_01,94.28,not to sit in some secondary airport eating stale sandwiches because,not to sit in some secondary airport eating stale sandwiches because,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_01,97.98,your company can't handle a thunderstorm.,your company can't handle a thunderstorm.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_01,100.22,You are completely useless.,You are completely useless.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_01,102.16,"I know. A connection is far from ideal when you paid for a direct flight, Mr. Va","I know. A connection is far from ideal when you paid for a direct flight, Mr. Va",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_01,107.46,"and I apologize for that. However, I have found a rerouting option through Paris","and I apologize for that. However, I have found a rerouting option through Paris",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_01,113.94,"exactly two hours. It will get you to London tonight, just four hours later than","exactly two hours. It will get you to London tonight, just four hours later than",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_01,119.62,time. I can upgrade your seat to first class for that entire journey at no extra,time. I can upgrade your seat to first class for that entire journey at no extra,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_01,125.0,Two hours? So I have to sit in this crowded terminal for another two hours becau,Two hours? So I have to sit in this crowded terminal for another two hours becau,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_01,130.88,Fine. Whatever. Just book it. But you better ensure my luggage actually makes it,Fine. Whatever. Just book it. But you better ensure my luggage actually makes it,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_01,136.56,or I will sue this entire airline. I am processing the first class ticket throug,or I will sue this entire airline. I am processing the first class ticket throug,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_01,142.58,Mr. Vance. I am also manually tagging your baggage in the system to ensure it is,Mr. Vance. I am also manually tagging your baggage in the system to ensure it is,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_01,148.4,by our priority ground crew during your connection. You won't have to recheck it,by our priority ground crew during your connection. You won't have to recheck it,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_01,153.02,Hmm.,Hmm.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_01,154.22,Wow. That's the bare minimum you should be doing anyway. Give me my new boarding,Wow. That's the bare minimum you should be doing anyway. Give me my new boarding,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_01,158.52,don't have all day to stand here watching you click buttons.,don't have all day to stand here watching you click buttons.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_01,161.46,"Here are your updated boarding passes for both flights, Mr. Vance. Your gate is ","Here are your updated boarding passes for both flights, Mr. Vance. Your gate is ",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_01,166.6,and priority boarding will begin in 45 minutes. I have also issued a complimenta,and priority boarding will begin in 45 minutes. I have also issued a complimenta,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_01,172.72,lounge voucher to your email so you can wait comfortably.,lounge voucher to your email so you can wait comfortably.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_01,176.04,Grab the papers. I'm going to the lounge. Just make sure the plane actually flie,Grab the papers. I'm going to the lounge. Just make sure the plane actually flie,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_01,180.78,"We will do everything we can, sir.","We will do everything we can, sir.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_01,183.32,Thank you for your patience.,Thank you for your patience.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_01,184.6,"Safe travels to London, and have a good afternoon.","Safe travels to London, and have a good afternoon.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT

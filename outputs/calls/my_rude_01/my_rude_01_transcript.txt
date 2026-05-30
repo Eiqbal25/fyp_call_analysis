@@ -1,0 +1,61 @@
+[00:00:00] Agent: Selamat petang. Selamat datang ke Grand Horizon Resort.
+[00:00:03] Agent: Saya nama Ilyana.
+[00:00:05] Agent: Boleh saya bantu urusan daftar masuk Encik hari ini?
+[00:00:09] Customer: Akhirnya. Saya dah tunggu dekat lobi korang yang panas ni dekat setengah jam, tahu tak?
+[00:00:13] Customer: Nama saya Encik Razlan. Saya dah tempah private pool suite untuk tiga malam.
+[00:00:17] Customer: Bagi saya kunci bilik sekarang, saya dah penat nak rehat.
+[00:00:20] Agent: Baik Encik Razlan. Saya semak tempahan Encik sekejap, ya?
+[00:00:24] Agent: Sila tunggu sebentar.
+[00:00:25] Agent: Ah, Encik Razlan. Mengikut sistem kami, waktu daftar masuk rasmi resort adalah pada jam tiga petang.
+[00:00:33] Agent: Sekarang baru pukul satu tengah hari.
+[00:00:36] Agent: Jadi bilik Encik sedang dibersihkan dan disanitasi oleh pihak housekeeping demi keselesaan Encik.
+[00:00:42] Customer: Eh, I tak pedulilah pukul berapa sekarang.
+[00:00:45] Customer: I bayar satu malam dekat dua ribu ringgit, tahu tak? Bukan murah.
+[00:00:48] Customer: Korang punya housekeeping buat kerja lembab macam siput.
+[00:00:51] Customer: Lepas tu nak suruh I terconggok tunggu kat lobi ni lagi dua jam.
+[00:00:53] Customer: You tahu tak Aiz apa? Korang ni memang tak ada ti buat kerja ke apa?
+[00:00:57] Agent: Saya benar-benar minta maaf atas kesulitan ini, Encik Razlan.
+[00:01:01] Agent: Kami sangat menghargai tempahan Encik.
+[00:01:03] Agent: Bilik tersebut baru sahaja dikosongkan oleh pelanggan terdahulu pada jam 12 tengah hari tadi.
+[00:01:09] Agent: Pihak kami sedang berusaha mempercepatkan proses pembersihan bilik Encik
+[00:01:13] Agent: supaya Encik boleh masuk dengan kadar segera.
+[00:01:16] Customer: Hah,
+[00:01:17] Customer: alasan.
+[00:01:18] Customer: Korang punya manajemen memang bodoh dan tak cekap.
+[00:01:20] Customer: I tak nak dengar alasan bilik penuh ke apa. Sekarang ni, I nak you upgrade I ke Presidential Suite sekarang juga secara percuma
+[00:01:26] Customer: sebagai ganti rugi masa I.
+[00:01:28] Customer: Kalau tak, I bising dekat sini sampai semua guest lain dengar.
+[00:01:31] Agent: Encik Razlan, saya faham Encik penat selepas perjalanan jauh.
+[00:01:35] Agent: Mengenai Presidential Suite,
+[00:01:37] Agent: bilik tersebut telahpun dihuni oleh tetamu lain buat masa ini.
+[00:01:41] Agent: Namun, sebagai alternatif, untuk keselesaan Encik sementara menunggu bilik sedia,
+[00:01:46] Agent: saya telah menyediakan dua keping pas masuk premium ke VIP lounge kami di tingkat atas secara percuma.
+[00:01:54] Customer: VIP lounge?
+[00:01:55] Customer: You ingat I tak mampu nak beli pas tu sendirikah?
+[00:01:58] Customer: I datang sini nak bilik, bukan nak minum kopi kat lounge you yang tak seberapa tu.
+[00:02:02] Customer: Berapa lama lagi I kena tunggu, eh?
+[00:02:04] Customer: Tolong jangan bazirkan masa I yang berharga ni.
+[00:02:06] Agent: Pas lounge ini adalah tanda permohonan maaf ikhlas daripada pihak kami, Encik Razlan.
+[00:02:11] Agent: Di sana, pihak kami telah menyediakan hidangan bufet ringan
+[00:02:15] Agent: dan ruang rehat berhawa dingin yang sangat selesa untuk Encik dan isteri.
+[00:02:20] Agent: Saya juga sudah meminta penyelia housekeeping
+[00:02:22] Agent: untuk meletakkan status bilik Encik sebagai keutamaan tertinggi.
+[00:02:26] Agent: Bilik Encik akan siap dalam masa 30 minit sahaja lagi.
+[00:02:30] Customer: 30 minit, ya?
+[00:02:32] Customer: Kalau lebih 1 minit, I sendiri akan cari general manager you
+[00:02:35] Customer: dan pastikan you kena pecat hari ini juga.
+[00:02:37] Customer: Ambil pas tu.
+[00:02:38] Customer: Baggage I, you suruh bellboy hantar terus macam bilik nanti.
+[00:02:41] Customer: I tak nak tengok bag I sadai dekat lobi ni.
+[00:02:43] Agent: Baik, Encik Razlan.
+[00:02:45] Agent: Baggage Encik akan kami uruskan dengan selamat
+[00:02:47] Agent: dan dihantar terus ke dalam bilik sebaik sahaja bilik sedia.
+[00:02:51] Agent: Ini pas masuk ke VIP lounge Encik,
+[00:02:54] Agent: pihak staf kami di lift akan tunjukkan arah.
+[00:02:57] Customer: Dah, tak payah nak tunjuk-tunjuk jalan.
+[00:02:58] Customer: I tahulah sendiri mana nak pergi.
+[00:03:00] Customer: Nyusah kan betul.
+[00:03:01] Agent: Terima kasih atas kesabaran Encik.
+[00:03:03] Agent: Kami mohon maaf sekali lagi atas kelewatan ini
+[00:03:06] Agent: dan selamat berehat di resort kami, Encik Razlan.
+[00:03:09] Agent: Selamat petang.

@@ -1,0 +1,346 @@
+[
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Good afternoon.",
+    "start": 0.0,
+    "end": 0.78,
+    "duration": 0.78
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Thank you for calling Grand Horizon Resort's Guest Relations.",
+    "start": 1.16,
+    "end": 4.2,
+    "duration": 3.04
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "My name is Julian.",
+    "start": 4.5,
+    "end": 5.28,
+    "duration": 0.78
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "How may I assist you with your travel plans today?",
+    "start": 5.68,
+    "end": 7.62,
+    "duration": 1.94
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Good afternoon, Julian.",
+    "start": 7.84,
+    "end": 9.2,
+    "duration": 1.36
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "This is Dr. Rachel speaking.",
+    "start": 9.68,
+    "end": 11.28,
+    "duration": 1.6
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I have a reservation at your Kuala Lumpur property starting tonight,",
+    "start": 11.62,
+    "end": 15.62,
+    "duration": 4.0
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "but my international flight has just been delayed by 12 hours.",
+    "start": 15.64,
+    "end": 19.62,
+    "duration": 3.98
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I am going to miss my first night, and I wanted to know if it's possible to adjust my check-in date.",
+    "start": 19.8,
+    "end": 25.3,
+    "duration": 5.5
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Oh, I am so sorry to hear about your flight delay, Dr. Rachel.",
+    "start": 25.68,
+    "end": 29.42,
+    "duration": 3.74
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Travel disruptions can be incredibly exhausting.",
+    "start": 30.0,
+    "end": 32.44,
+    "duration": 2.44
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Please rest assured that I am more than happy to help you adjust your reservation so you don't lose your booking.",
+    "start": 32.84,
+    "end": 38.14,
+    "duration": 5.3
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "May I please have your reservation confirmation number?",
+    "start": 38.4,
+    "end": 41.4,
+    "duration": 3.0
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Thank you so much, Julian. I appreciate your kindness.",
+    "start": 41.64,
+    "end": 44.8,
+    "duration": 3.16
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Yes, my confirmation number is GHR44921.",
+    "start": 45.26,
+    "end": 52.12,
+    "duration": 6.86
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Thank you very much. Please hold for just a brief moment while I access our reservation database.",
+    "start": 52.64,
+    "end": 57.86,
+    "duration": 5.22
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I am pulling up your details right now.",
+    "start": 57.86,
+    "end": 60.3,
+    "duration": 2.44
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Take your time, Julian. Thank you.",
+    "start": 60.5,
+    "end": 62.34,
+    "duration": 1.84
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Thank you for waiting, Dr. Rachel.",
+    "start": 62.66,
+    "end": 64.14,
+    "duration": 1.48
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I see you're booking for a deluxe King Suite for four nights.",
+    "start": 64.5,
+    "end": 68.28,
+    "duration": 3.78
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Because this was a promotional, non-refundable rate, the system usually locks the dates automatically.",
+    "start": 68.66,
+    "end": 74.06,
+    "duration": 5.4
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "However,",
+    "start": 74.4,
+    "end": 74.86,
+    "duration": 0.46
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "given your flight situation, I am going to manually override the penalty and shift your check -in date to tomorrow.",
+    "start": 75.24,
+    "end": 80.94,
+    "duration": 5.7
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Oh, that is absolutely wonderful news.",
+    "start": 80.94,
+    "end": 83.8,
+    "duration": 2.86
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I was quite worried I would be charged for a room I couldn't use.",
+    "start": 84.0,
+    "end": 87.44,
+    "duration": 3.44
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Will I still be able to keep the full four nights, or will the stay be shortened?",
+    "start": 87.78,
+    "end": 91.98,
+    "duration": 4.2
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I have checked our availability, and luckily, the suite is free for an extra night at the end of your stay.",
+    "start": 92.44,
+    "end": 98.18,
+    "duration": 5.74
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "So, I have successfully shifted your entire four-night block.",
+    "start": 98.42,
+    "end": 101.88,
+    "duration": 3.46
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Your new checkout date will be this coming Wednesday instead of Tuesday, at no extra charge.",
+    "start": 102.08,
+    "end": 107.02,
+    "duration": 4.94
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Wow, that is incredibly generous of you.",
+    "start": 107.02,
+    "end": 110.16,
+    "duration": 3.14
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I honestly expected a lot of corporate red tape, but you have made this entire process completely stress-free.",
+    "start": 110.34,
+    "end": 116.58,
+    "duration": 6.24
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "It is entirely our pleasure, Dr. Rachel.",
+    "start": 116.92,
+    "end": 119.48,
+    "duration": 2.56
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Our priority is ensuring your stay with us is perfect, right from the moment you travel.",
+    "start": 119.78,
+    "end": 124.34,
+    "duration": 4.56
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I have also added a note to the front desk team to expect a late morning arrival for you tomorrow,",
+    "start": 124.54,
+    "end": 129.62,
+    "duration": 5.08
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "so your room will be fully prepped and ready.",
+    "start": 129.68,
+    "end": 131.9,
+    "duration": 2.22
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Excellent. That sounds absolutely perfect.",
+    "start": 132.44,
+    "end": 134.74,
+    "duration": 2.3
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Thank you so much for your stellar efficiency and wonderful customer service today, Julian.",
+    "start": 134.74,
+    "end": 139.94,
+    "duration": 5.2
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "You've truly turned my day around.",
+    "start": 140.24,
+    "end": 141.86,
+    "duration": 1.62
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "You are most welcome, Dr. Rachel.",
+    "start": 142.18,
+    "end": 144.26,
+    "duration": 2.08
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "It was an absolute pleasure assisting you.",
+    "start": 144.54,
+    "end": 146.32,
+    "duration": 1.78
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I have just sent the updated booking confirmation to your email.",
+    "start": 146.52,
+    "end": 149.66,
+    "duration": 3.14
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Safe travels on your flight tonight, and we look forward to welcoming you tomorrow.",
+    "start": 149.94,
+    "end": 153.58,
+    "duration": 3.64
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Have a great afternoon.",
+    "start": 153.82,
+    "end": 154.66,
+    "duration": 0.84
+  }
+]

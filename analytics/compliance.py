@@ -247,3 +247,87 @@ def plot_risk_severity_distribution(calls_compliance: list[dict],
     plt.close(fig)
     logger.info(f"Risk severity chart saved → {save_path}")
     return save_path
+
+
+# ─────────────────────────────────────────────────────────────
+# CALL OUTCOME DETECTION
+# ─────────────────────────────────────────────────────────────
+
+OUTCOME_RESOLVED_KEYWORDS = [
+    "thank you for your help", "problem solved", "issue resolved",
+    "that's all", "that works", "perfect thank you", "great thank you",
+    "alright thank you", "okay thank you", "sounds good",
+    "terima kasih", "dah selesai", "okay dah", "okaylah",
+    "submission success", "done", "selesai", "boleh dah",
+    "alhamdulillah", "thanks so much", "lifesaver",
+]
+
+OUTCOME_UNRESOLVED_KEYWORDS = [
+    "still not working", "not fixed", "still the same problem",
+    "nothing changed", "didn't help", "useless", "waste of time",
+    "cancel my service", "cancel my account", "i'm canceling",
+    "tak selesai", "masih tak boleh", "still cannot",
+    "biadab", "kurang ajar", "report kes",
+]
+
+OUTCOME_ESCALATED_KEYWORDS = [
+    "speak to your manager", "speak to a supervisor", "want a manager",
+    "transfer me to", "escalate this", "file a complaint",
+    "report this", "corporate office", "head office",
+    "cakap dengan manager", "nak jumpa pengurus", "buat aduan rasmi",
+    "nak buat report", "panggil bos",
+]
+
+OUTCOME_TRANSFERRED_KEYWORDS = [
+    "transferring you now", "let me transfer", "i will transfer",
+    "connecting you to", "putting you through", "one moment while i transfer",
+    "hold on and do not hang up", "stay on the line",
+    "tunggu sekejap saya pindahkan", "saya sambungkan",
+]
+
+
+def detect_call_outcome(segments: list[dict]) -> dict:
+    """
+    Detect overall call outcome based on transcript content.
+    Returns: Resolved / Unresolved / Escalated / Transferred
+    """
+    # Look at last 30% of segments for resolution signals
+    n = len(segments)
+    end_segs = segments[int(n * 0.7):]
+    all_text  = " ".join(s.get("text", "").lower() for s in segments)
+    end_text  = " ".join(s.get("text", "").lower() for s in end_segs)
+
+    _, transferred_kws = _text_contains_any(all_text, OUTCOME_TRANSFERRED_KEYWORDS)
+    _, escalated_kws   = _text_contains_any(all_text, OUTCOME_ESCALATED_KEYWORDS)
+    _, unresolved_kws  = _text_contains_any(all_text, OUTCOME_UNRESOLVED_KEYWORDS)
+    _, resolved_kws    = _text_contains_any(end_text,  OUTCOME_RESOLVED_KEYWORDS)
+
+    # Priority: Transferred > Escalated > Unresolved > Resolved
+    if transferred_kws:
+        outcome = "Transferred"
+        emoji   = "📞"
+        triggers = transferred_kws
+    elif escalated_kws and unresolved_kws:
+        outcome = "Escalated"
+        emoji   = "🔄"
+        triggers = escalated_kws
+    elif unresolved_kws and not resolved_kws:
+        outcome = "Unresolved"
+        emoji   = "❌"
+        triggers = unresolved_kws
+    elif resolved_kws:
+        outcome = "Resolved"
+        emoji   = "✅"
+        triggers = resolved_kws
+    else:
+        outcome = "Resolved"
+        emoji   = "✅"
+        triggers = []
+
+    logger.info(f"Call outcome: {emoji} {outcome} | triggers={triggers[:2]}")
+
+    return {
+        "outcome":  outcome,
+        "emoji":    emoji,
+        "triggers": triggers[:3],
+    }

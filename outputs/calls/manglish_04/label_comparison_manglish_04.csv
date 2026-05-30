@@ -1,0 +1,25 @@
+call_id,start_sec,system_text,human_text,text_similarity,combined_score,system_role,human_role,label_correct,matched,text_override,override_phrase,status
+manglish_04,0.0,Selamat petang. Terima kasih kerana menghubungi Luxe Butik Care. Nama saya Zara.,Selamat petang. Terima kasih kerana menghubungi Luxe Butik Care. Nama saya Zara.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_04,6.84,Hai saya. Saya nak tanya pasal refund untuk order baju saya hari itu.,Hai saya. Saya nak tanya pasal refund untuk order baju saya hari itu.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_04,11.18,"I kena cancel sebab tersalah pilih saiz, tapi dah dua minggu still tak masuk aka","I kena cancel sebab tersalah pilih saiz, tapi dah dua minggu still tak masuk aka",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_04,17.86,Boleh. Tiada masalah.,Boleh. Tiada masalah.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_04,19.68,"Bagi saya order ID sekejap, ya?","Bagi saya order ID sekejap, ya?",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_04,21.34,Ah saya dah jumpa. Untuk refund ni memang lambat sikit ya sis. Sebab ikut terms ,Ah saya dah jumpa. Untuk refund ni memang lambat sikit ya sis. Sebab ikut terms ,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_04,28.28,proses pemulangan akan ambil masa 14 hingga 30 hari bekerja.,proses pemulangan akan ambil masa 14 hingga 30 hari bekerja.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_04,32.7,Oh 30 hari bekerja? Lamanya.,Oh 30 hari bekerja? Lamanya.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_04,36.1,Sebab hari tu dekat website tulis 3 to 5 days bank transfer sahaja.,Sebab hari tu dekat website tulis 3 to 5 days bank transfer sahaja.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_04,40.98,Tak ada cara nak expedite ke? Sebab I nak pakai duit tu untuk beli baju lain.,Tak ada cara nak expedite ke? Sebab I nak pakai duit tu untuk beli baju lain.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_04,45.6,"Haa. Website tu untuk normal season, sis.","Haa. Website tu untuk normal season, sis.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_04,49.16,"Sekarang kan tengah peak season, logiklah kalau lambat. Takkan benda macam tu pu","Sekarang kan tengah peak season, logiklah kalau lambat. Takkan benda macam tu pu",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_04,58.98,Eh tapi mana I tahu? Dekat confirmation email tak ada pula tulis pasal 30 hari t,Eh tapi mana I tahu? Dekat confirmation email tak ada pula tulis pasal 30 hari t,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_04,65.0,"Takpelah. Kalau macam tu boleh I cakap dengan manager you,","Takpelah. Kalau macam tu boleh I cakap dengan manager you,",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_04,68.28,mana tahu dia boleh tolong ajas.,mana tahu dia boleh tolong ajas.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_04,69.76,Excuse me?,Excuse me?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_04,71.48,Tak payah nak pass kat manager sangatlah. Manager I pun busy. Tak ada masa nak l,Tak payah nak pass kat manager sangatlah. Manager I pun busy. Tak ada masa nak l,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_04,84.42,"Amboi. Kenapa biadab sangat ni, Zara? I tanya elok-elok kan? You ni agent custom","Amboi. Kenapa biadab sangat ni, Zara? I tanya elok-elok kan? You ni agent custom",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_04,92.06,"I cakap benda betul, sis. You yang tak sabar, lepas tu nak menyusahkan orang lai","I cakap benda betul, sis. You yang tak sabar, lepas tu nak menyusahkan orang lai",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_04,105.2,"You ni memang melampau ya. Bagi tahu I, nama penuh you sekarang. I nak buat adua","You ni memang melampau ya. Bagi tahu I, nama penuh you sekarang. I nak buat adua",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_04,116.28,"Ha, viral lah viral. Ingat I takut ke? Setakat ugut nak masuk TikTok, I pun tak ","Ha, viral lah viral. Ingat I takut ke? Setakat ugut nak masuk TikTok, I pun tak ",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_04,129.0,Kurang ajar betul. I tak pernah jumpa customer service seburuk you ni. I akan re,Kurang ajar betul. I tak pernah jumpa customer service seburuk you ni. I akan re,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_04,138.6,"Report lah kat mana -mana yang you suka, sis. Ada I kisah.","Report lah kat mana -mana yang you suka, sis. Ada I kisah.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_04,142.16,"Dah lah, malas I nak layan orang macam you ni. Menyemak je. Bye.","Dah lah, malas I nak layan orang macam you ni. Menyemak je. Bye.",1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG

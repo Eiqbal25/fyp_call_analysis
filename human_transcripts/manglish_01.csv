@@ -1,0 +1,78 @@
+segment_id,role,text,start,end
+1,Agent,Thank you for calling Tech Gadget Malaysia Support.,0.0,2.24
+2,Agent,My name is Sharif.,2.62,3.82
+3,Agent,How can I help you today?,4.06,5.04
+4,Customer,Hello.,5.58,5.82
+5,Customer,I want to make a big complaint.,6.18,7.88
+6,Customer,Yesterday only I bought the new phone from your Mid-Valley outlet.,8.5,11.54
+7,Customer,Then this morning the screen totally blank already.,11.76,14.3
+8,Customer,Cannot turn on way.,14.82,15.86
+9,Customer,"Gila, baru buy one day only.",16.28,17.96
+10,Customer,Costly phones or more.,18.3,19.18
+11,Customer,How can like this?,19.36,20.28
+12,Agent,"I'm so sorry to hear that, miss.",20.62,22.74
+13,Agent,I completely understand your frustration.,22.96,25.04
+14,Agent,Buy a new phone?,25.58,26.46
+15,Agent,"Definitely expect it to work perfectly, one.",26.7,28.84
+16,Agent,"Don't worry, we will help you check.",29.42,31.16
+17,Agent,May I know your name and the phone model?,31.36,33.44
+18,Customer,My name is Daphne.,33.72,35.36
+19,Customer,The model is the Pro Max Edition one.,35.62,38.0
+20,Customer,"I already buy a full cache yesterday, you know.",38.16,40.46
+21,Customer,"I need to use the phone for my work now, but it's totally dead.",40.64,44.34
+22,Customer,You better give me a one-to-one replacement now.,44.56,47.18
+23,Customer,Don't ask me to wait for repair.,47.52,48.84
+24,Customer,I don't want.,48.84,49.86
+25,Agent,"I understand, Daphne.",50.14,51.62
+26,Agent,"Since you just bought it yesterday,",51.8,53.44
+27,Agent,it is definitely covered under our 7-day one-to-one instant replacement warranty.,53.78,58.58
+28,Agent,Let me pull out your receipt data first.,58.84,60.96
+29,Agent,Can you pass me your phone number or the serial number on the box?,61.2,64.7
+30,Customer,My phone number is 012-345-6789.,65.18,69.66
+31,Customer,Check fast-fast lah.,69.98,71.1
+32,Customer,I got meeting soon.,71.26,72.24
+33,Customer,"If you guys tell me need to send to HQ for two weeks,",72.42,75.32
+34,Customer,I strictly cannot accept ya.,75.48,77.0
+35,Customer,Brand new phone already hardware failure.,77.32,79.2
+36,Customer,Very kantoi lah like this.,79.48,80.96
+37,Agent,"Okay, Daphne.",81.44,82.32
+38,Agent,I already found your receipt in our system.,82.5,84.58
+39,Agent,"Bought yesterday at 4pm, correct?",84.9,87.0
+40,Agent,Don't worry.,87.5,88.14
+41,Agent,You don't need to send to HQ and wait for two weeks.,88.36,91.08
+42,Agent,I can issue an instant replacement voucher to your email right now.,91.24,95.02
+43,Agent,Voucher?,95.62,96.06
+44,Agent,Then how do I get the new phone?,96.42,98.0
+45,Customer,I don't want to go to the shop and then the staff there say no stop.,98.16,101.42
+46,Customer,Then I wait long-long again.,101.74,102.94
+47,Customer,"Understand, Daphne.",103.7,104.66
+48,Agent,That's why this voucher will lock the physical stock at the Mid-Valley outlet immediately.,104.9,109.58
+49,Agent,I already double-checked their inventory.,109.88,111.76
+50,Agent,They have three units of your exact colour ready.,111.82,114.64
+51,Agent,"You just show up, show the email,",114.86,116.84
+52,Agent,"and they will pass you a fresh, unboxed unit on the spot.",116.9,120.22
+53,Agent,"Oh,",120.64,121.12
+54,Customer,"okay, okay.",121.7,122.26
+55,Customer,Like that better.,122.6,123.26
+56,Customer,So I just bring the dead phone with the original box and full accessories back to Mid-Valley lah.,123.48,128.16
+57,Agent,"No need to pay any extra fees, right?",128.16,130.3
+58,Agent,"Yes, correct.",130.78,131.78
+59,Agent,Just bring the whole box set together with the dead phone.,132.16,135.1
+60,Agent,No extra charges at all.,135.34,136.84
+61,Customer,Everything is zero cost under your warranty.,137.16,139.36
+62,Customer,I have already sent the voucher to your email.,139.64,141.8
+63,Customer,Can you check if you got it or not?,142.04,143.64
+64,Agent,"Wait, ah.",144.08,144.62
+65,Agent,"Okay, got it already.",145.2,146.42
+66,Agent,Instant exchange voucher for Mid-Valley outlet.,146.8,149.18
+67,Agent,"Whew, nasib baik.",149.78,150.84
+68,Customer,Luckily you settled this fast for me.,151.26,153.0
+69,Customer,"Most welcome, Daphne.",153.44,154.66
+70,Agent,"Truly sorry for the bad experience with the first unit,",154.96,157.78
+71,Agent,but I'm glad we can lock the new one for you.,158.16,159.9
+72,Agent,Is there anything else I can assist you with today?,160.18,162.46
+73,Agent,"No, that's all.",162.86,163.6
+74,Agent,I will go to the outlet straight after my meeting later.,163.76,166.16
+75,Agent,"Thanks, Sharif.",166.52,167.12
+76,Agent,"No problem at all, Daphne.",167.46,168.94
+77,Agent,Have a smooth meeting today and take care.,169.18,171.42

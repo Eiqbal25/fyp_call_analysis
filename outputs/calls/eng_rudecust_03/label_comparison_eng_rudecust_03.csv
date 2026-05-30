@@ -1,0 +1,32 @@
+call_id,start_sec,system_text,human_text,text_similarity,combined_score,system_role,human_role,label_correct,matched,text_override,override_phrase,status
+eng_rudecust_03,0.0,Thank you for calling ConnectNet Technical Support. My name is Alex. How can I h,Thank you for calling ConnectNet Technical Support. My name is Alex. How can I h,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_03,5.26,My internet is down again. This is the third time this week and I am sick of it.,My internet is down again. This is the third time this week and I am sick of it.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_03,10.5,I apologize for the inconvenience. Let me pull up your account. Can I get your a,I apologize for the inconvenience. Let me pull up your account. Can I get your a,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_03,15.72,Are you kidding me? I just typed it into the automated system. Why do I have to ,Are you kidding me? I just typed it into the automated system. Why do I have to ,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_03,21.38,I understand your frustration. Sometimes the system does not pass the informatio,I understand your frustration. Sometimes the system does not pass the informatio,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_03,26.32,I just need it to access your router.,I just need it to access your router.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_03,29.26,Fine. It is 987 -6543.,Fine. It is 987 -6543.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_03,33.16,Hurry up. I work from home and I am,Hurry up. I work from home and I am,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_03,35.54,losing money.,losing money.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_03,37.12,Thank you. Give me one moment while I run a diagnostic on your connection.,Thank you. Give me one moment while I run a diagnostic on your connection.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_03,41.38,Whatever. Just fix it. Your company is a complete joke.,Whatever. Just fix it. Your company is a complete joke.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_03,45.04,I am seeing a line error in your area.,I am seeing a line error in your area.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_03,48.1,Our technicians are actually already working on a node nearby.,Our technicians are actually already working on a node nearby.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_03,51.74,I do not care about nodes or line,I do not care about nodes or line,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_03,54.72,errors. I care about when I can get back online.,errors. I care about when I can get back online.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_03,57.64,Give me a time.,Give me a time.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_03,59.08,The estimated time of resolution,The estimated time of resolution,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_03,61.18,is within the next two hours.,is within the next two hours.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_03,63.66,Two hours? Are you out of your mind? I have a meeting in 20 minutes. This,Two hours? Are you out of your mind? I have a meeting in 20 minutes. This,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_03,67.96,is unacceptable.,is unacceptable.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_03,69.42,I sincerely apologize for the disruption.,I sincerely apologize for the disruption.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_03,72.2,We can offer you a credit for the,We can offer you a credit for the,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_03,73.72,days you experienced outages.,days you experienced outages.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_03,75.78,Keep your stupid $5 credit. I want a manager right now.,Keep your stupid $5 credit. I want a manager right now.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_03,80.1,I can certainly transfer you to a supervisor. Please hold on the line for a brie,I can certainly transfer you to a supervisor. Please hold on the line for a brie,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_03,85.66,Do not put me on hold. Hello? Hello?,Do not put me on hold. Hello? Hello?,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_03,88.82,Do not you dare put me on hold.,Do not you dare put me on hold.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_03,91.16,"Sir, I have to place you on a brief hold to connect the supervisor. It will only","Sir, I have to place you on a brief hold to connect the supervisor. It will only",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_03,96.28,"If you put me on hold, I am canceling my service today. I swear.","If you put me on hold, I am canceling my service today. I swear.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudecust_03,100.66,I am transferring you now. Please stay on the line.,I am transferring you now. Please stay on the line.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudecust_03,103.3,You guys are absolutely useless.,You guys are absolutely useless.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT

@@ -1,0 +1,77 @@
+call_id,start_sec,system_text,human_text,text_similarity,combined_score,system_role,human_role,label_correct,matched,text_override,override_phrase,status
+manglish_03,0.48,Thank you for calling Mega Proud Pen Support.,Thank you for calling Mega Proud Pen Support.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,3.18,My name is Arif.,My name is Arif.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,4.44,How can I help you today?,How can I help you today?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,5.98,"Weh, help me lah.","Weh, help me lah.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,7.54,My internet suddenly red light blinking.,My internet suddenly red light blinking.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,9.6,Completely down eh.,Completely down eh.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,10.94,I got 10 minutes only to submit my university final project.,I got 10 minutes only to submit my university final project.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,13.92,"If not, I fail.","If not, I fail.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,14.94,Jalat already.,Jalat already.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,16.14,Macam mana now?,Macam mana now?,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,17.62,"Me, don't panic first.","Me, don't panic first.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,19.78,Take a deep breath.,Take a deep breath.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,21.82,10 minutes is enough time.,10 minutes is enough time.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,23.46,We can sort this out one.,We can sort this out one.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,24.96,Let me check your line state from my side.,Let me check your line state from my side.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,27.2,Can you give me your account number or IC number?,Can you give me your account number or IC number?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,30.04,I see it's 991122145678.,I see it's 991122145678.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,34.22,Please check fast-fast lah.,Please check fast-fast lah.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,35.9,My laptop portal is just spinning and spinning only.,My laptop portal is just spinning and spinning only.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,38.46,I cannot fill this paper.,I cannot fill this paper.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,39.88,My parents will kill me weh.,My parents will kill me weh.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,41.68,"Okay, Mei.","Okay, Mei.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,42.68,I already pulled up your account.,I already pulled up your account.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,44.16,I see there is a sudden fibre cable cut in your area.,I see there is a sudden fibre cable cut in your area.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,47.26,So the main line is down.,So the main line is down.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,49.22,Don't worry.,Don't worry.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,50.22,The portal problem we can bypass.,The portal problem we can bypass.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,52.24,Do you have your phone with mobile data nearby?,Do you have your phone with mobile data nearby?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,55.72,"God, my phone got 5G.","God, my phone got 5G.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,57.48,But my project file is 500 megabyte way.,But my project file is 500 megabyte way.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,61.88,Hotspot can manage meh.,Hotspot can manage meh.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,63.54,"Very slow, right?","Very slow, right?",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,64.96,I'm literally shaking now.,I'm literally shaking now.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,67.32,"Ken,","Ken,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,68.48,5G hotspot is more than fast enough for 500 meg.,5G hotspot is more than fast enough for 500 meg.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,72.22,Don't think about the router now.,Don't think about the router now.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,74.0,Focus on your phone.,Focus on your phone.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,75.14,Turn on your personal hotspot immediately and connect your laptop to it.,Turn on your personal hotspot immediately and connect your laptop to it.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,79.98,"Okay, okay, wait.","Okay, okay, wait.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,81.22,I'm connecting now.,I'm connecting now.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,82.68,"Aduh, my hands are shaking so hard.","Aduh, my hands are shaking so hard.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,84.78,I cannot type my password properly.,I cannot type my password properly.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,86.6,"Okay, connected already.","Okay, connected already.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,88.02,The page is loading.,The page is loading.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,89.38,"Good job, Mei.","Good job, Mei.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,91.12,"See, you still have 7 minutes left.","See, you still have 7 minutes left.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,93.4,Ample time.,Ample time.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,94.82,Upload the file now.,Upload the file now.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,96.12,"While it's uploading,","While it's uploading,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,97.48,I will write an official system downtime report,I will write an official system downtime report,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,99.84,and email it to you right away.,and email it to you right away.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,101.96,"If anything happens,","If anything happens,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,103.02,you can use that email as proof for your lecturer.,you can use that email as proof for your lecturer.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,105.96,"Oh my god, thank you so much.","Oh my god, thank you so much.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,107.94,The file is uploading already.,The file is uploading already.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,109.78,Looks like it's going up quite fast eh.,Looks like it's going up quite fast eh.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,111.88,"You are a lifesaver lah, seriously.","You are a lifesaver lah, seriously.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,114.34,I was about to cry just now.,I was about to cry just now.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,116.58,"No worries lah, Mei.","No worries lah, Mei.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,118.5,We all know the stress of submission deadlines.,We all know the stress of submission deadlines.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,121.18,Just make sure the submission goes through completely.,Just make sure the submission goes through completely.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,124.34,"Once you finish,","Once you finish,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,125.48,I can help you log your report for your house router repair.,I can help you log your report for your house router repair.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,128.14,Can or not?,Can or not?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,129.12,"Can, can.","Can, can.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,130.32,Submission success already.,Submission success already.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,131.74,Double check.,Double check.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,132.56,Safe.,Safe.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,134.0,"Luckily, you replied so fast.","Luckily, you replied so fast.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,136.5,"For the router,","For the router,",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,137.44,you just proceed with the report lah.,you just proceed with the report lah.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+manglish_03,139.44,Awesome.,Awesome.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+manglish_03,140.54,Congrats on submitting.,Congrats on submitting.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,142.3,I've logged the repair ticket for your house router.,I've logged the repair ticket for your house router.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,144.62,The technician will come over tomorrow morning.,The technician will come over tomorrow morning.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+manglish_03,146.86,Anything else I can help you with?,Anything else I can help you with?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT

@@ -1,0 +1,23 @@
+[00:00:00] Agent: Sama petang, pusat bantuan makan sini.
+[00:00:02] Agent: Saya Siti. Boleh saya bantu Encik?
+[00:00:04] Customer: Helo, Siti.
+[00:00:06] Customer: Saya nak tanya pasal pesanan saya tadi. Saya baru perasan ada barang yang tertinggal dalam plastik ni.
+[00:00:11] Agent: Minta maaf atas kesulitan tersebut, Encik. Boleh saya dapatkan nombor pesanan Encik untuk saya buat semakan dalam sistem?
+[00:00:18] Customer: Nombor dia MS8821.
+[00:00:22] Customer: Saya pesan set nasi lemak ayam berempah dengan air sirap.
+[00:00:25] Customer: Tapi ayamnya tak ada.
+[00:00:28] Customer: Nasi dengan sambal je ada.
+[00:00:30] Customer: Macam mana nak makan macam ni?
+[00:00:31] Agent: Saya faham perasaan Encik. Saya pun akan kecewa kalau jadi macam ni.
+[00:00:36] Agent: Berdasarkan rekod, pesanan Encik memang sepatutnya ada ayam.
+[00:00:39] Agent: Encik nak saya pulangkan duit, refund untuk bahagian ayam itu?
+[00:00:43] Agent: Atau Encik nak baucer untuk pesanan akan datang?
+[00:00:46] Customer: Kalau boleh, saya nak refund sajalah. Sebab saya dah lapar sangat ni. Kena beli makanan lain pula nanti.
+[00:00:52] Agent: Baiklah. Saya akan uruskan proses bayaran balik serta-merta.
+[00:00:56] Agent: Proses ini akan mengambil masa dalam 24 jam untuk masuk semula ke dalam e-wallet, Encik.
+[00:01:01] Customer: Okeylah kalau macam tu. Harap lepas ni pihak restoran lebih peka lah ya.
+[00:01:06] Customer: Jangan cuai sangat bungkus makanan.
+[00:01:08] Agent: Betul, Encik. Kami akan hantar maklum balas tegas kepada pihak restoran tersebut.
+[00:01:12] Agent: Ada apa-apa lagi yang boleh saya bantu?
+[00:01:15] Customer: Tak ada dah. Itu sahaja. Terima kasih ya.
+[00:01:17] Agent: Sama-sama, Encik. Terima kasih kerana menghubungi kami.

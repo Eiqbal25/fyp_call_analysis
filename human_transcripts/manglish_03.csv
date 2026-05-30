@@ -1,0 +1,77 @@
+segment_id,role,text,start,end
+1,Agent,Thank you for calling Mega Proud Pen Support.,0.48,2.72
+2,Agent,My name is Arif.,3.18,4.24
+3,Agent,How can I help you today?,4.44,5.3
+4,Customer,"Weh, help me lah.",5.98,7.2
+5,Customer,My internet suddenly red light blinking.,7.54,9.24
+6,Customer,Completely down eh.,9.6,10.6
+7,Customer,I got 10 minutes only to submit my university final project.,10.94,13.72
+8,Customer,"If not, I fail.",13.92,14.82
+9,Customer,Jalat already.,14.94,15.56
+10,Customer,Macam mana now?,16.14,17.02
+11,Agent,"Me, don't panic first.",17.62,19.32
+12,Agent,Take a deep breath.,19.78,21.04
+13,Agent,10 minutes is enough time.,21.82,23.24
+14,Agent,We can sort this out one.,23.46,24.42
+15,Agent,Let me check your line state from my side.,24.96,26.86
+16,Agent,Can you give me your account number or IC number?,27.2,29.26
+17,Customer,I see it's 991122145678.,30.04,33.78
+18,Customer,Please check fast-fast lah.,34.22,35.56
+19,Customer,My laptop portal is just spinning and spinning only.,35.9,38.0
+20,Customer,I cannot fill this paper.,38.46,39.78
+21,Customer,My parents will kill me weh.,39.88,41.1
+22,Agent,"Okay, Mei.",41.68,42.4
+23,Agent,I already pulled up your account.,42.68,43.76
+24,Agent,I see there is a sudden fibre cable cut in your area.,44.16,47.06
+25,Agent,So the main line is down.,47.26,48.64
+26,Agent,Don't worry.,49.22,49.92
+27,Agent,The portal problem we can bypass.,50.22,51.66
+28,Agent,Do you have your phone with mobile data nearby?,52.24,54.5
+29,Customer,"God, my phone got 5G.",55.72,57.48
+30,Customer,But my project file is 500 megabyte way.,57.48,61.38
+31,Customer,Hotspot can manage meh.,61.88,63.44
+32,Customer,"Very slow, right?",63.54,64.42
+33,Customer,I'm literally shaking now.,64.96,66.7
+34,Agent,"Ken,",67.32,67.82
+35,Agent,5G hotspot is more than fast enough for 500 meg.,68.48,71.58
+36,Agent,Don't think about the router now.,72.22,73.78
+37,Agent,Focus on your phone.,74.0,74.88
+38,Agent,Turn on your personal hotspot immediately and connect your laptop to it.,75.14,79.14
+39,Customer,"Okay, okay, wait.",79.98,80.88
+40,Customer,I'm connecting now.,81.22,82.1
+41,Customer,"Aduh, my hands are shaking so hard.",82.68,84.72
+42,Customer,I cannot type my password properly.,84.78,86.16
+43,Customer,"Okay, connected already.",86.6,87.74
+44,Customer,The page is loading.,88.02,88.86
+45,Agent,"Good job, Mei.",89.38,90.62
+46,Agent,"See, you still have 7 minutes left.",91.12,93.24
+47,Agent,Ample time.,93.4,94.34
+48,Agent,Upload the file now.,94.82,95.8
+49,Agent,"While it's uploading,",96.12,97.08
+50,Agent,I will write an official system downtime report,97.48,99.84
+51,Agent,and email it to you right away.,99.84,101.32
+52,Agent,"If anything happens,",101.96,102.74
+53,Agent,you can use that email as proof for your lecturer.,103.02,105.08
+54,Customer,"Oh my god, thank you so much.",105.96,107.72
+55,Customer,The file is uploading already.,107.94,109.38
+56,Customer,Looks like it's going up quite fast eh.,109.78,111.56
+57,Customer,"You are a lifesaver lah, seriously.",111.88,113.88
+58,Customer,I was about to cry just now.,114.34,115.94
+59,Agent,"No worries lah, Mei.",116.58,118.04
+60,Agent,We all know the stress of submission deadlines.,118.5,120.6
+61,Agent,Just make sure the submission goes through completely.,121.18,123.88
+62,Agent,"Once you finish,",124.34,125.18
+63,Agent,I can help you log your report for your house router repair.,125.48,127.8
+64,Agent,Can or not?,128.14,128.56
+65,Customer,"Can, can.",129.12,129.56
+66,Customer,Submission success already.,130.32,131.48
+67,Customer,Double check.,131.74,132.18
+68,Customer,Safe.,132.56,133.04
+69,Customer,"Luckily, you replied so fast.",134.0,135.96
+70,Customer,"For the router,",136.5,137.28
+71,Customer,you just proceed with the report lah.,137.44,138.66
+72,Agent,Awesome.,139.44,139.92
+73,Agent,Congrats on submitting.,140.54,141.48
+74,Agent,I've logged the repair ticket for your house router.,142.3,144.32
+75,Agent,The technician will come over tomorrow morning.,144.62,146.46
+76,Agent,Anything else I can help you with?,146.86,148.2

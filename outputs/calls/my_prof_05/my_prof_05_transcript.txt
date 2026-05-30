@@ -1,0 +1,54 @@
+[00:00:00] Agent: Selamat malam.
+[00:00:01] Agent: Bantuan kecemasan jalan raya di sini. Nama saya Amir.
+[00:00:05] Agent: Boleh saya bantu?
+[00:00:07] Customer: Tolong saya.
+[00:00:09] Customer: Kereta saya tiba -tiba mati tengah -tengah lebuh raya pelas ni.
+[00:00:12] Customer: Ada asap keluar dari enjin. Lepas tu lori besar semua lalu. Laju sangat. Saya takut sangat ni. Tak tahu nak buat apa.
+[00:00:19] Agent: Cik Farah,
+[00:00:21] Agent: bertenang ya.
+[00:00:22] Agent: Ambil nafas dalam -dalam dulu.
+[00:00:24] Agent: Cik selamat sekarang.
+[00:00:26] Agent: Saya ada di sini untuk bantu Cik.
+[00:00:29] Agent: Boleh saya tahu, Cik ada di kilometer berapa sekarang?
+[00:00:33] Customer: Kejap. Kejap. Saya tengok papan tanda dekat tepi ni.
+[00:00:38] Customer: KM240.
+[00:00:39] Customer: Tapi kereta saya tersangkut dekat lorong kanan sekali.
+[00:00:42] Customer: Kereta lain semua bawa laju. Saya takut nak keluar dari kereta.
+[00:00:46] Agent: Baik Farah.
+[00:00:47] Agent: Dengar cakap saya ya.
+[00:00:49] Agent: Jangan keluar dari kereta kalau berada di lorong kanan.
+[00:00:53] Agent: Sangat bahaya.
+[00:00:55] Agent: Pastikan Cik dah nyalakan lampu kecemasan atau hazard light sekarang juga.
+[00:01:00] Agent: Saya sedang hantarkan trak tunda dan pasukan peronda ke lokasi Cik.
+[00:01:04] Customer: Dah.
+[00:01:05] Customer: Lampu hazard saya dah buka.
+[00:01:07] Customer: Betul kebantuan dah on the way.
+[00:01:09] Customer: Berapa lama nak sampai?
+[00:01:10] Customer: Lori kat belakang ni asyik bunyikan horn.
+[00:01:13] Customer: Saya risau betul.
+[00:01:14] Agent: Ya betul. Pasukan peronda lebuh raya dah bergerak.
+[00:01:19] Agent: Mereka akan sampai dalam masa 10 hingga 15 minit sahaja untuk sekat trafik dan tunda kereta Cik ke tempat selamat.
+[00:01:26] Agent: Cik duduk diam-diam dalam kereta dan pakai tali pinggang keledar ya.
+[00:01:31] Customer: Okey.
+[00:01:32] Customer: Okey.
+[00:01:33] Customer: Saya dah pakai tali pinggang.
+[00:01:34] Customer: Tadi enjin berbunyi kuat sangat. Saya ingat kereta ni nak meletup tadi.
+[00:01:39] Customer: Risau sangat saya dibuatnya.
+[00:01:41] Agent: Saya faham.
+[00:01:42] Agent: Situasi macam ni memang menakutkan kalau kena sebatang kara.
+[00:01:46] Agent: Tapi Cik dah buat tindakan yang betul dengan terus telefon kami.
+[00:01:50] Agent: Asap tu mungkin sebab enjin terlalu panas sahaja. Bukannya nak meletup.
+[00:01:54] Agent: Cik jangan risau ya.
+[00:01:56] Agent: Semuanya terkawal.
+[00:01:58] Customer: Terima kasih Amir.
+[00:02:00] Customer: Lapang sikit dada saya dengan penjelasan awak.
+[00:02:02] Customer: Sekarang saya cuma perlu tunggu peronda sampai sahaja kan?
+[00:02:06] Agent: Betul Farah.
+[00:02:07] Agent: Saya akan terus tunggu dalam talian dengan Cik sampai Cik nampak lampu peronda tiba.
+[00:02:12] Agent: Sementara itu, boleh Cik sahkan nombor pelik kereta Cik untuk mudahkan mereka buat pengecaman?
+[00:02:18] Customer: Boleh. Nombor pelik saya VEB1234.
+[00:02:24] Customer: Terima kasih banyak-banyak sebab temankan saya waktu tengah takut macam ni.
+[00:02:27] Agent: Sama -sama Farah.
+[00:02:29] Agent: Dah memang tanggungjawab kami untuk pastikan keselamatan Cik.
+[00:02:33] Customer: Ha.
+[00:02:33] Agent: Trak tunda pun saya nampak dah nak hampir sampai ke lokasi Cik sekarang.

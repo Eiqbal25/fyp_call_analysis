@@ -1,0 +1,82 @@
+call_id,start_sec,system_text,human_text,text_similarity,combined_score,system_role,human_role,label_correct,matched,text_override,override_phrase,status
+my_rude_02,0.0,Selamat petang. Terima kasih kerana menghubungi Telco Line Care.,Selamat petang. Terima kasih kerana menghubungi Telco Line Care.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,3.92,Nama saya Imran. Ada apa-apa yang boleh saya bantu uruskan hari ini?,Nama saya Imran. Ada apa-apa yang boleh saya bantu uruskan hari ini?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,8.1,"Selamat petang, Encik Imran. Saya harap Encik sihat.","Selamat petang, Encik Imran. Saya harap Encik sihat.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_02,11.5,Saya nak tanya sedikit fasil akaun saya bulan ini.,Saya nak tanya sedikit fasil akaun saya bulan ini.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_02,14.5,Biasanya bil saya cuma RM60 sahaja setiap bulan.,Biasanya bil saya cuma RM60 sahaja setiap bulan.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_02,17.68,Tapi kali ini saya tengok dalam aplikasi naik sampai RM140.,Tapi kali ini saya tengok dalam aplikasi naik sampai RM140.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_02,22.16,Boleh tolong semakkan kalau ada kesilapan sistem.,Boleh tolong semakkan kalau ada kesilapan sistem.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_02,26.32,"Tak ada silapnya tu, Encik.","Tak ada silapnya tu, Encik.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,28.12,Sistem kami dilaraskan secara otomatik.,Sistem kami dilaraskan secara otomatik.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,31.06,Jadi memang mustahil untuk salah kira.,Jadi memang mustahil untuk salah kira.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,34.2,RM140 tu maksudnya Encik ada guna data roaming,RM140 tu maksudnya Encik ada guna data roaming,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,37.3,atau langganan pihak ketiga lah tu masa pergi bercuti hari tu.,atau langganan pihak ketiga lah tu masa pergi bercuti hari tu.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,41.3,Pihak kami cuma cas apa yang telefon Encik guna sahaja.,Pihak kami cuma cas apa yang telefon Encik guna sahaja.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,45.26,"Oh, bercuti keluar negara.","Oh, bercuti keluar negara.",1.0,1.0,Agent,Customer,False,True,False,,❌ WRONG
+my_rude_02,47.18,"Tapi Encik, sepanjang dua bulan lepas,","Tapi Encik, sepanjang dua bulan lepas,",1.0,1.0,Agent,Customer,False,True,False,,❌ WRONG
+my_rude_02,49.58,saya memang tak ada keluar dari kawasan Kuala Rumpur pun.,saya memang tak ada keluar dari kawasan Kuala Rumpur pun.,1.0,1.0,Agent,Customer,False,True,False,,❌ WRONG
+my_rude_02,52.58,Apatah lagi luar negara.,Apatah lagi luar negara.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_02,54.04,Boleh saya tahu tarikh atau butiran terperinci data roaming tu digunakan?,Boleh saya tahu tarikh atau butiran terperinci data roaming tu digunakan?,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_02,58.12,Manalah tahu sistem tersalah letak cas bawah nombor akaun saya.,Manalah tahu sistem tersalah letak cas bawah nombor akaun saya.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_02,62.0,"Eh, mana boleh salah?","Eh, mana boleh salah?",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,63.98,Encik ingat sistem syarikat gergasi macam kami ni bodoh sangat ke,Encik ingat sistem syarikat gergasi macam kami ni bodoh sangat ke,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,67.84,sampai boleh sesuka hati tukai akaun orang?,sampai boleh sesuka hati tukai akaun orang?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,70.76,Tak payah nak petikaikan sistem lah.,Tak payah nak petikaikan sistem lah.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,73.18,"Dah kalau dalam rekod komputer tulis ada guna,","Dah kalau dalam rekod komputer tulis ada guna,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,75.98,maksudnya Encik yang gunalah tu.,maksudnya Encik yang gunalah tu.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,78.48,Takkanlah hantu pula yang curik-curik guna telefon Encik kot.,Takkanlah hantu pula yang curik-curik guna telefon Encik kot.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,81.6,"Encik Imran, tolong jaga bahasa Encik ya.","Encik Imran, tolong jaga bahasa Encik ya.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_02,84.22,Saya tanya elok-elok sebagai pelanggan sedia ada.,Saya tanya elok-elok sebagai pelanggan sedia ada.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_02,87.06,Dan saya rasa saya berhak untuk tahu butiran bil saya sendiri.,Dan saya rasa saya berhak untuk tahu butiran bil saya sendiri.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_02,90.4,Saya cuba minta penjelasan yang jelas sahaja.,Saya cuba minta penjelasan yang jelas sahaja.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_02,92.76,Tidak perlu sampai menyindir saya seperti itu.,Tidak perlu sampai menyindir saya seperti itu.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_rude_02,95.3,"Penjelasan apa lagi, Encik?","Penjelasan apa lagi, Encik?",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,97.26,Saya dah bagitahu kan?,Saya dah bagitahu kan?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,98.6,"Dalam sistem, tertera cas tusah.","Dalam sistem, tertera cas tusah.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,100.84,Kalau Encik sendiri tak tahu apa yang Encik langgan,Kalau Encik sendiri tak tahu apa yang Encik langgan,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,103.76,"atau anak-anak Encik ada main telefon sampai tertekan iklan,","atau anak-anak Encik ada main telefon sampai tertekan iklan,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,107.2,itu bukan salah kamilah.,itu bukan salah kamilah.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,109.4,kami tak ada masa nak pantau aktiviti harian telefon Encik satu persatu.,kami tak ada masa nak pantau aktiviti harian telefon Encik satu persatu.,1.0,1.0,Agent,Customer,False,True,False,,❌ WRONG
+my_rude_02,113.4,"Encik Imran, saya tinggal seorang diri","Encik Imran, saya tinggal seorang diri",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_02,115.96,"dan tidak ada anak kecil yang main telefon saya, Encik.","dan tidak ada anak kecil yang main telefon saya, Encik.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_02,119.08,"Memandangkan Encik Enggan membantu saya menyemak butiran ini dengan betul,","Memandangkan Encik Enggan membantu saya menyemak butiran ini dengan betul,",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_02,123.2,tolong pas talian ini kepada pengurus,tolong pas talian ini kepada pengurus,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_rude_02,125.14,atau supervisor Encik sekarang juga.,atau supervisor Encik sekarang juga.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_rude_02,127.1,Saya mahu bercakap dengan pihak atasan yang lebih profesional.,Saya mahu bercakap dengan pihak atasan yang lebih profesional.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_rude_02,130.9,"Hmph,","Hmph,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,132.16,supervisor saya pun tak ada masalah,supervisor saya pun tak ada masalah,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,133.6,nak layan benda remeh-temeh macam ni.,nak layan benda remeh-temeh macam ni.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,135.18,ingat manajer kami duduk kat pejabat sahaja-sahaja tunggu panggilan Encik ke?,ingat manajer kami duduk kat pejabat sahaja-sahaja tunggu panggilan Encik ke?,1.0,1.0,Agent,Customer,False,True,False,,❌ WRONG
+my_rude_02,139.42,"Bil dah keluar dalam sistem,","Bil dah keluar dalam sistem,",1.0,1.0,Agent,Customer,False,True,False,,❌ WRONG
+my_rude_02,141.06,maksudnya Encik wagit bayar je lah.,maksudnya Encik wagit bayar je lah.,1.0,1.0,Agent,Customer,False,True,False,,❌ WRONG
+my_rude_02,143.4,Tak payah nak banyak songih sangat sampai nak panggil manajer bagai.,Tak payah nak banyak songih sangat sampai nak panggil manajer bagai.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,146.82,Saya benar-benar terkejut dengan layanan Encik hari ni.,Saya benar-benar terkejut dengan layanan Encik hari ni.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_rude_02,149.72,Ini bukan cara perkhidmatan korporat dikendalikan.,Ini bukan cara perkhidmatan korporat dikendalikan.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_rude_02,152.58,Sila berikan nama penuh Encik,Sila berikan nama penuh Encik,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_rude_02,153.86,dan juga nombor ID pekerja Encik sekarang.,dan juga nombor ID pekerja Encik sekarang.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_rude_02,156.12,Saya akan buat laporan rasmi terus ke ibu pejabat,Saya akan buat laporan rasmi terus ke ibu pejabat,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_rude_02,158.48,dan juga aduan ke SKMM.,dan juga aduan ke SKMM.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_rude_02,160.64,"Hmph,","Hmph,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,161.52,aduh lah aduh.,aduh lah aduh.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,162.84,Ingat saya takut ke dengan ugutan macam tu?,Ingat saya takut ke dengan ugutan macam tu?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,165.7,"Setakat nak lapor ke SKMM,","Setakat nak lapor ke SKMM,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,167.8,beribu-ribu orang dah buatlah Encik.,beribu-ribu orang dah buatlah Encik.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,169.78,Tak ada kesan apa pun dekat saya.,Tak ada kesan apa pun dekat saya.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,171.7,Nama saya Imran.,Nama saya Imran.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,173.38,Eja betul-betul ya.,Eja betul-betul ya.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,174.66,ID pekerja saya tak payah tahu.,ID pekerja saya tak payah tahu.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,176.54,Bukan urusan Encik pun.,Bukan urusan Encik pun.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,178.36,Baik Encik Imran.,Baik Encik Imran.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_rude_02,179.44,Perbualan ini sedang dirakam oleh sistem Encik sendiri,Perbualan ini sedang dirakam oleh sistem Encik sendiri,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_rude_02,182.26,dan saya pasti pihak pengurusan tertinggi,dan saya pasti pihak pengurusan tertinggi,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_rude_02,184.52,tidak akan bertoleransi dengan sikap biadab sebegini terhadap pelanggan.,tidak akan bertoleransi dengan sikap biadab sebegini terhadap pelanggan.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_rude_02,188.18,Terima kasih kerana tidak menyelesaikan masalah saya.,Terima kasih kerana tidak menyelesaikan masalah saya.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_rude_02,190.82,Saya akan gunakan saluran lain.,Saya akan gunakan saluran lain.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_rude_02,192.84,Ada saya kisah pasal rakaman.,Ada saya kisah pasal rakaman.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_rude_02,195.04,Lagipun malaslah saya nak bazir masa,Lagipun malaslah saya nak bazir masa,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,196.88,melayan pelanggan yang tak faham bahasa macam Encik ni.,melayan pelanggan yang tak faham bahasa macam Encik ni.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,199.6,Menyemak petang saya je.,Menyemak petang saya je.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,201.24,"Dahlah,","Dahlah,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,201.94,bayar je bil tu kalau tak nak land kena sekat.,bayar je bil tu kalau tak nak land kena sekat.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,204.2,Bye.,Bye.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_02,204.42,Terima kasih kerana menonton!,Terima kasih kerana tidak menyelesaikan masalah saya.,0.585,0.351,Agent,Agent,True,True,False,,✅ CORRECT

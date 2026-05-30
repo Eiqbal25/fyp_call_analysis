@@ -1,0 +1,66 @@
+call_id,start_sec,system_text,human_text,text_similarity,combined_score,system_role,human_role,label_correct,matched,text_override,override_phrase,status
+long_01,0.0,Good morning.,Good morning.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,1.16,Thank you for calling Horizon FiberCare. My name is Gilbert. How may I assist yo,Thank you for calling Horizon FiberCare. My name is Gilbert. How may I assist yo,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,7.94,"Good morning, Gilbert. I hope you're having a good day. I'm calling because my h","Good morning, Gilbert. I hope you're having a good day. I'm calling because my h",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+long_01,15.5,"I run an online consulting business from home, and my video calls keep dropping.","I run an online consulting business from home, and my video calls keep dropping.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+long_01,22.84,I completely understand how critical a stable connection is for running a busine,I completely understand how critical a stable connection is for running a busine,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,32.16,"To get started, may I please have your full name and your account number or regi","To get started, may I please have your full name and your account number or regi",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,38.18,"Of course. My name is Sandra Bennett, and the account number is HFB77419. The re","Of course. My name is Sandra Bennett, and the account number is HFB77419. The re",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+long_01,48.48,"Thank you so much, Mrs. Bennett. I have successfully pulled up your account deta","Thank you so much, Mrs. Bennett. I have successfully pulled up your account deta",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,59.58,I am running a quick diagnostic on our main exchange line leading to your street,I am running a quick diagnostic on our main exchange line leading to your street,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,65.08,"Okay, the physical line signal coming into your house looks perfectly healthy an","Okay, the physical line signal coming into your house looks perfectly healthy an",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,71.74,"Oh, that's interesting. If the main line is healthy, does that mean the issue is","Oh, that's interesting. If the main line is healthy, does that mean the issue is",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+long_01,78.98,"The signal bars on my laptop look full, but the actual loading speed is just cra","The signal bars on my laptop look full, but the actual loading speed is just cra",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+long_01,84.48,"Yes, that is highly likely. It usually means the router is struggling to distrib","Yes, that is highly likely. It usually means the router is struggling to distrib",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,91.48,"Before they do any system resets, let's do a quick physical check.","Before they do any system resets, let's do a quick physical check.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,95.52,"Are you currently near your Wi-Fi router, Mrs. Bennett?","Are you currently near your Wi-Fi router, Mrs. Bennett?",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,98.66,"Yes, I am standing right next to it in the living room.","Yes, I am standing right next to it in the living room.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+long_01,101.98,Perfect.,Perfect.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,102.84,Please take a look at the front panel of the router. Can you tell me what color ,Please take a look at the front panel of the router. Can you tell me what color ,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,113.94,"Let's see. The power light is solid green, the PON light is also solid green, bu","Let's see. The power light is solid green, the PON light is also solid green, bu",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+long_01,125.86,Not bad at all. It just means the wireless chip inside the router is experiencin,Not bad at all. It just means the wireless chip inside the router is experiencin,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,134.62,Let's perform a clean power cycle.,Let's perform a clean power cycle.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,137.26,"Please look at the back of the router,","Please look at the back of the router,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,139.3,"find the black power cable, and unplug it directly from the device.","find the black power cable, and unplug it directly from the device.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,143.56,"Okay, I'm reaching around the back, and I have unplugged the power cable. The li","Okay, I'm reaching around the back, and I have unplugged the power cable. The li",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+long_01,149.78,Excellent.,Excellent.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,151.04,Now we want to leave it unplugged for exactly 30 seconds. This allows the intern,Now we want to leave it unplugged for exactly 30 seconds. This allows the intern,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,161.0,"While we wait, I am going to initiate a remote signal refresh from my server bac","While we wait, I am going to initiate a remote signal refresh from my server bac",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,169.68,"All right, that sounds great. I didn't know you could refresh it from your end w","All right, that sounds great. I didn't know you could refresh it from your end w",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+long_01,178.48,"Yes, let's give it just 10 more seconds to be completely sure.","Yes, let's give it just 10 more seconds to be completely sure.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,183.02,"All right,","All right,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,184.04,30 seconds are up. You can go ahead and plug the power cable firmly back into th,30 seconds are up. You can go ahead and plug the power cable firmly back into th,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,189.86,"Okay,","Okay,",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+long_01,190.66,plugging it back in now. The power light is back on. The other lights are starti,plugging it back in now. The power light is back on. The other lights are starti,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+long_01,199.68,It will take about one to two minutes for the fiber signal to fully re-establish,It will take about one to two minutes for the fiber signal to fully re-establish,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,209.02,I noticed that this specific router model was issued to you back in 2021. Is tha,I noticed that this specific router model was issued to you back in 2021. Is tha,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,214.9,"Yes, that sounds about right. We haven't changed the equipment since we first mo","Yes, that sounds about right. We haven't changed the equipment since we first mo",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+long_01,221.04,I see. That actually explains a lot of the congestion you're experiencing. That ,I see. That actually explains a lot of the congestion you're experiencing. That ,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,229.68,"Which struggles when you have multiple modern devices like smart TVs,","Which struggles when you have multiple modern devices like smart TVs,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,234.06,"smartphones, and laptops connected at the same time, especially for heavy usage ","smartphones, and laptops connected at the same time, especially for heavy usage ",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,240.82,"Ah, that makes sense. We've added quite a few smart home devices over the last y","Ah, that makes sense. We've added quite a few smart home devices over the last y",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+long_01,250.38,You definitely don't need to buy one yourself. Since you're out of your contract,You definitely don't need to buy one yourself. Since you're out of your contract,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,258.9,"We currently have a promotion where if you renew your plan today, we will upgrad","We currently have a promotion where if you renew your plan today, we will upgrad",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,268.04,It completely eliminates dead zones and handles up to 40 devices seamlessly.,It completely eliminates dead zones and handles up to 40 devices seamlessly.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,272.48,"Oh, that sounds absolutely wonderful. Will my monthly bill change if I renew the","Oh, that sounds absolutely wonderful. Will my monthly bill change if I renew the",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+long_01,279.78,Your monthly bill will actually stay exactly the same at your current rate. The ,Your monthly bill will actually stay exactly the same at your current rate. The ,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,292.32,"That is an excellent deal, Gilbert. Let's definitely go ahead and process that r","That is an excellent deal, Gilbert. Let's definitely go ahead and process that r",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+long_01,301.02,"Fantastic choice, Mrs. Bennett. I am locking in the hardware order right now. A ","Fantastic choice, Mrs. Bennett. I am locking in the hardware order right now. A ",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,312.24,"It comes with a simple plug-and-play guide, but our technical team will also cal","It comes with a simple plug-and-play guide, but our technical team will also cal",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,318.0,"Perfect. Oh, by the way, I just checked my laptop and all the lights on my curre","Perfect. Oh, by the way, I just checked my laptop and all the lights on my curre",1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+long_01,323.92,I just loaded up a video call test and the speed is back to being fast and smoot,I just loaded up a video call test and the speed is back to being fast and smoot,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+long_01,328.36,Wonderful.,Wonderful.,1.0,1.0,Agent,Customer,False,True,False,,❌ WRONG
+long_01,329.7,The remote refresh and power cycle successfully cleared the line congestion for ,The remote refresh and power cycle successfully cleared the line congestion for ,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,334.32,"This should keep your business running smoothly until the new, stronger router a","This should keep your business running smoothly until the new, stronger router a",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,339.4,I have sent the contract renewal confirmation to your registered email address.,I have sent the contract renewal confirmation to your registered email address.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,343.58,"I see the email confirmation popping up right now. Thank you so much, Gilbert.","I see the email confirmation popping up right now. Thank you so much, Gilbert.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+long_01,347.8,"You've been incredibly patient, knowledgeable, and helpful throughout this entir","You've been incredibly patient, knowledgeable, and helpful throughout this entir",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+long_01,352.48,I really appreciate the stellar service.,I really appreciate the stellar service.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+long_01,354.68,"It was an absolute pleasure assisting you today, Mrs. Bennett.","It was an absolute pleasure assisting you today, Mrs. Bennett.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,358.68,I'm glad we got your current connection fixed and secured a great upgrade for yo,I'm glad we got your current connection fixed and secured a great upgrade for yo,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,363.28,Thank you for choosing Horizon Fiber. Have a highly productive and wonderful day,Thank you for choosing Horizon Fiber. Have a highly productive and wonderful day,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+long_01,368.22,"Thank you, Gilbert. You too.","Thank you, Gilbert. You too.",1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+long_01,369.98,Goodbye.,Goodbye.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+long_01,370.64,Goodbye.,Goodbye.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+long_01,371.04,Goodbye.,Goodbye.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+long_01,371.44,Goodbye.,Goodbye.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG

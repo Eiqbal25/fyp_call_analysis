@@ -1,0 +1,24 @@
+[00:00:00] Agent: Selamat petang. Terima kasih kerana menghubungi Luxe Butik Care. Nama saya Zara. Boleh saya bantu urusan Cik hari ini?
+[00:00:06] Customer: Hai saya. Saya nak tanya pasal refund untuk order baju saya hari itu.
+[00:00:11] Customer: I kena cancel sebab tersalah pilih saiz, tapi dah dua minggu still tak masuk akaun I lagi. Boleh tolong cek kan?
+[00:00:17] Agent: Boleh. Tiada masalah.
+[00:00:19] Agent: Bagi saya order ID sekejap, ya?
+[00:00:21] Agent: Ah saya dah jumpa. Untuk refund ni memang lambat sikit ya sis. Sebab ikut terms and conditions kami,
+[00:00:28] Agent: proses pemulangan akan ambil masa 14 hingga 30 hari bekerja.
+[00:00:32] Customer: Oh 30 hari bekerja? Lamanya.
+[00:00:36] Customer: Sebab hari tu dekat website tulis 3 to 5 days bank transfer sahaja.
+[00:00:40] Customer: Tak ada cara nak expedite ke? Sebab I nak pakai duit tu untuk beli baju lain.
+[00:00:45] Agent: Haa. Website tu untuk normal season, sis.
+[00:00:49] Agent: Sekarang kan tengah peak season, logiklah kalau lambat. Takkan benda macam tu pun tak boleh fikir kot. Kita ada beribu customer lain nak kena layan, bukan you sorang je.
+[00:00:58] Customer: Eh tapi mana I tahu? Dekat confirmation email tak ada pula tulis pasal 30 hari tu.
+[00:01:05] Customer: Takpelah. Kalau macam tu boleh I cakap dengan manager you,
+[00:01:08] Customer: mana tahu dia boleh tolong ajas.
+[00:01:09] Agent: Excuse me?
+[00:01:11] Agent: Tak payah nak pass kat manager sangatlah. Manager I pun busy. Tak ada masa nak layan benda kecik macam ni. Sebab itu sebelum beli, kena rajin membaca terms and conditions. Jangan tahu nak salahkan seller je bila lamat.
+[00:01:24] Customer: Amboi. Kenapa biadab sangat ni, Zara? I tanya elok-elok kan? You ni agent customer service ke apa? Cakap macam ni dengan pelanggan.
+[00:01:32] Agent: I cakap benda betul, sis. You yang tak sabar, lepas tu nak menyusahkan orang lain pula. Duit tu nanti masuklah. Bukannya company kami nak songlap duit you yang tak seberapa tu. Sikit-sikit nak panggil manager. Rimas lah.
+[00:01:45] Customer: You ni memang melampau ya. Bagi tahu I, nama penuh you sekarang. I nak buat aduan rasmi dekat HQ dan I akan viralkan rakaman call ni dekat TikTok biar semua orang tahu perangai you.
+[00:01:56] Agent: Ha, viral lah viral. Ingat I takut ke? Setakat ugut nak masuk TikTok, I pun tak heran lah. Nama I Zara. Eja betul-betul tau. Nanti jangan lupa share link kat I. Boleh I tengok sekali kebiadapan you tu.
+[00:02:09] Customer: Kurang ajar betul. I tak pernah jumpa customer service seburuk you ni. I akan report kes ni dekat KPDN sekali. Biar padan muka you orang.
+[00:02:18] Agent: Report lah kat mana -mana yang you suka, sis. Ada I kisah.
+[00:02:22] Customer: Dah lah, malas I nak layan orang macam you ni. Menyemak je. Bye.

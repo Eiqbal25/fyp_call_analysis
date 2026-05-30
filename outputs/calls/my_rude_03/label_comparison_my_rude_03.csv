@@ -1,0 +1,45 @@
+call_id,start_sec,system_text,human_text,text_similarity,combined_score,system_role,human_role,label_correct,matched,text_override,override_phrase,status
+my_rude_03,0.54,Selamat petang. Terima kasih kerana menghubungi khidmat pelanggan Skylink Expres,Selamat petang. Terima kasih kerana menghubungi khidmat pelanggan Skylink Expres,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_03,5.16,Nama saya Fidaus. Boleh saya bantu Encik hari ini?,Nama saya Fidaus. Boleh saya bantu Encik hari ini?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_03,8.18,"Selamat petang, Fidaus.","Selamat petang, Fidaus.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_03,9.92,Saya nak tanya pasal barang saya.,Saya nak tanya pasal barang saya.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_03,12.42,Nombor tracking MY9920X.,Nombor tracking MY9920X.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_03,16.64,"Dah tiga hari status dia out for delivery, tapi saya masih tak terima apa-apa.","Dah tiga hari status dia out for delivery, tapi saya masih tak terima apa-apa.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_03,21.52,"Minta maaf atas kesulitan tersebut, Encik.","Minta maaf atas kesulitan tersebut, Encik.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_03,24.44,Saya faham perasaan Encik.,Saya faham perasaan Encik.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_03,26.54,"Sebentar ya, biar saya semak dalam sistem kami.","Sebentar ya, biar saya semak dalam sistem kami.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_03,30.28,"Oh,","Oh,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_03,31.44,saya dah nampak.,saya dah nampak.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_03,33.16,"Mengikut rekod,","Mengikut rekod,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_03,34.68,rider kami dah hantar barang ni semalam pada pukul 2 petang.,rider kami dah hantar barang ni semalam pada pukul 2 petang.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_03,38.4,Encik ada semak dengan jiran atau letak kat dalam peti suat?,Encik ada semak dengan jiran atau letak kat dalam peti suat?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_03,41.96,Dah semak? Memang tak ada.,Dah semak? Memang tak ada.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_03,44.36,CCTV rumah saya pun tak nampak ada motor lalu semalam.,CCTV rumah saya pun tak nampak ada motor lalu semalam.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_03,47.64,Boleh tak awak tolong hubungi rider tu untuk kepastian?,Boleh tak awak tolong hubungi rider tu untuk kepastian?,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_03,51.52,"Encik,","Encik,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_03,52.6,sistem kami automatik.,sistem kami automatik.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_03,54.4,"Kalau dia tulis delivered, maknanya dah sampai lah tu.","Kalau dia tulis delivered, maknanya dah sampai lah tu.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_03,57.4,Takkan sistem nak tipu pula?,Takkan sistem nak tipu pula?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_03,59.3,Saya bukan kata sistem tipu.,Saya bukan kata sistem tipu.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_03,61.52,Tapi mungkin rider tu salah hantar rumah.,Tapi mungkin rider tu salah hantar rumah.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_03,64.06,Tolonglah cek balik sebab barang tu barang mahal.,Tolonglah cek balik sebab barang tu barang mahal.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_03,68.34,"Aduh, Encik ni tak faham bahasakah?","Aduh, Encik ni tak faham bahasakah?",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_03,70.78,Aku dah cakap dah sampai.,Aku dah cakap dah sampai.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_03,72.2,Sampailah.,Sampailah.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_03,73.2,Kau ingat aku ada masakah nak layan drama barang hilang kau ni?,Kau ingat aku ada masakah nak layan drama barang hilang kau ni?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_03,76.64,"Eh,","Eh,",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_03,77.4,kenapa awak tukar bahasa macam ni?,kenapa awak tukar bahasa macam ni?,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_03,79.32,Saya bercakap dengan cara baik ya.,Saya bercakap dengan cara baik ya.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_03,81.62,Saya nak bercakap dengan pengurus awak sekarang.,Saya nak bercakap dengan pengurus awak sekarang.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_03,84.78,Pengurus?,Pengurus?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_03,85.58,Tak payah nak berangan lah.,Tak payah nak berangan lah.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_03,87.34,Kau ingat kau siapa?,Kau ingat kau siapa?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_03,88.54,Setakat barang murah macam tu pun nak bisin-bisin.,Setakat barang murah macam tu pun nak bisin-bisin.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_03,90.6,"Kalau kau rasa kau pandai sangat, lain kali pergi ambil sendiri kat gudang.","Kalau kau rasa kau pandai sangat, lain kali pergi ambil sendiri kat gudang.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_03,94.32,Tak payah menyemok call aku petang-petang ni.,Tak payah menyemok call aku petang-petang ni.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_03,96.52,Saya akan buat report pasal perangai awak ni.,Saya akan buat report pasal perangai awak ni.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_rude_03,99.22,Pergilah report.,Pergilah report.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_03,100.42,Ada aku kisah.,Ada aku kisah.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_03,101.58,"Dahlah, malah aku nak layan orang macam aku ni.","Dahlah, malah aku nak layan orang macam aku ni.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_03,103.68,Cari kerja lain lah daripada kacau orang.,Cari kerja lain lah daripada kacau orang.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_rude_03,105.2,Terima kasih kerana menonton!,Terima kasih kerana menonton!,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT

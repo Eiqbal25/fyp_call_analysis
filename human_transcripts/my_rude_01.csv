@@ -1,0 +1,62 @@
+segment_id,role,text,start,end
+1,Agent,Selamat petang. Selamat datang ke Grand Horizon Resort.,0.0,3.46
+2,Agent,Saya nama Ilyana.,3.84,5.22
+3,Agent,Boleh saya bantu urusan daftar masuk Encik hari ini?,5.58,8.54
+4,Customer,"Akhirnya. Saya dah tunggu dekat lobi korang yang panas ni dekat setengah jam, tahu tak?",9.22,13.3
+5,Customer,Nama saya Encik Razlan. Saya dah tempah private pool suite untuk tiga malam.,13.72,17.52
+6,Customer,"Bagi saya kunci bilik sekarang, saya dah penat nak rehat.",17.84,20.16
+7,Agent,"Baik Encik Razlan. Saya semak tempahan Encik sekejap, ya?",20.66,24.08
+8,Agent,Sila tunggu sebentar.,24.56,25.72
+9,Agent,"Ah, Encik Razlan. Mengikut sistem kami, waktu daftar masuk rasmi resort adalah pada jam tiga petang.",25.72,33.66
+10,Agent,Sekarang baru pukul satu tengah hari.,33.9,35.86
+11,Agent,Jadi bilik Encik sedang dibersihkan dan disanitasi oleh pihak housekeeping demi keselesaan Encik.,36.28,42.68
+12,Customer,"Eh, I tak pedulilah pukul berapa sekarang.",42.92,44.82
+13,Customer,"I bayar satu malam dekat dua ribu ringgit, tahu tak? Bukan murah.",45.08,47.98
+14,Customer,Korang punya housekeeping buat kerja lembab macam siput.,48.32,50.86
+15,Customer,Lepas tu nak suruh I terconggok tunggu kat lobi ni lagi dua jam.,51.02,53.8
+16,Customer,You tahu tak Aiz apa? Korang ni memang tak ada ti buat kerja ke apa?,53.8,57.1
+17,Agent,"Saya benar-benar minta maaf atas kesulitan ini, Encik Razlan.",57.42,61.1
+18,Agent,Kami sangat menghargai tempahan Encik.,61.32,63.58
+19,Agent,Bilik tersebut baru sahaja dikosongkan oleh pelanggan terdahulu pada jam 12 tengah hari tadi.,63.94,69.2
+20,Agent,Pihak kami sedang berusaha mempercepatkan proses pembersihan bilik Encik,69.7,73.76
+21,Agent,supaya Encik boleh masuk dengan kadar segera.,73.76,76.38
+22,Customer,"Hah,",76.84,77.0
+23,Customer,alasan.,77.38,77.88
+24,Customer,Korang punya manajemen memang bodoh dan tak cekap.,78.26,80.68
+25,Customer,"I tak nak dengar alasan bilik penuh ke apa. Sekarang ni, I nak you upgrade I ke Presidential Suite sekarang juga secara percuma",80.68,86.68
+26,Customer,sebagai ganti rugi masa I.,86.68,88.28
+27,Customer,"Kalau tak, I bising dekat sini sampai semua guest lain dengar.",88.52,90.96
+28,Agent,"Encik Razlan, saya faham Encik penat selepas perjalanan jauh.",91.38,95.48
+29,Agent,"Mengenai Presidential Suite,",95.8,97.42
+30,Agent,bilik tersebut telahpun dihuni oleh tetamu lain buat masa ini.,97.82,101.1
+31,Agent,"Namun, sebagai alternatif, untuk keselesaan Encik sementara menunggu bilik sedia,",101.1,106.34
+32,Agent,saya telah menyediakan dua keping pas masuk premium ke VIP lounge kami di tingkat atas secara percuma.,106.84,113.58
+33,Customer,VIP lounge?,114.16,115.14
+34,Customer,You ingat I tak mampu nak beli pas tu sendirikah?,115.64,118.02
+35,Customer,"I datang sini nak bilik, bukan nak minum kopi kat lounge you yang tak seberapa tu.",118.28,122.2
+36,Customer,"Berapa lama lagi I kena tunggu, eh?",122.66,124.02
+37,Customer,Tolong jangan bazirkan masa I yang berharga ni.,124.38,126.34
+38,Agent,"Pas lounge ini adalah tanda permohonan maaf ikhlas daripada pihak kami, Encik Razlan.",126.34,131.58
+39,Agent,"Di sana, pihak kami telah menyediakan hidangan bufet ringan",131.78,135.24
+40,Agent,dan ruang rehat berhawa dingin yang sangat selesa untuk Encik dan isteri.,135.24,139.52
+41,Agent,Saya juga sudah meminta penyelia housekeeping,140.0,142.26
+42,Agent,untuk meletakkan status bilik Encik sebagai keutamaan tertinggi.,142.26,146.42
+43,Customer,Bilik Encik akan siap dalam masa 30 minit sahaja lagi.,146.62,150.16
+44,Customer,"30 minit, ya?",150.92,152.3
+45,Customer,"Kalau lebih 1 minit, I sendiri akan cari general manager you",152.64,155.44
+46,Customer,dan pastikan you kena pecat hari ini juga.,155.44,157.38
+47,Agent,Ambil pas tu.,157.72,158.52
+48,Agent,"Baggage I, you suruh bellboy hantar terus macam bilik nanti.",158.98,161.24
+49,Agent,I tak nak tengok bag I sadai dekat lobi ni.,161.64,163.44
+50,Agent,"Baik, Encik Razlan.",163.92,164.94
+51,Customer,Baggage Encik akan kami uruskan dengan selamat,165.24,167.78
+52,Customer,dan dihantar terus ke dalam bilik sebaik sahaja bilik sedia.,167.78,171.08
+53,Customer,"Ini pas masuk ke VIP lounge Encik,",171.34,174.12
+54,Agent,pihak staf kami di lift akan tunjukkan arah.,174.4,176.88
+55,Agent,"Dah, tak payah nak tunjuk-tunjuk jalan.",177.28,178.64
+56,Agent,I tahulah sendiri mana nak pergi.,178.84,180.08
+57,Agent,Nyusah kan betul.,180.56,181.34
+58,Agent,Terima kasih atas kesabaran Encik.,181.68,183.72
+59,Agent,Kami mohon maaf sekali lagi atas kelewatan ini,183.72,186.64
+60,Agent,"dan selamat berehat di resort kami, Encik Razlan.",186.64,189.52
+61,Agent,Selamat petang.,189.76,190.58

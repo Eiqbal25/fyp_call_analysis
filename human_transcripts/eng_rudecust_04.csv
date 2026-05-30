@@ -1,0 +1,36 @@
+segment_id,role,text,start,end
+1,Customer,Hello? Is anyone actually working over there?,0.0,2.78
+2,Customer,I paid for overnight express shipping for a designer dress.,2.94,6.5
+3,Customer,"The tracking says delivered, but I have absolutely nothing.",6.74,9.96
+4,Customer,Your courier company is either completely incompetent or they stole my package.,10.32,14.56
+5,Agent,Good afternoon. I am so sorry to hear that you haven't received your package yet.,15.16,19.62
+6,Agent,I can certainly look into this for you right away. May I please have your...,19.8,24.14
+7,Customer,I don't need you to apologize. I need you to find my dress.,24.14,27.34
+8,Customer,My name is Victoria.,27.34,29.0
+9,Customer,I have a gala tonight and I am not going to miss it,29.36,31.92
+10,Customer,because your people don't know how to drop off a box. Fix this right now.,31.92,36.06
+11,Agent,"I understand the urgency, Victoria. Let me pull up the delivery details.",36.34,41.18
+12,Agent,Could you please provide your order reference number so I can check the exact GPS tracking drop-off?,41.48,47.52
+13,Customer,It is LX9942.,47.94,50.74
+14,Customer,It says it was signed for at noon today.,51.12,53.68
+15,Customer,That is a blatant lie because I have been sitting in my living room all day and nobody even rang the bell.,53.68,59.5
+16,Agent,Thank you for the number. Let me check the system.,59.88,63.14
+17,Agent,"Okay, I see the delivery confirmation and the photo receipt attached by the driver.",63.72,68.98
+18,Agent,"Victoria, it looks like it was delivered to Unit 4B at 120 Oak Avenue.",69.44,74.88
+19,Customer,"Wait, what did you just say? Unit 4B? Are you joking?",75.26,79.2
+20,Customer,I live in Unit 12A. Why on earth would your driver blindly leave a luxury item at a completely different apartment number?,79.2,86.94
+21,Agent,"I see the confusion, Victoria, but I am looking at the original invoice submitted during checkout.",87.16,93.28
+22,Agent,"The address entered on the order form explicitly lists Unit 4B, 120 Oak Avenue.",93.5,99.72
+23,Agent,The driver was simply following the exact address provided to us.,100.0,103.86
+24,Agent,Unit 4B.,103.86,105.68
+25,Customer,"That's… oh, that is my old apartment.",106.16,108.9
+26,Customer,"Well, your website's autofill system must have glitched and selected my old address.",109.28,114.16
+27,Customer,A well-designed system should have flagged that my billing address didn't match.,114.44,118.64
+28,Agent,"Our system does register multiple addresses under your profile, so it is possible the older one was selected by mistake.",118.86,126.34
+29,Agent,"Fortunately,",126.88,127.38
+30,Agent,"since it is in the same building, I can immediately call the building concierge and have them retrieve the package from Unit 4B and bring it up to Unit 12A.",127.74,136.8
+31,Agent,Is there anything else I can assist you with today?,137.02,139.46
+32,Customer,"No, that's all.",139.74,140.78
+33,Customer,Just make sure your system doesn't mess up my profile next time.,140.96,144.22
+34,Customer,Goodbye.,144.52,144.84
+35,Agent,Goodbye.,144.84,145.02

@@ -1,0 +1,43 @@
+call_id,start_sec,system_text,human_text,text_similarity,combined_score,system_role,human_role,label_correct,matched,text_override,override_phrase,status
+eng_prof_01,0.0,Good morning. Thank you for calling Beacon Health Telehealth Coordination.,Good morning. Thank you for calling Beacon Health Telehealth Coordination.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_01,4.52,My name is Evelyn. How may I assist you with your medical appointments today?,My name is Evelyn. How may I assist you with your medical appointments today?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_01,8.82,"Good morning, Evelyn. This is Arthur speaking.","Good morning, Evelyn. This is Arthur speaking.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_01,11.72,"I have a virtual consultation scheduled with Dr. Aris, the cardiologist, tomorro","I have a virtual consultation scheduled with Dr. Aris, the cardiologist, tomorro",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_01,18.5,"However, an urgent board meeting was just moved to that exact time.","However, an urgent board meeting was just moved to that exact time.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_01,22.84,"I am incredibly sorry for the short notice, but is there any way I could resched","I am incredibly sorry for the short notice, but is there any way I could resched",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_01,27.74,"Good morning, Mr. Arthur. Please don't worry at all.","Good morning, Mr. Arthur. Please don't worry at all.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_01,31.36,We completely understand that unexpected professional commitments arise.,We completely understand that unexpected professional commitments arise.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_01,35.94,"Dr. Aris has a busy clinic, but ensuring your health tracking remains uninterrup","Dr. Aris has a busy clinic, but ensuring your health tracking remains uninterrup",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_01,42.6,Let me pull up your patient file right away. May I please have your full name an,Let me pull up your patient file right away. May I please have your full name an,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_01,48.2,"Thank you, Evelyn. I appreciate your understanding.","Thank you, Evelyn. I appreciate your understanding.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_01,50.9,"My full name is Arthur Pendleton, and my date of birth is March 22,","My full name is Arthur Pendleton, and my date of birth is March 22,",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_01,56.74,1978.,1978.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_01,59.04,"Thank you very much, Mr. Pendleton.","Thank you very much, Mr. Pendleton.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_01,60.86,Please give me just a moment while I access Dr. Aris' calendar for the upcoming ,Please give me just a moment while I access Dr. Aris' calendar for the upcoming ,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_01,66.02,I am reviewing his availability right now.,I am reviewing his availability right now.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_01,69.08,Please take your time. I know specialist slots can be quite difficult to secure.,Please take your time. I know specialist slots can be quite difficult to secure.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_01,73.94,"Thank you for your patience. You are correct. His calendar is quite full, and we","Thank you for your patience. You are correct. His calendar is quite full, and we",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_01,82.06,"But because this is a follow-up consultation, and I can see your recent lab repo","But because this is a follow-up consultation, and I can see your recent lab repo",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_01,88.46,I want to make sure you speak to him soon.,I want to make sure you speak to him soon.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_01,91.22,I see a slot opened up this Friday morning at 9 a.m. due to a cancellation.,I see a slot opened up this Friday morning at 9 a.m. due to a cancellation.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_01,96.12,Would that time work for you?,Would that time work for you?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_01,97.5,"Oh, Friday morning at 9 a.m. would be absolutely perfect. That is much sooner th","Oh, Friday morning at 9 a.m. would be absolutely perfect. That is much sooner th",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_01,103.92,"Will I need to resubmit my medical history forms, or will they carry over automa","Will I need to resubmit my medical history forms, or will they carry over automa",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_01,109.64,"Everything carries over automatically, Mr. Pendleton.","Everything carries over automatically, Mr. Pendleton.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_01,113.0,"Your file, lab reports, and insurance authorization are already linked to the ne","Your file, lab reports, and insurance authorization are already linked to the ne",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_01,119.02,"I have officially locked in your appointment for Friday at 9 a.m. fully virtual,","I have officially locked in your appointment for Friday at 9 a.m. fully virtual,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_01,124.98,Wonderful.,Wonderful.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_01,126.42,"You have been incredibly efficient, Evelyn.","You have been incredibly efficient, Evelyn.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_01,129.22,"Navigating medical appointments can sometimes feel daunting, but you made this t","Navigating medical appointments can sometimes feel daunting, but you made this t",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_01,135.72,"It is truly my pleasure, Mr. Pendleton.","It is truly my pleasure, Mr. Pendleton.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_01,138.26,We want to ensure your journey with Beacon Health is as comfortable as possible.,We want to ensure your journey with Beacon Health is as comfortable as possible.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_01,142.84,I have added a note to Dr. Aris regarding the date shift so he is fully prepared,I have added a note to Dr. Aris regarding the date shift so he is fully prepared,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_01,147.98,"You will receive a new, secure video link via SMS and email in just a few moment","You will receive a new, secure video link via SMS and email in just a few moment",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_01,153.76,Perfect.,Perfect.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_01,155.14,I see the confirmation email hitting my inbox right now.,I see the confirmation email hitting my inbox right now.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_01,158.68,Thank you once again for your stellar support and wonderful professionalism toda,Thank you once again for your stellar support and wonderful professionalism toda,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_01,163.98,Have a fantastic day ahead.,Have a fantastic day ahead.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_prof_01,165.92,"You are very welcome, Mr. Pendleton.","You are very welcome, Mr. Pendleton.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_01,168.3,It was a pleasure assisting you.,It was a pleasure assisting you.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_01,170.18,"Best of luck with your board meeting tomorrow, and we will see you virtually thi","Best of luck with your board meeting tomorrow, and we will see you virtually thi",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_prof_01,175.06,Take care and goodbye.,Take care and goodbye.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT

@@ -1,0 +1,386 @@
+[
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Good afternoon.",
+    "start": 0.0,
+    "end": 0.7,
+    "duration": 0.7
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Thank you for calling Velvet Glow Beauty Care. My name is Chloe. How may I add a",
+    "start": 1.12,
+    "end": 5.92,
+    "duration": 4.8
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "little radiance to your day today? Good afternoon, Chloe. I hope you're having a lovely day.",
+    "start": 5.92,
+    "end": 11.08,
+    "duration": 5.16
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I'm calling because I noticed a discrepancy on my bank statement this morning. I am a subscriber",
+    "start": 11.42,
+    "end": 17.36,
+    "duration": 5.94
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "to your premium gold skincare box, which is $90 a month, but I was charged twice this month for",
+    "start": 17.36,
+    "end": 24.22,
+    "duration": 6.86
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "a total of $180.",
+    "start": 24.22,
+    "end": 25.78,
+    "duration": 1.56
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Could you help me look into this error?",
+    "start": 26.46,
+    "end": 28.42,
+    "duration": 1.96
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Sigh. Well, our system processes",
+    "start": 28.86,
+    "end": 32.0,
+    "duration": 3.14
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "thousands of transactions flawlessly every day, ma'am, so it's highly unlikely to be a system",
+    "start": 32.0,
+    "end": 37.86,
+    "duration": 5.86
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "error on our end. You probably just clicked the submit order button twice on our checkout page",
+    "start": 37.86,
+    "end": 44.0,
+    "duration": 6.14
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "during your monthly renewal, or your banking app refreshed abnormally. The double charge is almost",
+    "start": 44.0,
+    "end": 50.32,
+    "duration": 6.32
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "certainly your own doing. Oh, I see.",
+    "start": 50.32,
+    "end": 53.18,
+    "duration": 2.86
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "However, my account is set to automatic renewal, so I didn't",
+    "start": 53.54,
+    "end": 57.82,
+    "duration": 4.28
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "actually manually check out or press any buttons this month. Both charges have the exact same",
+    "start": 57.82,
+    "end": 63.9,
+    "duration": 6.08
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "transaction timestamp. Could you please pull up my profile and check if the duplicate payment can",
+    "start": 63.9,
+    "end": 69.32,
+    "duration": 5.42
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "be refunded back to my card? Look, I am looking at your profile right now, and I really don't have",
+    "start": 69.32,
+    "end": 75.78,
+    "duration": 6.46
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "time to deep dive into your personal banking history. All sales on our premium boxes are",
+    "start": 75.78,
+    "end": 81.74,
+    "duration": 5.96
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "strictly final and non-refundable. It's clearly stated in our terms of service. If you have an",
+    "start": 81.74,
+    "end": 87.86,
+    "duration": 6.12
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "issue with your bank showing two charges, you need to go complain to your bank, not to us.",
+    "start": 87.86,
+    "end": 93.24,
+    "duration": 5.38
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Chloe, there is no need to be defensive or use that tone with me. I am asking a very standard question",
+    "start": 93.68,
+    "end": 100.44,
+    "duration": 6.76
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "as a loyal subscriber. The bank confirmed the funds went directly to your company under two",
+    "start": 100.44,
+    "end": 106.58,
+    "duration": 6.14
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "identical invoice numbers. I am simply asking for a supervisor or a billing specialist to review this",
+    "start": 106.58,
+    "end": 113.26,
+    "duration": 6.68
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "so we can resolve the mistake politely. And I'm telling you that my supervisor is incredibly busy",
+    "start": 113.26,
+    "end": 120.14,
+    "duration": 6.88
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "preparing for a massive product launch, and she definitely doesn't have the time to sit down",
+    "start": 120.14,
+    "end": 125.32,
+    "duration": 5.18
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "and audit a single $90 charge for you. It's just $90 for luxury skincare, ma'am. If this minor",
+    "start": 125.32,
+    "end": 133.4,
+    "duration": 8.08
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "amount is causing such a massive crisis for your budget, maybe luxury subscriptions aren't right for",
+    "start": 133.4,
+    "end": 139.48,
+    "duration": 6.08
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "you. My financial situation is absolutely none of your business, Chloe, and that comment was",
+    "start": 139.48,
+    "end": 146.12,
+    "duration": 6.64
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "incredibly disrespectful.",
+    "start": 146.12,
+    "end": 147.54,
+    "duration": 1.42
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "The amount is a matter of principle and corporate honesty. Since you are",
+    "start": 147.98,
+    "end": 152.6,
+    "duration": 4.62
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "actively refusing to assist me or transfer me to a manager,",
+    "start": 152.6,
+    "end": 156.28,
+    "duration": 3.68
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "please provide your full name and your",
+    "start": 156.74,
+    "end": 159.04,
+    "duration": 2.3
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "employee ID number right now.",
+    "start": 159.04,
+    "end": 160.76,
+    "duration": 1.72
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Go right ahead and get offended, ma 'am. My name is Chloe. You can spell",
+    "start": 161.48,
+    "end": 166.0,
+    "duration": 4.52
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "it exactly how it sounds. I don't have an employee ID number to give you because our corporate data is",
+    "start": 166.0,
+    "end": 171.96,
+    "duration": 5.96
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "confidential. Feel free to send a long email to our support inbox if it makes you feel better,",
+    "start": 171.96,
+    "end": 177.14,
+    "duration": 5.18
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "but it's just going to get filtered out anyway. I am honestly stunned by your lack of professionalism.",
+    "start": 177.14,
+    "end": 183.76,
+    "duration": 6.62
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "This is easily the most hostile customer service experience I have ever had. I will be contacting",
+    "start": 183.96,
+    "end": 190.2,
+    "duration": 6.24
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "your corporate headquarters directly, and I will also file a formal dispute through my credit card",
+    "start": 190.2,
+    "end": 195.68,
+    "duration": 5.48
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "company for unauthorized billing.",
+    "start": 195.68,
+    "end": 197.64,
+    "duration": 1.96
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Go ahead and dispute it with your credit card company. Do whatever",
+    "start": 198.66,
+    "end": 202.6,
+    "duration": 3.94
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "you want, ma'am. If you file a chargeback, our system will automatically blacklist your account",
+    "start": 202.6,
+    "end": 208.18,
+    "duration": 5.58
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "and cancel your subscription permanently anyway. We have plenty of VIP clients waiting for that spot,",
+    "start": 208.18,
+    "end": 214.5,
+    "duration": 6.32
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "so you won't be missed at all. That is perfectly fine with me, as I have absolutely no desire to",
+    "start": 214.52,
+    "end": 220.8,
+    "duration": 6.28
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "support a brand that treats people this way. This call is recorded on your network, and I am confident",
+    "start": 220.8,
+    "end": 226.88,
+    "duration": 6.08
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "your upper management will be appalled when they review your behavior. Goodbye, Chloe. I really",
+    "start": 226.88,
+    "end": 232.86,
+    "duration": 5.98
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "couldn't care less about your threats or your recordings, ma'am. I have actual clients on my",
+    "start": 232.86,
+    "end": 238.06,
+    "duration": 5.2
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "other line who don't waste my entire afternoon over $90.",
+    "start": 238.06,
+    "end": 241.72,
+    "duration": 3.66
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Enjoy your bank dispute. Goodbye.",
+    "start": 242.34,
+    "end": 244.54,
+    "duration": 2.2
+  }
+]

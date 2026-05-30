@@ -1,0 +1,434 @@
+[
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Selamat malam.",
+    "start": 0.0,
+    "end": 0.9,
+    "duration": 0.9
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Bantuan kecemasan jalan raya di sini. Nama saya Amir.",
+    "start": 1.4,
+    "end": 4.96,
+    "duration": 3.56
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Boleh saya bantu?",
+    "start": 5.4,
+    "end": 6.4,
+    "duration": 1.0
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Tolong saya.",
+    "start": 7.8,
+    "end": 8.68,
+    "duration": 0.88
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Kereta saya tiba -tiba mati tengah -tengah lebuh raya pelas ni.",
+    "start": 9.04,
+    "end": 11.98,
+    "duration": 2.94
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Ada asap keluar dari enjin. Lepas tu lori besar semua lalu. Laju sangat. Saya takut sangat ni. Tak tahu nak buat apa.",
+    "start": 12.32,
+    "end": 18.94,
+    "duration": 6.62
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Cik Farah,",
+    "start": 19.66,
+    "end": 20.62,
+    "duration": 0.96
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "bertenang ya.",
+    "start": 21.2,
+    "end": 21.8,
+    "duration": 0.6
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Ambil nafas dalam -dalam dulu.",
+    "start": 22.32,
+    "end": 24.2,
+    "duration": 1.88
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Cik selamat sekarang.",
+    "start": 24.92,
+    "end": 26.26,
+    "duration": 1.34
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Saya ada di sini untuk bantu Cik.",
+    "start": 26.74,
+    "end": 28.56,
+    "duration": 1.82
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Boleh saya tahu, Cik ada di kilometer berapa sekarang?",
+    "start": 29.24,
+    "end": 32.72,
+    "duration": 3.48
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Kejap. Kejap. Saya tengok papan tanda dekat tepi ni.",
+    "start": 33.54,
+    "end": 36.56,
+    "duration": 3.02
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "KM240.",
+    "start": 38.62,
+    "end": 39.22,
+    "duration": 0.6
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Tapi kereta saya tersangkut dekat lorong kanan sekali.",
+    "start": 39.64,
+    "end": 42.22,
+    "duration": 2.58
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Kereta lain semua bawa laju. Saya takut nak keluar dari kereta.",
+    "start": 42.66,
+    "end": 45.9,
+    "duration": 3.24
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Baik Farah.",
+    "start": 46.56,
+    "end": 47.46,
+    "duration": 0.9
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Dengar cakap saya ya.",
+    "start": 47.86,
+    "end": 49.04,
+    "duration": 1.18
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Jangan keluar dari kereta kalau berada di lorong kanan.",
+    "start": 49.74,
+    "end": 53.16,
+    "duration": 3.42
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Sangat bahaya.",
+    "start": 53.16,
+    "end": 54.58,
+    "duration": 1.42
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Pastikan Cik dah nyalakan lampu kecemasan atau hazard light sekarang juga.",
+    "start": 55.32,
+    "end": 59.32,
+    "duration": 4.0
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Saya sedang hantarkan trak tunda dan pasukan peronda ke lokasi Cik.",
+    "start": 60.1,
+    "end": 63.98,
+    "duration": 3.88
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Dah.",
+    "start": 64.68,
+    "end": 64.94,
+    "duration": 0.26
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Lampu hazard saya dah buka.",
+    "start": 65.42,
+    "end": 66.66,
+    "duration": 1.24
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Betul kebantuan dah on the way.",
+    "start": 67.16,
+    "end": 68.76,
+    "duration": 1.6
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Berapa lama nak sampai?",
+    "start": 69.12,
+    "end": 70.34,
+    "duration": 1.22
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Lori kat belakang ni asyik bunyikan horn.",
+    "start": 70.86,
+    "end": 72.76,
+    "duration": 1.9
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Saya risau betul.",
+    "start": 73.12,
+    "end": 74.18,
+    "duration": 1.06
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Ya betul. Pasukan peronda lebuh raya dah bergerak.",
+    "start": 74.18,
+    "end": 78.56,
+    "duration": 4.38
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Mereka akan sampai dalam masa 10 hingga 15 minit sahaja untuk sekat trafik dan tunda kereta Cik ke tempat selamat.",
+    "start": 79.0,
+    "end": 85.96,
+    "duration": 6.96
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Cik duduk diam-diam dalam kereta dan pakai tali pinggang keledar ya.",
+    "start": 86.62,
+    "end": 90.18,
+    "duration": 3.56
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Okey.",
+    "start": 91.68,
+    "end": 92.26,
+    "duration": 0.58
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Okey.",
+    "start": 92.72,
+    "end": 93.02,
+    "duration": 0.3
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Saya dah pakai tali pinggang.",
+    "start": 93.46,
+    "end": 94.48,
+    "duration": 1.02
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Tadi enjin berbunyi kuat sangat. Saya ingat kereta ni nak meletup tadi.",
+    "start": 94.92,
+    "end": 98.68,
+    "duration": 3.76
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Risau sangat saya dibuatnya.",
+    "start": 99.24,
+    "end": 100.62,
+    "duration": 1.38
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Saya faham.",
+    "start": 101.32,
+    "end": 102.34,
+    "duration": 1.02
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Situasi macam ni memang menakutkan kalau kena sebatang kara.",
+    "start": 102.8,
+    "end": 105.76,
+    "duration": 2.96
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Tapi Cik dah buat tindakan yang betul dengan terus telefon kami.",
+    "start": 106.36,
+    "end": 109.44,
+    "duration": 3.08
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Asap tu mungkin sebab enjin terlalu panas sahaja. Bukannya nak meletup.",
+    "start": 110.18,
+    "end": 114.1,
+    "duration": 3.92
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Cik jangan risau ya.",
+    "start": 114.9,
+    "end": 115.88,
+    "duration": 0.98
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Semuanya terkawal.",
+    "start": 116.32,
+    "end": 117.3,
+    "duration": 0.98
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Terima kasih Amir.",
+    "start": 118.36,
+    "end": 119.54,
+    "duration": 1.18
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Lapang sikit dada saya dengan penjelasan awak.",
+    "start": 120.04,
+    "end": 121.96,
+    "duration": 1.92
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Sekarang saya cuma perlu tunggu peronda sampai sahaja kan?",
+    "start": 122.58,
+    "end": 125.38,
+    "duration": 2.8
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Betul Farah.",
+    "start": 126.02,
+    "end": 126.9,
+    "duration": 0.88
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Saya akan terus tunggu dalam talian dengan Cik sampai Cik nampak lampu peronda tiba.",
+    "start": 127.66,
+    "end": 131.62,
+    "duration": 3.96
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Sementara itu, boleh Cik sahkan nombor pelik kereta Cik untuk mudahkan mereka buat pengecaman?",
+    "start": 132.3,
+    "end": 137.38,
+    "duration": 5.08
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Boleh. Nombor pelik saya VEB1234.",
+    "start": 138.62,
+    "end": 143.36,
+    "duration": 4.74
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Terima kasih banyak-banyak sebab temankan saya waktu tengah takut macam ni.",
+    "start": 144.02,
+    "end": 147.28,
+    "duration": 3.26
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Sama -sama Farah.",
+    "start": 147.86,
+    "end": 149.0,
+    "duration": 1.14
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Dah memang tanggungjawab kami untuk pastikan keselamatan Cik.",
+    "start": 149.68,
+    "end": 152.24,
+    "duration": 2.56
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Ha.",
+    "start": 153.14,
+    "end": 153.32,
+    "duration": 0.18
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Trak tunda pun saya nampak dah nak hampir sampai ke lokasi Cik sekarang.",
+    "start": 153.86,
+    "end": 156.68,
+    "duration": 2.82
+  }
+]

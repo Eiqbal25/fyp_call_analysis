@@ -2,7 +2,7 @@
 gpu_check.py
 ============
 System readiness check before running the pipeline.
-Run this once to confirm GPU, packages, token, and data files are ready.
+Run this once to confirm GPU, packages, API keys, and data files are ready.
 
 Usage:
     python gpu_check.py
@@ -42,6 +42,7 @@ try:
         print(f" Apple MPS GPU   : ✅ Available")
     else:
         print(f" ⚠  No GPU — will use CPU (slower but works)")
+        print(f"   Note: Whisper transcription runs on Colab (T4 GPU) — not needed locally.")
 
 except ImportError:
     print(" ❌ PyTorch not installed")
@@ -56,6 +57,7 @@ try:
         from config import WHISPER_MODEL_SIZE, WHISPER_DEVICE
         print(f" Model size      : {WHISPER_MODEL_SIZE}")
         print(f" Will run on     : {WHISPER_DEVICE}")
+        print(f" Note            : Transcription runs on Colab T4 GPU (--skip_transcription locally)")
     except Exception:
         pass
 except ImportError:
@@ -68,35 +70,66 @@ try:
     print(f" pyannote.audio  : ✅ Installed ({pyannote.audio.__version__})")
 
     # Check HuggingFace token
-    try:
-        from config import HUGGINGFACE_TOKEN
-        if HUGGINGFACE_TOKEN and HUGGINGFACE_TOKEN.startswith("hf_"):
-            print(f" HF Token        : ✅ Set (hf_...{HUGGINGFACE_TOKEN[-4:]})")
-        else:
-            print(f" HF Token        : ❌ Not set in config.py")
-            print(f"   Add: HUGGINGFACE_TOKEN = 'hf_your_token_here'")
-            print(f"   Get token at: https://huggingface.co/settings/tokens")
-    except ImportError:
-        print(f" HF Token        : ❌ Cannot read config.py")
+    hf_token = os.environ.get("HUGGINGFACE_TOKEN", "")
+    if not hf_token:
+        env_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env")
+        if os.path.exists(env_path):
+            with open(env_path) as f:
+                for line in f:
+                    if line.startswith("HUGGINGFACE_TOKEN"):
+                        hf_token = line.split("=", 1)[-1].strip().strip('"')
 
-    # Check model licenses
-    print(f" Model licenses  : Accept at:")
-    print(f"   https://huggingface.co/pyannote/speaker-diarization-3.1")
-    print(f"   https://huggingface.co/pyannote/segmentation-3.0")
+    if hf_token and hf_token.startswith("hf_"):
+        print(f" HF Token        : ✅ Set (hf_...{hf_token[-4:]})")
+    else:
+        print(f" HF Token        : ❌ Not set")
+        print(f"   Add to .env:  HUGGINGFACE_TOKEN=hf_your_token_here")
+        print(f"   Get token at: https://huggingface.co/settings/tokens")
+        print(f"   Accept licenses:")
+        print(f"     https://huggingface.co/pyannote/speaker-diarization-3.1")
+        print(f"     https://huggingface.co/pyannote/segmentation-3.0")
 
 except ImportError:
-    print(" ❌ pyannote.audio not installed")
-    print("    Run: pip install pyannote.audio")
+    print(" ❌ pyannote.audio not installed — pip install pyannote.audio")
     print("    System will fall back to Resemblyzer (lower accuracy)")
 
-# ── Resemblyzer (Fallback Diarization) ───────────────────────
-print("\n── Resemblyzer (Fallback Diarization) ───────────────────")
+# ── Resemblyzer (Fallback + fix_speakers.py) ─────────────────
+print("\n── Resemblyzer (Fallback + fix_speakers.py) ─────────────")
 try:
     from resemblyzer import VoiceEncoder
-    print(f" resemblyzer     : ✅ Installed (fallback ready)")
+    print(f" resemblyzer     : ✅ Installed")
+    print(f"   Used by: fix_speakers.py (re-clusters single-speaker diarizations)")
 except ImportError:
-    print(f" resemblyzer     : ⚠  Not installed")
-    print(f"    Only needed as fallback. Run: pip install resemblyzer")
+    print(f" resemblyzer     : ❌ Not installed — pip install resemblyzer")
+    print(f"   Required for fix_speakers.py and Method 2 d-vector features")
+
+# ── Groq API (Method 3 — LLM Hybrid) ─────────────────────────
+print("\n── Groq API (Method 3 — LLM Hybrid) ─────────────────────")
+try:
+    import groq
+    print(f" groq            : ✅ Installed ({groq.__version__})")
+
+    groq_key = os.environ.get("GROQ_API_KEY", "")
+    if not groq_key:
+        env_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env")
+        if os.path.exists(env_path):
+            with open(env_path) as f:
+                for line in f:
+                    if line.startswith("GROQ_API_KEY"):
+                        groq_key = line.split("=", 1)[-1].strip().strip('"')
+
+    if groq_key and groq_key.startswith("gsk_"):
+        masked = groq_key[:8] + "..." + groq_key[-4:]
+        print(f" Groq API key   : ✅ Set ({masked})")
+        print(f" LLM model      : llama-3.3-70b-versatile (free tier)")
+        print(f" Daily limit    : 100,000 tokens (~15 calls/day)")
+    else:
+        print(f" Groq API key   : ❌ Not set")
+        print(f"   Add to .env: GROQ_API_KEY=gsk_your_key_here")
+        print(f"   Get free key at: https://console.groq.com")
+        print(f"   Without this, Method 3 (LLM Hybrid) will be disabled")
+except ImportError:
+    print(f" groq            : ❌ Not installed — pip install groq")
 
 # ── Audio Processing ─────────────────────────────────────────
 print("\n── Audio Processing ──────────────────────────────────────")
@@ -108,11 +141,11 @@ for pkg in ["librosa", "soundfile", "noisereduce"]:
         print(f" {pkg:15s} : ❌ — pip install {pkg}")
 
 # ── ffmpeg ────────────────────────────────────────────────────
-print("\n── ffmpeg (required for .mp3 files) ──────────────────────")
+print("\n── ffmpeg (required for audio loading) ───────────────────")
 result = subprocess.run(["ffmpeg", "-version"], capture_output=True, text=True)
 if result.returncode == 0:
     version_line = result.stdout.split("\n")[0]
-    print(f" ffmpeg          : ✅ {version_line[:50]}")
+    print(f" ffmpeg          : ✅ {version_line[:55]}")
 else:
     print(" ffmpeg          : ❌ Not found in PATH")
     print("   Windows: https://ffmpeg.org → download → add to PATH")
@@ -122,19 +155,22 @@ else:
 # ── Other Packages ────────────────────────────────────────────
 print("\n── Other Packages ────────────────────────────────────────")
 packages = ["sklearn", "scipy", "pandas", "numpy",
-            "matplotlib", "plotly", "streamlit", "vaderSentiment"]
+            "matplotlib", "plotly", "streamlit",
+            "vaderSentiment", "tqdm", "dotenv"]
 for pkg in packages:
+    import_name = "vaderSentiment.vaderSentiment" if pkg == "vaderSentiment" else pkg
+    display_name = pkg
     try:
-        mod = __import__(pkg)
+        mod = __import__(import_name.split(".")[0])
         ver = getattr(mod, "__version__", "?")
-        print(f" {pkg:20s}: ✅ {ver}")
+        print(f" {display_name:20s}: ✅ {ver}")
     except ImportError:
-        print(f" {pkg:20s}: ❌ — pip install {pkg}")
+        print(f" {display_name:20s}: ❌ — pip install {pkg.replace('dotenv','python-dotenv')}")
 
 # ── Data Files ────────────────────────────────────────────────
 print("\n── Data Files ────────────────────────────────────────────")
 try:
-    from config import DATA_DIR, GROUND_TRUTH_CSV, HUMAN_TRANSCRIPTS_DIR
+    from config import DATA_DIR, GROUND_TRUTH_CSV, HUMAN_TRANSCRIPTS_DIR, COLAB_TRANSCRIPTS_DIR
 
     audio_files = (glob.glob(os.path.join(DATA_DIR, "*.wav")) +
                    glob.glob(os.path.join(DATA_DIR, "*.mp3")))
@@ -148,10 +184,17 @@ try:
         print(f" Audio files     : ❌ No .wav/.mp3 in data/")
         print(f"   Add your audio recordings to the data/ folder")
 
+    colab_jsons = glob.glob(os.path.join(COLAB_TRANSCRIPTS_DIR, "*_diarized.json"))
+    colab_jsons = [f for f in colab_jsons if "_original" not in f]
+    if colab_jsons:
+        print(f" Colab transcripts: ✅ {len(colab_jsons)} diarized JSON(s) in colab_transcripts/")
+    else:
+        print(f" Colab transcripts: ⚠  None found — run Colab notebook first")
+
     import pandas as pd
     if os.path.isfile(GROUND_TRUTH_CSV):
         df = pd.read_csv(GROUND_TRUTH_CSV)
-        calls = df["call_id"].nunique()
+        calls = df["call_id"].nunique() if "call_id" in df.columns else "?"
         print(f" Ground truth CSV: ✅ {len(df)} rows across {calls} calls")
     else:
         print(f" Ground truth CSV: ❌ {GROUND_TRUTH_CSV} not found")
@@ -160,8 +203,6 @@ try:
     ht_files = [f for f in ht_files if "example" not in os.path.basename(f).lower()]
     if ht_files:
         print(f" Human transcripts: ✅ {len(ht_files)} CSV(s) in human_transcripts/")
-        for f in sorted(ht_files):
-            print(f"   • {os.path.basename(f)}")
     else:
         print(f" Human transcripts: ⚠  None found in human_transcripts/")
         print(f"   Needed for: python compare_labels.py")
@@ -172,10 +213,13 @@ except Exception as e:
 # ── Active Configuration ──────────────────────────────────────
 print("\n── Active Configuration ──────────────────────────────────")
 try:
-    from config import DEVICE, GPU_NAME, WHISPER_MODEL_SIZE, HYBRID_ALPHA, HYBRID_BETA
+    from config import (DEVICE, GPU_NAME, WHISPER_MODEL_SIZE,
+                        HYBRID_ALPHA, HYBRID_BETA, LLM_MODEL, RUN_NAME)
     print(f" Device          : {DEVICE} ({GPU_NAME})")
-    print(f" Whisper model   : {WHISPER_MODEL_SIZE}")
+    print(f" Whisper model   : {WHISPER_MODEL_SIZE} (runs on Colab)")
+    print(f" LLM model       : {LLM_MODEL}")
     print(f" Hybrid α / β    : {HYBRID_ALPHA} / {HYBRID_BETA}")
+    print(f" Output folder   : outputs/{RUN_NAME}/")
 except Exception as e:
     print(f" ❌ Could not load config: {e}")
 
@@ -183,17 +227,22 @@ except Exception as e:
 print("\n" + "=" * 62)
 print("CORRECT RUN ORDER:")
 print("=" * 62)
-print("  1. python gpu_check.py              ← you are here")
-print("  2. pip install -r requirements.txt  ← install packages")
-print("  3. python train.py                  ← train Method 2 DNN")
-print("  4. python main.py                   ← process all calls")
-print("  5. python evaluate.py               ← accuracy vs ground truth")
-print("  6. python compare_labels.py         ← per-segment label diff")
-print("  7. streamlit run dashboard/app.py   ← open dashboard")
+print("  1.  python gpu_check.py                 ← you are here")
+print("  2.  pip install -r requirements.txt      ← install packages")
+print("  3.  python train.py                      ← train Method 2 DNN (once)")
+print("  4.  [Colab] FYP_Transcribe_Colab.ipynb   ← transcribe on GPU")
+print("  5.  python preflight_check.py --day 1    ← validate Day 1 files")
+print("  6.  run_day.bat 1                        ← process Day 1 (15 calls)")
+print("  7.  python preflight_check.py --day 2    ← validate Day 2 files")
+print("  8.  run_day.bat 2                        ← process Day 2 + evaluate")
+print("  9.  streamlit run dashboard/app.py       ← open dashboard")
 print("")
-print("  Fast run (no Method 2 DNN needed):")
-print("  python main.py --skip_acoustic")
+print("  Single call (quick test):")
+print("  python main.py --skip_transcription --call_id eng_prof_01")
 print("")
-print("  Process one specific call only:")
-print("  python main.py --call_id food_malay")
+print("  Skip Method 2 DNN (faster, no GPU needed locally):")
+print("  python main.py --skip_transcription --skip_acoustic")
+print("")
+print("  Check processing status:")
+print("  python run_tracker.py")
 print("=" * 62)

@@ -1,0 +1,242 @@
+[
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Emergency Home Restoration and Plumbing Hotline. My name is Marcus.",
+    "start": 0.0,
+    "end": 4.08,
+    "duration": 4.08
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "What is the nature of your emergency today?",
+    "start": 4.46,
+    "end": 6.32,
+    "duration": 1.86
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Help! I just got home and my entire living room is flooded. Water is literally gushing out from under the kitchen sink like a fountain.",
+    "start": 6.92,
+    "end": 14.42,
+    "duration": 7.5
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "It's ruining the hardwood floors. Oh my god, what do I do?",
+    "start": 14.68,
+    "end": 18.06,
+    "duration": 3.38
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Ma 'am, please take a deep breath.",
+    "start": 18.56,
+    "end": 20.74,
+    "duration": 2.18
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I'm here to help you and we are going to stop the water together.",
+    "start": 21.12,
+    "end": 24.42,
+    "duration": 3.3
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "First,",
+    "start": 24.42,
+    "end": 25.44,
+    "duration": 1.02
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "can I get your name and your current address so I can get a technician moving to you right now?",
+    "start": 25.82,
+    "end": 30.78,
+    "duration": 4.96
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "My name is Clara. Clara Jenkins. I'm at 425 Pine Street.",
+    "start": 31.54,
+    "end": 35.92,
+    "duration": 4.38
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Please tell them to hurry. The water is already spreading into the hallway. It's reaching the power outlets.",
+    "start": 36.34,
+    "end": 41.42,
+    "duration": 5.08
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Clara, I have dispatched our emergency team to 425 Pine Street. They will be there in 15 minutes.",
+    "start": 41.94,
+    "end": 49.24,
+    "duration": 7.3
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Right now, I need you to stay away from those power outlets. Is it safe for you to walk over to the main water shutoff valve?",
+    "start": 49.24,
+    "end": 57.28,
+    "duration": 8.04
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "The main valve? I think it's in the basement or outside near the garage. I've never had to touch it before. I don't know what it looks like.",
+    "start": 57.64,
+    "end": 65.64,
+    "duration": 8.0
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Don't worry, Clara. Walk over towards the garage or basement steps safely. Look for a bright red wheel or a blue lever on a pipe coming straight out of the wall.",
+    "start": 65.96,
+    "end": 76.7,
+    "duration": 10.74
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Do you see anything like that?",
+    "start": 76.7,
+    "end": 78.74,
+    "duration": 2.04
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Wait. I'm checking the basement door area now.",
+    "start": 79.24,
+    "end": 81.94,
+    "duration": 2.7
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Okay, yes, there is a pipe near the water heater with a big red circular handle. Is that it?",
+    "start": 82.38,
+    "end": 88.22,
+    "duration": 5.84
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Yes, that is exactly it. Perfect job, Clara. Now, I want you to turn that red handle clockwise. Turn it all the way to the right until it tightens and won't turn anymore.",
+    "start": 88.68,
+    "end": 100.42,
+    "duration": 11.74
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "That will shut off the water supply to the whole house.",
+    "start": 100.42,
+    "end": 104.06,
+    "duration": 3.64
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Okay, it's really stiff.",
+    "start": 104.4,
+    "end": 106.74,
+    "duration": 2.34
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Wait. Okay, I'm turning it. It stopped turning.",
+    "start": 107.12,
+    "end": 110.94,
+    "duration": 3.82
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Let me look upstairs.",
+    "start": 111.3,
+    "end": 112.36,
+    "duration": 1.06
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Oh, thank goodness the gushing sound under the sink just stopped.",
+    "start": 112.88,
+    "end": 116.94,
+    "duration": 4.06
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Brilliant.",
+    "start": 117.66,
+    "end": 118.18,
+    "duration": 0.52
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "You did an amazing job, Clara. The active flooding has completely stopped. Now leave that valve exactly as it is. Can you confirm if any water actually got inside the electrical outlets?",
+    "start": 118.54,
+    "end": 130.34,
+    "duration": 11.8
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "No, it looks like it stopped just a few inches short of the hallway sockets. It's just a massive puddle on the floor now. Wow, my heart is beating so fast. Thank you so much for walking me through that.",
+    "start": 130.98,
+    "end": 142.1,
+    "duration": 11.12
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "You're very welcome, Clara. You reacted incredibly fast, and you just saved your home from much worse damage. Our restoration truck is only about 10 minutes away from your location now. They will handle the water extraction and dry out your floors completely.",
+    "start": 142.1,
+    "end": 157.74,
+    "duration": 15.64
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Okay, great. I will just wait by the front door for them to arrive. Thanks again, Marcus. I really appreciate your calm voice.",
+    "start": 158.6,
+    "end": 164.58,
+    "duration": 5.98
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "It's my pleasure, Clara.",
+    "start": 164.98,
+    "end": 166.32,
+    "duration": 1.34
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Hang tight, stay safe, and the team will see you shortly. Have a better rest of your day.",
+    "start": 166.72,
+    "end": 171.36,
+    "duration": 4.64
+  }
+]

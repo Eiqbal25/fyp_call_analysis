@@ -1,0 +1,186 @@
+[
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Thank you for calling Silver Lining Insurance.",
+    "start": 0.0,
+    "end": 2.1,
+    "duration": 2.1
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "My name is Marcus.",
+    "start": 2.48,
+    "end": 3.34,
+    "duration": 0.86
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "To whom do I have the pleasure",
+    "start": 3.7,
+    "end": 4.78,
+    "duration": 1.08
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "of speaking today?",
+    "start": 4.78,
+    "end": 5.58,
+    "duration": 0.8
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Hi, Marcus. This is Sarah Jenkins.",
+    "start": 6.08,
+    "end": 8.18,
+    "duration": 2.1
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I'm calling because a rock hit my",
+    "start": 8.58,
+    "end": 10.58,
+    "duration": 2.0
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "windshield on the highway this morning, and now there's a massive crack.",
+    "start": 10.58,
+    "end": 14.38,
+    "duration": 3.8
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I'm sorry to hear that,",
+    "start": 14.78,
+    "end": 16.06,
+    "duration": 1.28
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Sarah. I'm glad you're safe. Do you have your policy number handy so I can pull up your glass",
+    "start": 16.18,
+    "end": 20.78,
+    "duration": 4.6
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "coverage details?",
+    "start": 20.78,
+    "end": 21.58,
+    "duration": 0.8
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Yes, just a second.",
+    "start": 22.0,
+    "end": 23.6,
+    "duration": 1.6
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "It's 44920 Alpha. I'm really worried because I have a long",
+    "start": 24.46,
+    "end": 30.78,
+    "duration": 6.32
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "road trip planned for tomorrow, and I need this fixed immediately.",
+    "start": 30.78,
+    "end": 34.24,
+    "duration": 3.46
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I understand the urgency.",
+    "start": 34.64,
+    "end": 36.26,
+    "duration": 1.62
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Looking at your premier plan, you are fully covered for glass repair with a $0 deductible.",
+    "start": 36.72,
+    "end": 42.02,
+    "duration": 5.3
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I can schedule a mobile technician to come to your location this afternoon.",
+    "start": 42.22,
+    "end": 45.68,
+    "duration": 3.46
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Oh, that would be a huge relief.",
+    "start": 45.68,
+    "end": 48.12,
+    "duration": 2.44
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Does it matter that I'm at my office and not at home?",
+    "start": 48.48,
+    "end": 51.1,
+    "duration": 2.62
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Not at all. We just need the vehicle's location and a contact number.",
+    "start": 51.48,
+    "end": 54.8,
+    "duration": 3.32
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Shall I proceed with the booking for the 2 p.m. slot?",
+    "start": 55.08,
+    "end": 57.62,
+    "duration": 2.54
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Yes, please. That works perfectly for me. Thank you so much for making this easy.",
+    "start": 57.94,
+    "end": 62.44,
+    "duration": 4.5
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "It's my pleasure, Sarah. I'm processing that now. You'll receive a confirmation text shortly.",
+    "start": 62.72,
+    "end": 67.46,
+    "duration": 4.74
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Is there anything else I can assist you with today?",
+    "start": 67.78,
+    "end": 69.76,
+    "duration": 1.98
+  }
+]

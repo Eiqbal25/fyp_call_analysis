@@ -6,7 +6,7 @@ Phase 2: Speaker Role Detection
 Modules:
     method1_lexical  — Rule-based Keyword Density classifier (baseline)
     method2_acoustic — Deep Neural Network on MFCC + d-vector features
-    method3_hybrid   — Confidence-Weighted Ensemble Fusion (proposed solution)
+    # method4_hybrid removed
 """
 
 from methods.method1_lexical import (
@@ -20,11 +20,7 @@ from methods.method2_acoustic import (
     build_feature_vector,
     train_acoustic_model,
 )
-from methods.method3_hybrid import (
-    classify_transcript_hybrid,
-    fuse_predictions,
-    compute_confidence_statistics,
-)
+# Method 4 hybrid removed — Method 3 LLM is the proposed system
 
 __all__ = [
     "classify_transcript_lexical",
@@ -34,7 +30,5 @@ __all__ = [
     "classify_segment_acoustic",
     "build_feature_vector",
     "train_acoustic_model",
-    "classify_transcript_hybrid",
-    "fuse_predictions",
     "compute_confidence_statistics",
 ]

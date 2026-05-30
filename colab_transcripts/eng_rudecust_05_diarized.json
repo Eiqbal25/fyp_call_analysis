@@ -1,0 +1,242 @@
+[
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Oh my god, thank goodness you answered. I think my account was hacked. I just got a notification that $2,000 was transferred to an account I don't recognize, and now I'm locked out. I can't log in.",
+    "start": 0.0,
+    "end": 10.68,
+    "duration": 10.68
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Sarah,",
+    "start": 11.24,
+    "end": 11.76,
+    "duration": 0.52
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "please take a deep breath. I know this is incredibly stressful, but you are in the right place.",
+    "start": 12.14,
+    "end": 18.32,
+    "duration": 6.18
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I am looking at your profile right now, and I can protect your funds.",
+    "start": 18.68,
+    "end": 22.9,
+    "duration": 4.22
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "First, let's secure the account. Can you confirm your date of birth for me?",
+    "start": 23.46,
+    "end": 27.8,
+    "duration": 4.34
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "It's October 14th, 1992.",
+    "start": 28.8,
+    "end": 31.58,
+    "duration": 2.78
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Please, that's my entire rent money. Are they taking more? Can you stop it?",
+    "start": 32.58,
+    "end": 37.34,
+    "duration": 4.76
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Thank you, Sarah.",
+    "start": 37.64,
+    "end": 38.6,
+    "duration": 0.96
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I have successfully initiated a temporary freeze on your entire account.",
+    "start": 39.02,
+    "end": 44.16,
+    "duration": 5.14
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "No money can move in or out right now. The hackers are completely locked out.",
+    "start": 44.58,
+    "end": 50.34,
+    "duration": 5.76
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Wait,",
+    "start": 50.78,
+    "end": 51.42,
+    "duration": 0.64
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "so they can't take anything else? Are you sure?",
+    "start": 51.78,
+    "end": 55.58,
+    "duration": 3.8
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Absolutely sure. The account is completely locked down. I also see the pending $2,000 transfer. Because you called so quickly, it hasn't cleared yet. I am flagging it as unauthorized and reversing it right now.",
+    "start": 56.42,
+    "end": 72.18,
+    "duration": 15.76
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Oh, thank God. I was literally shaking.",
+    "start": 72.18,
+    "end": 76.18,
+    "duration": 4.0
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I clicked on a link in a text message earlier that looked like it was from you guys. I feel so stupid.",
+    "start": 76.62,
+    "end": 82.4,
+    "duration": 5.78
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Please don't blame yourself, Sarah.",
+    "start": 82.92,
+    "end": 85.04,
+    "duration": 2.12
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "These phishing scams are incredibly sophisticated nowadays.",
+    "start": 85.48,
+    "end": 88.78,
+    "duration": 3.3
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Anyone could have fallen for it. The important thing is that you acted fast.",
+    "start": 89.38,
+    "end": 94.32,
+    "duration": 4.94
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I've successfully blocked the transfer so your money is safe.",
+    "start": 94.72,
+    "end": 98.46,
+    "duration": 3.74
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Thank you so much, Alex.",
+    "start": 98.46,
+    "end": 100.78,
+    "duration": 2.32
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Seriously, what do I need to do next?",
+    "start": 101.5,
+    "end": 103.96,
+    "duration": 2.46
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I'm going to send a secure link to your registered mobile number right now to help you reset your password and security questions.",
+    "start": 104.34,
+    "end": 110.92,
+    "duration": 6.58
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Once you do that, we'll lift the freeze.",
+    "start": 111.4,
+    "end": 113.38,
+    "duration": 1.98
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Is there anything else I can do to help ease your mind today?",
+    "start": 113.8,
+    "end": 116.64,
+    "duration": 2.84
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "No,",
+    "start": 117.16,
+    "end": 117.56,
+    "duration": 0.4
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "that's everything.",
+    "start": 118.02,
+    "end": 118.76,
+    "duration": 0.74
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "You've been an absolute lifesaver.",
+    "start": 119.24,
+    "end": 121.32,
+    "duration": 2.08
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Thank you.",
+    "start": 121.82,
+    "end": 122.62,
+    "duration": 0.8
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "You're very welcome, Sarah.",
+    "start": 122.62,
+    "end": 124.64,
+    "duration": 2.02
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Stay safe and have a wonderful rest of your day.",
+    "start": 125.34,
+    "end": 127.84,
+    "duration": 2.5
+  }
+]

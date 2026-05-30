@@ -1,0 +1,47 @@
+[00:00:00] Customer: Hello, you orang ni memang tak rati buat kerja ke apa? Kenapa line I kena bar, ha?
+[00:00:04] Customer: I baru je bayar semua billa swing, okay? You orang jangan nak main-main. Kerja I semua tergendala sekarang.
+[00:00:10] Agent: Selamat petang, encik. Saya minta maaf sangat-sangat atas kesulitan ni, encik Alami. Boleh saya dapatkan lama dan...
+[00:00:16] Customer: Tak payah nak selamat petang sangatlah. I tak ada masa nak berbora. Nama I Mansur.
+[00:00:20] Customer: Sekarang ni I nak you aktifkan balik line I sekarang juga. Jangan beri alasan sistem problem pula.
+[00:00:25] Agent: Baik Encik Mansur, saya faham Encik tengah marah. Boleh Encik berikan nombor akun atau nombor telefon Encik untuk saya buat semakkan dalam sistem?
+[00:00:33] Customer: Nombor akun saya 101 098 765. Cek sekarang, saya dah bayar RM150 cash guna online banking selasa lepas.
+[00:00:42] Customer: Awak jangan nak tuduh saya tak bayar pula. Resit semua ada dengan saya ni.
+[00:00:45] Agent: Terima kasih Encik Mansur. Tolong tunggu sekejap ya, saya semak.
+[00:00:49] Agent: Okay, saya nampak ada bayaran RM150 pada hari selasa.
+[00:00:54] Agent: Tapi Encik Mansur, kalau ikutkan rekod di sini,
+[00:00:57] Agent: Encik tersalah maksudkan,
+[00:00:59] Customer: eh mana ada salah?
+[00:01:00] Customer: I click dekat istri banking I je tau.
+[00:01:02] Customer: You jangan nak pusing selita pula.
+[00:01:04] Customer: Nampak sangat sistem company you yang bodoh,
+[00:01:06] Customer: lepas tu sengaja nak salahkan customer.
+[00:01:08] Agent: Saya minta maaf Encik Mansur,
+[00:01:09] Agent: tetapi bayaran tersebut telah masuk ke nombor akun lama Encik
+[00:01:13] Agent: yang sudah ditunjukkan tahun lepas.
+[00:01:15] Agent: Disebabkan akun aktif Encik yang sekarang masih ditumbakan,
+[00:01:18] Agent: Sebab itu sistem bar line cik sekarang otomatik
+[00:01:21] Customer: Eh, akaun lama?
+[00:01:23] Customer: Mana saya tahu?
+[00:01:24] Customer: Kalau dah terminit, kenapa bank still simpan history?
+[00:01:26] Customer: You orang patutnya delete lah
+[00:01:28] Customer: Habis itu sekarang macam mana?
+[00:01:29] Customer: Takkan saya kena bayar lagi sekali?
+[00:01:31] Agent: Tak apa, jangan risau Encik Nusor
+[00:01:33] Agent: Encik tak perlu bayar lagi sekali
+[00:01:34] Agent: Saya boleh bantu buat internal transfer
+[00:01:36] Agent: untuk pindahkan duit RM150 itu dari akaun lama
+[00:01:39] Agent: ke akaun aktif encik sekarang juga
+[00:01:41] Agent: Proses ini ambil masa se minit sahaja
+[00:01:43] Customer: Nah, tahu pun boleh buat
+[00:01:45] Customer: Memang patutnya awak terus buat macam tu dari awal tadi
+[00:01:48] Customer: Tak payah nak banyak alasan sangat
+[00:01:49] Customer: Menusahkan orang betul lah kena call bagai
+[00:01:52] Agent: Selesai Encik Mansur
+[00:01:53] Agent: Saya sudah berjaya pindahkan bayaran tersebut
+[00:01:55] Agent: Dan bar pada line Encik sudah pun dibuku
+[00:01:57] Agent: Encik boleh cuba restart telefon Encik
+[00:01:59] Agent: Dalam masa lima minit ya
+[00:02:00] Agent: Ada apa-apa lagi yang boleh saya bantu?
+[00:02:02] Customer: Dah, itu je
+[00:02:03] Customer: Make sure lepas ni sistem awak tak bodoh macam ni lagi
+[00:02:05] Agent: Saya lekat dulu

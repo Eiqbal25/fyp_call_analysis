@@ -1,0 +1,57 @@
+call_id,start_sec,system_text,human_text,text_similarity,combined_score,system_role,human_role,label_correct,matched,text_override,override_phrase,status
+my_sales_01,0.0,Selamat petang. Assalamualaikum Encik Hazik. Saya Syahrul dari Hydro Pure Malays,Selamat petang. Assalamualaikum Encik Hazik. Saya Syahrul dari Hydro Pure Malays,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_01,7.1,Waalaikumsalam Encik Syahrul.,Waalaikumsalam Encik Syahrul.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_sales_01,8.76,"Ya, saya sihat Alhamdulillah. Ada apa ya? Hubungi saya petang -petang begini?","Ya, saya sihat Alhamdulillah. Ada apa ya? Hubungi saya petang -petang begini?",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_sales_01,12.82,"Begini Encik Hazik. Pertama sekali, kami ingin mengucapkan terima kasih kerana E","Begini Encik Hazik. Pertama sekali, kami ingin mengucapkan terima kasih kerana E",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_01,21.48,"Sila jangan risau. Saya hubungi ini bukan untuk cas apa-apa bayaran, tetapi untu","Sila jangan risau. Saya hubungi ini bukan untuk cas apa-apa bayaran, tetapi untu",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_01,31.38,"Oh,","Oh,",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_sales_01,32.26,ganjaran apa itu ya? Saya ingatkan fasal servis penapis udara tadi.,ganjaran apa itu ya? Saya ingatkan fasal servis penapis udara tadi.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_sales_01,36.9,Pakaj promosi baharukah?,Pakaj promosi baharukah?,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_sales_01,38.62,Betul Encik Hazik.,Betul Encik Hazik.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_01,40.12,"Berdasarkan profil kesetiaan Encik, pihak pengurusan telah memilih Encik untuk m","Berdasarkan profil kesetiaan Encik, pihak pengurusan telah memilih Encik untuk m",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_01,50.3,"iaitu Hydro Pure Smart Purifier,","iaitu Hydro Pure Smart Purifier,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_01,53.08,penapis air pintar dengan fungsi pensterilan UV otomatik.,penapis air pintar dengan fungsi pensterilan UV otomatik.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_01,57.28,"Kebetulan pula,","Kebetulan pula,",1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_sales_01,58.5,memang saya dan isteri ada terfikir nak pasang penapis air kat rumah baru kami b,memang saya dan isteri ada terfikir nak pasang penapis air kat rumah baru kami b,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_sales_01,63.26,"Tapi itulah, sekarang ni banyak sangat jenama kat luar sana. Apa yang beza sanga","Tapi itulah, sekarang ni banyak sangat jenama kat luar sana. Apa yang beza sanga",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_sales_01,71.6,Soalan yang sangat bagus Encik Hazik.,Soalan yang sangat bagus Encik Hazik.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_01,73.68,Model pintar terbaharu ini dilengkapi dengan teknologi ekosensor yang menjimatka,Model pintar terbaharu ini dilengkapi dengan teknologi ekosensor yang menjimatka,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_01,80.96,"Paling penting,","Paling penting,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_01,82.56,ia mempunyai reka bentuk yang sangat kompak dan minimalis.,ia mempunyai reka bentuk yang sangat kompak dan minimalis.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_01,85.98,Jadi ia tidak akan memakan ruang yang banyak di dapur rumah baru Encik nanti.,Jadi ia tidak akan memakan ruang yang banyak di dapur rumah baru Encik nanti.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_01,90.18,"Hmm,","Hmm,",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_sales_01,91.04,jimat elektrik dan kompak ya? Menarik juga tu.,jimat elektrik dan kompak ya? Menarik juga tu.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_sales_01,93.98,"Sebab dapur rumah baru saya tu reka bentuknya modern, lurus.","Sebab dapur rumah baru saya tu reka bentuknya modern, lurus.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_sales_01,97.6,Memang tak luas sangat.,Memang tak luas sangat.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_sales_01,99.2,Berapa ya komitmen bulanan kalau saya ambil pelan sewa beli?,Berapa ya komitmen bulanan kalau saya ambil pelan sewa beli?,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_sales_01,102.26,"Untuk harga pasaran biasa,","Untuk harga pasaran biasa,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_01,104.66,komitmen bulanan adalah RM110.,komitmen bulanan adalah RM110.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_01,107.16,"Tetapi khas untuk Encik Hazik sebagai pelanggan VIP kami,","Tetapi khas untuk Encik Hazik sebagai pelanggan VIP kami,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_01,110.74,"dengan ribit 40 % tadi,","dengan ribit 40 % tadi,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_01,113.26,Encik cuma perlu bayar RM65 sahaja sebulan.,Encik cuma perlu bayar RM65 sahaja sebulan.,1.0,1.0,Agent,Customer,False,True,False,,❌ WRONG
+my_sales_01,116.8,Harga ini sudah termasuk servis penukaran penapis percuma setiap 4 bulan,Harga ini sudah termasuk servis penukaran penapis percuma setiap 4 bulan,1.0,1.0,Agent,Customer,False,True,False,,❌ WRONG
+my_sales_01,120.78,dan jaminan penuh sepanjang tempoh kontrak.,dan jaminan penuh sepanjang tempoh kontrak.,1.0,1.0,Agent,Customer,False,True,False,,❌ WRONG
+my_sales_01,123.64,Bia betul. RM65 sahaja sebulan.,Bia betul. RM65 sahaja sebulan.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_sales_01,127.24,Jarak harganya agak jauh berbanding harga asal ya.,Jarak harganya agak jauh berbanding harga asal ya.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_sales_01,129.94,Tapi saya kena berbincang dengan isteri saya dululah untuk pemilihan warna dan l,Tapi saya kena berbincang dengan isteri saya dululah untuk pemilihan warna dan l,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_sales_01,135.56,"Sila ambil masa, Encik.","Sila ambil masa, Encik.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_01,137.14,Berbincang dengan isteri adalah perkara yang sangat penting.,Berbincang dengan isteri adalah perkara yang sangat penting.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_01,140.12,"Untuk memudahkan perancangan Encik berdua,","Untuk memudahkan perancangan Encik berdua,",1.0,1.0,Agent,Customer,False,True,False,,❌ WRONG
+my_sales_01,142.64,apa kata saya hantarkan seorang pakar konsultan kami ke rumah Encik Sabtu ini,apa kata saya hantarkan seorang pakar konsultan kami ke rumah Encik Sabtu ini,1.0,1.0,Agent,Customer,False,True,False,,❌ WRONG
+my_sales_01,146.72,untuk tunjukkan demo produk secara ringkas.,untuk tunjukkan demo produk secara ringkas.,1.0,1.0,Agent,Customer,False,True,False,,❌ WRONG
+my_sales_01,149.52,"Encik boleh tengok sendiri saiz sebenar dan pilihan warna,","Encik boleh tengok sendiri saiz sebenar dan pilihan warna,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_01,152.56,tanpa sebarang komitmen bayaran pun.,tanpa sebarang komitmen bayaran pun.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_01,154.96,"Kalau macam tu, bagus juga.","Kalau macam tu, bagus juga.",1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_sales_01,156.34,"Hari Sabtu petang dalam pukul 3 petang, kami berdua ada di rumah baru untuk kema","Hari Sabtu petang dalam pukul 3 petang, kami berdua ada di rumah baru untuk kema",1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_sales_01,161.96,Awak boleh hantar konsultan datang waktu itu ya?,Awak boleh hantar konsultan datang waktu itu ya?,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+my_sales_01,164.28,Baik Encik Hazik.,Baik Encik Hazik.,1.0,1.0,Agent,Customer,False,True,False,,❌ WRONG
+my_sales_01,165.36,Saya dah jadualkan slot janji temu untuk hari Sabtu ini jam 3 petang.,Saya dah jadualkan slot janji temu untuk hari Sabtu ini jam 3 petang.,1.0,1.0,Agent,Customer,False,True,False,,❌ WRONG
+my_sales_01,169.58,Konsultan kami akan hubungi Encik terlebih dahulu sebelum datang.,Konsultan kami akan hubungi Encik terlebih dahulu sebelum datang.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_01,173.04,Terima kasih banyak atas masa Encik dan tahniah atas rumah baru.,Terima kasih banyak atas masa Encik dan tahniah atas rumah baru.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_01,176.66,Selamat petang.,Selamat petang.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_01,177.32,Sama-sama Encik Syarul.,Sama-sama Encik Syarul.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_sales_01,178.84,Terima kasih kembali atas tawaran hebat ini.,Terima kasih kembali atas tawaran hebat ini.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_sales_01,181.22,Kita jumpa hari Sabtu nanti.,Kita jumpa hari Sabtu nanti.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_sales_01,182.74,Assalamualaikum.,Assalamualaikum.,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+my_sales_01,183.98,Waalaikumsalam warahmatullahi ta'ala wabarakatuh.,Waalaikumsalam warahmatullahi ta'ala wabarakatuh.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+my_sales_01,186.22,Terima kasih Encik Hazik.,Terima kasih Encik Hazik.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT

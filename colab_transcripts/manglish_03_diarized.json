@@ -1,0 +1,610 @@
+[
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Thank you for calling Mega Proud Pen Support.",
+    "start": 0.48,
+    "end": 2.72,
+    "duration": 2.24
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "My name is Arif.",
+    "start": 3.18,
+    "end": 4.24,
+    "duration": 1.06
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "How can I help you today?",
+    "start": 4.44,
+    "end": 5.3,
+    "duration": 0.86
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Weh, help me lah.",
+    "start": 5.98,
+    "end": 7.2,
+    "duration": 1.22
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "My internet suddenly red light blinking.",
+    "start": 7.54,
+    "end": 9.24,
+    "duration": 1.7
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Completely down eh.",
+    "start": 9.6,
+    "end": 10.6,
+    "duration": 1.0
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I got 10 minutes only to submit my university final project.",
+    "start": 10.94,
+    "end": 13.72,
+    "duration": 2.78
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "If not, I fail.",
+    "start": 13.92,
+    "end": 14.82,
+    "duration": 0.9
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Jalat already.",
+    "start": 14.94,
+    "end": 15.56,
+    "duration": 0.62
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Macam mana now?",
+    "start": 16.14,
+    "end": 17.02,
+    "duration": 0.88
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Me, don't panic first.",
+    "start": 17.62,
+    "end": 19.32,
+    "duration": 1.7
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Take a deep breath.",
+    "start": 19.78,
+    "end": 21.04,
+    "duration": 1.26
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "10 minutes is enough time.",
+    "start": 21.82,
+    "end": 23.24,
+    "duration": 1.42
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "We can sort this out one.",
+    "start": 23.46,
+    "end": 24.42,
+    "duration": 0.96
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Let me check your line state from my side.",
+    "start": 24.96,
+    "end": 26.86,
+    "duration": 1.9
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Can you give me your account number or IC number?",
+    "start": 27.2,
+    "end": 29.26,
+    "duration": 2.06
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I see it's 991122145678.",
+    "start": 30.04,
+    "end": 33.78,
+    "duration": 3.74
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Please check fast-fast lah.",
+    "start": 34.22,
+    "end": 35.56,
+    "duration": 1.34
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "My laptop portal is just spinning and spinning only.",
+    "start": 35.9,
+    "end": 38.0,
+    "duration": 2.1
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I cannot fill this paper.",
+    "start": 38.46,
+    "end": 39.78,
+    "duration": 1.32
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "My parents will kill me weh.",
+    "start": 39.88,
+    "end": 41.1,
+    "duration": 1.22
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Okay, Mei.",
+    "start": 41.68,
+    "end": 42.4,
+    "duration": 0.72
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I already pulled up your account.",
+    "start": 42.68,
+    "end": 43.76,
+    "duration": 1.08
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I see there is a sudden fibre cable cut in your area.",
+    "start": 44.16,
+    "end": 47.06,
+    "duration": 2.9
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "So the main line is down.",
+    "start": 47.26,
+    "end": 48.64,
+    "duration": 1.38
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Don't worry.",
+    "start": 49.22,
+    "end": 49.92,
+    "duration": 0.7
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "The portal problem we can bypass.",
+    "start": 50.22,
+    "end": 51.66,
+    "duration": 1.44
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Do you have your phone with mobile data nearby?",
+    "start": 52.24,
+    "end": 54.5,
+    "duration": 2.26
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "God, my phone got 5G.",
+    "start": 55.72,
+    "end": 57.48,
+    "duration": 1.76
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "But my project file is 500 megabyte way.",
+    "start": 57.48,
+    "end": 61.38,
+    "duration": 3.9
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Hotspot can manage meh.",
+    "start": 61.88,
+    "end": 63.44,
+    "duration": 1.56
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Very slow, right?",
+    "start": 63.54,
+    "end": 64.42,
+    "duration": 0.88
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I'm literally shaking now.",
+    "start": 64.96,
+    "end": 66.7,
+    "duration": 1.74
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Ken,",
+    "start": 67.32,
+    "end": 67.82,
+    "duration": 0.5
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "5G hotspot is more than fast enough for 500 meg.",
+    "start": 68.48,
+    "end": 71.58,
+    "duration": 3.1
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Don't think about the router now.",
+    "start": 72.22,
+    "end": 73.78,
+    "duration": 1.56
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Focus on your phone.",
+    "start": 74.0,
+    "end": 74.88,
+    "duration": 0.88
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Turn on your personal hotspot immediately and connect your laptop to it.",
+    "start": 75.14,
+    "end": 79.14,
+    "duration": 4.0
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Okay, okay, wait.",
+    "start": 79.98,
+    "end": 80.88,
+    "duration": 0.9
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I'm connecting now.",
+    "start": 81.22,
+    "end": 82.1,
+    "duration": 0.88
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Aduh, my hands are shaking so hard.",
+    "start": 82.68,
+    "end": 84.72,
+    "duration": 2.04
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I cannot type my password properly.",
+    "start": 84.78,
+    "end": 86.16,
+    "duration": 1.38
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Okay, connected already.",
+    "start": 86.6,
+    "end": 87.74,
+    "duration": 1.14
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "The page is loading.",
+    "start": 88.02,
+    "end": 88.86,
+    "duration": 0.84
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Good job, Mei.",
+    "start": 89.38,
+    "end": 90.62,
+    "duration": 1.24
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "See, you still have 7 minutes left.",
+    "start": 91.12,
+    "end": 93.24,
+    "duration": 2.12
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Ample time.",
+    "start": 93.4,
+    "end": 94.34,
+    "duration": 0.94
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Upload the file now.",
+    "start": 94.82,
+    "end": 95.8,
+    "duration": 0.98
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "While it's uploading,",
+    "start": 96.12,
+    "end": 97.08,
+    "duration": 0.96
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I will write an official system downtime report",
+    "start": 97.48,
+    "end": 99.84,
+    "duration": 2.36
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "and email it to you right away.",
+    "start": 99.84,
+    "end": 101.32,
+    "duration": 1.48
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "If anything happens,",
+    "start": 101.96,
+    "end": 102.74,
+    "duration": 0.78
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "you can use that email as proof for your lecturer.",
+    "start": 103.02,
+    "end": 105.08,
+    "duration": 2.06
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Oh my god, thank you so much.",
+    "start": 105.96,
+    "end": 107.72,
+    "duration": 1.76
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "The file is uploading already.",
+    "start": 107.94,
+    "end": 109.38,
+    "duration": 1.44
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Looks like it's going up quite fast eh.",
+    "start": 109.78,
+    "end": 111.56,
+    "duration": 1.78
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "You are a lifesaver lah, seriously.",
+    "start": 111.88,
+    "end": 113.88,
+    "duration": 2.0
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I was about to cry just now.",
+    "start": 114.34,
+    "end": 115.94,
+    "duration": 1.6
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "No worries lah, Mei.",
+    "start": 116.58,
+    "end": 118.04,
+    "duration": 1.46
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "We all know the stress of submission deadlines.",
+    "start": 118.5,
+    "end": 120.6,
+    "duration": 2.1
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Just make sure the submission goes through completely.",
+    "start": 121.18,
+    "end": 123.88,
+    "duration": 2.7
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Once you finish,",
+    "start": 124.34,
+    "end": 125.18,
+    "duration": 0.84
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I can help you log your report for your house router repair.",
+    "start": 125.48,
+    "end": 127.8,
+    "duration": 2.32
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Can or not?",
+    "start": 128.14,
+    "end": 128.56,
+    "duration": 0.42
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Can, can.",
+    "start": 129.12,
+    "end": 129.56,
+    "duration": 0.44
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Submission success already.",
+    "start": 130.32,
+    "end": 131.48,
+    "duration": 1.16
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Double check.",
+    "start": 131.74,
+    "end": 132.18,
+    "duration": 0.44
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Safe.",
+    "start": 132.56,
+    "end": 133.04,
+    "duration": 0.48
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Luckily, you replied so fast.",
+    "start": 134.0,
+    "end": 135.96,
+    "duration": 1.96
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "For the router,",
+    "start": 136.5,
+    "end": 137.28,
+    "duration": 0.78
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "you just proceed with the report lah.",
+    "start": 137.44,
+    "end": 138.66,
+    "duration": 1.22
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Awesome.",
+    "start": 139.44,
+    "end": 139.92,
+    "duration": 0.48
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Congrats on submitting.",
+    "start": 140.54,
+    "end": 141.48,
+    "duration": 0.94
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I've logged the repair ticket for your house router.",
+    "start": 142.3,
+    "end": 144.32,
+    "duration": 2.02
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "The technician will come over tomorrow morning.",
+    "start": 144.62,
+    "end": 146.46,
+    "duration": 1.84
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Anything else I can help you with?",
+    "start": 146.86,
+    "end": 148.2,
+    "duration": 1.34
+  }
+]

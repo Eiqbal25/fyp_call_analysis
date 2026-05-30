@@ -251,7 +251,12 @@ def validate_call(classified: list[dict],
     -------
     dict with all metrics + inversion info
     """
-    gt_call = gt_df[gt_df["call_id"] == call_id].copy()
+    # Handle both: full CSV with call_id col, and per-call CSV without it
+    if "call_id" in gt_df.columns:
+        gt_call = gt_df[gt_df["call_id"] == call_id].copy()
+    else:
+        gt_call = gt_df.copy()  # per-call CSV — use all rows
+
     if gt_call.empty:
         logger.warning(f"No ground truth rows for call_id='{call_id}'")
         return {}
@@ -312,6 +317,7 @@ def run_validation(calls_m1: list[list],
                    calls_m2: list[list],
                    calls_m3: list[list],
                    call_ids: list[str],
+                   calls_m3_llm: list[list] = None,
                    system_qa_scores: list[float] = None,
                    processing_time_sec: float = None,
                    total_audio_duration_sec: float = None,
@@ -334,13 +340,15 @@ def run_validation(calls_m1: list[list],
     """
     gt_df = load_ground_truth(csv_path)
 
-    all_results = {"m1": [], "m2": [], "m3": []}
+    all_results = {"m1": [], "m2": [], "m3": [], "m3_llm": []}
+    llm_list = calls_m3_llm if calls_m3_llm else [[] for _ in calls_m1]
 
-    for m1, m2, m3, cid in zip(calls_m1, calls_m2, calls_m3, call_ids):
+    for m1, m2, m3, m3_llm, cid in zip(calls_m1, calls_m2, calls_m3, llm_list, call_ids):
         for key, classified, mname in [
-            ("m1", m1, "Method1-Lexical"),
-            ("m2", m2, "Method2-Acoustic"),
-            ("m3", m3, "Method3-Hybrid"),
+            ("m1",     m1,     "Method1-Lexical"),
+            ("m2",     m2,     "Method2-Acoustic"),
+            ("m3_llm", m3_llm, "Method3-LLM"),
+            ("m3",     m3,     "Method3-LLM"),
         ]:
             if not classified:
                 continue
@@ -359,9 +367,10 @@ def run_validation(calls_m1: list[list],
             "f1":        round(float(np.mean([r["f1"]        for r in results_list])), 2),
         }
 
-    agg_m1 = _agg(all_results["m1"])
-    agg_m2 = _agg(all_results["m2"])
-    agg_m3 = _agg(all_results["m3"])
+    agg_m1     = _agg(all_results["m1"])
+    agg_m2     = _agg(all_results["m2"])
+    agg_m3_llm = _agg(all_results["m3_llm"])
+    agg_m3     = _agg(all_results["m3"])
 
     # Per-sample correctness for t-test
     scores_m1 = [s for r in all_results["m1"] for s in r.get("per_segment_correct", [])]
@@ -397,7 +406,8 @@ def run_validation(calls_m1: list[list],
     logger.info("VALIDATION SUMMARY")
     logger.info(f"  Method 1 (Keyword) : Acc={agg_m1['accuracy']}% F1={agg_m1['f1']}%")
     logger.info(f"  Method 2 (Acoustic): Acc={agg_m2['accuracy']}% F1={agg_m2['f1']}%")
-    logger.info(f"  Method 3 (Hybrid)  : Acc={agg_m3['accuracy']}% F1={agg_m3['f1']}%")
+    logger.info(f"  Method 3 (LLM)     : Acc={agg_m3_llm['accuracy']}% F1={agg_m3_llm['f1']}%")
+    logger.info(f"  Method 3 (LLM)     : Acc={agg_m3['accuracy']}% F1={agg_m3['f1']}%")
     if any(v for v in inversions.values()):
         logger.warning(f"  Label inversions auto-corrected: {inversions}")
     logger.info("=" * 60)
@@ -408,7 +418,7 @@ def run_validation(calls_m1: list[list],
         plot_ttest_boxplot(scores_m1[:n], scores_m3[:n], ttest)
 
     return {
-        "aggregated":   {"m1": agg_m1, "m2": agg_m2, "m3": agg_m3},
+        "aggregated":   {"m1": agg_m1, "m2": agg_m2, "m3_llm": agg_m3_llm, "m3": agg_m3},
         "ttest":        ttest,
         "pearson":      pearson,
         "efficiency":   efficiency,

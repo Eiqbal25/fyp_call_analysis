@@ -1,0 +1,39 @@
+call_id,start_sec,system_text,human_text,text_similarity,combined_score,system_role,human_role,label_correct,matched,text_override,override_phrase,status
+eng_rudeagt_03,0.0,Thank you for calling Global Connect Premium Support.,Thank you for calling Global Connect Premium Support.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_03,3.52,My name is Marcus.,My name is Marcus.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_03,4.94,To whom do I have the pleasure of speaking today?,To whom do I have the pleasure of speaking today?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_03,7.84,"Hi, Marcus.","Hi, Marcus.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_03,8.9,This is Sarah Jenkins.,This is Sarah Jenkins.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_03,10.4,I'm calling because I noticed a double charge on my credit card statement this m,I'm calling because I noticed a double charge on my credit card statement this m,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_03,16.38,"I'm very sorry to hear that, Ms. Jenkins.","I'm very sorry to hear that, Ms. Jenkins.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_03,19.08,I certainly understand how frustrating unexpected charges can be.,I certainly understand how frustrating unexpected charges can be.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_03,23.26,Let me pull up your account profile.,Let me pull up your account profile.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_03,25.44,Could you please verify the last four digits of the card on file?,Could you please verify the last four digits of the card on file?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_03,28.46,Sure. It's 4492.,Sure. It's 4492.,1.0,1.0,Agent,Customer,False,True,False,,❌ WRONG
+eng_rudeagt_03,32.22,Thank you. Just a moment while the system refreshes.,Thank you. Just a moment while the system refreshes.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_03,37.72,Okay. I see the two charges of $45.,Okay. I see the two charges of $45.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_03,41.92,It looks like the first one was a system-generated renewal and the second was a ,It looks like the first one was a system-generated renewal and the second was a ,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_03,48.84,"Oh, that's strange. I didn't manually trigger anything.","Oh, that's strange. I didn't manually trigger anything.",1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_03,53.78,Can we get that second one refunded today?,Can we get that second one refunded today?,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_03,56.7,"Well,","Well,",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_03,58.16,"looking at the logs, the request came from your IP address, Ms. Jenkins.","looking at the logs, the request came from your IP address, Ms. Jenkins.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_03,62.94,Our policy generally states that manual overrides are non-refundable.,Our policy generally states that manual overrides are non-refundable.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_03,67.66,Wait. I'm sorry?,Wait. I'm sorry?,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_03,69.8,I definitely didn't do that.,I definitely didn't do that.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_03,71.92,I was asleep at 3 a.m. when that charge went through.,I was asleep at 3 a.m. when that charge went through.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_03,75.04,Is there a supervisor I could talk to?,Is there a supervisor I could talk to?,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_03,78.6,"Look, Sarah, a supervisor is going to tell you the exact same thing I just did.","Look, Sarah, a supervisor is going to tell you the exact same thing I just did.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_03,83.42,Do you think I'm just making this up for fun?,Do you think I'm just making this up for fun?,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+eng_rudeagt_03,86.34,Excuse me? I'm just asking for a correction on a mistake your system made.,Excuse me? I'm just asking for a correction on a mistake your system made.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_03,91.06,There's no need for that tone.,There's no need for that tone.,1.0,1.0,Agent,Customer,False,True,False,,❌ WRONG
+eng_rudeagt_03,93.52,My tone?,My tone?,1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+eng_rudeagt_03,95.64,"Honestly, I'm tired of people calling in and playing dumb about their own mistak","Honestly, I'm tired of people calling in and playing dumb about their own mistak",1.0,1.0,Customer,Agent,False,True,False,,❌ WRONG
+eng_rudeagt_03,100.36,It's $45.,It's $45.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_03,102.4,"If you're that desperate for the money, maybe you shouldn't have a premium subsc","If you're that desperate for the money, maybe you shouldn't have a premium subsc",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_03,107.26,I cannot believe you just said that.,I cannot believe you just said that.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_03,110.22,Give me your employee ID number right now.,Give me your employee ID number right now.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT
+eng_rudeagt_03,113.0,How about no?,How about no?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_03,114.52,How about you just hang up and stop wasting my time?,How about you just hang up and stop wasting my time?,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_03,117.58,I've got actual customers with real problems.,I've got actual customers with real problems.,1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_03,120.86,"Goodbye, Sarah.","Goodbye, Sarah.",1.0,1.0,Agent,Agent,True,True,False,,✅ CORRECT
+eng_rudeagt_03,121.86,Goodbye.,Goodbye.,1.0,1.0,Customer,Customer,True,True,False,,✅ CORRECT

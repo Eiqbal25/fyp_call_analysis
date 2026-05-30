@@ -1,0 +1,39 @@
+segment_id,role,text,start,end
+1,Agent,Thank you for calling Global Connect Premium Support.,0.0,3.2
+2,Agent,My name is Marcus.,3.52,4.54
+3,Agent,To whom do I have the pleasure of speaking today?,4.94,6.92
+4,Customer,"Hi, Marcus.",7.84,8.6
+5,Customer,This is Sarah Jenkins.,8.9,9.96
+6,Customer,I'm calling because I noticed a double charge on my credit card statement this morning for my monthly subscription.,10.4,15.68
+7,Agent,"I'm very sorry to hear that, Ms. Jenkins.",16.38,18.76
+8,Agent,I certainly understand how frustrating unexpected charges can be.,19.08,23.0
+9,Agent,Let me pull up your account profile.,23.26,25.02
+10,Agent,Could you please verify the last four digits of the card on file?,25.44,28.46
+11,Customer,Sure. It's 4492.,28.46,31.84
+12,Agent,Thank you. Just a moment while the system refreshes.,32.22,36.0
+13,Agent,Okay. I see the two charges of $45.,37.72,41.24
+14,Agent,It looks like the first one was a system-generated renewal and the second was a manual trigger.,41.92,48.26
+15,Customer,"Oh, that's strange. I didn't manually trigger anything.",48.84,53.4
+16,Customer,Can we get that second one refunded today?,53.78,56.1
+17,Agent,"Well,",56.7,57.26
+18,Agent,"looking at the logs, the request came from your IP address, Ms. Jenkins.",58.16,62.5
+19,Agent,Our policy generally states that manual overrides are non-refundable.,62.94,67.16
+20,Customer,Wait. I'm sorry?,67.66,69.52
+21,Customer,I definitely didn't do that.,69.8,71.72
+22,Customer,I was asleep at 3 a.m. when that charge went through.,71.92,74.76
+23,Customer,Is there a supervisor I could talk to?,75.04,77.02
+24,Agent,"Look, Sarah, a supervisor is going to tell you the exact same thing I just did.",78.6,82.96
+25,Agent,Do you think I'm just making this up for fun?,83.42,85.54
+26,Customer,Excuse me? I'm just asking for a correction on a mistake your system made.,86.34,90.78
+27,Customer,There's no need for that tone.,91.06,92.8
+28,Agent,My tone?,93.52,94.58
+29,Agent,"Honestly, I'm tired of people calling in and playing dumb about their own mistakes.",95.64,99.92
+30,Agent,It's $45.,100.36,101.64
+31,Agent,"If you're that desperate for the money, maybe you shouldn't have a premium subscription in the first place.",102.4,106.96
+32,Customer,I cannot believe you just said that.,107.26,109.86
+33,Customer,Give me your employee ID number right now.,110.22,112.42
+34,Agent,How about no?,113.0,114.1
+35,Agent,How about you just hang up and stop wasting my time?,114.52,117.28
+36,Agent,I've got actual customers with real problems.,117.58,120.18
+37,Agent,"Goodbye, Sarah.",120.86,121.86
+38,Customer,Goodbye.,121.86,121.98

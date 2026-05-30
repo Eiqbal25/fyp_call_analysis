@@ -1,0 +1,314 @@
+[
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Good afternoon.",
+    "start": 0.0,
+    "end": 0.78,
+    "duration": 0.78
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Thank you for calling SkyPass Travel Solutions.",
+    "start": 1.26,
+    "end": 4.06,
+    "duration": 2.8
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "My name is Fiona.",
+    "start": 4.48,
+    "end": 5.36,
+    "duration": 0.88
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "How may I assist you with your flight booking today?",
+    "start": 5.72,
+    "end": 8.22,
+    "duration": 2.5
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Finally! I've been on hold for 20 minutes. Listen, Fiona, I just got an alert saying my flight to Chicago tomorrow morning was changed from 10 a.m. to 7 a.m. This is completely unacceptable. I am not waking up at 4 in the morning just because you're company.",
+    "start": 8.92,
+    "end": 23.28,
+    "duration": 14.36
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I am so sorry for the surprise schedule change, ma 'am. I completely understand that a three -hour shift is incredibly inconvenient.",
+    "start": 23.28,
+    "end": 32.76,
+    "duration": 9.48
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Let me look at your booking right away so I can...",
+    "start": 33.34,
+    "end": 36.24,
+    "duration": 2.9
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Don't just apologize. Fix it. My name is Regina Vance. The booking code is XYZ552. I have an incredibly important business presentation at 2 p .m. and moving my flight to 7 a .m. completely ruins my entire morning schedule. I demand you change it back to 10 a .m.",
+    "start": 36.24,
+    "end": 53.4,
+    "duration": 17.16
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "right.",
+    "start": 53.78,
+    "end": 53.98,
+    "duration": 0.2
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Thank you, Regina. I have pulled up your itinerary. I see the shift here.",
+    "start": 53.98,
+    "end": 59.74,
+    "duration": 5.76
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Just to explain briefly, the airline actually canceled the 10 a .m. aircraft due to a mechanical issue, so they automatically moved all passengers to the earlier...",
+    "start": 60.14,
+    "end": 71.82,
+    "duration": 11.68
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I don't care about their mechanical issues. That is your problem to solve, not mine. Why am I being penalized for their broken planes? If that flight is canceled, then put me on a different airline at 10 a.m.",
+    "start": 71.82,
+    "end": 83.3,
+    "duration": 11.48
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I know for a fact United Airlines has a flight around that time, so just transfer my ticket over.",
+    "start": 83.34,
+    "end": 88.86,
+    "duration": 5.52
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I completely hear you, Regina. Let me check the live availability for the United Airlines at 10.15 a.m. for you right now.",
+    "start": 89.16,
+    "end": 97.86,
+    "duration": 8.7
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Okay, I do see open seats in their cabin, but because it is a different airline alliance, our system requires...",
+    "start": 97.86,
+    "end": 106.74,
+    "duration": 8.88
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I don't care about your system's requirements or your alliances. Do you not understand what urgent business means?",
+    "start": 106.74,
+    "end": 112.64,
+    "duration": 5.9
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I paid full price for a premium ticket on your website, and I expect you to click whatever buttons you need to click to make this right.",
+    "start": 112.82,
+    "end": 119.98,
+    "duration": 7.16
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "I am not hanging up this phone until I get...",
+    "start": 120.16,
+    "end": 122.48,
+    "duration": 2.32
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I understand completely, and I am not going to hang up until we have a solution you are happy with.",
+    "start": 122.48,
+    "end": 128.9,
+    "duration": 6.42
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I am currently bypassing the automated system to issue a priority partner override.",
+    "start": 129.14,
+    "end": 135.32,
+    "duration": 6.18
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "This will allow me to transfer your booking to the United Airlines at 10 .15 a .m.",
+    "start": 135.52,
+    "end": 141.24,
+    "duration": 5.72
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "without charging you any...",
+    "start": 141.64,
+    "end": 143.3,
+    "duration": 1.66
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Well, do it faster, then. Why does everything take so long with you people?",
+    "start": 143.3,
+    "end": 147.32,
+    "duration": 4.02
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "And what about my baggage? If you transfer me to United, is my luggage going to get lost in transition, or are you actually going to manually ensure that it...",
+    "start": 147.52,
+    "end": 155.92,
+    "duration": 8.4
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Your baggage data will sync perfectly, Regina.",
+    "start": 155.92,
+    "end": 159.06,
+    "duration": 3.14
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I am manually linking your original baggage tags directly to the new United Airlines profile right now.",
+    "start": 159.46,
+    "end": 166.86,
+    "duration": 7.4
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "You will check in at the United desk tomorrow morning, exactly like normal, and your baggage will...",
+    "start": 167.06,
+    "end": 173.66,
+    "duration": 6.6
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Fine. They better be there when I land. Now, what about my seat assignment? I originally paid extra for an aisle seat in row 5 because I need to get off the plane quickly for my meeting. If you put me in a middle seat at the back of the plane, I'm going to be absolutely...",
+    "start": 173.66,
+    "end": 187.52,
+    "duration": 13.86
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I completely understand.",
+    "start": 187.52,
+    "end": 189.48,
+    "duration": 1.96
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Quick deplaning is crucial for your schedule. I have just checked the United seating map, and I was able to secure seat 4C for you, which is a premium aisle seat even closer to the front of the aircraft. I have also waived the fee for that selection as a gesture of our...",
+    "start": 189.86,
+    "end": 208.3,
+    "duration": 18.44
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "Fine. Row 4? Hmm. Well, I suppose that is acceptable. Send the new boarding passes to my email immediately. I need to print them out before I leave the office tonight. And make sure the confirmation number doesn't...",
+    "start": 208.3,
+    "end": 220.16,
+    "duration": 11.86
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "I have just clicked Send, Regina. The new United Airlines e-ticket and confirmation code should be hitting your inbox in about 30 seconds. I highly recommend checking your spam folder, just in case it takes a moment to route through.",
+    "start": 220.16,
+    "end": 235.14,
+    "duration": 14.98
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Is there any other detail I can double-check for your travel tomorrow?",
+    "start": 235.14,
+    "end": 239.14,
+    "duration": 4.0
+  },
+  {
+    "speaker_id": 1,
+    "speaker_raw": "SPEAKER_1",
+    "text": "No, that's all. Next time, your agency needs to notify people before you go changing their lives around. Goodbye.",
+    "start": 239.46,
+    "end": 245.78,
+    "duration": 6.32
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "We will certainly take that feedback to heart, Regina.",
+    "start": 246.18,
+    "end": 249.32,
+    "duration": 3.14
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Safe travels on your flight tomorrow,",
+    "start": 249.82,
+    "end": 251.64,
+    "duration": 1.82
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "best of luck with your business presentation, and have a wonderful evening.",
+    "start": 252.04,
+    "end": 256.06,
+    "duration": 4.02
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "Let's have a evening.",
+    "start": 256.06,
+    "end": 256.16,
+    "duration": 0.1
+  },
+  {
+    "speaker_id": 0,
+    "speaker_raw": "SPEAKER_0",
+    "text": "You're exercisingvuiosa.",
+    "start": 256.32,
+    "end": 256.46,
+    "duration": 0.14
+  }
+]
