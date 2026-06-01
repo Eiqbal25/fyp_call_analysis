@@ -222,3 +222,19 @@ def format_wer_summary(calls_data: list) -> str:
         lines.append(f"  {'AVERAGE':<25} {'':12} {avg_wer:>7.1f}%")
 
     return "\n".join(lines)
+
+
+# ─────────────────────────────────────────────────────────────
+# RE-EXPORT for backwards compatibility
+# detect_call_outcome lives in compliance.py but some modules
+# import it from here
+# ─────────────────────────────────────────────────────────────
+from analytics.compliance import detect_call_outcome
+
+__all__ = [
+    "compute_agent_response_time",
+    "detect_interruptions",
+    "detect_language",
+    "format_wer_summary",
+    "detect_call_outcome",
+]
