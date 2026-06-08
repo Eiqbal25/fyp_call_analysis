@@ -30,7 +30,6 @@ dist/
 # ── Outputs (temporary run artefacts) ───────────────────────
 outputs/calls/tmp*/
 outputs/runs/
-outputs/latest/
 
 # ── OS / IDE ─────────────────────────────────────────────────
 .DS_Store
