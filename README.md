@@ -1,6 +1,6 @@
 # Speaker Role Detection and Segmented Analysis in Customer Service Calls
 
-**FYP1 — Muhammad Eiqbal Bin Hasbollah (2216911)**  
+**FYP2 — Muhammad Eiqbal Bin Hasbollah (2216911)**  
 Department of Mechatronics Engineering, IIUM · 2026  
 Supervisor: Prof. Dr. Ir. Siti Fauziah Bt. Toha @ Tohara
 
@@ -10,10 +10,10 @@ Supervisor: Prof. Dr. Ir. Siti Fauziah Bt. Toha @ Tohara
 
 An automated AI pipeline that takes raw customer service call recordings and:
 
-1. Transcribes speech using OpenAI Whisper (medium model)
+1. Transcribes speech using OpenAI Whisper (large-v3-turbo model)
 2. Separates speakers using pyannote.audio neural diarization
 3. Classifies each speaker as **Agent** or **Customer** using three methods
-4. Detects rude behavior, call outcome, and generates call summaries
+4. Detects rude behaviour, call outcome, and generates call summaries
 5. Computes QA analytics — talk ratio, sentiment, compliance, QA score
 6. Validates accuracy against human-verified transcripts
 7. Displays everything on an interactive Streamlit dashboard
@@ -29,23 +29,23 @@ Audio (.wav/.mp3)
 Phase 1 — Preprocessing + Transcription
   Resample → 16 kHz mono
   Spectral gating noise reduction
-  Whisper medium (Colab GPU) → transcription
-  pyannote.audio → speaker diarization
+  Whisper large-v3-turbo (Google Colab GPU) → transcription
+  pyannote.audio 3.1 → speaker diarization
   fix_speakers.py → re-cluster via d-vector if needed
       │
       ▼
 Phase 2 — Speaker Role Detection (3 Methods)
   Method 1 (Keyword-Lexical)   → keyword density classifier
   Method 2 (Acoustic DNN)      → MLP on MFCC + d-vector features
-  Method 3 (LLM Hybrid)        → Llama 3.3 70B via Groq API
-                                   (adaptive two-pass + per-segment)
+  Method 3 (Adaptive LLM)      → Llama 3.3 70B via Groq API
+                                   (adaptive Two-Pass + Per-Segment)
       │
       ▼
 Phase 3 — Analytics
   Talk-time ratio, silence %, turn-taking
   VADER sentiment trajectory
   SOP compliance checklist + risk flags
-  Rude behavior detection (Agent + Customer, severity levels)
+  Rude behaviour detection (Agent + Customer, severity levels)
   Call outcome detection (Resolved / Unresolved / Escalated / Transferred)
   Call summary generation (LLM)
   Composite QA score with rudeness auto-fail penalty
@@ -74,38 +74,54 @@ Method 2 (Acoustic DNN)         72.6%     70.2%    88.7%   76.3%
 Method 3 (LLM — Llama 3.3 70B) 93.1%     95.3%    92.9%   94.0%
 
 Paired t-test (Method 3 vs Method 1):
-  t = 14.376,  p = 0.0000  → Method 3 SIGNIFICANTLY better (α = 0.05)
+  t = 14.376,  p < 0.001  → Method 3 SIGNIFICANTLY better (α = 0.05)
 
 System vs Human QA Correlation:
   Pearson r = 0.35  (p = 0.057)  — weak positive correlation
 
-RTF: 0.226 (real-time capable — 4.42× faster than audio duration)
+RTF: 0.013 (real-time capable — 77.5× faster than audio duration)
+Total audio: 4,710.74 seconds (78.5 minutes) across 30 calls
+Local processing time: 60.82 seconds (excludes Colab transcription)
 ```
 
 Per-call accuracy (Method 3 — segment-level label comparison):
 
-| Call ID | Accuracy | F1 | Language | Type |
+| Call ID | M3 Accuracy | M3 F1 | Language | Type |
 |---|---|---|---|---|
 | eng_prof_01 | 100.0% | 100.0% | English | Professional inbound |
 | eng_prof_02 | 100.0% | 100.0% | English | Professional inbound |
 | eng_prof_03 | 100.0% | 100.0% | English | Professional inbound |
 | eng_prof_04 | 100.0% | 100.0% | English | Professional inbound |
-| eng_rudeagt_04 | 100.0% | 100.0% | English | Rude agent |
-| eng_rudecust_03 | 100.0% | 100.0% | English | Rude customer |
-| my_prof_01–03 | 100.0% | 100.0% | Malay | Professional inbound |
-| my_rude_03 | 100.0% | 100.0% | Malay | Rude agent |
-| my_sales_02 | 100.0% | 100.0% | Malay | Sales outbound |
+| eng_prof_05 | 91.3% | 90.0% | English | Professional inbound |
+| eng_rudeagt_01 | 81.2% | 82.4% | English | Rude agent |
 | eng_rudeagt_02 | 97.1% | 97.3% | English | Rude agent |
-| eng_rudecust_01 | 97.8% | 98.0% | English | Rude customer |
 | eng_rudeagt_03 | 86.8% | 88.9% | English | Rude agent |
-| eng_rudeagt_01 | 81.3% | 82.4% | English/Manglish | Rude agent |
+| eng_rudeagt_04 | 100.0% | 100.0% | English | Rude agent |
+| eng_rudecust_01 | 97.8% | 98.1% | English | Rude customer |
+| eng_rudecust_02 | 92.3% | 94.1% | English | Rude customer |
+| eng_rudecust_03 | 100.0% | 100.0% | English | Rude customer |
+| eng_rudecust_04 | 88.6% | 88.2% | English | Rude customer |
+| eng_rudecust_05 | 96.7% | 97.0% | English | Rude customer |
+| long_01 | 87.7% | 90.7% | English | Long call |
+| manglish_01 | 79.2% | 80.5% | Manglish | Code-switching |
+| manglish_02 | 93.5% | 93.3% | Manglish | Code-switching |
+| manglish_03 | 98.7% | 98.8% | Manglish | Code-switching |
+| manglish_04 | 95.8% | 96.0% | Manglish | Code-switching |
+| manglish_05 | 92.7% | 93.3% | Manglish | Code-switching |
+| my_prof_01 | 100.0% | 100.0% | Malay | Professional inbound |
+| my_prof_02 | 100.0% | 100.0% | Malay | Professional inbound |
+| my_prof_03 | 100.0% | 100.0% | Malay | Professional inbound |
+| my_prof_04 | 96.7% | 97.0% | Malay | Professional inbound |
+| my_prof_05 | 98.1% | 98.4% | Malay | Professional inbound |
 | my_rude_01 | 83.6% | 85.3% | Malay | Rude agent |
-| my_rude_02 | 70.4% | 77.8% | Malay | Rude agent |
+| my_rude_02 | 70.0% | 77.4% | Malay | Rude agent |
+| my_rude_03 | 100.0% | 100.0% | Malay | Rude agent |
 | my_sales_01 | 66.1% | 72.5% | Malay | Sales outbound |
+| my_sales_02 | 100.0% | 100.0% | Malay | Sales outbound |
 
 **Overall: 93.1% accuracy, 94.0% F1 (30 calls)**
 
-> Hardest cases: `my_rude_02`, `my_sales_01`, `manglish_04` — informal/rude agent speech is
+> Hardest cases: `my_rude_02`, `my_sales_01`, `manglish_01` — informal/rude agent speech is
 > linguistically indistinguishable from customer speech, defeating lexical and acoustic signals.
 
 ---
@@ -113,7 +129,7 @@ Per-call accuracy (Method 3 — segment-level label comparison):
 ## Project Structure
 
 ```
-fyp1_fixed/
+fyp2/
 │
 ├── config.py                    ← ALL settings live here
 ├── main.py                      ← Run this to process all calls
@@ -145,20 +161,20 @@ fyp1_fixed/
 │   └── customer_keywords.json   ← Customer lexicon
 │
 ├── preprocessing/
-│   ├── audio_processor.py       ← Noise reduction, normalization, SNR
+│   ├── audio_processor.py       ← Noise reduction, normalisation, SNR
 │   ├── transcriber.py           ← Whisper ASR + pyannote diarization
 │   └── malay_corrections.py     ← Post-transcription Malay text corrections
 │
 ├── methods/
 │   ├── method1_lexical.py       ← Keyword density classifier (baseline)
 │   ├── method2_acoustic.py      ← PyTorch DNN on MFCC + d-vector features
-│   └── method3_llm.py           ← LLM hybrid (Llama 3.3 70B via Groq)
+│   └── method3_llm.py           ← Adaptive LLM classifier (Llama 3.3 70B via Groq)
 │
 ├── analytics/
 │   ├── talk_ratio.py            ← Talk-time ratio, QA score
 │   ├── sentiment.py             ← VADER sentiment trajectory
 │   ├── compliance.py            ← SOP checklist, risk flagging, call outcome
-│   ├── rude_behavior.py         ← Rude behavior detection with severity levels
+│   ├── rude_behavior.py         ← Rude behaviour detection with severity levels
 │   └── advanced.py              ← Response time, interruption detection, WER
 │
 ├── evaluation/
@@ -192,7 +208,7 @@ fyp1_fixed/
 
 ### Prerequisites
 - Python 3.9+
-- NVIDIA GPU with CUDA (recommended; Kaggle T4 used for Whisper transcription)
+- NVIDIA GPU with CUDA (recommended; Google Colab T4 GPU used for Whisper transcription)
 - Conda environment `fyp2`
 - ffmpeg on PATH
 - Groq API key (free at https://console.groq.com)
@@ -252,7 +268,7 @@ python main.py --skip_transcription --call_id eng_prof_01
 ```bash
 python main.py --skip_transcription              # use existing Colab JSONs (normal mode)
 python main.py --skip_acoustic                   # skip Method 2 DNN (faster)
-python main.py --whisper_model small             # override Whisper model size
+python main.py --whisper_model large-v3-turbo    # override Whisper model size
 python main.py --call_id my_rude_01              # process one call only
 python run_tracker.py                            # check processing status
 python run_tracker.py --reset                    # reset all to pending
@@ -311,7 +327,7 @@ Based on Balto.ai (2025), Globalify (2026), Calabrio (2026):
 | Feature | Description |
 |---|---|
 | QA Score | Composite 0–100 with rudeness auto-fail penalty |
-| Rude Behavior | NONE / LOW / MEDIUM / HIGH for Agent and Customer |
+| Rude Behaviour | NONE / LOW / MEDIUM / HIGH for Agent and Customer |
 | Call Outcome | Resolved / Unresolved / Escalated / Transferred |
 | Call Summary | 3-line LLM summary (Topic / Summary / Outcome) |
 | Sentiment | VADER compound trajectory per speaker |
